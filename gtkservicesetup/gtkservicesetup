@@ -10,29 +10,64 @@ import gtk.glade
 gtk.glade.bindtextdomain("gtkservicesetup", "/usr/share/locale")
 gtk.glade.textdomain("gtkservicesetup")
 
-def blacklistedservices():
+def blacklisted():
 	f = file('/usr/share/salixtools/servicesetup/service-blacklist')
-	services = []
+	servicestrings= []
 	while True:
 		line = f.readline().replace('\n', '')
 		if len(line) == 0:
 			break
-		services.append(line)
+		servicestrings.append(line)
 	f.close()
-	print services
+	return servicestrings
+
+def isblacklisted(service):
+	val = False
+	for i in blacklisted():
+		if i in service:
+			val = True
+	return val
+
+def isenabled(service):
+	if os.access('/etc/rc.d/'+service, os.X_OK):
+		enabled = True
+	else:
+		enabled = False
+	return enabled
+
+def servicedesc(service):
+	description = 'The '+service.lstrip('rc.')+' service'
+	filelist = os.listdir('/etc/rc.d/desc.d')
+	for i in filelist:
+		f = file('/etc/rc.d/desc.d/'+i)
+		while True:
+			line = f.readline().replace('\n', '')
+			if len(line) == 0:
+				break
+			elif 'rc.'+line.partition(':')[0] == service:
+				description = line.partition(':')[2].partition(':')[0]
+				break
+		f.close
+	return description
 
 def availableservices():
 	filelist = os.listdir('/etc/rc.d')
 	services = []
 	for i in filelist:
-		if i.startswith('rc.'):
-			print i
+		if os.path.isfile('/etc/rc.d/'+i):
+			if not isblacklisted(i):
+				services.append(i)
+	services.sort()
+	return services
+
+def serviceslist():
+	list = []
+	for i in availableservices():
+		list.append([isenabled(i), i.lstrip('rc.'), servicedesc(i)])
+	return list
 
 class GTKServiceSetup:
 	def on_button_ok_clicked(self, widget, data=None):
-		availableservices()
-		print 'BLACKLISTED'
-		blacklistedservices()
 		gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
@@ -64,9 +99,8 @@ class GTKServiceSetup:
 		self.serviceslist = builder.get_object('serviceslist')
 		self.servicesliststore = builder.get_object('servicesliststore')
 		self.servicesliststore.clear()
-		self.servicesliststore.append([1, 'foo', 'The foo service'])
-		self.servicesliststore.append([0, 'bar', 'The bar service'])
-		self.servicesliststore.append([1, 'zoom', 'The zoom service'])
+		for i in serviceslist():
+			self.servicesliststore.append(i)
 
 if __name__ == "__main__":
 	app = GTKServiceSetup()
