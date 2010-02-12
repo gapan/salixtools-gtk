@@ -12,9 +12,14 @@ gtk.glade.textdomain("gtkservicesetup")
 
 def blacklistedservices():
 	f = file('/usr/share/salixtools/servicesetup/service-blacklist')
-	for i in f:
-		print i
+	services = []
+	while True:
+		line = f.readline().replace('\n', '')
+		if len(line) == 0:
+			break
+		services.append(line)
 	f.close()
+	print services
 
 def availableservices():
 	filelist = os.listdir('/etc/rc.d')
