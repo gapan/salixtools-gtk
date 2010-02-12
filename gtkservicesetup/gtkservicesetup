@@ -63,7 +63,7 @@ def availableservices():
 def serviceslist():
 	list = []
 	for i in availableservices():
-		list.append([isenabled(i), i.lstrip('rc.'), servicedesc(i)])
+		list.append([isenabled(i), i.replace('rc.', ''), servicedesc(i)])
 	return list
 
 class GTKServiceSetup:
