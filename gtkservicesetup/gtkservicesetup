@@ -63,11 +63,23 @@ def availableservices():
 def serviceslist():
 	list = []
 	for i in availableservices():
-		list.append([isenabled(i), i.replace('rc.', ''), servicedesc(i)])
+		list.append([isenabled(i), i.replace('rc.', ''), servicedesc(i), False])
 	return list
+
+def enableservice(service):
+	os.system('service start '+service)
+
+def disableservice(service):
+	os.system('service stop '+service)
 
 class GTKServiceSetup:
 	def on_button_ok_clicked(self, widget, data=None):
+		for i in self.servicesliststore:
+			if i[3] == True:
+				if i[0] == True:
+					enableservice(i[1])
+				else:
+					disableservice(i[1])
 		gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
@@ -79,6 +91,7 @@ class GTKServiceSetup:
 		selectedservicename =  self.servicesliststore.get_value(iter, 1)
 		for i in self.servicesliststore:
 			if i[1] == selectedservicename:
+				i[3] = True
 				if i[0] == 0:
 					i[0] = 1
 				else:

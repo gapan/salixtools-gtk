@@ -10,17 +10,21 @@
       <column type="gchararray"/>
       <!-- column-name Service1 -->
       <column type="gchararray"/>
+      <!-- column-name Changed -->
+      <column type="gboolean"/>
     </columns>
     <data>
       <row>
         <col id="0">False</col>
         <col id="1" translatable="yes">foo</col>
         <col id="2" translatable="yes">The foo service</col>
+        <col id="3">False</col>
       </row>
       <row>
         <col id="0">False</col>
         <col id="1" translatable="yes">bar</col>
         <col id="2" translatable="yes">The bar service</col>
+        <col id="3">False</col>
       </row>
     </data>
   </object>
