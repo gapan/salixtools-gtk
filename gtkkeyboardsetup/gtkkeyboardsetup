@@ -1,0 +1,39 @@
+#!/usr/bin/env python
+
+import commands
+import gtk
+import os
+import sys
+
+# Internationalization
+import gtk.glade
+gtk.glade.bindtextdomain("gtkkeyboardsetup", "/usr/share/locale")
+gtk.glade.textdomain("gtkkeyboardetup")
+
+class GTKKeyboardSetup:
+	def on_button_ok_clicked(self, widget, data=None):
+		gtk.main_quit()
+
+	def on_button_cancel_clicked(self, widget, data=None):
+		gtk.main_quit()
+	
+	def gtk_main_quit(self, widget, data=None):
+		gtk.main_quit()
+	
+	def __init__(self):
+		builder = gtk.Builder()
+		if os.path.exists('gtkkeyboardsetup.glade'):
+			builder.add_from_file('gtkkeyboardsetup.glade')
+		elif os.path.exists('/usr/share/salixtools/gtkkeyboardsetup/gtkkeyboardsetup.glade'):
+			builder.add_from_file('/usr/share/salixtools/gtkkeyboardsetup/gtkkeyboardsetup.glade')
+		self.window = builder.get_object('gtkkeyboardsetup')
+
+		builder.connect_signals(self)
+		self.localelist = builder.get_object('keymaplist')
+		self.localeliststore = builder.get_object('keymapliststore')
+		#self.localeliststore.clear()
+
+if __name__ == "__main__":
+	app = GTKKeyboardSetup()
+	app.window.show()
+	gtk.main()
