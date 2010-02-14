@@ -67,10 +67,10 @@ def serviceslist():
 	return list
 
 def enableservice(service):
-	os.system('service start '+service)
+	os.system('service start '+service+' &')
 
 def disableservice(service):
-	os.system('service stop '+service)
+	os.system('service stop '+service+' &')
 
 class GTKServiceSetup:
 	def on_button_ok_clicked(self, widget, data=None):
