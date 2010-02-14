@@ -23,7 +23,7 @@ msgstr "Η υπηρεσία {0}"
 
 #: ../gtkservicesetup:120
 msgid "Enabled"
-msgstr "Ενεργή"
+msgstr "Ενεργoποίηση"
 
 #: ../gtkservicesetup:122
 msgid "Service name"
