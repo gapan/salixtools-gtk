@@ -8,7 +8,7 @@
       <column type="gboolean"/>
       <!-- column-name Service -->
       <column type="gchararray"/>
-      <!-- column-name Service1 -->
+      <!-- column-name ServiceDesc -->
       <column type="gchararray"/>
       <!-- column-name Changed -->
       <column type="gboolean"/>
