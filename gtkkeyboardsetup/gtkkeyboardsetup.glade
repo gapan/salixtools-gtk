@@ -13,6 +13,26 @@
       </row>
     </data>
   </object>
+  <object class="GtkListStore" id="keybtypeliststore">
+    <columns>
+      <!-- column-name Keyboard -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">azerty</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">dvorak</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">qwerty</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">qwertz</col>
+      </row>
+    </data>
+  </object>
   <object class="GtkDialog" id="gtkkeyboardsetup">
     <property name="width_request">540</property>
     <property name="height_request">500</property>
@@ -48,7 +68,7 @@
                 <child>
                   <object class="GtkLabel" id="label1">
                     <property name="visible">True</property>
-                    <property name="label" translatable="yes">Please select you preferred keyboard map, along with numlock and SCIM settings.</property>
+                    <property name="label" translatable="yes">Please select you preferred keyboard type and map and set numlock and SCIM preferences.</property>
                     <property name="wrap">True</property>
                   </object>
                   <packing>
@@ -66,6 +86,7 @@
             <child>
               <object class="GtkHBox" id="hbox2">
                 <property name="visible">True</property>
+                <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkScrolledWindow" id="scrolledwindow2">
                     <property name="visible">True</property>
@@ -138,8 +159,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="scimcheckbutton">
-                <property name="label" translatable="yes">Enable SCIM when the system is started</property>
+              <object class="GtkCheckButton" id="numlockcheckbutton">
+                <property name="label" translatable="yes">Enable numlock when the system is started</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -153,8 +174,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="numlockcheckbutton">
-                <property name="label" translatable="yes">Enable numlock when the system is started</property>
+              <object class="GtkCheckButton" id="scimcheckbutton">
+                <property name="label" translatable="yes">Enable SCIM when the system is started</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -215,25 +236,5 @@
       <action-widget response="0">button_cancel</action-widget>
       <action-widget response="0">button_ok</action-widget>
     </action-widgets>
-  </object>
-  <object class="GtkListStore" id="keybtypeliststore">
-    <columns>
-      <!-- column-name Keyboard type -->
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">azerty</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">dvorak</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">qwerty</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">qwertz</col>
-      </row>
-    </data>
   </object>
 </interface>
