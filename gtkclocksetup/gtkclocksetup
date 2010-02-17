@@ -63,6 +63,17 @@ def settimezone(continent, location):
 			os.system('cp /etc/localtime-copied-from /etc/localtime')
 
 def ntpstate():
+	if os.access('/etc/rc.d/rc.ntpd', os.X_OK):
+		state = True
+	else:
+		state = False
+	return state
+
+def ntppresent():
+	if os.path.isfile('/etc/rc.d/rc.ntpd'):
+		state = True
+	else:
+		state = False
 	return state
 
 class GTKClockSetup:
@@ -114,6 +125,16 @@ class GTKClockSetup:
 	def update_timezone_label(self, continent, location):
 		self.label_timezone.set_label(_('Time zone:')+'      '+continent+'/'+location)
 
+	def on_ntpcheckbutton_toggled(self, widget, data=None):
+		state = not self.ntpcheckbutton.get_active()
+		self.label_date.set_sensitive(state)
+		self.calendar.set_sensitive(state)
+		self.label_time.set_sensitive(state)
+		self.spinbutton_hrs.set_sensitive(state)
+		self.spinbutton_min.set_sensitive(state)
+		self.spinbutton_sec.set_sensitive(state)
+
+
 	def __init__(self):
 		builder = gtk.Builder()
 		if os.path.exists('gtkclocksetup.glade'):
@@ -130,12 +151,25 @@ class GTKClockSetup:
 		self.locationlist = builder.get_object('locationlist')
 		self.locationcolumn = builder.get_object('locationcolumn')
 		self.locationliststore = builder.get_object('locationliststore')
-
-		self.continentcolumn.set_title('General area')
-		self.locationcolumn.set_title('Location')
-
+		self.ntpcheckbutton = builder.get_object('ntpcheckbutton')
 		self.button_sync_now = builder.get_object('button_sync_now')
 		self.button_timezone = builder.get_object('button_timezone')
+		self.label_date = builder.get_object('label_date')
+		self.calendar = builder.get_object('calendar1')
+		self.label_time = builder.get_object('label_time')
+		self.spinbutton_hrs = builder.get_object('spinbutton_hrs')
+		self.spinbutton_min = builder.get_object('spinbutton_min')
+		self.spinbutton_sec = builder.get_object('spinbutton_sec')
+		self.continentcolumn.set_title('General area')
+		self.locationcolumn.set_title('Location')
+		
+		ntp = ntppresent()
+		self.ntpcheckbutton.set_sensitive(ntp)
+		self.button_sync_now.set_sensitive(ntp)
+		ntp = ntpstate()
+		self.ntpcheckbutton.set_active(ntp)
+		self.on_ntpcheckbutton_toggled(self)
+
 		btn_sync_width = self.button_sync_now.size_request()[0]
 		btn_tz_width = self.button_timezone.size_request()[0]
 		if btn_sync_width < btn_tz_width:
