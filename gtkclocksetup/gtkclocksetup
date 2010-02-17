@@ -56,9 +56,14 @@ def currenttimezone():
 	return continent, location
 
 def settimezone(continent, location):
-	os.system('ln -sf /usr/share/zoneinfo/'+continent+'/'+location+' /etc/localtime-copied-from')
-	os.system('rm -f /etc/localtime')
-	os.system('cp /etc/localtime-copied-from /etc/localtime')
+	if not continent == currenttimezone()[0]:
+		if not location == currenttimezone()[1]:
+			os.system('ln -sf /usr/share/zoneinfo/'+continent+'/'+location+' /etc/localtime-copied-from')
+			os.system('rm -f /etc/localtime')
+			os.system('cp /etc/localtime-copied-from /etc/localtime')
+
+def ntpstate():
+	return state
 
 class GTKClockSetup:
 	def on_button_ok_clicked(self, widget, data=None):
