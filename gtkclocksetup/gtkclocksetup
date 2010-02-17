@@ -14,6 +14,52 @@ gettext.install("gtkclocksetup", "/usr/share/locale", unicode=1)
 gtk.glade.bindtextdomain("gtkclocksetup", "/usr/share/locale")
 gtk.glade.textdomain("gtkclocksetup")
 
+def continents():
+	continents = ['Africa', 'America', 'Antarctica', 'Asia', \
+			'Atlantic', 'Australia', 'Europe', 'Indian', \
+			'Pacific', 'US', 'Mexico', 'Chile', 'Mideast',
+			'Canada', 'Brazil', 'Arctic']
+	continents.sort()
+	return continents
+
+def alltimezones():
+	zoneinfo = '/usr/share/zoneinfo/'
+	availablecontinents = []
+	timezones = []
+	for i in continents():
+		if os.path.isdir(zoneinfo+i):
+			availablecontinents.append(i)
+	availablecontinents.sort()
+	
+	for i in availablecontinents:
+		for file in os.listdir(zoneinfo+i):
+			if os.path.isdir(zoneinfo+i+'/'+file):
+				for file2 in os.listdir(zoneinfo+i+'/'+file):
+					timezones.append([i, file+'/'+file2])
+			else:
+				timezones.append([i, file])
+
+	return timezones
+
+def cities(continent):
+	cities = []
+	for i in alltimezones():
+		if i[0] == continent:
+			cities.append(i[1])
+	cities.sort()
+	return cities
+
+def currenttimezone():
+	tz = os.readlink('/etc/localtime-copied-from').replace('/usr/share/zoneinfo/', '')
+	continent = tz.partition('/')[0]
+	location = tz.partition('/')[2]
+	return continent, location
+
+def settimezone(continent, location):
+	os.system('ln -sf /usr/share/zoneinfo/'+continent+'/'+location+' /etc/localtime-copied-from')
+	os.system('rm -f /etc/localtime')
+	os.system('cp /etc/localtime-copied-from /etc/localtime')
+
 class GTKClockSetup:
 	def on_button_ok_clicked(self, widget, data=None):
 		gtk.main_quit()
@@ -28,13 +74,40 @@ class GTKClockSetup:
 		self.tzwindow.show()
 	
 	def on_tz_button_ok_clicked(self, widget, data=None):
+		pos = self.continentlist.get_cursor()[0][0]
+		selectedcontinent = continents()[pos]
+		pos = self.locationlist.get_cursor()[0][0]
+		selectedlocation = cities(selectedcontinent)[pos]
+		self.update_timezone_label(selectedcontinent, selectedlocation)
+		settimezone(selectedcontinent, selectedlocation)
 		self.tzwindow.hide()
 
 	def on_tz_button_cancel_clicked(self, widget, data=None):
 		self.tzwindow.hide()
 
-	def on_timezonewindow_close(self, widnget, data=None):
+	def on_timezonewindow_close(self, widget, data=None):
 		self.tzwindow.hide()
+
+	def on_continentlist_cursor_changed(self, widget, data=None):
+		pos = self.continentlist.get_cursor()[0][0]
+		self.locationliststore.clear()
+		selectedcontinent = continents()[pos]
+		currenttz = currenttimezone()[1]
+		count = 0
+		set = False
+		for i in cities(selectedcontinent):
+			self.locationliststore.append([i])
+			if i == currenttz:
+				set = True
+				self.locationlist.set_cursor(count)
+				self.locationlist.scroll_to_cell(count)
+			count += 1
+			if set == False:
+				self.locationlist.set_cursor(0)
+				self.locationlist.scroll_to_cell(0)
+
+	def update_timezone_label(self, continent, location):
+		self.label_timezone.set_label(_('Time zone:')+'      '+continent+'/'+location)
 
 	def __init__(self):
 		builder = gtk.Builder()
@@ -44,7 +117,37 @@ class GTKClockSetup:
 			builder.add_from_file('/usr/share/salixtools/gtkclocksetup/gtkclocksetup.glade')
 		self.window = builder.get_object('gtkclocksetup')
 		self.tzwindow = builder.get_object('timezonewindow')
+		self.label_timezone = builder.get_object('label_timezone')
+		self.label_timezone.set_label(_('Time zone:')+'      '+currenttimezone()[0]+'/'+currenttimezone()[1])
+		self.continentlist = builder.get_object('continentlist')
+		self.continentcolumn = builder.get_object('continentcolumn')
+		self.continentliststore = builder.get_object('continentliststore')
+		self.locationlist = builder.get_object('locationlist')
+		self.locationcolumn = builder.get_object('locationcolumn')
+		self.locationliststore = builder.get_object('locationliststore')
 
+		self.continentcolumn.set_title('General area')
+		self.locationcolumn.set_title('Location')
+
+		self.button_sync_now = builder.get_object('button_sync_now')
+		self.button_timezone = builder.get_object('button_timezone')
+		btn_sync_width = self.button_sync_now.size_request()[0]
+		btn_tz_width = self.button_timezone.size_request()[0]
+		if btn_sync_width < btn_tz_width:
+			self.button_sync_now.set_size_request(btn_tz_width, -1)
+		else:
+			self.button_timezone.set_size_request(btn_sync_width, 0)
+
+		currentcontinent = currenttimezone()[0]
+		count = 0
+		self.continentliststore.clear()
+		for i in continents():
+			self.continentliststore.append([i])
+			if i == currentcontinent:
+				self.continentlist.set_cursor(count)
+				self.continentlist.scroll_to_cell(count)
+			count += 1
+		self.on_continentlist_cursor_changed(self)
 		builder.connect_signals(self)
 
 if __name__ == "__main__":
