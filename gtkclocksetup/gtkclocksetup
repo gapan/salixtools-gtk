@@ -1,0 +1,53 @@
+#!/usr/bin/env python
+
+import gtk
+import os
+import sys
+
+# Internationalization
+import locale
+import gettext
+import gtk.glade
+gettext.bindtextdomain("gtkclocksetup", "/usr/share/locale")
+gettext.textdomain("gtkclocksetup")
+gettext.install("gtkclocksetup", "/usr/share/locale", unicode=1)
+gtk.glade.bindtextdomain("gtkclocksetup", "/usr/share/locale")
+gtk.glade.textdomain("gtkclocksetup")
+
+class GTKClockSetup:
+	def on_button_ok_clicked(self, widget, data=None):
+		gtk.main_quit()
+
+	def on_button_cancel_clicked(self, widget, data=None):
+		gtk.main_quit()
+	
+	def gtk_main_quit(self, widget, data=None):
+		gtk.main_quit()
+
+	def on_button_timezone_clicked(self, widget, data=None):
+		self.tzwindow.show()
+	
+	def on_tz_button_ok_clicked(self, widget, data=None):
+		self.tzwindow.hide()
+
+	def on_tz_button_cancel_clicked(self, widget, data=None):
+		self.tzwindow.hide()
+
+	def on_timezonewindow_close(self, widnget, data=None):
+		self.tzwindow.hide()
+
+	def __init__(self):
+		builder = gtk.Builder()
+		if os.path.exists('gtkclocksetup.glade'):
+			builder.add_from_file('gtkclocksetup.glade')
+		elif os.path.exists('/usr/share/salixtools/gtkclocksetup/gtkclocksetup.glade'):
+			builder.add_from_file('/usr/share/salixtools/gtkclocksetup/gtkclocksetup.glade')
+		self.window = builder.get_object('gtkclocksetup')
+		self.tzwindow = builder.get_object('timezonewindow')
+
+		builder.connect_signals(self)
+
+if __name__ == "__main__":
+	app = GTKClockSetup()
+	app.window.show()
+	gtk.main()
