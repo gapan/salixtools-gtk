@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-17 13:23+0200\n"
+"POT-Creation-Date: 2010-02-17 13:39+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -13,15 +13,19 @@ msgstr ""
 "X-Poedit-Country: GREECE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../gtkkeyboardsetup.glade:52
+#: ../gtkkeyboardsetup.glade:21
+msgid "Keyboard settings"
+msgstr "Ρυθμίσεις πληκτρολογίου"
+
+#: ../gtkkeyboardsetup.glade:53
 msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
 msgstr "Παρακαλούμε επιλέξτε τον προτιμώμενο τύπο και διάταξη πληκτρολογίου καθώς και τις ρυθμίσεις του πλήκτρου numlock και του SCIM."
 
-#: ../gtkkeyboardsetup.glade:145
+#: ../gtkkeyboardsetup.glade:147
 msgid "Enable SCIM when the system is started"
 msgstr "Ενεργοποίηση του SCIM κατά την εκκίνηση του συστήματος"
 
-#: ../gtkkeyboardsetup.glade:160
+#: ../gtkkeyboardsetup.glade:162
 msgid "Enable numlock when the system is started"
 msgstr "Ενεργοποίηση του πλήκτρου numlock κατά την εκκίνηση του συστήματος"
 
@@ -32,4 +36,7 @@ msgstr "Τύπος πληκτρολογίου"
 #: ../gtkkeyboardsetup:155
 msgid "Keyboard map"
 msgstr "Διάταξη πληκτρολογίου"
+
+#~ msgid "Keyboard layout"
+#~ msgstr "Διάταξη πληκτρολογίου"
 
