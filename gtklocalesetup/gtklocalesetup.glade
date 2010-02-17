@@ -20,6 +20,7 @@
     <property name="width_request">500</property>
     <property name="height_request">520</property>
     <property name="border_width">5</property>
+    <property name="title" translatable="yes">System language</property>
     <property name="window_position">center</property>
     <property name="icon_name">preferences-desktop-locale</property>
     <property name="type_hint">normal</property>
