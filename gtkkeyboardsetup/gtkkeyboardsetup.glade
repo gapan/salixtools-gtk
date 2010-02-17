@@ -62,7 +62,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="padding">10</property>
+                <property name="padding">20</property>
                 <property name="position">0</property>
               </packing>
             </child>
@@ -143,8 +143,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="scimcheckbutton">
-                <property name="label" translatable="yes">Enable SCIM when the system is started</property>
+              <object class="GtkCheckButton" id="numlockcheckbutton">
+                <property name="label" translatable="yes">Enable numlock when the system is started</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
@@ -158,8 +158,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="numlockcheckbutton">
-                <property name="label" translatable="yes">Enable numlock when the system is started</property>
+              <object class="GtkCheckButton" id="scimcheckbutton">
+                <property name="label" translatable="yes">Enable SCIM when the system is started</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
