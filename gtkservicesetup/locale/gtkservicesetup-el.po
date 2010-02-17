@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-14 19:02+0200\n"
+"POT-Creation-Date: 2010-02-17 13:46+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -13,7 +13,11 @@ msgstr ""
 "X-Poedit-Country: GREECE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../gtkservicesetup.glade:66
+#: ../gtkservicesetup.glade:35
+msgid "System services"
+msgstr "Υπηρεσίες συστήματος"
+
+#: ../gtkservicesetup.glade:67
 msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
 msgstr "Παρακαλούμε επιλέξτε τις υπηρεσίες συστήματος που θα ενεργοποιούνται με την εκκίνηση του συστήματος. Οι όποιες αλλαγές θα εφαρμοστούν όταν πιέσετε το πλήκτρο Εντάξει."
 
