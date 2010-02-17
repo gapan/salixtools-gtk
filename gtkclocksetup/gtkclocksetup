@@ -160,8 +160,8 @@ class GTKClockSetup:
 		self.spinbutton_hrs = builder.get_object('spinbutton_hrs')
 		self.spinbutton_min = builder.get_object('spinbutton_min')
 		self.spinbutton_sec = builder.get_object('spinbutton_sec')
-		self.continentcolumn.set_title('General area')
-		self.locationcolumn.set_title('Location')
+		self.continentcolumn.set_title(_('General area'))
+		self.locationcolumn.set_title(_('Location'))
 		
 		ntp = ntppresent()
 		self.ntpcheckbutton.set_sensitive(ntp)
