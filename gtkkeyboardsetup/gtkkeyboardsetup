@@ -83,11 +83,24 @@ def availablekeybtypes():
 	return keybtypes
 
 def availablekeymaps():
+	registered = []
 	keymaps = []
+	keymapfile = file('/usr/share/salixtools/keymaps')
+	while True:
+		line = keymapfile.readline()
+		if len(line) == 0:
+			break
+		if not line.startswith('#'):
+			registered.append(line.partition('|')[0])
+	keymapfile.close()
 	for type in availablekeybtypes():
-		for file in os.listdir(keymapdir+type):
-			if file.endswith('.map.gz'):
-				keymaps.append([type, file.replace('.map.gz', '')])
+		for filename in os.listdir(keymapdir+type):
+			if filename.endswith('.map.gz'):
+				map = filename.replace('.map.gz', '')
+				if map in registered:
+					keymaps.append([type, map])
+				else:
+					print _("WARNING: {0} keymap is not specified in keymaps list.").format(map)
 	keymaps.sort()
 	return keymaps
 
