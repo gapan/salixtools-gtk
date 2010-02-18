@@ -46,7 +46,7 @@ def servicedesc(service):
 	for i in filelist:
 		f = file('/etc/rc.d/desc.d/'+i)
 		while True:
-			line = f.readline().replace('\n', '')
+			line = f.readline()
 			if len(line) == 0:
 				break
 			elif 'rc.'+line.partition(':')[0] == service:
