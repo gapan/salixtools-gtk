@@ -20,11 +20,11 @@ def getkeymap():
 	keymap = 'us'
 	f = file('/etc/rc.d/rc.keymap')
 	while True:
-		line = f.readline().replace('\n', '').lstrip(' ')
+		line = f.readline().lstrip(' ')
 		if len(line) == 0:
 			break
 		if line.startswith('/usr/bin/loadkeys'):
-			keymap = line.lstrip('/usr/bin/loadkeys ').rstrip('.map').replace('-u ', '')
+			keymap = line.replace('\n', '').lstrip('/usr/bin/loadkeys ').rstrip('.map').replace('-u ', '')
 	f.close()
 	return keymap
 
