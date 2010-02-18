@@ -99,8 +99,8 @@ def availablekeymaps():
 				map = filename.replace('.map.gz', '')
 				if map in registered:
 					keymaps.append([type, map])
-				else:
-					print _("WARNING: {0} keymap is not specified in keymaps list.").format(map)
+				#else:
+				#	print "WARNING: {0} keymap is not specified in keymaps list.".format(map)
 	keymaps.sort()
 	return keymaps
 
