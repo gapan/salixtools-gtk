@@ -407,7 +407,7 @@
             <child>
               <object class="GtkLabel" id="label6">
                 <property name="visible">True</property>
-                <property name="label" translatable="yes">Please select the time zone:</property>
+                <property name="label" translatable="yes">Please select your time zone:</property>
               </object>
               <packing>
                 <property name="expand">False</property>
