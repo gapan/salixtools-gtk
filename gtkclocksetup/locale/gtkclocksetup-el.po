@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkclocksetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-18 23:43+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
+"Language-Team: Greek\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../gtkclocksetup.glade:7
+msgid "Date and time settings"
+msgstr "Ρυθμίσεις ημερομηνίας και ώρας"
+
+#: ../gtkclocksetup.glade:40
+msgid "Please select time and date settings"
+msgstr "Παρακαλώ επιλέξτε τις ρυθμίσεις ώρας και ημερομηνίας"
+
+#: ../gtkclocksetup.glade:72
+msgid "Keep clock synchronized with internet servers"
+msgstr "Το ρολόι να συγχρονίζεται αυτόματα με διακομιστές του διαδικτύου"
+
+#: ../gtkclocksetup.glade:97
+msgid "Synchronize now"
+msgstr "Συγχρονισμός τώρα"
+
+#: ../gtkclocksetup.glade:135
+#: ../gtkclocksetup:145
+#: ../gtkclocksetup:178
+msgid "Time zone:"
+msgstr "Ζώνη ώρας:"
+
+#: ../gtkclocksetup.glade:143
+msgid "Select time zone..."
+msgstr "Επιλογή ζώνης ώρας..."
+
+#: ../gtkclocksetup.glade:274
+msgid "Time:"
+msgstr "Ώρα:"
+
+#: ../gtkclocksetup.glade:308
+msgid "Date:"
+msgstr "Ημερομηνία:"
+
+#: ../gtkclocksetup.glade:393
+msgid "Select time zone"
+msgstr "Επιλογή ζώνης ώρας"
+
+#: ../gtkclocksetup.glade:410
+msgid "Please select your time zone:"
+msgstr "Παρακαλούμε επιλέξτε ζώνη ώρας:"
+
+#: ../gtkclocksetup:194
+msgid "General area"
+msgstr "Γενική περιοχή"
+
+#: ../gtkclocksetup:195
+msgid "Location"
+msgstr "Τοποθεσία"
+
