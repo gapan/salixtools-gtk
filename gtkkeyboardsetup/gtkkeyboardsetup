@@ -139,10 +139,7 @@ class GTKKeyboardSetup:
 			if i[0] == currentkeymap:
 				set = True
 				self.keymaplist.set_cursor(count)
-				if count > 5:
-					self.keymaplist.scroll_to_cell(count-4)
-				else:
-					self.keymaplist.scroll_to_cell(count)
+				self.keymaplist.scroll_to_cell(count)
 			count += 1
 		if set == False:
 			self.keymaplist.set_cursor(0)
