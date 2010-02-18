@@ -3,6 +3,7 @@
 import gtk
 import os
 import sys
+import datetime
 
 # Internationalization
 import locale
@@ -18,7 +19,7 @@ def continents():
 	continents = ['Africa', 'America', 'Antarctica', 'Asia', \
 			'Atlantic', 'Australia', 'Europe', 'Indian', \
 			'Pacific', 'US', 'Mexico', 'Chile', 'Mideast',
-			'Canada', 'Brazil', 'Arctic']
+			'Canada', 'Brazil', 'Arctic', 'Etc']
 	continents.sort()
 	return continents
 
@@ -76,8 +77,21 @@ def ntppresent():
 		state = False
 	return state
 
+def ntp_sync_now():
+	os.system('sh /etc/rc.d/rc.ntpd sync')
+
 class GTKClockSetup:
 	def on_button_ok_clicked(self, widget, data=None):
+		if self.ntpcheckbutton.get_active() == False:
+			year = "%04d" % (self.calendar.get_date()[0])
+			month = "%02d" % (self.calendar.get_date()[1])
+			day = "%02d" % (self.calendar.get_date()[2])
+			hour = "%02d" % self.spinbutton_hrs.get_value()
+			min = "%02d" % self.spinbutton_min.get_value()
+			sec = "%02d" % self.spinbutton_sec.get_value()
+			os.system('date +%Y%m%d -s "'+year+month+day+'"')
+			os.system('date +T -s "'+hour+':'+min+':'+sec+'"')
+			os.system('hwclock --systohc')
 		gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
@@ -88,7 +102,12 @@ class GTKClockSetup:
 
 	def on_button_timezone_clicked(self, widget, data=None):
 		self.tzwindow.show()
-	
+
+	def on_button_sync_now_clicked(self, widget, data=None):
+		ntp_sync_now()
+		self.update_calendar()
+		self.update_time()
+
 	def on_tz_button_ok_clicked(self, widget, data=None):
 		pos = self.continentlist.get_cursor()[0][0]
 		selectedcontinent = continents()[pos]
@@ -133,7 +152,18 @@ class GTKClockSetup:
 		self.spinbutton_hrs.set_sensitive(state)
 		self.spinbutton_min.set_sensitive(state)
 		self.spinbutton_sec.set_sensitive(state)
+		self.button_sync_now.set_sensitive(state)
 
+	def update_calendar(self):
+		now = datetime.datetime.now()
+		self.calendar.select_month(now.month, now.year)
+		self.calendar.select_day(now.day)
+
+	def update_time(self):
+		now = datetime.datetime.now()
+		self.spinbutton_hrs.set_value(now.hour)
+		self.spinbutton_min.set_value(now.minute)
+		self.spinbutton_sec.set_value(now.second)
 
 	def __init__(self):
 		builder = gtk.Builder()
@@ -143,6 +173,7 @@ class GTKClockSetup:
 			builder.add_from_file('/usr/share/salixtools/gtkclocksetup/gtkclocksetup.glade')
 		self.window = builder.get_object('gtkclocksetup')
 		self.tzwindow = builder.get_object('timezonewindow')
+		self.tzsyncwindow = builder.get_object('tzsyncwindow')
 		self.label_timezone = builder.get_object('label_timezone')
 		self.label_timezone.set_label(_('Time zone:')+'      '+currenttimezone()[0]+'/'+currenttimezone()[1])
 		self.continentlist = builder.get_object('continentlist')
@@ -165,7 +196,7 @@ class GTKClockSetup:
 		
 		ntp = ntppresent()
 		self.ntpcheckbutton.set_sensitive(ntp)
-		self.button_sync_now.set_sensitive(ntp)
+		self.button_sync_now.set_sensitive(not ntp)
 		ntp = ntpstate()
 		self.ntpcheckbutton.set_active(ntp)
 		self.on_ntpcheckbutton_toggled(self)
@@ -188,6 +219,9 @@ class GTKClockSetup:
 			count += 1
 		self.on_continentlist_cursor_changed(self)
 		builder.connect_signals(self)
+
+		self.update_calendar()
+		self.update_time()
 
 if __name__ == "__main__":
 	app = GTKClockSetup()
