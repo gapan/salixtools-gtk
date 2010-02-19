@@ -23,7 +23,7 @@
     </data>
   </object>
   <object class="GtkDialog" id="gtkusersetup">
-    <property name="width_request">550</property>
+    <property name="width_request">600</property>
     <property name="height_request">400</property>
     <property name="border_width">5</property>
     <property name="title" translatable="yes">User and group settings</property>
@@ -51,23 +51,23 @@
                     <property name="can_focus">True</property>
                     <property name="model">userliststore</property>
                     <child>
-                      <object class="GtkTreeViewColumn" id="namecolumn">
-                        <property name="title">name</property>
-                        <child>
-                          <object class="GtkCellRendererText" id="cellrenderertext1"/>
-                          <attributes>
-                            <attribute name="text">0</attribute>
-                          </attributes>
-                        </child>
-                      </object>
-                    </child>
-                    <child>
                       <object class="GtkTreeViewColumn" id="logincolumn">
                         <property name="title">login</property>
                         <child>
                           <object class="GtkCellRendererText" id="cellrenderertext2"/>
                           <attributes>
                             <attribute name="text">1</attribute>
+                          </attributes>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkTreeViewColumn" id="namecolumn">
+                        <property name="title">name</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="cellrenderertext1"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
                           </attributes>
                         </child>
                       </object>

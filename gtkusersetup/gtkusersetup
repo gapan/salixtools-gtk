@@ -4,6 +4,143 @@ import gtk
 import os
 import sys
 
+import pwd
+import grp
+
+class SystemUsers:
+	def all_users_data(self):
+		userdata = []
+		for i in pwd.getpwall():
+			login = i[0]
+			uid = i[2]
+			gid = i[3]
+			gecos = i[4]
+			homedir = i[5]
+			shell = i[6]
+			if ',' in gecos:
+				fullname = gecos.partition(',')[0]
+				officeinfo = gecos.partition(',')[2].partition(',')[0]
+				officeext = gecos.partition(',')[2].partition(',')[2].partition(',')[0]
+				homephone = gecos.partition(',')[2].partition(',')[2].partition(',')[2].partition(',')[0]
+			else:
+				fullname = gecos
+				officeinfo = ''
+				officeext = ''
+				homephone = ''
+			userdata.append([login, uid, gid, fullname, officeinfo, officeext, homephone, homedir, shell])
+		return userdata
+
+	def default_groups(self):
+		groups = []
+		groups_to_try = ('audio', 'video', 'cdrom', 'floppy', 'lp', 'plugdev', 'scanner', 'power', 'netdev')
+		for i in groups_to_try:
+			try: 
+				groups.append(grp.getgrnam(i)[0])
+			except KeyError:
+				pass
+
+		return groups
+	
+	def user_list(self, all = False):
+		userlist = []
+		for i in self.all_users_data():
+			if all == False:
+				if i[1] >= 500:
+					userlist.append(i)
+				elif i[1] == 0:
+					userlist.append(i)
+			else:
+				userlist.append(i)
+		return userlist
+
+	def get_uid(self, login):
+		uid = pwd.getpwnam(login)[2]
+		return uid
+
+	def get_gid(self, login):
+		gid = pwd.getpwname(login)[3]
+		return gid
+
+	def get_fullname(self, login):
+		for i in self.all_users_data():
+			if i[0] == login:
+				fullname = i[3]
+		return fullname
+
+	def get_officeinfo(self, login):
+		for i in self.all_users_data():
+			if i[0] == login:
+				officeinfo = i[4]
+		return officeinfo
+
+	def get_officeext(self, login):
+		for i in self.all_users_data():
+			if i[0] == login:
+				officeext = i[5]
+		return officeext
+
+	def get_homephone(self, login):
+		for i in self.all_users_data():
+			if i[0] == login:
+				homephone = i[6]
+		return homephone
+
+	def get_homedir(self, login):
+		homedir = pwd.getpwnam(login)[5]
+		return homedir
+
+	def get_shell(self, login):
+		shell = pwd.getpwnam(login)[6]
+		return shell
+	
+	def get_groups(self, login):
+		groups = []
+		allgroups = grp.getgrall()
+		for i in allgroups:
+			if login in i[3]:
+				groups.append(i[0])
+		return groups
+
+	def create_user(self, login, shell, group, groups, password):
+		os.system('useradd -s '+shell+' -g '+group+' -m -k /etc/skel -p'+password+' '+login)
+		for i in groups:
+			os.system('gpasswd -a '+login+' '+i+' > /dev/null')
+		os.system('echo '+login+':'+password+' | chpasswd')
+
+	def del_user(self, login, remove_home=False):
+		if remove_home == True:
+			homedir = self.get_homedir(login)
+			os.system('rm -rf '+homedir)
+		os.system('userdel '+login)
+
+	def set_uid(self, login, uid):
+		os.system('usermod -u '+str(uid)+' '+login)
+
+	def set_group(self, login, group):
+		os.system('usermod -g '+group+' '+login)
+
+	def set_fullname(self, login, fullname):
+		fullname = '"'+fullname+'"'
+		os.system('chfn -f '+fullname+' '+login)
+
+	def set_officeinfo(self, login, officeinfo):
+		officeinfo = '"'+officeinfo+'"'
+		os.system('chfn -r '+officeinfo+' '+login)
+
+	def set_officeext(self, login, officeext):
+		officeinfo = '"'+officeinfo+'"'
+		os.system('chfn -w '+officeext+' '+login)
+	
+	def set_homephone(self, login, homephone):
+		officeinfo = '"'+homephone+'"'
+		os.system('chfn -w '+homephone+' '+login)
+
+	def set_homedir(self, login, homedir):
+		os.system('usermod -d '+homedir+' '+login)
+
+	def set_shell(self, login, shell):
+		os.system('usermod -s '+shell+' '+login)
+
 # Internationalization
 import locale
 import gettext
@@ -21,6 +158,13 @@ class GTKUserSetup:
 	def gtk_main_quit(self, widget, data=None):
 		gtk.main_quit()
 
+	def on_checkbutton_showall_toggled(self, widget, data=None):
+		self.userliststore.clear()
+		status = self.checkbutton_showall.get_active()
+		u = SystemUsers()
+		for i in u.user_list(status):
+			self.userliststore.append([i[3], i[0], i[7], i[1]])
+
 	def __init__(self):
 		builder = gtk.Builder()
 		if os.path.exists('gtkusersetup.glade'):
@@ -33,11 +177,15 @@ class GTKUserSetup:
 		self.homedircolumn = builder.get_object('homedircolumn')
 		self.userlist = builder.get_object('userlist')
 		self.userliststore = builder.get_object('userliststore')
+		self.checkbutton_showall = builder.get_object('checkbutton_showall')
 		builder.connect_signals(self)
 
 		self.namecolumn.set_title(_('Name'))
 		self.logincolumn.set_title(_('Login name'))
 		self.homedircolumn.set_title(_('Home directory'))
+		
+		self.on_checkbutton_showall_toggled(self)
+		self.userlist.set_cursor(1)
 
 if __name__ == "__main__":
 	app = GTKUserSetup()
