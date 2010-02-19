@@ -205,12 +205,13 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="button_preferences">
-                    <property name="label" translatable="yes">gtk-preferences</property>
+                  <object class="GtkCheckButton" id="checkbutton_showall">
+                    <property name="label" translatable="yes">Show all users</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="use_stock">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="draw_indicator">True</property>
+                    <signal name="toggled" handler="on_checkbutton_showall_toggled"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
