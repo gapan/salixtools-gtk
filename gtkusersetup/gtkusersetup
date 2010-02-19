@@ -16,7 +16,6 @@ gtk.glade.textdomain("gtkusersetup")
 
 class GTKUserSetup:
 	def on_button_close_clicked(self, widget, data=None):
-		print userlist(True)
 		gtk.main_quit()
 
 	def gtk_main_quit(self, widget, data=None):
