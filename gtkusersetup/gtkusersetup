@@ -152,11 +152,14 @@ gtk.glade.bindtextdomain("gtkusersetup", "/usr/share/locale")
 gtk.glade.textdomain("gtkusersetup")
 
 class GTKUserSetup:
+	def gtk_main_quit(self, widget, data=None):
+		gtk.main_quit()
+
 	def on_button_close_clicked(self, widget, data=None):
 		gtk.main_quit()
 
-	def gtk_main_quit(self, widget, data=None):
-		gtk.main_quit()
+	def on_button_properties_clicked(self, widget, data=None):
+		self.user_properties_window.show()
 
 	def on_checkbutton_showall_toggled(self, widget, data=None):
 		self.userliststore.clear()
@@ -164,6 +167,12 @@ class GTKUserSetup:
 		u = SystemUsers()
 		for i in u.user_list(status):
 			self.userliststore.append([i[3], i[0], i[7], i[1]])
+
+	def on_button_user_properties_ok_clicked(self, widget, data=None):
+		self.user_properties_window.hide()
+
+	def on_button_user_properties_cancel_clicked(self, widget, data=None):
+		self.user_properties_window.hide()
 
 	def __init__(self):
 		builder = gtk.Builder()
@@ -178,6 +187,9 @@ class GTKUserSetup:
 		self.userlist = builder.get_object('userlist')
 		self.userliststore = builder.get_object('userliststore')
 		self.checkbutton_showall = builder.get_object('checkbutton_showall')
+
+		self.user_properties_window = builder.get_object('user_properties_window')
+
 		builder.connect_signals(self)
 
 		self.namecolumn.set_title(_('Name'))
