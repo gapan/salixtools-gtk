@@ -180,6 +180,9 @@ class GTKUserSetup:
 			builder.add_from_file('gtkusersetup.glade')
 		elif os.path.exists('/usr/share/salixtools/gtkusersetup/gtkusersetup.glade'):
 			builder.add_from_file('/usr/share/salixtools/gtkusersetup/gtkusersetup.glade')
+
+		# Main window objects
+		#
 		self.window = builder.get_object('gtkusersetup')
 		self.namecolumn = builder.get_object('namecolumn')
 		self.logincolumn = builder.get_object('logincolumn')
@@ -188,16 +191,41 @@ class GTKUserSetup:
 		self.userliststore = builder.get_object('userliststore')
 		self.checkbutton_showall = builder.get_object('checkbutton_showall')
 
-		self.user_properties_window = builder.get_object('user_properties_window')
-
-		builder.connect_signals(self)
-
 		self.namecolumn.set_title(_('Name'))
 		self.logincolumn.set_title(_('Login name'))
 		self.homedircolumn.set_title(_('Home directory'))
 		
 		self.on_checkbutton_showall_toggled(self)
 		self.userlist.set_cursor(1)
+
+		# User properties/Add user window objects
+		#
+		# Account tab
+		self.user_properties_window = builder.get_object('user_properties_window')
+		self.entry_login = builder.get_object('entry_login')
+		self.entry_fullname = builder.get_object('entry_fullname')
+		self.entry_password1 = builder.get_object('entry_password1')
+		self.entry_password2 = builder.get_object('entry_password2')
+		self.checkbutton_visible_password = builder.get_object('checkbutton_visible_password')
+
+		# Contact tab
+		self.entry_officeinfo = builder.get_object('entry_officeinfo')
+		self.entry_officeext = builder.get_object('entry_officeext')
+		self.entry_homephone = builder.get_object('entry_homephone')
+
+		# Groups tab
+		self.combobox_maingroup = builder.get_object('combobox_maingroup')
+		self.user_groups_list = builder.get_object('user_groups_list')
+		self.user_groupliststore = builder.get_object('user_groupliststore')
+
+		# Advanced tab
+		self.entry_homedir = builder.get_object('entry_homedir')
+		self.comboboxentry_shell = builder.get_object('comboboxentry_shell')
+		self.spinbutton_uid = builder.get_object('spinbutton_uid')
+		self.checkbutton_user_expiration = builder.get_object('checkbutton_user_expiration')
+		self.calendar_user_expiration = builder.get_object('calendar_user_expiration')
+
+		builder.connect_signals(self)
 
 if __name__ == "__main__":
 	app = GTKUserSetup()
