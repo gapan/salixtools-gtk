@@ -192,7 +192,7 @@ class GTKUserSetup:
 		self.checkbutton_showall = builder.get_object('checkbutton_showall')
 
 		self.namecolumn.set_title(_('Name'))
-		self.logincolumn.set_title(_('Login name'))
+		self.logincolumn.set_title(_('Username'))
 		self.homedircolumn.set_title(_('Home directory'))
 		
 		self.on_checkbutton_showall_toggled(self)
