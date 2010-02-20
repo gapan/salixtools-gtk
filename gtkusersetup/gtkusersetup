@@ -3,6 +3,7 @@
 import gtk
 import os
 import sys
+import commands
 
 import pwd
 import grp
@@ -92,7 +93,11 @@ class SystemUsers:
 	def get_shell(self, login):
 		shell = pwd.getpwnam(login)[6]
 		return shell
-	
+
+	def get_maingroup(self, login):
+		group = commands.getoutput('groups '+login).partition(' : ')[2].partition(' ')[0]
+		return group
+
 	def get_groups(self, login):
 		groups = []
 		allgroups = grp.getgrall()
@@ -105,7 +110,6 @@ class SystemUsers:
 		os.system('useradd -s '+shell+' -g '+group+' -m -k /etc/skel -p'+password+' '+login)
 		for i in groups:
 			os.system('gpasswd -a '+login+' '+i+' > /dev/null')
-		os.system('echo '+login+':'+password+' | chpasswd')
 
 	def del_user(self, login, remove_home=False):
 		if remove_home == True:
@@ -141,6 +145,17 @@ class SystemUsers:
 	def set_shell(self, login, shell):
 		os.system('usermod -s '+shell+' '+login)
 
+class SystemGroups:
+	def groups(self):
+		groups = []
+		for i in grp.getgrall():
+			groupname = i[0]
+			gid = i[2]
+			members = i[3]
+			groups.append([groupname, gid, members])
+		return groups
+
+
 # Internationalization
 import locale
 import gettext
@@ -159,8 +174,52 @@ class GTKUserSetup:
 		gtk.main_quit()
 
 	def on_button_properties_clicked(self, widget, data=None):
-		user = self.userlist.get_cursor()
-		print user
+		u = SystemUsers()
+		user = self.userlist.get_selection()
+		self.userliststore, iter = user.get_selected()
+		username = self.userliststore.get_value(iter, 1)
+		fullname = u.get_fullname(username)
+		officeinfo = u.get_officeinfo(username)
+		officeext = u.get_officeext(username)
+		homephone = u.get_homephone(username)
+		maingroup = u.get_maingroup(username)
+
+		# Set existing values
+		#
+		# Account tab
+		self.entry_login.set_text(username)
+		self.entry_login.set_sensitive(False)
+		self.entry_fullname.set_text(fullname)
+		self.label_passwordheader.set_label('<b>Set new password</b>')
+		
+		# Contact tab
+		self.entry_officeinfo.set_text(officeinfo)
+		self.entry_officeext.set_text(officeext)
+		self.entry_homephone.set_text(homephone)
+
+		# Groups tab
+		self.groupliststore.clear()
+		g = SystemGroups()
+		allgroups = g.groups()
+		count = 0
+		for i in allgroups:
+			self.groupliststore.append([i[0]])
+			if i[0] == maingroup:
+				print i[0]
+				self.combobox_maingroup.set_active(count)
+			count += 1
+		self.user_groupliststore.clear()
+		for i in allgroups:
+			group = i[0]
+			gid = i[1]
+			groupmembers = i[2]
+			if username in groupmembers:
+				ismember = True
+			else:
+				ismember = False
+			self.user_groupliststore.append([ismember, group, gid])
+
+
 		self.user_properties_window.show()
 
 	def on_checkbutton_showall_toggled(self, widget, data=None):
@@ -206,6 +265,7 @@ class GTKUserSetup:
 		self.user_properties_window = builder.get_object('user_properties_window')
 		self.entry_login = builder.get_object('entry_login')
 		self.entry_fullname = builder.get_object('entry_fullname')
+		self.label_passwordheader = builder.get_object('label_passwordheader')
 		self.entry_password1 = builder.get_object('entry_password1')
 		self.entry_password2 = builder.get_object('entry_password2')
 		self.checkbutton_visible_password = builder.get_object('checkbutton_visible_password')
@@ -217,8 +277,15 @@ class GTKUserSetup:
 
 		# Groups tab
 		self.combobox_maingroup = builder.get_object('combobox_maingroup')
-		self.user_groups_list = builder.get_object('user_groups_list')
+		self.groupliststore = builder.get_object('groupliststore')
+		self.user_grouplist = builder.get_object('user_grouplist')
 		self.user_groupliststore = builder.get_object('user_groupliststore')
+		self.column_user_membership_checked = builder.get_object('column_user_membership_checked')
+		self.column_user_membership_group = builder.get_object('column_user_membership_group')
+		self.column_user_membership_gid = builder.get_object('column_user_membership_gid')
+		self.column_user_membership_checked.set_title(_('Member'))
+		self.column_user_membership_group.set_title(_('Group'))
+		self.column_user_membership_gid.set_title('GID')
 
 		# Advanced tab
 		self.entry_homedir = builder.get_object('entry_homedir')

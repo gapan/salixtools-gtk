@@ -22,17 +22,31 @@
       </row>
     </data>
   </object>
+  <object class="GtkListStore" id="groupliststore">
+    <columns>
+      <!-- column-name group -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">this</col>
+      </row>
+    </data>
+  </object>
   <object class="GtkListStore" id="user_groupliststore">
     <columns>
       <!-- column-name checked -->
       <column type="gboolean"/>
       <!-- column-name group -->
       <column type="gchararray"/>
+      <!-- column-name gid -->
+      <column type="gint"/>
     </columns>
     <data>
       <row>
         <col id="0">False</col>
         <col id="1" translatable="yes">this</col>
+        <col id="2">200</col>
       </row>
     </data>
   </object>
@@ -373,10 +387,10 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="label4">
+                  <object class="GtkLabel" id="label_passwordheader">
                     <property name="visible">True</property>
                     <property name="xalign">0</property>
-                    <property name="label" translatable="yes">&lt;b&gt;Password&lt;/b&gt;</property>
+                    <property name="label">&lt;b&gt;Password&lt;/b&gt;</property>
                     <property name="use_markup">True</property>
                   </object>
                   <packing>
@@ -620,6 +634,13 @@
                     <child>
                       <object class="GtkComboBox" id="combobox_maingroup">
                         <property name="visible">True</property>
+                        <property name="model">groupliststore</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="cellrenderertext6"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
                       </object>
                       <packing>
                         <property name="position">1</property>
@@ -651,14 +672,14 @@
                     <property name="vscrollbar_policy">automatic</property>
                     <property name="shadow_type">in</property>
                     <child>
-                      <object class="GtkTreeView" id="user_groups_list">
+                      <object class="GtkTreeView" id="user_grouplist">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="model">user_groupliststore</property>
-                        <property name="headers_visible">False</property>
                         <property name="headers_clickable">False</property>
+                        <property name="hover_selection">True</property>
                         <child>
-                          <object class="GtkTreeViewColumn" id="treeviewcolumn1">
+                          <object class="GtkTreeViewColumn" id="column_user_membership_checked">
                             <property name="title">checked</property>
                             <child>
                               <object class="GtkCellRendererToggle" id="cellrenderertext4"/>
@@ -669,12 +690,23 @@
                           </object>
                         </child>
                         <child>
-                          <object class="GtkTreeViewColumn" id="treeviewcolumn2">
+                          <object class="GtkTreeViewColumn" id="column_user_membership_group">
                             <property name="title">group</property>
                             <child>
                               <object class="GtkCellRendererText" id="cellrenderertext5"/>
                               <attributes>
                                 <attribute name="text">1</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="column_user_membership_gid">
+                            <property name="title">gid</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="cellrenderertext7"/>
+                              <attributes>
+                                <attribute name="text">2</attribute>
                               </attributes>
                             </child>
                           </object>
