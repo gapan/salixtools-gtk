@@ -159,6 +159,8 @@ class GTKUserSetup:
 		gtk.main_quit()
 
 	def on_button_properties_clicked(self, widget, data=None):
+		user = self.userlist.get_cursor()
+		print user
 		self.user_properties_window.show()
 
 	def on_checkbutton_showall_toggled(self, widget, data=None):
