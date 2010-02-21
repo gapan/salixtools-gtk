@@ -196,7 +196,7 @@ class GTKUserSetup:
 		self.entry_login.set_sensitive(False)
 		self.entry_fullname.set_text(fullname)
 		self.label_passwordheader.set_label('<b>Set new password</b>')
-		
+
 		# Contact tab
 		self.entry_officeinfo.set_text(officeinfo)
 		self.entry_officeext.set_text(officeext)
@@ -253,6 +253,15 @@ class GTKUserSetup:
 					i[0] = 1
 				else:
 					i[0] = 0
+
+	def on_checkbutton_visible_password_toggled(self, widget, data=None):
+		state = self.entry_password1.get_visibility()
+		if state == False:
+			self.entry_password1.set_visibility(True)
+			self.entry_password2.set_visibility(True)
+		else:
+			self.entry_password1.set_visibility(False)
+			self.entry_password2.set_visibility(False)
 
 	def __init__(self):
 		builder = gtk.Builder()
