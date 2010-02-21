@@ -223,15 +223,7 @@ class GTKUserSetup:
 
 		# Advanced tab
 		self.entry_homedir.set_text(homedir)
-		shells = ['/bin/bash', '/bin/sh', '/bin/false']
-		self.shellliststore.clear()
-		count = 0
-		### FIX ME ### 
-		for i in shells:
-			self.shellliststore.append([i])
-			if i == shell:
-				self.comboboxentry_shell.set_active(count)
-			count += 1
+		self.entry_shell.set_text(shell)
 
 		self.user_properties_window.show()
 
@@ -318,11 +310,10 @@ class GTKUserSetup:
 
 		# Advanced tab
 		self.entry_homedir = builder.get_object('entry_homedir')
-		self.comboboxentry_shell = builder.get_object('comboboxentry_shell')
+		self.entry_shell = builder.get_object('entry_shell')
 		self.spinbutton_uid = builder.get_object('spinbutton_uid')
 		self.checkbutton_user_expiration = builder.get_object('checkbutton_user_expiration')
 		self.calendar_user_expiration = builder.get_object('calendar_user_expiration')
-		self.shellliststore = builder.get_object('shellliststore')
 		builder.connect_signals(self)
 
 if __name__ == "__main__":
