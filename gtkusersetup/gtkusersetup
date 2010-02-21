@@ -145,8 +145,7 @@ class SystemUsers:
 	def set_shell(self, login, shell):
 		os.system('usermod -s '+shell+' '+login)
 
-class SystemGroups:
-	def groups(self):
+	def get_all_groups(self):
 		groups = []
 		for i in grp.getgrall():
 			groupname = i[0]
@@ -183,9 +182,14 @@ class GTKUserSetup:
 		officeext = u.get_officeext(username)
 		homephone = u.get_homephone(username)
 		maingroup = u.get_maingroup(username)
+		homedir = u.get_homedir(username)
+		shell = u.get_shell(username)
 
+		#
 		# Set existing values
 		#
+		self.notebook_userproperties.set_current_page(0)
+		
 		# Account tab
 		self.entry_login.set_text(username)
 		self.entry_login.set_sensitive(False)
@@ -198,14 +202,12 @@ class GTKUserSetup:
 		self.entry_homephone.set_text(homephone)
 
 		# Groups tab
+		allgroups = u.get_all_groups()
 		self.groupliststore.clear()
-		g = SystemGroups()
-		allgroups = g.groups()
 		count = 0
 		for i in allgroups:
 			self.groupliststore.append([i[0]])
 			if i[0] == maingroup:
-				print i[0]
 				self.combobox_maingroup.set_active(count)
 			count += 1
 		self.user_groupliststore.clear()
@@ -217,8 +219,19 @@ class GTKUserSetup:
 				ismember = True
 			else:
 				ismember = False
-			self.user_groupliststore.append([ismember, group, gid])
+			self.user_groupliststore.append([ismember, group, gid, False])
 
+		# Advanced tab
+		self.entry_homedir.set_text(homedir)
+		shells = ['/bin/bash', '/bin/sh', '/bin/false']
+		self.shellliststore.clear()
+		count = 0
+		### FIX ME ### 
+		for i in shells:
+			self.shellliststore.append([i])
+			if i == shell:
+				self.comboboxentry_shell.set_active(count)
+			count += 1
 
 		self.user_properties_window.show()
 
@@ -234,6 +247,18 @@ class GTKUserSetup:
 
 	def on_button_user_properties_cancel_clicked(self, widget, data=None):
 		self.user_properties_window.hide()
+
+	def on_group_checkbox_toggled(self,widget, data=None):
+		selectedgroup = self.user_grouplist.get_selection()
+		self.user_groupliststore, iter = selectedgroup.get_selected()
+		selectedgroupname = self.user_groupliststore.get_value(iter, 1)
+		for i in self.user_groupliststore:
+			if i[1] == selectedgroupname:
+				i[3] = True
+				if i[0] == 0:
+					i[0] = 1
+				else:
+					i[0] = 0
 
 	def __init__(self):
 		builder = gtk.Builder()
@@ -259,8 +284,12 @@ class GTKUserSetup:
 		self.on_checkbutton_showall_toggled(self)
 		self.userlist.set_cursor(1)
 
+		#
 		# User properties/Add user window objects
 		#
+
+		self.notebook_userproperties = builder.get_object('notebook_userproperties')
+
 		# Account tab
 		self.user_properties_window = builder.get_object('user_properties_window')
 		self.entry_login = builder.get_object('entry_login')
@@ -293,7 +322,7 @@ class GTKUserSetup:
 		self.spinbutton_uid = builder.get_object('spinbutton_uid')
 		self.checkbutton_user_expiration = builder.get_object('checkbutton_user_expiration')
 		self.calendar_user_expiration = builder.get_object('calendar_user_expiration')
-
+		self.shellliststore = builder.get_object('shellliststore')
 		builder.connect_signals(self)
 
 if __name__ == "__main__":

@@ -13,23 +13,21 @@
       <!-- column-name UID -->
       <column type="gint"/>
     </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">Rich Stallman</col>
-        <col id="1" translatable="yes">rich</col>
-        <col id="2" translatable="yes">/home/rich</col>
-        <col id="3">0</col>
-      </row>
-    </data>
   </object>
   <object class="GtkListStore" id="groupliststore">
     <columns>
       <!-- column-name group -->
       <column type="gchararray"/>
     </columns>
+  </object>
+  <object class="GtkListStore" id="shellliststore">
+    <columns>
+      <!-- column-name shell -->
+      <column type="gchararray"/>
+    </columns>
     <data>
       <row>
-        <col id="0" translatable="yes">this</col>
+        <col id="0" translatable="yes">/bin/sh</col>
       </row>
     </data>
   </object>
@@ -41,14 +39,9 @@
       <column type="gchararray"/>
       <!-- column-name gid -->
       <column type="gint"/>
+      <!-- column-name changed -->
+      <column type="gboolean"/>
     </columns>
-    <data>
-      <row>
-        <col id="0">False</col>
-        <col id="1" translatable="yes">this</col>
-        <col id="2">200</col>
-      </row>
-    </data>
   </object>
   <object class="GtkDialog" id="gtkusersetup">
     <property name="width_request">600</property>
@@ -309,7 +302,7 @@
         <property name="visible">True</property>
         <property name="spacing">2</property>
         <child>
-          <object class="GtkNotebook" id="notebook1">
+          <object class="GtkNotebook" id="notebook_userproperties">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <child>
@@ -682,7 +675,9 @@
                           <object class="GtkTreeViewColumn" id="column_user_membership_checked">
                             <property name="title">checked</property>
                             <child>
-                              <object class="GtkCellRendererToggle" id="cellrenderertext4"/>
+                              <object class="GtkCellRendererToggle" id="cellrenderertext4">
+                                <signal name="toggled" handler="on_group_checkbox_toggled"/>
+                              </object>
                               <attributes>
                                 <attribute name="active">0</attribute>
                               </attributes>
@@ -805,6 +800,13 @@
                     <child>
                       <object class="GtkComboBoxEntry" id="comboboxentry_shell">
                         <property name="visible">True</property>
+                        <property name="model">shellliststore</property>
+                        <child>
+                          <object class="GtkCellRendererText" id="cellrenderertext8"/>
+                          <attributes>
+                            <attribute name="text">0</attribute>
+                          </attributes>
+                        </child>
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
