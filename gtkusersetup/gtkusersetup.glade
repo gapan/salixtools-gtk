@@ -284,6 +284,7 @@
     <property name="window_position">center</property>
     <property name="icon_name">document-properties</property>
     <property name="type_hint">normal</property>
+    <property name="transient_for">gtkusersetup</property>
     <property name="has_separator">False</property>
     <signal name="destroy" handler="on_button_user_properties_cancel_clicked"/>
     <child internal-child="vbox">
