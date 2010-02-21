@@ -184,6 +184,7 @@ class GTKUserSetup:
 		maingroup = u.get_maingroup(username)
 		homedir = u.get_homedir(username)
 		shell = u.get_shell(username)
+		uid = u.get_uid(username)
 
 		#
 		# Set existing values
@@ -224,6 +225,7 @@ class GTKUserSetup:
 		# Advanced tab
 		self.entry_homedir.set_text(homedir)
 		self.entry_shell.set_text(shell)
+		self.spinbutton_uid.set_value(uid)
 
 		self.user_properties_window.show()
 
