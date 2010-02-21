@@ -106,6 +106,14 @@ class SystemUsers:
 				groups.append(i[0])
 		return groups
 
+	def get_expiry_date(self, login):
+		expirydays = commands.getoutput('grep -e "^'+login+':.*$" /etc/shadow | cut -d : -f 8')
+		if expirydays == '':
+			expirydate = 'None'
+		else:
+			expirydate = commands.getoutput('date -u --date "Jan 1, 1970 + '+expirydays+' days" +%Y-%m-%d')
+		return expirydate
+
 	def create_user(self, login, shell, group, groups, password):
 		os.system('useradd -s '+shell+' -g '+group+' -m -k /etc/skel -p'+password+' '+login)
 		for i in groups:
@@ -185,6 +193,7 @@ class GTKUserSetup:
 		homedir = u.get_homedir(username)
 		shell = u.get_shell(username)
 		uid = u.get_uid(username)
+		expirydate = u.get_expiry_date(username)
 
 		#
 		# Set existing values
@@ -226,7 +235,7 @@ class GTKUserSetup:
 		self.entry_homedir.set_text(homedir)
 		self.entry_shell.set_text(shell)
 		self.spinbutton_uid.set_value(uid)
-
+	
 		self.user_properties_window.show()
 
 	def on_checkbutton_showall_toggled(self, widget, data=None):
