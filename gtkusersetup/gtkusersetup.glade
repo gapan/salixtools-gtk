@@ -834,6 +834,7 @@
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
                         <property name="draw_indicator">True</property>
+                        <signal name="toggled" handler="on_checkbutton_user_expiration_toggled"/>
                       </object>
                       <packing>
                         <property name="position">0</property>
