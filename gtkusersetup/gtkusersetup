@@ -4,7 +4,7 @@ import gtk
 import os
 import sys
 import commands
-
+import datetime
 import pwd
 import grp
 
@@ -107,12 +107,20 @@ class SystemUsers:
 		return groups
 
 	def get_expiry_date(self, login):
+		now = datetime.datetime.now()
 		expirydays = commands.getoutput('grep -e "^'+login+':.*$" /etc/shadow | cut -d : -f 8')
 		if expirydays == '':
-			expirydate = 'None'
+			state = False
+			year = now.year
+			month = now.month
+			day = now.day
 		else:
+			state = True
 			expirydate = commands.getoutput('date -u --date "Jan 1, 1970 + '+expirydays+' days" +%Y-%m-%d')
-		return expirydate
+			year = int(expirydate.partition('-')[0])
+			month = int(expirydate.partition('-')[2].partition('-')[0])-1
+			day = int(expirydate.partition('-')[2].partition('-')[2].partition('-')[0])
+		return state, year, month, day
 
 	def create_user(self, login, shell, group, groups, password):
 		os.system('useradd -s '+shell+' -g '+group+' -m -k /etc/skel -p'+password+' '+login)
@@ -235,12 +243,14 @@ class GTKUserSetup:
 		self.entry_homedir.set_text(homedir)
 		self.entry_shell.set_text(shell)
 		self.spinbutton_uid.set_value(uid)
-		if expirydate == "None":
+		if expirydate[0] == False:
 			self.checkbutton_user_expiration.set_active(False)
 			self.calendar_user_expiration.set_sensitive(False)
 		else:
 			self.checkbutton_user_expiration.set_active(True)
 			self.calendar_user_expiration.set_sensitive(True)
+		self.calendar_user_expiration.select_month(expirydate[2], expirydate[1])
+		self.calendar_user_expiration.select_day(expirydate[3])
 
 		self.user_properties_window.show()
 
