@@ -317,10 +317,15 @@ class GTKUserSetup:
 
 		if not new_password1 == "":
 			if new_password1 == new_password2:
-				bool_set_password = True
+				if len(new_password1) < 5:
+					bool_raise_error = True
+					self.label_properties_error_msg.set_label(_("Password is too small. It has to be at least 5 characters long."))
+					self.properties_error_window.show()
+				else:
+					bool_set_password = True
 			else:
 				bool_raise_error = True
-				self.label_properties_error_msg.set_label(_("Passwords don't match"))
+				self.label_properties_error_msg.set_label(_("Passwords don't match."))
 				self.properties_error_window.show()
 	
 		if not new_officeinfo == officeinfo:
@@ -347,7 +352,7 @@ class GTKUserSetup:
 				bool_set_shell = True
 			else:
 				bool_raise_error = True
-				self.label_properties_error_msg.set_label(_("Shell does not exist"))
+				self.label_properties_error_msg.set_label(_("Shell does not exist."))
 				self.properties_error_window.show()
 
 		if not new_uid == uid:
@@ -356,7 +361,7 @@ class GTKUserSetup:
 				if new_uid == i[1]:
 					bool_raise_error = True
 					bool_set_uid = False
-					self.label_properties_error_msg.set_label(_("UID {0} is assigned to another user").format(new_uid))
+					self.label_properties_error_msg.set_label(_("UID {0} is assigned to another user.").format(new_uid))
 					self.properties_error_window.show()
 					break
 
