@@ -120,8 +120,9 @@ class GTKClockSetup:
 	def on_tz_button_cancel_clicked(self, widget, data=None):
 		self.tzwindow.hide()
 
-	def on_timezonewindow_close(self, widget, data=None):
+	def on_timezonewindow_delete_event(self, widget, event):
 		self.tzwindow.hide()
+		return True
 
 	def on_continentlist_cursor_changed(self, widget, data=None):
 		pos = self.continentlist.get_cursor()[0][0]
