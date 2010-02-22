@@ -287,6 +287,7 @@
     <property name="transient_for">gtkusersetup</property>
     <property name="has_separator">False</property>
     <signal name="destroy" handler="on_button_user_properties_cancel_clicked"/>
+    <signal name="delete_event" handler="on_user_properties_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox2">
         <property name="visible">True</property>
@@ -932,12 +933,12 @@
     <property name="border_width">5</property>
     <property name="title" translatable="yes">Error!</property>
     <property name="resizable">False</property>
-    <property name="destroy_with_parent">True</property>
+    <property name="icon_name">dialog-error</property>
     <property name="type_hint">normal</property>
     <property name="urgency_hint">True</property>
     <property name="transient_for">user_properties_window</property>
     <property name="has_separator">False</property>
-    <signal name="close" handler="on_button_error_window_ok_clicked"/>
+    <signal name="delete_event" handler="on_properties_error_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox3">
         <property name="visible">True</property>

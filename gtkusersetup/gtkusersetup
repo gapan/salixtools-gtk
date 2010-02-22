@@ -416,8 +416,16 @@ class GTKUserSetup:
 		state = self.checkbutton_user_expiration.get_active()
 		self.calendar_user_expiration.set_sensitive(state)
 
+	def on_user_properties_window_delete_event(self, widget, event):
+		self.user_properties_window.hide()
+		return True
+
 	def on_button_error_window_ok_clicked(self, widget, data=None):
 		self.properties_error_window.hide()
+
+	def on_properties_error_window_delete_event(self, widget, event):
+		self.properties_error_window.hide()
+		return True
 
 	def __init__(self):
 		builder = gtk.Builder()
