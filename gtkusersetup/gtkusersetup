@@ -133,11 +133,20 @@ class SystemUsers:
 			os.system('rm -rf '+homedir)
 		os.system('userdel '+login)
 
+	def set_password(self, login, password):
+		os.system('echo "'+login+':'+password+'" | chpasswd')
+
 	def set_uid(self, login, uid):
 		os.system('usermod -u '+str(uid)+' '+login)
 
 	def set_group(self, login, group):
 		os.system('usermod -g '+group+' '+login)
+
+	def add_user_to_group(self, login, group):
+		os.system('gpasswd -a '+login+' '+group+' > /dev/null')
+
+	def remove_user_from_group(self, login, group):
+		os.system('gpasswd -d '+login+' '+group+' > /dev/null')
 
 	def set_fullname(self, login, fullname):
 		fullname = '"'+fullname+'"'
@@ -148,18 +157,25 @@ class SystemUsers:
 		os.system('chfn -r '+officeinfo+' '+login)
 
 	def set_officeext(self, login, officeext):
-		officeinfo = '"'+officeinfo+'"'
+		officeext = '"'+officeext+'"'
 		os.system('chfn -w '+officeext+' '+login)
 	
 	def set_homephone(self, login, homephone):
-		officeinfo = '"'+homephone+'"'
-		os.system('chfn -w '+homephone+' '+login)
+		homephone = '"'+homephone+'"'
+		os.system('chfn -h '+homephone+' '+login)
 
 	def set_homedir(self, login, homedir):
 		os.system('usermod -d '+homedir+' '+login)
 
 	def set_shell(self, login, shell):
 		os.system('usermod -s '+shell+' '+login)
+
+	def set_expiry_date(self, login, year, month, day):
+		expirydate = str(year)+'-'+str(month)+'-'+str(day)
+		os.system('usermod -e '+expirydate+' '+login)
+
+	def set_no_expiry_date(self, login):
+		os.system('usermod -e "" '+login)
 
 	def get_all_groups(self):
 		groups = []
@@ -262,7 +278,115 @@ class GTKUserSetup:
 			self.userliststore.append([i[3], i[0], i[7], i[1]])
 
 	def on_button_user_properties_ok_clicked(self, widget, data=None):
-		self.user_properties_window.hide()
+		u = SystemUsers()
+		username = self.entry_login.get_text()
+		fullname = u.get_fullname(username)
+		officeinfo = u.get_officeinfo(username)
+		officeext = u.get_officeext(username)
+		homephone = u.get_homephone(username)
+		maingroup = u.get_maingroup(username)
+		homedir = u.get_homedir(username)
+		shell = u.get_shell(username)
+		uid = u.get_uid(username)
+		expiry_date = u.get_expiry_date(username)
+		
+		new_fullname = self.entry_fullname.get_text()
+		new_password1 = self.entry_password1.get_text()
+		new_password2 = self.entry_password2.get_text()
+		new_officeinfo = self.entry_officeinfo.get_text()
+		new_officeext = self.entry_officeext.get_text()
+		new_homephone = self.entry_homephone.get_text()
+		new_maingroup = self.combobox_maingroup.get_active_text()
+		new_shell = self.entry_shell.get_text()
+		new_uid = self.spinbutton_uid.get_value_as_int()
+		new_expiry_date = self.checkbutton_user_expiration.get_active()
+		
+		bool_raise_error = False
+		bool_set_fullname = False
+		bool_set_password = False
+		bool_set_officeinfo = False
+		bool_set_officeext = False
+		bool_set_homephone = False
+		bool_set_maingroup = False
+		bool_set_shell = False
+		bool_set_uid = False
+		bool_set_expirydate = False
+
+		if not new_fullname == fullname:
+			u.set_fullname(username, new_fullname)
+
+		if not new_password1 == "":
+			if new_password1 == new_password2:
+				bool_set_password = True
+			else:
+				bool_raise_error = True
+				self.label_properties_error_msg.set_label(_("Passwords don't match"))
+				self.properties_error_window.show()
+	
+		if not new_officeinfo == officeinfo:
+			bool_set_officeinfo = True
+
+		if not new_officeext == officeext:
+			bool_set_officeext = True
+
+		if not new_homephone == homephone:
+			bool_set_homephone = True
+
+		if not new_maingroup == maingroup:
+			bool_set_maingroup = True
+
+		for i in self.user_groupliststore:
+			if i[3] == True:
+				if i[0] == True:
+					u.add_user_to_group(username, i[1])
+				else:
+					u.remove_user_from_group(username, i[1])
+
+		if not new_shell == shell:
+			if os.path.exists(new_shell):
+				bool_set_shell = True
+			else:
+				bool_raise_error = True
+				self.label_properties_error_msg.set_label(_("Shell does not exist"))
+				self.properties_error_window.show()
+
+		if not new_uid == uid:
+			bool_set_uid = True
+			for i in u.all_users_data():
+				if new_uid == i[1]:
+					bool_raise_error = True
+					bool_set_uid = False
+					self.label_properties_error_msg.set_label(_("UID {0} is assigned to another user").format(new_uid))
+					self.properties_error_window.show()
+					break
+
+		if bool_raise_error == False:
+			if bool_set_fullname == True:
+				u.set_fullname(username, new_fullname)
+			if bool_set_password == True:
+				u.set_password(username, new_password1)
+			if bool_set_officeinfo == True:
+				u.set_officeinfo(username, new_officeinfo)
+			if bool_set_officeext == True:
+				u.set_officeext(username, new_officeext)
+			if bool_set_homephone == True:
+				u.set_homephone(username, new_homephone)
+			if bool_set_maingroup == True:
+				u.set_group(username, new_maingroup)
+			if bool_set_shell == True:
+				u.set_shell(username, new_shell)
+			if bool_set_uid == True:
+				u.set_uid(username, new_uid)
+			if new_expiry_date == True:
+				year = int("%04d" % (self.calendar_user_expiration.get_date()[0]))
+				month = int("%02d" % (self.calendar_user_expiration.get_date()[1]))+1
+				day = int("%02d" % (self.calendar_user_expiration.get_date()[2]))
+				u.set_expiry_date(username, year, month, day)
+			else:
+				if expiry_date[0] == True:
+					u.set_no_expiry_date(username)
+			self.user_properties_window.hide()
+			self.on_checkbutton_showall_toggled(self)
 
 	def on_button_user_properties_cancel_clicked(self, widget, data=None):
 		self.user_properties_window.hide()
@@ -287,10 +411,13 @@ class GTKUserSetup:
 		else:
 			self.entry_password1.set_visibility(False)
 			self.entry_password2.set_visibility(False)
-	
+
 	def on_checkbutton_user_expiration_toggled(self, widget, data=None):
 		state = self.checkbutton_user_expiration.get_active()
 		self.calendar_user_expiration.set_sensitive(state)
+
+	def on_button_error_window_ok_clicked(self, widget, data=None):
+		self.properties_error_window.hide()
 
 	def __init__(self):
 		builder = gtk.Builder()
@@ -299,6 +426,7 @@ class GTKUserSetup:
 		elif os.path.exists('/usr/share/salixtools/gtkusersetup/gtkusersetup.glade'):
 			builder.add_from_file('/usr/share/salixtools/gtkusersetup/gtkusersetup.glade')
 
+		#
 		# Main window objects
 		#
 		self.window = builder.get_object('gtkusersetup')
@@ -319,11 +447,10 @@ class GTKUserSetup:
 		#
 		# User properties/Add user window objects
 		#
-
 		self.notebook_userproperties = builder.get_object('notebook_userproperties')
-
-		# Account tab
 		self.user_properties_window = builder.get_object('user_properties_window')
+		
+		# Account tab
 		self.entry_login = builder.get_object('entry_login')
 		self.entry_fullname = builder.get_object('entry_fullname')
 		self.label_passwordheader = builder.get_object('label_passwordheader')
@@ -354,6 +481,14 @@ class GTKUserSetup:
 		self.spinbutton_uid = builder.get_object('spinbutton_uid')
 		self.checkbutton_user_expiration = builder.get_object('checkbutton_user_expiration')
 		self.calendar_user_expiration = builder.get_object('calendar_user_expiration')
+	
+		#	
+		# Error message for user properties window
+		#
+		self.properties_error_window = builder.get_object('properties_error_window')
+		self.button_error_window_ok = builder.get_object('button_error_window_ok')
+		self.label_properties_error_msg = builder.get_object('label_properties_error_msg')
+
 		builder.connect_signals(self)
 
 if __name__ == "__main__":
