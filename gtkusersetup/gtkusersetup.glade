@@ -36,7 +36,7 @@
     <property name="width_request">600</property>
     <property name="height_request">400</property>
     <property name="border_width">5</property>
-    <property name="title" translatable="yes">User and group settings</property>
+    <property name="title" translatable="yes">User settings</property>
     <property name="window_position">center</property>
     <property name="icon_name">user-online</property>
     <property name="type_hint">normal</property>
