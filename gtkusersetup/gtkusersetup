@@ -58,8 +58,8 @@ class SystemUsers:
 		uid = pwd.getpwnam(login)[2]
 		return uid
 
-	def get_gid(self, login):
-		gid = pwd.getpwname(login)[3]
+	def get_gid(self, group):
+		gid = grp.getgrnam(group)[2]
 		return gid
 
 	def get_fullname(self, login):
@@ -127,17 +127,26 @@ class SystemUsers:
 		for i in groups:
 			self.add_user_to_group(login, i)
 
+	def create_group(self, groupname, gid):
+		os.system('groupadd -g '+str(gid)+' '+groupname)
+
 	def del_user(self, login, remove_home=False):
 		if remove_home == True:
 			homedir = self.get_homedir(login)
 			os.system('rm -rf '+homedir)
 		os.system('userdel '+login)
 
+	def del_group(self, groupname):
+		os.system('groupdel '+groupname)
+	
 	def set_password(self, login, password):
 		os.system('echo "'+login+':'+password+'" | chpasswd')
 
 	def set_uid(self, login, uid):
 		os.system('usermod -u '+str(uid)+' '+login)
+
+	def set_gid(self, group, gid):
+		os.system('groupmod -g '+str(gid)+' '+group)
 
 	def set_group(self, login, group):
 		os.system('usermod -g '+group+' '+login)
@@ -186,6 +195,13 @@ class SystemUsers:
 			groups.append([groupname, gid, members])
 		return groups
 
+	def user_in_group(self, login, group):
+		if group in self.get_groups(login):
+			member = True
+		else:
+			member = False
+		return member
+
 	def check_password(self, password1, password2):
 		if password1 == password2:
 			if len(password1) < 5:
@@ -203,6 +219,7 @@ class SystemUsers:
 		return setpassword, msg
 
 	def check_username(self, username):
+		u = SystemUsers()
 		setusername = True
 		msg = ''
 		if username == '':
@@ -241,7 +258,23 @@ class SystemUsers:
 					setusername = False
 					msg = _("Username can consist solely of letters, numbers, dashes and underscores.")
 					break
+		for i in u.user_list():
+			if username == i[0]:
+				setusername = False
+				msg = _("Username \"{0}\" already exists.").format(username)
 		return setusername, msg
+
+	def check_groupname(self, groupname):
+		g = SystemUsers()
+		setgroupname = True
+		msg = ''
+		for i in g.get_all_groups():
+			if groupname == i[0]:
+				setgroupname = False
+				msg = _("Group name \"{0}\" already exists.").format(groupname)
+				break
+		return setgroupname, msg
+
 
 	def check_shell(self, shell):
 		if os.path.exists(shell):
@@ -262,6 +295,16 @@ class SystemUsers:
 				msg = _("UID {0} is assigned to another user.").format(uid)
 				break
 		return setuid, msg
+
+	def check_gid(self, gid):
+		setgid = True
+		msg = ''
+		for i in grp.getgrall():
+			if i[2] == gid:
+				setgid = False
+				msg = _("GID {0} is assigned to another group.").format(gid)
+				break
+		return setgid, msg
 
 # Internationalization
 import locale
@@ -299,7 +342,7 @@ class GTKUserSetup:
 		#
 		# Set existing values
 		#
-		self.user_properties_window.set_title(_("User properties for {0}").format(username))
+		self.user_properties_window.set_title(_("User account properties for {0}").format(username))
 		self.notebook_userproperties.set_current_page(0)
 		
 		# Account tab
@@ -329,7 +372,7 @@ class GTKUserSetup:
 			group = i[0]
 			gid = i[1]
 			groupmembers = i[2]
-			if username in groupmembers:
+			if u.user_in_group(username, group):
 				ismember = True
 			else:
 				ismember = False
@@ -421,6 +464,10 @@ class GTKUserSetup:
 		self.label_delete_user.set_text(_("You are about to delete user account \"{0}\" from your system. Do you really want to continue?".format(username)))
 		self.checkbutton_delete_user_homedir.set_label(_("Completely remove user's home directory ({0}) with all its contents").format(u.get_homedir(username)))
 		self.delete_user_window.show()
+
+	def on_button_managegroups_clicked(self, widget):
+		self.refresh_group_list()
+		self.group_settings_window.show()
 
 	def on_checkbutton_showall_toggled(self, widget, data=None):
 		self.userliststore.clear()
@@ -647,6 +694,173 @@ class GTKUserSetup:
 		self.delete_user_window.hide()
 		return True
 
+	def on_button_group_settings_close_clicked(self, widget):
+		self.group_settings_window.hide()
+
+	def on_group_settings_window_delete_event(self, widget, event):
+		self.group_settings_window.hide()
+		return True
+
+	def on_button_group_properties_clicked(self, widget):
+		g = SystemUsers()
+		self.group_task_add_group = False
+		group = self.grouplist.get_selection()
+		self.groupliststore, iter = group.get_selected()
+		groupname = self.groupliststore.get_value(iter, 0)
+		self.entry_groupname.set_sensitive(False)
+		self.entry_groupname.set_text(groupname)
+		self.spinbutton_gid.set_value(g.get_gid(groupname))
+		self.groupmembersliststore.clear()
+		for i in g.user_list(True):
+			user = i[0]
+			if g.user_in_group(user, groupname):
+				member = True
+			else:
+				member = False
+			self.groupmembersliststore.append([member, user, False])
+		self.group_properties_window.show()
+		
+	def on_button_group_add_clicked(self, widget):
+		g = SystemUsers()
+		self.group_task_add_group = True
+		self.entry_groupname.set_sensitive(True)
+		self.entry_groupname.set_text('')
+		gidlist = []
+		for i in grp.getgrall():
+			gidlist.append(int(i[2]))
+		maxgid = max(gidlist)
+		if maxgid >= 65535:
+			maxgid = 1000
+		self.spinbutton_gid.set_value(maxgid+1)
+		self.groupmembersliststore.clear()
+		for i in g.user_list(True):
+			user = i[0]
+			self.groupmembersliststore.append([False, user, False])
+		self.group_properties_window.show()
+
+	def on_button_group_delete_clicked(self, widget):
+		g = SystemUsers()
+		group = self.grouplist.get_selection()
+		self.groupliststore, iter = group.get_selected()
+		groupname = self.groupliststore.get_value(iter, 0)
+		bool_del_group = True
+		for i in g.user_list(True):
+			if g.get_maingroup(i[0]) == groupname:
+				bool_del_group = False
+				break
+		if bool_del_group == True:
+			self.label_delete_group.set_text(_("You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?").format(groupname))
+			self.delete_group_window.show()
+		else:
+			self.label_cannot_delete_group.set_text(_("Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first.").format(groupname, i[0]))
+			self.cannot_delete_group_window.show()
+
+	def refresh_group_list(self):
+		allgroups = grp.getgrall()
+		self.groupliststore.clear()
+		count = 0
+		for i in allgroups:
+			self.groupliststore.append([i[0]])
+
+	def on_button_group_properties_ok_clicked(self, widget):
+		g = SystemUsers()
+		bool_raise_error = False
+		if self.group_task_add_group == True:
+			# Adding a group
+			group = self.entry_groupname.get_text()
+			gid = self.spinbutton_gid.get_value_as_int()
+			checkgroupname = g.check_groupname(group)
+			if checkgroupname[0]:
+				checkgid = g.check_gid(gid)
+				if checkgid[0]:
+					g.create_group(group, gid)
+				else:
+					bool_raise_error = True
+					self.label_group_error_msg.set_label(checkgid[1])
+					self.group_properties_error_window.show()
+			else:
+				bool_raise_error = True
+				self.label_group_error_msg.set_label(g.check_groupname(group)[1])
+				self.group_properties_error_window.show()
+			if bool_raise_error == False:
+				for i in self.groupmembersliststore:
+					if i[0] == True:
+						g.add_user_to_group(i[1], group)
+				self.refresh_group_list()
+				self.group_properties_window.hide()
+		else:
+			# Editing an existing group
+			group = self.entry_groupname.get_text()
+			gid = g.get_gid(group)
+			new_gid = self.spinbutton_gid.get_value_as_int()
+			if not new_gid == gid:
+				checkgid = g.check_gid(new_gid)
+				if checkgid[0]:
+					g.set_gid(group, new_gid)
+					self.group_properties_window.hide()
+				else:
+					bool_raise_error = True
+					self.label_group_error_msg.set_label(checkgid[1])
+					self.group_properties_error_window.show()
+			if bool_raise_error == False:
+				for i in self.groupmembersliststore:
+					if i[2] == True:
+						if i[0] == False:
+							g.remove_user_from_group(i[1], group)
+						else:
+							g.add_user_to_group(i[1], group)
+				self.refresh_group_list()
+				self.group_properties_window.hide()
+
+	def on_button_group_properties_cancel_clicked(self, widget):
+		self.group_properties_window.hide()
+
+	def on_group_properties_window_delete_event(self, widget, event):
+		self.group_properties_window.hide()
+		return True
+
+	def on_groupmembers_checkbox_toggled(self, widget, data=None):
+		selecteduser = self.groupmembers.get_selection()
+		self.groupmembersliststore, iter = selecteduser.get_selected()
+		selectedusername = self.groupmembersliststore.get_value(iter, 1)
+		for i in self.groupmembersliststore:
+			if i[1] == selectedusername:
+				i[2] = True
+				if i[0] == False:
+					i[0] = True
+				else:
+					i[0] = False
+
+	def on_button_group_error_ok_clicked(self, widget):
+		self.group_properties_error_window.hide()
+	
+	def on_group_properties_error_window_delete_event(self, widget, event):
+		self.group_properties_error_window.hide()
+		return True
+
+	def on_button_delete_group_ok_clicked(self, widget):
+		g = SystemUsers()
+		group = self.grouplist.get_selection()
+		self.groupliststore, iter = group.get_selected()
+		groupname = self.groupliststore.get_value(iter, 0)
+		g.del_group(groupname)
+		self.refresh_group_list()
+		self.delete_group_window.hide()
+
+	def on_button_delete_group_cancel_clicked(self, widget):
+		self.delete_group_window.hide()
+
+	def on_delete_group_window_delete_event(self, widget, event):
+		self.delete_group_window.hide()
+		return True
+
+	def on_button_cannot_delete_group_ok_clicked(self, widget):
+		self.cannot_delete_group_window.hide()
+
+	def on_cannot_delete_group_window_delete_event(self, widget, event):
+		self.cannot_delete_group_window.hide()
+		return True
+
 	def __init__(self):
 		builder = gtk.Builder()
 		if os.path.exists('gtkusersetup.glade'):
@@ -664,7 +878,7 @@ class GTKUserSetup:
 		self.userlist = builder.get_object('userlist')
 		self.userliststore = builder.get_object('userliststore')
 		self.checkbutton_showall = builder.get_object('checkbutton_showall')
-
+		self.image_manageuser = builder.get_object('image_manageuser')
 		self.logincolumn.set_title(_('Username'))
 		self.namecolumn.set_title(_('Real name'))
 		self.homedircolumn.set_title(_('Home directory'))
@@ -726,6 +940,40 @@ class GTKUserSetup:
 		self.label_delete_user = builder.get_object('label_delete_user')
 		self.checkbutton_delete_user_homedir = builder.get_object('checkbutton_delete_user_homedir')
 
+		#
+		# Main group settings window
+		#
+		self.group_settings_window = builder.get_object('group_settings_window')
+	
+		#
+		# Group properties window
+		#
+		self.group_properties_window = builder.get_object('group_properties_window')
+		self.grouplist = builder.get_object('grouplist')
+		self.label_groupname = builder.get_object('label_groupname')
+		self.entry_groupname = builder.get_object('entry_groupname')
+		self.spinbutton_gid = builder.get_object('spinbutton_gid')
+		self.groupmembers = builder.get_object('groupmembers')
+		self.groupmembersliststore = builder.get_object('groupmembersliststore')	
+	
+		#
+		# Group properties error window
+		#
+		self.group_properties_error_window = builder.get_object('group_properties_error_window')
+		self.label_group_error_msg = builder.get_object('label_group_error_msg')
+
+		#
+		# Delete group message confirmation
+		#
+		self.delete_group_window = builder.get_object('delete_group_window')
+		self.label_delete_group = builder.get_object('label_delete_group')
+
+		#
+		# Cannot delete group window
+		#
+		self.cannot_delete_group_window = builder.get_object('cannot_delete_group_window')
+		self.label_cannot_delete_group = builder.get_object('label_cannot_delete_group')
+		# Connect all signals
 		builder.connect_signals(self)
 
 if __name__ == "__main__":
