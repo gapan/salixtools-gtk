@@ -125,7 +125,7 @@ class SystemUsers:
 	def create_user(self, login, shell, group, groups, password):
 		os.system('useradd -s '+shell+' -g '+group+' -m -k /etc/skel -p'+password+' '+login)
 		for i in groups:
-			os.system('gpasswd -a '+login+' '+i+' > /dev/null')
+			self.add_user_to_group(login, i)
 
 	def del_user(self, login, remove_home=False):
 		if remove_home == True:
@@ -186,6 +186,82 @@ class SystemUsers:
 			groups.append([groupname, gid, members])
 		return groups
 
+	def check_password(self, password1, password2):
+		if password1 == password2:
+			if len(password1) < 5:
+				setpassword = False
+				msg = _("Password is too short. It has to be at least 5 characters long.")
+			elif '\\' in password1:
+				setpassword = False
+				msg = _("Password cannot include the backslash character.")
+			else:
+				setpassword = True
+				msg = ''
+		else:
+			setpassword = False
+			msg = _("Passwords don't match")
+		return setpassword, msg
+
+	def check_username(self, username):
+		setusername = True
+		msg = ''
+		if username == '':
+			setusername = False
+			msg = _("Username cannot be empty.")
+		elif len(username) > 31:
+			setusername = False
+			msg = _("Username cannot exceed 31 characters")
+		elif ' ' in username:
+			setusername = False
+			msg = _("Username cannot include the space character.")
+		elif username.startswith(('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')):
+			setusername = False
+			msg = _("Username cannot start with a number.")
+		elif username.startswith('_'):
+			setusername = False
+			msg = _("Username cannot start with an underscore.")
+		elif username.startswith('-'):
+			setusername = False
+			msg = _("Username cannot start with a dash.")
+		elif str.isupper(str.swapcase(username)) == False:
+			setusername = False
+			msg = _("Username cannot include capital letters.")
+		elif '.' in username:
+			setusername = False
+			msg = _("Username cannot include a period.")
+		elif ',' in username:
+			setusername = False
+			msg = _("Username cannot include a comma.")
+		elif '/' in username:
+			setusername = False
+			msg = _("Username cannot include the slash character.")
+		if setusername == True:
+			for i in username:
+				if not i in 'abcdefghijklmnopqrstuvwxyz-_0123456789':
+					setusername = False
+					msg = _("Username can consist solely of letters, numbers, dashes and underscores.")
+					break
+		return setusername, msg
+
+	def check_shell(self, shell):
+		if os.path.exists(shell):
+			setshell = True
+			msg = ''
+		else:
+			setshell = False
+			msg = _("Shell does not exist.")
+		return setshell, msg
+	
+	def check_uid(self, uid):
+		u = SystemUsers()
+		setuid = True
+		msg = ''
+		for i in u.all_users_data():
+			if uid == i[1]:
+				setuid = False
+				msg = _("UID {0} is assigned to another user.").format(uid)
+				break
+		return setuid, msg
 
 # Internationalization
 import locale
@@ -206,6 +282,7 @@ class GTKUserSetup:
 
 	def on_button_properties_clicked(self, widget, data=None):
 		u = SystemUsers()
+		self.task_add_user = False
 		user = self.userlist.get_selection()
 		self.userliststore, iter = user.get_selected()
 		username = self.userliststore.get_value(iter, 1)
@@ -222,6 +299,7 @@ class GTKUserSetup:
 		#
 		# Set existing values
 		#
+		self.user_properties_window.set_title(_("User properties for {0}").format(username))
 		self.notebook_userproperties.set_current_page(0)
 		
 		# Account tab
@@ -229,6 +307,8 @@ class GTKUserSetup:
 		self.entry_login.set_sensitive(False)
 		self.entry_fullname.set_text(fullname)
 		self.label_passwordheader.set_label('<b>Set new password</b>')
+		self.entry_password1.set_text('')
+		self.entry_password2.set_text('')
 
 		# Contact tab
 		self.entry_officeinfo.set_text(officeinfo)
@@ -256,8 +336,12 @@ class GTKUserSetup:
 			self.user_groupliststore.append([ismember, group, gid, False])
 
 		# Advanced tab
+		self.label_homedir.show()
+		self.entry_homedir.show()
 		self.entry_homedir.set_text(homedir)
 		self.entry_shell.set_text(shell)
+		self.label_uid.show()
+		self.spinbutton_uid.show()
 		self.spinbutton_uid.set_value(uid)
 		if expirydate[0] == False:
 			self.checkbutton_user_expiration.set_active(False)
@@ -270,6 +354,74 @@ class GTKUserSetup:
 
 		self.user_properties_window.show()
 
+	def on_button_adduser_clicked(self, widget):
+		u = SystemUsers()
+		now = datetime.datetime.now()
+		self.task_add_user = True
+		#
+		# Set existing values
+		#
+		self.user_properties_window.set_title(_("Add new user"))
+		self.notebook_userproperties.set_current_page(0)
+
+		# Account tab
+		self.entry_login.set_sensitive(True)
+		self.entry_login.set_text('')
+		self.entry_fullname.set_text('')
+		self.label_passwordheader.set_label('<b>Set password</b>')
+		self.entry_password1.set_text('')
+		self.entry_password2.set_text('')
+		
+		# Contact tab
+		self.entry_officeinfo.set_text('')
+		self.entry_officeext.set_text('')
+		self.entry_homephone.set_text('')
+
+		# Groups tab
+		allgroups = u.get_all_groups()
+		defaultgroups = u.default_groups()
+		self.groupliststore.clear()
+		count = 0
+		for i in allgroups:
+			self.groupliststore.append([i[0]])
+			if i[0] == 'users':
+				self.combobox_maingroup.set_active(count)
+			count += 1
+		self.user_groupliststore.clear()
+		for i in allgroups:
+			group = i[0]
+			gid = i[1]
+			groupmembers = i[2]
+			if group in defaultgroups:
+				ismember = True
+			else:
+				ismember = False
+			self.user_groupliststore.append([ismember, group, gid, False])
+
+		# Advanced tab
+		self.label_homedir.hide()
+		self.entry_homedir.hide()
+		self.entry_shell.set_text('/bin/bash')
+		self.label_uid.hide()
+		self.spinbutton_uid.hide()
+		self.checkbutton_user_expiration.set_active(False)
+		self.calendar_user_expiration.set_sensitive(False)
+		self.calendar_user_expiration.select_month(now.month, now.year)
+		self.calendar_user_expiration.select_day(now.day)
+
+		self.user_properties_window.show()
+
+	def on_button_deleteuser_clicked(self, widget):
+		u = SystemUsers()
+		user = self.userlist.get_selection()
+		self.userliststore, iter = user.get_selected()
+		username = self.userliststore.get_value(iter, 1)
+		self.checkbutton_delete_user_homedir.set_active(False)
+		self.delete_user_window.set_title(_("Delete user {0}?").format(username))
+		self.label_delete_user.set_text(_("You are about to delete user {0} from your system. Do you really want to continue?".format(username)))
+		self.checkbutton_delete_user_homedir.set_label(_("Completely remove user's home directory ({0}) with all its contents").format(u.get_homedir(username)))
+		self.delete_user_window.show()
+
 	def on_checkbutton_showall_toggled(self, widget, data=None):
 		self.userliststore.clear()
 		status = self.checkbutton_showall.get_active()
@@ -279,119 +431,165 @@ class GTKUserSetup:
 
 	def on_button_user_properties_ok_clicked(self, widget, data=None):
 		u = SystemUsers()
-		username = self.entry_login.get_text()
-		fullname = u.get_fullname(username)
-		officeinfo = u.get_officeinfo(username)
-		officeext = u.get_officeext(username)
-		homephone = u.get_homephone(username)
-		maingroup = u.get_maingroup(username)
-		homedir = u.get_homedir(username)
-		shell = u.get_shell(username)
-		uid = u.get_uid(username)
-		expiry_date = u.get_expiry_date(username)
-		
-		new_fullname = self.entry_fullname.get_text()
-		new_password1 = self.entry_password1.get_text()
-		new_password2 = self.entry_password2.get_text()
-		new_officeinfo = self.entry_officeinfo.get_text()
-		new_officeext = self.entry_officeext.get_text()
-		new_homephone = self.entry_homephone.get_text()
-		new_maingroup = self.combobox_maingroup.get_active_text()
-		new_shell = self.entry_shell.get_text()
-		new_uid = self.spinbutton_uid.get_value_as_int()
-		new_expiry_date = self.checkbutton_user_expiration.get_active()
-		
-		bool_raise_error = False
-		bool_set_fullname = False
-		bool_set_password = False
-		bool_set_officeinfo = False
-		bool_set_officeext = False
-		bool_set_homephone = False
-		bool_set_maingroup = False
-		bool_set_shell = False
-		bool_set_uid = False
-		bool_set_expirydate = False
-
-		if not new_fullname == fullname:
-			u.set_fullname(username, new_fullname)
-
-		if not new_password1 == "":
-			if new_password1 == new_password2:
-				if len(new_password1) < 5:
-					bool_raise_error = True
-					self.label_properties_error_msg.set_label(_("Password is too short. It has to be at least 5 characters long."))
-					self.properties_error_window.show()
-				else:
-					bool_set_password = True
-			else:
-				bool_raise_error = True
-				self.label_properties_error_msg.set_label(_("Passwords don't match."))
-				self.properties_error_window.show()
+		if self.task_add_user:
+			#
+			# Adding new user
+			#
+			username = self.entry_login.get_text()
+			fullname = self.entry_fullname.get_text()
+			password1 = self.entry_password1.get_text()
+			password2 = self.entry_password2.get_text()
+			officeinfo = self.entry_officeinfo.get_text()
+			officeext = self.entry_officeext.get_text()
+			homephone = self.entry_homephone.get_text()
+			maingroup = self.combobox_maingroup.get_active_text()
+			homedir = '/home'+username
+			shell = self.entry_shell.get_text()
+			expiry = self.checkbutton_user_expiration.get_active()
 	
-		if not new_officeinfo == officeinfo:
-			bool_set_officeinfo = True
-
-		if not new_officeext == officeext:
-			bool_set_officeext = True
-
-		if not new_homephone == homephone:
-			bool_set_homephone = True
-
-		if not new_maingroup == maingroup:
-			bool_set_maingroup = True
-
-		for i in self.user_groupliststore:
-			if i[3] == True:
-				if i[0] == True:
-					u.add_user_to_group(username, i[1])
-				else:
-					u.remove_user_from_group(username, i[1])
-
-		if not new_shell == shell:
-			if os.path.exists(new_shell):
-				bool_set_shell = True
-			else:
-				bool_raise_error = True
-				self.label_properties_error_msg.set_label(_("Shell does not exist."))
+			checkusername = u.check_username(username)
+			checkpassword = u.check_password(password1, password2)
+			checkshell = u.check_shell(shell)
+			if checkusername[0] == False:
+				self.label_properties_error_msg.set_label(checkusername[1])
 				self.properties_error_window.show()
-
-		if not new_uid == uid:
-			bool_set_uid = True
-			for i in u.all_users_data():
-				if new_uid == i[1]:
-					bool_raise_error = True
-					bool_set_uid = False
-					self.label_properties_error_msg.set_label(_("UID {0} is assigned to another user.").format(new_uid))
-					self.properties_error_window.show()
-					break
-
-		if bool_raise_error == False:
-			if bool_set_fullname == True:
-				u.set_fullname(username, new_fullname)
-			if bool_set_password == True:
-				u.set_password(username, new_password1)
-			if bool_set_officeinfo == True:
-				u.set_officeinfo(username, new_officeinfo)
-			if bool_set_officeext == True:
-				u.set_officeext(username, new_officeext)
-			if bool_set_homephone == True:
-				u.set_homephone(username, new_homephone)
-			if bool_set_maingroup == True:
-				u.set_group(username, new_maingroup)
-			if bool_set_shell == True:
-				u.set_shell(username, new_shell)
-			if bool_set_uid == True:
-				u.set_uid(username, new_uid)
-			if new_expiry_date == True:
-				year = int("%04d" % (self.calendar_user_expiration.get_date()[0]))
-				month = int("%02d" % (self.calendar_user_expiration.get_date()[1]))+1
-				day = int("%02d" % (self.calendar_user_expiration.get_date()[2]))
-				u.set_expiry_date(username, year, month, day)
+			elif checkpassword[0] == False:
+				self.label_properties_error_msg.set_label(checkpassword[1])
+				self.properties_error_window.show()
+			elif checkshell[0] == False:
+				self.label_properties_error_msg.set_label(checkshell[1])
+				self.properties_error_window.show()
 			else:
-				if expiry_date[0] == True:
-					u.set_no_expiry_date(username)
-			self.user_properties_window.hide()
-			self.on_checkbutton_showall_toggled(self)
+				groups = []
+				for i in self.user_groupliststore:
+					if i[0] == True:
+						groups.append(i[1])
+				u.create_user(username, shell, maingroup, groups, password1)
+				u.set_fullname(username, fullname)
+				u.set_officeinfo(username, officeinfo)
+				u.set_officeext(username, officeext)
+				u.set_homephone(username, homephone)
+				if expiry:
+					year = int("%04d" % (self.calendar_user_expiration.get_date()[0]))
+					month = int("%02d" % (self.calendar_user_expiration.get_date()[1]))+1
+					day = int("%02d" % (self.calendar_user_expiration.get_date()[2]))
+					u.set_expiry_date(username, year, month, day)
+
+				self.user_properties_window.hide()
+				self.on_checkbutton_showall_toggled(self)
+		else:
+			#
+			# Editing existing user info
+			#
+			username = self.entry_login.get_text()
+			fullname = u.get_fullname(username)
+			officeinfo = u.get_officeinfo(username)
+			officeext = u.get_officeext(username)
+			homephone = u.get_homephone(username)
+			maingroup = u.get_maingroup(username)
+			homedir = u.get_homedir(username)
+			shell = u.get_shell(username)
+			uid = u.get_uid(username)
+			expiry_date = u.get_expiry_date(username)
+			
+			new_fullname = self.entry_fullname.get_text()
+			new_password1 = self.entry_password1.get_text()
+			new_password2 = self.entry_password2.get_text()
+			new_officeinfo = self.entry_officeinfo.get_text()
+			new_officeext = self.entry_officeext.get_text()
+			new_homephone = self.entry_homephone.get_text()
+			new_maingroup = self.combobox_maingroup.get_active_text()
+			new_shell = self.entry_shell.get_text()
+			new_uid = self.spinbutton_uid.get_value_as_int()
+			new_expiry_date = self.checkbutton_user_expiration.get_active()
+			
+			bool_raise_error = False
+			bool_set_fullname = False
+			bool_set_password = False
+			bool_set_officeinfo = False
+			bool_set_officeext = False
+			bool_set_homephone = False
+			bool_set_maingroup = False
+			bool_set_shell = False
+			bool_set_uid = False
+			bool_set_expirydate = False
+
+			if not new_fullname == fullname:
+				u.set_fullname(username, new_fullname)
+
+			if not new_password1 == "":
+				checkpass = u.check_password(new_password1, new_password2)
+				if checkpass[0] == True:
+					bool_set_password = True
+				else:
+					bool_raise_error = True
+					self.label_properties_error_msg.set_label(checkpass[1])
+					self.properties_error_window.show()
+		
+			if not new_officeinfo == officeinfo:
+				bool_set_officeinfo = True
+
+			if not new_officeext == officeext:
+				bool_set_officeext = True
+
+			if not new_homephone == homephone:
+				bool_set_homephone = True
+
+			if not new_maingroup == maingroup:
+				bool_set_maingroup = True
+
+			if not new_shell == shell:
+				checkshell = u.check_shell(new_shell)
+				if checkshell[0] == True:
+					bool_set_shell = True
+				else:
+					bool_raise_error = True
+					self.label_properties_error_msg.set_label(checkshell[1])
+					self.properties_error_window.show()
+
+			if not new_uid == uid:
+				checkuid = u.check_uid(new_uid)
+				if checkuid[0] == True:
+					bool_set_uid = True
+				else:
+					bool_set_uid = False
+					bool_raise_error = True
+					self.label_properties_error_msg.set_label(checkuid[1])
+					self.properties_error_window.show()
+					
+			if bool_raise_error == False:
+				if bool_set_fullname == True:
+					u.set_fullname(username, new_fullname)
+				if bool_set_password == True:
+					u.set_password(username, new_password1)
+				if bool_set_officeinfo == True:
+					u.set_officeinfo(username, new_officeinfo)
+				if bool_set_officeext == True:
+					u.set_officeext(username, new_officeext)
+				if bool_set_homephone == True:
+					u.set_homephone(username, new_homephone)
+				if bool_set_maingroup == True:
+					u.set_group(username, new_maingroup)
+				if bool_set_shell == True:
+					u.set_shell(username, new_shell)
+				if bool_set_uid == True:
+					u.set_uid(username, new_uid)
+				if new_expiry_date == True:
+					year = int("%04d" % (self.calendar_user_expiration.get_date()[0]))
+					month = int("%02d" % (self.calendar_user_expiration.get_date()[1]))+1
+					day = int("%02d" % (self.calendar_user_expiration.get_date()[2]))
+					u.set_expiry_date(username, year, month, day)
+				else:
+					if expiry_date[0] == True:
+						u.set_no_expiry_date(username)
+				for i in self.user_groupliststore:
+					if i[3] == True:
+						if i[0] == True:
+							u.add_user_to_group(username, i[1])
+						else:
+							u.remove_user_from_group(username, i[1])
+				self.user_properties_window.hide()
+				self.on_checkbutton_showall_toggled(self)
 
 	def on_button_user_properties_cancel_clicked(self, widget, data=None):
 		self.user_properties_window.hide()
@@ -430,6 +628,23 @@ class GTKUserSetup:
 
 	def on_properties_error_window_delete_event(self, widget, event):
 		self.properties_error_window.hide()
+		return True
+
+	def on_button_deleteuser_ok_clicked(self, widget):
+		u = SystemUsers()
+		user = self.userlist.get_selection()
+		self.userliststore, iter = user.get_selected()
+		username = self.userliststore.get_value(iter, 1)
+		delete_homedir = self.checkbutton_delete_user_homedir.get_active()
+		u.del_user(username, delete_homedir)
+		self.delete_user_window.hide()
+		self.on_checkbutton_showall_toggled(self)
+
+	def on_button_deleteuser_cancel_clicked(self, widget):
+		self.delete_user_window.hide()
+
+	def on_delete_user_window_delete_event(self, widget, event):
+		self.delete_user_window.hide()
 		return True
 
 	def __init__(self):
@@ -489,8 +704,10 @@ class GTKUserSetup:
 		self.column_user_membership_gid.set_title('GID')
 
 		# Advanced tab
+		self.label_homedir = builder.get_object('label_homedir')
 		self.entry_homedir = builder.get_object('entry_homedir')
 		self.entry_shell = builder.get_object('entry_shell')
+		self.label_uid = builder.get_object('label_uid')
 		self.spinbutton_uid = builder.get_object('spinbutton_uid')
 		self.checkbutton_user_expiration = builder.get_object('checkbutton_user_expiration')
 		self.calendar_user_expiration = builder.get_object('calendar_user_expiration')
@@ -501,6 +718,13 @@ class GTKUserSetup:
 		self.properties_error_window = builder.get_object('properties_error_window')
 		self.button_error_window_ok = builder.get_object('button_error_window_ok')
 		self.label_properties_error_msg = builder.get_object('label_properties_error_msg')
+
+		#
+		# Delete user message confirmation
+		#
+		self.delete_user_window = builder.get_object('delete_user_window')
+		self.label_delete_user = builder.get_object('label_delete_user')
+		self.checkbutton_delete_user_homedir = builder.get_object('checkbutton_delete_user_homedir')
 
 		builder.connect_signals(self)
 
