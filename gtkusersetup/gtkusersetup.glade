@@ -1073,12 +1073,12 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="label_delete_user">
+                    <property name="width_request">450</property>
                     <property name="visible">True</property>
                     <property name="label">Really delete user?</property>
                     <property name="wrap">True</property>
                   </object>
                   <packing>
-                    <property name="fill">False</property>
                     <property name="padding">20</property>
                     <property name="position">1</property>
                   </packing>
