@@ -34,7 +34,7 @@
     <property name="border_width">5</property>
     <property name="title" translatable="yes">System services</property>
     <property name="window_position">center</property>
-    <property name="icon_name">emblem-system</property>
+    <property name="icon_name">gtkservicesetup</property>
     <property name="type_hint">normal</property>
     <property name="has_separator">False</property>
     <signal name="destroy" handler="gtk_main_quit"/>
