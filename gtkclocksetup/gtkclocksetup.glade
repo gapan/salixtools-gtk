@@ -19,52 +19,6 @@
           <object class="GtkVBox" id="vbox1">
             <property name="visible">True</property>
             <child>
-              <object class="GtkHBox" id="hbox1">
-                <property name="visible">True</property>
-                <child>
-                  <object class="GtkImage" id="image1">
-                    <property name="visible">True</property>
-                    <property name="pixel_size">48</property>
-                    <property name="icon_name">appointment-soon</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">False</property>
-                    <property name="padding">20</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label1">
-                    <property name="visible">True</property>
-                    <property name="label" translatable="yes">Please select time and date settings</property>
-                  </object>
-                  <packing>
-                    <property name="fill">False</property>
-                    <property name="padding">20</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="padding">20</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkFixed" id="fixed6">
-                <property name="height_request">10</property>
-                <property name="visible">True</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkHBox" id="hbox2">
                 <property name="visible">True</property>
                 <child>
@@ -111,7 +65,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">2</property>
+                <property name="position">0</property>
               </packing>
             </child>
             <child>
@@ -122,7 +76,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">3</property>
+                <property name="position">1</property>
               </packing>
             </child>
             <child>
@@ -157,7 +111,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">4</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -168,7 +122,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">5</property>
+                <property name="position">3</property>
               </packing>
             </child>
             <child>
@@ -312,7 +266,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">6</property>
+                <property name="position">4</property>
               </packing>
             </child>
           </object>
@@ -547,14 +501,6 @@
       <action-widget response="0">tz_button_ok</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkImage" id="image_tz">
-    <property name="visible">True</property>
-    <property name="icon_name">applications-internet</property>
-  </object>
-  <object class="GtkImage" id="image_sync_now">
-    <property name="visible">True</property>
-    <property name="icon_name">view-refresh</property>
-  </object>
   <object class="GtkAdjustment" id="adjustment_hrs">
     <property name="upper">23</property>
     <property name="step_increment">1</property>
@@ -569,5 +515,13 @@
     <property name="upper">59</property>
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
+  </object>
+  <object class="GtkImage" id="image_sync_now">
+    <property name="visible">True</property>
+    <property name="icon_name">view-refresh</property>
+  </object>
+  <object class="GtkImage" id="image_tz">
+    <property name="visible">True</property>
+    <property name="icon_name">applications-internet</property>
   </object>
 </interface>

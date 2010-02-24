@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-18 23:43+0200\n"
+"POT-Creation-Date: 2010-02-24 15:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,46 +20,42 @@ msgstr ""
 msgid "Date and time settings"
 msgstr ""
 
-#: ../gtkclocksetup.glade:40
-msgid "Please select time and date settings"
-msgstr ""
-
-#: ../gtkclocksetup.glade:72
+#: ../gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
 msgstr ""
 
-#: ../gtkclocksetup.glade:97
+#: ../gtkclocksetup.glade:51
 msgid "Synchronize now"
 msgstr ""
 
-#: ../gtkclocksetup.glade:135 ../gtkclocksetup:145 ../gtkclocksetup:178
+#: ../gtkclocksetup.glade:89 ../gtkclocksetup:146 ../gtkclocksetup:179
 msgid "Time zone:"
 msgstr ""
 
-#: ../gtkclocksetup.glade:143
+#: ../gtkclocksetup.glade:97
 msgid "Select time zone..."
 msgstr ""
 
-#: ../gtkclocksetup.glade:274
+#: ../gtkclocksetup.glade:228
 msgid "Time:"
 msgstr ""
 
-#: ../gtkclocksetup.glade:308
+#: ../gtkclocksetup.glade:262
 msgid "Date:"
 msgstr ""
 
-#: ../gtkclocksetup.glade:393
+#: ../gtkclocksetup.glade:347
 msgid "Select time zone"
 msgstr ""
 
-#: ../gtkclocksetup.glade:410
+#: ../gtkclocksetup.glade:366
 msgid "Please select your time zone:"
 msgstr ""
 
-#: ../gtkclocksetup:194
+#: ../gtkclocksetup:195
 msgid "General area"
 msgstr ""
 
-#: ../gtkclocksetup:195
+#: ../gtkclocksetup:196
 msgid "Location"
 msgstr ""
