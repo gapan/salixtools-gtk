@@ -288,7 +288,7 @@
   </object>
   <object class="GtkImage" id="image_manageuser">
     <property name="visible">True</property>
-    <property name="icon_name">face-smile-big</property>
+    <property name="icon_name">preferences-system</property>
   </object>
   <object class="GtkDialog" id="user_properties_window">
     <property name="border_width">5</property>
@@ -296,8 +296,11 @@
     <property name="resizable">False</property>
     <property name="modal">True</property>
     <property name="window_position">center</property>
+    <property name="destroy_with_parent">True</property>
     <property name="icon_name">document-properties</property>
     <property name="type_hint">normal</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkusersetup</property>
     <property name="has_separator">False</property>
     <signal name="destroy" handler="on_button_user_properties_cancel_clicked"/>
@@ -951,6 +954,8 @@
     <property name="window_position">center-always</property>
     <property name="icon_name">dialog-error</property>
     <property name="type_hint">normal</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="skip_pager_hint">True</property>
     <property name="urgency_hint">True</property>
     <property name="transient_for">user_properties_window</property>
     <property name="has_separator">False</property>
@@ -1037,6 +1042,8 @@
     <property name="window_position">center-on-parent</property>
     <property name="icon_name">edit-delete</property>
     <property name="type_hint">normal</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="skip_pager_hint">True</property>
     <property name="urgency_hint">True</property>
     <property name="transient_for">gtkusersetup</property>
     <property name="has_separator">False</property>
@@ -1160,6 +1167,7 @@
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
     <property name="destroy_with_parent">True</property>
+    <property name="icon_name">preferences-system</property>
     <property name="type_hint">normal</property>
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
@@ -1337,6 +1345,7 @@
     <property name="border_width">5</property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
+    <property name="icon_name">document-properties</property>
     <property name="type_hint">normal</property>
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
@@ -1635,6 +1644,7 @@
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
     <property name="destroy_with_parent">True</property>
+    <property name="icon_name">edit-delete</property>
     <property name="type_hint">normal</property>
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
