@@ -7,7 +7,7 @@ install -d -m 755 $DESTDIR/usr/share/applications
 install -d -m 755 $DESTDI/usr/share/salixtools
 
 for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup; do
-	install -m 750 $i/$i $DESTDIR/usr/sbin/
+	install -m 755 $i/$i $DESTDIR/usr/sbin/
 	install -m 644 $i/$i.desktop $DESTDIR/usr/share/applications/
 	install -m 644 $i/$i-kde.desktop $DESTDIR/usr/share/applications/
 	install -d -m 755 $DESTDIR/usr/share/salixtools/$i
