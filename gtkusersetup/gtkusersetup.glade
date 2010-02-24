@@ -1006,9 +1006,6 @@
             <property name="visible">True</property>
             <property name="layout_style">end</property>
             <child>
-              <placeholder/>
-            </child>
-            <child>
               <object class="GtkButton" id="button_error_window_ok">
                 <property name="label" translatable="yes">gtk-ok</property>
                 <property name="visible">True</property>
@@ -1018,7 +1015,7 @@
                 <signal name="clicked" handler="on_button_error_window_ok_clicked"/>
               </object>
               <packing>
-                <property name="position">1</property>
+                <property name="position">0</property>
               </packing>
             </child>
           </object>
@@ -1307,9 +1304,6 @@
             <property name="visible">True</property>
             <property name="layout_style">end</property>
             <child>
-              <placeholder/>
-            </child>
-            <child>
               <object class="GtkButton" id="button_group_settings_close">
                 <property name="label" translatable="yes">gtk-close</property>
                 <property name="visible">True</property>
@@ -1319,7 +1313,7 @@
                 <signal name="clicked" handler="on_button_group_settings_close_clicked"/>
               </object>
               <packing>
-                <property name="position">1</property>
+                <property name="position">0</property>
               </packing>
             </child>
           </object>
@@ -1608,9 +1602,6 @@
             <property name="visible">True</property>
             <property name="layout_style">end</property>
             <child>
-              <placeholder/>
-            </child>
-            <child>
               <object class="GtkButton" id="button_group_error_ok">
                 <property name="label" translatable="yes">gtk-ok</property>
                 <property name="visible">True</property>
@@ -1620,7 +1611,7 @@
                 <signal name="clicked" handler="on_button_group_error_ok_clicked"/>
               </object>
               <packing>
-                <property name="position">1</property>
+                <property name="position">0</property>
               </packing>
             </child>
           </object>
@@ -1793,9 +1784,6 @@
             <property name="visible">True</property>
             <property name="layout_style">end</property>
             <child>
-              <placeholder/>
-            </child>
-            <child>
               <object class="GtkButton" id="button_cannot_delete_group_ok">
                 <property name="label" translatable="yes">gtk-ok</property>
                 <property name="visible">True</property>
@@ -1805,7 +1793,7 @@
                 <signal name="clicked" handler="on_button_cannot_delete_group_ok_clicked"/>
               </object>
               <packing>
-                <property name="position">1</property>
+                <property name="position">0</property>
               </packing>
             </child>
           </object>
