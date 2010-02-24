@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkservicesetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 13:46+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+
+#: ../gtkservicesetup.glade:35
+msgid "System services"
+msgstr "Systemdienste"
+
+#: ../gtkservicesetup.glade:67
+msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
+msgstr "Bitte wählen Sie die Systemdienste, die beim Systemstart aktiviert werden sollen. Alle Änderungen treten in Kraft, sobald Sie OK drücken."
+
+#: ../gtkservicesetup:44
+msgid "The {0} service"
+msgstr "Der {0} Dienst"
+
+#: ../gtkservicesetup:120
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#: ../gtkservicesetup:122
+msgid "Service name"
+msgstr "Dienstname"
+
+#: ../gtkservicesetup:124
+msgid "Service description"
+msgstr "Dienstbeschreibung"
+
