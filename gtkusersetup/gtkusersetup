@@ -363,7 +363,7 @@ class GTKUserSetup:
 		self.entry_login.set_text(username)
 		self.entry_login.set_sensitive(False)
 		self.entry_fullname.set_text(fullname)
-		self.label_passwordheader.set_label('<b>Set new password</b>')
+		self.label_passwordheader.set_label(_("<b>Set new password</b>"))
 		self.entry_password1.set_text('')
 		self.entry_password2.set_text('')
 
@@ -425,7 +425,7 @@ class GTKUserSetup:
 		self.entry_login.set_sensitive(True)
 		self.entry_login.set_text('')
 		self.entry_fullname.set_text('')
-		self.label_passwordheader.set_label('<b>Set password</b>')
+		self.label_passwordheader.set_label(_("<b>Set password</b>"))
 		self.entry_password1.set_text('')
 		self.entry_password2.set_text('')
 		
@@ -475,7 +475,7 @@ class GTKUserSetup:
 		username = self.userliststore.get_value(iter, 1)
 		self.checkbutton_delete_user_homedir.set_active(False)
 		self.delete_user_window.set_title(_("Delete user {0}?").format(username))
-		self.label_delete_user.set_text(_("You are about to delete user account \"{0}\" from your system. Do you really want to continue?".format(username)))
+		self.label_delete_user.set_text(_("You are about to remove user account \"{0}\" from your system. Do you really want to continue?".format(username)))
 		self.checkbutton_delete_user_homedir.set_label(_("Completely remove user's home directory ({0}) with all its contents").format(u.get_homedir(username)))
 		self.delete_user_window.show()
 

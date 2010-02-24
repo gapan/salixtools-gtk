@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-24 14:40+0200\n"
+"POT-Creation-Date: 2010-02-24 15:35+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -107,7 +107,7 @@ msgstr "UID:"
 
 #: ../gtkusersetup.glade:850
 msgid "Set account expiration date"
-msgstr "Ρύθμιση λήξης λογαριασμού"
+msgstr "Λήξη λογαριασμού"
 
 #: ../gtkusersetup.glade:886
 msgid "Advanced"
@@ -242,16 +242,24 @@ msgstr "Ο κωδικός ομάδας {0} χρησιμοποιείται ήδη
 msgid "User account properties for \"{0}\""
 msgstr "Ιδιότητες λογαριασμού για το χρήστη \"{0}\""
 
+#: ../gtkusersetup:366
+msgid "<b>Set new password</b>"
+msgstr "<b>Εισαγωγή νέου κωδικού χρήστη</b>"
+
 #: ../gtkusersetup:421
 msgid "Add new user"
 msgstr "Προσθήκη νέου χρήστη"
+
+#: ../gtkusersetup:428
+msgid "<b>Set password</b>"
+msgstr "<b>Εισαγωγή κωδικού χρήστη</b>"
 
 #: ../gtkusersetup:477
 msgid "Delete user {0}?"
 msgstr "Διαγραφή του χρήστη {0};"
 
 #: ../gtkusersetup:478
-msgid "You are about to delete user account \"{0}\" from your system. Do you really want to continue?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
 msgstr "Είστε έτοιμοι να διαγράψετε το λογαριασμό του χρήστη  \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
 
 #: ../gtkusersetup:479
@@ -272,7 +280,7 @@ msgstr "Είστε έτοιμοι να διαγράψετε την ομάδα \"
 
 #: ../gtkusersetup:771
 msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
-msgstr "Η ομάδα \"{0}\" δεν μπορεί να διαγραφή, επειδή είναι η κύρια ομάδα για το χρήστη \"{1}\". Αν επιθυμείτε να διαγράψετε την ομάδα \"{0}\", θα πρέπει πρώτα να αλλάξετε την κύρια ομάδα του χρήστη \"{1}\"."
+msgstr "Η ομάδα \"{0}\" δεν μπορεί να διαγραφεί, επειδή είναι η κύρια ομάδα για το χρήστη \"{1}\". Αν επιθυμείτε να διαγράψετε την ομάδα \"{0}\", θα πρέπει πρώτα να αλλάξετε την κύρια ομάδα του χρήστη \"{1}\"."
 
 #: ../gtkusersetup:898
 msgid "Username"

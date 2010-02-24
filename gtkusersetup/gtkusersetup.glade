@@ -43,7 +43,7 @@
     </columns>
   </object>
   <object class="GtkDialog" id="gtkusersetup">
-    <property name="width_request">600</property>
+    <property name="width_request">700</property>
     <property name="height_request">400</property>
     <property name="border_width">5</property>
     <property name="title" translatable="yes">User settings</property>

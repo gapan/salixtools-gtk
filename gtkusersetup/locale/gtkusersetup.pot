@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-24 14:40+0200\n"
+"POT-Creation-Date: 2010-02-24 15:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,8 +248,16 @@ msgstr ""
 msgid "User account properties for \"{0}\""
 msgstr ""
 
+#: ../gtkusersetup:366
+msgid "<b>Set new password</b>"
+msgstr ""
+
 #: ../gtkusersetup:421
 msgid "Add new user"
+msgstr ""
+
+#: ../gtkusersetup:428
+msgid "<b>Set password</b>"
 msgstr ""
 
 #: ../gtkusersetup:477
@@ -258,7 +266,7 @@ msgstr ""
 
 #: ../gtkusersetup:478
 msgid ""
-"You are about to delete user account \"{0}\" from your system. Do you really "
+"You are about to remove user account \"{0}\" from your system. Do you really "
 "want to continue?"
 msgstr ""
 
