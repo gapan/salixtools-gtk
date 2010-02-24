@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-24 15:35+0200\n"
+"POT-Creation-Date: 2010-02-24 20:26+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -113,50 +113,51 @@ msgstr "Λήξη λογαριασμού"
 msgid "Advanced"
 msgstr "Για προχωρημένους"
 
-#: ../gtkusersetup.glade:951
-#: ../gtkusersetup.glade:1557
+#: ../gtkusersetup.glade:951 ../gtkusersetup.glade:1556
 msgid "Error!"
 msgstr "Σφάλμα!"
 
-#: ../gtkusersetup.glade:1167
+#: ../gtkusersetup.glade:1166
 msgid "Group settings"
 msgstr "Ρυθμίσεις ομάδων"
 
-#: ../gtkusersetup.glade:1347
+#: ../gtkusersetup.glade:1346
 msgid "Group properties"
 msgstr "Ιδιότητες ομάδας"
 
-#: ../gtkusersetup.glade:1369
+#: ../gtkusersetup.glade:1368
 msgid "<b>Basic settings</b>"
 msgstr "<b>Βασικές ρυθμίσεις</b>"
 
-#: ../gtkusersetup.glade:1389
+#: ../gtkusersetup.glade:1388
 msgid "Group name:"
 msgstr "Όνομα ομάδας:"
 
-#: ../gtkusersetup.glade:1399
+#: ../gtkusersetup.glade:1398
 msgid "Group ID:"
 msgstr "Κωδικός ομάδας:"
 
-#: ../gtkusersetup.glade:1445
+#: ../gtkusersetup.glade:1444
 msgid "<b>Group members</b>"
 msgstr "<b>Μέλη ομάδας</b>"
 
-#: ../gtkusersetup.glade:1647
+#: ../gtkusersetup.glade:1646
 msgid "Delete group?"
 msgstr "Διαγραφή ομάδας;"
 
-#: ../gtkusersetup.glade:1748
+#: ../gtkusersetup.glade:1747
 msgid "Cannot delete group"
 msgstr "Δεν είναι δυνατή η διαγραφή της ομάδας"
 
 #: ../gtkusersetup:209
 msgid "Password is too short. It has to be at least 5 characters long."
-msgstr "Ο κωδικός είναι πολύ μικρός. Πρέπει να έχει μήκος τουλάχιστον 5 χαρακτήρες."
+msgstr ""
+"Ο κωδικός είναι πολύ μικρός. Πρέπει να έχει μήκος τουλάχιστον 5 χαρακτήρες."
 
 #: ../gtkusersetup:212
 msgid "Password cannot include the backslash character."
-msgstr "Ο κωδικός δεν μπορεί να περιλαμβάνει το χαρακτήρα της ανάποδης καθέτου."
+msgstr ""
+"Ο κωδικός δεν μπορεί να περιλαμβάνει το χαρακτήρα της ανάποδης καθέτου."
 
 #: ../gtkusersetup:218
 msgid "Passwords don't match"
@@ -187,8 +188,12 @@ msgid "Username cannot start with a dash."
 msgstr "Το όνομα χρήστη δεν μπορεί να ξεκινά με παύλα."
 
 #: ../gtkusersetup:247
-msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "Το όνομα χρήστη θα πρέπει να περιλαμβάνει μόνο πεζά λατινικά γράμματα, αριθμούς, παύλες και υπογραμμίσεις."
+msgid ""
+"Username can consist solely of latin lower case letters, numbers, dashes and "
+"underscores."
+msgstr ""
+"Το όνομα χρήστη θα πρέπει να περιλαμβάνει μόνο πεζά λατινικά γράμματα, "
+"αριθμούς, παύλες και υπογραμμίσεις."
 
 #: ../gtkusersetup:253
 msgid "Username \"{0}\" already exists."
@@ -219,8 +224,12 @@ msgid "Group name cannot start with a dash."
 msgstr "Το όνομα ομάδας δεν μπορεί να ξεκινά με παύλα."
 
 #: ../gtkusersetup:283
-msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "Το όνομα ομάδας μπορεί να περιλαμβάνει μόνο πεζά λατινικά γράμματα, αριθμούς, παύλες και υπογραμμίσεις."
+msgid ""
+"Group name can consist solely of latin lower case letters, numbers, dashes "
+"and underscores."
+msgstr ""
+"Το όνομα ομάδας μπορεί να περιλαμβάνει μόνο πεζά λατινικά γράμματα, "
+"αριθμούς, παύλες και υπογραμμίσεις."
 
 #: ../gtkusersetup:289
 msgid "Group name \"{0}\" already exists."
@@ -259,12 +268,17 @@ msgid "Delete user {0}?"
 msgstr "Διαγραφή του χρήστη {0};"
 
 #: ../gtkusersetup:478
-msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
-msgstr "Είστε έτοιμοι να διαγράψετε το λογαριασμό του χρήστη \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
+msgid ""
+"You are about to remove user account \"{0}\" from your system. Do you really "
+"want to continue?"
+msgstr ""
+"Είστε έτοιμοι να διαγράψετε το λογαριασμό του χρήστη \"{0}\" από το σύστημά "
+"σας. Θέλετε πραγματικά να συνεχίσετε;"
 
 #: ../gtkusersetup:479
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr "Απομάκρυνση του αρχικού καταλόγου του χρήστη ({0}) με όλα τα περιεχόμενά του."
+msgstr ""
+"Απομάκρυνση του αρχικού καταλόγου του χρήστη ({0}) με όλα τα περιεχόμενά του."
 
 #: ../gtkusersetup:724
 msgid "Group \"{0}\" properties"
@@ -275,12 +289,22 @@ msgid "Add new group"
 msgstr "Προσθήκη νέας ομάδας"
 
 #: ../gtkusersetup:768
-msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
-msgstr "Είστε έτοιμοι να διαγράψετε την ομάδα \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
+msgid ""
+"You are about to delete the \"{0}\" group from your system. Are you sure you "
+"want to continue?"
+msgstr ""
+"Είστε έτοιμοι να διαγράψετε την ομάδα \"{0}\" από το σύστημά σας. Θέλετε "
+"πραγματικά να συνεχίσετε;"
 
 #: ../gtkusersetup:771
-msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
-msgstr "Η ομάδα \"{0}\" δεν μπορεί να διαγραφεί, επειδή είναι η κύρια ομάδα για το χρήστη \"{1}\". Αν επιθυμείτε να διαγράψετε την ομάδα \"{0}\", θα πρέπει πρώτα να αλλάξετε την κύρια ομάδα του χρήστη \"{1}\"."
+msgid ""
+"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
+"you want to delete group \"{0}\", you have to set the main group for user "
+"\"{1}\" to another group first."
+msgstr ""
+"Η ομάδα \"{0}\" δεν μπορεί να διαγραφεί, επειδή είναι η κύρια ομάδα για το "
+"χρήστη \"{1}\". Αν επιθυμείτε να διαγράψετε την ομάδα \"{0}\", θα πρέπει "
+"πρώτα να αλλάξετε την κύρια ομάδα του χρήστη \"{1}\"."
 
 #: ../gtkusersetup:898
 msgid "Username"
@@ -301,4 +325,3 @@ msgstr "Μέλος"
 #: ../gtkusersetup:933
 msgid "Group"
 msgstr "Ομάδα"
-

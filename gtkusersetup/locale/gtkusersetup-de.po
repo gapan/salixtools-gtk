@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-24 15:35+0200\n"
+"POT-Creation-Date: 2010-02-24 20:26+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: German\n"
@@ -111,40 +111,39 @@ msgstr "Ablaufdatum des Kontos festlegen"
 msgid "Advanced"
 msgstr "Fortgeschritten"
 
-#: ../gtkusersetup.glade:951
-#: ../gtkusersetup.glade:1557
+#: ../gtkusersetup.glade:951 ../gtkusersetup.glade:1556
 msgid "Error!"
 msgstr "Fehler!"
 
-#: ../gtkusersetup.glade:1167
+#: ../gtkusersetup.glade:1166
 msgid "Group settings"
 msgstr "Gruppeneinstellungen"
 
-#: ../gtkusersetup.glade:1347
+#: ../gtkusersetup.glade:1346
 msgid "Group properties"
 msgstr "Gruppeneigenschaften"
 
-#: ../gtkusersetup.glade:1369
+#: ../gtkusersetup.glade:1368
 msgid "<b>Basic settings</b>"
 msgstr "<b>Grundeinstellungen<b>"
 
-#: ../gtkusersetup.glade:1389
+#: ../gtkusersetup.glade:1388
 msgid "Group name:"
 msgstr "Gruppenname:"
 
-#: ../gtkusersetup.glade:1399
+#: ../gtkusersetup.glade:1398
 msgid "Group ID:"
 msgstr "Gruppen-ID:"
 
-#: ../gtkusersetup.glade:1445
+#: ../gtkusersetup.glade:1444
 msgid "<b>Group members</b>"
 msgstr "<b>Gruppenmitglieder</b>"
 
-#: ../gtkusersetup.glade:1647
+#: ../gtkusersetup.glade:1646
 msgid "Delete group?"
 msgstr "Gruppe löschen?"
 
-#: ../gtkusersetup.glade:1748
+#: ../gtkusersetup.glade:1747
 msgid "Cannot delete group"
 msgstr "Gruppe kann nicht gelöscht werden"
 
@@ -185,8 +184,12 @@ msgid "Username cannot start with a dash."
 msgstr "Der Nutzername darf nicht mit einem Bindestrich anfangen."
 
 #: ../gtkusersetup:247
-msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "Der Nutzername darf ausschließlich aus lateinischen Buchstaben, Nummern, Bindestrichen und Unterstrichen bestehen."
+msgid ""
+"Username can consist solely of latin lower case letters, numbers, dashes and "
+"underscores."
+msgstr ""
+"Der Nutzername darf ausschließlich aus lateinischen Buchstaben, Nummern, "
+"Bindestrichen und Unterstrichen bestehen."
 
 #: ../gtkusersetup:253
 msgid "Username \"{0}\" already exists."
@@ -217,8 +220,12 @@ msgid "Group name cannot start with a dash."
 msgstr "Der Gruppenname darf nicht mit einem Bindestrich anfangen."
 
 #: ../gtkusersetup:283
-msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "Der Gruppenname darf ausschließlich aus lateinischen Buchstaben, Nummern, Bindestrichen und Unterstrichen bestehen."
+msgid ""
+"Group name can consist solely of latin lower case letters, numbers, dashes "
+"and underscores."
+msgstr ""
+"Der Gruppenname darf ausschließlich aus lateinischen Buchstaben, Nummern, "
+"Bindestrichen und Unterstrichen bestehen."
 
 #: ../gtkusersetup:289
 msgid "Group name \"{0}\" already exists."
@@ -257,12 +264,17 @@ msgid "Delete user {0}?"
 msgstr "Benutzer {0} löschen?"
 
 #: ../gtkusersetup:478
-msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
-msgstr "Sie sind gerade dabei, das Benutzerkonto \"{0}\" von Ihrem System zu löschen. Wollen Sie wirklich fortfahren?"
+msgid ""
+"You are about to remove user account \"{0}\" from your system. Do you really "
+"want to continue?"
+msgstr ""
+"Sie sind gerade dabei, das Benutzerkonto \"{0}\" von Ihrem System zu "
+"löschen. Wollen Sie wirklich fortfahren?"
 
 #: ../gtkusersetup:479
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr "Das Home-Verzeichnis ({0}) des Benutzers mit seinem gesamten Inhalt löschen"
+msgstr ""
+"Das Home-Verzeichnis ({0}) des Benutzers mit seinem gesamten Inhalt löschen"
 
 #: ../gtkusersetup:724
 msgid "Group \"{0}\" properties"
@@ -273,12 +285,23 @@ msgid "Add new group"
 msgstr "Neue Gruppe hinzufügen"
 
 #: ../gtkusersetup:768
-msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
-msgstr "Sie sind gerade dabei, die Gruppe \"{0}\" von Ihrem System zu löschen. Wollen Sie wirklich fortfahren?"
+msgid ""
+"You are about to delete the \"{0}\" group from your system. Are you sure you "
+"want to continue?"
+msgstr ""
+"Sie sind gerade dabei, die Gruppe \"{0}\" von Ihrem System zu löschen. "
+"Wollen Sie wirklich fortfahren?"
 
 #: ../gtkusersetup:771
-msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
-msgstr "Die Gruppe \"{0}\" kann nicht gelöscht werden weil sie die Hauptgruppe für Benutzer \"{1}\" ist. Wenn Sie die Gruppe \"{0}\" löschen möchten, müssen Sie zuerst die Hauptgruppe für Benutzer \"{1}\" auf eine andere Gruppe ändern."
+msgid ""
+"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
+"you want to delete group \"{0}\", you have to set the main group for user "
+"\"{1}\" to another group first."
+msgstr ""
+"Die Gruppe \"{0}\" kann nicht gelöscht werden weil sie die Hauptgruppe für "
+"Benutzer \"{1}\" ist. Wenn Sie die Gruppe \"{0}\" löschen möchten, müssen "
+"Sie zuerst die Hauptgruppe für Benutzer \"{1}\" auf eine andere Gruppe "
+"ändern."
 
 #: ../gtkusersetup:898
 msgid "Username"
@@ -299,4 +322,3 @@ msgstr "Mitglied"
 #: ../gtkusersetup:933
 msgid "Group"
 msgstr "Gruppe"
-
