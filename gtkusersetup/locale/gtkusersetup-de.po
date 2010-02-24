@@ -93,7 +93,7 @@ msgstr "<b>Fortgeschrittene Einstellungen</b>"
 
 #: ../gtkusersetup.glade:771
 msgid "Home directory:"
-msgstr "Home Verzeichnis:"
+msgstr "Home-Verzeichnis:"
 
 #: ../gtkusersetup.glade:781
 msgid "Shell:"
