@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkclocksetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-24 15:55+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: ../gtkclocksetup.glade:7
+msgid "Date and time settings"
+msgstr "Konfiguration der Systemzeit"
+
+#: ../gtkclocksetup.glade:26
+msgid "Keep clock synchronized with internet servers"
+msgstr "Zeit über Internet-Server synchronisieren"
+
+#: ../gtkclocksetup.glade:51
+msgid "Synchronize now"
+msgstr "Jetzt synchronisieren"
+
+#: ../gtkclocksetup.glade:89
+#: ../gtkclocksetup:146
+#: ../gtkclocksetup:179
+msgid "Time zone:"
+msgstr "Zeitzone:"
+
+#: ../gtkclocksetup.glade:97
+msgid "Select time zone..."
+msgstr "Zeitzone auswählen..."
+
+#: ../gtkclocksetup.glade:228
+msgid "Time:"
+msgstr "Uhrzeit:"
+
+#: ../gtkclocksetup.glade:262
+msgid "Date:"
+msgstr "Datum:"
+
+#: ../gtkclocksetup.glade:347
+msgid "Select time zone"
+msgstr "Zeitzone auswählen"
+
+#: ../gtkclocksetup.glade:366
+msgid "Please select your time zone:"
+msgstr "Bitte wählen Sie Ihre Zeitzone:"
+
+#: ../gtkclocksetup:195
+msgid "General area"
+msgstr "Region"
+
+#: ../gtkclocksetup:196
+msgid "Location"
+msgstr "Ort"
+
