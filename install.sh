@@ -4,11 +4,14 @@
 cd $(dirname $0)
 install -d -m 755 $DESTDIR/usr/sbin
 install -d -m 755 $DESTDIR/usr/share/applications
+install -d -m 755 $DESTDI/usr/share/salixtools
 
 for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup; do
 	install -m 750 $i/$i $DESTDIR/usr/sbin/
 	install -m 644 $i/$i.desktop $DESTDIR/usr/share/applications/
 	install -m 644 $i/$i-kde.desktop $DESTDIR/usr/share/applications/
+	install -d -m 755 $DESTDIR/usr/share/salixtools/$i
+	install -m 644 $i/$i.glade $DESTDIR/usr/share/salixtools/$i/
 	for j in `ls $i/locale/$i-*.mo`; do
 		install -d -m 755 \
 		$DESTDIR/usr/share/locale/`basename $j|sed "s/$i-//"|sed "s/.mo//"`/LC_MESSAGES \
