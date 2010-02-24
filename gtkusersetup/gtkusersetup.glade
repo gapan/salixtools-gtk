@@ -1051,7 +1051,6 @@
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox4">
         <property name="visible">True</property>
-        <property name="spacing">2</property>
         <child>
           <object class="GtkVBox" id="vbox7">
             <property name="visible">True</property>
@@ -1109,7 +1108,6 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
-            <property name="padding">20</property>
             <property name="position">1</property>
           </packing>
         </child>
