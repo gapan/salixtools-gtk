@@ -260,7 +260,7 @@ msgstr "Διαγραφή του χρήστη {0};"
 
 #: ../gtkusersetup:478
 msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
-msgstr "Είστε έτοιμοι να διαγράψετε το λογαριασμό του χρήστη  \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
+msgstr "Είστε έτοιμοι να διαγράψετε το λογαριασμό του χρήστη \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
 
 #: ../gtkusersetup:479
 msgid "Completely remove user's home directory ({0}) with all its contents"
