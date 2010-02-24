@@ -268,13 +268,16 @@ class SystemUsers:
 		g = SystemUsers()
 		setgroupname = True
 		msg = ''
-		for i in g.get_all_groups():
-			if groupname == i[0]:
-				setgroupname = False
-				msg = _("Group name \"{0}\" already exists.").format(groupname)
-				break
+		if groupname == '':
+			setgroupname = False
+			msg = _("Group name cannot be empty.")
+		else:
+			for i in g.get_all_groups():
+				if groupname == i[0]:
+					setgroupname = False
+					msg = _("Group name \"{0}\" already exists.").format(groupname)
+					break
 		return setgroupname, msg
-
 
 	def check_shell(self, shell):
 		if os.path.exists(shell):
@@ -342,7 +345,7 @@ class GTKUserSetup:
 		#
 		# Set existing values
 		#
-		self.user_properties_window.set_title(_("User account properties for {0}").format(username))
+		self.user_properties_window.set_title(_("User account properties for \"{0}\"").format(username))
 		self.notebook_userproperties.set_current_page(0)
 		
 		# Account tab
@@ -707,6 +710,7 @@ class GTKUserSetup:
 		group = self.grouplist.get_selection()
 		self.groupliststore, iter = group.get_selected()
 		groupname = self.groupliststore.get_value(iter, 0)
+		self.group_properties_window.set_title(_("Group \"{0}\" properties").format(groupname))
 		self.entry_groupname.set_sensitive(False)
 		self.entry_groupname.set_text(groupname)
 		self.spinbutton_gid.set_value(g.get_gid(groupname))
@@ -725,6 +729,7 @@ class GTKUserSetup:
 		self.group_task_add_group = True
 		self.entry_groupname.set_sensitive(True)
 		self.entry_groupname.set_text('')
+		self.group_properties_window.set_title(_("Add new group"))
 		gidlist = []
 		for i in grp.getgrall():
 			gidlist.append(int(i[2]))

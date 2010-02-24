@@ -1343,6 +1343,7 @@
     <property name="width_request">350</property>
     <property name="height_request">450</property>
     <property name="border_width">5</property>
+    <property name="title" translatable="yes">Group properties</property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
     <property name="icon_name">document-properties</property>
@@ -1552,6 +1553,7 @@
   </object>
   <object class="GtkDialog" id="group_properties_error_window">
     <property name="border_width">5</property>
+    <property name="title" translatable="yes">Error!</property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
@@ -1640,6 +1642,7 @@
   </object>
   <object class="GtkDialog" id="delete_group_window">
     <property name="border_width">5</property>
+    <property name="title" translatable="yes">Delete group?</property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
     <property name="window_position">center-on-parent</property>
