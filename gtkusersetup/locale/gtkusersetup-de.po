@@ -125,7 +125,7 @@ msgstr "Gruppeneigenschaften"
 
 #: ../gtkusersetup.glade:1368
 msgid "<b>Basic settings</b>"
-msgstr "<b>Grundeinstellungen<b>"
+msgstr "<b>Grundeinstellungen</b>"
 
 #: ../gtkusersetup.glade:1388
 msgid "Group name:"
