@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gtklocalesetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 13:43+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+
+#: ../gtklocalesetup.glade:23
+msgid "System language"
+msgstr "Systemsprache"
+
+#: ../gtklocalesetup.glade:56
+msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgstr "Bitte wählen Sie die voreingestellte Systemsprache. Die Änderungen treten nach dem Neustart des Systems in Kraft."
+
