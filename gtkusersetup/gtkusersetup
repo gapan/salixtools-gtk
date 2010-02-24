@@ -475,7 +475,7 @@ class GTKUserSetup:
 		username = self.userliststore.get_value(iter, 1)
 		self.checkbutton_delete_user_homedir.set_active(False)
 		self.delete_user_window.set_title(_("Delete user {0}?").format(username))
-		self.label_delete_user.set_text(_("You are about to remove user account \"{0}\" from your system. Do you really want to continue?".format(username)))
+		self.label_delete_user.set_text(_("You are about to remove user account \"{0}\" from your system. Do you really want to continue?").format(username))
 		self.checkbutton_delete_user_homedir.set_label(_("Completely remove user's home directory ({0}) with all its contents").format(u.get_homedir(username)))
 		self.delete_user_window.show()
 
