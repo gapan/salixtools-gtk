@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-24 14:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gtkusersetup.glade:49
+msgid "User settings"
+msgstr ""
+
+#: ../gtkusersetup.glade:208
+msgid "Manage groups"
+msgstr ""
+
+#: ../gtkusersetup.glade:234
+msgid "Show all users"
+msgstr ""
+
+#: ../gtkusersetup.glade:325
+msgid "<b>Basic information</b>"
+msgstr ""
+
+#: ../gtkusersetup.glade:344
+msgid "Username:"
+msgstr ""
+
+#: ../gtkusersetup.glade:353
+msgid "Real name:"
+msgstr ""
+
+#: ../gtkusersetup.glade:414
+msgid "User password:"
+msgstr ""
+
+#: ../gtkusersetup.glade:424
+msgid "Password confirmation:"
+msgstr ""
+
+#: ../gtkusersetup.glade:465
+msgid "View password while typing"
+msgstr ""
+
+#: ../gtkusersetup.glade:483
+msgid "Account"
+msgstr ""
+
+#: ../gtkusersetup.glade:498
+msgid "<b>Contact information</b>"
+msgstr ""
+
+#: ../gtkusersetup.glade:518
+msgid "Office extension:"
+msgstr ""
+
+#: ../gtkusersetup.glade:530
+msgid "Office information:"
+msgstr ""
+
+#: ../gtkusersetup.glade:540
+msgid "Home phone:"
+msgstr ""
+
+#: ../gtkusersetup.glade:597
+msgid "Contact"
+msgstr ""
+
+#: ../gtkusersetup.glade:613
+msgid "<b>Group membership</b>"
+msgstr ""
+
+#: ../gtkusersetup.glade:630
+msgid "Main group:"
+msgstr ""
+
+#: ../gtkusersetup.glade:663
+msgid "Other groups:"
+msgstr ""
+
+#: ../gtkusersetup.glade:735
+msgid "Groups"
+msgstr ""
+
+#: ../gtkusersetup.glade:751
+msgid "<b>Advanced settings</b>"
+msgstr ""
+
+#: ../gtkusersetup.glade:771
+msgid "Home directory:"
+msgstr ""
+
+#: ../gtkusersetup.glade:781
+msgid "Shell:"
+msgstr ""
+
+#: ../gtkusersetup.glade:793
+msgid "UID:"
+msgstr ""
+
+#: ../gtkusersetup.glade:850
+msgid "Set account expiration date"
+msgstr ""
+
+#: ../gtkusersetup.glade:886
+msgid "Advanced"
+msgstr ""
+
+#: ../gtkusersetup.glade:951 ../gtkusersetup.glade:1557
+msgid "Error!"
+msgstr ""
+
+#: ../gtkusersetup.glade:1167
+msgid "Group settings"
+msgstr ""
+
+#: ../gtkusersetup.glade:1347
+msgid "Group properties"
+msgstr ""
+
+#: ../gtkusersetup.glade:1369
+msgid "<b>Basic settings</b>"
+msgstr ""
+
+#: ../gtkusersetup.glade:1389
+msgid "Group name:"
+msgstr ""
+
+#: ../gtkusersetup.glade:1399
+msgid "Group ID:"
+msgstr ""
+
+#: ../gtkusersetup.glade:1445
+msgid "<b>Group members</b>"
+msgstr ""
+
+#: ../gtkusersetup.glade:1647
+msgid "Delete group?"
+msgstr ""
+
+#: ../gtkusersetup.glade:1748
+msgid "Cannot delete group"
+msgstr ""
+
+#: ../gtkusersetup:209
+msgid "Password is too short. It has to be at least 5 characters long."
+msgstr ""
+
+#: ../gtkusersetup:212
+msgid "Password cannot include the backslash character."
+msgstr ""
+
+#: ../gtkusersetup:218
+msgid "Passwords don't match"
+msgstr ""
+
+#: ../gtkusersetup:227
+msgid "Username cannot be empty."
+msgstr ""
+
+#: ../gtkusersetup:230
+msgid "Username cannot exceed 31 characters"
+msgstr ""
+
+#: ../gtkusersetup:233
+msgid "Username cannot include the space character."
+msgstr ""
+
+#: ../gtkusersetup:236
+msgid "Username cannot start with a number."
+msgstr ""
+
+#: ../gtkusersetup:239
+msgid "Username cannot start with an underscore."
+msgstr ""
+
+#: ../gtkusersetup:242
+msgid "Username cannot start with a dash."
+msgstr ""
+
+#: ../gtkusersetup:247
+msgid ""
+"Username can consist solely of latin lower case letters, numbers, dashes and "
+"underscores."
+msgstr ""
+
+#: ../gtkusersetup:253
+msgid "Username \"{0}\" already exists."
+msgstr ""
+
+#: ../gtkusersetup:263
+msgid "Group name cannot be empty."
+msgstr ""
+
+#: ../gtkusersetup:266
+msgid "Group name cannot exceed 31 characters"
+msgstr ""
+
+#: ../gtkusersetup:269
+msgid "Group name cannot include the space character."
+msgstr ""
+
+#: ../gtkusersetup:272
+msgid "Group name cannot start with a number."
+msgstr ""
+
+#: ../gtkusersetup:275
+msgid "Group name cannot start with an underscore."
+msgstr ""
+
+#: ../gtkusersetup:278
+msgid "Group name cannot start with a dash."
+msgstr ""
+
+#: ../gtkusersetup:283
+msgid ""
+"Group name can consist solely of latin lower case letters, numbers, dashes "
+"and underscores."
+msgstr ""
+
+#: ../gtkusersetup:289
+msgid "Group name \"{0}\" already exists."
+msgstr ""
+
+#: ../gtkusersetup:299
+msgid "Shell does not exist."
+msgstr ""
+
+#: ../gtkusersetup:309
+msgid "UID {0} is assigned to another user."
+msgstr ""
+
+#: ../gtkusersetup:319
+msgid "GID {0} is assigned to another group."
+msgstr ""
+
+#: ../gtkusersetup:359
+msgid "User account properties for \"{0}\""
+msgstr ""
+
+#: ../gtkusersetup:421
+msgid "Add new user"
+msgstr ""
+
+#: ../gtkusersetup:477
+msgid "Delete user {0}?"
+msgstr ""
+
+#: ../gtkusersetup:478
+msgid ""
+"You are about to delete user account \"{0}\" from your system. Do you really "
+"want to continue?"
+msgstr ""
+
+#: ../gtkusersetup:479
+msgid "Completely remove user's home directory ({0}) with all its contents"
+msgstr ""
+
+#: ../gtkusersetup:724
+msgid "Group \"{0}\" properties"
+msgstr ""
+
+#: ../gtkusersetup:743
+msgid "Add new group"
+msgstr ""
+
+#: ../gtkusersetup:768
+msgid ""
+"You are about to delete the \"{0}\" group from your system. Are you sure you "
+"want to continue?"
+msgstr ""
+
+#: ../gtkusersetup:771
+msgid ""
+"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
+"you want to delete group \"{0}\", you have to set the main group for user "
+"\"{1}\" to another group first."
+msgstr ""
+
+#: ../gtkusersetup:898
+msgid "Username"
+msgstr ""
+
+#: ../gtkusersetup:899
+msgid "Real name"
+msgstr ""
+
+#: ../gtkusersetup:900
+msgid "Home directory"
+msgstr ""
+
+#: ../gtkusersetup:932
+msgid "Member"
+msgstr ""
+
+#: ../gtkusersetup:933
+msgid "Group"
+msgstr ""
