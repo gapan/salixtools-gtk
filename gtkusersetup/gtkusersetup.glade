@@ -1680,7 +1680,6 @@
               <object class="GtkLabel" id="label_delete_group">
                 <property name="visible">True</property>
                 <property name="label">Really delete group?</property>
-                <property name="use_markup">True</property>
                 <property name="wrap">True</property>
               </object>
               <packing>
