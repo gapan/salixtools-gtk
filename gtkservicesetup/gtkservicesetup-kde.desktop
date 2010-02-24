@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Startup Services
+Name[de]=Systemdienste
+Name[fr]=Services
+Name[el]=Υπηρεσίες συστήματος
+Comment=Services configuration tool
+Comment[de]=Systemdienste konfigurieren
+Comment[el]=Διαχείρηση των υπηρεσιών συστήματος
+Exec=kdesu gtkservicesetup
+Icon=gtkservicesetup
+Terminal=false
+Type=Application
+Categories=Application;System;
+StartupNotify=true
+Encoding=UTF-8
+OnlyShowIn=KDE
