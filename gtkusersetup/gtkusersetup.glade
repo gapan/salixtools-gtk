@@ -985,6 +985,7 @@
                 <property name="visible">True</property>
                 <property name="xalign">0</property>
                 <property name="label">Display specific error message here</property>
+                <property name="wrap">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1591,6 +1592,7 @@
                 <property name="visible">True</property>
                 <property name="xalign">0</property>
                 <property name="label">Display specific error message here</property>
+                <property name="wrap">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>

@@ -240,28 +240,18 @@ class SystemUsers:
 		elif username.startswith('-'):
 			setusername = False
 			msg = _("Username cannot start with a dash.")
-		elif str.isupper(str.swapcase(username)) == False:
-			setusername = False
-			msg = _("Username cannot include capital letters.")
-		elif '.' in username:
-			setusername = False
-			msg = _("Username cannot include a period.")
-		elif ',' in username:
-			setusername = False
-			msg = _("Username cannot include a comma.")
-		elif '/' in username:
-			setusername = False
-			msg = _("Username cannot include the slash character.")
 		if setusername == True:
 			for i in username:
 				if not i in 'abcdefghijklmnopqrstuvwxyz-_0123456789':
 					setusername = False
-					msg = _("Username can consist solely of letters, numbers, dashes and underscores.")
+					msg = _("Username can consist solely of latin lower case letters, numbers, dashes and underscores.")
 					break
-		for i in u.user_list():
-			if username == i[0]:
-				setusername = False
-				msg = _("Username \"{0}\" already exists.").format(username)
+		if setusername == True:
+			for i in u.user_list():
+				if username == i[0]:
+					setusername = False
+					msg = _("Username \"{0}\" already exists.").format(username)
+					break
 		return setusername, msg
 
 	def check_groupname(self, groupname):
@@ -271,7 +261,28 @@ class SystemUsers:
 		if groupname == '':
 			setgroupname = False
 			msg = _("Group name cannot be empty.")
-		else:
+		elif len(groupname) > 31:
+			setgroupname = False
+			msg = _("Group name cannot exceed 31 characters")
+		elif ' ' in groupname:
+			setgroupname = False
+			msg = _("Group name cannot include the space character.")
+		elif groupname.startswith(('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')):
+			setgroupname = False
+			msg = _("Group name cannot start with a number.")
+		elif groupname.startswith('_'):
+			setgroupname = False
+			msg = _("Group name cannot start with an underscore.")
+		elif groupname.startswith('-'):
+			setgroupname = False
+			msg = _("Group name cannot start with a dash.")
+		if setgroupname == True:
+			for i in groupname:
+				if not i in 'abcdefghijklmnopqrstuvwxyz-_0123456789':
+					setgroupname = False
+					msg = _("Group name can consist solely of latin lower case letters, numbers, dashes and underscores.")
+					break
+		if setgroupname == True:
 			for i in g.get_all_groups():
 				if groupname == i[0]:
 					setgroupname = False
