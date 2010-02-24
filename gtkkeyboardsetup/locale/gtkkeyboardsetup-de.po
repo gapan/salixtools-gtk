@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkkeyboardsetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 13:39+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+
+#: ../gtkkeyboardsetup.glade:21
+msgid "Keyboard settings"
+msgstr "Tastatureinstellungen"
+
+#: ../gtkkeyboardsetup.glade:53
+msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
+msgstr "Bitte wählen Sie die Art Ihrer Tastatur, Ihr bevorzugtes Layout und legen Sie Numlock und SCIM Einstellungen fest."
+
+#: ../gtkkeyboardsetup.glade:147
+msgid "Enable SCIM when the system is started"
+msgstr "SCIM beim Systemstart aktivieren"
+
+#: ../gtkkeyboardsetup.glade:162
+msgid "Enable numlock when the system is started"
+msgstr "Numlock beim Systemstart aktivieren"
+
+#: ../gtkkeyboardsetup:151
+msgid "Keyboard type"
+msgstr "Art"
+
+#: ../gtkkeyboardsetup:155
+msgid "Keyboard map"
+msgstr "Layout"
+
