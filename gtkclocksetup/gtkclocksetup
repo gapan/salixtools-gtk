@@ -125,7 +125,10 @@ class GTKClockSetup:
 		return True
 
 	def on_continentlist_cursor_changed(self, widget, data=None):
-		pos = self.continentlist.get_cursor()[0][0]
+		try:
+			pos = self.continentlist.get_cursor()[0][0]
+		except TypeError:
+			pos = 0
 		self.locationliststore.clear()
 		selectedcontinent = continents()[pos]
 		currenttz = currenttimezone()[1]
