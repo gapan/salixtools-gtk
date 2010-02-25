@@ -338,78 +338,81 @@ class GTKUserSetup:
 		gtk.main_quit()
 
 	def on_button_properties_clicked(self, widget, data=None):
-		u = SystemUsers()
-		self.task_add_user = False
-		user = self.userlist.get_selection()
-		self.userliststore, iter = user.get_selected()
-		username = self.userliststore.get_value(iter, 1)
-		fullname = u.get_fullname(username)
-		officeinfo = u.get_officeinfo(username)
-		officeext = u.get_officeext(username)
-		homephone = u.get_homephone(username)
-		maingroup = u.get_maingroup(username)
-		homedir = u.get_homedir(username)
-		shell = u.get_shell(username)
-		uid = u.get_uid(username)
-		expirydate = u.get_expiry_date(username)
+		try:
+			u = SystemUsers()
+			self.task_add_user = False
+			user = self.userlist.get_selection()
+			self.userliststore, iter = user.get_selected()
+			username = self.userliststore.get_value(iter, 1)
+			fullname = u.get_fullname(username)
+			officeinfo = u.get_officeinfo(username)
+			officeext = u.get_officeext(username)
+			homephone = u.get_homephone(username)
+			maingroup = u.get_maingroup(username)
+			homedir = u.get_homedir(username)
+			shell = u.get_shell(username)
+			uid = u.get_uid(username)
+			expirydate = u.get_expiry_date(username)
 
-		#
-		# Set existing values
-		#
-		self.user_properties_window.set_title(_("User account properties for \"{0}\"").format(username))
-		self.notebook_userproperties.set_current_page(0)
-		
-		# Account tab
-		self.entry_login.set_text(username)
-		self.entry_login.set_sensitive(False)
-		self.entry_fullname.set_text(fullname)
-		self.label_passwordheader.set_label(_("<b>Set new password</b>"))
-		self.entry_password1.set_text('')
-		self.entry_password2.set_text('')
+			#
+			# Set existing values
+			#
+			self.user_properties_window.set_title(_("User account properties for \"{0}\"").format(username))
+			self.notebook_userproperties.set_current_page(0)
+			
+			# Account tab
+			self.entry_login.set_text(username)
+			self.entry_login.set_sensitive(False)
+			self.entry_fullname.set_text(fullname)
+			self.label_passwordheader.set_label(_("<b>Set new password</b>"))
+			self.entry_password1.set_text('')
+			self.entry_password2.set_text('')
 
-		# Contact tab
-		self.entry_officeinfo.set_text(officeinfo)
-		self.entry_officeext.set_text(officeext)
-		self.entry_homephone.set_text(homephone)
+			# Contact tab
+			self.entry_officeinfo.set_text(officeinfo)
+			self.entry_officeext.set_text(officeext)
+			self.entry_homephone.set_text(homephone)
 
-		# Groups tab
-		allgroups = u.get_all_groups()
-		self.groupliststore.clear()
-		count = 0
-		for i in allgroups:
-			self.groupliststore.append([i[0]])
-			if i[0] == maingroup:
-				self.combobox_maingroup.set_active(count)
-			count += 1
-		self.user_groupliststore.clear()
-		for i in allgroups:
-			group = i[0]
-			gid = i[1]
-			groupmembers = i[2]
-			if u.user_in_group(username, group):
-				ismember = True
+			# Groups tab
+			allgroups = u.get_all_groups()
+			self.groupliststore.clear()
+			count = 0
+			for i in allgroups:
+				self.groupliststore.append([i[0]])
+				if i[0] == maingroup:
+					self.combobox_maingroup.set_active(count)
+				count += 1
+			self.user_groupliststore.clear()
+			for i in allgroups:
+				group = i[0]
+				gid = i[1]
+				groupmembers = i[2]
+				if u.user_in_group(username, group):
+					ismember = True
+				else:
+					ismember = False
+				self.user_groupliststore.append([ismember, group, gid, False])
+
+			# Advanced tab
+			self.label_homedir.show()
+			self.entry_homedir.show()
+			self.entry_homedir.set_text(homedir)
+			self.entry_shell.set_text(shell)
+			self.label_uid.show()
+			self.spinbutton_uid.show()
+			self.spinbutton_uid.set_value(uid)
+			if expirydate[0] == False:
+				self.checkbutton_user_expiration.set_active(False)
+				self.calendar_user_expiration.set_sensitive(False)
 			else:
-				ismember = False
-			self.user_groupliststore.append([ismember, group, gid, False])
+				self.checkbutton_user_expiration.set_active(True)
+				self.calendar_user_expiration.set_sensitive(True)
+			self.calendar_user_expiration.select_month(expirydate[2], expirydate[1])
+			self.calendar_user_expiration.select_day(expirydate[3])
 
-		# Advanced tab
-		self.label_homedir.show()
-		self.entry_homedir.show()
-		self.entry_homedir.set_text(homedir)
-		self.entry_shell.set_text(shell)
-		self.label_uid.show()
-		self.spinbutton_uid.show()
-		self.spinbutton_uid.set_value(uid)
-		if expirydate[0] == False:
-			self.checkbutton_user_expiration.set_active(False)
-			self.calendar_user_expiration.set_sensitive(False)
-		else:
-			self.checkbutton_user_expiration.set_active(True)
-			self.calendar_user_expiration.set_sensitive(True)
-		self.calendar_user_expiration.select_month(expirydate[2], expirydate[1])
-		self.calendar_user_expiration.select_day(expirydate[3])
-
-		self.user_properties_window.show()
+			self.user_properties_window.show()
+		except TypeError:
+			pass
 
 	def on_button_adduser_clicked(self, widget):
 		u = SystemUsers()
@@ -469,15 +472,18 @@ class GTKUserSetup:
 		self.user_properties_window.show()
 
 	def on_button_deleteuser_clicked(self, widget):
-		u = SystemUsers()
-		user = self.userlist.get_selection()
-		self.userliststore, iter = user.get_selected()
-		username = self.userliststore.get_value(iter, 1)
-		self.checkbutton_delete_user_homedir.set_active(False)
-		self.delete_user_window.set_title(_("Delete user {0}?").format(username))
-		self.label_delete_user.set_text(_("You are about to remove user account \"{0}\" from your system. Do you really want to continue?").format(username))
-		self.checkbutton_delete_user_homedir.set_label(_("Completely remove user's home directory ({0}) with all its contents").format(u.get_homedir(username)))
-		self.delete_user_window.show()
+		try:
+			u = SystemUsers()
+			user = self.userlist.get_selection()
+			self.userliststore, iter = user.get_selected()
+			username = self.userliststore.get_value(iter, 1)
+			self.checkbutton_delete_user_homedir.set_active(False)
+			self.delete_user_window.set_title(_("Delete user {0}?").format(username))
+			self.label_delete_user.set_text(_("You are about to remove user account \"{0}\" from your system. Do you really want to continue?").format(username))
+			self.checkbutton_delete_user_homedir.set_label(_("Completely remove user's home directory ({0}) with all its contents").format(u.get_homedir(username)))
+			self.delete_user_window.show()
+		except TypeError:
+			pass
 
 	def on_button_managegroups_clicked(self, widget):
 		self.refresh_group_list()
