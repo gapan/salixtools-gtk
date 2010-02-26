@@ -77,6 +77,35 @@ def ntppresent():
 		state = False
 	return state
 
+def utcstate():
+	f = file('/etc/hardwareclock')
+	utc = False
+	while True:
+		line = f.readline()
+		if len(line) == 0:
+			break
+		elif line.rstrip("\n") == 'localtime':
+			utc = False
+			break
+		elif line.rstrip("\n") == 'UTC':
+			utc = True
+			break
+	f.close()
+	return utc
+
+def setutc(state):
+	f = file('/etc/hardwareclock', 'w')
+	if state == True:
+		time = 'UTC'
+	else:
+		time = 'localtime'
+	f.write('# /etc/hardwareclock\n')
+	f.write('#\n')
+	f.write('# Tells how the hardware clock time is stored.\n')
+	f.write('# You should run (gtk)clocksetup or timeconfig to edit this file.\n\n')
+	f.write(time+'\n')
+	f.close()
+
 def ntp_sync_now():
 	os.system('sh /etc/rc.d/rc.ntpd sync')
 
@@ -92,6 +121,8 @@ class GTKClockSetup:
 			os.system('date +%Y%m%d -s "'+year+month+day+'"')
 			os.system('date +T -s "'+hour+':'+min+':'+sec+'"')
 			os.system('hwclock --systohc')
+		if not self.utccheckbutton.get_active() == utcstate():
+			setutc(self.utccheckbutton.get_active())
 		gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
@@ -158,6 +189,9 @@ class GTKClockSetup:
 		self.spinbutton_sec.set_sensitive(state)
 		self.button_sync_now.set_sensitive(state)
 
+	#def on_utccheckbutton_toggled(self, widget):
+	#	checked = self.utccheckbutton.get_active()
+	
 	def update_calendar(self):
 		now = datetime.datetime.now()
 		self.calendar.select_month(now.month, now.year)
@@ -197,6 +231,8 @@ class GTKClockSetup:
 		self.spinbutton_sec = builder.get_object('spinbutton_sec')
 		self.continentcolumn.set_title(_('General area'))
 		self.locationcolumn.set_title(_('Location'))
+		self.utccheckbutton = builder.get_object('utccheckbutton')
+		self.utccheckbutton.set_active(utcstate())
 		
 		ntp = ntppresent()
 		self.ntpcheckbutton.set_sensitive(ntp)
