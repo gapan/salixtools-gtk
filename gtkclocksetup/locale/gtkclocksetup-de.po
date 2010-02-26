@@ -24,7 +24,9 @@ msgstr "Zeit über Internet-Server synchronisieren"
 msgid "Synchronize now"
 msgstr "Jetzt synchronisieren"
 
-#: ../gtkclocksetup.glade:89 ../gtkclocksetup:180 ../gtkclocksetup:216
+#: ../gtkclocksetup.glade:89
+#: ../gtkclocksetup:180
+#: ../gtkclocksetup:216
 msgid "Time zone:"
 msgstr "Zeitzone:"
 
@@ -34,14 +36,11 @@ msgstr "Zeitzone auswählen..."
 
 #: ../gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr ""
+msgstr "Die Hardware-Uhr läuft auf koordinierter Weltzeit (UTC)"
 
 #: ../gtkclocksetup.glade:134
-msgid ""
-"Hardware clocks in most home or business computers are set to using local "
-"time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr ""
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "Die Hardware-Uhren in den meisten Heim- und Geschäftscomputern lufen auf lokaler Uhrzeit, während die Hardware-Uhren in den meisten Webservern wahrscheinlich auf UTC laufen. Lassen Sie diese Auswahlbox leer, falls Sie sich nicht sicher sind."
 
 #: ../gtkclocksetup.glade:252
 msgid "Time:"
@@ -66,3 +65,4 @@ msgstr "Region"
 #: ../gtkclocksetup:233
 msgid "Location"
 msgstr "Ort"
+

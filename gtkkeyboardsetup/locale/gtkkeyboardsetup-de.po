@@ -16,12 +16,8 @@ msgid "Keyboard settings"
 msgstr "Tastatureinstellungen"
 
 #: ../gtkkeyboardsetup.glade:53
-msgid ""
-"Please select you preferred keyboard type and map and set numlock and SCIM "
-"preferences."
-msgstr ""
-"Bitte wählen Sie die Art Ihrer Tastatur, Ihr bevorzugtes Layout und legen "
-"Sie Numlock und SCIM Einstellungen fest."
+msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
+msgstr "Bitte wählen Sie die Art Ihrer Tastatur, Ihr bevorzugtes Layout und legen Sie Numlock und SCIM Einstellungen fest."
 
 #: ../gtkkeyboardsetup.glade:147
 msgid "Enable numlock when the system is started"
@@ -32,10 +28,8 @@ msgid "Enable SCIM when the system is started"
 msgstr "SCIM beim Systemstart aktivieren"
 
 #: ../gtkkeyboardsetup.glade:166
-msgid ""
-"SCIM is an input platform for Chinese, Japanese, Korean and many other "
-"languages."
-msgstr ""
+msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
+msgstr "SCIM ist eine Eingabemethode für Chinesisch, Japanisch, Koreanisch und viele andere Sprachen."
 
 #: ../gtkkeyboardsetup:161
 msgid "Keyboard type"
@@ -44,3 +38,4 @@ msgstr "Art"
 #: ../gtkkeyboardsetup:165
 msgid "Keyboard map"
 msgstr "Layout"
+
