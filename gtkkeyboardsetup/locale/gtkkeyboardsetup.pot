@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-17 13:39+0200\n"
+"POT-Creation-Date: 2010-02-26 12:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,17 +27,23 @@ msgid ""
 msgstr ""
 
 #: ../gtkkeyboardsetup.glade:147
-msgid "Enable SCIM when the system is started"
-msgstr ""
-
-#: ../gtkkeyboardsetup.glade:162
 msgid "Enable numlock when the system is started"
 msgstr ""
 
-#: ../gtkkeyboardsetup:151
+#: ../gtkkeyboardsetup.glade:162
+msgid "Enable SCIM when the system is started"
+msgstr ""
+
+#: ../gtkkeyboardsetup.glade:166
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+
+#: ../gtkkeyboardsetup:161
 msgid "Keyboard type"
 msgstr ""
 
-#: ../gtkkeyboardsetup:155
+#: ../gtkkeyboardsetup:165
 msgid "Keyboard map"
 msgstr ""
