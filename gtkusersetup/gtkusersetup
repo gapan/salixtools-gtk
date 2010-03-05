@@ -123,7 +123,8 @@ class SystemUsers:
 		return state, year, month, day
 
 	def create_user(self, login, shell, group, groups, password):
-		os.system('useradd -s '+shell+' -g '+group+' -m -k /etc/skel -p'+password+' '+login)
+		os.system('useradd -s '+shell+' -g '+group+' -m -k /etc/skel '+login)
+		self.set_password(login, password)
 		for i in groups:
 			self.add_user_to_group(login, i)
 
@@ -510,7 +511,6 @@ class GTKUserSetup:
 			officeext = self.entry_officeext.get_text()
 			homephone = self.entry_homephone.get_text()
 			maingroup = self.combobox_maingroup.get_active_text()
-			homedir = '/home'+username
 			shell = self.entry_shell.get_text()
 			expiry = self.checkbutton_user_expiration.get_active()
 	
