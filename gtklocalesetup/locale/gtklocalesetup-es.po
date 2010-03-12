@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 13:43+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: seacat <seacat.linux@gmail.com>\n"
+"Language-Team:  <seacat.linux@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: ARGENTINA\n"
+
+#: ../gtklocalesetup.glade:23
+msgid "System language"
+msgstr "Idioma del sistema"
+
+#: ../gtklocalesetup.glade:56
+msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgstr "Por favor, seleccione una localización por defecto del sistema. Los cambios se harán efectivos la próxima vez que inicie su sistema."
+
