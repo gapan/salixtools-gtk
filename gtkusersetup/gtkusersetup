@@ -48,8 +48,6 @@ class SystemUsers:
 			if all == False:
 				if i[1] >= 500:
 					userlist.append(i)
-				elif i[1] == 0:
-					userlist.append(i)
 			else:
 				userlist.append(i)
 		return userlist
