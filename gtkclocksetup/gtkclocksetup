@@ -113,13 +113,13 @@ class GTKClockSetup:
 	def on_button_ok_clicked(self, widget, data=None):
 		if self.ntpcheckbutton.get_active() == False:
 			year = "%04d" % (self.calendar.get_date()[0])
-			month = "%02d" % (self.calendar.get_date()[1])
+			month = "%02d" % (self.calendar.get_date()[1]+1)
 			day = "%02d" % (self.calendar.get_date()[2])
 			hour = "%02d" % self.spinbutton_hrs.get_value()
 			min = "%02d" % self.spinbutton_min.get_value()
 			sec = "%02d" % self.spinbutton_sec.get_value()
-			os.system('date +%Y%m%d -s "'+year+month+day+'"')
-			os.system('date +T -s "'+hour+':'+min+':'+sec+'"')
+			os.system('date +%Y%m%d -s "'+year+month+day+'"	> /dev/null')
+			os.system('date +T -s "'+hour+':'+min+':'+sec+'" > /dev/null')
 			os.system('hwclock --systohc')
 		if not self.utccheckbutton.get_active() == utcstate():
 			setutc(self.utccheckbutton.get_active())
@@ -194,7 +194,7 @@ class GTKClockSetup:
 	
 	def update_calendar(self):
 		now = datetime.datetime.now()
-		self.calendar.select_month(now.month, now.year)
+		self.calendar.select_month(now.month-1, now.year)
 		self.calendar.select_day(now.day)
 
 	def update_time(self):
