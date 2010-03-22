@@ -1,7 +1,7 @@
 #!/bin/sh
 
 xgettext --from-code=utf-8 \
-	-x exclude.po \
+	-x EXCLUDE \
 	-L Glade \
 	-o gtkservicesetup.pot \
 	../gtkservicesetup.glade
