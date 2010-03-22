@@ -1,0 +1,46 @@
+# Danish translation of gtkservicesetup.
+# Copyright (C) 2010
+# This file is distributed under the same license as the gtkservicesetup package.
+# Kris Thomsen <lakristho@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkservicesetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 13:46+0200\n"
+"PO-Revision-Date: 2010-03-21 22:21+0100\n"
+"Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../gtkservicesetup.glade:35
+msgid "System services"
+msgstr "Systemtjenester"
+
+#: ../gtkservicesetup.glade:67
+msgid ""
+"Please select the system services that you wish to be enabled when the "
+"system starts. Any changes you make will be applied when you press the OK "
+"button."
+msgstr ""
+"Vælg venligst de systemtjenester som du vil have aktiveret når systemet "
+"starter. De ændringer du laver vil træde i kraft når du trykker på "
+"O.k.-knappen."
+
+#: ../gtkservicesetup:44
+msgid "The {0} service"
+msgstr "Tjenesten {0}"
+
+#: ../gtkservicesetup:120
+msgid "Enabled"
+msgstr "Aktiveret"
+
+#: ../gtkservicesetup:122
+msgid "Service name"
+msgstr "Tjenestenavn"
+
+#: ../gtkservicesetup:124
+msgid "Service description"
+msgstr "Tjenestebeskrivelse"
