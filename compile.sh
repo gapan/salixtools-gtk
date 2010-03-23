@@ -2,8 +2,8 @@
 
 cd $(dirname $0)
 for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do
-	for j in `ls $i/locale/*.po | grep -v "exclude.po"`;do
-		echo "Compiling `echo $j|sed "s|/locale||"`"
+	for j in `ls $i/po/*.po`;do
+		echo "Compiling `echo $j|sed "s|/po||"`"
 		msgfmt $j -o `echo $j | sed "s/.po//"`.mo
 	done
 done

@@ -12,12 +12,12 @@ for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicese
 	install -m 644 $i/$i-kde.desktop $DESTDIR/usr/share/applications/
 	install -d -m 755 $DESTDIR/usr/share/salixtools/$i
 	install -m 644 $i/$i.glade $DESTDIR/usr/share/salixtools/$i/
-	for j in `ls $i/locale/*.mo|grep -v "exclude.po"`; do
+	for j in `ls $i/po/*.mo`; do
 		install -d -m 755 \
-		$DESTDIR/usr/share/locale/`basename $j|sed "s/.mo//"`/LC_MESSAGES \
+		$DESTDIR/usr/share/po/`basename $j|sed "s/.mo//"`/LC_MESSAGES \
 		2> /dev/null
 		install -m 644 $j \
-		$DESTDIR/usr/share/locale/`basename $j|sed "s/.mo//"`/LC_MESSAGES/$i.mo
+		$DESTDIR/usr/share/po/`basename $j|sed "s/.mo//"`/LC_MESSAGES/$i.mo
 	done
 done
 
