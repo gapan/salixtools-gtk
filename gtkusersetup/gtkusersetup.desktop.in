@@ -1,0 +1,12 @@
+[Desktop Entry]
+_Name=User and group settings
+_Comment=Users management tool
+Exec=gksu gtkusersetup
+Icon=gtkusersetup
+Terminal=false
+Type=Application
+Categories=Application;System;
+StartupNotify=true
+Encoding=UTF-8
+NoDisplay=false
+NotShowIn=KDE

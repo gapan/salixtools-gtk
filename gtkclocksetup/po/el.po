@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-26 12:14+0200\n"
+"POT-Creation-Date: 2010-03-23 23:15+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -13,57 +13,68 @@ msgstr ""
 "X-Poedit-Country: GREECE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../gtkclocksetup.glade:7
+#: gtkclocksetup.glade:7
 msgid "Date and time settings"
 msgstr "Ρυθμίσεις ημερομηνίας και ώρας"
 
-#: ../gtkclocksetup.glade:26
+#: gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
 msgstr "Το ρολόι να συγχρονίζεται αυτόματα με διακομιστές του διαδικτύου"
 
-#: ../gtkclocksetup.glade:51
+#: gtkclocksetup.glade:51
 msgid "Synchronize now"
 msgstr "Συγχρονισμός τώρα"
 
-#: ../gtkclocksetup.glade:89
-#: ../gtkclocksetup:180
-#: ../gtkclocksetup:216
+#: gtkclocksetup.glade:89 gtkclocksetup:180 gtkclocksetup:216
 msgid "Time zone:"
 msgstr "Ζώνη ώρας:"
 
-#: ../gtkclocksetup.glade:97
+#: gtkclocksetup.glade:97
 msgid "Select time zone..."
 msgstr "Επιλογή ζώνης ώρας..."
 
-#: ../gtkclocksetup.glade:130
+#: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Το ρολόι συστήματος είναι ρυθμισμένο σε Παγκόσμια Ώρα (UTC)"
 
-#: ../gtkclocksetup.glade:134
-msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "Το ρολόι συστήματος στους περισσότερους υπολογιστές είναι ρυθμισμένο σε τοπική ώρα, ενώ σε διακομιστές διαδικτύου συνήθως είναι ρυθμισμένο σε UTC. Αν δεν είστε σίγουροι, μην το επιλέξετε."
+#: gtkclocksetup.glade:134
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not check this box if you are not sure."
+msgstr ""
+"Το ρολόι συστήματος στους περισσότερους υπολογιστές είναι ρυθμισμένο σε "
+"τοπική ώρα, ενώ σε διακομιστές διαδικτύου συνήθως είναι ρυθμισμένο σε UTC. "
+"Αν δεν είστε σίγουροι, μην το επιλέξετε."
 
-#: ../gtkclocksetup.glade:252
+#: gtkclocksetup.glade:252
 msgid "Time:"
 msgstr "Ώρα:"
 
-#: ../gtkclocksetup.glade:286
+#: gtkclocksetup.glade:286
 msgid "Date:"
 msgstr "Ημερομηνία:"
 
-#: ../gtkclocksetup.glade:371
+#: gtkclocksetup.glade:371
 msgid "Select time zone"
 msgstr "Επιλογή ζώνης ώρας"
 
-#: ../gtkclocksetup.glade:392
+#: gtkclocksetup.glade:392
 msgid "Please select your time zone:"
 msgstr "Παρακαλούμε επιλέξτε ζώνη ώρας:"
 
-#: ../gtkclocksetup:232
+#: gtkclocksetup:232
 msgid "General area"
 msgstr "Γενική περιοχή"
 
-#: ../gtkclocksetup:233
+#: gtkclocksetup:233
 msgid "Location"
 msgstr "Τοποθεσία"
 
+#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+msgid "System clock configuration tool"
+msgstr "Ρύθμιση του ρολογιού του συστήματος"
+
+#: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock settings"
+msgstr "Ρύθμιση ρολογιού συστήματος"

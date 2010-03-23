@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-17 13:43+0200\n"
+"POT-Creation-Date: 2010-03-23 23:26+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: seacat <seacat.linux@gmail.com>\n"
 "Language-Team:  <seacat.linux@gmail.com>\n"
@@ -12,11 +12,23 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: ARGENTINA\n"
 
-#: ../gtklocalesetup.glade:23
+#: gtklocalesetup.glade:23
 msgid "System language"
 msgstr "Idioma del sistema"
 
-#: ../gtklocalesetup.glade:56
-msgid "Please select a default system locale. The changes will take effect next time you start your system."
-msgstr "Por favor, seleccione una localización por defecto del sistema. Los cambios se harán efectivos la próxima vez que inicie su sistema."
+#: gtklocalesetup.glade:56
+msgid ""
+"Please select a default system locale. The changes will take effect next "
+"time you start your system."
+msgstr ""
+"Por favor, seleccione una localización por defecto del sistema. Los cambios "
+"se harán efectivos la próxima vez que inicie su sistema."
 
+#: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
+msgid "Locale configuration tool"
+msgstr ""
+
+#: gtklocalesetup.desktop.in.h:2 gtklocalesetup-kde.desktop.in.h:2
+#, fuzzy
+msgid "System language settings"
+msgstr "Idioma del sistema"

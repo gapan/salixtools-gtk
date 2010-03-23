@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-17 13:46+0200\n"
+"POT-Creation-Date: 2010-03-23 23:29+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team:  <akuna@free.fr>\n"
@@ -13,27 +13,44 @@ msgstr ""
 "X-Poedit-Country: FRANCE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../gtkservicesetup.glade:35
+#: gtkservicesetup.glade:35
 msgid "System services"
 msgstr "Services du système"
 
-#: ../gtkservicesetup.glade:67
-msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
-msgstr "Veuillez sélectionner les services que vous souhaitez activer au démarrage du système. Toute modification prendra effet lorsque vous appuierez sur le bouton 'Valider'."
+#: gtkservicesetup.glade:67
+msgid ""
+"Please select the system services that you wish to be enabled when the "
+"system starts. Any changes you make will be applied when you press the OK "
+"button."
+msgstr ""
+"Veuillez sélectionner les services que vous souhaitez activer au démarrage "
+"du système. Toute modification prendra effet lorsque vous appuierez sur le "
+"bouton 'Valider'."
 
-#: ../gtkservicesetup:44
+#: gtkservicesetup:44
 msgid "The {0} service"
 msgstr "Le service {0}"
 
-#: ../gtkservicesetup:120
+#: gtkservicesetup:120
 msgid "Enabled"
 msgstr "Activé"
 
-#: ../gtkservicesetup:122
+#: gtkservicesetup:122
 msgid "Service name"
 msgstr "Nom du service"
 
-#: ../gtkservicesetup:124
+#: gtkservicesetup:124
 msgid "Service description"
 msgstr "Description du service"
 
+#: gtkservicesetup.desktop.in.h:1 gtkservicesetup-kde.desktop.in.h:1
+msgid "Services configuration tool"
+msgstr "Utilitaire de configuration des services"
+
+#: gtkservicesetup.desktop.in.h:2
+msgid "Startup services"
+msgstr "Services"
+
+#: gtkservicesetup-kde.desktop.in.h:2
+msgid "Startup Services"
+msgstr "Services"

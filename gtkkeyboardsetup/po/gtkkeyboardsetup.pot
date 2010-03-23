@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-26 12:31+0200\n"
+"POT-Creation-Date: 2010-03-23 23:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,34 +16,39 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../gtkkeyboardsetup.glade:21
+#: gtkkeyboardsetup.glade:21 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard settings"
 msgstr ""
 
-#: ../gtkkeyboardsetup.glade:53
+#: gtkkeyboardsetup.glade:53
 msgid ""
 "Please select you preferred keyboard type and map and set numlock and SCIM "
 "preferences."
 msgstr ""
 
-#: ../gtkkeyboardsetup.glade:147
+#: gtkkeyboardsetup.glade:147
 msgid "Enable numlock when the system is started"
 msgstr ""
 
-#: ../gtkkeyboardsetup.glade:162
+#: gtkkeyboardsetup.glade:162
 msgid "Enable SCIM when the system is started"
 msgstr ""
 
-#: ../gtkkeyboardsetup.glade:166
+#: gtkkeyboardsetup.glade:166
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages."
 msgstr ""
 
-#: ../gtkkeyboardsetup:161
+#: gtkkeyboardsetup:161
 msgid "Keyboard type"
 msgstr ""
 
-#: ../gtkkeyboardsetup:165
+#: gtkkeyboardsetup:165
 msgid "Keyboard map"
+msgstr ""
+
+#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
+msgid "Keyboard configuration tool"
 msgstr ""

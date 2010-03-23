@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-26 12:31+0200\n"
+"POT-Creation-Date: 2010-03-23 23:17+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team:  <akuna@free.fr>\n"
@@ -13,31 +13,43 @@ msgstr ""
 "X-Poedit-Country: FRANCE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../gtkkeyboardsetup.glade:21
+#: gtkkeyboardsetup.glade:21 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard settings"
 msgstr "Configuration du clavier"
 
-#: ../gtkkeyboardsetup.glade:53
-msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
-msgstr "Veuillez sélectionner votre disposition favorite de clavier et, le cas échéant, procéder à l'activation de votre pavé numérique et de SCIM."
+#: gtkkeyboardsetup.glade:53
+msgid ""
+"Please select you preferred keyboard type and map and set numlock and SCIM "
+"preferences."
+msgstr ""
+"Veuillez sélectionner votre disposition favorite de clavier et, le cas "
+"échéant, procéder à l'activation de votre pavé numérique et de SCIM."
 
-#: ../gtkkeyboardsetup.glade:147
+#: gtkkeyboardsetup.glade:147
 msgid "Enable numlock when the system is started"
 msgstr "Activer le pavé numérique au démarrage du système"
 
-#: ../gtkkeyboardsetup.glade:162
+#: gtkkeyboardsetup.glade:162
 msgid "Enable SCIM when the system is started"
 msgstr "Activer SCIM au démarrage du système"
 
-#: ../gtkkeyboardsetup.glade:166
-msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr "SCIM est une plate-forme unifiée de saisie pour le chinois, le japonais, le coréen et de nombreuses autres langues."
+#: gtkkeyboardsetup.glade:166
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+"SCIM est une plate-forme unifiée de saisie pour le chinois, le japonais, le "
+"coréen et de nombreuses autres langues."
 
-#: ../gtkkeyboardsetup:161
+#: gtkkeyboardsetup:161
 msgid "Keyboard type"
 msgstr "Type de clavier"
 
-#: ../gtkkeyboardsetup:165
+#: gtkkeyboardsetup:165
 msgid "Keyboard map"
 msgstr "Disposition de clavier"
 
+#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
+msgid "Keyboard configuration tool"
+msgstr "Utilitaire de configuration du clavier"

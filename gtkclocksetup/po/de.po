@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-26 12:14+0200\n"
+"POT-Creation-Date: 2010-03-23 23:15+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: German\n"
@@ -12,57 +12,69 @@ msgstr ""
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 
-#: ../gtkclocksetup.glade:7
+#: gtkclocksetup.glade:7
 msgid "Date and time settings"
 msgstr "Konfiguration der Systemzeit"
 
-#: ../gtkclocksetup.glade:26
+#: gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
 msgstr "Zeit über Internet-Server synchronisieren"
 
-#: ../gtkclocksetup.glade:51
+#: gtkclocksetup.glade:51
 msgid "Synchronize now"
 msgstr "Jetzt synchronisieren"
 
-#: ../gtkclocksetup.glade:89
-#: ../gtkclocksetup:180
-#: ../gtkclocksetup:216
+#: gtkclocksetup.glade:89 gtkclocksetup:180 gtkclocksetup:216
 msgid "Time zone:"
 msgstr "Zeitzone:"
 
-#: ../gtkclocksetup.glade:97
+#: gtkclocksetup.glade:97
 msgid "Select time zone..."
 msgstr "Zeitzone auswählen..."
 
-#: ../gtkclocksetup.glade:130
+#: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Die Hardware-Uhr läuft auf koordinierter Weltzeit (UTC)"
 
-#: ../gtkclocksetup.glade:134
-msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "Die Hardware-Uhren in den meisten Heim- und Geschäftscomputern lufen auf lokaler Uhrzeit, während die Hardware-Uhren in den meisten Webservern wahrscheinlich auf UTC laufen. Lassen Sie diese Auswahlbox leer, falls Sie sich nicht sicher sind."
+#: gtkclocksetup.glade:134
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not check this box if you are not sure."
+msgstr ""
+"Die Hardware-Uhren in den meisten Heim- und Geschäftscomputern lufen auf "
+"lokaler Uhrzeit, während die Hardware-Uhren in den meisten Webservern "
+"wahrscheinlich auf UTC laufen. Lassen Sie diese Auswahlbox leer, falls Sie "
+"sich nicht sicher sind."
 
-#: ../gtkclocksetup.glade:252
+#: gtkclocksetup.glade:252
 msgid "Time:"
 msgstr "Uhrzeit:"
 
-#: ../gtkclocksetup.glade:286
+#: gtkclocksetup.glade:286
 msgid "Date:"
 msgstr "Datum:"
 
-#: ../gtkclocksetup.glade:371
+#: gtkclocksetup.glade:371
 msgid "Select time zone"
 msgstr "Zeitzone auswählen"
 
-#: ../gtkclocksetup.glade:392
+#: gtkclocksetup.glade:392
 msgid "Please select your time zone:"
 msgstr "Bitte wählen Sie Ihre Zeitzone:"
 
-#: ../gtkclocksetup:232
+#: gtkclocksetup:232
 msgid "General area"
 msgstr "Region"
 
-#: ../gtkclocksetup:233
+#: gtkclocksetup:233
 msgid "Location"
 msgstr "Ort"
 
+#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+msgid "System clock configuration tool"
+msgstr "Uhrzeit stellen"
+
+#: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock settings"
+msgstr "Uhrzeit"

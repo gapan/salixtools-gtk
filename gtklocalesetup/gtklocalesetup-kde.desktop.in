@@ -1,0 +1,12 @@
+[Desktop Entry]
+_Name=System language settings
+_Comment=Locale configuration tool
+Exec=kdesu gtklocalesetup
+Icon=gtklocalesetup
+Terminal=false
+Type=Application
+Categories=Application;System;
+StartupNotify=true
+Encoding=UTF-8
+NoDisplay=false
+OnlyShowIn=KDE

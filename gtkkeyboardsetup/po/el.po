@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-26 12:31+0200\n"
+"POT-Creation-Date: 2010-03-23 23:17+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -13,34 +13,46 @@ msgstr ""
 "X-Poedit-Country: GREECE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../gtkkeyboardsetup.glade:21
+#: gtkkeyboardsetup.glade:21 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard settings"
 msgstr "Ρυθμίσεις πληκτρολογίου"
 
-#: ../gtkkeyboardsetup.glade:53
-msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
-msgstr "Παρακαλούμε επιλέξτε τον προτιμώμενο τύπο και διάταξη πληκτρολογίου καθώς και τις ρυθμίσεις του πλήκτρου numlock και του SCIM."
+#: gtkkeyboardsetup.glade:53
+msgid ""
+"Please select you preferred keyboard type and map and set numlock and SCIM "
+"preferences."
+msgstr ""
+"Παρακαλούμε επιλέξτε τον προτιμώμενο τύπο και διάταξη πληκτρολογίου καθώς "
+"και τις ρυθμίσεις του πλήκτρου numlock και του SCIM."
 
-#: ../gtkkeyboardsetup.glade:147
+#: gtkkeyboardsetup.glade:147
 msgid "Enable numlock when the system is started"
 msgstr "Ενεργοποίηση του πλήκτρου numlock κατά την εκκίνηση του συστήματος"
 
-#: ../gtkkeyboardsetup.glade:162
+#: gtkkeyboardsetup.glade:162
 msgid "Enable SCIM when the system is started"
 msgstr "Ενεργοποίηση του SCIM κατά την εκκίνηση του συστήματος"
 
-#: ../gtkkeyboardsetup.glade:166
-msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr "Το SCIM είναι μια πλατφόρμα εισαγωγής για Κινέζικα, Γιαπωνέζικα, Κορεάτικα και πολλές άλλες γλώσσες."
+#: gtkkeyboardsetup.glade:166
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+"Το SCIM είναι μια πλατφόρμα εισαγωγής για Κινέζικα, Γιαπωνέζικα, Κορεάτικα "
+"και πολλές άλλες γλώσσες."
 
-#: ../gtkkeyboardsetup:161
+#: gtkkeyboardsetup:161
 msgid "Keyboard type"
 msgstr "Τύπος πληκτρολογίου"
 
-#: ../gtkkeyboardsetup:165
+#: gtkkeyboardsetup:165
 msgid "Keyboard map"
 msgstr "Διάταξη πληκτρολογίου"
 
+#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
+msgid "Keyboard configuration tool"
+msgstr "Ρύθμιση της διάταξης του πληκτρολογίου"
+
 #~ msgid "Keyboard layout"
 #~ msgstr "Διάταξη πληκτρολογίου"
-

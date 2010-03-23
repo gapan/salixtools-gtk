@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 01:21+0200\n"
+"POT-Creation-Date: 2010-03-23 23:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,57 +16,65 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../gtkclocksetup.glade:7
+#: gtkclocksetup.glade:7
 msgid "Date and time settings"
 msgstr ""
 
-#: ../gtkclocksetup.glade:26
+#: gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
 msgstr ""
 
-#: ../gtkclocksetup.glade:51
+#: gtkclocksetup.glade:51
 msgid "Synchronize now"
 msgstr ""
 
-#: ../gtkclocksetup.glade:89 ../gtkclocksetup:180 ../gtkclocksetup:216
+#: gtkclocksetup.glade:89 gtkclocksetup:180 gtkclocksetup:216
 msgid "Time zone:"
 msgstr ""
 
-#: ../gtkclocksetup.glade:97
+#: gtkclocksetup.glade:97
 msgid "Select time zone..."
 msgstr ""
 
-#: ../gtkclocksetup.glade:130
+#: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr ""
 
-#: ../gtkclocksetup.glade:134
+#: gtkclocksetup.glade:134
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
 msgstr ""
 
-#: ../gtkclocksetup.glade:252
+#: gtkclocksetup.glade:252
 msgid "Time:"
 msgstr ""
 
-#: ../gtkclocksetup.glade:286
+#: gtkclocksetup.glade:286
 msgid "Date:"
 msgstr ""
 
-#: ../gtkclocksetup.glade:371
+#: gtkclocksetup.glade:371
 msgid "Select time zone"
 msgstr ""
 
-#: ../gtkclocksetup.glade:392
+#: gtkclocksetup.glade:392
 msgid "Please select your time zone:"
 msgstr ""
 
-#: ../gtkclocksetup:232
+#: gtkclocksetup:232
 msgid "General area"
 msgstr ""
 
-#: ../gtkclocksetup:233
+#: gtkclocksetup:233
 msgid "Location"
+msgstr ""
+
+#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+msgid "System clock configuration tool"
+msgstr ""
+
+#: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock settings"
 msgstr ""
