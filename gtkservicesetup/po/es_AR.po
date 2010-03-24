@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 13:46+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: seacat <seacat.linux@gmail.com>\n"
+"Language-Team:  <seacat.linux@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: ARGENTINA\n"
+
+#: ../gtkservicesetup.glade:35
+msgid "System services"
+msgstr "Servicios del sistema"
+
+#: ../gtkservicesetup.glade:67
+msgid ""
+"Please select the system services that you wish to be enabled when the "
+"system starts. Any changes you make will be applied when you press the OK "
+"button."
+msgstr ""
+"Por favor, seleccione los servicios del sistema que desee que estén "
+"habilitados cuando el sistema arranque. Cualquier cambio que haga se "
+"aplicará cuando presione el botón Aceptar."
+
+#: ../gtkservicesetup:44
+msgid "The {0} service"
+msgstr "El servicio {0}"
+
+#: ../gtkservicesetup:120
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: ../gtkservicesetup:122
+msgid "Service name"
+msgstr "Nombre del servicio"
+
+#: ../gtkservicesetup:124
+msgid "Service description"
+msgstr "Descripción del servicio"
