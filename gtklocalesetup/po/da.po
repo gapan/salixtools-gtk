@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtklocalesetup package.
 # Kris Thomsen <lakristho@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtklocalesetup\n"
@@ -20,18 +20,13 @@ msgid "System language"
 msgstr "Systemsprog"
 
 #: gtklocalesetup.glade:56
-msgid ""
-"Please select a default system locale. The changes will take effect next "
-"time you start your system."
-msgstr ""
-"Vælg venligst et standard systemsprog. Ændringerne vil træde i kraft næste "
-"gang du starter dit system."
+msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgstr "Vælg venligst et standard systemsprog. Ændringerne vil træde i kraft næste gang du starter dit system."
 
 #: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
-msgstr ""
+msgstr "Konfigurationsværktøj til lokalitet"
 
 #: gtklocalesetup.desktop.in.h:2 gtklocalesetup-kde.desktop.in.h:2
-#, fuzzy
 msgid "System language settings"
-msgstr "Systemsprog"
+msgstr "Indstillinger for systemsprog"
