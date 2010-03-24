@@ -1,0 +1,326 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-24 20:26+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: seacat <seacat.linux@gmail.com>\n"
+"Language-Team:  <seacat.linux@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: ARGENTINA\n"
+
+#: ../gtkusersetup.glade:49
+msgid "User settings"
+msgstr "Configuración del usuario"
+
+#: ../gtkusersetup.glade:208
+msgid "Manage groups"
+msgstr "Administrar grupos"
+
+#: ../gtkusersetup.glade:234
+msgid "Show all users"
+msgstr "Mostrar todos los usuarios"
+
+#: ../gtkusersetup.glade:325
+msgid "<b>Basic information</b>"
+msgstr "<b>Información básica</b>"
+
+#: ../gtkusersetup.glade:344
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: ../gtkusersetup.glade:353
+msgid "Real name:"
+msgstr "Nombre real:"
+
+#: ../gtkusersetup.glade:414
+msgid "User password:"
+msgstr "Contraseña del usuario:"
+
+#: ../gtkusersetup.glade:424
+msgid "Password confirmation:"
+msgstr "Confirmación de la contraseña:"
+
+#: ../gtkusersetup.glade:465
+msgid "View password while typing"
+msgstr "Ver la contraseña al escribirla"
+
+#: ../gtkusersetup.glade:483
+msgid "Account"
+msgstr "Cuenta"
+
+#: ../gtkusersetup.glade:498
+msgid "<b>Contact information</b>"
+msgstr "<b>Información de contacto</b>"
+
+#: ../gtkusersetup.glade:518
+msgid "Office extension:"
+msgstr "Teléfono (oficina):"
+
+#: ../gtkusersetup.glade:530
+msgid "Office information:"
+msgstr "Información (oficina):"
+
+#: ../gtkusersetup.glade:540
+msgid "Home phone:"
+msgstr "Teléfono (casa):"
+
+#: ../gtkusersetup.glade:597
+msgid "Contact"
+msgstr "Contacto"
+
+#: ../gtkusersetup.glade:613
+msgid "<b>Group membership</b>"
+msgstr "<b>Membresía de grupo</b>"
+
+#: ../gtkusersetup.glade:630
+msgid "Main group:"
+msgstr "Grupo principal:"
+
+#: ../gtkusersetup.glade:663
+msgid "Other groups:"
+msgstr "Otros grupos:"
+
+#: ../gtkusersetup.glade:735
+msgid "Groups"
+msgstr "Grupos"
+
+#: ../gtkusersetup.glade:751
+msgid "<b>Advanced settings</b>"
+msgstr "<b>Configuración avanzada</b>"
+
+#: ../gtkusersetup.glade:771
+msgid "Home directory:"
+msgstr "Directorio home:"
+
+#: ../gtkusersetup.glade:781
+msgid "Shell:"
+msgstr "Shell:"
+
+#: ../gtkusersetup.glade:793
+msgid "UID:"
+msgstr "UID:"
+
+#: ../gtkusersetup.glade:850
+msgid "Set account expiration date"
+msgstr "Establecer la fecha de expiración de la cuenta"
+
+#: ../gtkusersetup.glade:886
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: ../gtkusersetup.glade:951 ../gtkusersetup.glade:1556
+msgid "Error!"
+msgstr "¡Error!"
+
+#: ../gtkusersetup.glade:1166
+msgid "Group settings"
+msgstr "Configuración del grupo"
+
+#: ../gtkusersetup.glade:1346
+msgid "Group properties"
+msgstr "Propiedades del grupo"
+
+#: ../gtkusersetup.glade:1368
+msgid "<b>Basic settings</b>"
+msgstr "<b>Configuración básica</b>"
+
+#: ../gtkusersetup.glade:1388
+msgid "Group name:"
+msgstr "Nombre del grupo:"
+
+#: ../gtkusersetup.glade:1398
+msgid "Group ID:"
+msgstr "ID del grupo:"
+
+#: ../gtkusersetup.glade:1444
+msgid "<b>Group members</b>"
+msgstr "<b>Miembros del grupo</b>"
+
+#: ../gtkusersetup.glade:1646
+msgid "Delete group?"
+msgstr "¿Eliminar el grupo?"
+
+#: ../gtkusersetup.glade:1747
+msgid "Cannot delete group"
+msgstr "No se puede eliminar el grupo"
+
+#: ../gtkusersetup:209
+msgid "Password is too short. It has to be at least 5 characters long."
+msgstr ""
+"La contraseña es demasiado corta. Tiene que tener al menos 5 caracteres."
+
+#: ../gtkusersetup:212
+msgid "Password cannot include the backslash character."
+msgstr "La contraseña no puede incluir un caracter de barra invertida."
+
+#: ../gtkusersetup:218
+msgid "Passwords don't match"
+msgstr "Las contraseñas no coinciden"
+
+#: ../gtkusersetup:227
+msgid "Username cannot be empty."
+msgstr "El nombre de usuario no puede estar vacío."
+
+#: ../gtkusersetup:230
+msgid "Username cannot exceed 31 characters"
+msgstr "El nombre de usuario no puede exceder los 31 caracteres"
+
+#: ../gtkusersetup:233
+msgid "Username cannot include the space character."
+msgstr "El nombre de usuario no puede incluir espacios."
+
+#: ../gtkusersetup:236
+msgid "Username cannot start with a number."
+msgstr "El nombre de usuario no puede comenzar con un número."
+
+#: ../gtkusersetup:239
+msgid "Username cannot start with an underscore."
+msgstr "El nombre de usuario no puede comenzar con un caracter de subrayado."
+
+#: ../gtkusersetup:242
+msgid "Username cannot start with a dash."
+msgstr "El nombre de usuario no puede comenzar con un guión."
+
+#: ../gtkusersetup:247
+msgid ""
+"Username can consist solely of latin lower case letters, numbers, dashes and "
+"underscores."
+msgstr ""
+"El nombre de usuario solamente puede formarse con letras minúsculas, "
+"números, guiones y caracteres de subrayado."
+
+#: ../gtkusersetup:253
+msgid "Username \"{0}\" already exists."
+msgstr "El nombre de usuario \"{0}\" ya existe."
+
+#: ../gtkusersetup:263
+msgid "Group name cannot be empty."
+msgstr "El nombre del grupo no puede estar vacío."
+
+#: ../gtkusersetup:266
+msgid "Group name cannot exceed 31 characters"
+msgstr "El nombre del grupo no puede exceder los 31 caracteres"
+
+#: ../gtkusersetup:269
+msgid "Group name cannot include the space character."
+msgstr "El nombre del grupo no puede incluir espacios."
+
+#: ../gtkusersetup:272
+msgid "Group name cannot start with a number."
+msgstr "El nombre del grupo no puede comenzar con un número."
+
+#: ../gtkusersetup:275
+msgid "Group name cannot start with an underscore."
+msgstr "El nombre del grupo no puede comenzar con un caracter de subrayado."
+
+#: ../gtkusersetup:278
+msgid "Group name cannot start with a dash."
+msgstr "El nombre del grupo no puede comenzar con un guión."
+
+#: ../gtkusersetup:283
+msgid ""
+"Group name can consist solely of latin lower case letters, numbers, dashes "
+"and underscores."
+msgstr ""
+"El nombre de grupo solamente puede formarse con letras minúsculas, números, "
+"guiones y caracteres de subrayado."
+
+#: ../gtkusersetup:289
+msgid "Group name \"{0}\" already exists."
+msgstr "Ya existe el nombre de grupo \"{0}\"."
+
+#: ../gtkusersetup:299
+msgid "Shell does not exist."
+msgstr "El shell no existe."
+
+#: ../gtkusersetup:309
+msgid "UID {0} is assigned to another user."
+msgstr "El UID {0} está asignado a otro usuario."
+
+#: ../gtkusersetup:319
+msgid "GID {0} is assigned to another group."
+msgstr "El GID {0} está asignado a otro grupo."
+
+#: ../gtkusersetup:359
+msgid "User account properties for \"{0}\""
+msgstr "Propiedades de la cuenta de usuario para \"{0}\""
+
+#: ../gtkusersetup:366
+msgid "<b>Set new password</b>"
+msgstr "<b>Establecer una contraseña nueva</b>"
+
+#: ../gtkusersetup:421
+msgid "Add new user"
+msgstr "Agregar un usuario nuevo"
+
+#: ../gtkusersetup:428
+msgid "<b>Set password</b>"
+msgstr "<b>Establecer contraseña</b>"
+
+#: ../gtkusersetup:477
+msgid "Delete user {0}?"
+msgstr "¿Eliminar el usuario {0}?"
+
+#: ../gtkusersetup:478
+msgid ""
+"You are about to remove user account \"{0}\" from your system. Do you really "
+"want to continue?"
+msgstr ""
+"Está a punto de eliminar de su sistema la cuenta del usuario \"{0}\". "
+"¿Realmente quiere continuar?"
+
+#: ../gtkusersetup:479
+msgid "Completely remove user's home directory ({0}) with all its contents"
+msgstr ""
+"Se borró completamente el directorio home del usuario ({0}) junto con todo "
+"su contenido"
+
+#: ../gtkusersetup:724
+msgid "Group \"{0}\" properties"
+msgstr "Propiedades del grupo \"{0}\""
+
+#: ../gtkusersetup:743
+msgid "Add new group"
+msgstr "Agregar un grupo nuevo"
+
+#: ../gtkusersetup:768
+msgid ""
+"You are about to delete the \"{0}\" group from your system. Are you sure you "
+"want to continue?"
+msgstr ""
+"Está a punto de borrar de su sistema el grupo \"{0}\". ¿Está seguro que "
+"quiere continuar?"
+
+#: ../gtkusersetup:771
+msgid ""
+"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
+"you want to delete group \"{0}\", you have to set the main group for user "
+"\"{1}\" to another group first."
+msgstr ""
+"No se puede borrar el grupo \"{0}\" porque es el grupo principal del usuario "
+"\"{1}\". Si quiere borrar el grupo \"{0}\", tiene que configurar primero el "
+"grupo principal para el usuario \"{1}\" a otro grupo."
+
+#: ../gtkusersetup:898
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: ../gtkusersetup:899
+msgid "Real name"
+msgstr "Nombre real"
+
+#: ../gtkusersetup:900
+msgid "Home directory"
+msgstr "Directorio home"
+
+#: ../gtkusersetup:932
+msgid "Member"
+msgstr "Miembro"
+
+#: ../gtkusersetup:933
+msgid "Group"
+msgstr "Grupo"
