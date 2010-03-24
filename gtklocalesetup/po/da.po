@@ -21,7 +21,7 @@ msgstr "Systemsprog"
 
 #: gtklocalesetup.glade:56
 msgid "Please select a default system locale. The changes will take effect next time you start your system."
-msgstr "Vælg venligst et standard systemsprog. Ændringerne vil træde i kraft næste gang du starter dit system."
+msgstr "Vælg venligst en standard systemlokalitet. Ændringerne vil træde i kraft næste gang du starter dit system."
 
 #: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
