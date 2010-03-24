@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-26 12:31+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: seacat <seacat.linux@gmail.com>\n"
+"Language-Team:  <seacat.linux@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: ARGENTINA\n"
+
+#: ../gtkkeyboardsetup.glade:21
+msgid "Keyboard settings"
+msgstr "Configuración del teclado"
+
+#: ../gtkkeyboardsetup.glade:53
+msgid ""
+"Please select you preferred keyboard type and map and set numlock and SCIM "
+"preferences."
+msgstr ""
+"Por favor, seleccione el tipo y mapa de teclado preferidos, configure "
+"BloqNum y las preferencias de SCIM. "
+
+#: ../gtkkeyboardsetup.glade:147
+msgid "Enable numlock when the system is started"
+msgstr "Habilitar BloqNum cuando arranque el sistema"
+
+#: ../gtkkeyboardsetup.glade:162
+msgid "Enable SCIM when the system is started"
+msgstr "Habilitar SCIM cuando arranque el sistema"
+
+#: ../gtkkeyboardsetup.glade:166
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+"SCIM es una plataforma de entrada para el chino, japonés, coreano y algunos "
+"otros idiomas."
+
+#: ../gtkkeyboardsetup:161
+msgid "Keyboard type"
+msgstr "Tipo de teclado"
+
+#: ../gtkkeyboardsetup:165
+msgid "Keyboard map"
+msgstr "Mapa del teclado"
