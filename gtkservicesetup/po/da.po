@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkservicesetup package.
 # Kris Thomsen <lakristho@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
@@ -20,14 +20,8 @@ msgid "System services"
 msgstr "Systemtjenester"
 
 #: gtkservicesetup.glade:67
-msgid ""
-"Please select the system services that you wish to be enabled when the "
-"system starts. Any changes you make will be applied when you press the OK "
-"button."
-msgstr ""
-"Vælg venligst de systemtjenester som du vil have aktiveret når systemet "
-"starter. De ændringer du laver vil træde i kraft når du trykker på O.k.-"
-"knappen."
+msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
+msgstr "Vælg venligst de systemtjenester som du vil have aktiveret når systemet starter. De ændringer du laver vil træde i kraft når du trykker på O.k.-knappen."
 
 #: gtkservicesetup:44
 msgid "The {0} service"
@@ -46,16 +40,13 @@ msgid "Service description"
 msgstr "Tjenestebeskrivelse"
 
 #: gtkservicesetup.desktop.in.h:1 gtkservicesetup-kde.desktop.in.h:1
-#, fuzzy
 msgid "Services configuration tool"
-msgstr "Tjenestebeskrivelse"
+msgstr "Konfigurationsværktøj til tjenester"
 
 #: gtkservicesetup.desktop.in.h:2
-#, fuzzy
 msgid "Startup services"
-msgstr "Systemtjenester"
+msgstr "Opstartstjenester"
 
 #: gtkservicesetup-kde.desktop.in.h:2
-#, fuzzy
 msgid "Startup Services"
-msgstr "Systemtjenester"
+msgstr "Opstartstjenester"
