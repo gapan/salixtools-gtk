@@ -4,7 +4,7 @@ cd $(dirname $0)
 for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do
 	for j in `ls $i/po/*.po`;do
 		echo "Compiling `echo $j|sed "s|/po||"`"
-		msgfmt $j -o `echo $j | sed "s/.po//"`.mo
+		msgfmt $j -o `echo $j | sed "s/\.po//"`.mo
 	done
 	intltool-merge po/ -d -u $i/$i.desktop.in $i/$i.desktop
 	intltool-merge po/ -d -u $i/$i-kde.desktop.in $i/$i-kde.desktop
