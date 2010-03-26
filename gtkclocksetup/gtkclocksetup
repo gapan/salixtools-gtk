@@ -109,18 +109,26 @@ def setutc(state):
 def ntp_sync_now():
 	os.system('sh /etc/rc.d/rc.ntpd sync')
 
+def setntp(state):
+	if state == "True":
+		os.system('service start ntpd')
+	else:
+		os.system('service stop ntpd')
+
 class GTKClockSetup:
 	def on_button_ok_clicked(self, widget, data=None):
-		if self.ntpcheckbutton.get_active() == False:
-			year = "%04d" % (self.calendar.get_date()[0])
-			month = "%02d" % (self.calendar.get_date()[1]+1)
-			day = "%02d" % (self.calendar.get_date()[2])
-			hour = "%02d" % self.spinbutton_hrs.get_value()
-			min = "%02d" % self.spinbutton_min.get_value()
-			sec = "%02d" % self.spinbutton_sec.get_value()
-			os.system('date +%Y%m%d -s "'+year+month+day+'"	> /dev/null')
-			os.system('date +T -s "'+hour+':'+min+':'+sec+'" > /dev/null')
-			os.system('hwclock --systohc')
+		if not self.ntpcheckbutton.get_active == ntpstate():
+			setntp(self.ntpcheckbutton.get_active)
+			if self.ntpcheckbutton.get_active() == False:
+				year = "%04d" % (self.calendar.get_date()[0])
+				month = "%02d" % (self.calendar.get_date()[1]+1)
+				day = "%02d" % (self.calendar.get_date()[2])
+				hour = "%02d" % self.spinbutton_hrs.get_value()
+				min = "%02d" % self.spinbutton_min.get_value()
+				sec = "%02d" % self.spinbutton_sec.get_value()
+				os.system('date +%Y%m%d -s "'+year+month+day+'"	> /dev/null')
+				os.system('date +T -s "'+hour+':'+min+':'+sec+'" > /dev/null')
+				os.system('hwclock --systohc')
 		if not self.utccheckbutton.get_active() == utcstate():
 			setutc(self.utccheckbutton.get_active())
 		gtk.main_quit()
@@ -189,9 +197,6 @@ class GTKClockSetup:
 		self.spinbutton_sec.set_sensitive(state)
 		self.button_sync_now.set_sensitive(state)
 
-	#def on_utccheckbutton_toggled(self, widget):
-	#	checked = self.utccheckbutton.get_active()
-	
 	def update_calendar(self):
 		now = datetime.datetime.now()
 		self.calendar.select_month(now.month-1, now.year)
