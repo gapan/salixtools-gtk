@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
@@ -10,8 +11,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: French\n"
-"X-Poedit-Country: FRANCE\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: FRANCE\n"
 
 #: gtkusersetup.glade:49
 msgid "User settings"
@@ -95,15 +96,15 @@ msgstr "<b>Paramètres avancés</b>"
 
 #: gtkusersetup.glade:771
 msgid "Home directory:"
-msgstr "Répertoires personnel:"
+msgstr "Répertoires personnel :"
 
 #: gtkusersetup.glade:781
 msgid "Shell:"
-msgstr "Shell :"
+msgstr "Interpréteur de commandes :"
 
 #: gtkusersetup.glade:793
 msgid "UID:"
-msgstr "UID:"
+msgstr "UID :"
 
 #: gtkusersetup.glade:850
 msgid "Set account expiration date"
@@ -115,7 +116,7 @@ msgstr "Avancé"
 
 #: gtkusersetup.glade:951 gtkusersetup.glade:1546
 msgid "Error!"
-msgstr "Erreur!"
+msgstr "Erreur !"
 
 #: gtkusersetup.glade:1159
 msgid "Group settings"
@@ -131,11 +132,11 @@ msgstr "<b>Paramètres de base</b>"
 
 #: gtkusersetup.glade:1378
 msgid "Group name:"
-msgstr "Nom du groupe:"
+msgstr "Nom du groupe :"
 
 #: gtkusersetup.glade:1388
 msgid "Group ID:"
-msgstr "ID du groupe:"
+msgstr "ID du groupe :"
 
 #: gtkusersetup.glade:1434
 msgid "<b>Group members</b>"
@@ -143,7 +144,7 @@ msgstr "<b>Membres du groupe</b>"
 
 #: gtkusersetup.glade:1632
 msgid "Delete group?"
-msgstr "Supprimer le groupe?"
+msgstr "Supprimer le groupe ?"
 
 #: gtkusersetup.glade:1731
 msgid "Cannot delete group"
@@ -151,9 +152,7 @@ msgstr "Impossible de supprimer le groupe"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
-msgstr ""
-"Le mot de passe est trop court. Il doit obligatoirement contenir au moins 5 "
-"caractères."
+msgstr "Le mot de passe est trop court. Il doit obligatoirement contenir au moins 5 caractères."
 
 #: gtkusersetup:211
 msgid "Password cannot include the backslash character."
@@ -169,8 +168,7 @@ msgstr "Un nom d'utilisateur ne peut pas être vide."
 
 #: gtkusersetup:229
 msgid "Username cannot exceed 31 characters"
-msgstr ""
-"Un nom d'utilisateur ne peut pas être composé de plus de 31 caractères."
+msgstr "Un nom d'utilisateur ne peut pas être composé de plus de 31 caractères."
 
 #: gtkusersetup:232
 msgid "Username cannot include the space character."
@@ -182,21 +180,15 @@ msgstr "Un nom d'utilisateur ne peut pas commencer par un nombre."
 
 #: gtkusersetup:238
 msgid "Username cannot start with an underscore."
-msgstr ""
-"Un nom d'utilisateur ne peut pas commencer par un caractère de soulignement."
+msgstr "Un nom d'utilisateur ne peut pas commencer par un caractère de soulignement."
 
 #: gtkusersetup:241
 msgid "Username cannot start with a dash."
 msgstr "Un nom d'utilisateur ne peut pas commencer par un tiret."
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"Un nom d'utilisateur ne peut ếtre composé uniquement qu'à l'aide de lettres "
-"minuscules de l'alphabet latin, de chiffres, de tirets et de caractères de "
-"soulignement.‭ "
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Un nom d'utilisateur ne doit être composé qu'à l'aide de lettres minuscules non accentuées, de chiffres, de tirets et de caractères de soulignement.‭ "
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -204,11 +196,11 @@ msgstr "Le nom d'utilisateur \"{0}\" existe déjà."
 
 #: gtkusersetup:262
 msgid "Group name cannot be empty."
-msgstr "Un nom du groupe ne peut pas être vide"
+msgstr "Un nom du groupe ne peut pas être vide."
 
 #: gtkusersetup:265
 msgid "Group name cannot exceed 31 characters"
-msgstr "Un nom de groupe ne peut pas être composé de plus de 31 caractères."
+msgstr "Un nom de groupe ne peut pas être composé de plus de 31 caractères."
 
 #: gtkusersetup:268
 msgid "Group name cannot include the space character."
@@ -220,21 +212,15 @@ msgstr "Un nom du groupe ne peut pas commencer par un nombre."
 
 #: gtkusersetup:274
 msgid "Group name cannot start with an underscore."
-msgstr ""
-"Un nom de groupe ne peut pas commencer par un caractère de soulignement."
+msgstr "Un nom de groupe ne peut pas commencer par un caractère de soulignement."
 
 #: gtkusersetup:277
 msgid "Group name cannot start with a dash."
 msgstr "Un nom de groupe ne peut pas commencer par un tiret"
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"Un nom de groupe ne peut ếtre composé uniquement qu'à l'aide de lettres "
-"minuscules de l'alphabet latin, de chiffres, de tirets et de caractères de "
-"soulignement.‭ "
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Un nom de groupe ne doit être composé qu'à l'aide de lettres minuscules non accentuées, de chiffres, de tirets et de caractères de soulignement.‭ "
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -242,7 +228,7 @@ msgstr "Le nom de groupe \"{0}\" existe déjà."
 
 #: gtkusersetup:298
 msgid "Shell does not exist."
-msgstr "Le shell n'existe pas."
+msgstr "L'interpréteur de commandes n'existe pas."
 
 #: gtkusersetup:308
 msgid "UID {0} is assigned to another user."
@@ -270,21 +256,15 @@ msgstr "<b>Définir un mot de passe</b>"
 
 #: gtkusersetup:480
 msgid "Delete user {0}?"
-msgstr "Supprimer l'utilisateur {0}?"
+msgstr "Supprimer l'utilisateur {0} ?"
 
 #: gtkusersetup:481
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"Vous vous apprêtez à supprimer le compte \"{0}\"  de votre système. Êtes "
-"vous certain de vouloir continuer?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "Vous vous apprêtez à supprimer le compte \"{0}\"  de votre système. Êtes vous certain de vouloir continuer ?"
 
 #: gtkusersetup:482
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr ""
-"Supprimer de manière définitive le répertoire personnel ({0}) et tout son "
-"contenu"
+msgstr "Supprimer de manière définitive le répertoire personnel ({0}) et tout son contenu"
 
 #: gtkusersetup:728
 msgid "Group \"{0}\" properties"
@@ -295,23 +275,12 @@ msgid "Add new group"
 msgstr "Ajouter un nouveau groupe"
 
 #: gtkusersetup:772
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
-msgstr ""
-"Vous vous apprêtez à supprimer le groupe \"{0}\"  de votre système. Êtes "
-"vous certain de vouloir continuer?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Vous vous apprêtez à supprimer le groupe \"{0}\"  de votre système. Êtes vous certain de vouloir continuer ?"
 
 #: gtkusersetup:775
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"Le groupe \"{0}\" ne peut pas être supprimé car c'est le groupe principal de "
-"l'utilisateur \"{1}\". Si vous souhaitez supprimer le groupe \"{0}\", vous "
-"devez auparavant assigner un autre groupe comme groupe principal de "
-"l'utilisateur \"{1}\"."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "Le groupe \"{0}\" ne peut pas être supprimé car c'est le groupe principal de l'utilisateur \"{1}\". Si vous souhaitez supprimer le groupe \"{0}\", vous devez auparavant assigner un autre groupe comme groupe principal de l'utilisateur \"{1}\"."
 
 #: gtkusersetup:902
 msgid "Username"
