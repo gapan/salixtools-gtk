@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:29+0200\n"
+"POT-Creation-Date: 2010-03-29 13:57+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: seacat <seacat.lang@gmail.com>\n"
 "Language-Team:  <seacat.linux@gmail.com>\n"
@@ -12,13 +12,20 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: ARGENTINA\n"
 
-#: gtkservicesetup.glade:35
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr "Servicios del sistema"
 
 #: gtkservicesetup.glade:67
-msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
-msgstr "Por favor, seleccione los servicios del sistema que desee que estén habilitados cuando el sistema arranque. Cualquier cambio que haga se aplicará cuando presione el botón Aceptar."
+msgid ""
+"Please select the system services that you wish to be enabled when the "
+"system starts. Any changes you make will be applied when you press the OK "
+"button."
+msgstr ""
+"Por favor, seleccione los servicios del sistema que desee que estén "
+"habilitados cuando el sistema arranque. Cualquier cambio que haga se "
+"aplicará cuando presione el botón Aceptar."
 
 #: gtkservicesetup:44
 msgid "The {0} service"
@@ -36,16 +43,16 @@ msgstr "Nombre del servicio"
 msgid "Service description"
 msgstr "Descripción del servicio"
 
-#: gtkservicesetup.desktop.in.h:1
-#: gtkservicesetup-kde.desktop.in.h:1
+#: gtkservicesetup.desktop.in.h:1 gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
 msgstr "Herramienta de configuración de los servicios"
 
-#: gtkservicesetup.desktop.in.h:2
-msgid "Startup services"
-msgstr "Iniciar servicios"
+#, fuzzy
+#~ msgid "System Services"
+#~ msgstr "Servicios del sistema"
 
-#: gtkservicesetup-kde.desktop.in.h:2
-msgid "Startup Services"
-msgstr "Iniciar servicios"
+#~ msgid "Startup services"
+#~ msgstr "Iniciar servicios"
 
+#~ msgid "Startup Services"
+#~ msgstr "Iniciar servicios"

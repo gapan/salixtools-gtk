@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:29+0200\n"
+"POT-Creation-Date: 2010-03-29 13:57+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -13,7 +13,8 @@ msgstr ""
 "X-Poedit-Country: GREECE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: gtkservicesetup.glade:35
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr "Υπηρεσίες συστήματος"
 
@@ -47,10 +48,11 @@ msgstr "Περιγραφή υπηρεσίας"
 msgid "Services configuration tool"
 msgstr "Διαχείρηση των υπηρεσιών συστήματος"
 
-#: gtkservicesetup.desktop.in.h:2
-msgid "Startup services"
-msgstr "Υπηρεσίες συστήματος"
+#~ msgid "System Services"
+#~ msgstr "Υπηρεσίες συστήματος"
 
-#: gtkservicesetup-kde.desktop.in.h:2
-msgid "Startup Services"
-msgstr "Υπηρεσίες συστήματος"
+#~ msgid "Startup services"
+#~ msgstr "Υπηρεσίες συστήματος"
+
+#~ msgid "Startup Services"
+#~ msgstr "Υπηρεσίες συστήματος"

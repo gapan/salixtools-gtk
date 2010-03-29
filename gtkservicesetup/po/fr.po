@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:29+0200\n"
+"POT-Creation-Date: 2010-03-29 13:57+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team:  <akuna@free.fr>\n"
@@ -13,7 +13,8 @@ msgstr ""
 "X-Poedit-Country: FRANCE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: gtkservicesetup.glade:35
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr "Services du système"
 
@@ -47,10 +48,12 @@ msgstr "Description du service"
 msgid "Services configuration tool"
 msgstr "Utilitaire de configuration des services"
 
-#: gtkservicesetup.desktop.in.h:2
-msgid "Startup services"
-msgstr "Services"
+#, fuzzy
+#~ msgid "System Services"
+#~ msgstr "Services du système"
 
-#: gtkservicesetup-kde.desktop.in.h:2
-msgid "Startup Services"
-msgstr "Services"
+#~ msgid "Startup services"
+#~ msgstr "Services"
+
+#~ msgid "Startup Services"
+#~ msgstr "Services"

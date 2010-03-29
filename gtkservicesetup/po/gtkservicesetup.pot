@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:29+0200\n"
+"POT-Creation-Date: 2010-03-29 13:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtkservicesetup.glade:35
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr ""
 
@@ -45,12 +46,4 @@ msgstr ""
 
 #: gtkservicesetup.desktop.in.h:1 gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr ""
-
-#: gtkservicesetup.desktop.in.h:2
-msgid "Startup services"
-msgstr ""
-
-#: gtkservicesetup-kde.desktop.in.h:2
-msgid "Startup Services"
 msgstr ""

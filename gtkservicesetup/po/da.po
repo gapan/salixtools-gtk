@@ -2,12 +2,12 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkservicesetup package.
 # Kris Thomsen <lakristho@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:29+0200\n"
+"POT-Creation-Date: 2010-03-29 13:57+0300\n"
 "PO-Revision-Date: 2010-03-21 22:21+0100\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -15,13 +15,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtkservicesetup.glade:35
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr "Systemtjenester"
 
 #: gtkservicesetup.glade:67
-msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
-msgstr "Vælg venligst de systemtjenester som du vil have aktiveret når systemet starter. De ændringer du laver vil træde i kraft når du trykker på O.k.-knappen."
+msgid ""
+"Please select the system services that you wish to be enabled when the "
+"system starts. Any changes you make will be applied when you press the OK "
+"button."
+msgstr ""
+"Vælg venligst de systemtjenester som du vil have aktiveret når systemet "
+"starter. De ændringer du laver vil træde i kraft når du trykker på O.k.-"
+"knappen."
 
 #: gtkservicesetup:44
 msgid "The {0} service"
@@ -43,10 +50,12 @@ msgstr "Tjenestebeskrivelse"
 msgid "Services configuration tool"
 msgstr "Konfigurationsværktøj til tjenester"
 
-#: gtkservicesetup.desktop.in.h:2
-msgid "Startup services"
-msgstr "Opstartstjenester"
+#, fuzzy
+#~ msgid "System Services"
+#~ msgstr "Systemtjenester"
 
-#: gtkservicesetup-kde.desktop.in.h:2
-msgid "Startup Services"
-msgstr "Opstartstjenester"
+#~ msgid "Startup services"
+#~ msgstr "Opstartstjenester"
+
+#~ msgid "Startup Services"
+#~ msgstr "Opstartstjenester"
