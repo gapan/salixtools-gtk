@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=System language settings
+_Name=System language
 _Comment=Locale configuration tool
 Exec=kdesu gtklocalesetup
 Icon=gtklocalesetup

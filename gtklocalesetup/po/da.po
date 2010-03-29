@@ -2,12 +2,12 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtklocalesetup package.
 # Kris Thomsen <lakristho@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gtklocalesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:26+0200\n"
+"POT-Creation-Date: 2010-03-29 13:55+0300\n"
 "PO-Revision-Date: 2010-03-21 22:19+0100\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -15,18 +15,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtklocalesetup.glade:23
+#: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup-kde.desktop.in.h:2
 msgid "System language"
 msgstr "Systemsprog"
 
 #: gtklocalesetup.glade:56
-msgid "Please select a default system locale. The changes will take effect next time you start your system."
-msgstr "Vælg venligst en standard systemlokalitet. Ændringerne vil træde i kraft næste gang du starter dit system."
+msgid ""
+"Please select a default system locale. The changes will take effect next "
+"time you start your system."
+msgstr ""
+"Vælg venligst en standard systemlokalitet. Ændringerne vil træde i kraft "
+"næste gang du starter dit system."
 
 #: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
 msgstr "Konfigurationsværktøj til lokalitet"
 
-#: gtklocalesetup.desktop.in.h:2 gtklocalesetup-kde.desktop.in.h:2
-msgid "System language settings"
-msgstr "Indstillinger for systemsprog"
+#~ msgid "System language settings"
+#~ msgstr "Indstillinger for systemsprog"

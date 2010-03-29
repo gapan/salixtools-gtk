@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtklocalesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:26+0200\n"
+"POT-Creation-Date: 2010-03-29 13:55+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: French\n"
@@ -13,7 +13,8 @@ msgstr ""
 "X-Poedit-Country: FRANCE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: gtklocalesetup.glade:23
+#: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup-kde.desktop.in.h:2
 msgid "System language"
 msgstr "Langue système"
 
@@ -29,6 +30,5 @@ msgstr ""
 msgid "Locale configuration tool"
 msgstr "Utilitaire de configuration de la langue du système"
 
-#: gtklocalesetup.desktop.in.h:2 gtklocalesetup-kde.desktop.in.h:2
-msgid "System language settings"
-msgstr "Langue système"
+#~ msgid "System language settings"
+#~ msgstr "Langue système"
