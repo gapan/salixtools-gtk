@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=Keyboard settings
+_Name=Keyboard
 _Comment=Keyboard configuration tool
 Exec=kdesu gtkkeyboardsetup
 Icon=gtkkeyboardsetup
