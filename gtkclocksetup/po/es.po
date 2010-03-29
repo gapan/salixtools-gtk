@@ -24,7 +24,9 @@ msgstr "Mantener el reloj sincronizado con servidores en Internet"
 msgid "Synchronize now"
 msgstr "Sincronizar ahora"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:188 gtkclocksetup:221
+#: gtkclocksetup.glade:89
+#: gtkclocksetup:188
+#: gtkclocksetup:221
 msgid "Time zone:"
 msgstr "Zona horaria:"
 
@@ -34,19 +36,11 @@ msgstr "Seleccione la zona horaria..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr ""
-"El reloj del hardware está establecido a la Hora Universal Coordinada (UTC)"
+msgstr "El reloj del hardware está establecido a la Hora Universal Coordinada (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid ""
-"Hardware clocks in most home or business computers are set to using local "
-"time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr ""
-"En la mayoría de las computadoras hogareñas y de negocios, los relojes del "
-"hardware se configuran a la hora local, mientras que el reloj del hardware "
-"en la mayoría de los servidores Web esté probablemente configurado a UTC. No "
-"marque esta caja si no está seguro."
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "En la mayoría de las computadoras hogareñas y de negocios, los relojes del hardware se configuran a la hora local, mientras que el reloj del hardware en la mayoría de los servidores Web esté probablemente configurado a UTC. No marque esta caja si no está seguro."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -72,11 +66,13 @@ msgstr "Área general"
 msgid "Location"
 msgstr "Ubicación"
 
-#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-#, fuzzy
+#: gtkclocksetup.desktop.in.h:1
+#: gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
-msgstr "Configuración del reloj del sistema"
+msgstr "Reloj del sistema"
 
-#: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
+#: gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "Herramienta de configuración del reloj del sistema"
+
