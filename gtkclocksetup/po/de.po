@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
@@ -37,15 +38,8 @@ msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Die Hardware-Uhr läuft auf koordinierter Weltzeit (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid ""
-"Hardware clocks in most home or business computers are set to using local "
-"time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr ""
-"Die Hardware-Uhren in den meisten Heim- und Geschäftscomputern lufen auf "
-"lokaler Uhrzeit, während die Hardware-Uhren in den meisten Webservern "
-"wahrscheinlich auf UTC laufen. Lassen Sie diese Auswahlbox leer, falls Sie "
-"sich nicht sicher sind."
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "Die Hardware-Uhren in den meisten Heim- und Geschäftscomputern lufen auf lokaler Uhrzeit, während die Hardware-Uhren in den meisten Webservern wahrscheinlich auf UTC laufen. Lassen Sie diese Auswahlbox leer, falls Sie sich nicht sicher sind."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -72,9 +66,8 @@ msgid "Location"
 msgstr "Ort"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-#, fuzzy
 msgid "System clock"
-msgstr "Uhrzeit"
+msgstr "Systemuhrzeit"
 
 #: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
