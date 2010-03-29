@@ -6,8 +6,8 @@ for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicese
 		echo "Compiling `echo $j|sed "s|/po||"`"
 		msgfmt $j -o `echo $j | sed "s/\.po//"`.mo
 	done
-	intltool-merge po/ -d -u $i/$i.desktop.in $i/$i.desktop
-	intltool-merge po/ -d -u $i/$i-kde.desktop.in $i/$i-kde.desktop
+	intltool-merge $i/po/ -d -u $i/$i.desktop.in $i/$i.desktop
+	intltool-merge $i/po/ -d -u $i/$i-kde.desktop.in $i/$i-kde.desktop
 done
 #for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do
 #	(
