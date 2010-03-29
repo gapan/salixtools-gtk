@@ -2,12 +2,12 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkclocksetup package.
 # Kris Thomsen <lakristho@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:23+0200\n"
+"POT-Creation-Date: 2010-03-29 13:51+0300\n"
 "PO-Revision-Date: 2010-03-21 22:07+0100\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -27,7 +27,7 @@ msgstr "Hold uret synkroniseret med internetservere"
 msgid "Synchronize now"
 msgstr "Synkronisér nu"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:180 gtkclocksetup:216
+#: gtkclocksetup.glade:89 gtkclocksetup:188 gtkclocksetup:221
 msgid "Time zone:"
 msgstr "Tidszone:"
 
@@ -40,8 +40,14 @@ msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Hardwareur er sat til Koordineret Universel Tid (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "Hardwareure i de fleste hjemme- og arbejdscomputere er sat til at bruge lokaltid, mens hardwareuret i de fleste webservere oftest er sat til UTC. Tjek ikke denne boks af hvis du ikke er sikker."
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not check this box if you are not sure."
+msgstr ""
+"Hardwareure i de fleste hjemme- og arbejdscomputere er sat til at bruge "
+"lokaltid, mens hardwareuret i de fleste webservere oftest er sat til UTC. "
+"Tjek ikke denne boks af hvis du ikke er sikker."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -59,18 +65,19 @@ msgstr "Vælg tidszone"
 msgid "Please select your time zone:"
 msgstr "Vælg venligst din tidszone:"
 
-#: gtkclocksetup:232
+#: gtkclocksetup:237
 msgid "General area"
 msgstr "Generelt område"
 
-#: gtkclocksetup:233
+#: gtkclocksetup:238
 msgid "Location"
 msgstr "Sted"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-msgid "System clock configuration tool"
-msgstr "Konfigurationsværktøj for systemur"
+#, fuzzy
+msgid "System clock"
+msgstr "Indstillinger for systemur"
 
 #: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
-msgid "System clock settings"
-msgstr "Indstillinger for systemur"
+msgid "System clock configuration tool"
+msgstr "Konfigurationsværktøj for systemur"

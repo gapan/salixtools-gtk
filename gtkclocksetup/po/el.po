@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:15+0200\n"
+"POT-Creation-Date: 2010-03-29 13:51+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -25,7 +25,9 @@ msgstr "Το ρολόι να συγχρονίζεται αυτόματα με δ
 msgid "Synchronize now"
 msgstr "Συγχρονισμός τώρα"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:180 gtkclocksetup:216
+#: gtkclocksetup.glade:89
+#: gtkclocksetup:188
+#: gtkclocksetup:221
 msgid "Time zone:"
 msgstr "Ζώνη ώρας:"
 
@@ -38,14 +40,8 @@ msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Το ρολόι συστήματος είναι ρυθμισμένο σε Παγκόσμια Ώρα (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid ""
-"Hardware clocks in most home or business computers are set to using local "
-"time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr ""
-"Το ρολόι συστήματος στους περισσότερους υπολογιστές είναι ρυθμισμένο σε "
-"τοπική ώρα, ενώ σε διακομιστές διαδικτύου συνήθως είναι ρυθμισμένο σε UTC. "
-"Αν δεν είστε σίγουροι, μην το επιλέξετε."
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "Το ρολόι συστήματος στους περισσότερους υπολογιστές είναι ρυθμισμένο σε τοπική ώρα, ενώ σε διακομιστές διαδικτύου συνήθως είναι ρυθμισμένο σε UTC. Αν δεν είστε σίγουροι, μην το επιλέξετε."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -63,18 +59,21 @@ msgstr "Επιλογή ζώνης ώρας"
 msgid "Please select your time zone:"
 msgstr "Παρακαλούμε επιλέξτε ζώνη ώρας:"
 
-#: gtkclocksetup:232
+#: gtkclocksetup:237
 msgid "General area"
 msgstr "Γενική περιοχή"
 
-#: gtkclocksetup:233
+#: gtkclocksetup:238
 msgid "Location"
 msgstr "Τοποθεσία"
 
-#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+#: gtkclocksetup.desktop.in.h:1
+#: gtkclocksetup-kde.desktop.in.h:1
+msgid "System clock"
+msgstr "Ρολόι συστήματος"
+
+#: gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "Ρύθμιση του ρολογιού του συστήματος"
 
-#: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
-msgid "System clock settings"
-msgstr "Ρύθμιση ρολογιού συστήματος"

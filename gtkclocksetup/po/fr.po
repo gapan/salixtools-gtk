@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:15+0200\n"
+"POT-Creation-Date: 2010-03-29 13:51+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team:  <akuna@free.fr>\n"
@@ -25,7 +25,7 @@ msgstr "Maintenir la synchronisation de l'horloge à Internet"
 msgid "Synchronize now"
 msgstr "Synchroniser "
 
-#: gtkclocksetup.glade:89 gtkclocksetup:180 gtkclocksetup:216
+#: gtkclocksetup.glade:89 gtkclocksetup:188 gtkclocksetup:221
 msgid "Time zone:"
 msgstr "Fuseau horaire:"
 
@@ -66,18 +66,19 @@ msgstr "Paramétrage du fuseau horaire"
 msgid "Please select your time zone:"
 msgstr "Veuillez sélectionner votre fuseau horaire:"
 
-#: gtkclocksetup:232
+#: gtkclocksetup:237
 msgid "General area"
 msgstr "Région"
 
-#: gtkclocksetup:233
+#: gtkclocksetup:238
 msgid "Location"
 msgstr "Emplacement"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-msgid "System clock configuration tool"
-msgstr "Utilitaire de configuration de l'horloge système"
+#, fuzzy
+msgid "System clock"
+msgstr "Horloge système"
 
 #: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
-msgid "System clock settings"
-msgstr "Horloge système"
+msgid "System clock configuration tool"
+msgstr "Utilitaire de configuration de l'horloge système"
