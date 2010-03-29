@@ -1,9 +1,9 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:35+0200\n"
+"POT-Creation-Date: 2010-03-29 13:59+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team: French <akuna@free.fr>\n"
@@ -152,7 +152,9 @@ msgstr "Impossible de supprimer le groupe"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
-msgstr "Le mot de passe est trop court. Il doit obligatoirement contenir au moins 5 caractères."
+msgstr ""
+"Le mot de passe est trop court. Il doit obligatoirement contenir au moins "
+"5 caractères."
 
 #: gtkusersetup:211
 msgid "Password cannot include the backslash character."
@@ -168,7 +170,8 @@ msgstr "Un nom d'utilisateur ne peut pas être vide."
 
 #: gtkusersetup:229
 msgid "Username cannot exceed 31 characters"
-msgstr "Un nom d'utilisateur ne peut pas être composé de plus de 31 caractères."
+msgstr ""
+"Un nom d'utilisateur ne peut pas être composé de plus de 31 caractères."
 
 #: gtkusersetup:232
 msgid "Username cannot include the space character."
@@ -180,15 +183,20 @@ msgstr "Un nom d'utilisateur ne peut pas commencer par un nombre."
 
 #: gtkusersetup:238
 msgid "Username cannot start with an underscore."
-msgstr "Un nom d'utilisateur ne peut pas commencer par un caractère de soulignement."
+msgstr ""
+"Un nom d'utilisateur ne peut pas commencer par un caractère de soulignement."
 
 #: gtkusersetup:241
 msgid "Username cannot start with a dash."
 msgstr "Un nom d'utilisateur ne peut pas commencer par un tiret."
 
 #: gtkusersetup:246
-msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "Un nom d'utilisateur ne doit être composé qu'à l'aide de lettres minuscules non accentuées, de chiffres, de tirets et de caractères de soulignement.‭ "
+msgid ""
+"Username can consist solely of latin lower case letters, numbers, dashes and "
+"underscores."
+msgstr ""
+"Un nom d'utilisateur ne doit être composé qu'à l'aide de lettres minuscules "
+"non accentuées, de chiffres, de tirets et de caractères de soulignement.‭ "
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -212,15 +220,20 @@ msgstr "Un nom du groupe ne peut pas commencer par un nombre."
 
 #: gtkusersetup:274
 msgid "Group name cannot start with an underscore."
-msgstr "Un nom de groupe ne peut pas commencer par un caractère de soulignement."
+msgstr ""
+"Un nom de groupe ne peut pas commencer par un caractère de soulignement."
 
 #: gtkusersetup:277
 msgid "Group name cannot start with a dash."
 msgstr "Un nom de groupe ne peut pas commencer par un tiret"
 
 #: gtkusersetup:282
-msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "Un nom de groupe ne doit être composé qu'à l'aide de lettres minuscules non accentuées, de chiffres, de tirets et de caractères de soulignement.‭ "
+msgid ""
+"Group name can consist solely of latin lower case letters, numbers, dashes "
+"and underscores."
+msgstr ""
+"Un nom de groupe ne doit être composé qu'à l'aide de lettres minuscules non "
+"accentuées, de chiffres, de tirets et de caractères de soulignement.‭ "
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -259,12 +272,18 @@ msgid "Delete user {0}?"
 msgstr "Supprimer l'utilisateur {0} ?"
 
 #: gtkusersetup:481
-msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
-msgstr "Vous vous apprêtez à supprimer le compte \"{0}\"  de votre système. Êtes vous certain de vouloir continuer ?"
+msgid ""
+"You are about to remove user account \"{0}\" from your system. Do you really "
+"want to continue?"
+msgstr ""
+"Vous vous apprêtez à supprimer le compte \"{0}\"  de votre système. Êtes "
+"vous certain de vouloir continuer ?"
 
 #: gtkusersetup:482
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr "Supprimer de manière définitive le répertoire personnel ({0}) et tout son contenu"
+msgstr ""
+"Supprimer de manière définitive le répertoire personnel ({0}) et tout son "
+"contenu"
 
 #: gtkusersetup:728
 msgid "Group \"{0}\" properties"
@@ -275,12 +294,23 @@ msgid "Add new group"
 msgstr "Ajouter un nouveau groupe"
 
 #: gtkusersetup:772
-msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
-msgstr "Vous vous apprêtez à supprimer le groupe \"{0}\"  de votre système. Êtes vous certain de vouloir continuer ?"
+msgid ""
+"You are about to delete the \"{0}\" group from your system. Are you sure you "
+"want to continue?"
+msgstr ""
+"Vous vous apprêtez à supprimer le groupe \"{0}\"  de votre système. Êtes "
+"vous certain de vouloir continuer ?"
 
 #: gtkusersetup:775
-msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
-msgstr "Le groupe \"{0}\" ne peut pas être supprimé car c'est le groupe principal de l'utilisateur \"{1}\". Si vous souhaitez supprimer le groupe \"{0}\", vous devez auparavant assigner un autre groupe comme groupe principal de l'utilisateur \"{1}\"."
+msgid ""
+"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
+"you want to delete group \"{0}\", you have to set the main group for user "
+"\"{1}\" to another group first."
+msgstr ""
+"Le groupe \"{0}\" ne peut pas être supprimé car c'est le groupe principal de "
+"l'utilisateur \"{1}\". Si vous souhaitez supprimer le groupe \"{0}\", vous "
+"devez auparavant assigner un autre groupe comme groupe principal de "
+"l'utilisateur \"{1}\"."
 
 #: gtkusersetup:902
 msgid "Username"
@@ -302,14 +332,15 @@ msgstr "Membre"
 msgid "Group"
 msgstr "Groupe"
 
-#: gtkusersetup.desktop.in.h:1
-msgid "User and group settings"
+#: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
+#, fuzzy
+msgid "Users and groups"
 msgstr "Gestion des utilisateurs"
 
 #: gtkusersetup.desktop.in.h:2 gtkusersetup-kde.desktop.in.h:2
-msgid "Users management tool"
+#, fuzzy
+msgid "Users and groups management tool"
 msgstr "Utilitaire de gestion des utilisateurs"
 
-#: gtkusersetup-kde.desktop.in.h:1
-msgid "Users and group settings"
-msgstr "Gestion des utilisateurs"
+#~ msgid "User and group settings"
+#~ msgstr "Gestion des utilisateurs"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:35+0200\n"
+"POT-Creation-Date: 2010-03-29 13:59+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: German\n"
@@ -323,14 +323,15 @@ msgstr "Mitglied"
 msgid "Group"
 msgstr "Gruppe"
 
-#: gtkusersetup.desktop.in.h:1
-msgid "User and group settings"
-msgstr "Benutzer verwalten"
+#: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
+#, fuzzy
+msgid "Users and groups"
+msgstr "Benutzerverwalten"
 
 #: gtkusersetup.desktop.in.h:2 gtkusersetup-kde.desktop.in.h:2
-msgid "Users management tool"
+#, fuzzy
+msgid "Users and groups management tool"
 msgstr "Einstellungen der Benutzer verwalten"
 
-#: gtkusersetup-kde.desktop.in.h:1
-msgid "Users and group settings"
-msgstr "Benutzerverwalten"
+#~ msgid "User and group settings"
+#~ msgstr "Benutzer verwalten"

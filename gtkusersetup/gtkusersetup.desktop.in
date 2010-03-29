@@ -1,6 +1,6 @@
 [Desktop Entry]
-_Name=User and group settings
-_Comment=Users management tool
+_Name=Users and groups
+_Comment=Users and groups management tool
 Exec=gksu gtkusersetup
 Icon=gtkusersetup
 Terminal=false

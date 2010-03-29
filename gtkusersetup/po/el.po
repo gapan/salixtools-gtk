@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-23 23:35+0200\n"
+"POT-Creation-Date: 2010-03-29 13:59+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -113,7 +113,8 @@ msgstr "Λήξη λογαριασμού"
 msgid "Advanced"
 msgstr "Για προχωρημένους"
 
-#: gtkusersetup.glade:951 gtkusersetup.glade:1546
+#: gtkusersetup.glade:951
+#: gtkusersetup.glade:1546
 msgid "Error!"
 msgstr "Σφάλμα!"
 
@@ -151,13 +152,11 @@ msgstr "Δεν είναι δυνατή η διαγραφή της ομάδας"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
-msgstr ""
-"Ο κωδικός είναι πολύ μικρός. Πρέπει να έχει μήκος τουλάχιστον 5 χαρακτήρες."
+msgstr "Ο κωδικός είναι πολύ μικρός. Πρέπει να έχει μήκος τουλάχιστον 5 χαρακτήρες."
 
 #: gtkusersetup:211
 msgid "Password cannot include the backslash character."
-msgstr ""
-"Ο κωδικός δεν μπορεί να περιλαμβάνει το χαρακτήρα της ανάποδης καθέτου."
+msgstr "Ο κωδικός δεν μπορεί να περιλαμβάνει το χαρακτήρα της ανάποδης καθέτου."
 
 #: gtkusersetup:217
 msgid "Passwords don't match"
@@ -188,12 +187,8 @@ msgid "Username cannot start with a dash."
 msgstr "Το όνομα χρήστη δεν μπορεί να ξεκινά με παύλα."
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"Το όνομα χρήστη θα πρέπει να περιλαμβάνει μόνο πεζά λατινικά γράμματα, "
-"αριθμούς, παύλες και υπογραμμίσεις."
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Το όνομα χρήστη θα πρέπει να περιλαμβάνει μόνο πεζά λατινικά γράμματα, αριθμούς, παύλες και υπογραμμίσεις."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -224,12 +219,8 @@ msgid "Group name cannot start with a dash."
 msgstr "Το όνομα ομάδας δεν μπορεί να ξεκινά με παύλα."
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"Το όνομα ομάδας μπορεί να περιλαμβάνει μόνο πεζά λατινικά γράμματα, "
-"αριθμούς, παύλες και υπογραμμίσεις."
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Το όνομα ομάδας μπορεί να περιλαμβάνει μόνο πεζά λατινικά γράμματα, αριθμούς, παύλες και υπογραμμίσεις."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -268,17 +259,12 @@ msgid "Delete user {0}?"
 msgstr "Διαγραφή του χρήστη {0};"
 
 #: gtkusersetup:481
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"Είστε έτοιμοι να διαγράψετε το λογαριασμό του χρήστη \"{0}\" από το σύστημά "
-"σας. Θέλετε πραγματικά να συνεχίσετε;"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "Είστε έτοιμοι να διαγράψετε το λογαριασμό του χρήστη \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
 
 #: gtkusersetup:482
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr ""
-"Απομάκρυνση του αρχικού καταλόγου του χρήστη ({0}) με όλα τα περιεχόμενά του."
+msgstr "Απομάκρυνση του αρχικού καταλόγου του χρήστη ({0}) με όλα τα περιεχόμενά του."
 
 #: gtkusersetup:728
 msgid "Group \"{0}\" properties"
@@ -289,22 +275,12 @@ msgid "Add new group"
 msgstr "Προσθήκη νέας ομάδας"
 
 #: gtkusersetup:772
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
-msgstr ""
-"Είστε έτοιμοι να διαγράψετε την ομάδα \"{0}\" από το σύστημά σας. Θέλετε "
-"πραγματικά να συνεχίσετε;"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Είστε έτοιμοι να διαγράψετε την ομάδα \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
 
 #: gtkusersetup:775
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"Η ομάδα \"{0}\" δεν μπορεί να διαγραφεί, επειδή είναι η κύρια ομάδα για το "
-"χρήστη \"{1}\". Αν επιθυμείτε να διαγράψετε την ομάδα \"{0}\", θα πρέπει "
-"πρώτα να αλλάξετε την κύρια ομάδα του χρήστη \"{1}\"."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "Η ομάδα \"{0}\" δεν μπορεί να διαγραφεί, επειδή είναι η κύρια ομάδα για το χρήστη \"{1}\". Αν επιθυμείτε να διαγράψετε την ομάδα \"{0}\", θα πρέπει πρώτα να αλλάξετε την κύρια ομάδα του χρήστη \"{1}\"."
 
 #: gtkusersetup:902
 msgid "Username"
@@ -327,14 +303,14 @@ msgid "Group"
 msgstr "Ομάδα"
 
 #: gtkusersetup.desktop.in.h:1
-msgid "User and group settings"
-msgstr "Διαχείριση χρηστών και ομάδων"
-
-#: gtkusersetup.desktop.in.h:2 gtkusersetup-kde.desktop.in.h:2
-msgid "Users management tool"
-msgstr ""
-"Εργαλέιο για τη διαχείριση των χρηστών και των ομάδων χρηστών του συστήματος"
-
 #: gtkusersetup-kde.desktop.in.h:1
-msgid "Users and group settings"
-msgstr "Διαχείριση χρηστών και ομάδων"
+msgid "Users and groups"
+msgstr "Χρήστες και ομάδες"
+
+#: gtkusersetup.desktop.in.h:2
+#: gtkusersetup-kde.desktop.in.h:2
+msgid "Users and groups management tool"
+msgstr "Εργαλέιο για τη διαχείριση των χρηστών και των ομάδων χρηστών του συστήματος"
+
+#~ msgid "User and group settings"
+#~ msgstr "Διαχείριση χρηστών και ομάδων"
