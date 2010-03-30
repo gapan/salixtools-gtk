@@ -110,7 +110,7 @@ def ntp_sync_now():
 	os.system('sh /etc/rc.d/rc.ntpd sync')
 
 def setntp(state):
-	if state == "True":
+	if state == True:
 		os.system('service start ntpd')
 	else:
 		os.system('service stop ntpd')
@@ -118,7 +118,7 @@ def setntp(state):
 class GTKClockSetup:
 	def on_button_ok_clicked(self, widget, data=None):
 		if not self.ntpcheckbutton.get_active == ntpstate():
-			setntp(self.ntpcheckbutton.get_active)
+			setntp(self.ntpcheckbutton.get_active())
 			if self.ntpcheckbutton.get_active() == False:
 				year = "%04d" % (self.calendar.get_date()[0])
 				month = "%02d" % (self.calendar.get_date()[1]+1)
