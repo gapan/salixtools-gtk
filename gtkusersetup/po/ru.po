@@ -18,11 +18,15 @@ msgstr "Управление пользователями"
 
 #: gtkusersetup.glade:208
 msgid "Manage groups"
-msgstr "Группы"
+msgstr ""
+"Управление \n"
+"группами"
 
 #: gtkusersetup.glade:234
 msgid "Show all users"
-msgstr "Показать всех"
+msgstr ""
+"Показать всех\n"
+"пользователей"
 
 #: gtkusersetup.glade:325
 msgid "<b>Basic information</b>"
@@ -62,7 +66,7 @@ msgstr "Рабочий телефон:"
 
 #: gtkusersetup.glade:530
 msgid "Office information:"
-msgstr "Номер кабинета:"
+msgstr "Расположение:"
 
 #: gtkusersetup.glade:540
 msgid "Home phone:"
@@ -98,11 +102,11 @@ msgstr "Домашний каталог:"
 
 #: gtkusersetup.glade:781
 msgid "Shell:"
-msgstr "Shell:"
+msgstr "Оболочка:"
 
 #: gtkusersetup.glade:793
 msgid "UID:"
-msgstr "UID:"
+msgstr "ID пользователя:"
 
 #: gtkusersetup.glade:850
 msgid "Set account expiration date"
@@ -227,7 +231,7 @@ msgstr "Имя группы \"{0}\" уже существует."
 
 #: gtkusersetup:298
 msgid "Shell does not exist."
-msgstr "Shell не существует."
+msgstr "Оболочка не существует."
 
 #: gtkusersetup:308
 msgid "UID {0} is assigned to another user."
