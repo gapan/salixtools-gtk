@@ -243,7 +243,7 @@ msgstr "GID {0} присвоен другой группе."
 
 #: gtkusersetup:359
 msgid "User account properties for \"{0}\""
-msgstr "Параметры профиля пользователя \"{0}\""
+msgstr "Параметры пользователя \"{0}\""
 
 #: gtkusersetup:366
 msgid "<b>Set new password</b>"
@@ -265,11 +265,12 @@ msgstr "Удалить пользователя {0}?"
 msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
 msgstr ""
 "Вы собираетесь удалить пользователя \"{0}\" из системы. \n"
+"\n"
 "Действительно продолжить?"
 
 #: gtkusersetup:482
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr "Полностью удалить домашний каталог  ({0}) со всем содержимым"
+msgstr "Удалить домашний каталог \"{0}\" со всем содержимым"
 
 #: gtkusersetup:728
 msgid "Group \"{0}\" properties"
