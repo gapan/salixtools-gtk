@@ -1,0 +1,315 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkusersetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 13:59+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: HsH <hsh@runtu.org>\n"
+"Language-Team: Russian <HsH <hsh@runtu.org>>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+
+#: gtkusersetup.glade:49
+msgid "User settings"
+msgstr "Управление пользователями"
+
+#: gtkusersetup.glade:208
+msgid "Manage groups"
+msgstr "Группы"
+
+#: gtkusersetup.glade:234
+msgid "Show all users"
+msgstr "Показать всех"
+
+#: gtkusersetup.glade:325
+msgid "<b>Basic information</b>"
+msgstr "<b>Основная информация</b>"
+
+#: gtkusersetup.glade:344
+msgid "Username:"
+msgstr "Пользователь:"
+
+#: gtkusersetup.glade:353
+msgid "Real name:"
+msgstr "Реальное имя:"
+
+#: gtkusersetup.glade:414
+msgid "User password:"
+msgstr "Пароль:"
+
+#: gtkusersetup.glade:424
+msgid "Password confirmation:"
+msgstr "Подтверждение:"
+
+#: gtkusersetup.glade:465
+msgid "View password while typing"
+msgstr "Отображать пароль при вводе"
+
+#: gtkusersetup.glade:483
+msgid "Account"
+msgstr "Аккаунт"
+
+#: gtkusersetup.glade:498
+msgid "<b>Contact information</b>"
+msgstr "<b>Контактная информация</b>"
+
+#: gtkusersetup.glade:518
+msgid "Office extension:"
+msgstr "Рабочий телефон:"
+
+#: gtkusersetup.glade:530
+msgid "Office information:"
+msgstr "Номер кабинета:"
+
+#: gtkusersetup.glade:540
+msgid "Home phone:"
+msgstr "Домашний телефон:"
+
+#: gtkusersetup.glade:597
+msgid "Contact"
+msgstr "Контакт"
+
+#: gtkusersetup.glade:613
+msgid "<b>Group membership</b>"
+msgstr "<b>Членство в группах</b>"
+
+#: gtkusersetup.glade:630
+msgid "Main group:"
+msgstr "Основная:"
+
+#: gtkusersetup.glade:663
+msgid "Other groups:"
+msgstr "Другие:"
+
+#: gtkusersetup.glade:735
+msgid "Groups"
+msgstr "Группы"
+
+#: gtkusersetup.glade:751
+msgid "<b>Advanced settings</b>"
+msgstr "<b>Дополнительные параметры</b>"
+
+#: gtkusersetup.glade:771
+msgid "Home directory:"
+msgstr "Домашний каталог:"
+
+#: gtkusersetup.glade:781
+msgid "Shell:"
+msgstr "Shell:"
+
+#: gtkusersetup.glade:793
+msgid "UID:"
+msgstr "UID:"
+
+#: gtkusersetup.glade:850
+msgid "Set account expiration date"
+msgstr "Установить срок действия аккаунта "
+
+#: gtkusersetup.glade:886
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: gtkusersetup.glade:951
+#: gtkusersetup.glade:1546
+msgid "Error!"
+msgstr "Ошибка!"
+
+#: gtkusersetup.glade:1159
+msgid "Group settings"
+msgstr "Управление группами"
+
+#: gtkusersetup.glade:1336
+msgid "Group properties"
+msgstr "Параметры группы"
+
+#: gtkusersetup.glade:1358
+msgid "<b>Basic settings</b>"
+msgstr "<b>Основные параметры</b>"
+
+#: gtkusersetup.glade:1378
+msgid "Group name:"
+msgstr "Имя группы:"
+
+#: gtkusersetup.glade:1388
+msgid "Group ID:"
+msgstr "ID группы:"
+
+#: gtkusersetup.glade:1434
+msgid "<b>Group members</b>"
+msgstr "<b>Члены группы</b>"
+
+#: gtkusersetup.glade:1632
+msgid "Delete group?"
+msgstr "Удалить группу?"
+
+#: gtkusersetup.glade:1731
+msgid "Cannot delete group"
+msgstr "Не удалось удалить группу"
+
+#: gtkusersetup:208
+msgid "Password is too short. It has to be at least 5 characters long."
+msgstr "Слишком короткий пароль. Укажите не менее 5 символов."
+
+#: gtkusersetup:211
+msgid "Password cannot include the backslash character."
+msgstr "Пароль не может содержать обратный слэш."
+
+#: gtkusersetup:217
+msgid "Passwords don't match"
+msgstr "Пароли не совпадают."
+
+#: gtkusersetup:226
+msgid "Username cannot be empty."
+msgstr "Логин не может быть пустым."
+
+#: gtkusersetup:229
+msgid "Username cannot exceed 31 characters"
+msgstr "Логин не должен быть более 31 символа."
+
+#: gtkusersetup:232
+msgid "Username cannot include the space character."
+msgstr "Логин не должен содержать символ пробела."
+
+#: gtkusersetup:235
+msgid "Username cannot start with a number."
+msgstr "Логин не должен начинаться с цифры."
+
+#: gtkusersetup:238
+msgid "Username cannot start with an underscore."
+msgstr "Логин не должен начинаться с подчёркивания."
+
+#: gtkusersetup:241
+msgid "Username cannot start with a dash."
+msgstr "Логин не должен начинаться с тире."
+
+#: gtkusersetup:246
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Логин может состоять из латинских букв нижнего регистра, цифр, тире и подчеркиваний."
+
+#: gtkusersetup:252
+msgid "Username \"{0}\" already exists."
+msgstr "Логин \"{0}\" уже существует."
+
+#: gtkusersetup:262
+msgid "Group name cannot be empty."
+msgstr "Имя группы не должно быть пустым."
+
+#: gtkusersetup:265
+msgid "Group name cannot exceed 31 characters"
+msgstr "Имя группы не должно быть более 31 символа."
+
+#: gtkusersetup:268
+msgid "Group name cannot include the space character."
+msgstr "Имя группы не должно содержать символ пробела."
+
+#: gtkusersetup:271
+msgid "Group name cannot start with a number."
+msgstr "Имя группы не должно начинаться с цифры."
+
+#: gtkusersetup:274
+msgid "Group name cannot start with an underscore."
+msgstr "Имя группы не должно начинаться с подчёркивания."
+
+#: gtkusersetup:277
+msgid "Group name cannot start with a dash."
+msgstr "Имя группы не должно начинаться с тире."
+
+#: gtkusersetup:282
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Имя группы может состоять из латинских букв нижнего регистра, цифр, тире и подчеркиваний."
+
+#: gtkusersetup:288
+msgid "Group name \"{0}\" already exists."
+msgstr "Имя группы \"{0}\" уже существует."
+
+#: gtkusersetup:298
+msgid "Shell does not exist."
+msgstr "Shell не существует."
+
+#: gtkusersetup:308
+msgid "UID {0} is assigned to another user."
+msgstr "UID {0} присвоен другому пользователю."
+
+#: gtkusersetup:318
+msgid "GID {0} is assigned to another group."
+msgstr "GID {0} присвоен другой группе."
+
+#: gtkusersetup:359
+msgid "User account properties for \"{0}\""
+msgstr "Параметры профиля пользователя \"{0}\""
+
+#: gtkusersetup:366
+msgid "<b>Set new password</b>"
+msgstr "<b>Установить новый пароль</b>"
+
+#: gtkusersetup:423
+msgid "Add new user"
+msgstr "Создание пользователя"
+
+#: gtkusersetup:430
+msgid "<b>Set password</b>"
+msgstr "<b>Установить пароль</b>"
+
+#: gtkusersetup:480
+msgid "Delete user {0}?"
+msgstr "Удалить пользователя {0}?"
+
+#: gtkusersetup:481
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr ""
+"Вы собираетесь удалить пользователя \"{0}\" из системы. \n"
+"Действительно продолжить?"
+
+#: gtkusersetup:482
+msgid "Completely remove user's home directory ({0}) with all its contents"
+msgstr "Полностью удалить домашний каталог  ({0}) со всем содержимым"
+
+#: gtkusersetup:728
+msgid "Group \"{0}\" properties"
+msgstr "Параметры группы \"{0}\""
+
+#: gtkusersetup:747
+msgid "Add new group"
+msgstr "Создание группы"
+
+#: gtkusersetup:772
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Вы собираетесь удалить группу \"{0}\" из системы. Действительно продолжить?"
+
+#: gtkusersetup:775
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "Группа  \"{0}\" не может быть удалена, так как является главной для пользователя \"{1}\". Чтобы удалить группу \"{0}\", сначала измените главную группу для пользователя  \"{1}\"."
+
+#: gtkusersetup:902
+msgid "Username"
+msgstr "Пользователь"
+
+#: gtkusersetup:903
+msgid "Real name"
+msgstr "Настоящее имя"
+
+#: gtkusersetup:904
+msgid "Home directory"
+msgstr "Домашний каталог"
+
+#: gtkusersetup:936
+msgid "Member"
+msgstr "Член"
+
+#: gtkusersetup:937
+msgid "Group"
+msgstr "Группа"
+
+#: gtkusersetup.desktop.in.h:1
+#: gtkusersetup-kde.desktop.in.h:1
+msgid "Users and groups"
+msgstr "Пользователи и группы"
+
+#: gtkusersetup.desktop.in.h:2
+#: gtkusersetup-kde.desktop.in.h:2
+msgid "Users and groups management tool"
+msgstr "Утилита для управления пользователями и группами"
+
