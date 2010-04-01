@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkclocksetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 13:51+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: HsH <hsh@runtu.org>\n"
+"Language-Team: Russian <HsH <hsh@runtu.org>>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+
+#: gtkclocksetup.glade:7
+msgid "Date and time settings"
+msgstr "Установка даты и времени"
+
+#: gtkclocksetup.glade:26
+msgid "Keep clock synchronized with internet servers"
+msgstr "Синхронизировать время с интернет-серверами"
+
+#: gtkclocksetup.glade:51
+msgid "Synchronize now"
+msgstr "Синхронизировать"
+
+#: gtkclocksetup.glade:89
+#: gtkclocksetup:188
+#: gtkclocksetup:221
+msgid "Time zone:"
+msgstr "Временная зона:"
+
+#: gtkclocksetup.glade:97
+msgid "Select time zone..."
+msgstr "Выбрать зону..."
+
+#: gtkclocksetup.glade:130
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "Аппаратные часы установлены в UTC"
+
+#: gtkclocksetup.glade:134
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "Аппаратное время на большинстве домашних и рабочих компьютеров установлено по местному времени, в то время как веб-серверы в основном используют UTC. Не отмечайте, если не уверены."
+
+#: gtkclocksetup.glade:252
+msgid "Time:"
+msgstr "Время:"
+
+#: gtkclocksetup.glade:286
+msgid "Date:"
+msgstr "Дата:"
+
+#: gtkclocksetup.glade:371
+msgid "Select time zone"
+msgstr "Выбор временной зоны"
+
+#: gtkclocksetup.glade:392
+msgid "Please select your time zone:"
+msgstr "Выберите вашу временную зону:"
+
+#: gtkclocksetup:237
+msgid "General area"
+msgstr "Регион"
+
+#: gtkclocksetup:238
+msgid "Location"
+msgstr "Пояс"
+
+#: gtkclocksetup.desktop.in.h:1
+#: gtkclocksetup-kde.desktop.in.h:1
+msgid "System clock"
+msgstr "Системное время"
+
+#: gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock configuration tool"
+msgstr "Конфигурирование системного времени"
+
