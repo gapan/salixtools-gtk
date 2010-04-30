@@ -4,7 +4,7 @@
 cd $(dirname $0)
 install -d -m 755 $DESTDIR/usr/sbin
 install -d -m 755 $DESTDIR/usr/share/applications
-install -d -m 755 $DESTDI/usr/share/salixtools
+install -d -m 755 $DESTDIR/usr/share/salixtools
 
 for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup; do
 	install -m 755 $i/$i $DESTDIR/usr/sbin/
