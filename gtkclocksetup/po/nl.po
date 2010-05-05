@@ -1,0 +1,92 @@
+# Dutch .po file for gtkclocksetup.
+# Copyright (C) 2010
+# This file is distributed under the same license as the gtkclocksetup package.
+# Imar van Erven Dorens <gambit73@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 13:51+0300\n"
+"PO-Revision-Date: 2010-05-05 16:26+0100\n"
+"Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
+"Language-Team: Dutch <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkclocksetup.glade:7
+#, fuzzy
+msgid "Date and time settings"
+msgstr "Overige audio-instellingen en modules."
+
+#: gtkclocksetup.glade:26
+msgid "Keep clock synchronized with internet servers"
+msgstr ""
+
+#: gtkclocksetup.glade:51
+#, fuzzy
+msgid "Synchronize now"
+msgstr "Nu opnieuw opstarten"
+
+#: gtkclocksetup.glade:89
+#: gtkclocksetup:188
+#: gtkclocksetup:221
+#, fuzzy
+msgid "Time zone:"
+msgstr "Neutrale Zone"
+
+#: gtkclocksetup.glade:97
+#, fuzzy
+msgid "Select time zone..."
+msgstr "Panamakanaalzone"
+
+#: gtkclocksetup.glade:130
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr ""
+
+#: gtkclocksetup.glade:134
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr ""
+
+#: gtkclocksetup.glade:252
+#, fuzzy
+msgid "Time:"
+msgstr "Tijd"
+
+#: gtkclocksetup.glade:286
+#, fuzzy
+msgid "Date:"
+msgstr "Datum"
+
+#: gtkclocksetup.glade:371
+#, fuzzy
+msgid "Select time zone"
+msgstr "Panamakanaalzone"
+
+#: gtkclocksetup.glade:392
+msgid "Please select your time zone:"
+msgstr ""
+
+#: gtkclocksetup:237
+#, fuzzy
+msgid "General area"
+msgstr "controlegebied"
+
+#: gtkclocksetup:238
+#, fuzzy
+msgid "Location"
+msgstr "Locatie"
+
+#: gtkclocksetup.desktop.in.h:1
+#: gtkclocksetup-kde.desktop.in.h:1
+#, fuzzy
+msgid "System clock"
+msgstr "Kloksynchronisatie"
+
+#: gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+#, fuzzy
+msgid "System clock configuration tool"
+msgstr "<b>NTFS schrijfondersteuning configuratieprogramma</b>"
+
