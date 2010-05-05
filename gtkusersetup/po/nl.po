@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkusersetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -16,102 +16,84 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: gtkusersetup.glade:49
-#, fuzzy
 msgid "User settings"
-msgstr "OTR Instellingen"
+msgstr "Gebruikersinstellingen"
 
 #: gtkusersetup.glade:208
-#, fuzzy
 msgid "Manage groups"
-msgstr "%u blokgroepen\n"
+msgstr "Groepen beheren"
 
 #: gtkusersetup.glade:234
-#, fuzzy
 msgid "Show all users"
-msgstr "Alles uitschakelen"
+msgstr "Toon alle gebruikers"
 
 #: gtkusersetup.glade:325
-#, fuzzy
 msgid "<b>Basic information</b>"
-msgstr "Bouwinformatie"
+msgstr "<b>Basisgegevens</b>"
 
 #: gtkusersetup.glade:344
-#, fuzzy
 msgid "Username:"
-msgstr "%u - Gebruikersnaam"
+msgstr "Gebruikersnaam:"
 
 #: gtkusersetup.glade:353
-#, fuzzy
 msgid "Real name:"
-msgstr "--%s heeft <naam> nodig"
+msgstr "Echte naam:"
 
 #: gtkusersetup.glade:414
-#, fuzzy
 msgid "User password:"
-msgstr "%w - Proxywachtwoord"
+msgstr "Gebruikerswachtwoord:"
 
 #: gtkusersetup.glade:424
-#, fuzzy
 msgid "Password confirmation:"
-msgstr "Bevestiging vereist"
+msgstr "Bevestiging van het wachtwoord:"
 
 #: gtkusersetup.glade:465
 msgid "View password while typing"
-msgstr ""
+msgstr "Toon wachtwoord tijdens het typen"
 
 #: gtkusersetup.glade:483
-#, fuzzy
 msgid "Account"
 msgstr "Account"
 
 #: gtkusersetup.glade:498
-#, fuzzy
 msgid "<b>Contact information</b>"
-msgstr "Bouwinformatie"
+msgstr "<b>Contactinformatie</b>"
 
 #: gtkusersetup.glade:518
-#, fuzzy
 msgid "Office extension:"
-msgstr "Hoeveelheid uitbreiding:"
+msgstr "Office extensie:"
 
 #: gtkusersetup.glade:530
-#, fuzzy
 msgid "Office information:"
-msgstr "Bouwinformatie"
+msgstr "Office informatie:"
 
 #: gtkusersetup.glade:540
-#, fuzzy
 msgid "Home phone:"
-msgstr "Sessie telefoonnummer"
+msgstr "Telefoon thuis:"
 
 #: gtkusersetup.glade:597
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #: gtkusersetup.glade:613
-#, fuzzy
 msgid "<b>Group membership</b>"
-msgstr "Inktgroep:"
+msgstr "<b>Groepslidmaatschap</b>"
 
 #: gtkusersetup.glade:630
-#, fuzzy
 msgid "Main group:"
-msgstr "Inktgroep:"
+msgstr "Hoofdgroep:"
 
 #: gtkusersetup.glade:663
-#, fuzzy
 msgid "Other groups:"
-msgstr "%u blokgroepen\n"
+msgstr "Andere groepen:"
 
 #: gtkusersetup.glade:735
-#, fuzzy
 msgid "Groups"
-msgstr "%u blokgroepen\n"
+msgstr "Groepen"
 
 #: gtkusersetup.glade:751
-#, fuzzy
 msgid "<b>Advanced settings</b>"
-msgstr "Geavanceerde opties"
+msgstr "<b>Geavanceerde instellingen</b>"
 
 #: gtkusersetup.glade:771
 #, fuzzy
@@ -135,8 +117,7 @@ msgstr ""
 msgid "Advanced"
 msgstr "Geavanceerd"
 
-#: gtkusersetup.glade:951
-#: gtkusersetup.glade:1546
+#: gtkusersetup.glade:951 gtkusersetup.glade:1546
 #, fuzzy
 msgid "Error!"
 msgstr "%c%s... Fout!"
@@ -351,14 +332,11 @@ msgstr "koptekst-informatielid"
 msgid "Group"
 msgstr "Groep"
 
-#: gtkusersetup.desktop.in.h:1
-#: gtkusersetup-kde.desktop.in.h:1
+#: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
 #, fuzzy
 msgid "Users and groups"
 msgstr "tegenstrijdige acties -%c (--%s) en -%c (--%s)"
 
-#: gtkusersetup.desktop.in.h:2
-#: gtkusersetup-kde.desktop.in.h:2
+#: gtkusersetup.desktop.in.h:2 gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr ""
-
