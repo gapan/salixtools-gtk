@@ -256,66 +256,57 @@ msgid "<b>Set password</b>"
 msgstr "<b>Wachtwoord instellen</b>"
 
 #: gtkusersetup:480
-#, fuzzy
 msgid "Delete user {0}?"
-msgstr "%s - Proxygebruiker"
+msgstr "Verwijder gebruiker (0)?"
 
 #: gtkusersetup:481
 msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
-msgstr ""
+msgstr "U staat op punt het gebruikersaccount \"(0)\" van uw systeem te verwijderen. Wilt u echt doorgaan?"
 
 #: gtkusersetup:482
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr ""
+msgstr "Verwijder de folder van gebruiker ((0)) volledig met de gehele inhoud"
 
 #: gtkusersetup:728
-#, fuzzy
 msgid "Group \"{0}\" properties"
-msgstr "Kolomeigenschappen"
+msgstr "Eigenschappen van groep \"(0)\""
 
 #: gtkusersetup:747
-#, fuzzy
 msgid "Add new group"
-msgstr "medium toevoegen"
+msgstr "Voeg een nieuwe groep toe"
 
 #: gtkusersetup:772
 msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
-msgstr ""
+msgstr "U staat op punt de groep \"(0)\" van uw systeem te verwijderen. Wilt u echt doorgaan?"
 
 #: gtkusersetup:775
 msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
-msgstr ""
+msgstr "Groep \"(0)\" kan niet worden verwijderd omdat zij de hoofdgroep van gebruiker \"(1)\" is. Indien u groep \"(0)\" wilt verwijderen, moet u eerst een andere hoofdgroep instellen voor gebruiker \"(1)\"."
 
 #: gtkusersetup:902
-#, fuzzy
 msgid "Username"
 msgstr "Gebruikersnaam"
 
 #: gtkusersetup:903
-#, fuzzy
 msgid "Real name"
-msgstr "--%s heeft <naam> nodig"
+msgstr "Echte naam"
 
 #: gtkusersetup:904
-#, fuzzy
 msgid "Home directory"
-msgstr "Map '%s' is afwezig."
+msgstr "Home folder"
 
 #: gtkusersetup:936
-#, fuzzy
 msgid "Member"
-msgstr "koptekst-informatielid"
+msgstr "Lid"
 
 #: gtkusersetup:937
-#, fuzzy
 msgid "Group"
 msgstr "Groep"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
-#, fuzzy
 msgid "Users and groups"
-msgstr "tegenstrijdige acties -%c (--%s) en -%c (--%s)"
+msgstr "Gebruikers en groepen"
 
 #: gtkusersetup.desktop.in.h:2 gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
-msgstr ""
+msgstr "Gebruikers en groepen beheertool"
