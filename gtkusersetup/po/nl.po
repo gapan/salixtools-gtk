@@ -1,0 +1,364 @@
+# Dutch .po file for gtkusersetup.
+# Copyright (C) 2010
+# This file is distributed under the same license as the gtkusersetup package.
+# Imar van Erven Dorens <gambit73@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 13:59+0300\n"
+"PO-Revision-Date: 2010-05-05 17:01+0100\n"
+"Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
+"Language-Team: Dutch <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkusersetup.glade:49
+#, fuzzy
+msgid "User settings"
+msgstr "OTR Instellingen"
+
+#: gtkusersetup.glade:208
+#, fuzzy
+msgid "Manage groups"
+msgstr "%u blokgroepen\n"
+
+#: gtkusersetup.glade:234
+#, fuzzy
+msgid "Show all users"
+msgstr "Alles uitschakelen"
+
+#: gtkusersetup.glade:325
+#, fuzzy
+msgid "<b>Basic information</b>"
+msgstr "Bouwinformatie"
+
+#: gtkusersetup.glade:344
+#, fuzzy
+msgid "Username:"
+msgstr "%u - Gebruikersnaam"
+
+#: gtkusersetup.glade:353
+#, fuzzy
+msgid "Real name:"
+msgstr "--%s heeft <naam> nodig"
+
+#: gtkusersetup.glade:414
+#, fuzzy
+msgid "User password:"
+msgstr "%w - Proxywachtwoord"
+
+#: gtkusersetup.glade:424
+#, fuzzy
+msgid "Password confirmation:"
+msgstr "Bevestiging vereist"
+
+#: gtkusersetup.glade:465
+msgid "View password while typing"
+msgstr ""
+
+#: gtkusersetup.glade:483
+#, fuzzy
+msgid "Account"
+msgstr "Account"
+
+#: gtkusersetup.glade:498
+#, fuzzy
+msgid "<b>Contact information</b>"
+msgstr "Bouwinformatie"
+
+#: gtkusersetup.glade:518
+#, fuzzy
+msgid "Office extension:"
+msgstr "Hoeveelheid uitbreiding:"
+
+#: gtkusersetup.glade:530
+#, fuzzy
+msgid "Office information:"
+msgstr "Bouwinformatie"
+
+#: gtkusersetup.glade:540
+#, fuzzy
+msgid "Home phone:"
+msgstr "Sessie telefoonnummer"
+
+#: gtkusersetup.glade:597
+msgid "Contact"
+msgstr ""
+
+#: gtkusersetup.glade:613
+#, fuzzy
+msgid "<b>Group membership</b>"
+msgstr "Inktgroep:"
+
+#: gtkusersetup.glade:630
+#, fuzzy
+msgid "Main group:"
+msgstr "Inktgroep:"
+
+#: gtkusersetup.glade:663
+#, fuzzy
+msgid "Other groups:"
+msgstr "%u blokgroepen\n"
+
+#: gtkusersetup.glade:735
+#, fuzzy
+msgid "Groups"
+msgstr "%u blokgroepen\n"
+
+#: gtkusersetup.glade:751
+#, fuzzy
+msgid "<b>Advanced settings</b>"
+msgstr "Geavanceerde opties"
+
+#: gtkusersetup.glade:771
+#, fuzzy
+msgid "Home directory:"
+msgstr "Map '%s' is afwezig."
+
+#: gtkusersetup.glade:781
+msgid "Shell:"
+msgstr ""
+
+#: gtkusersetup.glade:793
+msgid "UID:"
+msgstr ""
+
+#: gtkusersetup.glade:850
+msgid "Set account expiration date"
+msgstr ""
+
+#: gtkusersetup.glade:886
+#, fuzzy
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: gtkusersetup.glade:951
+#: gtkusersetup.glade:1546
+#, fuzzy
+msgid "Error!"
+msgstr "%c%s... Fout!"
+
+#: gtkusersetup.glade:1159
+#, fuzzy
+msgid "Group settings"
+msgstr "OTR Instellingen"
+
+#: gtkusersetup.glade:1336
+#, fuzzy
+msgid "Group properties"
+msgstr "Kolomeigenschappen"
+
+#: gtkusersetup.glade:1358
+#, fuzzy
+msgid "<b>Basic settings</b>"
+msgstr "OTR Instellingen"
+
+#: gtkusersetup.glade:1378
+#, fuzzy
+msgid "Group name:"
+msgstr "Groepsnaam"
+
+#: gtkusersetup.glade:1388
+#, fuzzy
+msgid "Group ID:"
+msgstr "ID-verschuiving"
+
+#: gtkusersetup.glade:1434
+#, fuzzy
+msgid "<b>Group members</b>"
+msgstr "tussen leden"
+
+#: gtkusersetup.glade:1632
+#, fuzzy
+msgid "Delete group?"
+msgstr "Inktgroep:"
+
+#: gtkusersetup.glade:1731
+#, fuzzy
+msgid "Cannot delete group"
+msgstr " Groepsbeschrijver op "
+
+#: gtkusersetup:208
+msgid "Password is too short. It has to be at least 5 characters long."
+msgstr ""
+
+#: gtkusersetup:211
+msgid "Password cannot include the backslash character."
+msgstr ""
+
+#: gtkusersetup:217
+#, fuzzy
+msgid "Passwords don't match"
+msgstr "Komt overeen met al het volgende"
+
+#: gtkusersetup:226
+#, fuzzy
+msgid "Username cannot be empty."
+msgstr "Gebruikersnaam kan geen reeks van spaties zijn"
+
+#: gtkusersetup:229
+msgid "Username cannot exceed 31 characters"
+msgstr ""
+
+#: gtkusersetup:232
+msgid "Username cannot include the space character."
+msgstr ""
+
+#: gtkusersetup:235
+msgid "Username cannot start with a number."
+msgstr ""
+
+#: gtkusersetup:238
+msgid "Username cannot start with an underscore."
+msgstr ""
+
+#: gtkusersetup:241
+msgid "Username cannot start with a dash."
+msgstr ""
+
+#: gtkusersetup:246
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr ""
+
+#: gtkusersetup:252
+#, fuzzy
+msgid "Username \"{0}\" already exists."
+msgstr "Naam bestaat reeds"
+
+#: gtkusersetup:262
+#, fuzzy
+msgid "Group name cannot be empty."
+msgstr "De aangepaste inlogvolgorde kan niet leeg zijn."
+
+#: gtkusersetup:265
+msgid "Group name cannot exceed 31 characters"
+msgstr ""
+
+#: gtkusersetup:268
+msgid "Group name cannot include the space character."
+msgstr ""
+
+#: gtkusersetup:271
+msgid "Group name cannot start with a number."
+msgstr ""
+
+#: gtkusersetup:274
+msgid "Group name cannot start with an underscore."
+msgstr ""
+
+#: gtkusersetup:277
+msgid "Group name cannot start with a dash."
+msgstr ""
+
+#: gtkusersetup:282
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr ""
+
+#: gtkusersetup:288
+#, fuzzy
+msgid "Group name \"{0}\" already exists."
+msgstr "Filternaam bestaat reeds"
+
+#: gtkusersetup:298
+#, fuzzy
+msgid "Shell does not exist."
+msgstr "Site bestaat niet."
+
+#: gtkusersetup:308
+msgid "UID {0} is assigned to another user."
+msgstr ""
+
+#: gtkusersetup:318
+msgid "GID {0} is assigned to another group."
+msgstr ""
+
+#: gtkusersetup:359
+#, fuzzy
+msgid "User account properties for \"{0}\""
+msgstr "Account om te gebruiken voor de verbinding."
+
+#: gtkusersetup:366
+#, fuzzy
+msgid "<b>Set new password</b>"
+msgstr "Vraag naar een wachtwoord"
+
+#: gtkusersetup:423
+#, fuzzy
+msgid "Add new user"
+msgstr "medium toevoegen"
+
+#: gtkusersetup:430
+#, fuzzy
+msgid "<b>Set password</b>"
+msgstr "%w - Proxywachtwoord"
+
+#: gtkusersetup:480
+#, fuzzy
+msgid "Delete user {0}?"
+msgstr "%s - Proxygebruiker"
+
+#: gtkusersetup:481
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr ""
+
+#: gtkusersetup:482
+msgid "Completely remove user's home directory ({0}) with all its contents"
+msgstr ""
+
+#: gtkusersetup:728
+#, fuzzy
+msgid "Group \"{0}\" properties"
+msgstr "Kolomeigenschappen"
+
+#: gtkusersetup:747
+#, fuzzy
+msgid "Add new group"
+msgstr "medium toevoegen"
+
+#: gtkusersetup:772
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr ""
+
+#: gtkusersetup:775
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr ""
+
+#: gtkusersetup:902
+#, fuzzy
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: gtkusersetup:903
+#, fuzzy
+msgid "Real name"
+msgstr "--%s heeft <naam> nodig"
+
+#: gtkusersetup:904
+#, fuzzy
+msgid "Home directory"
+msgstr "Map '%s' is afwezig."
+
+#: gtkusersetup:936
+#, fuzzy
+msgid "Member"
+msgstr "koptekst-informatielid"
+
+#: gtkusersetup:937
+#, fuzzy
+msgid "Group"
+msgstr "Groep"
+
+#: gtkusersetup.desktop.in.h:1
+#: gtkusersetup-kde.desktop.in.h:1
+#, fuzzy
+msgid "Users and groups"
+msgstr "tegenstrijdige acties -%c (--%s) en -%c (--%s)"
+
+#: gtkusersetup.desktop.in.h:2
+#: gtkusersetup-kde.desktop.in.h:2
+msgid "Users and groups management tool"
+msgstr ""
+
