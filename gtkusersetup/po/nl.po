@@ -177,91 +177,83 @@ msgstr "Gebruikersnaam kan niet de spatie bevatten."
 
 #: gtkusersetup:235
 msgid "Username cannot start with a number."
-msgstr ""
+msgstr "Gebruikersnaam kan niet beginnen met een getal."
 
 #: gtkusersetup:238
 msgid "Username cannot start with an underscore."
-msgstr ""
+msgstr "Gebruikersnaam kan niet beginnen met een underscore."
 
 #: gtkusersetup:241
 msgid "Username cannot start with a dash."
-msgstr ""
+msgstr "Gebruikersnaam kan niet beginnen met een streepje."
 
 #: gtkusersetup:246
 msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr ""
+msgstr "Gebruikersnaam mag uitsluitend kleine letters, cijfers, streepjes en onderstrepingstekens bevatten."
 
 #: gtkusersetup:252
-#, fuzzy
 msgid "Username \"{0}\" already exists."
-msgstr "Naam bestaat reeds"
+msgstr "Gebruikersnaam \"(0)\" bestaat reeds."
 
 #: gtkusersetup:262
-#, fuzzy
 msgid "Group name cannot be empty."
-msgstr "De aangepaste inlogvolgorde kan niet leeg zijn."
+msgstr "Groepsnaam kan niet leeg zijn."
 
 #: gtkusersetup:265
 msgid "Group name cannot exceed 31 characters"
-msgstr ""
+msgstr "Groepsnaam kan niet hoger zijn dan 31 tekens"
 
 #: gtkusersetup:268
 msgid "Group name cannot include the space character."
-msgstr ""
+msgstr "Groepsnaam kan niet de spatie bevatten."
 
 #: gtkusersetup:271
 msgid "Group name cannot start with a number."
-msgstr ""
+msgstr "Groepsnaam mag niet beginnen met een nummer."
 
 #: gtkusersetup:274
 msgid "Group name cannot start with an underscore."
-msgstr ""
+msgstr "Groepsnaam mag niet beginnen met een underscore."
 
 #: gtkusersetup:277
 msgid "Group name cannot start with a dash."
-msgstr ""
+msgstr "Groepsnaam mag niet beginnen met een streepje."
 
 #: gtkusersetup:282
 msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr ""
+msgstr "Groepsnaam mag uitsluitend kleine letters, cijfers, streepjes en onderstrepingstekens bevatten."
 
 #: gtkusersetup:288
-#, fuzzy
 msgid "Group name \"{0}\" already exists."
-msgstr "Filternaam bestaat reeds"
+msgstr "Groepsnaam \"(0)\" bestaat reeds."
 
 #: gtkusersetup:298
-#, fuzzy
 msgid "Shell does not exist."
-msgstr "Site bestaat niet."
+msgstr "Shell bestaat niet."
 
 #: gtkusersetup:308
 msgid "UID {0} is assigned to another user."
-msgstr ""
+msgstr "UID (0) is toegewezen aan een andere gebruiker."
 
 #: gtkusersetup:318
 msgid "GID {0} is assigned to another group."
-msgstr ""
+msgstr "GID (0) is toegewezen aan een andere groep."
 
 #: gtkusersetup:359
-#, fuzzy
 msgid "User account properties for \"{0}\""
-msgstr "Account om te gebruiken voor de verbinding."
+msgstr "Gebruikersaccount eigenschappen voor \"(0)\""
 
 #: gtkusersetup:366
-#, fuzzy
 msgid "<b>Set new password</b>"
-msgstr "Vraag naar een wachtwoord"
+msgstr "<b>Stel nieuw wachtwoord in</b>"
 
 #: gtkusersetup:423
-#, fuzzy
 msgid "Add new user"
-msgstr "medium toevoegen"
+msgstr "Voeg een nieuwe gebruiker toe"
 
 #: gtkusersetup:430
-#, fuzzy
 msgid "<b>Set password</b>"
-msgstr "%w - Proxywachtwoord"
+msgstr "<b>Wachtwoord instellen</b>"
 
 #: gtkusersetup:480
 #, fuzzy
