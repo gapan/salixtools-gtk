@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkservicesetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -15,40 +15,31 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtkservicesetup.glade:35
-#: gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
-#, fuzzy
 msgid "System services"
-msgstr "&Dienstontdekking"
+msgstr "Systeemservices"
 
 #: gtkservicesetup.glade:67
 msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
-msgstr ""
+msgstr "Selecteer de systeemservices welke ingeschakeld moeten worden wanneer het systeem opstart. Wijzigingen die u aanbrengt zullen worden toegepast wanneer u op de OK knop drukt."
 
 #: gtkservicesetup:44
-#, fuzzy
 msgid "The {0} service"
-msgstr "Dienst  gestart"
+msgstr "De (0) service"
 
 #: gtkservicesetup:120
-#, fuzzy
 msgid "Enabled"
-msgstr " (standaard actief)"
+msgstr "Ingeschakeld"
 
 #: gtkservicesetup:122
-#, fuzzy
 msgid "Service name"
-msgstr "Toon de naam van de Dienst"
+msgstr "Servicenaam"
 
 #: gtkservicesetup:124
-#, fuzzy
 msgid "Service description"
-msgstr "Beschrijving-metagegeven"
+msgstr "Service beschrijving"
 
-#: gtkservicesetup.desktop.in.h:1
-#: gtkservicesetup-kde.desktop.in.h:1
-#, fuzzy
+#: gtkservicesetup.desktop.in.h:1 gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "NTFS Configuratie Programma"
-
+msgstr "Services configuratietool"
