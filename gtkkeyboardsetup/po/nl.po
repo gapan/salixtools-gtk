@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkkeyboardsetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -16,45 +16,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: gtkkeyboardsetup.glade:21
-#, fuzzy
 msgid "Keyboard settings"
-msgstr "OTR Instellingen"
+msgstr "Toetsenbord instellingen"
 
 #: gtkkeyboardsetup.glade:53
 msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
-msgstr ""
+msgstr "Selecteer uw voorkeur type toetsenbord en indeling en zet NumLock en SCIM voorkeuren."
 
 #: gtkkeyboardsetup.glade:147
 msgid "Enable numlock when the system is started"
-msgstr ""
+msgstr "Activeer NumLock wanneer het systeem wordt gestart"
 
 #: gtkkeyboardsetup.glade:162
 msgid "Enable SCIM when the system is started"
-msgstr ""
+msgstr "Activeer SCIM wanneer het systeem wordt gestart"
 
 #: gtkkeyboardsetup.glade:166
 msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr ""
+msgstr "SCIM is een platform voor input in het Chinees, Japans, Koreaans en vele andere talen."
 
 #: gtkkeyboardsetup:161
-#, fuzzy
 msgid "Keyboard type"
-msgstr "Mediumtype"
+msgstr "Type toetsenbord"
 
 #: gtkkeyboardsetup:165
-#, fuzzy
 msgid "Keyboard map"
-msgstr "Fout tijdens reserveren van vervangende inode-bitkaart: %m\n"
+msgstr "Toetsenbord indeling"
 
-#: gtkkeyboardsetup.desktop.in.h:1
-#: gtkkeyboardsetup-kde.desktop.in.h:1
-#, fuzzy
+#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
-msgstr "Toetsenbordpiep"
+msgstr "Toetsenbord"
 
-#: gtkkeyboardsetup.desktop.in.h:2
-#: gtkkeyboardsetup-kde.desktop.in.h:2
-#, fuzzy
+#: gtkkeyboardsetup.desktop.in.h:2 gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
-msgstr "NTFS Configuratie Programma"
-
+msgstr "Toetsenbord configuratietool"
