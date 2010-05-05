@@ -68,11 +68,9 @@ msgid "Location"
 msgstr "Locatie"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-#, fuzzy
 msgid "System clock"
 msgstr "Systeemklok"
 
 #: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
-#, fuzzy
 msgid "System clock configuration tool"
 msgstr "Systeemklok configuratietool"
