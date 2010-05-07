@@ -2,10 +2,13 @@
 # install script for salixtools
 
 cd $(dirname $0)
+
+# Create base dirs
 install -d -m 755 $DESTDIR/usr/sbin
 install -d -m 755 $DESTDIR/usr/share/applications
 install -d -m 755 $DESTDIR/usr/share/salixtools
 
+# Install icons
 for i in `ls icons/*.svg`; do
 	install -d -m 755 $DESTDIR/usr/share/icons/hicolor/scalable/apps/
 	install -m 644 $i $DESTDIR/usr/share/icons/hicolor/scalable/apps/
@@ -21,6 +24,7 @@ for i in 64 48 32 24 22 16; do
 	done
 done
 
+# Install tools + lang files
 for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup; do
 	install -m 755 $i/$i $DESTDIR/usr/sbin/
 	install -m 644 $i/$i.desktop $DESTDIR/usr/share/applications/
@@ -36,6 +40,7 @@ for i in gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicese
 	done
 done
 
+# Install man pages
 #install -d -m 755 $DESTDIR/usr/man/man8
 #for i in clocksetup keyboardsetup localesetup usersetup servicesetup; do
 #	(
@@ -45,6 +50,4 @@ done
 #	done
 #	)
 #done
-
-
 
