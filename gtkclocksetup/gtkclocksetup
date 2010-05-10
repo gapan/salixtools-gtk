@@ -78,19 +78,22 @@ def ntppresent():
 	return state
 
 def utcstate():
-	f = file('/etc/hardwareclock')
 	utc = False
-	while True:
-		line = f.readline()
-		if len(line) == 0:
-			break
-		elif line.rstrip("\n") == 'localtime':
-			utc = False
-			break
-		elif line.rstrip("\n") == 'UTC':
-			utc = True
-			break
-	f.close()
+	try:
+		f = file('/etc/hardwareclock')
+		while True:
+			line = f.readline()
+			if len(line) == 0:
+				break
+			elif line.rstrip("\n") == 'localtime':
+				utc = False
+				break
+			elif line.rstrip("\n") == 'UTC':
+				utc = True
+				break
+		f.close()
+	except IOError:
+		setutc(False)
 	return utc
 
 def setutc(state):
