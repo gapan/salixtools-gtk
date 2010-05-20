@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\n"
 
 #: gtkusersetup.glade:49
 msgid "User settings"
@@ -50,7 +50,7 @@ msgstr "Підтвердження паролю:"
 
 #: gtkusersetup.glade:465
 msgid "View password while typing"
-msgstr ""
+msgstr "Бачити пароль при вводі"
 
 #: gtkusersetup.glade:483
 msgid "Account"
@@ -58,7 +58,7 @@ msgstr "Рахунок"
 
 #: gtkusersetup.glade:498
 msgid "<b>Contact information</b>"
-msgstr ""
+msgstr "<b>Контактна інформація</b>"
 
 #: gtkusersetup.glade:518
 msgid "Office extension:"
@@ -70,15 +70,15 @@ msgstr ""
 
 #: gtkusersetup.glade:540
 msgid "Home phone:"
-msgstr ""
+msgstr "Домашній телефон:"
 
 #: gtkusersetup.glade:597
 msgid "Contact"
-msgstr ""
+msgstr "Контакт"
 
 #: gtkusersetup.glade:613
 msgid "<b>Group membership</b>"
-msgstr ""
+msgstr "<b>Членство в групах</b>"
 
 #: gtkusersetup.glade:630
 msgid "Main group:"
@@ -86,7 +86,7 @@ msgstr "Головна група:"
 
 #: gtkusersetup.glade:663
 msgid "Other groups:"
-msgstr ""
+msgstr "Інші групи:"
 
 #: gtkusersetup.glade:735
 msgid "Groups"
@@ -94,7 +94,7 @@ msgstr "Групи"
 
 #: gtkusersetup.glade:751
 msgid "<b>Advanced settings</b>"
-msgstr ""
+msgstr "<b>Інші налаштування</b>"
 
 #: gtkusersetup.glade:771
 msgid "Home directory:"
@@ -102,11 +102,11 @@ msgstr "Домашня тека:"
 
 #: gtkusersetup.glade:781
 msgid "Shell:"
-msgstr ""
+msgstr "Шел:"
 
 #: gtkusersetup.glade:793
 msgid "UID:"
-msgstr ""
+msgstr "UID:"
 
 #: gtkusersetup.glade:850
 msgid "Set account expiration date"
@@ -114,35 +114,35 @@ msgstr ""
 
 #: gtkusersetup.glade:886
 msgid "Advanced"
-msgstr ""
+msgstr "Ігше"
 
 #: gtkusersetup.glade:951 gtkusersetup.glade:1546
 msgid "Error!"
-msgstr ""
+msgstr "Помилка!"
 
 #: gtkusersetup.glade:1159
 msgid "Group settings"
-msgstr ""
+msgstr "Налаштування групи"
 
 #: gtkusersetup.glade:1336
 msgid "Group properties"
-msgstr ""
+msgstr "Властивості групи"
 
 #: gtkusersetup.glade:1358
 msgid "<b>Basic settings</b>"
-msgstr ""
+msgstr "<b>Базові налаштування</b>"
 
 #: gtkusersetup.glade:1378
 msgid "Group name:"
-msgstr ""
+msgstr "Назва групи"
 
 #: gtkusersetup.glade:1388
 msgid "Group ID:"
-msgstr ""
+msgstr "ID групи:"
 
 #: gtkusersetup.glade:1434
 msgid "<b>Group members</b>"
-msgstr ""
+msgstr "<b>Члени групи</b>"
 
 #: gtkusersetup.glade:1632
 msgid "Delete group?"
