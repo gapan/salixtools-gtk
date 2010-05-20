@@ -2,8 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: ttt\n"
@@ -15,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\n"
 
 #: gtkusersetup.glade:49
 msgid "User settings"
@@ -23,31 +22,31 @@ msgstr "Налаштування користувачів"
 
 #: gtkusersetup.glade:208
 msgid "Manage groups"
-msgstr ""
+msgstr "Керувати групами"
 
 #: gtkusersetup.glade:234
 msgid "Show all users"
-msgstr ""
+msgstr "Показати всіх користувачів"
 
 #: gtkusersetup.glade:325
 msgid "<b>Basic information</b>"
-msgstr ""
+msgstr "<b>Базова інформація</b>"
 
 #: gtkusersetup.glade:344
 msgid "Username:"
-msgstr ""
+msgstr "Назва користувача:"
 
 #: gtkusersetup.glade:353
 msgid "Real name:"
-msgstr ""
+msgstr "Справжнє ім’я:"
 
 #: gtkusersetup.glade:414
 msgid "User password:"
-msgstr ""
+msgstr "Пароль користувача:"
 
 #: gtkusersetup.glade:424
 msgid "Password confirmation:"
-msgstr ""
+msgstr "Підтвердження паролю:"
 
 #: gtkusersetup.glade:465
 msgid "View password while typing"
@@ -55,7 +54,7 @@ msgstr ""
 
 #: gtkusersetup.glade:483
 msgid "Account"
-msgstr ""
+msgstr "Рахунок"
 
 #: gtkusersetup.glade:498
 msgid "<b>Contact information</b>"
@@ -83,7 +82,7 @@ msgstr ""
 
 #: gtkusersetup.glade:630
 msgid "Main group:"
-msgstr ""
+msgstr "Головна група:"
 
 #: gtkusersetup.glade:663
 msgid "Other groups:"
@@ -91,7 +90,7 @@ msgstr ""
 
 #: gtkusersetup.glade:735
 msgid "Groups"
-msgstr ""
+msgstr "Групи"
 
 #: gtkusersetup.glade:751
 msgid "<b>Advanced settings</b>"
@@ -99,7 +98,7 @@ msgstr ""
 
 #: gtkusersetup.glade:771
 msgid "Home directory:"
-msgstr ""
+msgstr "Домашня тека:"
 
 #: gtkusersetup.glade:781
 msgid "Shell:"
@@ -190,9 +189,7 @@ msgid "Username cannot start with a dash."
 msgstr ""
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
 msgstr ""
 
 #: gtkusersetup:252
@@ -224,9 +221,7 @@ msgid "Group name cannot start with a dash."
 msgstr ""
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
 msgstr ""
 
 #: gtkusersetup:288
@@ -266,9 +261,7 @@ msgid "Delete user {0}?"
 msgstr ""
 
 #: gtkusersetup:481
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
 msgstr ""
 
 #: gtkusersetup:482
@@ -284,16 +277,11 @@ msgid "Add new group"
 msgstr ""
 
 #: gtkusersetup:772
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
 msgstr ""
 
 #: gtkusersetup:775
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
 msgstr ""
 
 #: gtkusersetup:902
