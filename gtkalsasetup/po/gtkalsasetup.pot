@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-05 17:01+0300\n"
+"POT-Creation-Date: 2010-07-05 17:09+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtkalsasetup.glade:15 gtkalsasetup.glade:163
+#: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
 msgstr ""
 
@@ -24,10 +24,6 @@ msgstr ""
 msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
-msgstr ""
-
-#: gtkalsasetup.glade:172
-msgid "You must restart your session for the changes to take effect."
 msgstr ""
 
 #: gtkalsasetup:22 gtkalsasetup:40
