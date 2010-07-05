@@ -158,41 +158,4 @@
       <action-widget response="0">button_ok</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkMessageDialog" id="msginfo">
-    <property name="border_width">5</property>
-    <property name="title" translatable="yes">Alsa default sound card</property>
-    <property name="modal">True</property>
-    <property name="window_position">center</property>
-    <property name="destroy_with_parent">True</property>
-    <property name="type_hint">normal</property>
-    <property name="skip_taskbar_hint">True</property>
-    <property name="transient_for">gtkalsasetup</property>
-    <property name="message_type">warning</property>
-    <property name="buttons">ok</property>
-    <property name="text" translatable="yes">You must restart your session for the changes to take effect.</property>
-    <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox2">
-        <property name="visible">True</property>
-        <property name="orientation">vertical</property>
-        <property name="spacing">2</property>
-        <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area2">
-            <property name="visible">True</property>
-            <property name="layout_style">end</property>
-            <child>
-              <placeholder/>
-            </child>
-            <child>
-              <placeholder/>
-            </child>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="pack_type">end</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
 </interface>
