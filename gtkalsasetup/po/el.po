@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkalsasetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-05 17:09+0300\n"
+"PO-Revision-Date: 2010-07-05 17:10+0200\n"
+"Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
+"Language-Team: Greek\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: gtkalsasetup.glade:15
+msgid "Alsa default sound card"
+msgstr "Προεπιλεγμένη κάρτα ήχου ALSA"
+
+#: gtkalsasetup.glade:50
+msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
+msgstr "Παρακαλούμε επιλέξτε την κάρτα ήχου που θα χρησιμοποιείται ως προεπιλεγμένη από τη ALSA για όλο το σύστημα. Θα πρέπει να γίνει επανεκκίνηση της συνεδρίας για να εφαρμοστούν οι αλλαγές."
+
+#: gtkalsasetup:22
+#: gtkalsasetup:40
+msgid "Default"
+msgstr "Προεπιλογή"
+
+#: gtkalsasetup:22
+msgid "Use the default ALSA sound card"
+msgstr "Χρησιμοποιήστε την προεπιλεγμένη κάρτα ήχου ALSA"
+
+#: gtkalsasetup:115
+msgid "Sound card"
+msgstr "Κάρτα ήχου"
+
+#: gtkalsasetup:117
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: gtkalsasetup.desktop.in.h:1
+#: gtkalsasetup-kde.desktop.in.h:1
+msgid "ALSA sound card"
+msgstr "Κάρτα ήχου ALSA"
+
+#: gtkalsasetup.desktop.in.h:2
+#: gtkalsasetup-kde.desktop.in.h:2
+msgid "Select the systemwide ALSA sound card"
+msgstr "Επιλέξτε την κάρτα ήχου ALSA συστήματος"
+
