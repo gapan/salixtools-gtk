@@ -1,0 +1,126 @@
+#!/usr/bin/env python
+
+import gtk
+import os
+import stat
+import sys
+import re
+
+# Internationalization
+import locale
+import gettext
+import gtk.glade
+gettext.bindtextdomain("gtkalsasetup", "/usr/share/locale")
+gettext.textdomain("gtkalsasetup")
+gettext.install("gtkalsasetup", "/usr/share/locale", unicode=1)
+gtk.glade.bindtextdomain("gtkalsasetup", "/usr/share/locale")
+gtk.glade.textdomain("gtkalsasetup")
+
+envfile = '/etc/profile.d/alsa.sh'
+envfile_csh = '/etc/profile.d/alsa.csh'
+alsafile = '/proc/asound/cards'
+
+def getdefcard():
+  defcard = ''
+  try:
+    f = file(envfile)
+    while True:
+      line = f.readline().lstrip(' ').replace('\n', '')
+      if len(line) == 0:
+        break
+      if line.startswith('default_alsa_card='):
+        defcard = re.sub("default_alsa_card=['\"]?(.*)['\"]?", r"\1", line)
+    f.close()
+  except IOError:
+    print 'no default card (yet)'
+  return defcard
+
+def setdefcard(card):
+  try:
+    f = file(envfile, 'w')
+    f.write('#!/bin/sh\n')
+    f.write('default_alsa_card=%s\n' % card)
+    f.write('export ALSA_CARD=$default_alsa_card\n')
+    f.write('export ALSA_PCM_CARD=$default_alsa_card\n')
+    f.write('export ALSA_CTL_CARD=$default_alsa_card\n')
+    f.close()
+    os.chmod(envfile, 0755)
+  except IOError:
+    print 'error writing to %s' % envfile
+  try:
+    f = file(envfile_csh, 'w')
+    f.write('#!/bin/csh\n')
+    f.write('set default_alsa_card = %s\n' % card)
+    f.write('setenv ALSA_CARD $default_alsa_card\n')
+    f.write('setenv ALSA_PCM_CARD $default_alsa_card\n')
+    f.write('setenv ALSA_CTL_CARD $default_alsa_card\n')
+    f.close()
+    os.chmod(envfile_csh, 0755)
+  except IOError:
+    print 'error writing to %s' % envfile_csh
+
+def availablecards():
+  cards = []
+  try:
+    f = file(alsafile)
+    cre = re.compile(".*\[([^ ]*) *\]: (.*)")
+    while True:
+      line = f.readline().lstrip(' ').replace('\n', '')
+      if len(line) == 0:
+        break
+      if cre.search(line):
+        cards.append(cre.match(line).groups())
+    f.close()
+  except IOError:
+    print 'no sound card'
+  return cards
+
+class GTKAlsaSoundSetup:
+  def on_button_ok_clicked(self, widget, data=None):
+    selectedcard = self.soundcardslist.get_selection()
+    self.soundcardsstore, iter = selectedcard.get_selected()
+    card = self.soundcardsstore.get_value(iter, 0)
+    if not card == getdefcard():
+      setdefcard(card)
+      if len(availablecards()) > 1:
+        msginfo = self.builder.get_object('msginfo')
+        msginfo.run()
+    gtk.main_quit()
+
+  def on_button_cancel_clicked(self, widget, data=None):
+    gtk.main_quit()
+  
+  def gtk_main_quit(self, widget, data=None):
+    gtk.main_quit()
+
+  def __init__(self):
+    builder = gtk.Builder()
+    if os.path.exists('gtkalsasetup.glade'):
+      builder.add_from_file('gtkalsasetup.glade')
+    elif os.path.exists('/usr/share/salixtools/gtkalsasetup/gtkalsasetup.glade'):
+      builder.add_from_file('/usr/share/salixtools/gtkalsasetup/gtkalsasetup.glade')
+    self.window = builder.get_object('gtkalsasetup')
+    builder.connect_signals(self)
+    self.builder = builder
+    self.soundcardslist = builder.get_object('soundcardslist')
+    self.columnname = builder.get_object('columnname')
+    self.columnname.set_title(_('Sound card names'))
+    self.columndescr = builder.get_object('columndescr')
+    self.columndescr.set_title(_('Descriptions'))
+    self.soundcardsstore = builder.get_object('soundcardsstore')
+    defcard = getdefcard()
+    count = 0
+    self.soundcardsstore.clear()
+    for card in availablecards():
+      self.soundcardsstore.append(card)
+      if card[0] == defcard:
+        self.soundcardslist.set_cursor(count)
+      count += 1
+
+if __name__ == "__main__":
+  if os.geteuid() != 0:
+    print "You must be root to run this script."
+    sys.exit(1)
+  app = GTKAlsaSoundSetup()
+  app.window.show()
+  gtk.main()

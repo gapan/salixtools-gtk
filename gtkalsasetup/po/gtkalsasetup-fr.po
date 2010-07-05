@@ -1,0 +1,40 @@
+# Dialog to choose the Alsa default sound card.
+# Copyright (C) 2010 Cyrille Pontvieux
+# This file is distributed under the same license as the gtkalsasetup package.
+# Cyrille Pontvieux <jrd@enialis.net>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-19 12:48+0200\n"
+"PO-Revision-Date: 2010-06-19 12:57+0100\n"
+"Last-Translator: Cyrille Pontvieux <jrd@enialis.net>\n"
+"Language-Team: French <jrd@enialis.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+
+#: gtkalsasetup.py:107
+msgid "Sound card names"
+msgstr "Noms des cartes sons"
+
+#: gtkalsasetup.py:109
+msgid "Descriptions"
+msgstr "Descriptions"
+
+#: gtkalsasetup.glade:15
+#: gtkalsasetup.glade:160
+msgid "Alsa default sound card"
+msgstr "Carte son par défaut d'Alsa"
+
+#: gtkalsasetup.glade:48
+msgid "Choose the default Alsa sound card"
+msgstr "Choisissez la carte par défaut d'Alsa"
+
+#: gtkalsasetup.glade:169
+msgid "You must restart your session for the changes to take effect."
+msgstr "Vous devez redémarrer votre session pour que les changements soient pris en compte."
+
