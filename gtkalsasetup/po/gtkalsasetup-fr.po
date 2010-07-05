@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-19 12:48+0200\n"
+"POT-Creation-Date: 2010-07-05 17:01+0300\n"
 "PO-Revision-Date: 2010-06-19 12:57+0100\n"
 "Last-Translator: Cyrille Pontvieux <jrd@enialis.net>\n"
 "Language-Team: French <jrd@enialis.net>\n"
@@ -17,24 +17,55 @@ msgstr ""
 "X-Poedit-Language: French\n"
 "X-Poedit-Country: FRANCE\n"
 
-#: gtkalsasetup.py:107
-msgid "Sound card names"
-msgstr "Noms des cartes sons"
-
-#: gtkalsasetup.py:109
-msgid "Descriptions"
-msgstr "Descriptions"
-
-#: gtkalsasetup.glade:15
-#: gtkalsasetup.glade:160
+#: gtkalsasetup.glade:15 gtkalsasetup.glade:163
 msgid "Alsa default sound card"
 msgstr "Carte son par défaut d'Alsa"
 
-#: gtkalsasetup.glade:48
-msgid "Choose the default Alsa sound card"
+#: gtkalsasetup.glade:50
+msgid ""
+"Please choose the sound card that you want to set as default for ALSA "
+"systemwide. The session needs to be restarted for the changes to be applied."
+msgstr ""
+
+#: gtkalsasetup.glade:172
+msgid "You must restart your session for the changes to take effect."
+msgstr ""
+"Vous devez redémarrer votre session pour que les changements soient pris en "
+"compte."
+
+#: gtkalsasetup:22 gtkalsasetup:40
+msgid "Default"
+msgstr ""
+
+#: gtkalsasetup:22
+#, fuzzy
+msgid "Use the default ALSA sound card"
 msgstr "Choisissez la carte par défaut d'Alsa"
 
-#: gtkalsasetup.glade:169
-msgid "You must restart your session for the changes to take effect."
-msgstr "Vous devez redémarrer votre session pour que les changements soient pris en compte."
+#: gtkalsasetup:115
+#, fuzzy
+msgid "Sound card"
+msgstr "Noms des cartes sons"
 
+#: gtkalsasetup:117
+#, fuzzy
+msgid "Description"
+msgstr "Descriptions"
+
+#: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
+#, fuzzy
+msgid "ALSA sound card"
+msgstr "Noms des cartes sons"
+
+#: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
+msgid "Select the systemwide ALSA sound card"
+msgstr ""
+
+#~ msgid "Sound card names"
+#~ msgstr "Noms des cartes sons"
+
+#~ msgid "Descriptions"
+#~ msgstr "Descriptions"
+
+#~ msgid "Choose the default Alsa sound card"
+#~ msgstr "Choisissez la carte par défaut d'Alsa"
