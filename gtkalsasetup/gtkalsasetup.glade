@@ -15,6 +15,7 @@
     <property name="title" translatable="yes">Alsa default sound card</property>
     <property name="default_width">502</property>
     <property name="default_height">300</property>
+    <property name="icon_name">audio-card</property>
     <property name="type_hint">normal</property>
     <property name="has_separator">False</property>
     <signal name="destroy" handler="gtk_main_quit"/>
@@ -34,6 +35,7 @@
                   <object class="GtkImage" id="image1">
                     <property name="visible">True</property>
                     <property name="xpad">10</property>
+                    <property name="pixel_size">48</property>
                     <property name="icon_name">audio-card</property>
                   </object>
                   <packing>
@@ -45,7 +47,8 @@
                 <child>
                   <object class="GtkLabel" id="label1">
                     <property name="visible">True</property>
-                    <property name="label" translatable="yes">Choose the default Alsa sound card</property>
+                    <property name="label" translatable="yes">Please choose the sound card that you want to set as default, systemwide, for ALSA. The session needs to be restarted for the changes to be applied.</property>
+                    <property name="wrap">True</property>
                   </object>
                   <packing>
                     <property name="position">1</property>
@@ -112,6 +115,20 @@
             <property name="visible">True</property>
             <property name="layout_style">end</property>
             <child>
+              <object class="GtkButton" id="button_default">
+                <property name="label" translatable="yes">Reset to default</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button_default_clicked"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
               <object class="GtkButton" id="button_cancel">
                 <property name="label">gtk-cancel</property>
                 <property name="visible">True</property>
@@ -123,7 +140,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">0</property>
+                <property name="position">1</property>
               </packing>
             </child>
             <child>
@@ -138,7 +155,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">1</property>
+                <property name="position">2</property>
               </packing>
             </child>
           </object>
@@ -151,6 +168,7 @@
       </object>
     </child>
     <action-widgets>
+      <action-widget response="0">button_default</action-widget>
       <action-widget response="0">button_cancel</action-widget>
       <action-widget response="0">button_ok</action-widget>
     </action-widgets>

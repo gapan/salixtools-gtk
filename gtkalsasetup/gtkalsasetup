@@ -89,7 +89,14 @@ class GTKAlsaSoundSetup:
 
   def on_button_cancel_clicked(self, widget, data=None):
     gtk.main_quit()
-  
+ 
+  def on_button_default_clicked(self, widget, data=None):
+    try:
+      os.remove(envfile)
+      os.remove(envfile_csh)
+    except OSError:
+      pass
+
   def gtk_main_quit(self, widget, data=None):
     gtk.main_quit()
 
@@ -104,9 +111,9 @@ class GTKAlsaSoundSetup:
     self.builder = builder
     self.soundcardslist = builder.get_object('soundcardslist')
     self.columnname = builder.get_object('columnname')
-    self.columnname.set_title(_('Sound card names'))
+    self.columnname.set_title(_('Sound card'))
     self.columndescr = builder.get_object('columndescr')
-    self.columndescr.set_title(_('Descriptions'))
+    self.columndescr.set_title(_('Description'))
     self.soundcardsstore = builder.get_object('soundcardsstore')
     defcard = getdefcard()
     count = 0
