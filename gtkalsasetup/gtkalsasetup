@@ -19,7 +19,7 @@ gtk.glade.textdomain("gtkalsasetup")
 envfile = '/etc/profile.d/alsa.sh'
 envfile_csh = '/etc/profile.d/alsa.csh'
 alsafile = '/proc/asound/cards'
-defaultcard = [_('Default'), _('Use the default sound card')]
+defaultcard = [_('Default'), _('Use the default ALSA sound card')]
 
 def getdefcard():
 	defcard = ''
