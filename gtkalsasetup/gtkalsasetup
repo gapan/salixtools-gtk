@@ -98,13 +98,6 @@ class GTKAlsaSoundSetup:
 	def on_button_cancel_clicked(self, widget, data=None):
 		gtk.main_quit()
  
-	def on_button_default_clicked(self, widget, data=None):
-		try:
-			os.remove(envfile)
-			os.remove(envfile_csh)
-		except OSError:
-			pass
-
 	def gtk_main_quit(self, widget, data=None):
 		gtk.main_quit()
 
