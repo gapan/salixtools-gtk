@@ -115,20 +115,6 @@
             <property name="visible">True</property>
             <property name="layout_style">end</property>
             <child>
-              <object class="GtkButton" id="button_default">
-                <property name="label" translatable="yes">Reset to default</property>
-                <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
-                <signal name="clicked" handler="on_button_default_clicked"/>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkButton" id="button_cancel">
                 <property name="label">gtk-cancel</property>
                 <property name="visible">True</property>
@@ -168,7 +154,6 @@
       </object>
     </child>
     <action-widgets>
-      <action-widget response="0">button_default</action-widget>
       <action-widget response="0">button_cancel</action-widget>
       <action-widget response="0">button_ok</action-widget>
     </action-widgets>
