@@ -1,0 +1,61 @@
+# Italian .p file for gtkkeyboardsetup.
+# Copyright (C) 2010
+# This file is distributed under the same license as the gtkkeyboardsetup package.
+# Vasile Coman <kerd@slackware.eu>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 13:53+0300\n"
+"PO-Revision-Date: 2010-07-05 00:50+0100\n"
+"Last-Translator: Vasile Coman <kerd@slackware.eu>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkkeyboardsetup.glade:21
+msgid "Keyboard settings"
+msgstr "Impostazioni tastiera"
+
+#: gtkkeyboardsetup.glade:53
+msgid ""
+"Please select you preferred keyboard type and map and set numlock and SCIM "
+"preferences."
+msgstr ""
+"Si prega di selezionare: il tipo di tastiera, il layout, il numlock e le"
+"preferenze SCIM"
+
+#: gtkkeyboardsetup.glade:147
+msgid "Enable numlock when the system is started"
+msgstr "Abilitare numlock quando il sistema viene avviato"
+
+#: gtkkeyboardsetup.glade:162
+msgid "Enable SCIM when the system is started"
+msgstr "Abilitare SCIM quando il sistema viene avviato"
+
+#: gtkkeyboardsetup.glade:166
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+"SCIM e' una piattaforma di input per il cinese, giapponese, coreano e molte"
+"altre lingue."
+
+#: gtkkeyboardsetup:161
+msgid "Keyboard type"
+msgstr "Tipo di tastiera"
+
+#: gtkkeyboardsetup:165
+msgid "Keyboard map"
+msgstr "Layout tastiera"
+
+#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
+msgid "Keyboard"
+msgstr "Tastiera"
+
+#: gtkkeyboardsetup.desktop.in.h:2 gtkkeyboardsetup-kde.desktop.in.h:2
+msgid "Keyboard configuration tool"
+msgstr "Strumento di configurazione della tastiera"
