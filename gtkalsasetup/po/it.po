@@ -1,0 +1,53 @@
+# Italian .po file for gtkalsasetup.
+# Copyright (C) 2010
+# This file is distributed under the same license as the gtkalsasetup package.
+# Vasile Coman <kerd@slackware.eu>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-05 17:09+0300\n"
+"PO-Revision-Date: 2010-07-06 10:05+0100\n"
+"Last-Translator: Vasile Coman <kerd@slackware.eu>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkalsasetup.glade:15
+msgid "Alsa default sound card"
+msgstr "Scheda audio alsa di default"
+
+#: gtkalsasetup.glade:50
+msgid ""
+"Please choose the sound card that you want to set as default for ALSA "
+"systemwide. The session needs to be restarted for the changes to be applied."
+msgstr ""
+"Scegliere la scheda audio che si desidera impostare come predefinita per alsa per tutti gli utenti"
+"La sessione deve essere riavviata affinche' le modifiche siano applicate"
+
+#: gtkalsasetup:22 gtkalsasetup:40
+msgid "Default"
+msgstr "Default"
+
+#: gtkalsasetup:22
+msgid "Use the default ALSA sound card"
+msgstr "Usare la scheda audio ALSA di default"
+
+#: gtkalsasetup:115
+msgid "Sound card"
+msgstr "Scheda audio"
+
+#: gtkalsasetup:117
+msgid "Description"
+msgstr "Descrizione"
+
+#: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
+msgid "ALSA sound card"
+msgstr "Scheda audio ALSA"
+
+#: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
+msgid "Select the systemwide ALSA sound card"
+msgstr "Selezionare la scheda audio ALSA per tutto il sistema"
