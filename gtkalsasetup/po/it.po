@@ -25,8 +25,8 @@ msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
 msgstr ""
-"Scegliere la scheda audio che si desidera impostare come predefinita per alsa per tutti gli utenti"
-"La sessione deve essere riavviata affinche' le modifiche siano applicate"
+"Scegliere la scheda audio che si desidera impostare come predefinita per alsa per tutti gli utenti."
+"La sessione deve essere riavviata affinche' le modifiche siano applicate."
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
