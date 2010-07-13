@@ -97,7 +97,17 @@ class GTKAlsaSoundSetup:
 
 	def on_button_cancel_clicked(self, widget, data=None):
 		gtk.main_quit()
- 
+
+	def on_button_store_volume_clicked(self, widget, data=None):
+		os.system('alsactl store')
+
+	def on_button_restore_volume_clicked(self, widget, data=None):
+		os.system('alsactl restore')
+
+	def on_button_clear_volume_clicked(self, widget, data=None):
+		os.system('alsactl -R init')
+		os.system('alsactl store')
+
 	def gtk_main_quit(self, widget, data=None):
 		gtk.main_quit()
 
