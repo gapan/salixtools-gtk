@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gtkalsasetup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-14 00:16+0300\n"
-"PO-Revision-Date: 2010-07-05 17:10+0200\n"
+"PO-Revision-Date: 2010-07-14 01:02+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -23,41 +23,36 @@ msgid "Alsa default sound card"
 msgstr "Προεπιλεγμένη κάρτα ήχου ALSA"
 
 #: gtkalsasetup.glade:54
-msgid ""
-"Please choose the sound card that you want to set as default for ALSA "
-"systemwide. The session needs to be restarted for the changes to be applied."
-msgstr ""
-"Παρακαλούμε επιλέξτε την κάρτα ήχου που θα χρησιμοποιείται ως προεπιλεγμένη "
-"από τη ALSA για όλο το σύστημα. Θα πρέπει να γίνει επανεκκίνηση της "
-"συνεδρίας για να εφαρμοστούν οι αλλαγές."
+msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
+msgstr "Παρακαλούμε επιλέξτε την κάρτα ήχου που θα χρησιμοποιείται ως προεπιλεγμένη από τη ALSA για όλο το σύστημα. Θα πρέπει να γίνει επανεκκίνηση της συνεδρίας για να εφαρμοστούν οι αλλαγές."
 
-#: gtkalsasetup.glade:119 gtkalsasetup:125
+#: gtkalsasetup.glade:119
+#: gtkalsasetup:125
 msgid "Sound card"
 msgstr "Κάρτα ήχου"
 
 #: gtkalsasetup.glade:148
-msgid ""
-"You can use the buttons below to manage the system settings for ALSA, "
-"including volume settings and selection of input sources. "
-msgstr ""
+msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
+msgstr "Μπορείτε να χρησιμοποιήσετε τα ακόλουθα πλήκτρα για τη διαχείριση των ρυθμίσεων συστήματος της ÁLSA, συμπεριλαμβανομένων των ρυθμίσεων έντασης ήχου και της επιλογής των πηγών ηχογράφησης."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
-msgstr ""
+msgstr "Αποθήκευση των τρεχουσών ρυθμίσεων της ALSA ως τις προεπιλεγμένες ρυθμίσεις συστήματος"
 
 #: gtkalsasetup.glade:198
 msgid "Revert current ALSA settings to the stored defaults"
-msgstr ""
+msgstr "Επαναφορά των τρεχουσών ρυθμίσεων της ALSA από τις αποθηκευμένες ρυθμίσεις"
 
 #: gtkalsasetup.glade:216
 msgid "Clear all ALSA settings and set default values"
-msgstr ""
+msgstr "Εκκαθάριση όλων των ρυθμίσεων της ALSA και εφαρμογή προεπιλεγμένων τιμών"
 
 #: gtkalsasetup.glade:252
 msgid "Settings"
-msgstr ""
+msgstr "Ρυθμίσεις"
 
-#: gtkalsasetup:22 gtkalsasetup:40
+#: gtkalsasetup:22
+#: gtkalsasetup:40
 msgid "Default"
 msgstr "Προεπιλογή"
 
@@ -69,10 +64,13 @@ msgstr "Χρησιμοποιήστε την προεπιλεγμένη κάρτ�
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
+#: gtkalsasetup.desktop.in.h:1
+#: gtkalsasetup-kde.desktop.in.h:1
 msgid "ALSA sound card"
 msgstr "Κάρτα ήχου ALSA"
 
-#: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
+#: gtkalsasetup.desktop.in.h:2
+#: gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
 msgstr "Επιλέξτε την κάρτα ήχου ALSA συστήματος"
+
