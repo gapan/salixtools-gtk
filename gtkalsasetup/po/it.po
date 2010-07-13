@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-05 17:09+0300\n"
+"POT-Creation-Date: 2010-07-14 00:13+0300\n"
 "PO-Revision-Date: 2010-07-06 10:05+0100\n"
 "Last-Translator: Vasile Coman <kerd@slackware.eu>\n"
 "Language-Team: Italian\n"
@@ -20,13 +20,52 @@ msgstr ""
 msgid "Alsa default sound card"
 msgstr "Scheda audio alsa di default"
 
-#: gtkalsasetup.glade:50
+#: gtkalsasetup.glade:54
 msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
 msgstr ""
-"Scegliere la scheda audio che si desidera impostare come predefinita per alsa per tutti gli utenti."
-"La sessione deve essere riavviata affinche' le modifiche siano applicate."
+"Scegliere la scheda audio che si desidera impostare come predefinita per "
+"alsa per tutti gli utenti.La sessione deve essere riavviata affinche' le "
+"modifiche siano applicate."
+
+#: gtkalsasetup.glade:119 gtkalsasetup:125
+msgid "Sound card"
+msgstr "Scheda audio"
+
+#: gtkalsasetup.glade:148
+msgid ""
+"You can use the buttons below to manage the system settings for ALSA, "
+"including volume settings and selection of input sources. "
+msgstr ""
+
+#: gtkalsasetup.glade:176
+msgid "gtk-save"
+msgstr ""
+
+#: gtkalsasetup.glade:180
+msgid "Store the current ALSA settings as the system defaults"
+msgstr ""
+
+#: gtkalsasetup.glade:194
+msgid "gtk-revert-to-saved"
+msgstr ""
+
+#: gtkalsasetup.glade:198
+msgid "Revert current ALSA settings to the stored defaults"
+msgstr ""
+
+#: gtkalsasetup.glade:212
+msgid "gtk-clear"
+msgstr ""
+
+#: gtkalsasetup.glade:216
+msgid "Clear all ALSA settings and set default values"
+msgstr ""
+
+#: gtkalsasetup.glade:252
+msgid "Settings"
+msgstr ""
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
@@ -36,11 +75,7 @@ msgstr "Default"
 msgid "Use the default ALSA sound card"
 msgstr "Usare la scheda audio ALSA di default"
 
-#: gtkalsasetup:115
-msgid "Sound card"
-msgstr "Scheda audio"
-
-#: gtkalsasetup:117
+#: gtkalsasetup:127
 msgid "Description"
 msgstr "Descrizione"
 
