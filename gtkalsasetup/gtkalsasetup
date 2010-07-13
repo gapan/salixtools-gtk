@@ -129,6 +129,7 @@ class GTKAlsaSoundSetup:
 		defcard = getdefcard()
 		self.soundcardsstore.clear()
 		self.soundcardsstore.append(defaultcard)
+		self.soundcardslist.set_cursor(0)
 		count = 1
 		for card in availablecards():
 			self.soundcardsstore.append(card)
