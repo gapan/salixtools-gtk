@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-14 00:13+0300\n"
+"POT-Creation-Date: 2010-07-14 00:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,24 +36,12 @@ msgid ""
 "including volume settings and selection of input sources. "
 msgstr ""
 
-#: gtkalsasetup.glade:176
-msgid "gtk-save"
-msgstr ""
-
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
 msgstr ""
 
-#: gtkalsasetup.glade:194
-msgid "gtk-revert-to-saved"
-msgstr ""
-
 #: gtkalsasetup.glade:198
 msgid "Revert current ALSA settings to the stored defaults"
-msgstr ""
-
-#: gtkalsasetup.glade:212
-msgid "gtk-clear"
 msgstr ""
 
 #: gtkalsasetup.glade:216
