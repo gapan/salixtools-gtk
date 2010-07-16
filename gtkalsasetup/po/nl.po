@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkalsasetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -17,36 +17,32 @@ msgstr ""
 
 #: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
-msgstr ""
+msgstr "Alsa standaard geluidskaart"
 
 #: gtkalsasetup.glade:50
 msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
-msgstr ""
+msgstr "Kies alstublieft de geluidskaart die u wilt instellen als standaard voor ALSA in het gehele systeem. De sessie moet opnieuw worden gestart om de wijzigingen toe te passen."
 
-#: gtkalsasetup:22
-#: gtkalsasetup:40
+#: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
 msgstr "Default"
 
 #: gtkalsasetup:22
 msgid "Use the default ALSA sound card"
-msgstr ""
+msgstr "Gebruik de standaard ALSA geluidskaart"
 
 #: gtkalsasetup:115
 msgid "Sound card"
-msgstr ""
+msgstr "Geluidskaart"
 
 #: gtkalsasetup:117
 msgid "Description"
-msgstr ""
+msgstr "Beschrijving"
 
-#: gtkalsasetup.desktop.in.h:1
-#: gtkalsasetup-kde.desktop.in.h:1
+#: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
 msgid "ALSA sound card"
-msgstr ""
+msgstr "ALSA geluidskaart"
 
-#: gtkalsasetup.desktop.in.h:2
-#: gtkalsasetup-kde.desktop.in.h:2
+#: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
-msgstr ""
-
+msgstr "Selecteer de ALSA geluidskaart in het gehele systeem "
