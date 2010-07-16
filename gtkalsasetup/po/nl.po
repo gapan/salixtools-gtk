@@ -45,4 +45,4 @@ msgstr "ALSA geluidskaart"
 
 #: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
-msgstr "Selecteer de ALSA geluidskaart in het gehele systeem "
+msgstr "Selecteer de ALSA geluidskaart voor het gehele systeem "
