@@ -1,0 +1,52 @@
+# Dutch .po file for usersetup.
+# Copyright (C) 2010
+# This file is distributed under the same license as the gtkalsasetup package.
+# Imar van Erven Dorens <gambit73@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-05 17:09+0300\n"
+"PO-Revision-Date: 2010-07-16 08:52+0100\n"
+"Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
+"Language-Team: Dutch <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkalsasetup.glade:15
+msgid "Alsa default sound card"
+msgstr ""
+
+#: gtkalsasetup.glade:50
+msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
+msgstr ""
+
+#: gtkalsasetup:22
+#: gtkalsasetup:40
+msgid "Default"
+msgstr "Default"
+
+#: gtkalsasetup:22
+msgid "Use the default ALSA sound card"
+msgstr ""
+
+#: gtkalsasetup:115
+msgid "Sound card"
+msgstr ""
+
+#: gtkalsasetup:117
+msgid "Description"
+msgstr ""
+
+#: gtkalsasetup.desktop.in.h:1
+#: gtkalsasetup-kde.desktop.in.h:1
+msgid "ALSA sound card"
+msgstr ""
+
+#: gtkalsasetup.desktop.in.h:2
+#: gtkalsasetup-kde.desktop.in.h:2
+msgid "Select the systemwide ALSA sound card"
+msgstr ""
+
