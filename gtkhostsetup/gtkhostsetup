@@ -49,17 +49,96 @@ def get_other_hosts():
 			domain = line.partition(' ')[2].partition('.')[2].partition(' ')[0]
 			if not ip == '127.0.0.1':
 				hostlines.append([ip, hostname, domain])
-	return hostlines
+	return sorted(hostlines)
+
+
+def check_hostname(ip, hostname, domain):
+	return False, ''
+
+def write_hosts(hostname, domain, host_list, host_treeview):
+	f = file(hosts_file, 'w')
+	f.write('#\n')
+	f.write('# hosts\tThis file describes a number of hostname-to-address\n')
+	f.write('#\t\tmappings for the TCP/IP subsystem. It is mostly\n')
+	f.write('#\t\tused at boot time, when no name servers are running.\n')
+	f.write('#\t\tOn small systems, this file can be used instead of a\n')
+	f.write('#\t\t"named" name server.  Just add the names, addresses\n')
+	f.write('#\t\tand any aliases to this file...\n')
+	f.write('#\n')
+	f.write('# By the way, Arnt Gulbrandsen <agulbra@nvg.unit.no> says that 127.0.0.1\n')
+	f.write('# should NEVER be named with the name of the machine. It causes problems\n')
+	f.write('# for some (stupid) programs, irc and reputedly talk. :^)\n')
+	f.write('#\n')
+	f.write('# For loopbacking.\n')
+	f.write('127.0.0.1\tlocalhost\n')
+	f.write('127.0.0.1\t'+hostname+'.'+domain+' '+hostname+'\n\n')
+	iter = host_list.get_iter_root()
+	while (iter):
+		ip = host_list.get_value(iter, 0)
+		hostname = host_list.get_value(iter, 1)
+		domain = host_list.get_value(iter, 2)
+		iter = host_list.iter_next(iter)
+		if domain == '':
+			f.write(ip+'\t'+hostname+'\n')
+		else:
+			f.write(ip+'\t'+hostname+'.'+domain+' '+hostname+'\n')
+	f.write('\n# End of hosts.\n')
 
 class GTKHostSetup:
+	def create_host_list(self, widget):
+		for i in get_other_hosts():
+			self.liststore_hosts.append(i)
+
 	def on_button_ok_clicked(self, widget, data=None):
+		write_hosts(self.entry_hostname.get_text(), self.entry_domain.get_text(), self.liststore_hosts, self.treeview_hosts)
 		gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
 		gtk.main_quit()
-	
+
 	def gtk_main_quit(self, widget, data=None):
 		gtk.main_quit()
+	
+	def on_button_add_clicked(self, widget, data=None):
+		self.add_host_window.show()
+
+	def on_add_host_window_delete_event(self, widget, data=None):
+		self.add_host_window.hide()
+		return True
+	
+	def on_button_delete_clicked(self, widget, data=None):
+		try:
+			host = self.treeview_hosts.get_selection()
+			self.liststore_hosts, iter = host.get_selected()
+			self.liststore_hosts.remove(iter)	
+		except TypeError:
+			pass
+
+	def on_button_add_ok_clicked(self, widget, data=None):
+		ip = self.entry_new_ip.get_text()
+		hostname = self.entry_new_hostname.get_text()
+		domain = self.entry_new_domain.get_text()
+		check = check_hostname(ip, hostname, domain)
+		error, message = check
+		if error:
+			self.label_error.set_text(message)
+			self.error_window.show()
+		else:
+			self.add_host_window.hide()
+			self.liststore_hosts.append([ip, hostname, domain])
+			self.entry_new_ip.set_text('')
+			self.entry_new_hostname.set_text('')
+			self.entry_new_domain.set_text('')
+
+	def on_button_add_cancel_clicked(self, widget, data=None):
+		self.add_host_window.hide()
+
+	def on_button_error_ok_clicked(self, widget, data=None):
+		self.error_window.hide()
+
+	def on_error_window_delete_event(self, widget, data=None):
+		self.error_window.hide()
+		return True
 
 	def __init__(self):
 		builder = gtk.Builder()
@@ -69,6 +148,10 @@ class GTKHostSetup:
 			builder.add_from_file('/usr/share/salixtools/gtkhostsetup/gtkhostsetup.glade')
 		self.window = builder.get_object('gtkhostsetup')
 
+
+		#
+		# Main window
+		#
 		self.entry_hostname = builder.get_object('entry_hostname')
 		self.entry_domain = builder.get_object('entry_domain')
 		current_hostname = get_hostname()
@@ -82,8 +165,25 @@ class GTKHostSetup:
 		self.treeviewcolumn_hostname.set_title(_('Hostname'))
 		self.treeviewcolumn_domain.set_title(_('Domain'))
 
-		get_other_hosts()
-		
+		self.treeview_hosts = builder.get_object('treeview_hosts')
+		self.liststore_hosts = builder.get_object('liststore_hosts')
+		self.liststore_hosts.clear()
+		self.create_host_list(self)
+
+		#
+		# Add host window
+		#
+		self.add_host_window = builder.get_object('add_host_window')
+		self.entry_new_ip = builder.get_object('entry_new_ip')
+		self.entry_new_hostname = builder.get_object('entry_new_hostname')
+		self.entry_new_domain = builder.get_object('entry_new_domain')
+
+
+		#
+		# Error message window
+		#
+		self.error_window = builder.get_object('error_window')
+		self.label_error = builder.get_object('label_error')
 
 		builder.connect_signals(self)
 
