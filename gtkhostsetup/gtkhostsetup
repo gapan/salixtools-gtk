@@ -122,18 +122,25 @@ class GTKHostSetup:
 			self.liststore_hosts.append(i)
 
 	def on_button_ok_clicked(self, widget, data=None):
-		host_list = []
-		iter = self.liststore_hosts.get_iter_root()
-		while (iter):
-			ip = self.liststore_hosts.get_value(iter, 0)
-			hostname = self.liststore_hosts.get_value(iter, 1)
-			domain = self.liststore_hosts.get_value(iter, 2)
-			host_list.append([ip, hostname, domain])
-			iter = self.liststore_hosts.iter_next(iter)
-		write_hosts(self.entry_hostname.get_text(),
-				self.entry_domain.get_text(),
-				sorted(host_list))
-		gtk.main_quit()
+		this_hostname = self.entry_hostname.get_text()
+		this_domain = self.entry_domain.get_text()
+		error, message = check_hostname('127.0.0.1', this_hostname, this_domain)
+		if error:
+			self.label_main_error.set_text(message)
+			self.error_main_window.show()
+		else:
+			host_list = []
+			iter = self.liststore_hosts.get_iter_root()
+			while (iter):
+				ip = self.liststore_hosts.get_value(iter, 0)
+				hostname = self.liststore_hosts.get_value(iter, 1)
+				domain = self.liststore_hosts.get_value(iter, 2)
+				host_list.append([ip, hostname, domain])
+				iter = self.liststore_hosts.iter_next(iter)
+			write_hosts(self.entry_hostname.get_text(),
+					self.entry_domain.get_text(),
+					sorted(host_list))
+			gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
 		gtk.main_quit()
@@ -228,7 +235,14 @@ class GTKHostSetup:
 	def on_edit_error_window_delete_event(self, widget, data=None):
 		self.edit_error_window.hide()
 		return True
-	
+
+	def on_button_error_main_ok_clicked(self, widget, data=None):
+		self.error_main_window.hide()
+
+	def on_error_main_window_delete_event(self, widget, data=None):
+		self.error_main_window.hide()
+		return True
+
 	def __init__(self):
 		builder = gtk.Builder()
 		if os.path.exists('gtkhostsetup.glade'):
@@ -276,6 +290,12 @@ class GTKHostSetup:
 		self.entry_edit_hostname = builder.get_object('entry_edit_hostname')
 		self.entry_edit_domain = builder.get_object('entry_edit_domain')
 
+		#
+		# Error message in main window
+		#
+		self.error_main_window = builder.get_object('error_main_window')
+		self.label_main_error = builder.get_object('label_main_error')
+		
 		#
 		# Error message in add window
 		#
