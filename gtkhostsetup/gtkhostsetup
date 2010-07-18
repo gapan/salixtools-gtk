@@ -53,7 +53,42 @@ def get_other_hosts():
 
 
 def check_hostname(ip, hostname, domain):
-	return False, ''
+	error = False
+	msg = ''
+	if ip == '':
+		error = True
+		msg = _('The IP address cannot be empty.')
+	elif hostname == '':
+		error = True
+		msg = _('The hostname cannot be empty.')
+	elif hostname.startswith('-'):
+		error = True
+		msg = _('The hostname cannot start with a hyphen.')
+	elif hostname.endswith('-'):
+		error = True
+		msg = _('The hostname cannot end with a hyphen.')
+	elif domain.startswith('-'):
+		error = True
+		msg = _('The domain cannot start with a hyphen.')
+	elif domain.endswith('-'):
+		error = True
+		msg = _('The domain cannot end with a hyphen.')
+	if error == False:
+		for i in ip:
+			if not re.match("^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}$", ip):
+				error = True
+				msg = _('Not a valid IP address.')
+	if error == False:
+		for i in hostname:
+			if not i in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-':
+				error = True
+				msg = _('The hostname can consist solely of latin letters, numbers and hyphens.')
+	if error == False:
+		for i in domain:
+			if not i in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-.':
+				error = True
+				msg = _('The domain can consist solely of latin letters, numbers, hyphens and dots.')
+	return error, msg
 
 def write_hosts(hostname, domain, host_list):
 	f = file(hosts_file, 'w')
