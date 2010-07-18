@@ -113,6 +113,46 @@ class GTKHostSetup:
 		self.add_host_window.hide()
 		return True
 	
+	def on_button_edit_clicked(self, widget, data=None):
+		try:
+			host = self.treeview_hosts.get_selection()
+			self.liststore_hosts, iter = host.get_selected()
+			self.entry_edit_ip.set_text(self.liststore_hosts.get_value(iter, 0))
+			self.entry_edit_hostname.set_text(self.liststore_hosts.get_value(iter, 1))
+			self.entry_edit_domain.set_text(self.liststore_hosts.get_value(iter, 2))
+			self.edit_host_window.show()
+		except TypeError:
+			pass
+
+	def on_button_edit_ok_clicked(self, widget, data=None):
+		ip = self.entry_edit_ip.get_text()
+		hostname = self.entry_edit_hostname.get_text()
+		domain = self.entry_edit_domain.get_text()
+		error, message = check_hostname(ip, hostname, domain)
+		if error:
+			self.label_edit_error.set_text(message)
+			self.edit_error_window.show()
+		else:
+			try:
+				self.edit_host_window.hide()
+				host = self.treeview_hosts.get_selection()
+				self.liststore_hosts, iter = host.get_selected()
+				self.liststore_hosts.remove(iter)	
+				self.liststore_hosts.append([ip, hostname, domain])
+				self.entry_edit_ip.set_text('')
+				self.entry_edit_hostname.set_text('')
+				self.entry_edit_domain.set_text('')
+				self.liststore_hosts.set_sort_column_id(0, gtk.SORT_ASCENDING)
+			except TypeError:
+				pass
+
+	def on_button_edit_cancel_clicked(self, widget, data=None):
+		self.edit_host_window.hide()
+
+	def on_edit_host_window_delete_event(self, widget, data=None):
+		self.edit_host_window.hide()
+		return True
+
 	def on_button_delete_clicked(self, widget, data=None):
 		try:
 			host = self.treeview_hosts.get_selection()
@@ -127,8 +167,8 @@ class GTKHostSetup:
 		domain = self.entry_new_domain.get_text()
 		error, message = check_hostname(ip, hostname, domain)
 		if error:
-			self.label_error.set_text(message)
-			self.error_window.show()
+			self.label_add_error.set_text(message)
+			self.add_error_window.show()
 		else:
 			self.add_host_window.hide()
 			self.liststore_hosts.append([ip, hostname, domain])
@@ -140,13 +180,20 @@ class GTKHostSetup:
 	def on_button_add_cancel_clicked(self, widget, data=None):
 		self.add_host_window.hide()
 
-	def on_button_error_ok_clicked(self, widget, data=None):
-		self.error_window.hide()
+	def on_button_add_error_ok_clicked(self, widget, data=None):
+		self.add_error_window.hide()
 
-	def on_error_window_delete_event(self, widget, data=None):
-		self.error_window.hide()
+	def on_add_error_window_delete_event(self, widget, data=None):
+		self.add_error_window.hide()
 		return True
 
+	def on_button_edit_error_ok_clicked(self, widget, data=None):
+		self.edit_error_window.hide()
+
+	def on_edit_error_window_delete_event(self, widget, data=None):
+		self.edit_error_window.hide()
+		return True
+	
 	def __init__(self):
 		builder = gtk.Builder()
 		if os.path.exists('gtkhostsetup.glade'):
@@ -187,11 +234,24 @@ class GTKHostSetup:
 
 
 		#
-		# Error message window
+		# Edit host window
 		#
-		self.error_window = builder.get_object('error_window')
-		self.label_error = builder.get_object('label_error')
+		self.edit_host_window = builder.get_object('edit_host_window')
+		self.entry_edit_ip = builder.get_object('entry_edit_ip')
+		self.entry_edit_hostname = builder.get_object('entry_edit_hostname')
+		self.entry_edit_domain = builder.get_object('entry_edit_domain')
 
+		#
+		# Error message in add window
+		#
+		self.add_error_window = builder.get_object('add_error_window')
+		self.label_add_error = builder.get_object('label_add_error')
+
+		#
+		# Error message in edit window
+		#
+		self.edit_error_window = builder.get_object('edit_error_window')
+		self.label_edit_error = builder.get_object('label_edit_error')
 		builder.connect_signals(self)
 
 if __name__ == "__main__":
