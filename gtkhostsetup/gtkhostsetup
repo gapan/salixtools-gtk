@@ -91,6 +91,12 @@ def check_hostname(ip, hostname, domain):
 	return error, msg
 
 def write_hosts(hostname, domain, host_list):
+	f = file(hostname_file, 'w')
+	if domain == '':
+		f.write(hostname+'\n')
+	else:
+		f.write(hostname+'.'+domain+'\n')
+	f.close()
 	f = file(hosts_file, 'w')
 	f.write('#\n')
 	f.write('# hosts\tThis file describes a number of hostname-to-address\n')
@@ -117,12 +123,6 @@ def write_hosts(hostname, domain, host_list):
 		else:
 			f.write(ip+'\t'+hostname+'.'+domain+' '+hostname+'\n')
 	f.write('\n# End of hosts.\n')
-	f.close()
-	f = file(hostname_file, 'w')
-	if domain == '':
-		f.write(hostname+'\n')
-	else:
-		f.write(hostname+'.'+domain+'\n')
 	f.close()
 
 class GTKHostSetup:
