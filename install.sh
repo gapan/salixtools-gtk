@@ -25,7 +25,7 @@ for i in 64 48 32 24 22 16; do
 done
 
 # Install tools + lang files
-for i in gtkalsasetup gtkclocksetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup; do
+for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup; do
 	install -m 755 $i/$i $DESTDIR/usr/sbin/
 	install -m 644 $i/$i.desktop $DESTDIR/usr/share/applications/
 	install -m 644 $i/$i-kde.desktop $DESTDIR/usr/share/applications/
