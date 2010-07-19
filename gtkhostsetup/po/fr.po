@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkhostsetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-19 10:28+0300\n"
+"PO-Revision-Date: 2010-07-19 15:21+0100\n"
+"Last-Translator: Cyrille Pontvieux <jrd@enialis.net>\n"
+"Language-Team: French <jrd@enialis.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+
+#: gtkhostsetup.glade:24
+#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
+msgid "Hostnames"
+msgstr "Noms d'hôtes"
+
+#: gtkhostsetup.glade:44
+msgid "<b>This computer:</b>"
+msgstr "<b>Cet ordinateur :</b>"
+
+#: gtkhostsetup.glade:88
+#: gtkhostsetup.glade:364
+#: gtkhostsetup.glade:596
+msgid "Hostname:"
+msgstr "Nom de l'hôte :"
+
+#: gtkhostsetup.glade:95
+#: gtkhostsetup.glade:375
+#: gtkhostsetup.glade:607
+msgid "Domain:"
+msgstr "Domaine :"
+
+#: gtkhostsetup.glade:124
+msgid "<b>Other hosts:</b>"
+msgstr "<b>Autre hôtes :</b>"
+
+#: gtkhostsetup.glade:329
+msgid "Add host"
+msgstr "Ajouter un hôte"
+
+#: gtkhostsetup.glade:357
+#: gtkhostsetup.glade:589
+msgid "IP address:"
+msgstr "Adresse IP :"
+
+#: gtkhostsetup.glade:474
+#: gtkhostsetup.glade:706
+#: gtkhostsetup.glade:793
+msgid "Error"
+msgstr "Erreur"
+
+#: gtkhostsetup.glade:561
+msgid "Edit host"
+msgstr "Éditer l'hôte"
+
+#: gtkhostsetup:60
+msgid "The IP address cannot be empty."
+msgstr "L'adresse IP ne peut pas être vide."
+
+#: gtkhostsetup:63
+msgid "The hostname cannot be empty."
+msgstr "Le nom d'hôte ne peut pas être vide."
+
+#: gtkhostsetup:66
+msgid "The hostname cannot start with a hyphen."
+msgstr "Le nom d'hôte ne peut pas commencer par un tiret."
+
+#: gtkhostsetup:69
+msgid "The hostname cannot end with a hyphen."
+msgstr "Le nom d'hôte ne peut pas se terminer par un tiret."
+
+#: gtkhostsetup:72
+msgid "The domain cannot start with a hyphen."
+msgstr "Le nom de domaine ne peut pas commencer par un tiret."
+
+#: gtkhostsetup:75
+msgid "The domain cannot end with a hyphen."
+msgstr "Le nom de domaine ne peut pas se terminer par un tiret."
+
+#: gtkhostsetup:80
+msgid "Not a valid IP address."
+msgstr "L'adresse IP n'est pas valide."
+
+#: gtkhostsetup:85
+msgid "The hostname can consist solely of latin letters, numbers and hyphens."
+msgstr "Le nom d'hôte ne peut être constitué que de lettres latines, chiffres et tirets."
+
+#: gtkhostsetup:90
+msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "Le nom de domaine ne peut être constitué que de lettres latines, chiffres, tirets et points."
+
+#: gtkhostsetup:274
+msgid "IP address"
+msgstr "Adresse IP"
+
+#: gtkhostsetup:275
+msgid "Hostname"
+msgstr "Nom d'hôte"
+
+#: gtkhostsetup:276
+msgid "Domain"
+msgstr "Domaine"
+
+#: gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "Configure les noms d'hôtes du système"
+
