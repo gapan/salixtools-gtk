@@ -106,7 +106,10 @@ def write_hosts(hostname, domain, host_list):
 	f.write('#\n')
 	f.write('# For loopbacking.\n')
 	f.write('127.0.0.1\tlocalhost\n')
-	f.write('127.0.0.1\t'+hostname+'.'+domain+' '+hostname+'\n\n')
+	if domain == '':
+		f.write('127.0.0.1\t'+hostname+'\n\n')
+	else:
+		f.write('127.0.0.1\t'+hostname+'.'+domain+' '+hostname+'\n\n')
 	for i in host_list:
 		ip, hostname, domain = i
 		if domain == '':
@@ -114,6 +117,12 @@ def write_hosts(hostname, domain, host_list):
 		else:
 			f.write(ip+'\t'+hostname+'.'+domain+' '+hostname+'\n')
 	f.write('\n# End of hosts.\n')
+	f.close()
+	f = file(hostname_file, 'w')
+	if domain == '':
+		f.write(hostname+'\n')
+	else:
+		f.write(hostname+'.'+domain+'\n')
 	f.close()
 
 class GTKHostSetup:
@@ -137,9 +146,7 @@ class GTKHostSetup:
 				domain = self.liststore_hosts.get_value(iter, 2)
 				host_list.append([ip, hostname, domain])
 				iter = self.liststore_hosts.iter_next(iter)
-			write_hosts(self.entry_hostname.get_text(),
-					self.entry_domain.get_text(),
-					sorted(host_list))
+			write_hosts(self.entry_hostname.get_text(), self.entry_domain.get_text(), sorted(host_list))
 			gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
