@@ -507,7 +507,7 @@
             <child>
               <object class="GtkLabel" id="label_add_error">
                 <property name="visible">True</property>
-                <property name="label" translatable="yes">Error message</property>
+                <property name="label">Error message</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -739,7 +739,7 @@
             <child>
               <object class="GtkLabel" id="label_edit_error">
                 <property name="visible">True</property>
-                <property name="label" translatable="yes">Error message</property>
+                <property name="label">Error message</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -826,7 +826,7 @@
             <child>
               <object class="GtkLabel" id="label_main_error">
                 <property name="visible">True</property>
-                <property name="label" translatable="yes">Error message</property>
+                <property name="label">Error message</property>
               </object>
               <packing>
                 <property name="expand">False</property>
