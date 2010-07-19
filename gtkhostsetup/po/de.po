@@ -83,11 +83,11 @@ msgstr "Keine gültige IP-Adresse"
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr ""
+msgstr "Der Hostname darf ausschließlich aus lateinischen Buchstaben, Nummern und Bindestrichen bestehen."
 
 #: gtkhostsetup:90
 msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr ""
+msgstr "Die Domain darf ausschließlich aus lateinischen Buchstaben, Nummern und Bindestrichen bestehen."
 
 #: gtkhostsetup:274
 msgid "IP address"
