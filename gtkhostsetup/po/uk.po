@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\\n\n"
 
 #: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
@@ -55,39 +55,39 @@ msgstr "Редагувати сервер"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
-msgstr ""
+msgstr "IP адреса не може бути порожньою."
 
 #: gtkhostsetup:63
 msgid "The hostname cannot be empty."
-msgstr ""
+msgstr "Назва сервера не може бути порожньою."
 
 #: gtkhostsetup:66
 msgid "The hostname cannot start with a hyphen."
-msgstr ""
+msgstr "Назва сервера не може починатися з тире (-)."
 
 #: gtkhostsetup:69
 msgid "The hostname cannot end with a hyphen."
-msgstr ""
+msgstr "Назва сервера не може закінчуватися тире (-)."
 
 #: gtkhostsetup:72
 msgid "The domain cannot start with a hyphen."
-msgstr ""
+msgstr "Домен не може починатися з тире (-)."
 
 #: gtkhostsetup:75
 msgid "The domain cannot end with a hyphen."
-msgstr ""
+msgstr "Домен не може закінчуватися тире (-)."
 
 #: gtkhostsetup:80
 msgid "Not a valid IP address."
-msgstr ""
+msgstr "Неправильна адреса IP."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr ""
+msgstr "Назва сервера може складатися тільки з латинських літер, чисел та тире."
 
 #: gtkhostsetup:90
 msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr ""
+msgstr "Домен може складатися тільки з латинських літер, чисел та тире."
 
 #: gtkhostsetup:274
 msgid "IP address"
