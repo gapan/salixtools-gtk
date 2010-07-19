@@ -23,6 +23,7 @@
     <property name="border_width">5</property>
     <property name="title" translatable="yes">Hostnames</property>
     <property name="window_position">center</property>
+    <property name="icon_name">gtkhostsetup</property>
     <property name="type_hint">normal</property>
     <property name="has_separator">False</property>
     <signal name="destroy" handler="gtk_main_quit"/>
