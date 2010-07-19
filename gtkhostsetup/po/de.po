@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkhostsetup\n"
@@ -16,8 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: German\n"
 
-#: gtkhostsetup.glade:24
-#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
 msgstr "Hostnamen"
@@ -26,15 +25,11 @@ msgstr "Hostnamen"
 msgid "<b>This computer:</b>"
 msgstr "<b>Dieser Computer:</b>"
 
-#: gtkhostsetup.glade:88
-#: gtkhostsetup.glade:364
-#: gtkhostsetup.glade:596
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:364 gtkhostsetup.glade:596
 msgid "Hostname:"
 msgstr "Hostname:"
 
-#: gtkhostsetup.glade:95
-#: gtkhostsetup.glade:375
-#: gtkhostsetup.glade:607
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:375 gtkhostsetup.glade:607
 msgid "Domain:"
 msgstr "Domain:"
 
@@ -46,14 +41,11 @@ msgstr "<b>Andere Hosts:</b>"
 msgid "Add host"
 msgstr "Host hinzufügen"
 
-#: gtkhostsetup.glade:357
-#: gtkhostsetup.glade:589
+#: gtkhostsetup.glade:357 gtkhostsetup.glade:589
 msgid "IP address:"
 msgstr "IP-Adresse:"
 
-#: gtkhostsetup.glade:474
-#: gtkhostsetup.glade:706
-#: gtkhostsetup.glade:793
+#: gtkhostsetup.glade:474 gtkhostsetup.glade:706 gtkhostsetup.glade:793
 msgid "Error"
 msgstr "Fehler"
 
@@ -71,19 +63,19 @@ msgstr "Der Hostname kann nicht leer sein."
 
 #: gtkhostsetup:66
 msgid "The hostname cannot start with a hyphen."
-msgstr ""
+msgstr "Der Hostname darf nicht mit einem Bindestrich beginnen."
 
 #: gtkhostsetup:69
 msgid "The hostname cannot end with a hyphen."
-msgstr ""
+msgstr "Der Hostname darf nicht mit einem Bindestrich enden."
 
 #: gtkhostsetup:72
 msgid "The domain cannot start with a hyphen."
-msgstr ""
+msgstr "Die Domain darf nicht mit einem Bindestrich beginnen."
 
 #: gtkhostsetup:75
 msgid "The domain cannot end with a hyphen."
-msgstr ""
+msgstr "Die Domain darf nicht mit einem Bindestrich enden."
 
 #: gtkhostsetup:80
 msgid "Not a valid IP address."
@@ -109,8 +101,6 @@ msgstr "Hostname"
 msgid "Domain"
 msgstr "Domain"
 
-#: gtkhostsetup.desktop.in.h:1
-#: gtkhostsetup-kde.desktop.in.h:1
+#: gtkhostsetup.desktop.in.h:1 gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
 msgstr "System-Hostnamen konfigurieren"
-
