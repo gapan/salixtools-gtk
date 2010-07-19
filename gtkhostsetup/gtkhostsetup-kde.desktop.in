@@ -1,0 +1,12 @@
+[Desktop Entry]
+_Name=Hostnames
+_Comment=Configure the system hostnames
+Exec=kdesu gtkhostsetup
+Icon=gtkhostsetup
+Terminal=false
+Type=Application
+Categories=Application;System;
+StartupNotify=true
+Encoding=UTF-8
+NoDisplay=false
+OnlyShowIn=KDE

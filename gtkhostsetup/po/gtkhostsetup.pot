@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-19 10:28+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
+msgid "Hostnames"
+msgstr ""
+
+#: gtkhostsetup.glade:44
+msgid "<b>This computer:</b>"
+msgstr ""
+
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:364 gtkhostsetup.glade:596
+msgid "Hostname:"
+msgstr ""
+
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:375 gtkhostsetup.glade:607
+msgid "Domain:"
+msgstr ""
+
+#: gtkhostsetup.glade:124
+msgid "<b>Other hosts:</b>"
+msgstr ""
+
+#: gtkhostsetup.glade:329
+msgid "Add host"
+msgstr ""
+
+#: gtkhostsetup.glade:357 gtkhostsetup.glade:589
+msgid "IP address:"
+msgstr ""
+
+#: gtkhostsetup.glade:474 gtkhostsetup.glade:706 gtkhostsetup.glade:793
+msgid "Error"
+msgstr ""
+
+#: gtkhostsetup.glade:561
+msgid "Edit host"
+msgstr ""
+
+#: gtkhostsetup:60
+msgid "The IP address cannot be empty."
+msgstr ""
+
+#: gtkhostsetup:63
+msgid "The hostname cannot be empty."
+msgstr ""
+
+#: gtkhostsetup:66
+msgid "The hostname cannot start with a hyphen."
+msgstr ""
+
+#: gtkhostsetup:69
+msgid "The hostname cannot end with a hyphen."
+msgstr ""
+
+#: gtkhostsetup:72
+msgid "The domain cannot start with a hyphen."
+msgstr ""
+
+#: gtkhostsetup:75
+msgid "The domain cannot end with a hyphen."
+msgstr ""
+
+#: gtkhostsetup:80
+msgid "Not a valid IP address."
+msgstr ""
+
+#: gtkhostsetup:85
+msgid "The hostname can consist solely of latin letters, numbers and hyphens."
+msgstr ""
+
+#: gtkhostsetup:90
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr ""
+
+#: gtkhostsetup:274
+msgid "IP address"
+msgstr ""
+
+#: gtkhostsetup:275
+msgid "Hostname"
+msgstr ""
+
+#: gtkhostsetup:276
+msgid "Domain"
+msgstr ""
+
+#: gtkhostsetup.desktop.in.h:1 gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr ""
