@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkiconrefresh\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 13:30+0300\n"
+"PO-Revision-Date: 2010-07-20 13:33+0200\n"
+"Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
+"Language-Team: Greek\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: gtkiconrefresh.glade:6
+msgid "Rebuilding icon cache"
+msgstr "Επαναδημιουργία της μνήμης εικονιδίων"
+
+#: gtkiconrefresh.glade:60
+msgid "Please wait while rebuilding the system's icon cache..."
+msgstr "Παρακαλούμε περιμένετε όσο επαναδημιουργείται η μνήμη των εικονιδίων του συστήματος"
+
+#: gtkiconrefresh.desktop.in.h:1
+msgid "Rebuild icon cache"
+msgstr "Επαναδημιουργία της μνήμης εικονιδίων"
+
+#: gtkiconrefresh.desktop.in.h:2
+msgid "Rebuild the system's icon cache"
+msgstr "Επαναδημιουργία της μνήμης εικονιδίων του συστήματος"
+

@@ -1,0 +1,12 @@
+[Desktop Entry]
+_Name=Rebuild icon cache
+_Comment=Rebuild the system's icon cache
+Exec=gksu gtkiconrefresh
+Icon=gtkiconrefresh
+Terminal=false
+Type=Application
+Categories=Application;System;
+StartupNotify=true
+Encoding=UTF-8
+NoDisplay=false
+OnlyShowIn=XFCE

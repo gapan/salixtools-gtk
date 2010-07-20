@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd $(dirname $0)
-for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do
+for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do
 	for j in `ls $i/po/*.po`;do
 		echo "Compiling `echo $j|sed "s|/po||"`"
 		msgfmt $j -o `echo $j | sed "s/\.po//"`.mo
