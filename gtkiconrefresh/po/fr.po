@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkiconrefresh\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-20 13:33+0300\n"
+"PO-Revision-Date: 2010-07-21 13:49+0100\n"
+"Last-Translator: Cyrille Pontvieux <jrd@enialis.net>\n"
+"Language-Team: French <jrd@enialis.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+
+#: gtkiconrefresh.glade:6
+msgid "Rebuilding icon cache"
+msgstr "Reconstruire le cache des icônes."
+
+#: gtkiconrefresh.glade:60
+msgid "Please wait while rebuilding the system's icon cache..."
+msgstr "Veuillez patientez pendant la reconstruction du cache des icônes du système…"
+
+#: gtkiconrefresh.desktop.in.h:1
+msgid "Rebuild icon cache"
+msgstr "Reconstruire le cache des icônes"
+
+#: gtkiconrefresh.desktop.in.h:2
+msgid "Rebuild the system's icon cache"
+msgstr "Reconstruit le cache des icônes du système"
+
