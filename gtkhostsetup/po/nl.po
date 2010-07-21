@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkhostsetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -15,101 +15,91 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtkhostsetup.glade:24
-#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
 msgstr "Host namen"
 
 #: gtkhostsetup.glade:44
 msgid "<b>This computer:</b>"
-msgstr ""
+msgstr "<b>Deze computer:</b>"
 
-#: gtkhostsetup.glade:88
-#: gtkhostsetup.glade:364
-#: gtkhostsetup.glade:596
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:364 gtkhostsetup.glade:596
 msgid "Hostname:"
-msgstr ""
+msgstr "Hostnaam:"
 
-#: gtkhostsetup.glade:95
-#: gtkhostsetup.glade:375
-#: gtkhostsetup.glade:607
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:375 gtkhostsetup.glade:607
 msgid "Domain:"
-msgstr ""
+msgstr "Domein:"
 
 #: gtkhostsetup.glade:124
 msgid "<b>Other hosts:</b>"
-msgstr ""
+msgstr "<b>Andere hosts:</b>"
 
 #: gtkhostsetup.glade:329
 msgid "Add host"
-msgstr ""
+msgstr "Host toevoegen"
 
-#: gtkhostsetup.glade:357
-#: gtkhostsetup.glade:589
+#: gtkhostsetup.glade:357 gtkhostsetup.glade:589
 msgid "IP address:"
-msgstr ""
+msgstr "IP-adres:"
 
-#: gtkhostsetup.glade:474
-#: gtkhostsetup.glade:706
-#: gtkhostsetup.glade:793
+#: gtkhostsetup.glade:474 gtkhostsetup.glade:706 gtkhostsetup.glade:793
 msgid "Error"
-msgstr ""
+msgstr "Fout"
 
 #: gtkhostsetup.glade:561
 msgid "Edit host"
-msgstr ""
+msgstr "Host bewerken"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
-msgstr ""
+msgstr "Het IP-adres kan niet leeg zijn."
 
 #: gtkhostsetup:63
 msgid "The hostname cannot be empty."
-msgstr ""
+msgstr "De hostnaam mag niet leeg zijn."
 
 #: gtkhostsetup:66
 msgid "The hostname cannot start with a hyphen."
-msgstr ""
+msgstr "De hostnaam kan niet beginnen met een koppelteken."
 
 #: gtkhostsetup:69
 msgid "The hostname cannot end with a hyphen."
-msgstr ""
+msgstr "De hostnaam kan niet eindigen met een koppelteken."
 
 #: gtkhostsetup:72
 msgid "The domain cannot start with a hyphen."
-msgstr ""
+msgstr "De domeinnaam kan niet beginnen met een koppelteken."
 
 #: gtkhostsetup:75
 msgid "The domain cannot end with a hyphen."
-msgstr ""
+msgstr "De domeinnaam kan niet eindigen met een koppelteken."
 
 #: gtkhostsetup:80
 msgid "Not a valid IP address."
-msgstr ""
+msgstr "Niet een geldig IP-adres."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr ""
+msgstr "De hostnaam mag uitsluitend latijnse letters, cijfers en koppeltekens bevatten."
 
 #: gtkhostsetup:90
 msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr ""
+msgstr "De domeinnaam mag uitsluitend latijnse letters, cijfers en koppeltekens bevatten."
 
 #: gtkhostsetup:274
 msgid "IP address"
-msgstr ""
+msgstr "IP-adres"
 
 #: gtkhostsetup:275
 msgid "Hostname"
-msgstr ""
+msgstr "Hostnaam"
 
 #: gtkhostsetup:276
 msgid "Domain"
-msgstr ""
+msgstr "Domein"
 
-#: gtkhostsetup.desktop.in.h:1
-#: gtkhostsetup-kde.desktop.in.h:1
+#: gtkhostsetup.desktop.in.h:1 gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
 msgstr ""
-
