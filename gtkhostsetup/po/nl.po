@@ -102,4 +102,4 @@ msgstr "Domein"
 
 #: gtkhostsetup.desktop.in.h:1 gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
-msgstr ""
+msgstr "Configureer de hostnamen van het systeem"
