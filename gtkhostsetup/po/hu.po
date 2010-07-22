@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkhostsetu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-19 10:28+0300\n"
+"PO-Revision-Date: 2010-07-22 18:27+0100\n"
+"Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
+"Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkhostsetup.glade:24
+#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
+msgid "Hostnames"
+msgstr "Számítógépek nevei"
+
+#: gtkhostsetup.glade:44
+msgid "<b>This computer:</b>"
+msgstr "<b>Ez a számítógép:</b>"
+
+#: gtkhostsetup.glade:88
+#: gtkhostsetup.glade:364
+#: gtkhostsetup.glade:596
+msgid "Hostname:"
+msgstr "Gépnév:"
+
+#: gtkhostsetup.glade:95
+#: gtkhostsetup.glade:375
+#: gtkhostsetup.glade:607
+msgid "Domain:"
+msgstr "Domain:"
+
+#: gtkhostsetup.glade:124
+msgid "<b>Other hosts:</b>"
+msgstr "<b>Egyéb gépek:</b>"
+
+#: gtkhostsetup.glade:329
+msgid "Add host"
+msgstr "Gép hozzáadása"
+
+#: gtkhostsetup.glade:357
+#: gtkhostsetup.glade:589
+msgid "IP address:"
+msgstr "IP cím:"
+
+#: gtkhostsetup.glade:474
+#: gtkhostsetup.glade:706
+#: gtkhostsetup.glade:793
+msgid "Error"
+msgstr "Hiba"
+
+#: gtkhostsetup.glade:561
+msgid "Edit host"
+msgstr "Gép szerkesztése"
+
+#: gtkhostsetup:60
+msgid "The IP address cannot be empty."
+msgstr "Az IP cím nem lehet üres."
+
+#: gtkhostsetup:63
+msgid "The hostname cannot be empty."
+msgstr "A gép év nem lehet üres."
+
+#: gtkhostsetup:66
+msgid "The hostname cannot start with a hyphen."
+msgstr "A gépnév nem kezdődhet kötőjellel."
+
+#: gtkhostsetup:69
+msgid "The hostname cannot end with a hyphen."
+msgstr "A gépnév nem végződhet kötőjellel."
+
+#: gtkhostsetup:72
+msgid "The domain cannot start with a hyphen."
+msgstr "A domain név nem kezdődhet kötőjellel."
+
+#: gtkhostsetup:75
+msgid "The domain cannot end with a hyphen."
+msgstr "A domain név nem végződhet kötőjellel."
+
+#: gtkhostsetup:80
+msgid "Not a valid IP address."
+msgstr "Nem valós az IP cím."
+
+#: gtkhostsetup:85
+msgid "The hostname can consist solely of latin letters, numbers and hyphens."
+msgstr "A gépnév kizárólag latin betűkből, számokból és kötőjelből állhat."
+
+#: gtkhostsetup:90
+msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "A domain név kizárólag latin betűkből, számokból és kötőjelből állhat."
+
+#: gtkhostsetup:274
+msgid "IP address"
+msgstr "IP cím"
+
+#: gtkhostsetup:275
+msgid "Hostname"
+msgstr "Gépnév"
+
+#: gtkhostsetup:276
+msgid "Domain"
+msgstr "Domain"
+
+#: gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "A rendszer számítógép neveinek konfigurálása"
+
