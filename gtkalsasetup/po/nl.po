@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-05 17:09+0300\n"
+"POT-Creation-Date: 2010-07-14 00:16+0300\n"
 "PO-Revision-Date: 2010-07-16 08:52+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: Dutch <LL@li.org>\n"
@@ -19,9 +19,33 @@ msgstr ""
 msgid "Alsa default sound card"
 msgstr "Alsa standaard geluidskaart"
 
-#: gtkalsasetup.glade:50
+#: gtkalsasetup.glade:54
 msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
 msgstr "Kies alstublieft de geluidskaart die u wilt instellen als standaard voor ALSA in het gehele systeem. De sessie moet opnieuw worden gestart om de wijzigingen toe te passen."
+
+#: gtkalsasetup.glade:119 gtkalsasetup:125
+msgid "Sound card"
+msgstr "Geluidskaart"
+
+#: gtkalsasetup.glade:148
+msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
+msgstr "U kunt van de onderstaande knoppen gebruik maken om de systeeminstellingen voor ALSA, alsmede volume-instellingen en de selectie van invoerbronnen te beheren."
+
+#: gtkalsasetup.glade:180
+msgid "Store the current ALSA settings as the system defaults"
+msgstr "Bewaar de huidige ALSA instellingen als standaard systeemwaarden"
+
+#: gtkalsasetup.glade:198
+msgid "Revert current ALSA settings to the stored defaults"
+msgstr "Zet de huidige ALSA instellingen naar de standaardwaarden terug"
+
+#: gtkalsasetup.glade:216
+msgid "Clear all ALSA settings and set default values"
+msgstr "Wis alle ALSA instellingen en stel de standaardwaarden in"
+
+#: gtkalsasetup.glade:252
+msgid "Settings"
+msgstr "Instellingen"
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
@@ -31,11 +55,7 @@ msgstr "Default"
 msgid "Use the default ALSA sound card"
 msgstr "Gebruik de standaard ALSA geluidskaart"
 
-#: gtkalsasetup:115
-msgid "Sound card"
-msgstr "Geluidskaart"
-
-#: gtkalsasetup:117
+#: gtkalsasetup:127
 msgid "Description"
 msgstr "Beschrijving"
 
