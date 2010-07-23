@@ -1,0 +1,316 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gtkusersetup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 13:59+0300\n"
+"PO-Revision-Date: 2010-07-22 19:52+0100\n"
+"Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
+"Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkusersetup.glade:49
+msgid "User settings"
+msgstr "Felhasználó beállításai"
+
+#: gtkusersetup.glade:208
+msgid "Manage groups"
+msgstr "Csoportok kezelése"
+
+#: gtkusersetup.glade:234
+msgid "Show all users"
+msgstr "Minden felhasználó mutatása"
+
+#: gtkusersetup.glade:325
+msgid "<b>Basic information</b>"
+msgstr "<b>Alap információk</b>"
+
+#: gtkusersetup.glade:344
+msgid "Username:"
+msgstr "Felhasználónév:"
+
+#: gtkusersetup.glade:353
+msgid "Real name:"
+msgstr "Valódi név:"
+
+#: gtkusersetup.glade:414
+msgid "User password:"
+msgstr "Felhasználó jelszava:"
+
+#: gtkusersetup.glade:424
+msgid "Password confirmation:"
+msgstr "Jelszó mégegyszer:"
+
+#: gtkusersetup.glade:465
+msgid "View password while typing"
+msgstr "Jelszó mutatása bevitel közben"
+
+#: gtkusersetup.glade:483
+msgid "Account"
+msgstr "Felhasználói fiók"
+
+#: gtkusersetup.glade:498
+msgid "<b>Contact information</b>"
+msgstr "<b>Kapcsolat információk</b>"
+
+#: gtkusersetup.glade:518
+msgid "Office extension:"
+msgstr ""
+
+#: gtkusersetup.glade:530
+msgid "Office information:"
+msgstr "Munkahelyi információ:"
+
+#: gtkusersetup.glade:540
+msgid "Home phone:"
+msgstr "Otthoni telefon"
+
+#: gtkusersetup.glade:597
+msgid "Contact"
+msgstr "Kapcsolat"
+
+#: gtkusersetup.glade:613
+msgid "<b>Group membership</b>"
+msgstr "<b>Csoport tagság</b>"
+
+#: gtkusersetup.glade:630
+msgid "Main group:"
+msgstr "Fő csoport:"
+
+#: gtkusersetup.glade:663
+msgid "Other groups:"
+msgstr "Egyéb csoportok:"
+
+#: gtkusersetup.glade:735
+msgid "Groups"
+msgstr "Csoportok"
+
+#: gtkusersetup.glade:751
+msgid "<b>Advanced settings</b>"
+msgstr "<b>Bővített beállítások</b>"
+
+#: gtkusersetup.glade:771
+msgid "Home directory:"
+msgstr "Felhasználó könyvtára:"
+
+#: gtkusersetup.glade:781
+msgid "Shell:"
+msgstr "Parancsértelmező:"
+
+#: gtkusersetup.glade:793
+msgid "UID:"
+msgstr "UID:"
+
+#: gtkusersetup.glade:850
+msgid "Set account expiration date"
+msgstr "A felhasználói fiók lejárati ideje"
+
+#: gtkusersetup.glade:886
+msgid "Advanced"
+msgstr "Bővített"
+
+#: gtkusersetup.glade:951
+#: gtkusersetup.glade:1546
+msgid "Error!"
+msgstr "Hiba!"
+
+#: gtkusersetup.glade:1159
+msgid "Group settings"
+msgstr "Csoport beállításai"
+
+#: gtkusersetup.glade:1336
+msgid "Group properties"
+msgstr "Csoport tulajdonságai"
+
+#: gtkusersetup.glade:1358
+msgid "<b>Basic settings</b>"
+msgstr "<b>Alap beállítások</b>"
+
+#: gtkusersetup.glade:1378
+msgid "Group name:"
+msgstr "Csoport neve:"
+
+#: gtkusersetup.glade:1388
+msgid "Group ID:"
+msgstr "Csoport ID:"
+
+#: gtkusersetup.glade:1434
+msgid "<b>Group members</b>"
+msgstr "<b>Csoport tagjai</b>"
+
+#: gtkusersetup.glade:1632
+msgid "Delete group?"
+msgstr "Csoport törlése?"
+
+#: gtkusersetup.glade:1731
+msgid "Cannot delete group"
+msgstr "Nem lehet a csoportot törölni"
+
+#: gtkusersetup:208
+msgid "Password is too short. It has to be at least 5 characters long."
+msgstr "A jelszó túl rövid, legalább 5 karakter hosszú kell hogy legyen"
+
+#: gtkusersetup:211
+msgid "Password cannot include the backslash character."
+msgstr "A jelszóban nem lehet vissza-perjel karakter."
+
+#: gtkusersetup:217
+msgid "Passwords don't match"
+msgstr "A jelszavak nem egyeznek"
+
+#: gtkusersetup:226
+msgid "Username cannot be empty."
+msgstr "A felhasználónév nem lehet üres"
+
+#: gtkusersetup:229
+msgid "Username cannot exceed 31 characters"
+msgstr "A felhasználónév meghaladja a 31 karakter hosszúságot"
+
+#: gtkusersetup:232
+msgid "Username cannot include the space character."
+msgstr "A felhasználónév nem tartalmazhat szóköz karaktert."
+
+#: gtkusersetup:235
+msgid "Username cannot start with a number."
+msgstr "A felhasználónév nem kezdődhet számmal."
+
+#: gtkusersetup:238
+msgid "Username cannot start with an underscore."
+msgstr "A felhasználónév nem kezdődhet aláhúzás jellel."
+
+#: gtkusersetup:241
+msgid "Username cannot start with a dash."
+msgstr "A felhasználónév nem kezdődhet kötőjellel."
+
+#: gtkusersetup:246
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "A felhasználónév csak latin kisbetúket, számokat, kötőjelet és aláhúzás jelet tartalmazhat."
+
+#: gtkusersetup:252
+msgid "Username \"{0}\" already exists."
+msgstr "A felhasználónév \"{0}\" már létezik."
+
+#: gtkusersetup:262
+msgid "Group name cannot be empty."
+msgstr "A csoport neve nem lehet üres."
+
+#: gtkusersetup:265
+msgid "Group name cannot exceed 31 characters"
+msgstr "A csoport neve meghaladja a 31 karakter hosszúságot"
+
+#: gtkusersetup:268
+msgid "Group name cannot include the space character."
+msgstr "A csoportnév nem tartalmazhat szóköz karaktert."
+
+#: gtkusersetup:271
+msgid "Group name cannot start with a number."
+msgstr "A csoport neve nem kezdődhet számmal."
+
+#: gtkusersetup:274
+msgid "Group name cannot start with an underscore."
+msgstr "A csoport neve nem kezdődhet aláhúzás jellel.."
+
+#: gtkusersetup:277
+msgid "Group name cannot start with a dash."
+msgstr "A csoport neve nem kezdődhet kötőjellel."
+
+#: gtkusersetup:282
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "A csoport neve csak latin kisbetúket, számokat, kötőjelet és aláhúzás jelet tartalmazhat."
+
+#: gtkusersetup:288
+msgid "Group name \"{0}\" already exists."
+msgstr "A  csoport neve \"{0}\" már létezik."
+
+#: gtkusersetup:298
+msgid "Shell does not exist."
+msgstr "A parancsértelmező nem létezik"
+
+#: gtkusersetup:308
+msgid "UID {0} is assigned to another user."
+msgstr "{0} UID már másik felhasználóhoz van rendelve."
+
+#: gtkusersetup:318
+msgid "GID {0} is assigned to another group."
+msgstr "{0} GID már másik felhasználóhoz van rendelve."
+
+#: gtkusersetup:359
+msgid "User account properties for \"{0}\""
+msgstr "\"{0}\" felhasználói fiókjának tulajdonságai"
+
+#: gtkusersetup:366
+msgid "<b>Set new password</b>"
+msgstr "<b>Új jelszó beállítása</b>"
+
+#: gtkusersetup:423
+msgid "Add new user"
+msgstr "Új felhasználó hozzáadása"
+
+#: gtkusersetup:430
+msgid "<b>Set password</b>"
+msgstr "<b>Jelszó beállítása</b>"
+
+#: gtkusersetup:480
+msgid "Delete user {0}?"
+msgstr "{0} felhasználó törlése?"
+
+#: gtkusersetup:481
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "Arra készül, hogy törölje a(z) \"{0}\" felhasználó fiókját a rendszerből. Valóban folytatja?"
+
+#: gtkusersetup:482
+msgid "Completely remove user's home directory ({0}) with all its contents"
+msgstr "Teljesen eltávolítja a felhasználó munka könyvtárát ((0)), annak teljes tartalmát"
+
+#: gtkusersetup:728
+msgid "Group \"{0}\" properties"
+msgstr "\"{0}\" csoport tulajdonságai"
+
+#: gtkusersetup:747
+msgid "Add new group"
+msgstr "Új csoport hozzáadása"
+
+#: gtkusersetup:772
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Arra készül, hogy törölje a(z) \"{0}\" csoportot a rendszerből. Valóban folytatja?"
+
+#: gtkusersetup:775
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "\"(0)\" csoportot nem lehet törölni, mivel ez a (z) \"(1)\" felhasználó elsődleges csoportja. Ha a törölni kívánja a(z) \"(0)\" csoportot, akkor be kell állítania a(z) \"(1)\" felhasználónak másik elsődleges csoportot elsőként."
+
+#: gtkusersetup:902
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: gtkusersetup:903
+msgid "Real name"
+msgstr "Valódi név"
+
+#: gtkusersetup:904
+msgid "Home directory"
+msgstr "Munka könyvtár"
+
+#: gtkusersetup:936
+msgid "Member"
+msgstr "Tagság"
+
+#: gtkusersetup:937
+msgid "Group"
+msgstr "Csoport"
+
+#: gtkusersetup.desktop.in.h:1
+#: gtkusersetup-kde.desktop.in.h:1
+msgid "Users and groups"
+msgstr "Felhasználók és csoportok"
+
+#: gtkusersetup.desktop.in.h:2
+#: gtkusersetup-kde.desktop.in.h:2
+msgid "Users and groups management tool"
+msgstr "Felhasználók és csoportok kezelése"
+
