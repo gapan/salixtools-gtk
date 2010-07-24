@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
@@ -61,7 +61,7 @@ msgstr "<b>Kapcsolat információk</b>"
 
 #: gtkusersetup.glade:518
 msgid "Office extension:"
-msgstr ""
+msgstr "Munkahely további adatai:"
 
 #: gtkusersetup.glade:530
 msgid "Office information:"
@@ -115,8 +115,7 @@ msgstr "A felhasználói fiók lejárati ideje"
 msgid "Advanced"
 msgstr "Bővített"
 
-#: gtkusersetup.glade:951
-#: gtkusersetup.glade:1546
+#: gtkusersetup.glade:951 gtkusersetup.glade:1546
 msgid "Error!"
 msgstr "Hiba!"
 
@@ -304,13 +303,10 @@ msgstr "Tagság"
 msgid "Group"
 msgstr "Csoport"
 
-#: gtkusersetup.desktop.in.h:1
-#: gtkusersetup-kde.desktop.in.h:1
+#: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
 msgid "Users and groups"
 msgstr "Felhasználók és csoportok"
 
-#: gtkusersetup.desktop.in.h:2
-#: gtkusersetup-kde.desktop.in.h:2
+#: gtkusersetup.desktop.in.h:2 gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "Felhasználók és csoportok kezelése"
-
