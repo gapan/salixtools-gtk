@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-05 17:09+0300\n"
+"POT-Creation-Date: 2010-07-14 00:16+0300\n"
 "PO-Revision-Date: 2010-06-19 12:57+0100\n"
 "Last-Translator: Cyrille Pontvieux <jrd@enialis.net>\n"
 "Language-Team: French <jrd@enialis.net>\n"
@@ -21,9 +21,33 @@ msgstr ""
 msgid "Alsa default sound card"
 msgstr "Carte son par défaut d'ALSA"
 
-#: gtkalsasetup.glade:50
+#: gtkalsasetup.glade:54
 msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
 msgstr "Veuillez choisir la carte son que vous voulez définir par défaut pour ALSA pour l'ensemble du système. La session doit être redémarrée pour que les modifications soient appliquées."
+
+#: gtkalsasetup.glade:119 gtkalsasetup:125
+msgid "Sound card"
+msgstr "Noms des cartes sons"
+
+#: gtkalsasetup.glade:148
+msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
+msgstr "Vous pouvez utiliser les boutons ci-dessous pour gérer les paramètres du système pour ALSA, y compris les réglages du volume et de la sélection des sources d'entrée."
+
+#: gtkalsasetup.glade:180
+msgid "Store the current ALSA settings as the system defaults"
+msgstr "Conserver les paramètres actuels de ALSA comme les valeurs par défaut du système"
+
+#: gtkalsasetup.glade:198
+msgid "Revert current ALSA settings to the stored defaults"
+msgstr "Rétablir les paramètres actuels ALSA pour les valeurs par défaut stockées"
+
+#: gtkalsasetup.glade:216
+msgid "Clear all ALSA settings and set default values"
+msgstr "Effacer tous les réglages ALSA et définir des valeurs par défaut"
+
+#: gtkalsasetup.glade:252
+msgid "Settings"
+msgstr "Paramètres"
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
@@ -33,11 +57,7 @@ msgstr "Par défaut"
 msgid "Use the default ALSA sound card"
 msgstr "Choisissez la carte par défaut d'ALSA"
 
-#: gtkalsasetup:115
-msgid "Sound card"
-msgstr "Noms des cartes sons"
-
-#: gtkalsasetup:117
+#: gtkalsasetup:127
 msgid "Description"
 msgstr "Descriptions"
 
