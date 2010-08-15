@@ -29,22 +29,18 @@ msgid "Sound card"
 msgstr "Soundkarte"
 
 #: gtkalsasetup.glade:148
-#, fuzzy
 msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
 msgstr "Sie können die unteren Buttons benutzen um die ALSA Systemeinstellungen wie Lautstärke und Eingangsquellen zu bearbeiten."
 
 #: gtkalsasetup.glade:180
-#, fuzzy
 msgid "Store the current ALSA settings as the system defaults"
 msgstr "Speichere die aktuellen ALSA Einstellungen als Standardeinstellung"
 
 #: gtkalsasetup.glade:198
-#, fuzzy
 msgid "Revert current ALSA settings to the stored defaults"
 msgstr "Setze die aktuellen ALSA Einstellungen zurück zu den gespeicherten Standardeinstellungen"
 
 #: gtkalsasetup.glade:216
-#, fuzzy
 msgid "Clear all ALSA settings and set default values"
 msgstr "Lösche alle ALSA Einstellungen und setzte die Standardeinstellungen"
 
