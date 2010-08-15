@@ -31,7 +31,7 @@ msgstr "Soundkarte"
 #: gtkalsasetup.glade:148
 #, fuzzy
 msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
-msgstr "Du kannst die unteren Buttons benutzen um die ALSA Systemeinstellungen wie Lautstärke und Eingangsquellen zu bearbeiten."
+msgstr "Sie können die unteren Buttons benutzen um die ALSA Systemeinstellungen wie Lautstärke und Eingangsquellen zu bearbeiten."
 
 #: gtkalsasetup.glade:180
 #, fuzzy
