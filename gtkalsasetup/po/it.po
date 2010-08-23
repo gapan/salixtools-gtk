@@ -2,8 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkalsasetup package.
 # Vasile Coman <kerd@slackware.eu>, 2010.
-#
-#, fuzzy
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -21,39 +20,32 @@ msgid "Alsa default sound card"
 msgstr "Scheda audio alsa di default"
 
 #: gtkalsasetup.glade:54
-msgid ""
-"Please choose the sound card that you want to set as default for ALSA "
-"systemwide. The session needs to be restarted for the changes to be applied."
-msgstr ""
-"Scegliere la scheda audio che si desidera impostare come predefinita per "
-"alsa per tutti gli utenti.La sessione deve essere riavviata affinche' le "
-"modifiche siano applicate."
+msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
+msgstr "Scegliere la scheda audio che si desidera impostare come predefinita per alsa per tutti gli utenti.La sessione deve essere riavviata affinche' le modifiche siano applicate."
 
 #: gtkalsasetup.glade:119 gtkalsasetup:125
 msgid "Sound card"
 msgstr "Scheda audio"
 
 #: gtkalsasetup.glade:148
-msgid ""
-"You can use the buttons below to manage the system settings for ALSA, "
-"including volume settings and selection of input sources. "
-msgstr ""
+msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
+msgstr "Puoi utilizzare i pulsanti di seguito per gestire le impostazioni di sistema per ALSA, incluse le impostazioni del volume e la selezione di fonti di input."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
-msgstr ""
+msgstr "Memorizza le impostazioni ALSA correnti come impostazioni di sistema predefinite"
 
 #: gtkalsasetup.glade:198
 msgid "Revert current ALSA settings to the stored defaults"
-msgstr ""
+msgstr "Riporta le impostazioni ALSA correnti alle impostazioni predefinite memorizzate"
 
 #: gtkalsasetup.glade:216
 msgid "Clear all ALSA settings and set default values"
-msgstr ""
+msgstr "Elimina tutte le impostazioni ALSA e imposta valori predefiniti"
 
 #: gtkalsasetup.glade:252
 msgid "Settings"
-msgstr ""
+msgstr "Impostazioni"
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
