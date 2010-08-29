@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 13:51+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+
+#: gtkclocksetup.glade:7
+msgid "Date and time settings"
+msgstr "時間と日付の設定"
+
+#: gtkclocksetup.glade:26
+msgid "Keep clock synchronized with internet servers"
+msgstr "時計をインターネットで常にシンクロナイズする。"
+
+#: gtkclocksetup.glade:51
+msgid "Synchronize now"
+msgstr "シンクロナイズする。"
+
+#: gtkclocksetup.glade:89
+#: gtkclocksetup:188
+#: gtkclocksetup:221
+msgid "Time zone:"
+msgstr "時間帯"
+
+#: gtkclocksetup.glade:97
+msgid "Select time zone..."
+msgstr "時間帯を設定する"
+
+#: gtkclocksetup.glade:130
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "ハードウェアの時計は、Coordinated Universal Time (UTC)にセットされています。"
+
+#: gtkclocksetup.glade:134
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "ほとんどのホーム用またはビジネス用のコンピュータのハードウェアの時計は、ローカルタイムにセットされています。それとは対象にウェブ・サーバーなどは、ほとんどUTCにセットされています。よくわからない場合は、このボックスは、ティックしないでください。"
+
+#: gtkclocksetup.glade:252
+msgid "Time:"
+msgstr "時間："
+
+#: gtkclocksetup.glade:286
+msgid "Date:"
+msgstr "日付："
+
+#: gtkclocksetup.glade:371
+msgid "Select time zone"
+msgstr "時間帯を選ぶ"
+
+#: gtkclocksetup.glade:392
+msgid "Please select your time zone:"
+msgstr "時間帯を選んでください。"
+
+#: gtkclocksetup:237
+msgid "General area"
+msgstr "地域"
+
+#: gtkclocksetup:238
+msgid "Location"
+msgstr "都市"
+
+#: gtkclocksetup.desktop.in.h:1
+#: gtkclocksetup-kde.desktop.in.h:1
+msgid "System clock"
+msgstr "システム時計"
+
+#: gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock configuration tool"
+msgstr "システム時計設定用のツール"
+
