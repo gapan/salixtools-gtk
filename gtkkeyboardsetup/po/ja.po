@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-29 13:53+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+
+#: gtkkeyboardsetup.glade:21
+msgid "Keyboard settings"
+msgstr "キーボード設定"
+
+#: gtkkeyboardsetup.glade:53
+msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
+msgstr "キーボードタイプとマッピング、数字キーパッド、SCIMの設定を行ってください。"
+
+#: gtkkeyboardsetup.glade:147
+msgid "Enable numlock when the system is started"
+msgstr "数字キーパッドをデフォでONにする"
+
+#: gtkkeyboardsetup.glade:162
+msgid "Enable SCIM when the system is started"
+msgstr "SCIMをデフォでONにする。"
+
+#: gtkkeyboardsetup.glade:166
+msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
+msgstr "SCIMは、日本語などのアジアの言語をタイプできるようにするアプリです。"
+
+#: gtkkeyboardsetup:161
+msgid "Keyboard type"
+msgstr "キーボード・タイプ"
+
+#: gtkkeyboardsetup:165
+msgid "Keyboard map"
+msgstr "キーボード・マップ"
+
+#: gtkkeyboardsetup.desktop.in.h:1
+#: gtkkeyboardsetup-kde.desktop.in.h:1
+msgid "Keyboard"
+msgstr "キーボード"
+
+#: gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup-kde.desktop.in.h:2
+msgid "Keyboard configuration tool"
+msgstr "キーボード設定用ツール"
+
