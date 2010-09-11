@@ -1,9 +1,9 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:51+0300\n"
+"POT-Creation-Date: 2010-09-11 13:05+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team: <akuna@free.fr>\n"
@@ -26,7 +26,7 @@ msgstr "Maintenir la synchronisation de l'horloge à Internet"
 msgid "Synchronize now"
 msgstr "Synchroniser "
 
-#: gtkclocksetup.glade:89 gtkclocksetup:188 gtkclocksetup:221
+#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
 msgstr "Fuseau horaire:"
 
@@ -36,11 +36,20 @@ msgstr "Sélectionner fuseau..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "L'horloge interne de votre ordinateur est réglée sur le Temps Universel Coordonné (UTC)"
+msgstr ""
+"L'horloge interne de votre ordinateur est réglée sur le Temps Universel "
+"Coordonné (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "Les horloges internes des ordinateurs de bureau sont généralement réglés sur l'heure locale, tandis que les horloges internes de la majorité des serveurs Internet sont plutôt réglés sur l'UTC. Veuillez ne pas cocher cette case si vous n'en êtes pas sûr."
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not check this box if you are not sure."
+msgstr ""
+"Les horloges internes des ordinateurs de bureau sont généralement réglés sur "
+"l'heure locale, tandis que les horloges internes de la majorité des serveurs "
+"Internet sont plutôt réglés sur l'UTC. Veuillez ne pas cocher cette case si "
+"vous n'en êtes pas sûr."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -50,26 +59,31 @@ msgstr "Heure:"
 msgid "Date:"
 msgstr "Date:"
 
-#: gtkclocksetup.glade:371
+#: gtkclocksetup.glade:415
 msgid "Select time zone"
 msgstr "Paramétrage du fuseau horaire"
 
-#: gtkclocksetup.glade:392
+#: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
 msgstr "Veuillez sélectionner votre fuseau horaire:"
 
-#: gtkclocksetup:237
+#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock configuration tool"
+msgstr "Utilitaire de configuration de l'horloge système"
+
+#: gtkclocksetup.glade:1292
+msgid "translator-credits"
+msgstr ""
+
+#: gtkclocksetup:251
 msgid "General area"
 msgstr "Région"
 
-#: gtkclocksetup:238
+#: gtkclocksetup:252
 msgid "Location"
 msgstr "Emplacement"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
 msgstr "Horloge système"
-
-#: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
-msgid "System clock configuration tool"
-msgstr "Utilitaire de configuration de l'horloge système"

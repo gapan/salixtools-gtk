@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:51+0300\n"
+"POT-Creation-Date: 2010-09-11 13:05+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "Synchronize now"
 msgstr ""
 
-#: gtkclocksetup.glade:89 gtkclocksetup:188 gtkclocksetup:221
+#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
 msgstr ""
 
@@ -55,26 +55,31 @@ msgstr ""
 msgid "Date:"
 msgstr ""
 
-#: gtkclocksetup.glade:371
+#: gtkclocksetup.glade:415
 msgid "Select time zone"
 msgstr ""
 
-#: gtkclocksetup.glade:392
+#: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
 msgstr ""
 
-#: gtkclocksetup:237
+#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock configuration tool"
+msgstr ""
+
+#: gtkclocksetup.glade:1292
+msgid "translator-credits"
+msgstr ""
+
+#: gtkclocksetup:251
 msgid "General area"
 msgstr ""
 
-#: gtkclocksetup:238
+#: gtkclocksetup:252
 msgid "Location"
 msgstr ""
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
-msgstr ""
-
-#: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
-msgid "System clock configuration tool"
 msgstr ""

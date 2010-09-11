@@ -2,12 +2,12 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkclocksetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:51+0300\n"
+"POT-Creation-Date: 2010-09-11 13:05+0300\n"
 "PO-Revision-Date: 2010-05-05 16:26+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: Dutch <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "Houdt de klok gesynchroniseerd met internet servers"
 msgid "Synchronize now"
 msgstr "Nu synchroniseren"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:188 gtkclocksetup:221
+#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
 msgstr "Tijdzone:"
 
@@ -40,8 +40,15 @@ msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Hardwareklok is ingesteld op Coordinated Universal Time (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "Hardwareklokken in de meeste huis- of bedrijfscomputers zijn ingesteld op het gebruik van lokale tijd, terwijl de hardware klok op de meeste webservers waarschijnlijk ingesteld zijn op UTC. Vul dit selectievakje niet als u niet zeker bent."
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not check this box if you are not sure."
+msgstr ""
+"Hardwareklokken in de meeste huis- of bedrijfscomputers zijn ingesteld op "
+"het gebruik van lokale tijd, terwijl de hardware klok op de meeste "
+"webservers waarschijnlijk ingesteld zijn op UTC. Vul dit selectievakje niet "
+"als u niet zeker bent."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -51,26 +58,31 @@ msgstr "Tijd:"
 msgid "Date:"
 msgstr "Datum:"
 
-#: gtkclocksetup.glade:371
+#: gtkclocksetup.glade:415
 msgid "Select time zone"
 msgstr "Selecteer een tijdzone"
 
-#: gtkclocksetup.glade:392
+#: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
 msgstr "Selecteer uw tijdzone:"
 
-#: gtkclocksetup:237
+#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock configuration tool"
+msgstr "Systeemklok configuratietool"
+
+#: gtkclocksetup.glade:1292
+msgid "translator-credits"
+msgstr ""
+
+#: gtkclocksetup:251
 msgid "General area"
 msgstr "Algemeen gebied"
 
-#: gtkclocksetup:238
+#: gtkclocksetup:252
 msgid "Location"
 msgstr "Locatie"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
 msgstr "Systeemklok"
-
-#: gtkclocksetup.desktop.in.h:2 gtkclocksetup-kde.desktop.in.h:2
-msgid "System clock configuration tool"
-msgstr "Systeemklok configuratietool"

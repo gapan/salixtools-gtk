@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-26 12:14+0200\n"
+"POT-Creation-Date: 2010-09-11 13:05+0300\n"
 "PO-Revision-Date: 2010-04-20 13:18+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -15,31 +15,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../gtkclocksetup.glade:7
+#: gtkclocksetup.glade:7
 msgid "Date and time settings"
 msgstr "Indstillinger for dato og tid"
 
-#: ../gtkclocksetup.glade:26
+#: gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
 msgstr "Hold uret synkroniseret med internetservere"
 
-#: ../gtkclocksetup.glade:51
+#: gtkclocksetup.glade:51
 msgid "Synchronize now"
 msgstr "Synkronisér nu"
 
-#: ../gtkclocksetup.glade:89 ../gtkclocksetup:180 ../gtkclocksetup:216
+#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
 msgstr "Tidszone:"
 
-#: ../gtkclocksetup.glade:97
+#: gtkclocksetup.glade:97
 msgid "Select time zone..."
 msgstr "Vælg tidszone..."
 
-#: ../gtkclocksetup.glade:130
+#: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Hardwareur er sat til Koordineret Universel Tid (UTC)"
 
-#: ../gtkclocksetup.glade:134
+#: gtkclocksetup.glade:134
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
@@ -49,26 +49,39 @@ msgstr ""
 "lokaltid, mens hardwareuret i de fleste webservere oftest er sat til UTC. "
 "Sæt ikke kryds i denne boks, hvis du ikke er sikker."
 
-#: ../gtkclocksetup.glade:252
+#: gtkclocksetup.glade:252
 msgid "Time:"
 msgstr "Tid:"
 
-#: ../gtkclocksetup.glade:286
+#: gtkclocksetup.glade:286
 msgid "Date:"
 msgstr "Dato:"
 
-#: ../gtkclocksetup.glade:371
+#: gtkclocksetup.glade:415
 msgid "Select time zone"
 msgstr "Vælg tidszone"
 
-#: ../gtkclocksetup.glade:392
+#: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
 msgstr "Vælg venligst din tidszone:"
 
-#: ../gtkclocksetup:232
+#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock configuration tool"
+msgstr ""
+
+#: gtkclocksetup.glade:1292
+msgid "translator-credits"
+msgstr ""
+
+#: gtkclocksetup:251
 msgid "General area"
 msgstr "Generelt område"
 
-#: ../gtkclocksetup:233
+#: gtkclocksetup:252
 msgid "Location"
 msgstr "Sted"
+
+#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+msgid "System clock"
+msgstr ""

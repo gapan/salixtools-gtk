@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:51+0300\n"
+"POT-Creation-Date: 2010-09-11 13:05+0300\n"
 "PO-Revision-Date: 2010-07-22 18:20+0100\n"
 "Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
 "Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
@@ -27,9 +27,7 @@ msgstr "Az óra szinkronizálása internetes szerverhez"
 msgid "Synchronize now"
 msgstr "Szinkronizálás most"
 
-#: gtkclocksetup.glade:89
-#: gtkclocksetup:188
-#: gtkclocksetup:221
+#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
 msgstr "Időzóna:"
 
@@ -42,8 +40,14 @@ msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "A hardver óra beállítása a Greenwichi időhöz (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "A hardver óra a legtöbb otthoni vagy munkahelyi számítógépen a helyi időre van állítva, míg a web szerverek használják a hardver óra beállítását UTC szerint. Ha nem biztos benne, akkor hagyja üresen."
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not check this box if you are not sure."
+msgstr ""
+"A hardver óra a legtöbb otthoni vagy munkahelyi számítógépen a helyi időre "
+"van állítva, míg a web szerverek használják a hardver óra beállítását UTC "
+"szerint. Ha nem biztos benne, akkor hagyja üresen."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -53,29 +57,31 @@ msgstr "Idő:"
 msgid "Date:"
 msgstr "Dátum:"
 
-#: gtkclocksetup.glade:371
+#: gtkclocksetup.glade:415
 msgid "Select time zone"
 msgstr "Időzóna választás"
 
-#: gtkclocksetup.glade:392
+#: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
 msgstr "Kérem válasszon időzónát:"
 
-#: gtkclocksetup:237
-msgid "General area"
-msgstr "Általános terület"
-
-#: gtkclocksetup:238
-msgid "Location"
-msgstr "Földrajzi hely"
-
-#: gtkclocksetup.desktop.in.h:1
-#: gtkclocksetup-kde.desktop.in.h:1
-msgid "System clock"
-msgstr "Rendszer óra"
-
-#: gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "Rendszer óra beállító eszköz"
 
+#: gtkclocksetup.glade:1292
+msgid "translator-credits"
+msgstr ""
+
+#: gtkclocksetup:251
+msgid "General area"
+msgstr "Általános terület"
+
+#: gtkclocksetup:252
+msgid "Location"
+msgstr "Földrajzi hely"
+
+#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+msgid "System clock"
+msgstr "Rendszer óra"
