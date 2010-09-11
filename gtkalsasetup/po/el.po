@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkalsasetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-14 00:16+0300\n"
-"PO-Revision-Date: 2010-07-14 01:02+0200\n"
+"POT-Creation-Date: 2010-09-11 12:01+0300\n"
+"PO-Revision-Date: 2010-09-11 12:02+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgid "Please choose the sound card that you want to set as default for ALSA sys
 msgstr "Παρακαλούμε επιλέξτε την κάρτα ήχου που θα χρησιμοποιείται ως προεπιλεγμένη από τη ALSA για όλο το σύστημα. Θα πρέπει να γίνει επανεκκίνηση της συνεδρίας για να εφαρμοστούν οι αλλαγές."
 
 #: gtkalsasetup.glade:119
-#: gtkalsasetup:125
+#: gtkalsasetup:135
 msgid "Sound card"
 msgstr "Κάρτα ήχου"
 
@@ -51,6 +51,18 @@ msgstr "Εκκαθάριση όλων των ρυθμίσεων της ALSA κα
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
+#: gtkalsasetup.glade:363
+msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
+msgstr "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
+
+#: gtkalsasetup.glade:364
+msgid "A tool to manage ALSA sound cards"
+msgstr "Διαχείριση των καρτών ήχου ALSA"
+
+#: gtkalsasetup.glade:1043
+msgid "translator-credits"
+msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
+
 #: gtkalsasetup:22
 #: gtkalsasetup:40
 msgid "Default"
@@ -60,7 +72,7 @@ msgstr "Προεπιλογή"
 msgid "Use the default ALSA sound card"
 msgstr "Χρησιμοποιήστε την προεπιλεγμένη κάρτα ήχου ALSA"
 
-#: gtkalsasetup:127
+#: gtkalsasetup:137
 msgid "Description"
 msgstr "Περιγραφή"
 

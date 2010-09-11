@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-14 00:16+0300\n"
+"POT-Creation-Date: 2010-09-11 12:01+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
 "Language-Team: \n"
@@ -17,17 +17,24 @@ msgid "Alsa default sound card"
 msgstr "デフォルトのALSAサウンド・カード"
 
 #: gtkalsasetup.glade:54
-msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
-msgstr "システム一般に設定したいデフォのALSAサウンド・カードを選んでください。新しい設定を使用するには、再起動が必要です。"
+msgid ""
+"Please choose the sound card that you want to set as default for ALSA "
+"systemwide. The session needs to be restarted for the changes to be applied."
+msgstr ""
+"システム一般に設定したいデフォのALSAサウンド・カードを選んでください。新しい"
+"設定を使用するには、再起動が必要です。"
 
-#: gtkalsasetup.glade:119
-#: gtkalsasetup:125
+#: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
 msgstr "サウンド・カード"
 
 #: gtkalsasetup.glade:148
-msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
-msgstr "ボリュームの設定、インプット・ソースの設定を含むシステム一般のALSAの設定は、下のボタンを使うことで可能です。"
+msgid ""
+"You can use the buttons below to manage the system settings for ALSA, "
+"including volume settings and selection of input sources. "
+msgstr ""
+"ボリュームの設定、インプット・ソースの設定を含むシステム一般のALSAの設定は、"
+"下のボタンを使うことで可能です。"
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
@@ -45,8 +52,20 @@ msgstr "全てのALSA設定を消去し、デフォに戻す。"
 msgid "Settings"
 msgstr "設定"
 
-#: gtkalsasetup:22
-#: gtkalsasetup:40
+#: gtkalsasetup.glade:363
+msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
+msgstr ""
+
+#: gtkalsasetup.glade:364
+#, fuzzy
+msgid "A tool to manage ALSA sound cards"
+msgstr "システム一般用のALSAサウンド・カードを選ぶ。"
+
+#: gtkalsasetup.glade:1043
+msgid "translator-credits"
+msgstr ""
+
+#: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
 msgstr "デフォルト"
 
@@ -54,17 +73,14 @@ msgstr "デフォルト"
 msgid "Use the default ALSA sound card"
 msgstr "デフォのALSAサウンド・カードを使用する"
 
-#: gtkalsasetup:127
+#: gtkalsasetup:137
 msgid "Description"
 msgstr "説明"
 
-#: gtkalsasetup.desktop.in.h:1
-#: gtkalsasetup-kde.desktop.in.h:1
+#: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
 msgid "ALSA sound card"
 msgstr "ALSAサウンド・カード"
 
-#: gtkalsasetup.desktop.in.h:2
-#: gtkalsasetup-kde.desktop.in.h:2
+#: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
 msgstr "システム一般用のALSAサウンド・カードを選ぶ。"
-

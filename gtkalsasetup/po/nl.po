@@ -2,17 +2,17 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkalsasetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-14 00:16+0300\n"
+"POT-Creation-Date: 2010-09-11 12:01+0300\n"
 "PO-Revision-Date: 2010-07-16 08:52+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: Dutch <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: gtkalsasetup.glade:15
@@ -20,16 +20,26 @@ msgid "Alsa default sound card"
 msgstr "Alsa standaard geluidskaart"
 
 #: gtkalsasetup.glade:54
-msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
-msgstr "Kies alstublieft de geluidskaart die u wilt instellen als standaard voor ALSA in het gehele systeem. De sessie moet opnieuw worden gestart om de wijzigingen toe te passen."
+msgid ""
+"Please choose the sound card that you want to set as default for ALSA "
+"systemwide. The session needs to be restarted for the changes to be applied."
+msgstr ""
+"Kies alstublieft de geluidskaart die u wilt instellen als standaard voor "
+"ALSA in het gehele systeem. De sessie moet opnieuw worden gestart om de "
+"wijzigingen toe te passen."
 
-#: gtkalsasetup.glade:119 gtkalsasetup:125
+#: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
 msgstr "Geluidskaart"
 
 #: gtkalsasetup.glade:148
-msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
-msgstr "U kunt van de onderstaande knoppen gebruik maken om de systeeminstellingen voor ALSA, alsmede volume-instellingen en de selectie van invoerbronnen te beheren."
+msgid ""
+"You can use the buttons below to manage the system settings for ALSA, "
+"including volume settings and selection of input sources. "
+msgstr ""
+"U kunt van de onderstaande knoppen gebruik maken om de systeeminstellingen "
+"voor ALSA, alsmede volume-instellingen en de selectie van invoerbronnen te "
+"beheren."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
@@ -47,6 +57,19 @@ msgstr "Wis alle ALSA instellingen en stel de standaardwaarden in"
 msgid "Settings"
 msgstr "Instellingen"
 
+#: gtkalsasetup.glade:363
+msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
+msgstr ""
+
+#: gtkalsasetup.glade:364
+#, fuzzy
+msgid "A tool to manage ALSA sound cards"
+msgstr "Selecteer de ALSA geluidskaart voor het gehele systeem "
+
+#: gtkalsasetup.glade:1043
+msgid "translator-credits"
+msgstr ""
+
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
 msgstr "Default"
@@ -55,7 +78,7 @@ msgstr "Default"
 msgid "Use the default ALSA sound card"
 msgstr "Gebruik de standaard ALSA geluidskaart"
 
-#: gtkalsasetup:127
+#: gtkalsasetup:137
 msgid "Description"
 msgstr "Beschrijving"
 

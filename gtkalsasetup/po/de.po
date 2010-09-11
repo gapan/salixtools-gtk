@@ -2,12 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkalsasetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-14 00:16+0300\n"
+"POT-Creation-Date: 2010-09-11 12:01+0300\n"
 "PO-Revision-Date: 2010-07-19 14:13+0100\n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: \n"
@@ -21,16 +21,25 @@ msgid "Alsa default sound card"
 msgstr "ALSA Standardsoundkarte"
 
 #: gtkalsasetup.glade:54
-msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
-msgstr "Bitte wählen Sie die Soundkarte, die Sie systemweit als Standard für ALSA verwenden wollen. Ihre Sitzung muss neu gestartet werden, um die Änderungen zu übernehmen."
+msgid ""
+"Please choose the sound card that you want to set as default for ALSA "
+"systemwide. The session needs to be restarted for the changes to be applied."
+msgstr ""
+"Bitte wählen Sie die Soundkarte, die Sie systemweit als Standard für ALSA "
+"verwenden wollen. Ihre Sitzung muss neu gestartet werden, um die Änderungen "
+"zu übernehmen."
 
-#: gtkalsasetup.glade:119 gtkalsasetup:125
+#: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
 msgstr "Soundkarte"
 
 #: gtkalsasetup.glade:148
-msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
-msgstr "Sie können die unteren Buttons benutzen um die ALSA Systemeinstellungen wie Lautstärke und Eingangsquellen zu bearbeiten."
+msgid ""
+"You can use the buttons below to manage the system settings for ALSA, "
+"including volume settings and selection of input sources. "
+msgstr ""
+"Sie können die unteren Buttons benutzen um die ALSA Systemeinstellungen wie "
+"Lautstärke und Eingangsquellen zu bearbeiten."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
@@ -38,7 +47,9 @@ msgstr "Speichere die aktuellen ALSA Einstellungen als Standardeinstellung"
 
 #: gtkalsasetup.glade:198
 msgid "Revert current ALSA settings to the stored defaults"
-msgstr "Setze die aktuellen ALSA Einstellungen zurück zu den gespeicherten Standardeinstellungen"
+msgstr ""
+"Setze die aktuellen ALSA Einstellungen zurück zu den gespeicherten "
+"Standardeinstellungen"
 
 #: gtkalsasetup.glade:216
 msgid "Clear all ALSA settings and set default values"
@@ -48,6 +59,19 @@ msgstr "Lösche alle ALSA Einstellungen und setzte die Standardeinstellungen"
 msgid "Settings"
 msgstr "Einstellungen"
 
+#: gtkalsasetup.glade:363
+msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
+msgstr ""
+
+#: gtkalsasetup.glade:364
+#, fuzzy
+msgid "A tool to manage ALSA sound cards"
+msgstr "Wählen Sie die systemweite ALSA Soundkarte"
+
+#: gtkalsasetup.glade:1043
+msgid "translator-credits"
+msgstr ""
+
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
 msgstr "Standard"
@@ -56,7 +80,7 @@ msgstr "Standard"
 msgid "Use the default ALSA sound card"
 msgstr "Standard Alsa Soundkarte verwenden"
 
-#: gtkalsasetup:127
+#: gtkalsasetup:137
 msgid "Description"
 msgstr "Beschreibung"
 

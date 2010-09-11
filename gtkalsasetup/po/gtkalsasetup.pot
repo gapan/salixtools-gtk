@@ -8,12 +8,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-14 00:16+0300\n"
+"POT-Creation-Date: 2010-09-11 12:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: gtkalsasetup.glade:15
@@ -26,7 +26,7 @@ msgid ""
 "systemwide. The session needs to be restarted for the changes to be applied."
 msgstr ""
 
-#: gtkalsasetup.glade:119 gtkalsasetup:125
+#: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
 msgstr ""
 
@@ -52,6 +52,18 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
+#: gtkalsasetup.glade:363
+msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
+msgstr ""
+
+#: gtkalsasetup.glade:364
+msgid "A tool to manage ALSA sound cards"
+msgstr ""
+
+#: gtkalsasetup.glade:1043
+msgid "translator-credits"
+msgstr ""
+
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
 msgstr ""
@@ -60,7 +72,7 @@ msgstr ""
 msgid "Use the default ALSA sound card"
 msgstr ""
 
-#: gtkalsasetup:127
+#: gtkalsasetup:137
 msgid "Description"
 msgstr ""
 

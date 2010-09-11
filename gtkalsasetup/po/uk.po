@@ -2,35 +2,44 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: ttt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-14 00:16+0300\n"
+"POT-Creation-Date: 2010-09-11 12:01+0300\n"
 "PO-Revision-Date: 2010-05-11 18:39+0100\n"
 "Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\\n\\n\\n\\n\\n\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\\n\\n\\n\\n\\n\n"
 
 #: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
 msgstr "Звукова карта ALSA по замовчуванню"
 
 #: gtkalsasetup.glade:54
-msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
-msgstr "Виберіть звукову карту, яка буде використовуватися як звукова карта ALSA для всієї системи. Для впровадження змін сесію потрібно перезапустити."
+msgid ""
+"Please choose the sound card that you want to set as default for ALSA "
+"systemwide. The session needs to be restarted for the changes to be applied."
+msgstr ""
+"Виберіть звукову карту, яка буде використовуватися як звукова карта ALSA для "
+"всієї системи. Для впровадження змін сесію потрібно перезапустити."
 
-#: gtkalsasetup.glade:119 gtkalsasetup:125
+#: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
 msgstr "Звукова карта"
 
 #: gtkalsasetup.glade:148
-msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
-msgstr "Ви можете використати кнопки нижче для керування сисетмними налаштуваннями для ALSA, включаючи налаштування гучності і вибору вхідного джерела."
+msgid ""
+"You can use the buttons below to manage the system settings for ALSA, "
+"including volume settings and selection of input sources. "
+msgstr ""
+"Ви можете використати кнопки нижче для керування сисетмними налаштуваннями "
+"для ALSA, включаючи налаштування гучності і вибору вхідного джерела."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
@@ -48,6 +57,19 @@ msgstr "Витерти всі налаштування ALSA і встанови�
 msgid "Settings"
 msgstr "Налаштування"
 
+#: gtkalsasetup.glade:363
+msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
+msgstr ""
+
+#: gtkalsasetup.glade:364
+#, fuzzy
+msgid "A tool to manage ALSA sound cards"
+msgstr "Вибрати звукову карту ALSA для всієї системи"
+
+#: gtkalsasetup.glade:1043
+msgid "translator-credits"
+msgstr ""
+
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
 msgstr "Типово"
@@ -56,7 +78,7 @@ msgstr "Типово"
 msgid "Use the default ALSA sound card"
 msgstr "Використати типову звукову карту ALSA"
 
-#: gtkalsasetup:127
+#: gtkalsasetup:137
 msgid "Description"
 msgstr "Опис"
 
