@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkhostsetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-19 10:28+0300\n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
 "PO-Revision-Date: 2010-08-07 20:03-0300\n"
 "Last-Translator: seacat <seacat.lang@gmail.com>\n"
 "Language-Team: seacat <seacat.lang@gmail.com>\n"
@@ -17,8 +17,7 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 
-#: gtkhostsetup.glade:24
-#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
 msgstr "Nombres de host"
@@ -27,15 +26,11 @@ msgstr "Nombres de host"
 msgid "<b>This computer:</b>"
 msgstr "<b>Esta computadora:</b>"
 
-#: gtkhostsetup.glade:88
-#: gtkhostsetup.glade:364
-#: gtkhostsetup.glade:596
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
 msgstr "Nombre del host:"
 
-#: gtkhostsetup.glade:95
-#: gtkhostsetup.glade:375
-#: gtkhostsetup.glade:607
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
 msgstr "Dominio:"
 
@@ -43,24 +38,30 @@ msgstr "Dominio:"
 msgid "<b>Other hosts:</b>"
 msgstr "<b>Otros hosts:</b>"
 
-#: gtkhostsetup.glade:329
+#: gtkhostsetup.glade:369
 msgid "Add host"
 msgstr "Agregar un host"
 
-#: gtkhostsetup.glade:357
-#: gtkhostsetup.glade:589
+#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
 msgstr "Dirección IP:"
 
-#: gtkhostsetup.glade:474
-#: gtkhostsetup.glade:706
-#: gtkhostsetup.glade:793
+#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
 msgid "Error"
 msgstr "Error"
 
-#: gtkhostsetup.glade:561
+#: gtkhostsetup.glade:602
 msgid "Edit host"
 msgstr "Editar el host"
+
+#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "Configurar los nombres de host del sistema"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr ""
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -92,26 +93,25 @@ msgstr "La dirección IP no es válida."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr "Los nombres de host solamente pueden constar de letras latinas, números o guiones."
+msgstr ""
+"Los nombres de host solamente pueden constar de letras latinas, números o "
+"guiones."
 
 #: gtkhostsetup:90
-msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr "Los dominios solamente pueden constar de letras latinas, números, guiones o puntos."
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr ""
+"Los dominios solamente pueden constar de letras latinas, números, guiones o "
+"puntos."
 
-#: gtkhostsetup:274
+#: gtkhostsetup:284
 msgid "IP address"
 msgstr "Dirección IP"
 
-#: gtkhostsetup:275
+#: gtkhostsetup:285
 msgid "Hostname"
 msgstr "Nombre del host"
 
-#: gtkhostsetup:276
+#: gtkhostsetup:286
 msgid "Domain"
 msgstr "Dominio"
-
-#: gtkhostsetup.desktop.in.h:1
-#: gtkhostsetup-kde.desktop.in.h:1
-msgid "Configure the system hostnames"
-msgstr "Configurar los nombres de host del sistema"
-

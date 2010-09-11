@@ -2,19 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: ttt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-11 18:37+0200\n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
 "PO-Revision-Date: 2010-05-11 18:39+0100\n"
 "Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
 "Language-Team: Ukrainian <translation@linux.org.ua>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\\n\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\\n\n"
 
 #: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
@@ -25,11 +26,11 @@ msgstr "Назва сервера"
 msgid "<b>This computer:</b>"
 msgstr "<b>Цей комп’ютер:</b>"
 
-#: gtkhostsetup.glade:88 gtkhostsetup.glade:364 gtkhostsetup.glade:596
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
 msgstr "Назва сервера:"
 
-#: gtkhostsetup.glade:95 gtkhostsetup.glade:375 gtkhostsetup.glade:607
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
 msgstr "Домен:"
 
@@ -37,21 +38,30 @@ msgstr "Домен:"
 msgid "<b>Other hosts:</b>"
 msgstr "<b>Інші сервери:</b>"
 
-#: gtkhostsetup.glade:329
+#: gtkhostsetup.glade:369
 msgid "Add host"
 msgstr "Додати сервер"
 
-#: gtkhostsetup.glade:357 gtkhostsetup.glade:589
+#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
 msgstr "IP адреса:"
 
-#: gtkhostsetup.glade:474 gtkhostsetup.glade:706 gtkhostsetup.glade:793
+#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
 msgid "Error"
 msgstr "Помилка"
 
-#: gtkhostsetup.glade:561
+#: gtkhostsetup.glade:602
 msgid "Edit host"
 msgstr "Редагувати сервер"
+
+#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "Конфігурація системних назв серверів"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr ""
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -83,24 +93,22 @@ msgstr "Неправильна адреса IP."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr "Назва сервера може складатися тільки з латинських літер, чисел та тире."
+msgstr ""
+"Назва сервера може складатися тільки з латинських літер, чисел та тире."
 
 #: gtkhostsetup:90
-msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
 msgstr "Домен може складатися тільки з латинських літер, чисел та тире."
 
-#: gtkhostsetup:274
+#: gtkhostsetup:284
 msgid "IP address"
 msgstr "IP адреса"
 
-#: gtkhostsetup:275
+#: gtkhostsetup:285
 msgid "Hostname"
 msgstr "Назва сервера"
 
-#: gtkhostsetup:276
+#: gtkhostsetup:286
 msgid "Domain"
 msgstr "Домен"
-
-#: gtkhostsetup.desktop.in.h:1 gtkhostsetup-kde.desktop.in.h:1
-msgid "Configure the system hostnames"
-msgstr "Конфігурація системних назв серверів"

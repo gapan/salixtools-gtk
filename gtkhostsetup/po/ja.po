@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-19 10:28+0300\n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
 "Language-Team: \n"
@@ -12,8 +12,7 @@ msgstr ""
 "X-Poedit-Language: Japanese\n"
 "X-Poedit-Country: JAPAN\n"
 
-#: gtkhostsetup.glade:24
-#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
 msgstr "ホストネーム"
@@ -22,15 +21,11 @@ msgstr "ホストネーム"
 msgid "<b>This computer:</b>"
 msgstr "<b>このコンピュータ:</b>"
 
-#: gtkhostsetup.glade:88
-#: gtkhostsetup.glade:364
-#: gtkhostsetup.glade:596
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
 msgstr "ホストネーム："
 
-#: gtkhostsetup.glade:95
-#: gtkhostsetup.glade:375
-#: gtkhostsetup.glade:607
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
 msgstr "ドメイン："
 
@@ -38,24 +33,30 @@ msgstr "ドメイン："
 msgid "<b>Other hosts:</b>"
 msgstr "<b>他のホスト:</b>"
 
-#: gtkhostsetup.glade:329
+#: gtkhostsetup.glade:369
 msgid "Add host"
 msgstr "ホストを加える"
 
-#: gtkhostsetup.glade:357
-#: gtkhostsetup.glade:589
+#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
 msgstr "IPアドレス:"
 
-#: gtkhostsetup.glade:474
-#: gtkhostsetup.glade:706
-#: gtkhostsetup.glade:793
+#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
 msgid "Error"
 msgstr "エラー"
 
-#: gtkhostsetup.glade:561
+#: gtkhostsetup.glade:602
 msgid "Edit host"
 msgstr "ホストを修正する"
+
+#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "システムのホストネーム設定"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr ""
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -87,26 +88,24 @@ msgstr "IPアドレスが、間違っています。"
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr "ホストネームをつけるには、ラテン文字、数字またはハイフン以外の文字は使えません。"
+msgstr ""
+"ホストネームをつけるには、ラテン文字、数字またはハイフン以外の文字は使えませ"
+"ん。"
 
 #: gtkhostsetup:90
-msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr "ドメインの入力には、ラテン文字、数字またはハイフン以外の文字は使えません。"
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr ""
+"ドメインの入力には、ラテン文字、数字またはハイフン以外の文字は使えません。"
 
-#: gtkhostsetup:274
+#: gtkhostsetup:284
 msgid "IP address"
 msgstr "IPアドレス"
 
-#: gtkhostsetup:275
+#: gtkhostsetup:285
 msgid "Hostname"
 msgstr "ホストネーム"
 
-#: gtkhostsetup:276
+#: gtkhostsetup:286
 msgid "Domain"
 msgstr "ドメイン"
-
-#: gtkhostsetup.desktop.in.h:1
-#: gtkhostsetup-kde.desktop.in.h:1
-msgid "Configure the system hostnames"
-msgstr "システムのホストネーム設定"
-

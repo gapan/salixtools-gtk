@@ -2,12 +2,12 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkhostsetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-05 17:09+0300\n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
 "PO-Revision-Date: 2010-07-21 17:15+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: Dutch <LL@li.org>\n"
@@ -24,11 +24,11 @@ msgstr "Host namen"
 msgid "<b>This computer:</b>"
 msgstr "<b>Deze computer:</b>"
 
-#: gtkhostsetup.glade:88 gtkhostsetup.glade:364 gtkhostsetup.glade:596
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
 msgstr "Hostnaam:"
 
-#: gtkhostsetup.glade:95 gtkhostsetup.glade:375 gtkhostsetup.glade:607
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
 msgstr "Domein:"
 
@@ -36,21 +36,30 @@ msgstr "Domein:"
 msgid "<b>Other hosts:</b>"
 msgstr "<b>Andere hosts:</b>"
 
-#: gtkhostsetup.glade:329
+#: gtkhostsetup.glade:369
 msgid "Add host"
 msgstr "Host toevoegen"
 
-#: gtkhostsetup.glade:357 gtkhostsetup.glade:589
+#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
 msgstr "IP-adres:"
 
-#: gtkhostsetup.glade:474 gtkhostsetup.glade:706 gtkhostsetup.glade:793
+#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
 msgid "Error"
 msgstr "Fout"
 
-#: gtkhostsetup.glade:561
+#: gtkhostsetup.glade:602
 msgid "Edit host"
 msgstr "Host bewerken"
+
+#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "Configureer de hostnamen van het systeem"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr ""
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -82,24 +91,25 @@ msgstr "Niet een geldig IP-adres."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr "De hostnaam mag uitsluitend latijnse letters, cijfers en koppeltekens bevatten."
+msgstr ""
+"De hostnaam mag uitsluitend latijnse letters, cijfers en koppeltekens "
+"bevatten."
 
 #: gtkhostsetup:90
-msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr "De domeinnaam mag uitsluitend latijnse letters, cijfers en koppeltekens bevatten."
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr ""
+"De domeinnaam mag uitsluitend latijnse letters, cijfers en koppeltekens "
+"bevatten."
 
-#: gtkhostsetup:274
+#: gtkhostsetup:284
 msgid "IP address"
 msgstr "IP-adres"
 
-#: gtkhostsetup:275
+#: gtkhostsetup:285
 msgid "Hostname"
 msgstr "Hostnaam"
 
-#: gtkhostsetup:276
+#: gtkhostsetup:286
 msgid "Domain"
 msgstr "Domein"
-
-#: gtkhostsetup.desktop.in.h:1 gtkhostsetup-kde.desktop.in.h:1
-msgid "Configure the system hostnames"
-msgstr "Configureer de hostnamen van het systeem"

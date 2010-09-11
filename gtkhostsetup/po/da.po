@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkhostsetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-19 10:28+0300\n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
 "PO-Revision-Date: 2010-08-31 20:49+0100\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -15,8 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtkhostsetup.glade:24
-#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
 msgstr "Værtsnavne"
@@ -25,15 +24,11 @@ msgstr "Værtsnavne"
 msgid "<b>This computer:</b>"
 msgstr "<b>Denne computer:</b>"
 
-#: gtkhostsetup.glade:88
-#: gtkhostsetup.glade:364
-#: gtkhostsetup.glade:596
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
 msgstr "Værtsnavn:"
 
-#: gtkhostsetup.glade:95
-#: gtkhostsetup.glade:375
-#: gtkhostsetup.glade:607
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
 msgstr "Domæne:"
 
@@ -41,24 +36,30 @@ msgstr "Domæne:"
 msgid "<b>Other hosts:</b>"
 msgstr "<b>Andre værter:</b>"
 
-#: gtkhostsetup.glade:329
+#: gtkhostsetup.glade:369
 msgid "Add host"
 msgstr "Tilføj vært"
 
-#: gtkhostsetup.glade:357
-#: gtkhostsetup.glade:589
+#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
 msgstr "IP-adresse:"
 
-#: gtkhostsetup.glade:474
-#: gtkhostsetup.glade:706
-#: gtkhostsetup.glade:793
+#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
 msgid "Error"
 msgstr "Fejl"
 
-#: gtkhostsetup.glade:561
+#: gtkhostsetup.glade:602
 msgid "Edit host"
 msgstr "Redigér vært"
+
+#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "Konfigurér systemets værtsnavne"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr ""
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -93,23 +94,18 @@ msgid "The hostname can consist solely of latin letters, numbers and hyphens."
 msgstr "Værtsnavnet må kun indeholdet latin-bogstaver, tal og bindestreger."
 
 #: gtkhostsetup:90
-msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
 msgstr "Domænet må kun indeholdet latin-bogstaver, tal og bindestreger."
 
-#: gtkhostsetup:274
+#: gtkhostsetup:284
 msgid "IP address"
 msgstr "IP-adresse"
 
-#: gtkhostsetup:275
+#: gtkhostsetup:285
 msgid "Hostname"
 msgstr "Værtsnavn"
 
-#: gtkhostsetup:276
+#: gtkhostsetup:286
 msgid "Domain"
 msgstr "Domæne"
-
-#: gtkhostsetup.desktop.in.h:1
-#: gtkhostsetup-kde.desktop.in.h:1
-msgid "Configure the system hostnames"
-msgstr "Konfigurér systemets værtsnavne"
-

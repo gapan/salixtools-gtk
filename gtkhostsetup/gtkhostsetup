@@ -126,6 +126,16 @@ def write_hosts(hostname, domain, host_list):
 	f.close()
 
 class GTKHostSetup:
+	def on_button_about_clicked(self, widget, data=None):
+		self.aboutdialog.show()
+
+	def on_aboutdialog_response(self, widget, data=None):
+		self.aboutdialog.hide()
+
+	def on_aboutdialog_delete_event(self, widget, event):
+		self.aboutdialog.hide()
+		return True
+
 	def create_host_list(self, widget):
 		for i in get_other_hosts():
 			self.liststore_hosts.append(i)
@@ -314,6 +324,12 @@ class GTKHostSetup:
 		#
 		self.edit_error_window = builder.get_object('edit_error_window')
 		self.label_edit_error = builder.get_object('label_edit_error')
+		
+		#
+		# About dialog
+		#
+		self.aboutdialog = builder.get_object('aboutdialog')
+
 		builder.connect_signals(self)
 
 if __name__ == "__main__":

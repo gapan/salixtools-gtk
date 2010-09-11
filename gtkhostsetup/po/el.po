@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkhostname\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-19 10:28+0300\n"
-"PO-Revision-Date: 2010-07-19 10:31+0200\n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
+"PO-Revision-Date: 2010-09-11 13:28+0200\n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
 "MIME-Version: 1.0\n"
@@ -29,14 +29,14 @@ msgid "<b>This computer:</b>"
 msgstr "<b>Ο παρών υπολογιστής:</b>"
 
 #: gtkhostsetup.glade:88
-#: gtkhostsetup.glade:364
-#: gtkhostsetup.glade:596
+#: gtkhostsetup.glade:404
+#: gtkhostsetup.glade:637
 msgid "Hostname:"
 msgstr "Όνομα υπολογιστή:"
 
 #: gtkhostsetup.glade:95
-#: gtkhostsetup.glade:375
-#: gtkhostsetup.glade:607
+#: gtkhostsetup.glade:415
+#: gtkhostsetup.glade:648
 msgid "Domain:"
 msgstr "Τομέας:"
 
@@ -44,24 +44,34 @@ msgstr "Τομέας:"
 msgid "<b>Other hosts:</b>"
 msgstr "<b>Άλλα ονόματα:</b>"
 
-#: gtkhostsetup.glade:329
+#: gtkhostsetup.glade:369
 msgid "Add host"
 msgstr "Προσθήκη ονόματος υπολογιστή"
 
-#: gtkhostsetup.glade:357
-#: gtkhostsetup.glade:589
+#: gtkhostsetup.glade:397
+#: gtkhostsetup.glade:630
 msgid "IP address:"
 msgstr "Διεύθυνση IP:"
 
-#: gtkhostsetup.glade:474
-#: gtkhostsetup.glade:706
-#: gtkhostsetup.glade:793
+#: gtkhostsetup.glade:514
+#: gtkhostsetup.glade:747
+#: gtkhostsetup.glade:835
 msgid "Error"
 msgstr "Σφάλμα"
 
-#: gtkhostsetup.glade:561
+#: gtkhostsetup.glade:602
 msgid "Edit host"
 msgstr "Επεξεργασία ονόματος υπολογιστή"
+
+#: gtkhostsetup.glade:934
+#: gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "Επεξεργασία των ονομάτων υπολογιστών"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -99,20 +109,15 @@ msgstr "Το όνομα υπολογιστή μπορεί να αποτελεί�
 msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
 msgstr "Ο τομέας μπορεί να αποτελείται μόνο από λατινικούς χαρακτήρες, αριθμούς και παύλες."
 
-#: gtkhostsetup:274
+#: gtkhostsetup:284
 msgid "IP address"
 msgstr "Διεύθυνση IP"
 
-#: gtkhostsetup:275
+#: gtkhostsetup:285
 msgid "Hostname"
 msgstr "Όνομα υπολογιστή"
 
-#: gtkhostsetup:276
+#: gtkhostsetup:286
 msgid "Domain"
 msgstr "Τομέας"
-
-#: gtkhostsetup.desktop.in.h:1
-#: gtkhostsetup-kde.desktop.in.h:1
-msgid "Configure the system hostnames"
-msgstr "Επεξεργασία των ονομάτων υπολογιστών"
 
