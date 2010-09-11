@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 12:01+0300\n"
+"POT-Creation-Date: 2010-09-11 12:47+0300\n"
 "PO-Revision-Date: 2010-07-16 08:52+0100\n"
 "Last-Translator: Imar van Erven Dorens <gambit73@gmail.com>\n"
 "Language-Team: Dutch <LL@li.org>\n"
@@ -56,10 +56,6 @@ msgstr "Wis alle ALSA instellingen en stel de standaardwaarden in"
 #: gtkalsasetup.glade:252
 msgid "Settings"
 msgstr "Instellingen"
-
-#: gtkalsasetup.glade:363
-msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
-msgstr ""
 
 #: gtkalsasetup.glade:364
 #, fuzzy

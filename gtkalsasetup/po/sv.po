@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkalsasetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 12:01+0300\n"
+"POT-Creation-Date: 2010-09-11 12:47+0300\n"
 "PO-Revision-Date: 2010-08-29 11:44+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: Swedish\n"
@@ -59,10 +59,6 @@ msgstr "Rensa alla ALSA inställningar och sätt standard värden"
 #: gtkalsasetup.glade:252
 msgid "Settings"
 msgstr "Inställningar"
-
-#: gtkalsasetup.glade:363
-msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
-msgstr ""
 
 #: gtkalsasetup.glade:364
 #, fuzzy

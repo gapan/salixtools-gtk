@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 12:01+0300\n"
+"POT-Creation-Date: 2010-09-11 12:47+0300\n"
 "PO-Revision-Date: 2010-07-05 22:38-0300\n"
 "Last-Translator: seacat <seacat.lang@gmail.com>\n"
 "Language-Team: seacat <seacat.lang@gmail.com>\n"
@@ -61,10 +61,6 @@ msgstr ""
 #: gtkalsasetup.glade:252
 msgid "Settings"
 msgstr "Configuración"
-
-#: gtkalsasetup.glade:363
-msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
-msgstr ""
 
 #: gtkalsasetup.glade:364
 #, fuzzy

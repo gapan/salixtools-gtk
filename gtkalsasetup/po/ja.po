@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 12:01+0300\n"
+"POT-Creation-Date: 2010-09-11 12:47+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
 "Language-Team: \n"
@@ -51,10 +51,6 @@ msgstr "全てのALSA設定を消去し、デフォに戻す。"
 #: gtkalsasetup.glade:252
 msgid "Settings"
 msgstr "設定"
-
-#: gtkalsasetup.glade:363
-msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
-msgstr ""
 
 #: gtkalsasetup.glade:364
 #, fuzzy

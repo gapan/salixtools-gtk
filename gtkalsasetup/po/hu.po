@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkalsasetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 12:01+0300\n"
+"POT-Creation-Date: 2010-09-11 12:47+0300\n"
 "PO-Revision-Date: 2010-07-22 18:14+0100\n"
 "Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
 "Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
@@ -56,10 +56,6 @@ msgstr ""
 #: gtkalsasetup.glade:252
 msgid "Settings"
 msgstr "Beállítások"
-
-#: gtkalsasetup.glade:363
-msgid "Copyright © 2010 Cyrille Pontvieux, George Vlahavas"
-msgstr ""
 
 #: gtkalsasetup.glade:364
 #, fuzzy

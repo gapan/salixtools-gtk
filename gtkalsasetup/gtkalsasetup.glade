@@ -360,7 +360,7 @@
     <property name="transient_for">gtkalsasetup</property>
     <property name="has_separator">False</property>
     <property name="program_name">gtkalsasetup</property>
-    <property name="copyright" translatable="yes">Copyright &#xA9; 2010 Cyrille Pontvieux, George Vlahavas</property>
+    <property name="copyright">Copyright &#xA9; 2010 Cyrille Pontvieux, George Vlahavas</property>
     <property name="comments" translatable="yes">A tool to manage ALSA sound cards</property>
     <property name="website">http://www.salixos.org</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
