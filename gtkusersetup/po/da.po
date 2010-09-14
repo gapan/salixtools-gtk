@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkusersetup package.
 # Kris Thomsen <lakristho@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
@@ -158,7 +158,7 @@ msgstr "Håndteringsværktøj til brugere og grupper"
 
 #: gtkusersetup.glade:2545
 msgid "translator-credits"
-msgstr ""
+msgstr "Kris Thomsen <lakristho~at~gmail~dot~com>"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
@@ -197,12 +197,8 @@ msgid "Username cannot start with a dash."
 msgstr "Brugernavnet må ikke begynde med en bindestreg."
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"Brugernavnet må kun indeholde små bogstaver, numre, bindestreger og "
-"bundstreger."
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Brugernavnet må kun indeholde små bogstaver, numre, bindestreger og bundstreger."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -233,12 +229,8 @@ msgid "Group name cannot start with a dash."
 msgstr "Gruppenavnet må ikke begynde med en bindestreg."
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"Gruppenavnet må kun indeholde små bogstaver, numre, bindestreger og "
-"bundstreger."
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Gruppenavnet må kun indeholde små bogstaver, numre, bindestreger og bundstreger."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -277,12 +269,8 @@ msgid "Delete user {0}?"
 msgstr "Slet brugeren {0}?"
 
 #: gtkusersetup:491
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"Du er i gang med at fjerne brugerkontoen \"{0}\" fra dit system. Er du "
-"sikker på at du vil fortsætte?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "Du er i gang med at fjerne brugerkontoen \"{0}\" fra dit system. Er du sikker på at du vil fortsætte?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
@@ -297,22 +285,12 @@ msgid "Add new group"
 msgstr "Tilføj ny gruppe"
 
 #: gtkusersetup:782
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
-msgstr ""
-"Du er i gang med at slette gruppen \"{0}\" fra dit system. Er du sikker på "
-"at du vil fortsætte?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Du er i gang med at slette gruppen \"{0}\" fra dit system. Er du sikker på at du vil fortsætte?"
 
 #: gtkusersetup:785
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"Gruppen \"{0}\" kan ikke slettes, eftersom den er hovedgruppen for brugeren "
-"\"{1}\". Hvis du virkelig vil slette gruppen \"{0}\", bliver du nødt til at "
-"angive en ny hovedgruppe for brugeren \"{1}\" først."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "Gruppen \"{0}\" kan ikke slettes, eftersom den er hovedgruppen for brugeren \"{1}\". Hvis du virkelig vil slette gruppen \"{0}\", bliver du nødt til at angive en ny hovedgruppe for brugeren \"{1}\" først."
 
 #: gtkusersetup:912
 msgid "Username"
