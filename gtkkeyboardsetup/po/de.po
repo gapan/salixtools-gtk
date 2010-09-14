@@ -1,9 +1,9 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:53+0300\n"
+"POT-Creation-Date: 2010-09-14 20:05+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: German\n"
@@ -17,26 +17,38 @@ msgid "Keyboard settings"
 msgstr "Tastatureinstellungen"
 
 #: gtkkeyboardsetup.glade:53
-msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
-msgstr "Bitte wählen Sie die Art Ihrer Tastatur, Ihr bevorzugtes Layout und legen Sie Numlock und SCIM Einstellungen fest."
+msgid ""
+"Please select you preferred keyboard type and map and set numlock and SCIM "
+"preferences."
+msgstr ""
+"Bitte wählen Sie die Art Ihrer Tastatur, Ihr bevorzugtes Layout und legen "
+"Sie Numlock und SCIM Einstellungen fest."
 
 #: gtkkeyboardsetup.glade:147
-msgid "Enable numlock when the system is started"
-msgstr "Numlock beim Systemstart aktivieren"
-
-#: gtkkeyboardsetup.glade:162
 msgid "Enable SCIM when the system is started"
 msgstr "SCIM beim Systemstart aktivieren"
 
-#: gtkkeyboardsetup.glade:166
-msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr "SCIM ist eine Eingabemethode für Chinesisch, Japanisch, Koreanisch und viele andere Sprachen."
+#: gtkkeyboardsetup.glade:151
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+"SCIM ist eine Eingabemethode für Chinesisch, Japanisch, Koreanisch und viele "
+"andere Sprachen."
 
-#: gtkkeyboardsetup:161
+#: gtkkeyboardsetup.glade:163
+msgid "Enable numlock when the system is started"
+msgstr "Numlock beim Systemstart aktivieren"
+
+#: gtkkeyboardsetup.glade:958
+msgid "translator-credits"
+msgstr ""
+
+#: gtkkeyboardsetup:171
 msgid "Keyboard type"
 msgstr "Art"
 
-#: gtkkeyboardsetup:165
+#: gtkkeyboardsetup:175
 msgid "Keyboard map"
 msgstr "Layout"
 

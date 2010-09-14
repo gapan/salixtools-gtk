@@ -1,9 +1,9 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:53+0300\n"
+"POT-Creation-Date: 2010-09-14 20:05+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Pierrick Le Brun <akuna~at~free~dot~fr>\n"
 "Language-Team: <akuna@free.fr>\n"
@@ -19,26 +19,38 @@ msgid "Keyboard settings"
 msgstr "Configuration du clavier"
 
 #: gtkkeyboardsetup.glade:53
-msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
-msgstr "Veuillez sélectionner votre disposition favorite de clavier et, le cas échéant, procéder à l'activation de votre pavé numérique et de SCIM."
+msgid ""
+"Please select you preferred keyboard type and map and set numlock and SCIM "
+"preferences."
+msgstr ""
+"Veuillez sélectionner votre disposition favorite de clavier et, le cas "
+"échéant, procéder à l'activation de votre pavé numérique et de SCIM."
 
 #: gtkkeyboardsetup.glade:147
-msgid "Enable numlock when the system is started"
-msgstr "Activer le pavé numérique au démarrage du système"
-
-#: gtkkeyboardsetup.glade:162
 msgid "Enable SCIM when the system is started"
 msgstr "Activer SCIM au démarrage du système"
 
-#: gtkkeyboardsetup.glade:166
-msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr "SCIM est une plate-forme unifiée de saisie pour le chinois, le japonais, le coréen et de nombreuses autres langues."
+#: gtkkeyboardsetup.glade:151
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+"SCIM est une plate-forme unifiée de saisie pour le chinois, le japonais, le "
+"coréen et de nombreuses autres langues."
 
-#: gtkkeyboardsetup:161
+#: gtkkeyboardsetup.glade:163
+msgid "Enable numlock when the system is started"
+msgstr "Activer le pavé numérique au démarrage du système"
+
+#: gtkkeyboardsetup.glade:958
+msgid "translator-credits"
+msgstr ""
+
+#: gtkkeyboardsetup:171
 msgid "Keyboard type"
 msgstr "Type de clavier"
 
-#: gtkkeyboardsetup:165
+#: gtkkeyboardsetup:175
 msgid "Keyboard map"
 msgstr "Disposition de clavier"
 

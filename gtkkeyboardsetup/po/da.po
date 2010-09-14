@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-26 12:31+0200\n"
+"POT-Creation-Date: 2010-09-14 20:05+0300\n"
 "PO-Revision-Date: 2010-04-03 19:41+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -15,11 +15,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../gtkkeyboardsetup.glade:21
+#: gtkkeyboardsetup.glade:21
 msgid "Keyboard settings"
 msgstr "Indstillinger for tastatur"
 
-#: ../gtkkeyboardsetup.glade:53
+#: gtkkeyboardsetup.glade:53
 msgid ""
 "Please select you preferred keyboard type and map and set numlock and SCIM "
 "preferences."
@@ -27,15 +27,11 @@ msgstr ""
 "Vælg venligst din foretrukne tastaturtype og -udlægning og sæt numlock- og "
 "SCIM-egenskaberne."
 
-#: ../gtkkeyboardsetup.glade:147
-msgid "Enable numlock when the system is started"
-msgstr "Aktivér numlock når systemet bliver startet"
-
-#: ../gtkkeyboardsetup.glade:162
+#: gtkkeyboardsetup.glade:147
 msgid "Enable SCIM when the system is started"
 msgstr "Aktivér SCIM når systemet bliver startet"
 
-#: ../gtkkeyboardsetup.glade:166
+#: gtkkeyboardsetup.glade:151
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages."
@@ -43,10 +39,27 @@ msgstr ""
 "SCIM er en inputplatform for kinesisk, japansk, koreansk og mange andre "
 "sprog."
 
-#: ../gtkkeyboardsetup:161
+#: gtkkeyboardsetup.glade:163
+msgid "Enable numlock when the system is started"
+msgstr "Aktivér numlock når systemet bliver startet"
+
+#: gtkkeyboardsetup.glade:958
+msgid "translator-credits"
+msgstr ""
+
+#: gtkkeyboardsetup:171
 msgid "Keyboard type"
 msgstr "Tastaturtype"
 
-#: ../gtkkeyboardsetup:165
+#: gtkkeyboardsetup:175
 msgid "Keyboard map"
 msgstr "Tastaturudlægning"
+
+#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
+#, fuzzy
+msgid "Keyboard"
+msgstr "Tastaturudlægning"
+
+#: gtkkeyboardsetup.desktop.in.h:2 gtkkeyboardsetup-kde.desktop.in.h:2
+msgid "Keyboard configuration tool"
+msgstr ""
