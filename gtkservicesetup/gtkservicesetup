@@ -78,6 +78,16 @@ def disableservice(service):
 	os.system('service stop '+service+' &')
 
 class GTKServiceSetup:
+	def on_button_about_clicked(self, widget, data=None):
+		self.aboutdialog.show()
+
+	def on_aboutdialog_response(self, widget, data=None):
+		self.aboutdialog.hide()
+
+	def on_aboutdialog_delete_event(self, widget, event):
+		self.aboutdialog.hide()
+		return True
+	
 	def on_button_ok_clicked(self, widget, data=None):
 		for i in self.servicesliststore:
 			if i[3] == True:
@@ -112,6 +122,7 @@ class GTKServiceSetup:
 		elif os.path.exists('/usr/share/salixtools/gtkservicesetup/gtkservicesetup.glade'):
 			builder.add_from_file('/usr/share/salixtools/gtkservicesetup/gtkservicesetup.glade')
 		self.window = builder.get_object('gtkservicesetup')
+		self.aboutdialog = builder.get_object('aboutdialog')
 
 		builder.connect_signals(self)
 		self.serviceslist = builder.get_object('serviceslist')

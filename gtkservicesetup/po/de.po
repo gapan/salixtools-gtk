@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:57+0300\n"
+"POT-Creation-Date: 2010-09-14 20:35+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Thorsten Mühlfelder <thenktor@gmx.de>\n"
 "Language-Team: German\n"
@@ -25,25 +25,30 @@ msgstr ""
 "Bitte wählen Sie die Systemdienste, die beim Systemstart aktiviert werden "
 "sollen. Alle Änderungen treten in Kraft, sobald Sie OK drücken."
 
+#: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
+#: gtkservicesetup-kde.desktop.in.h:1
+msgid "Services configuration tool"
+msgstr "Systemdienste konfigurieren"
+
+#: gtkservicesetup.glade:921
+msgid "translator-credits"
+msgstr ""
+
 #: gtkservicesetup:44
 msgid "The {0} service"
 msgstr "Der {0} Dienst"
 
-#: gtkservicesetup:120
+#: gtkservicesetup:131
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: gtkservicesetup:122
+#: gtkservicesetup:133
 msgid "Service name"
 msgstr "Dienstname"
 
-#: gtkservicesetup:124
+#: gtkservicesetup:135
 msgid "Service description"
 msgstr "Dienstbeschreibung"
-
-#: gtkservicesetup.desktop.in.h:1 gtkservicesetup-kde.desktop.in.h:1
-msgid "Services configuration tool"
-msgstr "Systemdienste konfigurieren"
 
 #, fuzzy
 #~ msgid "System Services"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:57+0300\n"
+"POT-Creation-Date: 2010-09-14 20:35+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: Greek\n"
@@ -13,40 +13,41 @@ msgstr ""
 "X-Poedit-Country: GREECE\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup.glade:35
+#: gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr "Υπηρεσίες συστήματος"
 
 #: gtkservicesetup.glade:67
-msgid ""
-"Please select the system services that you wish to be enabled when the "
-"system starts. Any changes you make will be applied when you press the OK "
-"button."
-msgstr ""
-"Παρακαλούμε επιλέξτε τις υπηρεσίες συστήματος που θα ενεργοποιούνται με την "
-"εκκίνηση του συστήματος. Οι όποιες αλλαγές θα εφαρμοστούν όταν πιέσετε το "
-"πλήκτρο Εντάξει."
+msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
+msgstr "Παρακαλούμε επιλέξτε τις υπηρεσίες συστήματος που θα ενεργοποιούνται με την εκκίνηση του συστήματος. Οι όποιες αλλαγές θα εφαρμοστούν όταν πιέσετε το πλήκτρο Εντάξει."
+
+#: gtkservicesetup.glade:243
+#: gtkservicesetup.desktop.in.h:1
+#: gtkservicesetup-kde.desktop.in.h:1
+msgid "Services configuration tool"
+msgstr "Διαχείρηση των υπηρεσιών συστήματος"
+
+#: gtkservicesetup.glade:921
+msgid "translator-credits"
+msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
 #: gtkservicesetup:44
 msgid "The {0} service"
 msgstr "Η υπηρεσία {0}"
 
-#: gtkservicesetup:120
+#: gtkservicesetup:131
 msgid "Enabled"
 msgstr "Ενεργoποίηση"
 
-#: gtkservicesetup:122
+#: gtkservicesetup:133
 msgid "Service name"
 msgstr "Όνομα υπηρεσίας"
 
-#: gtkservicesetup:124
+#: gtkservicesetup:135
 msgid "Service description"
 msgstr "Περιγραφή υπηρεσίας"
-
-#: gtkservicesetup.desktop.in.h:1 gtkservicesetup-kde.desktop.in.h:1
-msgid "Services configuration tool"
-msgstr "Διαχείρηση των υπηρεσιών συστήματος"
 
 #~ msgid "System Services"
 #~ msgstr "Υπηρεσίες συστήματος"

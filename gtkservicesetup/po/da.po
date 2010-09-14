@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-17 13:46+0200\n"
+"POT-Creation-Date: 2010-09-14 20:35+0300\n"
 "PO-Revision-Date: 2010-04-20 13:09+0200\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -15,32 +15,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../gtkservicesetup.glade:35
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr "Systemtjenester"
 
-#: ../gtkservicesetup.glade:67
+#: gtkservicesetup.glade:67
 msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
 msgstr ""
-"Vælg venligst de systemtjenester du vil have aktiveret når systemet "
-"starter. Ændringerne du laver vil træde i kraft, når du trykker på "
-"O.k.-knappen."
+"Vælg venligst de systemtjenester du vil have aktiveret når systemet starter. "
+"Ændringerne du laver vil træde i kraft, når du trykker på O.k.-knappen."
 
-#: ../gtkservicesetup:44
+#: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
+#: gtkservicesetup-kde.desktop.in.h:1
+#, fuzzy
+msgid "Services configuration tool"
+msgstr "Tjenestebeskrivelse"
+
+#: gtkservicesetup.glade:921
+msgid "translator-credits"
+msgstr ""
+
+#: gtkservicesetup:44
 msgid "The {0} service"
 msgstr "Tjenesten {0}"
 
-#: ../gtkservicesetup:120
+#: gtkservicesetup:131
 msgid "Enabled"
 msgstr "Aktiveret"
 
-#: ../gtkservicesetup:122
+#: gtkservicesetup:133
 msgid "Service name"
 msgstr "Tjenestenavn"
 
-#: ../gtkservicesetup:124
+#: gtkservicesetup:135
 msgid "Service description"
 msgstr "Tjenestebeskrivelse"
