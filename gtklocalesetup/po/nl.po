@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtklocalesetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -21,12 +21,8 @@ msgid "System language"
 msgstr "Systeemtaal"
 
 #: gtklocalesetup.glade:56
-msgid ""
-"Please select a default system locale. The changes will take effect next "
-"time you start your system."
-msgstr ""
-"Selecteer een standaard systeem locale. De wijzigingen worden van kracht de "
-"volgende keer dat u uw systeem start."
+msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgstr "Selecteer een standaard systeem locale. De wijzigingen worden van kracht de volgende keer dat u uw systeem start."
 
 #: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
@@ -35,4 +31,4 @@ msgstr "Locale configuratietool"
 
 #: gtklocalesetup.glade:899
 msgid "translator-credits"
-msgstr ""
+msgstr "vertaler-credits"
