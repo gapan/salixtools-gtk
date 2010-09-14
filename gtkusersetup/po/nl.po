@@ -157,7 +157,6 @@ msgid "Users and groups management tool"
 msgstr "Gebruikers en groepen beheertool"
 
 #: gtkusersetup.glade:2545
-#, fuzzy
 msgid "translator-credits"
 msgstr "vertaler-credits"
 
