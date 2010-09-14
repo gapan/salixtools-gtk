@@ -330,6 +330,16 @@ gtk.glade.bindtextdomain("gtkusersetup", "/usr/share/locale")
 gtk.glade.textdomain("gtkusersetup")
 
 class GTKUserSetup:
+	def on_button_about_clicked(self, widget, data=None):
+		self.aboutdialog.show()
+
+	def on_aboutdialog_response(self, widget, data=None):
+		self.aboutdialog.hide()
+
+	def on_aboutdialog_delete_event(self, widget, event):
+		self.aboutdialog.hide()
+		return True
+	
 	def gtk_main_quit(self, widget, data=None):
 		gtk.main_quit()
 
@@ -905,6 +915,11 @@ class GTKUserSetup:
 		
 		self.on_checkbutton_showall_toggled(self)
 		self.userlist.set_cursor(1)
+
+		#
+		# About dialog
+		#
+		self.aboutdialog = builder.get_object('aboutdialog')
 
 		#
 		# User properties/Add user window objects

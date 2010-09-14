@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:59+0300\n"
+"POT-Creation-Date: 2010-09-14 20:43+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: seacat <seacat.lang@gmail.com>\n"
 "Language-Team:  <seacat.linux@gmail.com>\n"
@@ -24,134 +24,143 @@ msgstr "Administrar grupos"
 msgid "Show all users"
 msgstr "Mostrar todos los usuarios"
 
-#: gtkusersetup.glade:325
+#: gtkusersetup.glade:343
 msgid "<b>Basic information</b>"
 msgstr "<b>Información básica</b>"
 
-#: gtkusersetup.glade:344
+#: gtkusersetup.glade:362
 msgid "Username:"
 msgstr "Nombre de usuario:"
 
-#: gtkusersetup.glade:353
+#: gtkusersetup.glade:371
 msgid "Real name:"
 msgstr "Nombre real:"
 
-#: gtkusersetup.glade:414
+#: gtkusersetup.glade:432
 msgid "User password:"
 msgstr "Contraseña del usuario:"
 
-#: gtkusersetup.glade:424
+#: gtkusersetup.glade:442
 msgid "Password confirmation:"
 msgstr "Confirmación de la contraseña:"
 
-#: gtkusersetup.glade:465
+#: gtkusersetup.glade:483
 msgid "View password while typing"
 msgstr "Ver la contraseña al escribirla"
 
-#: gtkusersetup.glade:483
+#: gtkusersetup.glade:501
 msgid "Account"
 msgstr "Cuenta"
 
-#: gtkusersetup.glade:498
+#: gtkusersetup.glade:516
 msgid "<b>Contact information</b>"
 msgstr "<b>Información de contacto</b>"
 
-#: gtkusersetup.glade:518
+#: gtkusersetup.glade:536
 msgid "Office extension:"
 msgstr "Teléfono (oficina):"
 
-#: gtkusersetup.glade:530
+#: gtkusersetup.glade:548
 msgid "Office information:"
 msgstr "Información (oficina):"
 
-#: gtkusersetup.glade:540
+#: gtkusersetup.glade:558
 msgid "Home phone:"
 msgstr "Teléfono (casa):"
 
-#: gtkusersetup.glade:597
+#: gtkusersetup.glade:615
 msgid "Contact"
 msgstr "Contacto"
 
-#: gtkusersetup.glade:613
+#: gtkusersetup.glade:631
 msgid "<b>Group membership</b>"
 msgstr "<b>Membresía de grupo</b>"
 
-#: gtkusersetup.glade:630
+#: gtkusersetup.glade:648
 msgid "Main group:"
 msgstr "Grupo principal:"
 
-#: gtkusersetup.glade:663
+#: gtkusersetup.glade:681
 msgid "Other groups:"
 msgstr "Otros grupos:"
 
-#: gtkusersetup.glade:735
+#: gtkusersetup.glade:753
 msgid "Groups"
 msgstr "Grupos"
 
-#: gtkusersetup.glade:751
+#: gtkusersetup.glade:769
 msgid "<b>Advanced settings</b>"
 msgstr "<b>Configuración avanzada</b>"
 
-#: gtkusersetup.glade:771
+#: gtkusersetup.glade:789
 msgid "Home directory:"
 msgstr "Directorio home:"
 
-#: gtkusersetup.glade:781
+#: gtkusersetup.glade:799
 msgid "Shell:"
 msgstr "Shell:"
 
-#: gtkusersetup.glade:793
+#: gtkusersetup.glade:811
 msgid "UID:"
 msgstr "UID:"
 
-#: gtkusersetup.glade:850
+#: gtkusersetup.glade:868
 msgid "Set account expiration date"
 msgstr "Establecer la fecha de expiración de la cuenta"
 
-#: gtkusersetup.glade:886
+#: gtkusersetup.glade:904
 msgid "Advanced"
 msgstr "Avanzado"
 
-#: gtkusersetup.glade:951
-#: gtkusersetup.glade:1546
+#: gtkusersetup.glade:973 gtkusersetup.glade:1580
 msgid "Error!"
 msgstr "¡Error!"
 
-#: gtkusersetup.glade:1159
+#: gtkusersetup.glade:1187
 msgid "Group settings"
 msgstr "Configuración del grupo"
 
-#: gtkusersetup.glade:1336
+#: gtkusersetup.glade:1366
 msgid "Group properties"
 msgstr "Propiedades del grupo"
 
-#: gtkusersetup.glade:1358
+#: gtkusersetup.glade:1388
 msgid "<b>Basic settings</b>"
 msgstr "<b>Configuración básica</b>"
 
-#: gtkusersetup.glade:1378
+#: gtkusersetup.glade:1408
 msgid "Group name:"
 msgstr "Nombre del grupo:"
 
-#: gtkusersetup.glade:1388
+#: gtkusersetup.glade:1418
 msgid "Group ID:"
 msgstr "ID del grupo:"
 
-#: gtkusersetup.glade:1434
+#: gtkusersetup.glade:1464
 msgid "<b>Group members</b>"
 msgstr "<b>Miembros del grupo</b>"
 
-#: gtkusersetup.glade:1632
+#: gtkusersetup.glade:1668
 msgid "Delete group?"
 msgstr "¿Eliminar el grupo?"
 
-#: gtkusersetup.glade:1731
+#: gtkusersetup.glade:1771
 msgid "Cannot delete group"
 msgstr "No se puede eliminar el grupo"
 
+#: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
+#: gtkusersetup-kde.desktop.in.h:2
+msgid "Users and groups management tool"
+msgstr "Herramienta de administración de usuarios y grupos"
+
+#: gtkusersetup.glade:2545
+msgid "translator-credits"
+msgstr ""
+
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
-msgstr "La contraseña es demasiado corta. Tiene que tener al menos 5 caracteres."
+msgstr ""
+"La contraseña es demasiado corta. Tiene que tener al menos 5 caracteres."
 
 #: gtkusersetup:211
 msgid "Password cannot include the backslash character."
@@ -186,8 +195,12 @@ msgid "Username cannot start with a dash."
 msgstr "El nombre de usuario no puede comenzar con un guión."
 
 #: gtkusersetup:246
-msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "El nombre de usuario solamente puede formarse con letras minúsculas, números, guiones y caracteres de subrayado."
+msgid ""
+"Username can consist solely of latin lower case letters, numbers, dashes and "
+"underscores."
+msgstr ""
+"El nombre de usuario solamente puede formarse con letras minúsculas, "
+"números, guiones y caracteres de subrayado."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -218,8 +231,12 @@ msgid "Group name cannot start with a dash."
 msgstr "El nombre del grupo no puede comenzar con un guión."
 
 #: gtkusersetup:282
-msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "El nombre de grupo solamente puede formarse con letras minúsculas, números, guiones y caracteres de subrayado."
+msgid ""
+"Group name can consist solely of latin lower case letters, numbers, dashes "
+"and underscores."
+msgstr ""
+"El nombre de grupo solamente puede formarse con letras minúsculas, números, "
+"guiones y caracteres de subrayado."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -237,79 +254,89 @@ msgstr "El UID {0} está asignado a otro usuario."
 msgid "GID {0} is assigned to another group."
 msgstr "El GID {0} está asignado a otro grupo."
 
-#: gtkusersetup:359
+#: gtkusersetup:369
 msgid "User account properties for \"{0}\""
 msgstr "Propiedades de la cuenta de usuario para \"{0}\""
 
-#: gtkusersetup:366
+#: gtkusersetup:376
 msgid "<b>Set new password</b>"
 msgstr "<b>Establecer una contraseña nueva</b>"
 
-#: gtkusersetup:423
+#: gtkusersetup:433
 msgid "Add new user"
 msgstr "Agregar un usuario nuevo"
 
-#: gtkusersetup:430
+#: gtkusersetup:440
 msgid "<b>Set password</b>"
 msgstr "<b>Establecer contraseña</b>"
 
-#: gtkusersetup:480
+#: gtkusersetup:490
 msgid "Delete user {0}?"
 msgstr "¿Eliminar el usuario {0}?"
 
-#: gtkusersetup:481
-msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
-msgstr "Está a punto de eliminar de su sistema la cuenta del usuario \"{0}\". ¿Realmente quiere continuar?"
+#: gtkusersetup:491
+msgid ""
+"You are about to remove user account \"{0}\" from your system. Do you really "
+"want to continue?"
+msgstr ""
+"Está a punto de eliminar de su sistema la cuenta del usuario \"{0}\". "
+"¿Realmente quiere continuar?"
 
-#: gtkusersetup:482
+#: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr "Se borró completamente el directorio home del usuario ({0}) junto con todo su contenido"
+msgstr ""
+"Se borró completamente el directorio home del usuario ({0}) junto con todo "
+"su contenido"
 
-#: gtkusersetup:728
+#: gtkusersetup:738
 msgid "Group \"{0}\" properties"
 msgstr "Propiedades del grupo \"{0}\""
 
-#: gtkusersetup:747
+#: gtkusersetup:757
 msgid "Add new group"
 msgstr "Agregar un grupo nuevo"
 
-#: gtkusersetup:772
-msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
-msgstr "Está a punto de borrar de su sistema el grupo \"{0}\". ¿Está seguro que quiere continuar?"
+#: gtkusersetup:782
+msgid ""
+"You are about to delete the \"{0}\" group from your system. Are you sure you "
+"want to continue?"
+msgstr ""
+"Está a punto de borrar de su sistema el grupo \"{0}\". ¿Está seguro que "
+"quiere continuar?"
 
-#: gtkusersetup:775
-msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
-msgstr "No se puede borrar el grupo \"{0}\" porque es el grupo principal del usuario \"{1}\". Si quiere borrar el grupo \"{0}\", tiene que configurar primero el grupo principal para el usuario \"{1}\" a otro grupo."
+#: gtkusersetup:785
+msgid ""
+"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
+"you want to delete group \"{0}\", you have to set the main group for user "
+"\"{1}\" to another group first."
+msgstr ""
+"No se puede borrar el grupo \"{0}\" porque es el grupo principal del usuario "
+"\"{1}\". Si quiere borrar el grupo \"{0}\", tiene que configurar primero el "
+"grupo principal para el usuario \"{1}\" a otro grupo."
 
-#: gtkusersetup:902
+#: gtkusersetup:912
 msgid "Username"
 msgstr "Nombre de usuario"
 
-#: gtkusersetup:903
+#: gtkusersetup:913
 msgid "Real name"
 msgstr "Nombre real"
 
-#: gtkusersetup:904
+#: gtkusersetup:914
 msgid "Home directory"
 msgstr "Directorio home"
 
-#: gtkusersetup:936
+#: gtkusersetup:951
 msgid "Member"
 msgstr "Miembro"
 
-#: gtkusersetup:937
+#: gtkusersetup:952
 msgid "Group"
 msgstr "Grupo"
 
-#: gtkusersetup.desktop.in.h:1
-#: gtkusersetup-kde.desktop.in.h:1
+#: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
 msgid "Users and groups"
 msgstr "Usuarios y grupos"
-
-#: gtkusersetup.desktop.in.h:2
-#: gtkusersetup-kde.desktop.in.h:2
-msgid "Users and groups management tool"
-msgstr "Herramienta de administración de usuarios y grupos"
 
 #~ msgid "User and group settings"
 #~ msgstr "Configuración de usuarios y grupos"
