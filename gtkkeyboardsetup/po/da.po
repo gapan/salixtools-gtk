@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkkeyboardsetup package.
 # Kris Thomsen <lakristho@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
@@ -20,24 +20,16 @@ msgid "Keyboard settings"
 msgstr "Indstillinger for tastatur"
 
 #: gtkkeyboardsetup.glade:53
-msgid ""
-"Please select you preferred keyboard type and map and set numlock and SCIM "
-"preferences."
-msgstr ""
-"Vælg venligst din foretrukne tastaturtype og -udlægning og sæt numlock- og "
-"SCIM-egenskaberne."
+msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
+msgstr "Vælg venligst din foretrukne tastaturtype og -udlægning og sæt numlock- og SCIM-egenskaberne."
 
 #: gtkkeyboardsetup.glade:147
 msgid "Enable SCIM when the system is started"
 msgstr "Aktivér SCIM når systemet bliver startet"
 
 #: gtkkeyboardsetup.glade:151
-msgid ""
-"SCIM is an input platform for Chinese, Japanese, Korean and many other "
-"languages."
-msgstr ""
-"SCIM er en inputplatform for kinesisk, japansk, koreansk og mange andre "
-"sprog."
+msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
+msgstr "SCIM er en inputplatform for kinesisk, japansk, koreansk og mange andre sprog."
 
 #: gtkkeyboardsetup.glade:163
 msgid "Enable numlock when the system is started"
@@ -45,7 +37,7 @@ msgstr "Aktivér numlock når systemet bliver startet"
 
 #: gtkkeyboardsetup.glade:958
 msgid "translator-credits"
-msgstr ""
+msgstr "Kris Thomsen <lakristho~at~gmail~dot~com>"
 
 #: gtkkeyboardsetup:171
 msgid "Keyboard type"
@@ -56,10 +48,9 @@ msgid "Keyboard map"
 msgstr "Tastaturudlægning"
 
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
-#, fuzzy
 msgid "Keyboard"
-msgstr "Tastaturudlægning"
+msgstr "Tastatur"
 
 #: gtkkeyboardsetup.desktop.in.h:2 gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
-msgstr ""
+msgstr "Konfigurationsværktøj for tastatur"
