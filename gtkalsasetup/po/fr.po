@@ -50,9 +50,8 @@ msgid "Settings"
 msgstr "Paramètres"
 
 #: gtkalsasetup.glade:364
-#, fuzzy
 msgid "A tool to manage ALSA sound cards"
-msgstr "Sélectionne la carte son ALSA pour l'ensemble du système"
+msgstr "Utilitaire pour sélectionner la carte son ALSA pour l'ensemble du système"
 
 #: gtkalsasetup.glade:1043
 msgid "translator-credits"
