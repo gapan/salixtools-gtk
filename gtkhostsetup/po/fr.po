@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkhostsetup\n"
@@ -61,7 +61,7 @@ msgstr "Configure les noms d'hôtes du système"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr ""
+msgstr "Cyrille Pontvieux <jrd~at~enialis~dot~net>"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -93,16 +93,11 @@ msgstr "L'adresse IP n'est pas valide."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr ""
-"Le nom d'hôte ne peut être constitué que de lettres latines, chiffres et "
-"tirets."
+msgstr "Le nom d'hôte ne peut être constitué que de lettres latines, chiffres et tirets."
 
 #: gtkhostsetup:90
-msgid ""
-"The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr ""
-"Le nom de domaine ne peut être constitué que de lettres latines, chiffres, "
-"tirets et points."
+msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "Le nom de domaine ne peut être constitué que de lettres latines, chiffres, tirets et points."
 
 #: gtkhostsetup:284
 msgid "IP address"
