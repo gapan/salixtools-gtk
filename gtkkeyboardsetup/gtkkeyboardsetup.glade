@@ -143,12 +143,11 @@
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="scimcheckbutton">
-                <property name="label" translatable="yes">Enable SCIM when the system is started</property>
+              <object class="GtkCheckButton" id="numlockcheckbutton">
+                <property name="label" translatable="yes">Enable numlock when the system is started</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
-                <property name="tooltip_text" translatable="yes">SCIM is an input platform for Chinese, Japanese, Korean and many other languages.</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
@@ -159,11 +158,12 @@
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="numlockcheckbutton">
-                <property name="label" translatable="yes">Enable numlock when the system is started</property>
+              <object class="GtkCheckButton" id="scimcheckbutton">
+                <property name="label" translatable="yes">Enable SCIM when the system is started</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
+                <property name="tooltip_text" translatable="yes">SCIM is an input platform for Chinese, Japanese, Korean and many other languages.</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
@@ -278,6 +278,7 @@
     <property name="has_separator">False</property>
     <property name="program_name">gtkkeyboardsetup</property>
     <property name="copyright">Copyright &#xA9; 2010 George Vlahavas</property>
+    <property name="comments" translatable="yes">Keyboard configuration tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
