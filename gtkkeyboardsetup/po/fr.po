@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
@@ -19,24 +19,16 @@ msgid "Keyboard settings"
 msgstr "Configuration du clavier"
 
 #: gtkkeyboardsetup.glade:53
-msgid ""
-"Please select you preferred keyboard type and map and set numlock and SCIM "
-"preferences."
-msgstr ""
-"Veuillez sélectionner votre disposition favorite de clavier et, le cas "
-"échéant, procéder à l'activation de votre pavé numérique et de SCIM."
+msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
+msgstr "Veuillez sélectionner votre disposition favorite de clavier et, le cas échéant, procéder à l'activation de votre pavé numérique et de SCIM."
 
 #: gtkkeyboardsetup.glade:147
 msgid "Enable SCIM when the system is started"
 msgstr "Activer SCIM au démarrage du système"
 
 #: gtkkeyboardsetup.glade:151
-msgid ""
-"SCIM is an input platform for Chinese, Japanese, Korean and many other "
-"languages."
-msgstr ""
-"SCIM est une plate-forme unifiée de saisie pour le chinois, le japonais, le "
-"coréen et de nombreuses autres langues."
+msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
+msgstr "SCIM est une plate-forme unifiée de saisie pour le chinois, le japonais, le coréen et de nombreuses autres langues."
 
 #: gtkkeyboardsetup.glade:163
 msgid "Enable numlock when the system is started"
@@ -44,7 +36,7 @@ msgstr "Activer le pavé numérique au démarrage du système"
 
 #: gtkkeyboardsetup.glade:958
 msgid "translator-credits"
-msgstr ""
+msgstr "Cyrille Pontvieux <jrd~at~enialis~dot~net>"
 
 #: gtkkeyboardsetup:171
 msgid "Keyboard type"
