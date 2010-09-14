@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtklocalesetup\n"
@@ -17,12 +18,8 @@ msgid "System language"
 msgstr "Systemsprache"
 
 #: gtklocalesetup.glade:56
-msgid ""
-"Please select a default system locale. The changes will take effect next "
-"time you start your system."
-msgstr ""
-"Bitte wählen Sie die voreingestellte Systemsprache. Die Änderungen treten "
-"nach dem Neustart des Systems in Kraft."
+msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgstr "Bitte wählen Sie die voreingestellte Systemsprache. Die Änderungen treten nach dem Neustart des Systems in Kraft."
 
 #: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
@@ -31,7 +28,7 @@ msgstr "Sprach- und Ländereinstellungen des Systems"
 
 #: gtklocalesetup.glade:899
 msgid "translator-credits"
-msgstr ""
+msgstr "Thorsten Mühlfelder <thenktor~at~gmx.de>"
 
 #~ msgid "System language settings"
 #~ msgstr "Sprach- und Ländereinstellungen"
