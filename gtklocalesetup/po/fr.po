@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtklocalesetup\n"
@@ -10,8 +11,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: French\n"
-"X-Poedit-Country: FRANCE\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: FRANCE\n"
 
 #: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
@@ -19,12 +20,8 @@ msgid "System language"
 msgstr "Langue système"
 
 #: gtklocalesetup.glade:56
-msgid ""
-"Please select a default system locale. The changes will take effect next "
-"time you start your system."
-msgstr ""
-"Veuillez sélectionner la langue de votre système. Cette modification prendra "
-"effet au redémarrage de votre ordinateur."
+msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgstr "Veuillez sélectionner la langue de votre système. Cette modification prendra effet au redémarrage de votre ordinateur."
 
 #: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
@@ -33,7 +30,7 @@ msgstr "Utilitaire de configuration de la langue du système"
 
 #: gtklocalesetup.glade:899
 msgid "translator-credits"
-msgstr ""
+msgstr "Cyrille Pontvieux <jrd~at~enialis~dot~net>"
 
 #~ msgid "System language settings"
 #~ msgstr "Langue système"
