@@ -45,6 +45,16 @@ def setlocale(locale):
 	os.system('localesetup '+locale)
 
 class GTKLocaleSetup:
+	def on_button_about_clicked(self, widget, data=None):
+		self.aboutdialog.show()
+
+	def on_aboutdialog_response(self, widget, data=None):
+		self.aboutdialog.hide()
+
+	def on_aboutdialog_delete_event(self, widget, event):
+		self.aboutdialog.hide()
+		return True
+	
 	def on_button_ok_clicked(self, widget, data=None):
 		selectedlocale = self.localelist.get_selection()
 		self.localeliststore, iter = selectedlocale.get_selected()
@@ -64,6 +74,7 @@ class GTKLocaleSetup:
 		elif os.path.exists('/usr/share/salixtools/gtklocalesetup/gtklocalesetup.glade'):
 			builder.add_from_file('/usr/share/salixtools/gtklocalesetup/gtklocalesetup.glade')
 		self.window = builder.get_object('gtklocalesetup')
+		self.aboutdialog = builder.get_object('aboutdialog')
 
 		builder.connect_signals(self)
 		self.localelist = builder.get_object('localelist')

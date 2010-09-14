@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtklocalesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:55+0300\n"
+"POT-Creation-Date: 2010-09-14 20:28+0300\n"
 "PO-Revision-Date: 2010-08-29 12:42+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
@@ -17,18 +17,24 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: gtklocalesetup.glade:23
-#: gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "System language"
 msgstr "System språk"
 
 #: gtklocalesetup.glade:56
-msgid "Please select a default system locale. The changes will take effect next time you start your system."
-msgstr "Välj standard system språk. Ändringen gäller nästa gåmg du startar ditt system."
+msgid ""
+"Please select a default system locale. The changes will take effect next "
+"time you start your system."
+msgstr ""
+"Välj standard system språk. Ändringen gäller nästa gåmg du startar ditt "
+"system."
 
-#: gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
 msgstr "Språk konfiguration"
 
+#: gtklocalesetup.glade:899
+msgid "translator-credits"
+msgstr ""

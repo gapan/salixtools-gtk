@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:55+0300\n"
+"POT-Creation-Date: 2010-09-14 20:28+0300\n"
 "PO-Revision-Date: 2010-07-06 10:00+0100\n"
 "Last-Translator: Vasile Coman <kerd@slackware.eu>\n"
 "Language-Team: Italian\n"
@@ -26,9 +26,14 @@ msgid ""
 "Please select a default system locale. The changes will take effect next "
 "time you start your system."
 msgstr ""
-"Selezionare la lingua di default del sistema .Le modifiche avranno"
-"effetto al prossimo avvio di sistema."
+"Selezionare la lingua di default del sistema .Le modifiche avrannoeffetto al "
+"prossimo avvio di sistema."
 
-#: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
+#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
 msgstr "Strumento di configurazione della lingua"
+
+#: gtklocalesetup.glade:899
+msgid "translator-credits"
+msgstr ""

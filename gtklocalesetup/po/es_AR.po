@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:55+0300\n"
+"POT-Creation-Date: 2010-09-14 20:28+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: seacat <seacat.lang@gmail.com>\n"
 "Language-Team:  <seacat.linux@gmail.com>\n"
@@ -25,9 +25,14 @@ msgstr ""
 "Por favor, seleccione una localización por defecto del sistema. Los cambios "
 "se harán efectivos la próxima vez que inicie su sistema."
 
-#: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
+#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
 msgstr "Herramienta de configuración de localización"
+
+#: gtklocalesetup.glade:899
+msgid "translator-credits"
+msgstr ""
 
 #~ msgid "System language settings"
 #~ msgstr "Configuración del idioma del sistema"

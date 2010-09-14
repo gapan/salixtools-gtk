@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:55+0300\n"
+"POT-Creation-Date: 2010-09-14 20:28+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,11 @@ msgid ""
 "time you start your system."
 msgstr ""
 
-#: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
+#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
+msgstr ""
+
+#: gtklocalesetup.glade:899
+msgid "translator-credits"
 msgstr ""

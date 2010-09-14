@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtklocalesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:55+0300\n"
+"POT-Creation-Date: 2010-09-14 20:28+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
 "Language-Team: French\n"
@@ -26,9 +26,14 @@ msgstr ""
 "Veuillez sélectionner la langue de votre système. Cette modification prendra "
 "effet au redémarrage de votre ordinateur."
 
-#: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
+#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
 msgstr "Utilitaire de configuration de la langue du système"
+
+#: gtklocalesetup.glade:899
+msgid "translator-credits"
+msgstr ""
 
 #~ msgid "System language settings"
 #~ msgstr "Langue système"

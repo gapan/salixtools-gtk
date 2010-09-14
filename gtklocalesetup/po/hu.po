@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gtklocalesetup\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-29 13:55+0300\n"
+"POT-Creation-Date: 2010-09-14 20:28+0300\n"
 "PO-Revision-Date: 2010-07-22 19:25+0100\n"
 "Last-Translator: Peter Polonkai <polesz@nedudu.hu>\n"
 "Language-Team: Nedudu Team <nedudu@nedudu.hu>\n"
@@ -15,18 +15,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtklocalesetup.glade:23
-#: gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "System language"
 msgstr "Rendszer nyelv"
 
 #: gtklocalesetup.glade:56
-msgid "Please select a default system locale. The changes will take effect next time you start your system."
-msgstr "Kérem válassza ki a rendszer alapértelmezett nyelvét. A változás újraindításkor lép életbe."
+msgid ""
+"Please select a default system locale. The changes will take effect next "
+"time you start your system."
+msgstr ""
+"Kérem válassza ki a rendszer alapértelmezett nyelvét. A változás "
+"újraindításkor lép életbe."
 
-#: gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
 msgstr "Nyelvi beállító eszköz"
 
+#: gtklocalesetup.glade:899
+msgid "translator-credits"
+msgstr ""
