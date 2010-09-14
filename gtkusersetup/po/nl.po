@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkusersetup package.
 # Imar van Erven Dorens <gambit73@gmail.com>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -157,8 +157,9 @@ msgid "Users and groups management tool"
 msgstr "Gebruikers en groepen beheertool"
 
 #: gtkusersetup.glade:2545
+#, fuzzy
 msgid "translator-credits"
-msgstr ""
+msgstr "vertaler-credits"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
@@ -197,12 +198,8 @@ msgid "Username cannot start with a dash."
 msgstr "Gebruikersnaam kan niet beginnen met een streepje."
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"Gebruikersnaam mag uitsluitend kleine letters, cijfers, streepjes en "
-"onderstrepingstekens bevatten."
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Gebruikersnaam mag uitsluitend kleine letters, cijfers, streepjes en onderstrepingstekens bevatten."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -233,12 +230,8 @@ msgid "Group name cannot start with a dash."
 msgstr "Groepsnaam mag niet beginnen met een streepje."
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"Groepsnaam mag uitsluitend kleine letters, cijfers, streepjes en "
-"onderstrepingstekens bevatten."
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Groepsnaam mag uitsluitend kleine letters, cijfers, streepjes en onderstrepingstekens bevatten."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -277,12 +270,8 @@ msgid "Delete user {0}?"
 msgstr "Verwijder gebruiker (0)?"
 
 #: gtkusersetup:491
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"U staat op punt het gebruikersaccount \"(0)\" van uw systeem te verwijderen. "
-"Wilt u echt doorgaan?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "U staat op punt het gebruikersaccount \"(0)\" van uw systeem te verwijderen. Wilt u echt doorgaan?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
@@ -297,22 +286,12 @@ msgid "Add new group"
 msgstr "Voeg een nieuwe groep toe"
 
 #: gtkusersetup:782
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
-msgstr ""
-"U staat op punt de groep \"(0)\" van uw systeem te verwijderen. Wilt u echt "
-"doorgaan?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "U staat op punt de groep \"(0)\" van uw systeem te verwijderen. Wilt u echt doorgaan?"
 
 #: gtkusersetup:785
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"Groep \"(0)\" kan niet worden verwijderd omdat zij de hoofdgroep van "
-"gebruiker \"(1)\" is. Indien u groep \"(0)\" wilt verwijderen, moet u eerst "
-"een andere hoofdgroep instellen voor gebruiker \"(1)\"."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "Groep \"(0)\" kan niet worden verwijderd omdat zij de hoofdgroep van gebruiker \"(1)\" is. Indien u groep \"(0)\" wilt verwijderen, moet u eerst een andere hoofdgroep instellen voor gebruiker \"(1)\"."
 
 #: gtkusersetup:912
 msgid "Username"
