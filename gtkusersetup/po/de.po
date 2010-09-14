@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
@@ -155,7 +155,7 @@ msgstr "Einstellungen der Benutzer verwalten"
 
 #: gtkusersetup.glade:2545
 msgid "translator-credits"
-msgstr ""
+msgstr "Thorsten Mühlfelder <thenktor~at~gmx.de>"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
@@ -194,12 +194,8 @@ msgid "Username cannot start with a dash."
 msgstr "Der Nutzername darf nicht mit einem Bindestrich anfangen."
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"Der Nutzername darf ausschließlich aus lateinischen Buchstaben, Nummern, "
-"Bindestrichen und Unterstrichen bestehen."
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Der Nutzername darf ausschließlich aus lateinischen Buchstaben, Nummern, Bindestrichen und Unterstrichen bestehen."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -230,12 +226,8 @@ msgid "Group name cannot start with a dash."
 msgstr "Der Gruppenname darf nicht mit einem Bindestrich anfangen."
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"Der Gruppenname darf ausschließlich aus lateinischen Buchstaben, Nummern, "
-"Bindestrichen und Unterstrichen bestehen."
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Der Gruppenname darf ausschließlich aus lateinischen Buchstaben, Nummern, Bindestrichen und Unterstrichen bestehen."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -274,17 +266,12 @@ msgid "Delete user {0}?"
 msgstr "Benutzer {0} löschen?"
 
 #: gtkusersetup:491
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"Sie sind gerade dabei, das Benutzerkonto \"{0}\" von Ihrem System zu "
-"löschen. Wollen Sie wirklich fortfahren?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "Sie sind gerade dabei, das Benutzerkonto \"{0}\" von Ihrem System zu löschen. Wollen Sie wirklich fortfahren?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr ""
-"Das Home-Verzeichnis ({0}) des Benutzers mit seinem gesamten Inhalt löschen"
+msgstr "Das Home-Verzeichnis ({0}) des Benutzers mit seinem gesamten Inhalt löschen"
 
 #: gtkusersetup:738
 msgid "Group \"{0}\" properties"
@@ -295,23 +282,12 @@ msgid "Add new group"
 msgstr "Neue Gruppe hinzufügen"
 
 #: gtkusersetup:782
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
-msgstr ""
-"Sie sind gerade dabei, die Gruppe \"{0}\" von Ihrem System zu löschen. "
-"Wollen Sie wirklich fortfahren?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Sie sind gerade dabei, die Gruppe \"{0}\" von Ihrem System zu löschen. Wollen Sie wirklich fortfahren?"
 
 #: gtkusersetup:785
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"Die Gruppe \"{0}\" kann nicht gelöscht werden weil sie die Hauptgruppe für "
-"Benutzer \"{1}\" ist. Wenn Sie die Gruppe \"{0}\" löschen möchten, müssen "
-"Sie zuerst die Hauptgruppe für Benutzer \"{1}\" auf eine andere Gruppe "
-"ändern."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "Die Gruppe \"{0}\" kann nicht gelöscht werden weil sie die Hauptgruppe für Benutzer \"{1}\" ist. Wenn Sie die Gruppe \"{0}\" löschen möchten, müssen Sie zuerst die Hauptgruppe für Benutzer \"{1}\" auf eine andere Gruppe ändern."
 
 #: gtkusersetup:912
 msgid "Username"
