@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: ttt\n"
@@ -14,8 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\\n\\n\\n\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\\n\\n\\n\\n\\n\\n\n"
 
 #: gtkusersetup.glade:49
 msgid "User settings"
@@ -160,7 +159,7 @@ msgstr "Інструмент керування користувачами і г
 
 #: gtkusersetup.glade:2545
 msgid "translator-credits"
-msgstr ""
+msgstr "Yarema aka Knedlyk <yupadmin@gmail.com>"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
@@ -199,12 +198,8 @@ msgid "Username cannot start with a dash."
 msgstr "Назва користувача не може починатися з тире."
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"Назва користувача може складатися тільки з латинських малих літер, цифр, "
-"тире та підкреслення."
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Назва користувача може складатися тільки з латинських малих літер, цифр, тире та підкреслення."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -235,12 +230,8 @@ msgid "Group name cannot start with a dash."
 msgstr "Назва групи не може починатися з тире."
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"Назва групи може складатися лише з латинських малих літер, цифр, тире та "
-"підкреслення."
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Назва групи може складатися лише з латинських малих літер, цифр, тире та підкреслення."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -279,12 +270,8 @@ msgid "Delete user {0}?"
 msgstr "Видалити користувача {0}?"
 
 #: gtkusersetup:491
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"Ви збираєтеся видалити рахунок користувача \"{0}\" з системи. Ви дійсно "
-"бажаєте продовжувати?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "Ви збираєтеся видалити рахунок користувача \"{0}\" з системи. Ви дійсно бажаєте продовжувати?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
@@ -299,22 +286,12 @@ msgid "Add new group"
 msgstr "Додати нову групу"
 
 #: gtkusersetup:782
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
-msgstr ""
-"Ви збираєтеся видалити групу \"{0}\" з системи. Ви дійсно бажаєте "
-"продовжувати?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Ви збираєтеся видалити групу \"{0}\" з системи. Ви дійсно бажаєте продовжувати?"
 
 #: gtkusersetup:785
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"Групу \"{0}\" неможливо видалити з системи, оскільки це основна група для "
-"користувача \"{1}\". Якщо Ви бажаєте видалити групу \"{0}\", Вам потрібно "
-"спочатку встановити іншу групу як основну для користувача \"{1}\"."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "Групу \"{0}\" неможливо видалити з системи, оскільки це основна група для користувача \"{1}\". Якщо Ви бажаєте видалити групу \"{0}\", Вам потрібно спочатку встановити іншу групу як основну для користувача \"{1}\"."
 
 #: gtkusersetup:912
 msgid "Username"
