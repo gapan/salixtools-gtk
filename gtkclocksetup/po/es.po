@@ -4,13 +4,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
 "PO-Revision-Date: \n"
-"Last-Translator: seacat <seacat.lang@gmail.com>\n"
+"Last-Translator: seacat <seacat.linux@gmail.com>\n"
 "Language-Team:  <seacat.linux@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: ARGENTINA\n"
+"X-Poedit-Country: SPAIN\n"
 
 #: gtkclocksetup.glade:7
 msgid "Date and time settings"
@@ -24,7 +24,9 @@ msgstr "Mantener el reloj sincronizado con servidores en Internet"
 msgid "Synchronize now"
 msgstr "Sincronizar ahora"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
+#: gtkclocksetup.glade:89
+#: gtkclocksetup:202
+#: gtkclocksetup:235
 msgid "Time zone:"
 msgstr "Zona horaria:"
 
@@ -34,19 +36,11 @@ msgstr "Seleccione la zona horaria..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr ""
-"El reloj del hardware está establecido a la Hora Universal Coordinada (UTC)"
+msgstr "El reloj del hardware está establecido a la Hora Universal Coordinada (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid ""
-"Hardware clocks in most home or business computers are set to using local "
-"time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr ""
-"En la mayoría de las computadoras hogareñas y de negocios, los relojes del "
-"hardware se configuran a la hora local, mientras que el reloj del hardware "
-"en la mayoría de los servidores Web esté probablemente configurado a UTC. No "
-"marque esta caja si no está seguro."
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "En la mayoría de las computadoras hogareñas y de negocios, los relojes del hardware se configuran a la hora local, mientras que el reloj del hardware en la mayoría de los servidores Web esté probablemente configurado a UTC. No marque esta caja si no está seguro."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -64,14 +58,15 @@ msgstr "Seleccionar zona horaria"
 msgid "Please select your time zone:"
 msgstr "Por favor, seleccione su zona horaria:"
 
-#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup.glade:614
+#: gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "Herramienta de configuración del reloj del sistema"
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr ""
+msgstr "Fernando Velo <seacat.linux~at~gmail~dot~com>"
 
 #: gtkclocksetup:251
 msgid "General area"
@@ -81,6 +76,8 @@ msgstr "Área general"
 msgid "Location"
 msgstr "Ubicación"
 
-#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+#: gtkclocksetup.desktop.in.h:1
+#: gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
 msgstr "Reloj del sistema"
+
