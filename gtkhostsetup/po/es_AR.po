@@ -70,7 +70,7 @@ msgstr "Configurar los nombres de host del sistema"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr "Fernando Velo <seacat.lang~at~gmail~dot~com>"
+msgstr "Fernando Velo <seacat.linux~at~gmail~dot~com>"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
