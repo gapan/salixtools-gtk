@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gtkusersetup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2010-08-29 13:18+0100\n"
+"PO-Revision-Date: 2010-09-19 19:17+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -117,7 +117,8 @@ msgstr "Kontot utgår den"
 msgid "Advanced"
 msgstr "Avancerat"
 
-#: gtkusersetup.glade:973 gtkusersetup.glade:1580
+#: gtkusersetup.glade:973
+#: gtkusersetup.glade:1580
 msgid "Error!"
 msgstr "Fel!"
 
@@ -153,14 +154,15 @@ msgstr "Ta bort grupp?"
 msgid "Cannot delete group"
 msgstr "Kan inte ta bort grupp"
 
-#: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.glade:1867
+#: gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "Användare och grupp hantering"
 
 #: gtkusersetup.glade:2545
 msgid "translator-credits"
-msgstr ""
+msgstr "Ingemar Karlsson <ingemar@ingk.se>"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
@@ -199,12 +201,8 @@ msgid "Username cannot start with a dash."
 msgstr "Användarnamn kan inte börja med streck."
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"Användarnamn kan endast innehålla liten bokstav, siffror, streck och "
-"understreck."
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Användarnamn kan endast innehålla liten bokstav, siffror, streck och understreck."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -235,12 +233,8 @@ msgid "Group name cannot start with a dash."
 msgstr "Grupp namn kan inte börja med ett streck."
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"Grupp namn kan endast innehålla liten bokstav, siffror, streck och "
-"understreck."
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "Grupp namn kan endast innehålla liten bokstav, siffror, streck och understreck."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -279,12 +273,8 @@ msgid "Delete user {0}?"
 msgstr "Ta bort användaren {0}?"
 
 #: gtkusersetup:491
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"Du håller på att ta bort användar konto \"{0}\" från systemet. Vill du "
-"verkligen fortsätta?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "Du håller på att ta bort användar konto \"{0}\" från systemet. Vill du verkligen fortsätta?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
@@ -299,22 +289,12 @@ msgid "Add new group"
 msgstr "Lägg till grupp"
 
 #: gtkusersetup:782
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
-msgstr ""
-"Du håller på att ta bort gruppen \"{0}\" från ditt system. Är du säker på "
-"att du vill fortsätta?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Du håller på att ta bort gruppen \"{0}\" från ditt system. Är du säker på att du vill fortsätta?"
 
 #: gtkusersetup:785
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"Grupp \"{0}\" kan inte raderas eftersom det är huvudgruppen för användare "
-"\"{1}\". Om du vill ta bort gruppen \"{0}\", måste du ändra huvudgruppen för "
-"användare \"{1}\" till en annan grupp först."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "Grupp \"{0}\" kan inte raderas eftersom det är huvudgruppen för användare \"{1}\". Om du vill ta bort gruppen \"{0}\", måste du ändra huvudgruppen för användare \"{1}\" till en annan grupp först."
 
 #: gtkusersetup:912
 msgid "Username"
@@ -336,6 +316,8 @@ msgstr "Medlem"
 msgid "Group"
 msgstr "Grupp"
 
-#: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
+#: gtkusersetup.desktop.in.h:1
+#: gtkusersetup-kde.desktop.in.h:1
 msgid "Users and groups"
 msgstr "Användare och grupper"
+
