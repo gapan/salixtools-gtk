@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gtkservicesetup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2010-08-29 12:46+0100\n"
+"PO-Revision-Date: 2010-09-20 19:16+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,28 +17,25 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup.glade:35
+#: gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr "System tjänster"
 
 #: gtkservicesetup.glade:67
-msgid ""
-"Please select the system services that you wish to be enabled when the "
-"system starts. Any changes you make will be applied when you press the OK "
-"button."
-msgstr ""
-"Välj tjänster som du vill aktivera när systemet startar. Ändringar genomförs "
-"när du trycker på OK."
+msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
+msgstr "Välj tjänster som du vill aktivera när systemet startar. Ändringar genomförs när du trycker på OK."
 
-#: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
+#: gtkservicesetup.glade:243
+#: gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
 msgstr "Konfigurera tjänster"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"
-msgstr ""
+msgstr "Ingemar Karlsson <ingemar@ingk.se>"
 
 #: gtkservicesetup:44
 msgid "The {0} service"
@@ -55,3 +52,4 @@ msgstr "Tjänst namn"
 #: gtkservicesetup:135
 msgid "Service description"
 msgstr "Tjänst beskrivning"
+
