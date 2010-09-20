@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2010-08-29 11:54+0100\n"
+"PO-Revision-Date: 2010-09-20 18:43+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,9 @@ msgstr "Synkronisera klockan med internet server"
 msgid "Synchronize now"
 msgstr "Synkronisera nu"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
+#: gtkclocksetup.glade:89
+#: gtkclocksetup:202
+#: gtkclocksetup:235
 msgid "Time zone:"
 msgstr "Tids zon:"
 
@@ -42,14 +44,8 @@ msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Hårdvaruklockan är inställd på Coordinated Universal Time (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid ""
-"Hardware clocks in most home or business computers are set to using local "
-"time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr ""
-"Hårdvaruklockan är i de flesta hem eller företags datorer inställd att "
-"använda lokal tid, medans hårdvaruklockan i de flesta web servrar troligen "
-"är instäld på UTC. Markera inte denna om du är osäker."
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "Hårdvaruklockan är i de flesta hem eller företags datorer inställd att använda lokal tid, medans hårdvaruklockan i de flesta web servrar troligen är inställd på UTC. Markera inte denna om du är osäker."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -67,23 +63,26 @@ msgstr "Välj tids zon"
 msgid "Please select your time zone:"
 msgstr "Välj din tids zon:"
 
-#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup.glade:614
+#: gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "System tids konfiguration"
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr ""
+msgstr "Ingemar Karlsson <ingemar@ingk.se>"
 
 #: gtkclocksetup:251
 msgid "General area"
-msgstr "Almänt"
+msgstr "Allmänt"
 
 #: gtkclocksetup:252
 msgid "Location"
 msgstr "Plats"
 
-#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+#: gtkclocksetup.desktop.in.h:1
+#: gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
 msgstr "System klocka"
+
