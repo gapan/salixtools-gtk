@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:05+0300\n"
-"PO-Revision-Date: 2010-08-29 12:20+0100\n"
+"PO-Revision-Date: 2010-09-20 19:14+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,24 +22,16 @@ msgid "Keyboard settings"
 msgstr "Tangentbords inställningar"
 
 #: gtkkeyboardsetup.glade:53
-msgid ""
-"Please select you preferred keyboard type and map and set numlock and SCIM "
-"preferences."
-msgstr ""
-"Välj ditt önskade tangentbords typ och layout och sätt numlock och SCIM "
-"alternativ."
+msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
+msgstr "Välj ditt önskade tangentbords typ och layout och sätt numlock och SCIM alternativ."
 
 #: gtkkeyboardsetup.glade:147
 msgid "Enable SCIM when the system is started"
 msgstr "Aktivera SCIM när systemet är startat."
 
 #: gtkkeyboardsetup.glade:151
-msgid ""
-"SCIM is an input platform for Chinese, Japanese, Korean and many other "
-"languages."
-msgstr ""
-"SCIM är en inmatnings plattform för Kinesiska, Japanska, Koreanska och många "
-"fler språk."
+msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
+msgstr "SCIM är en inmatnings plattform för Kinesiska, Japanska, Koreanska och många fler språk."
 
 #: gtkkeyboardsetup.glade:163
 msgid "Enable numlock when the system is started"
@@ -47,7 +39,7 @@ msgstr "Aktivera numlock när systemet är startat."
 
 #: gtkkeyboardsetup.glade:958
 msgid "translator-credits"
-msgstr ""
+msgstr "Ingemar Karlsson <ingemar@ingk.se>"
 
 #: gtkkeyboardsetup:171
 msgid "Keyboard type"
@@ -57,10 +49,13 @@ msgstr "Tangentbords typ"
 msgid "Keyboard map"
 msgstr "Tangentbords layout"
 
-#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
+#: gtkkeyboardsetup.desktop.in.h:1
+#: gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "Tangentbord"
 
-#: gtkkeyboardsetup.desktop.in.h:2 gtkkeyboardsetup-kde.desktop.in.h:2
+#: gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "Tangentbords konfigurering"
+
