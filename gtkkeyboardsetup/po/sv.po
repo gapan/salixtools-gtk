@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ingemar Karlsson <po@ingk.se>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkkeyboardsetup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:05+0300\n"
-"PO-Revision-Date: 2010-09-20 19:14+0100\n"
+"PO-Revision-Date: 2010-09-26 11:55+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "Aktivera numlock när systemet är startat."
 
 #: gtkkeyboardsetup.glade:958
 msgid "translator-credits"
-msgstr "Ingemar Karlsson <ingemar@ingk.se>"
+msgstr "Ingemar Karlsson <po@ingk.se>"
 
 #: gtkkeyboardsetup:171
 msgid "Keyboard type"
