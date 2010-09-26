@@ -2,14 +2,14 @@
 # Svenska översättningar för paket PACKAGE.
 # Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Ingemar Karlsson <ingemar@ingk.se>, 2010.
+# Ingemar Karlsson <po@ingk.se>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkalsasetup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2010-09-20 19:19+0100\n"
+"PO-Revision-Date: 2010-09-26 11:52+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: Swedish\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr "Alsa standard ljudkort"
 
 #: gtkalsasetup.glade:54
 msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
-msgstr "Välj det ljudkort du vill skall vara standard för ALSA Sessionen måste startas om för att ändringen skall gälla."
+msgstr "Välj det ljudkort du vill skall vara standard för ALSA. Sessionen måste startas om för att ändringen skall gälla."
 
 #: gtkalsasetup.glade:119
 #: gtkalsasetup:135
@@ -59,7 +59,7 @@ msgstr "Ett verktyg för att hantera ALSA ljudkort"
 
 #: gtkalsasetup.glade:1043
 msgid "translator-credits"
-msgstr "Ingemar Karlsson <ingemar@ingk.se>"
+msgstr "Ingemar Karlsson <po@ingk.se>"
 
 #: gtkalsasetup:22
 #: gtkalsasetup:40
