@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ingemar Karlsson <po@ingk.se>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkhostsetup\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2010-09-20 18:40+0100\n"
+"PO-Revision-Date: 2010-09-26 11:54+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -70,7 +70,7 @@ msgstr "Konfigurera systemets värdnamn"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr "Ingemar Karlsson <ingemar@ingk.se>"
+msgstr "Ingemar Karlsson <po@ingk.se>"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
