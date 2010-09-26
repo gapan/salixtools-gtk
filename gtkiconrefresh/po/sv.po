@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ingemar Karlsson <po@ingk.se>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkiconrefresh\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2010-08-29 14:53+0100\n"
+"PO-Revision-Date: 2010-09-26 11:54+0100\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: gtkiconrefresh.glade:6
 msgid "Rebuilding icon cache"
-msgstr "Åtbygg ikon cache"
+msgstr "Återbygger ikon cache"
 
 #: gtkiconrefresh.glade:60
 msgid "Please wait while rebuilding the system's icon cache..."
