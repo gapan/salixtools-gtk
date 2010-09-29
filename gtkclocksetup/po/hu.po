@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkclocksetup\n"
@@ -40,14 +40,8 @@ msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "A hardver óra beállítása a Greenwichi időhöz (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid ""
-"Hardware clocks in most home or business computers are set to using local "
-"time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr ""
-"A hardver óra a legtöbb otthoni vagy munkahelyi számítógépen a helyi időre "
-"van állítva, míg a web szerverek használják a hardver óra beállítását UTC "
-"szerint. Ha nem biztos benne, akkor hagyja üresen."
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "A hardver óra a legtöbb otthoni vagy munkahelyi számítógépen a helyi időre van állítva, míg a web szerverek használják a hardver óra beállítását UTC szerint. Ha nem biztos benne, akkor hagyja üresen."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -72,7 +66,7 @@ msgstr "Rendszer óra beállító eszköz"
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr ""
+msgstr "fordítók névjegye"
 
 #: gtkclocksetup:251
 msgid "General area"
