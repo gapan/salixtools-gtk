@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkhostsetu\n"
@@ -59,7 +59,7 @@ msgstr "A rendszer számítógép neveinek konfigurálása"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr ""
+msgstr "fordítók névjegye"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -94,8 +94,7 @@ msgid "The hostname can consist solely of latin letters, numbers and hyphens."
 msgstr "A gépnév kizárólag latin betűkből, számokból és kötőjelből állhat."
 
 #: gtkhostsetup:90
-msgid ""
-"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
 msgstr "A domain név kizárólag latin betűkből, számokból és kötőjelből állhat."
 
 #: gtkhostsetup:284
