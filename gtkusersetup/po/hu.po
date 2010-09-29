@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gtkusersetup\n"
@@ -158,7 +158,7 @@ msgstr "Felhasználók és csoportok kezelése"
 
 #: gtkusersetup.glade:2545
 msgid "translator-credits"
-msgstr ""
+msgstr "fordítók névjegye"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
@@ -197,12 +197,8 @@ msgid "Username cannot start with a dash."
 msgstr "A felhasználónév nem kezdődhet kötőjellel."
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"A felhasználónév csak latin kisbetúket, számokat, kötőjelet és aláhúzás "
-"jelet tartalmazhat."
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "A felhasználónév csak latin kisbetúket, számokat, kötőjelet és aláhúzás jelet tartalmazhat."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -233,12 +229,8 @@ msgid "Group name cannot start with a dash."
 msgstr "A csoport neve nem kezdődhet kötőjellel."
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"A csoport neve csak latin kisbetúket, számokat, kötőjelet és aláhúzás jelet "
-"tartalmazhat."
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "A csoport neve csak latin kisbetúket, számokat, kötőjelet és aláhúzás jelet tartalmazhat."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -277,18 +269,12 @@ msgid "Delete user {0}?"
 msgstr "{0} felhasználó törlése?"
 
 #: gtkusersetup:491
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"Arra készül, hogy törölje a(z) \"{0}\" felhasználó fiókját a rendszerből. "
-"Valóban folytatja?"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "Arra készül, hogy törölje a(z) \"{0}\" felhasználó fiókját a rendszerből. Valóban folytatja?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr ""
-"Teljesen eltávolítja a felhasználó munka könyvtárát ((0)), annak teljes "
-"tartalmát"
+msgstr "Teljesen eltávolítja a felhasználó munka könyvtárát ((0)), annak teljes tartalmát"
 
 #: gtkusersetup:738
 msgid "Group \"{0}\" properties"
@@ -299,23 +285,12 @@ msgid "Add new group"
 msgstr "Új csoport hozzáadása"
 
 #: gtkusersetup:782
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
-msgstr ""
-"Arra készül, hogy törölje a(z) \"{0}\" csoportot a rendszerből. Valóban "
-"folytatja?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
+msgstr "Arra készül, hogy törölje a(z) \"{0}\" csoportot a rendszerből. Valóban folytatja?"
 
 #: gtkusersetup:785
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"\"(0)\" csoportot nem lehet törölni, mivel ez a (z) \"(1)\" felhasználó "
-"elsődleges csoportja. Ha a törölni kívánja a(z) \"(0)\" csoportot, akkor be "
-"kell állítania a(z) \"(1)\" felhasználónak másik elsődleges csoportot "
-"elsőként."
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "\"(0)\" csoportot nem lehet törölni, mivel ez a (z) \"(1)\" felhasználó elsődleges csoportja. Ha a törölni kívánja a(z) \"(0)\" csoportot, akkor be kell állítania a(z) \"(1)\" felhasználónak másik elsődleges csoportot elsőként."
 
 #: gtkusersetup:912
 msgid "Username"
