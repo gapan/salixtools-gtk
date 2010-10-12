@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-14 20:28+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: adi sucipto <acepby@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Indonesian\n"
+
+#: gtklocalesetup.glade:23
+#: gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup-kde.desktop.in.h:2
+msgid "System language"
+msgstr "Bahasa Sistem"
+
+#: gtklocalesetup.glade:56
+msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgstr "Sila pilih sistem lokal asli. Perubahan akan berpengaruh setelah anda memulai sistem anda"
+
+#: gtklocalesetup.glade:221
+#: gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup-kde.desktop.in.h:1
+msgid "Locale configuration tool"
+msgstr "Perangkat Konfigurasi lokal"
+
+#: gtklocalesetup.glade:899
+msgid "translator-credits"
+msgstr "Kredit-penerjemah"
+
