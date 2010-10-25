@@ -1,0 +1,115 @@
+# Italian .po file for gtkhostsetup.
+# Copyright (C) 2010
+# This file is distributed under the same license as the gtkhostsetup package.
+# Vasile Coman <kerd@slackware.eu>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-19 10:28+0300\n"
+"PO-Revision-Date: 2010-10-25 16:33+0100\n"
+"Last-Translator: Vasile Coman <kerd@slackware.eu>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkhostsetup.glade:24
+#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
+msgid "Hostnames"
+msgstr "Hostnames"
+
+#: gtkhostsetup.glade:44
+msgid "<b>This computer:</b>"
+msgstr "<b> Questo computer: </b>"
+
+#: gtkhostsetup.glade:88
+#: gtkhostsetup.glade:364
+#: gtkhostsetup.glade:596
+msgid "Hostname:"
+msgstr "Hostname:"
+
+#: gtkhostsetup.glade:95
+#: gtkhostsetup.glade:375
+#: gtkhostsetup.glade:607
+msgid "Domain:"
+msgstr "Dominio:"
+
+#: gtkhostsetup.glade:124
+msgid "<b>Other hosts:</b>"
+msgstr "<b> Altri hosts: </b>"
+
+#: gtkhostsetup.glade:329
+msgid "Add host"
+msgstr "Aggiungi host"
+
+#: gtkhostsetup.glade:357
+#: gtkhostsetup.glade:589
+msgid "IP address:"
+msgstr "indirizzo IP:"
+
+#: gtkhostsetup.glade:474
+#: gtkhostsetup.glade:706
+#: gtkhostsetup.glade:793
+msgid "Error"
+msgstr "Errore"
+
+#: gtkhostsetup.glade:561
+msgid "Edit host"
+msgstr "Modificare host"
+
+#: gtkhostsetup:60
+msgid "The IP address cannot be empty."
+msgstr "L'indirizzo IP non puo' essere vuoto"
+
+#: gtkhostsetup:63
+msgid "The hostname cannot be empty."
+msgstr "L'hostname non puo' essere vuoto"
+
+#: gtkhostsetup:66
+msgid "The hostname cannot start with a hyphen."
+msgstr "L'hostname non puo' cominciare con un trattino"
+
+#: gtkhostsetup:69
+msgid "The hostname cannot end with a hyphen."
+msgstr "L'hostname non puo' inire con un trattino"
+
+#: gtkhostsetup:72
+msgid "The domain cannot start with a hyphen."
+msgstr "Il dominio non puo' cominciare con un trattino"
+
+#: gtkhostsetup:75
+msgid "The domain cannot end with a hyphen."
+msgstr "Il dominio non puo' finire con un trattino"
+
+#: gtkhostsetup:80
+msgid "Not a valid IP address."
+msgstr "Indirizzo ip non valido"
+
+#: gtkhostsetup:85
+msgid "The hostname can consist solely of latin letters, numbers and hyphens."
+msgstr "L'hostname puo' contenere solo lettere latine, numeri e trattini"
+
+#: gtkhostsetup:90
+msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "Il dominio puo' contenere solo lettere latine, numeri, trattini e punti"
+
+#: gtkhostsetup:274
+msgid "IP address"
+msgstr "indirizzo IP"
+
+#: gtkhostsetup:275
+msgid "Hostname"
+msgstr "Hostname"
+
+#: gtkhostsetup:276
+msgid "Domain"
+msgstr "Dominio"
+
+#: gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "Configura gli hostname del sistema"
+
