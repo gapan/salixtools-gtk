@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -155,7 +156,7 @@ msgstr "ユーザとグループの管理ツール"
 
 #: gtkusersetup.glade:2545
 msgid "translator-credits"
-msgstr ""
+msgstr "翻訳者"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
@@ -194,12 +195,8 @@ msgid "Username cannot start with a dash."
 msgstr "ユーザネームは、ダッシュから始めることができません。"
 
 #: gtkusersetup:246
-msgid ""
-"Username can consist solely of latin lower case letters, numbers, dashes and "
-"underscores."
-msgstr ""
-"ユーザネームは、小文字のラテン文字、数、ダッシュまたは、アンダースコアで作る"
-"ことができます。"
+msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "ユーザネームは、小文字のラテン文字、数、ダッシュまたは、アンダースコアで作ることができます。"
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -230,12 +227,8 @@ msgid "Group name cannot start with a dash."
 msgstr "グループネームは、ダッシュから始めることができません。"
 
 #: gtkusersetup:282
-msgid ""
-"Group name can consist solely of latin lower case letters, numbers, dashes "
-"and underscores."
-msgstr ""
-"グループネームは、小文字のラテン文字、数、ダッシュまたは、アンダースコアで作"
-"ることができます。"
+msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
+msgstr "グループネームは、小文字のラテン文字、数、ダッシュまたは、アンダースコアで作ることができます。"
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -274,11 +267,8 @@ msgid "Delete user {0}?"
 msgstr "ユーザ{0}を消去しますか。"
 
 #: gtkusersetup:491
-msgid ""
-"You are about to remove user account \"{0}\" from your system. Do you really "
-"want to continue?"
-msgstr ""
-"ユーザ・アカウント \"{0}\" をシステムから消去します。確認してください。"
+msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgstr "ユーザ・アカウント \"{0}\" をシステムから消去します。確認してください。"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
@@ -293,20 +283,12 @@ msgid "Add new group"
 msgstr "新しいグループを加える"
 
 #: gtkusersetup:782
-msgid ""
-"You are about to delete the \"{0}\" group from your system. Are you sure you "
-"want to continue?"
+msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
 msgstr "グループ\"{0}\" をシステムから消去します。確認してください。"
 
 #: gtkusersetup:785
-msgid ""
-"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If "
-"you want to delete group \"{0}\", you have to set the main group for user "
-"\"{1}\" to another group first."
-msgstr ""
-"ユーザ \"{1}\"の主なグループなので、グループ\"{0}\" を消去することはできませ"
-"ん。もしもグループ\"{0}\" を消去したいならば、まずユーザ\"{1}\"の主なグループ"
-"を別のグループにしないといけません。"
+msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
+msgstr "ユーザ \"{1}\"の主なグループなので、グループ\"{0}\" を消去することはできません。もしもグループ\"{0}\" を消去したいならば、まずユーザ\"{1}\"の主なグループを別のグループにしないといけません。"
 
 #: gtkusersetup:912
 msgid "Username"
