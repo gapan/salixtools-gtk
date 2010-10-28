@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -18,12 +19,8 @@ msgid "System language"
 msgstr "システム用の言語"
 
 #: gtklocalesetup.glade:56
-msgid ""
-"Please select a default system locale. The changes will take effect next "
-"time you start your system."
-msgstr ""
-"デフォのシステム用言語を選択してください。再起動後に新しい設定が使用されま"
-"す。"
+msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgstr "デフォのシステム用言語を選択してください。再起動後に新しい設定が使用されます。"
 
 #: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
@@ -32,4 +29,4 @@ msgstr "ローカル設定用のツール"
 
 #: gtklocalesetup.glade:899
 msgid "translator-credits"
-msgstr ""
+msgstr "翻訳者"
