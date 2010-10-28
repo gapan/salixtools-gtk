@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -18,13 +19,8 @@ msgid "System services"
 msgstr "システム・サービス"
 
 #: gtkservicesetup.glade:67
-msgid ""
-"Please select the system services that you wish to be enabled when the "
-"system starts. Any changes you make will be applied when you press the OK "
-"button."
-msgstr ""
-"システム起動時にスタートさせたいシステムサービスを選んでください。OKのボタン"
-"を押すことによって、変更が決定されます。"
+msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
+msgstr "システム起動時にスタートさせたいシステムサービスを選んでください。OKのボタンを押すことによって、変更が決定されます。"
 
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
@@ -33,7 +29,7 @@ msgstr "サービス構成ツール"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"
-msgstr ""
+msgstr "翻訳者"
 
 #: gtkservicesetup:44
 msgid "The {0} service"
