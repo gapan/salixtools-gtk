@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -17,20 +18,15 @@ msgid "Keyboard settings"
 msgstr "キーボード設定"
 
 #: gtkkeyboardsetup.glade:53
-msgid ""
-"Please select you preferred keyboard type and map and set numlock and SCIM "
-"preferences."
-msgstr ""
-"キーボードタイプとマッピング、数字キーパッド、SCIMの設定を行ってください。"
+msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
+msgstr "キーボードタイプとマッピング、数字キーパッド、SCIMの設定を行ってください。"
 
 #: gtkkeyboardsetup.glade:147
 msgid "Enable SCIM when the system is started"
 msgstr "SCIMをデフォでONにする。"
 
 #: gtkkeyboardsetup.glade:151
-msgid ""
-"SCIM is an input platform for Chinese, Japanese, Korean and many other "
-"languages."
+msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
 msgstr "SCIMは、日本語などのアジアの言語をタイプできるようにするアプリです。"
 
 #: gtkkeyboardsetup.glade:163
@@ -39,7 +35,7 @@ msgstr "数字キーパッドをデフォでONにする"
 
 #: gtkkeyboardsetup.glade:958
 msgid "translator-credits"
-msgstr ""
+msgstr "翻訳者"
 
 #: gtkkeyboardsetup:171
 msgid "Keyboard type"
