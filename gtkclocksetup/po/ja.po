@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -34,19 +35,11 @@ msgstr "時間帯を設定する"
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr ""
-"ハードウェアの時計は、Coordinated Universal Time (UTC)にセットされています。"
+msgstr "ハードウェアの時計は、Coordinated Universal Time (UTC)にセットされています。"
 
 #: gtkclocksetup.glade:134
-msgid ""
-"Hardware clocks in most home or business computers are set to using local "
-"time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr ""
-"ほとんどのホーム用またはビジネス用のコンピュータのハードウェアの時計は、ロー"
-"カルタイムにセットされています。それとは対象にウェブ・サーバーなどは、ほとん"
-"どUTCにセットされています。よくわからない場合は、このボックスは、ティックしな"
-"いでください。"
+msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
+msgstr "ほとんどのホーム用またはビジネス用のコンピュータのハードウェアの時計は、ローカルタイムにセットされています。それとは対象にウェブ・サーバーなどは、ほとんどUTCにセットされています。よくわからない場合は、このボックスは、ティックしないでください。"
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -71,7 +64,7 @@ msgstr "システム時計設定用のツール"
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr ""
+msgstr "翻訳者"
 
 #: gtkclocksetup:251
 msgid "General area"
