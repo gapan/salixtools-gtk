@@ -1,3 +1,4 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
@@ -56,7 +57,7 @@ msgstr "システムのホストネーム設定"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr ""
+msgstr "翻訳者"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -88,15 +89,11 @@ msgstr "IPアドレスが、間違っています。"
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr ""
-"ホストネームをつけるには、ラテン文字、数字またはハイフン以外の文字は使えませ"
-"ん。"
+msgstr "ホストネームをつけるには、ラテン文字、数字またはハイフン以外の文字は使えません。"
 
 #: gtkhostsetup:90
-msgid ""
-"The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr ""
-"ドメインの入力には、ラテン文字、数字またはハイフン以外の文字は使えません。"
+msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "ドメインの入力には、ラテン文字、数字またはハイフン以外の文字は使えません。"
 
 #: gtkhostsetup:284
 msgid "IP address"
