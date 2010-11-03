@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,18 +15,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtklocalesetup.glade:23
-#: gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "System language"
 msgstr "שפת מערכת"
 
 #: gtklocalesetup.glade:56
 msgid "Please select a default system locale. The changes will take effect next time you start your system."
-msgstr "נא בחרו את מקומיות (locale) ברירת המחדל למערכת. השינויים ייכנסו לתוקף בפעם הבאה שתתחילו את המערכת."
+msgstr "נא בחרו את מקומיות (locale) ברירת המחדל עבור המערכת. השינויים ייכנסו לתוקף בפעם הבאה שתתחילו את המערכת."
 
-#: gtklocalesetup.glade:221
-#: gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
 msgstr "תוכנת עזר לתצורת מקומיות (locale) "
@@ -34,4 +32,3 @@ msgstr "תוכנת עזר לתצורת מקומיות (locale) "
 #: gtklocalesetup.glade:899
 msgid "translator-credits"
 msgstr "Rothschild Maccabim <Maccabees@inferno>"
-
