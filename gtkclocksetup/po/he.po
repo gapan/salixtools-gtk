@@ -41,7 +41,7 @@ msgstr "שעון החמרה קבוע לזמן הכלל עולמי המתואם (
 
 #: gtkclocksetup.glade:134
 msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "שעוני החמרה (הציוד הפיזי של מחשב) ברוב המחשבים הביתיים והעסקיים מכוונים לשימוש בזמן המקומי, בעוד ששעון החמרה ברוב שרתי האינטרנט מכוון, קרוב לוודאי, לפי UTC. נא לא לסמן את התא אם אינכם בטוחים. "
+msgstr "שעוני החמרה (הציוד הפיזי של המחשב) ברוב המחשבים הביתיים והעסקיים מכוונים לשימוש בזמן המקומי, בעוד ששעון החמרה ברוב שרתי האינטרנט מכוון, קרוב לוודאי, לפי UTC. נא לא לסמן את התא אם אינכם בטוחים. "
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
