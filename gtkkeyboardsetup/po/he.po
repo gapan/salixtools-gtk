@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -29,7 +29,7 @@ msgstr "הכנסת SCIM לפעולה בזמן הפעלת המערכת"
 
 #: gtkkeyboardsetup.glade:151
 msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr "אסאא הינה פלטפורמת ק‎‎‏‏לט עבור יפנית, סינית, עברית, ערבית, קוריאנית, רוסית ועוד שפות רבות אחרות."
+msgstr "SCIM הינה פלטפורמת ק‎‎‏‏לט עבור יפנית, סינית, עברית, ערבית, קוריאנית, רוסית ועוד שפות רבות אחרות."
 
 #: gtkkeyboardsetup.glade:163
 msgid "Enable numlock when the system is started"
@@ -47,13 +47,10 @@ msgstr "סוג המקלדת"
 msgid "Keyboard map"
 msgstr "מערך המקלדת"
 
-#: gtkkeyboardsetup.desktop.in.h:1
-#: gtkkeyboardsetup-kde.desktop.in.h:1
+#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "לוח המקשים"
 
-#: gtkkeyboardsetup.desktop.in.h:2
-#: gtkkeyboardsetup-kde.desktop.in.h:2
+#: gtkkeyboardsetup.desktop.in.h:2 gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "תוכנת עזר לתצורת המקלדת"
-
