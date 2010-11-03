@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
+"PO-Revision-Date: 2010-11-03 15:44+0200\n"
+"Last-Translator: my name <email@address.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkhostsetup.glade:24
+#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
+msgid "Hostnames"
+msgstr "שמות המארח"
+
+#: gtkhostsetup.glade:44
+msgid "<b>This computer:</b>"
+msgstr "<b>המחשב הזה:</b>"
+
+#: gtkhostsetup.glade:88
+#: gtkhostsetup.glade:404
+#: gtkhostsetup.glade:637
+msgid "Hostname:"
+msgstr "שם המארח:"
+
+#: gtkhostsetup.glade:95
+#: gtkhostsetup.glade:415
+#: gtkhostsetup.glade:648
+msgid "Domain:"
+msgstr "תחום:"
+
+#: gtkhostsetup.glade:124
+msgid "<b>Other hosts:</b>"
+msgstr "<b>מארחים אחרים:</b>"
+
+#: gtkhostsetup.glade:369
+msgid "Add host"
+msgstr "הוספת מארח"
+
+#: gtkhostsetup.glade:397
+#: gtkhostsetup.glade:630
+msgid "IP address:"
+msgstr "כתובת IP:"
+
+#: gtkhostsetup.glade:514
+#: gtkhostsetup.glade:747
+#: gtkhostsetup.glade:835
+msgid "Error"
+msgstr "שגיאה"
+
+#: gtkhostsetup.glade:602
+msgid "Edit host"
+msgstr "עריכת מארח"
+
+#: gtkhostsetup.glade:934
+#: gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "תצורת שמות (המחשב) המארח של המערכת"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr "Rothschild Maccabim <Maccabees@inferno>"
+
+#: gtkhostsetup:60
+msgid "The IP address cannot be empty."
+msgstr "כתובת IP לא יכולה להיות ריקה"
+
+#: gtkhostsetup:63
+msgid "The hostname cannot be empty."
+msgstr "שם המארח לא יכול להיות ריק"
+
+#: gtkhostsetup:66
+msgid "The hostname cannot start with a hyphen."
+msgstr "שם המארח לא יכול להתחיל עם מקף"
+
+#: gtkhostsetup:69
+msgid "The hostname cannot end with a hyphen."
+msgstr "שם המארח לא יכול להסתיים עם מקף"
+
+#: gtkhostsetup:72
+msgid "The domain cannot start with a hyphen."
+msgstr "התחום לא יכול להתחיל עם מקף"
+
+#: gtkhostsetup:75
+msgid "The domain cannot end with a hyphen."
+msgstr "התחום לא יכול להסתיים עם מקף"
+
+#: gtkhostsetup:80
+msgid "Not a valid IP address."
+msgstr "כתובת IP אינה ברת תוקף."
+
+#: gtkhostsetup:85
+msgid "The hostname can consist solely of latin letters, numbers and hyphens."
+msgstr "שם המארח יכול להיות מורכב מאותיות לטיניות, מספרים ומקפים בלבד."
+
+#: gtkhostsetup:90
+msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "התחום יכול להיות מורכב מאותיות לטיניות, מספרים, מקפים ונקודות בלבד."
+
+#: gtkhostsetup:284
+msgid "IP address"
+msgstr "כתובת IP"
+
+#: gtkhostsetup:285
+msgid "Hostname"
+msgstr "שם המארח"
+
+#: gtkhostsetup:286
+msgid "Domain"
+msgstr "תחום"
+
