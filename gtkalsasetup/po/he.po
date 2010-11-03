@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-11 12:47+0300\n"
+"PO-Revision-Date: 2010-11-03 13:34+0200\n"
+"Last-Translator: my name <email@address.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkalsasetup.glade:15
+msgid "Alsa default sound card"
+msgstr "כרטיס קול ברירת המחדל של ALSA"
+
+#: gtkalsasetup.glade:54
+msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
+msgstr "נא לבחור את כרטיס הקול שברצונך לקבוע עבור ALSA כברירת מחדל עבור כל המערכת (systemwide). נדרשת התחלה מחדש של המערכת כדי שהשינויים יחולו."
+
+#: gtkalsasetup.glade:119
+#: gtkalsasetup:135
+msgid "Sound card"
+msgstr "כרטיס קול"
+
+#: gtkalsasetup.glade:148
+msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
+msgstr "באפשרותך לעשות שימוש בכפתורים למטה לנהל את הגדרות המערכת עבור ALSA, לרבות הגדרות עוצמת קול ובחירה של ערוצי קלט."
+
+#: gtkalsasetup.glade:180
+msgid "Store the current ALSA settings as the system defaults"
+msgstr "אחסון ההגדרות הנוכיות של ALSA כברירת המחדל של המערכת"
+
+#: gtkalsasetup.glade:198
+msgid "Revert current ALSA settings to the stored defaults"
+msgstr "החזרת ההגדרות הנוכחיות של ALSA להגדרות המאוחסנות כברירת המחדל"
+
+#: gtkalsasetup.glade:216
+msgid "Clear all ALSA settings and set default values"
+msgstr "מחיקת כל ההגדרות הנוכחיות של ALSA והחזרת ערכי ברירת המחדל"
+
+#: gtkalsasetup.glade:252
+msgid "Settings"
+msgstr "הגדרות"
+
+#: gtkalsasetup.glade:364
+msgid "A tool to manage ALSA sound cards"
+msgstr "תוכנת עזר לניהול כרטיסי קול עם ALSA"
+
+#: gtkalsasetup.glade:1043
+msgid "translator-credits"
+msgstr "Rothschild Maccabim <Maccabees@inferno>"
+
+#: gtkalsasetup:22
+#: gtkalsasetup:40
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#: gtkalsasetup:22
+msgid "Use the default ALSA sound card"
+msgstr "שימוש בכרטיס הקול של ALSA (ברירת מחדל)"
+
+#: gtkalsasetup:137
+msgid "Description"
+msgstr "תאור"
+
+#: gtkalsasetup.desktop.in.h:1
+#: gtkalsasetup-kde.desktop.in.h:1
+msgid "ALSA sound card"
+msgstr "כרטיס קול ALSA"
+
+#: gtkalsasetup.desktop.in.h:2
+#: gtkalsasetup-kde.desktop.in.h:2
+msgid "Select the systemwide ALSA sound card"
+msgstr "בחירת כרטיס הקול של ALSA עבור כל המערכת (systemwide)"
+
