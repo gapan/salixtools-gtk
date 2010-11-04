@@ -289,8 +289,9 @@ msgid "You are about to delete the \"{0}\" group from your system. Are you sure 
 msgstr "הינכם עומדים למחוק את הקבוצה \"{0}\" מהמערכת. האם אתם בטוחים שברצונכם להמשיך?"
 
 #: gtkusersetup:785
+#, fuzzy
 msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
-msgstr ""
+msgstr "הקבוצה \"{0}\" לא יכולה להימחק מכיוון שזו הקבוצה הראשית עבור המשתמש \"{1}\". אם ברצונך למחוק את הקבוצה \"{0}\", יש הכרח לקבוע קודם כל את הקבוצה הראשית עבור המשתמש \"{1}\" לקבוצה אחרת."
 
 #: gtkusersetup:912
 msgid "Username"
