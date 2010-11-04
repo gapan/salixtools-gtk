@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -60,9 +60,8 @@ msgid "<b>Contact information</b>"
 msgstr "<b>מידע התקשרות</b>"
 
 #: gtkusersetup.glade:536
-#, fuzzy
 msgid "Office extension:"
-msgstr "שלוחה משרדית OR מדור משרדי:"
+msgstr "שלוחה משרדית"
 
 #: gtkusersetup.glade:548
 msgid "Office information:"
@@ -116,8 +115,7 @@ msgstr "קביעת תפוגת התאריך שך חשבון"
 msgid "Advanced"
 msgstr "מתקדם"
 
-#: gtkusersetup.glade:973
-#: gtkusersetup.glade:1580
+#: gtkusersetup.glade:973 gtkusersetup.glade:1580
 msgid "Error!"
 msgstr "שגיאה!"
 
@@ -153,8 +151,7 @@ msgstr "האם ברצונך למחוק את הקבוצה?"
 msgid "Cannot delete group"
 msgstr "לא ניתן למחוק קבוצה"
 
-#: gtkusersetup.glade:1867
-#: gtkusersetup.desktop.in.h:2
+#: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "תוכנת עזר לניהול משתמשים וקבוצות"
@@ -315,8 +312,6 @@ msgstr "חבר"
 msgid "Group"
 msgstr "קבוצה"
 
-#: gtkusersetup.desktop.in.h:1
-#: gtkusersetup-kde.desktop.in.h:1
+#: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
 msgid "Users and groups"
 msgstr "משתמשים וקבוצות"
-
