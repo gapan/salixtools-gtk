@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,8 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: gtkservicesetup.glade:35
-#: gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
 msgstr "שרותי מערכת"
@@ -25,8 +24,7 @@ msgstr "שרותי מערכת"
 msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
 msgstr "נא לבחור את שירותי המערכת שברצונך להתיר בזמן הפעלת המערכת. כל שינוי שיעשה יוחל מיד לאחר שהמתג OK יילחץ."
 
-#: gtkservicesetup.glade:243
-#: gtkservicesetup.desktop.in.h:1
+#: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
 msgstr "כלי להגדרת שירותים"
@@ -37,7 +35,7 @@ msgstr "Rothschild Maccabim <Maccabees@inferno>"
 
 #: gtkservicesetup:44
 msgid "The {0} service"
-msgstr ""
+msgstr "סוג השירות: {0}"
 
 #: gtkservicesetup:131
 msgid "Enabled"
@@ -50,4 +48,3 @@ msgstr "שם השירות"
 #: gtkservicesetup:135
 msgid "Service description"
 msgstr "תאור השרות"
-
