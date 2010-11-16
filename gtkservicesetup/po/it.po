@@ -2,7 +2,7 @@
 # Copyright (C) 2010
 # This file is distributed under the same license as the gtkservicesetup package.
 # Vasile Coman <kerd@slackware.eu>, 2010.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
@@ -21,14 +21,8 @@ msgid "System services"
 msgstr "Servizi di sistema"
 
 #: gtkservicesetup.glade:67
-msgid ""
-"Please select the system services that you wish to be enabled when the "
-"system starts. Any changes you make will be applied when you press the OK "
-"button."
-msgstr ""
-"Selezionare i servizi di sistema che si desidera abilitare quando ilsistema "
-"parte. Tutte le modifiche apportate verranno applicate quandopremi il "
-"pulsante OK."
+msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
+msgstr "Selezionare i servizi di sistema che si desidera abilitare quando ilsistema parte. Tutte le modifiche apportate verranno applicate quandopremi il pulsante OK."
 
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
@@ -37,7 +31,7 @@ msgstr "Strumento di configurazione servici"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"
-msgstr ""
+msgstr "Vasile Coman <kerd~at~slackware~dot~eu>"
 
 #: gtkservicesetup:44
 msgid "The {0} service"
