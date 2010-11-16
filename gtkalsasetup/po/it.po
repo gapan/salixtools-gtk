@@ -53,7 +53,7 @@ msgstr "Uno strumento per gestire le schede audio ALSA"
 
 #: gtkalsasetup.glade:1043
 msgid "translator-credits"
-msgstr ""
+msgstr "Vasile Coman <kerd~at~slackware~dot~eu>"
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
