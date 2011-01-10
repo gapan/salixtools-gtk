@@ -1,18 +1,23 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: \n"
-"Last-Translator: adi sucipto <acepby@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2011-01-10 23:53+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Indonesian\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
-#: gtkhostsetup.glade:24
-#: gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
 msgstr "Hostname"
@@ -21,15 +26,11 @@ msgstr "Hostname"
 msgid "<b>This computer:</b>"
 msgstr "<b>Komputer ini:</b>"
 
-#: gtkhostsetup.glade:88
-#: gtkhostsetup.glade:404
-#: gtkhostsetup.glade:637
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
 msgstr "Hostname:"
 
-#: gtkhostsetup.glade:95
-#: gtkhostsetup.glade:415
-#: gtkhostsetup.glade:648
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
 msgstr "Domain:"
 
@@ -41,14 +42,11 @@ msgstr "<b>Host yang lain:</b>"
 msgid "Add host"
 msgstr "Tambah host"
 
-#: gtkhostsetup.glade:397
-#: gtkhostsetup.glade:630
+#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
 msgstr "Alamat IP:"
 
-#: gtkhostsetup.glade:514
-#: gtkhostsetup.glade:747
-#: gtkhostsetup.glade:835
+#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
 msgid "Error"
 msgstr "Error"
 
@@ -56,8 +54,7 @@ msgstr "Error"
 msgid "Edit host"
 msgstr "Sunting host"
 
-#: gtkhostsetup.glade:934
-#: gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
 #: gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
 msgstr "Mengkonfigurasi hostname sistem"
@@ -113,4 +110,3 @@ msgstr "Hostname"
 #: gtkhostsetup:286
 msgid "Domain"
 msgstr "Domain"
-

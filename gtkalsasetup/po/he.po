@@ -2,18 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2010-11-03 13:34+0200\n"
-"Last-Translator: my name <email@address.org>\n"
+"PO-Revision-Date: 2011-01-10 23:52+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
@@ -23,8 +25,7 @@ msgstr "כרטיס קול ברירת המחדל של ALSA"
 msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
 msgstr "נא לבחור את כרטיס הקול שברצונך לקבוע עבור ALSA כברירת מחדל עבור כל המערכת (systemwide). נדרשת התחלה מחדש של המערכת כדי שהשינויים יחולו."
 
-#: gtkalsasetup.glade:119
-#: gtkalsasetup:135
+#: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
 msgstr "כרטיס קול"
 
@@ -56,8 +57,7 @@ msgstr "תוכנת עזר לניהול כרטיסי קול עם ALSA"
 msgid "translator-credits"
 msgstr "Rothschild Maccabim <Maccabees@inferno>"
 
-#: gtkalsasetup:22
-#: gtkalsasetup:40
+#: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
 msgstr "ברירת מחדל"
 
@@ -69,13 +69,10 @@ msgstr "שימוש בכרטיס הקול של ALSA (ברירת מחדל)"
 msgid "Description"
 msgstr "תאור"
 
-#: gtkalsasetup.desktop.in.h:1
-#: gtkalsasetup-kde.desktop.in.h:1
+#: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
 msgid "ALSA sound card"
 msgstr "כרטיס קול ALSA"
 
-#: gtkalsasetup.desktop.in.h:2
-#: gtkalsasetup-kde.desktop.in.h:2
+#: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
 msgstr "בחירת כרטיס הקול של ALSA עבור כל המערכת (systemwide)"
-

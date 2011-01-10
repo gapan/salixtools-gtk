@@ -1,24 +1,21 @@
-# Swedish translations for PACKAGE package
-# Svenska översättningar för paket PACKAGE.
-# Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Ingemar Karlsson <po@ingk.se>, 2010.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: gtkalsasetup\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2010-09-26 11:52+0100\n"
-"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
-"Language-Team: Swedish\n"
+"PO-Revision-Date: 2011-01-10 23:52+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sv\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: Swedish\n"
-"X-Poedit-Country: SWEDEN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
@@ -28,8 +25,7 @@ msgstr "Alsa standard ljudkort"
 msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
 msgstr "Välj det ljudkort du vill skall vara standard för ALSA. Sessionen måste startas om för att ändringen skall gälla."
 
-#: gtkalsasetup.glade:119
-#: gtkalsasetup:135
+#: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
 msgstr "Ljudkort"
 
@@ -61,8 +57,7 @@ msgstr "Ett verktyg för att hantera ALSA ljudkort"
 msgid "translator-credits"
 msgstr "Ingemar Karlsson <po@ingk.se>"
 
-#: gtkalsasetup:22
-#: gtkalsasetup:40
+#: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
 msgstr "Standard"
 
@@ -74,13 +69,10 @@ msgstr "Använd standard ALSA ljudkort"
 msgid "Description"
 msgstr "Beskrivning"
 
-#: gtkalsasetup.desktop.in.h:1
-#: gtkalsasetup-kde.desktop.in.h:1
+#: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
 msgid "ALSA sound card"
 msgstr "ALSA ljudkort"
 
-#: gtkalsasetup.desktop.in.h:2
-#: gtkalsasetup-kde.desktop.in.h:2
+#: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
 msgstr "Välj system ALSA ljudkort"
-

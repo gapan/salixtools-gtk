@@ -1,21 +1,21 @@
-# Dialog to choose the Alsa default sound card.
-# Copyright (C) 2010 Cyrille Pontvieux
-# This file is distributed under the same license as the gtkalsasetup package.
-# Cyrille Pontvieux <jrd@enialis.net>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2010-06-19 12:57+0100\n"
-"Last-Translator: Cyrille Pontvieux <jrd@enialis.net>\n"
-"Language-Team: French <jrd@enialis.net>\n"
+"PO-Revision-Date: 2011-01-10 23:52+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: French\n"
-"X-Poedit-Country: FRANCE\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
@@ -76,15 +76,3 @@ msgstr "Carte son ALSA"
 #: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
 msgstr "Sélectionne la carte son ALSA pour l'ensemble du système"
-
-#~ msgid "You must restart your session for the changes to take effect."
-#~ msgstr "Vous devez redémarrer votre session pour que les changements soient pris en compte."
-
-#~ msgid "Sound card names"
-#~ msgstr "Noms des cartes sons"
-
-#~ msgid "Descriptions"
-#~ msgstr "Descriptions"
-
-#~ msgid "Choose the default Alsa sound card"
-#~ msgstr "Choisissez la carte par défaut d'Alsa"

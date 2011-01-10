@@ -1,20 +1,23 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: gtklocalesetup\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:28+0300\n"
-"PO-Revision-Date: \n"
-"Last-Translator: George Vlahavas <vlahavas~at~gmail~dot~com>\n"
-"Language-Team: Greek\n"
+"PO-Revision-Date: 2011-01-10 23:54+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Greek <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Greek\n"
-"X-Poedit-Country: GREECE\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: gtklocalesetup.glade:23
-#: gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "System language"
 msgstr "Γλώσσα συστήματος"
@@ -23,8 +26,7 @@ msgstr "Γλώσσα συστήματος"
 msgid "Please select a default system locale. The changes will take effect next time you start your system."
 msgstr "Παρακαλούμε επιλέξτε τη γλώσσα συστήματος. Η εφαρμογή των αλλαγών θα γίνει την επόμενη φορά που θα εκκινήσει το σύστημα."
 
-#: gtklocalesetup.glade:221
-#: gtklocalesetup.desktop.in.h:1
+#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
 msgstr "Εργαλείο για τη ρύθμιση της γλώσσας του συστήματος"
@@ -32,6 +34,3 @@ msgstr "Εργαλείο για τη ρύθμιση της γλώσσας του
 #: gtklocalesetup.glade:899
 msgid "translator-credits"
 msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
-
-#~ msgid "System language settings"
-#~ msgstr "Ρύθμιση γλώσσας συστήματος"
