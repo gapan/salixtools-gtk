@@ -162,7 +162,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
-                <property name="tooltip_text" translatable="yes">IBus is an input platform for Chinese, Japanese, Korean and many other languages. It is newer than SCIM and works better than it.</property>
+                <property name="tooltip_text" translatable="yes">IBus is an input platform for Chinese, Japanese, Korean and many other languages. It is newer and works better than SCIM.</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
