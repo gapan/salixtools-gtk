@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
-"POT-Creation-Date: 2010-09-14 20:05+0300\n"
-"PO-Revision-Date: 2011-01-10 23:53+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-02-13 16:32+0200\n"
+"PO-Revision-Date: 2011-02-13 14:32+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,38 +21,43 @@ msgstr ""
 msgid "Keyboard settings"
 msgstr "Toetsenbord instellingen"
 
-#: gtkkeyboardsetup.glade:53
-msgid "Please select you preferred keyboard type and map and set numlock and SCIM preferences."
-msgstr "Selecteer uw voorkeur type toetsenbord en indeling en zet NumLock en SCIM voorkeuren."
+#: gtkkeyboardsetup.glade:52
+msgid "Please select you preferred keyboard type and map and set numlock and IBus/SCIM preferences."
+msgstr ""
 
-#: gtkkeyboardsetup.glade:147
-msgid "Enable SCIM when the system is started"
-msgstr "Activeer SCIM wanneer het systeem wordt gestart"
-
-#: gtkkeyboardsetup.glade:151
-msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr "SCIM is een platform voor input in het Chinees, Japans, Koreaans en vele andere talen."
-
-#: gtkkeyboardsetup.glade:163
+#: gtkkeyboardsetup.glade:146
 msgid "Enable numlock when the system is started"
 msgstr "Activeer NumLock wanneer het systeem wordt gestart"
 
-#: gtkkeyboardsetup.glade:958
+#: gtkkeyboardsetup.glade:161
+msgid "Enable IBus when the system is started"
+msgstr ""
+
+#: gtkkeyboardsetup.glade:176
+msgid "Enable SCIM when the system is started"
+msgstr "Activeer SCIM wanneer het systeem wordt gestart"
+
+#: gtkkeyboardsetup.glade:180
+msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
+msgstr "SCIM is een platform voor input in het Chinees, Japans, Koreaans en vele andere talen."
+
+#: gtkkeyboardsetup.glade:294 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup-kde.desktop.in.h:2
+msgid "Keyboard configuration tool"
+msgstr "Toetsenbord configuratietool"
+
+#: gtkkeyboardsetup.glade:972
 msgid "translator-credits"
 msgstr "vertaler-credits"
 
-#: gtkkeyboardsetup:171
+#: gtkkeyboardsetup:194
 msgid "Keyboard type"
 msgstr "Type toetsenbord"
 
-#: gtkkeyboardsetup:175
+#: gtkkeyboardsetup:198
 msgid "Keyboard map"
 msgstr "Toetsenbord indeling"
 
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "Toetsenbord"
-
-#: gtkkeyboardsetup.desktop.in.h:2 gtkkeyboardsetup-kde.desktop.in.h:2
-msgid "Keyboard configuration tool"
-msgstr "Toetsenbord configuratietool"
