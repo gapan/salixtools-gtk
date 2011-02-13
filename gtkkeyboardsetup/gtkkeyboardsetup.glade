@@ -22,7 +22,6 @@
     <property name="window_position">center</property>
     <property name="icon_name">gtkkeyboardsetup</property>
     <property name="type_hint">normal</property>
-    <property name="has_separator">False</property>
     <signal name="destroy" handler="gtk_main_quit"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox1">
@@ -50,7 +49,7 @@
                 <child>
                   <object class="GtkLabel" id="label1">
                     <property name="visible">True</property>
-                    <property name="label" translatable="yes">Please select you preferred keyboard type and map and set numlock and SCIM preferences.</property>
+                    <property name="label" translatable="yes">Please select you preferred keyboard type and map and set numlock and IBus/SCIM preferences.</property>
                     <property name="wrap">True</property>
                   </object>
                   <packing>
@@ -154,7 +153,22 @@
                 <property name="expand">False</property>
                 <property name="fill">False</property>
                 <property name="padding">6</property>
-                <property name="position">5</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="ibuscheckbutton">
+                <property name="label" translatable="yes">Enable IBus when the system is started</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="draw_indicator">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="padding">6</property>
+                <property name="position">3</property>
               </packing>
             </child>
             <child>
@@ -189,7 +203,7 @@
                 <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkButton" id="button_about">
-                    <property name="label" translatable="yes">gtk-about</property>
+                    <property name="label">gtk-about</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -222,7 +236,7 @@
                 <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkButton" id="button_cancel">
-                    <property name="label" translatable="yes">gtk-cancel</property>
+                    <property name="label">gtk-cancel</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -236,7 +250,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_ok">
-                    <property name="label" translatable="yes">gtk-ok</property>
+                    <property name="label">gtk-ok</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -275,7 +289,6 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkkeyboardsetup</property>
-    <property name="has_separator">False</property>
     <property name="program_name">gtkkeyboardsetup</property>
     <property name="copyright">Copyright &#xA9; 2010 George Vlahavas</property>
     <property name="comments" translatable="yes">Keyboard configuration tool</property>
