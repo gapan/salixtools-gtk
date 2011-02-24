@@ -100,9 +100,6 @@ class GTKAlsaSoundSetup:
 		card = self.soundcardsstore.get_value(iter, 0)
 		if not card == getdefcard():
 			setdefcard(card)
-			if len(availablecards()) > 1:
-				msginfo = self.builder.get_object('msginfo')
-				msginfo.run()
 		gtk.main_quit()
 
 	def on_button_cancel_clicked(self, widget, data=None):
