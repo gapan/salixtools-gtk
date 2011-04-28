@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2011-01-10 23:53+0000\n"
+"PO-Revision-Date: 2011-04-28 09:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: gtkclocksetup.glade:7
 msgid "Date and time settings"
@@ -42,8 +42,14 @@ msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "Час периферії встановлено на Coordinated Universal Time (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "Час периферії в більшості домашніх чи офісних комп’ютерах встановлено на використання локального часу, тоді як час периферії в більшості веб-серверів встановлено на UTC. Не помічайте це галочкою, якщо Ви не впевнені."
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not check this box if you are not sure."
+msgstr ""
+"Час периферії в більшості домашніх чи офісних комп’ютерах встановлено на "
+"використання локального часу, тоді як час периферії в більшості веб-серверів"
+" встановлено на UTC. Не помічайте це галочкою, якщо Ви не впевнені."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:28+0300\n"
-"PO-Revision-Date: 2011-01-10 23:54+0000\n"
+"PO-Revision-Date: 2011-04-28 09:27+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,9 @@ msgid "System language"
 msgstr "システム用の言語"
 
 #: gtklocalesetup.glade:56
-msgid "Please select a default system locale. The changes will take effect next time you start your system."
+msgid ""
+"Please select a default system locale. The changes will take effect next "
+"time you start your system."
 msgstr "デフォのシステム用言語を選択してください。再起動後に新しい設定が使用されます。"
 
 #: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1

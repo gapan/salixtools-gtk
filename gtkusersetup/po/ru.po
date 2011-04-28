@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2011-01-10 23:54+0000\n"
+"PO-Revision-Date: 2011-04-28 09:28+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
 #: gtkusersetup.glade:49
 msgid "User settings"
@@ -203,8 +203,12 @@ msgid "Username cannot start with a dash."
 msgstr "Логин не должен начинаться с тире."
 
 #: gtkusersetup:246
-msgid "Username can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "Логин может состоять из латинских букв нижнего регистра, цифр, тире и подчеркиваний."
+msgid ""
+"Username can consist solely of latin lower case letters, numbers, dashes and"
+" underscores."
+msgstr ""
+"Логин может состоять из латинских букв нижнего регистра, цифр, тире и "
+"подчеркиваний."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -235,8 +239,12 @@ msgid "Group name cannot start with a dash."
 msgstr "Имя группы не должно начинаться с тире."
 
 #: gtkusersetup:282
-msgid "Group name can consist solely of latin lower case letters, numbers, dashes and underscores."
-msgstr "Имя группы может состоять из латинских букв нижнего регистра, цифр, тире и подчеркиваний."
+msgid ""
+"Group name can consist solely of latin lower case letters, numbers, dashes "
+"and underscores."
+msgstr ""
+"Имя группы может состоять из латинских букв нижнего регистра, цифр, тире и "
+"подчеркиваний."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -275,7 +283,9 @@ msgid "Delete user {0}?"
 msgstr "Удалить пользователя {0}?"
 
 #: gtkusersetup:491
-msgid "You are about to remove user account \"{0}\" from your system. Do you really want to continue?"
+msgid ""
+"You are about to remove user account \"{0}\" from your system. Do you really"
+" want to continue?"
 msgstr ""
 "Вы собираетесь удалить пользователя \"{0}\" из системы. \n"
 "\n"
@@ -294,12 +304,21 @@ msgid "Add new group"
 msgstr "Создание группы"
 
 #: gtkusersetup:782
-msgid "You are about to delete the \"{0}\" group from your system. Are you sure you want to continue?"
-msgstr "Вы собираетесь удалить группу \"{0}\" из системы. Действительно продолжить?"
+msgid ""
+"You are about to delete the \"{0}\" group from your system. Are you sure you"
+" want to continue?"
+msgstr ""
+"Вы собираетесь удалить группу \"{0}\" из системы. Действительно продолжить?"
 
 #: gtkusersetup:785
-msgid "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If you want to delete group \"{0}\", you have to set the main group for user \"{1}\" to another group first."
-msgstr "Группа  \"{0}\" не может быть удалена, так как является главной для пользователя \"{1}\". Чтобы удалить группу \"{0}\", сначала измените главную группу для пользователя  \"{1}\"."
+msgid ""
+"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
+" you want to delete group \"{0}\", you have to set the main group for user "
+"\"{1}\" to another group first."
+msgstr ""
+"Группа  \"{0}\" не может быть удалена, так как является главной для "
+"пользователя \"{1}\". Чтобы удалить группу \"{0}\", сначала измените главную"
+" группу для пользователя  \"{1}\"."
 
 #: gtkusersetup:912
 msgid "Username"

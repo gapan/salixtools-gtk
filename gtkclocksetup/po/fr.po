@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2011-01-10 23:53+0000\n"
+"PO-Revision-Date: 2011-04-28 09:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French <>\n"
 "MIME-Version: 1.0\n"
@@ -39,11 +39,20 @@ msgstr "Sélectionner fuseau..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "L'horloge interne de votre ordinateur est réglée sur le Temps Universel Coordonné (UTC)"
+msgstr ""
+"L'horloge interne de votre ordinateur est réglée sur le Temps Universel "
+"Coordonné (UTC)"
 
 #: gtkclocksetup.glade:134
-msgid "Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure."
-msgstr "Les horloges internes des ordinateurs de bureau sont généralement réglés sur l'heure locale, tandis que les horloges internes de la majorité des serveurs Internet sont plutôt réglés sur l'UTC. Veuillez ne pas cocher cette case si vous n'en êtes pas sûr."
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not check this box if you are not sure."
+msgstr ""
+"Les horloges internes des ordinateurs de bureau sont généralement réglés sur"
+" l'heure locale, tandis que les horloges internes de la majorité des "
+"serveurs Internet sont plutôt réglés sur l'UTC. Veuillez ne pas cocher cette"
+" case si vous n'en êtes pas sûr."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"

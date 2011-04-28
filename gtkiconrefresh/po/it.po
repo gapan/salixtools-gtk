@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2011-01-10 23:53+0000\n"
+"PO-Revision-Date: 2011-03-22 15:50+0000\n"
 "Last-Translator: Kerd <kerd89@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,8 @@ msgstr "Ricostruzione cache delle icone"
 
 #: gtkiconrefresh.glade:60
 msgid "Please wait while rebuilding the system's icon cache..."
-msgstr "Per favore attendere mentre ricostruisco la cache delle icone di sistema..."
+msgstr ""
+"Per favore attendere mentre ricostruisco la cache delle icone di sistema..."
 
 #: gtkiconrefresh.desktop.in.h:1
 msgid "Rebuild icon cache"

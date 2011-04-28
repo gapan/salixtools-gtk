@@ -49,7 +49,7 @@
                 <child>
                   <object class="GtkLabel" id="label1">
                     <property name="visible">True</property>
-                    <property name="label" translatable="yes">Please select you preferred keyboard type and map and set numlock and IBus/SCIM preferences.</property>
+                    <property name="label" translatable="yes">Please select your preferred keyboard type and map and set numlock and IBus/SCIM preferences.</property>
                     <property name="wrap">True</property>
                   </object>
                   <packing>

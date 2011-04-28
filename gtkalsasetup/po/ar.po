@@ -8,85 +8,79 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2011-04-28 09:24+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: French <>\n"
+"PO-Revision-Date: 2011-03-22 15:06+0000\n"
+"Last-Translator: cobraJoker <cobra.the.joker@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
 
 #: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
-msgstr "Carte son par défaut d'ALSA"
+msgstr "بطاقة الصوت لALSA"
 
 #: gtkalsasetup.glade:54
 msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
 msgstr ""
-"Veuillez choisir la carte son que vous voulez définir par défaut pour ALSA "
-"pour l'ensemble du système. La session doit être redémarrée pour que les "
-"modifications soient appliquées."
+"الرجاء اختيار بطاقة الصوت التي تريد تعيين كافتراضي للALSA المنظومة. الدورة "
+"تحتاج إلى إعادة تشغيل لتطبق التغييرات."
 
 #: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
-msgstr "Noms des cartes sons"
+msgstr "بطاقة الصوت"
 
 #: gtkalsasetup.glade:148
 msgid ""
 "You can use the buttons below to manage the system settings for ALSA, "
 "including volume settings and selection of input sources. "
 msgstr ""
-"Vous pouvez utiliser les boutons ci-dessous pour gérer les paramètres du "
-"système pour ALSA, y compris les réglages du volume et de la sélection des "
-"sources d'entrée."
+"يمكنك استخدام الأزرار الموجودة أدناه لإدارة إعدادات النظام لALSA ، بما في "
+"ذلك إعدادات الصوت واختيار مصادر المدخلات للصوت."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
-msgstr ""
-"Conserver les paramètres actuels de ALSA comme les valeurs par défaut du "
-"système"
+msgstr "تخزين الإعدادات الحالية ALSA كما افتراضيات النظام"
 
 #: gtkalsasetup.glade:198
 msgid "Revert current ALSA settings to the stored defaults"
-msgstr ""
-"Rétablir les paramètres actuels ALSA pour les valeurs par défaut stockées"
+msgstr "العودة إلى الإعدادات الحالية  ALSA إلي الافتراضات المخزنة"
 
 #: gtkalsasetup.glade:216
 msgid "Clear all ALSA settings and set default values"
-msgstr "Effacer tous les réglages ALSA et définir des valeurs par défaut"
+msgstr "مسح كافة إعدادات ALSA والقيم الافتراضية"
 
 #: gtkalsasetup.glade:252
 msgid "Settings"
-msgstr "Paramètres"
+msgstr "إعدادات"
 
 #: gtkalsasetup.glade:364
 msgid "A tool to manage ALSA sound cards"
-msgstr ""
-"Utilitaire pour sélectionner la carte son ALSA pour l'ensemble du système"
+msgstr "أداة لإدارة بطاقات الصوت ALSA"
 
 #: gtkalsasetup.glade:1043
 msgid "translator-credits"
-msgstr "Cyrille Pontvieux <jrd~at~enialis~dot~net>"
+msgstr "حقوق-المترجم"
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
-msgstr "Par défaut"
+msgstr "الافتراضي"
 
 #: gtkalsasetup:22
 msgid "Use the default ALSA sound card"
-msgstr "Choisissez la carte par défaut d'ALSA"
+msgstr "استخدام بطاقة الصوت ALSA الافتراضية"
 
 #: gtkalsasetup:137
 msgid "Description"
-msgstr "Descriptions"
+msgstr "الوصف"
 
 #: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
 msgid "ALSA sound card"
-msgstr "Carte son ALSA"
+msgstr "بطاقة الصوت ALSA"
 
 #: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
-msgstr "Sélectionne la carte son ALSA pour l'ensemble du système"
+msgstr "حدد بطاقة صوت ALSA علي مستوي النظام"

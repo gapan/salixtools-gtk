@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2011-02-13 16:32+0200\n"
-"PO-Revision-Date: 2011-02-13 14:33+0000\n"
+"PO-Revision-Date: 2011-03-22 15:49+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,9 @@ msgid "Keyboard settings"
 msgstr "הגדרות המקלדת"
 
 #: gtkkeyboardsetup.glade:52
-msgid "Please select you preferred keyboard type and map and set numlock and IBus/SCIM preferences."
+msgid ""
+"Please select you preferred keyboard type and map and set numlock and "
+"IBus/SCIM preferences."
 msgstr ""
 
 #: gtkkeyboardsetup.glade:146
@@ -38,8 +40,12 @@ msgid "Enable SCIM when the system is started"
 msgstr "הכנסת SCIM לפעולה בזמן הפעלת המערכת"
 
 #: gtkkeyboardsetup.glade:180
-msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr "SCIM הינה פלטפורמת ק‎‎‏‏לט עבור יפנית, סינית, עברית, ערבית, קוריאנית, רוסית ועוד שפות רבות אחרות."
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+"SCIM הינה פלטפורמת ק‎‎‏‏לט עבור יפנית, סינית, עברית, ערבית, קוריאנית, רוסית "
+"ועוד שפות רבות אחרות."
 
 #: gtkkeyboardsetup.glade:294 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2

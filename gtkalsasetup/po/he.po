@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2011-01-10 23:52+0000\n"
+"PO-Revision-Date: 2011-04-28 09:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,16 +22,24 @@ msgid "Alsa default sound card"
 msgstr "כרטיס קול ברירת המחדל של ALSA"
 
 #: gtkalsasetup.glade:54
-msgid "Please choose the sound card that you want to set as default for ALSA systemwide. The session needs to be restarted for the changes to be applied."
-msgstr "נא לבחור את כרטיס הקול שברצונך לקבוע עבור ALSA כברירת מחדל עבור כל המערכת (systemwide). נדרשת התחלה מחדש של המערכת כדי שהשינויים יחולו."
+msgid ""
+"Please choose the sound card that you want to set as default for ALSA "
+"systemwide. The session needs to be restarted for the changes to be applied."
+msgstr ""
+"נא לבחור את כרטיס הקול שברצונך לקבוע עבור ALSA כברירת מחדל עבור כל המערכת "
+"(systemwide). נדרשת התחלה מחדש של המערכת כדי שהשינויים יחולו."
 
 #: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
 msgstr "כרטיס קול"
 
 #: gtkalsasetup.glade:148
-msgid "You can use the buttons below to manage the system settings for ALSA, including volume settings and selection of input sources. "
-msgstr "באפשרותך לעשות שימוש בכפתורים למטה לנהל את הגדרות המערכת עבור ALSA, לרבות הגדרות עוצמת קול ובחירה של ערוצי קלט."
+msgid ""
+"You can use the buttons below to manage the system settings for ALSA, "
+"including volume settings and selection of input sources. "
+msgstr ""
+"באפשרותך לעשות שימוש בכפתורים למטה לנהל את הגדרות המערכת עבור ALSA, לרבות "
+"הגדרות עוצמת קול ובחירה של ערוצי קלט."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"

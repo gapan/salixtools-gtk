@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2011-02-13 16:32+0200\n"
-"PO-Revision-Date: 2011-02-13 14:32+0000\n"
+"PO-Revision-Date: 2011-03-22 15:49+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Greek <>\n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,12 @@ msgid "Keyboard settings"
 msgstr "Ρυθμίσεις πληκτρολογίου"
 
 #: gtkkeyboardsetup.glade:52
-msgid "Please select you preferred keyboard type and map and set numlock and IBus/SCIM preferences."
+msgid ""
+"Please select you preferred keyboard type and map and set numlock and "
+"IBus/SCIM preferences."
 msgstr ""
+"Παρακαλούμε επιλέξτε τον προτιμώμενο τύπο πληκτρολογίου καθώς και τις "
+"ρυθμίσεις του πλήκτρου numlock και των IBus/SCIM."
 
 #: gtkkeyboardsetup.glade:146
 msgid "Enable numlock when the system is started"
@@ -31,15 +35,19 @@ msgstr "Ενεργοποίηση του πλήκτρου numlock κατά την
 
 #: gtkkeyboardsetup.glade:161
 msgid "Enable IBus when the system is started"
-msgstr ""
+msgstr "Ενεργοποίηση του IBus κατά την εκκίνηση του συστήματος"
 
 #: gtkkeyboardsetup.glade:176
 msgid "Enable SCIM when the system is started"
 msgstr "Ενεργοποίηση του SCIM κατά την εκκίνηση του συστήματος"
 
 #: gtkkeyboardsetup.glade:180
-msgid "SCIM is an input platform for Chinese, Japanese, Korean and many other languages."
-msgstr "Το SCIM είναι μια πλατφόρμα εισαγωγής για Κινέζικα, Γιαπωνέζικα, Κορεάτικα και πολλές άλλες γλώσσες."
+msgid ""
+"SCIM is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
+"Το SCIM είναι μια πλατφόρμα εισαγωγής για Κινέζικα, Γιαπωνέζικα, Κορεάτικα "
+"και πολλές άλλες γλώσσες."
 
 #: gtkkeyboardsetup.glade:294 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2

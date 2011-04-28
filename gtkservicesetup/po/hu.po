@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2011-01-10 23:54+0000\n"
+"PO-Revision-Date: 2011-04-28 09:28+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -23,8 +23,13 @@ msgid "System services"
 msgstr "Rendszer szolgáltatások"
 
 #: gtkservicesetup.glade:67
-msgid "Please select the system services that you wish to be enabled when the system starts. Any changes you make will be applied when you press the OK button."
-msgstr "Kérem válassza ki azokat a szolgáltatásokat amiket engedélyezni szeretne a rendszer indulásakor. A változások mentéséhez kattintson az OK gombra."
+msgid ""
+"Please select the system services that you wish to be enabled when the "
+"system starts. Any changes you make will be applied when you press the OK "
+"button."
+msgstr ""
+"Kérem válassza ki azokat a szolgáltatásokat amiket engedélyezni szeretne a "
+"rendszer indulásakor. A változások mentéséhez kattintson az OK gombra."
 
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1

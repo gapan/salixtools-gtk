@@ -8,106 +8,106 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2011-04-28 09:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Danish <None>\n"
+"PO-Revision-Date: 2011-03-22 15:52+0000\n"
+"Last-Translator: cobraJoker <cobra.the.joker@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5\n"
 
 #: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
-msgstr "Værtsnavne"
+msgstr "أسماء المضيفين"
 
 #: gtkhostsetup.glade:44
 msgid "<b>This computer:</b>"
-msgstr "<b>Denne computer:</b>"
+msgstr "<b>هذا الكمبيوتر :</b>"
 
 #: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
-msgstr "Værtsnavn:"
+msgstr "المضيف :"
 
 #: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
-msgstr "Domæne:"
+msgstr "المجال :"
 
 #: gtkhostsetup.glade:124
 msgid "<b>Other hosts:</b>"
-msgstr "<b>Andre værter:</b>"
+msgstr "<b>المضيفين الآخرين :</b>"
 
 #: gtkhostsetup.glade:369
 msgid "Add host"
-msgstr "Tilføj vært"
+msgstr "إضافة مضيف"
 
 #: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
-msgstr "IP-adresse:"
+msgstr "عنوان IP :"
 
 #: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
 msgid "Error"
-msgstr "Fejl"
+msgstr "خطأ"
 
 #: gtkhostsetup.glade:602
 msgid "Edit host"
-msgstr "Redigér vært"
+msgstr "تحرير المضيف"
 
 #: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
 #: gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
-msgstr "Konfigurér systemets værtsnavne"
+msgstr "تكوين نظام أسماء المضيفين"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr "Kris Thomsen <lakristho~at~gmail~dot~com>"
+msgstr "حقوق-المترجم"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
-msgstr "IP-adressen må ikke være tom."
+msgstr "عنوان الIP لا يمكن أن يكون فارغاً"
 
 #: gtkhostsetup:63
 msgid "The hostname cannot be empty."
-msgstr "Værtsnavnet må ikke være tom."
+msgstr "لا يمكن لاسم المضيف أن يكون فارغا"
 
 #: gtkhostsetup:66
 msgid "The hostname cannot start with a hyphen."
-msgstr "Værtsnavnet må ikke starte med en bindestreg."
+msgstr "لا يمكن لاسم المضيف أن يبدأ بواصلة."
 
 #: gtkhostsetup:69
 msgid "The hostname cannot end with a hyphen."
-msgstr "Værtsnavnet må ikke slutte med en bindestreg."
+msgstr "لا يمكن لاسم المضيف أن ينتهي بواصلة."
 
 #: gtkhostsetup:72
 msgid "The domain cannot start with a hyphen."
-msgstr "Domænet må ikke starte med en bindestreg."
+msgstr "لا يمكن للمجال أن يبدأ بواصلة."
 
 #: gtkhostsetup:75
 msgid "The domain cannot end with a hyphen."
-msgstr "Domænet må ikke slutte med en bindestreg."
+msgstr "لا يمكن للمجال أن ينتهي بواصلة."
 
 #: gtkhostsetup:80
 msgid "Not a valid IP address."
-msgstr "Ikke en gyldig IP-adresse."
+msgstr "عنوان IP غير صحيح ."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr "Værtsnavnet må kun indeholdet latin-bogstaver, tal og bindestreger."
+msgstr "يمكن للمضيف أن يتكون فقط من الحروف اللاتينية والأرقام والواصلات."
 
 #: gtkhostsetup:90
 msgid ""
 "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr "Domænet må kun indeholdet latin-bogstaver, tal og bindestreger."
+msgstr "يمكن للمجال أن يتكون فقط من الحروف اللاتينية والأرقام والواصلات."
 
 #: gtkhostsetup:284
 msgid "IP address"
-msgstr "IP-adresse"
+msgstr "عنوان IP ."
 
 #: gtkhostsetup:285
 msgid "Hostname"
-msgstr "Værtsnavn"
+msgstr "المضيف"
 
 #: gtkhostsetup:286
 msgid "Domain"
-msgstr "Domæne"
+msgstr "المجال"

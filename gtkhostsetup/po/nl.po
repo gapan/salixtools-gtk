@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2011-01-10 23:53+0000\n"
+"PO-Revision-Date: 2011-04-28 09:25+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -93,11 +93,16 @@ msgstr "Niet een geldig IP-adres."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr "De hostnaam mag uitsluitend latijnse letters, cijfers en koppeltekens bevatten."
+msgstr ""
+"De hostnaam mag uitsluitend latijnse letters, cijfers en koppeltekens "
+"bevatten."
 
 #: gtkhostsetup:90
-msgid "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr "De domeinnaam mag uitsluitend latijnse letters, cijfers en koppeltekens bevatten."
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr ""
+"De domeinnaam mag uitsluitend latijnse letters, cijfers en koppeltekens "
+"bevatten."
 
 #: gtkhostsetup:284
 msgid "IP address"
