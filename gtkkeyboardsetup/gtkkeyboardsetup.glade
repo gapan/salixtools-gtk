@@ -291,7 +291,7 @@
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkkeyboardsetup</property>
     <property name="program_name">gtkkeyboardsetup</property>
-    <property name="copyright">Copyright &#xA9; 2010 George Vlahavas</property>
+    <property name="copyright">Copyright &#xA9; 2010-2012 George Vlahavas</property>
     <property name="comments" translatable="yes">Keyboard configuration tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
@@ -972,8 +972,8 @@ Public License instead of this License.  But first, please read
     <property name="authors">George Vlahavas &lt;vlahavas~at~gmail~dot~com&gt;</property>
     <property name="translator_credits" translatable="yes">translator-credits</property>
     <property name="logo_icon_name">gtkkeyboardsetup</property>
-    <signal name="response" handler="on_aboutdialog_response"/>
     <signal name="delete_event" handler="on_aboutdialog_delete_event"/>
+    <signal name="response" handler="on_aboutdialog_response"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox2">
         <property name="visible">True</property>

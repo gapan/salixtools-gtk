@@ -50,7 +50,6 @@
     <property name="window_position">center</property>
     <property name="icon_name">gtkusersetup</property>
     <property name="type_hint">normal</property>
-    <property name="has_separator">False</property>
     <signal name="destroy" handler="gtk_main_quit"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox1">
@@ -127,7 +126,7 @@
                 <property name="visible">True</property>
                 <child>
                   <object class="GtkButton" id="button_properties">
-                    <property name="label" translatable="yes">gtk-properties</property>
+                    <property name="label">gtk-properties</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -153,7 +152,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_adduser">
-                    <property name="label" translatable="yes">gtk-add</property>
+                    <property name="label">gtk-add</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -179,7 +178,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_deleteuser">
-                    <property name="label" translatable="yes">gtk-delete</property>
+                    <property name="label">gtk-delete</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -262,7 +261,7 @@
             <property name="layout_style">edge</property>
             <child>
               <object class="GtkButton" id="button_about">
-                <property name="label" translatable="yes">gtk-about</property>
+                <property name="label">gtk-about</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -277,7 +276,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button_close">
-                <property name="label" translatable="yes">gtk-close</property>
+                <property name="label">gtk-close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -320,7 +319,6 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkusersetup</property>
-    <property name="has_separator">False</property>
     <signal name="destroy" handler="on_button_user_properties_cancel_clicked"/>
     <signal name="delete_event" handler="on_user_properties_window_delete_event"/>
     <child internal-child="vbox">
@@ -921,7 +919,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_user_properties_cancel">
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -936,7 +934,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button_user_properties_ok">
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -980,7 +978,6 @@
     <property name="skip_pager_hint">True</property>
     <property name="urgency_hint">True</property>
     <property name="transient_for">user_properties_window</property>
-    <property name="has_separator">False</property>
     <signal name="delete_event" handler="on_properties_error_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox3">
@@ -1029,7 +1026,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_error_window_ok">
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1067,7 +1064,6 @@
     <property name="skip_pager_hint">True</property>
     <property name="urgency_hint">True</property>
     <property name="transient_for">gtkusersetup</property>
-    <property name="has_separator">False</property>
     <signal name="delete_event" handler="on_delete_user_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox4">
@@ -1138,7 +1134,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_deleteuser_cancel">
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1153,7 +1149,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button_deleteuser_ok">
-                <property name="label" translatable="yes">gtk-delete</property>
+                <property name="label">gtk-delete</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1193,7 +1189,6 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkusersetup</property>
-    <property name="has_separator">False</property>
     <signal name="delete_event" handler="on_group_settings_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox5">
@@ -1250,7 +1245,7 @@
                 <property name="visible">True</property>
                 <child>
                   <object class="GtkButton" id="button_group_properties">
-                    <property name="label" translatable="yes">gtk-properties</property>
+                    <property name="label">gtk-properties</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -1276,7 +1271,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_group_add">
-                    <property name="label" translatable="yes">gtk-add</property>
+                    <property name="label">gtk-add</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -1302,7 +1297,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_group_delete">
-                    <property name="label" translatable="yes">gtk-delete</property>
+                    <property name="label">gtk-delete</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -1333,7 +1328,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_group_settings_close">
-                <property name="label" translatable="yes">gtk-close</property>
+                <property name="label">gtk-close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1371,7 +1366,6 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">group_settings_window</property>
-    <property name="has_separator">False</property>
     <signal name="delete_event" handler="on_group_properties_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox6">
@@ -1528,7 +1522,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_group_properties_cancel">
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1543,7 +1537,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button_group_properties_ok">
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1588,7 +1582,6 @@
     <property name="skip_pager_hint">True</property>
     <property name="urgency_hint">True</property>
     <property name="transient_for">group_properties_window</property>
-    <property name="has_separator">False</property>
     <signal name="delete_event" handler="on_group_properties_error_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox7">
@@ -1637,7 +1630,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_group_error_ok">
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1676,7 +1669,6 @@
     <property name="skip_pager_hint">True</property>
     <property name="urgency_hint">True</property>
     <property name="transient_for">group_settings_window</property>
-    <property name="has_separator">False</property>
     <signal name="delete_event" handler="on_delete_group_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox8">
@@ -1724,7 +1716,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_delete_group_cancel">
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1739,7 +1731,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button_delete_group_ok">
-                <property name="label" translatable="yes">gtk-delete</property>
+                <property name="label">gtk-delete</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1779,7 +1771,6 @@
     <property name="skip_pager_hint">True</property>
     <property name="urgency_hint">True</property>
     <property name="transient_for">group_settings_window</property>
-    <property name="has_separator">False</property>
     <signal name="delete_event" handler="on_cannot_delete_group_window_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox9">
@@ -1825,7 +1816,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button_cannot_delete_group_ok">
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1861,9 +1852,8 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkusersetup</property>
-    <property name="has_separator">False</property>
     <property name="program_name">gtkusersetup</property>
-    <property name="copyright">Copyright &#xA9; 2010 George Vlahavas</property>
+    <property name="copyright">Copyright &#xA9; 2010-2012 George Vlahavas</property>
     <property name="comments" translatable="yes">Users and groups management tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
@@ -2544,8 +2534,8 @@ Public License instead of this License.  But first, please read
     <property name="authors">George Vlahavas &lt;vlahavas~at~gmail~dot~com&gt;</property>
     <property name="translator_credits" translatable="yes">translator-credits</property>
     <property name="logo_icon_name">gtkusersetup</property>
-    <signal name="response" handler="on_aboutdialog_response"/>
     <signal name="delete_event" handler="on_aboutdialog_delete_event"/>
+    <signal name="response" handler="on_aboutdialog_response"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox10">
         <property name="visible">True</property>

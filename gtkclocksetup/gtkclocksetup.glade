@@ -550,7 +550,7 @@
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkclocksetup</property>
     <property name="program_name">gtkclocksetup</property>
-    <property name="copyright">Copyright &#xA9; 2010 George Vlahavas</property>
+    <property name="copyright">Copyright &#xA9; 2010-2012 George Vlahavas</property>
     <property name="comments" translatable="yes">System clock configuration tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
