@@ -33,7 +33,7 @@ msgstr "Пожалуйста, поставьте или снимите отме�
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "Графический интерфейс для servicesetup (входит в состав salixtools) — инструмента управления загрузкой системных сервисов. gtkservicesetup входит в состав salixtools-gtk.\n"
+msgstr "Графический интерфейс для servicesetup (входит в состав salixtools) — инструмента управления загрузкой системных сервисов. gtkservicesetup входит в состав salixtools-gtk."
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"

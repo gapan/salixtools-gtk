@@ -32,7 +32,7 @@ msgstr "Παρακαλούμε επιλέξτε τις υπηρεσίες συσ
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "Διαχείρηση των υπηρεσιών συστήματος\n"
+msgstr "Διαχείρηση των υπηρεσιών συστήματος"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"

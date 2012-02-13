@@ -32,7 +32,7 @@ msgstr "Veuillez sélectionner les services que vous souhaitez activer au démar
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "Utilitaire de configuration des services\n"
+msgstr "Utilitaire de configuration des services"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"

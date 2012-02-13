@@ -32,7 +32,7 @@ msgstr "システム起動時にスタートさせたいシステムサービス
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "サービス構成ツール\n"
+msgstr "サービス構成ツール"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"
