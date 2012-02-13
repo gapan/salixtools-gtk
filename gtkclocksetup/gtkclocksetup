@@ -261,13 +261,6 @@ class GTKClockSetup:
 		self.ntpcheckbutton.set_active(ntp)
 		self.on_ntpcheckbutton_toggled(self)
 
-		btn_sync_width = self.button_sync_now.size_request()[0]
-		btn_tz_width = self.button_timezone.size_request()[0]
-		if btn_sync_width < btn_tz_width:
-			self.button_sync_now.set_size_request(btn_tz_width, -1)
-		else:
-			self.button_timezone.set_size_request(btn_sync_width, 0)
-
 		currentcontinent = currenttimezone()[0]
 		count = 0
 		self.continentliststore.clear()

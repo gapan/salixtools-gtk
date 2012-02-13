@@ -9,7 +9,6 @@
     <property name="window_position">center</property>
     <property name="icon_name">gtkclocksetup</property>
     <property name="type_hint">normal</property>
-    <property name="has_separator">False</property>
     <signal name="destroy" handler="gtk_main_quit"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox1">
@@ -18,6 +17,8 @@
         <child>
           <object class="GtkVBox" id="vbox1">
             <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">5</property>
             <child>
               <object class="GtkHBox" id="hbox2">
                 <property name="visible">True</property>
@@ -69,17 +70,6 @@
               </packing>
             </child>
             <child>
-              <object class="GtkFixed" id="fixed2">
-                <property name="height_request">10</property>
-                <property name="visible">True</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkHBox" id="hbox5">
                 <property name="visible">True</property>
                 <child>
@@ -111,18 +101,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkFixed" id="fixed6">
-                <property name="height_request">10</property>
-                <property name="visible">True</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">3</property>
+                <property name="position">1</property>
               </packing>
             </child>
             <child>
@@ -131,29 +110,19 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">False</property>
-                <property name="tooltip_text" translatable="yes">Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure.</property>
                 <property name="draw_indicator">True</property>
               </object>
               <packing>
-                <property name="position">4</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkFixed" id="fixed3">
-                <property name="height_request">10</property>
-                <property name="visible">True</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">5</property>
+                <property name="padding">5</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
               <object class="GtkTable" id="table2">
                 <property name="visible">True</property>
-                <property name="n_rows">3</property>
+                <property name="n_rows">2</property>
                 <property name="n_columns">2</property>
+                <property name="row_spacing">5</property>
                 <child>
                   <object class="GtkCalendar" id="calendar1">
                     <property name="visible">True</property>
@@ -176,6 +145,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="max_length">2</property>
+                        <property name="invisible_char">&#x25CF;</property>
                         <property name="width_chars">2</property>
                         <property name="xalign">1</property>
                         <property name="adjustment">adjustment_hrs</property>
@@ -202,6 +172,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="max_length">2</property>
+                        <property name="invisible_char">&#x25CF;</property>
                         <property name="width_chars">2</property>
                         <property name="xalign">1</property>
                         <property name="adjustment">adjustment_min</property>
@@ -228,6 +199,7 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="max_length">2</property>
+                        <property name="invisible_char">&#x25CF;</property>
                         <property name="width_chars">2</property>
                         <property name="xalign">1</property>
                         <property name="adjustment">adjustment_sec</property>
@@ -241,8 +213,8 @@
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="right_attach">2</property>
-                    <property name="top_attach">2</property>
-                    <property name="bottom_attach">3</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
                   </packing>
                 </child>
                 <child>
@@ -252,28 +224,6 @@
                     <property name="label" translatable="yes">Time:</property>
                   </object>
                   <packing>
-                    <property name="top_attach">2</property>
-                    <property name="bottom_attach">3</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkFixed" id="fixed4">
-                    <property name="height_request">10</property>
-                    <property name="visible">True</property>
-                  </object>
-                  <packing>
-                    <property name="top_attach">1</property>
-                    <property name="bottom_attach">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkFixed" id="fixed5">
-                    <property name="height_request">10</property>
-                    <property name="visible">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
                     <property name="top_attach">1</property>
                     <property name="bottom_attach">2</property>
                   </packing>
@@ -290,7 +240,7 @@
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">6</property>
+                <property name="position">3</property>
               </packing>
             </child>
           </object>
@@ -309,7 +259,7 @@
                 <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkButton" id="button_about">
-                    <property name="label" translatable="yes">gtk-about</property>
+                    <property name="label">gtk-about</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -343,7 +293,7 @@
                 <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkButton" id="button_cancel">
-                    <property name="label" translatable="yes">gtk-cancel</property>
+                    <property name="label">gtk-cancel</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -357,7 +307,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_ok">
-                    <property name="label" translatable="yes">gtk-ok</property>
+                    <property name="label">gtk-ok</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
@@ -421,7 +371,6 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkclocksetup</property>
-    <property name="has_separator">False</property>
     <signal name="delete_event" handler="on_timezonewindow_delete_event"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox2">
@@ -533,7 +482,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="tz_button_cancel">
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -548,7 +497,7 @@
             </child>
             <child>
               <object class="GtkButton" id="tz_button_ok">
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -590,14 +539,6 @@
     <property name="step_increment">1</property>
     <property name="page_increment">10</property>
   </object>
-  <object class="GtkImage" id="image_sync_now">
-    <property name="visible">True</property>
-    <property name="icon_name">view-refresh</property>
-  </object>
-  <object class="GtkImage" id="image_tz">
-    <property name="visible">True</property>
-    <property name="icon_name">applications-internet</property>
-  </object>
   <object class="GtkAboutDialog" id="aboutdialog">
     <property name="border_width">5</property>
     <property name="modal">True</property>
@@ -608,7 +549,6 @@
     <property name="skip_taskbar_hint">True</property>
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkclocksetup</property>
-    <property name="has_separator">False</property>
     <property name="program_name">gtkclocksetup</property>
     <property name="copyright">Copyright &#xA9; 2010 George Vlahavas</property>
     <property name="comments" translatable="yes">System clock configuration tool</property>
@@ -1291,8 +1231,8 @@ Public License instead of this License.  But first, please read
     <property name="authors">George Vlahavas &lt;vlahavas~at~gmail~dot~com&gt;</property>
     <property name="translator_credits" translatable="yes">translator-credits</property>
     <property name="logo_icon_name">gtkclocksetup</property>
-    <signal name="response" handler="on_aboutdialog_response"/>
     <signal name="delete_event" handler="on_aboutdialog_delete_event"/>
+    <signal name="response" handler="on_aboutdialog_response"/>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox3">
         <property name="visible">True</property>
@@ -1311,5 +1251,13 @@ Public License instead of this License.  But first, please read
         </child>
       </object>
     </child>
+  </object>
+  <object class="GtkImage" id="image_sync_now">
+    <property name="visible">True</property>
+    <property name="icon_name">view-refresh</property>
+  </object>
+  <object class="GtkImage" id="image_tz">
+    <property name="visible">True</property>
+    <property name="icon_name">applications-internet</property>
   </object>
 </interface>
