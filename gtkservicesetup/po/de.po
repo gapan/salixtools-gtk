@@ -32,7 +32,7 @@ msgstr "Bitte wählen Sie die Systemdienste, die beim Systemstart aktiviert werd
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "Systemdienste konfigurieren\n"
+msgstr "Systemdienste konfigurieren"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"

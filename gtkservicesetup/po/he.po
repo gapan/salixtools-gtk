@@ -32,7 +32,7 @@ msgstr "נא לבחור את שירותי המערכת שברצונך להתיר
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "כלי להגדרת שירותים\n"
+msgstr "כלי להגדרת שירותים"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"

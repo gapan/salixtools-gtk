@@ -32,7 +32,7 @@ msgstr "Selezionare i servizi di sistema che si desidera abilitare quando ilsist
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "Strumento di configurazione servici\n"
+msgstr "Strumento di configurazione servici"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"
