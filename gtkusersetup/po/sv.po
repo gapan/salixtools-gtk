@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2011-04-28 09:28+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -202,9 +202,7 @@ msgstr "Användarnamn kan inte börja med streck."
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
-msgstr ""
-"Användarnamn kan endast innehålla liten bokstav, siffror, streck och "
-"understreck."
+msgstr "Användarnamn kan endast innehålla liten bokstav, siffror, streck och understreck."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -238,9 +236,7 @@ msgstr "Grupp namn kan inte börja med ett streck."
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
-msgstr ""
-"Grupp namn kan endast innehålla liten bokstav, siffror, streck och "
-"understreck."
+msgstr "Grupp namn kan endast innehålla liten bokstav, siffror, streck och understreck."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -282,9 +278,7 @@ msgstr "Ta bort användaren {0}?"
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
-msgstr ""
-"Du håller på att ta bort användar konto \"{0}\" från systemet. Vill du "
-"verkligen fortsätta?"
+msgstr "Du håller på att ta bort användar konto \"{0}\" från systemet. Vill du verkligen fortsätta?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
@@ -302,19 +296,14 @@ msgstr "Lägg till grupp"
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
-msgstr ""
-"Du håller på att ta bort gruppen \"{0}\" från ditt system. Är du säker på "
-"att du vill fortsätta?"
+msgstr "Du håller på att ta bort gruppen \"{0}\" från ditt system. Är du säker på att du vill fortsätta?"
 
 #: gtkusersetup:785
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
-msgstr ""
-"Grupp \"{0}\" kan inte raderas eftersom det är huvudgruppen för användare "
-"\"{1}\". Om du vill ta bort gruppen \"{0}\", måste du ändra huvudgruppen för"
-" användare \"{1}\" till en annan grupp först."
+msgstr "Grupp \"{0}\" kan inte raderas eftersom det är huvudgruppen för användare \"{1}\". Om du vill ta bort gruppen \"{0}\", måste du ändra huvudgruppen för användare \"{1}\" till en annan grupp först."
 
 #: gtkusersetup:912
 msgid "Username"

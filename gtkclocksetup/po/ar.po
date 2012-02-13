@@ -1,14 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# cobraJoker <cobra.the.joker@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2011-03-22 15:54+0000\n"
+"PO-Revision-Date: 2012-02-13 09:34+0000\n"
 "Last-Translator: cobraJoker <cobra.the.joker@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -46,10 +47,7 @@ msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
-msgstr ""
-"في معظم أجهزة المنزل أو أجهزة الكمبيوتر التجارية يتم استخدام التوقيت المحلي "
-"، في حين تم تعيين ساعة الأجهزة على الارجح في معظم خوادم الويب لإستخدام UTC. "
-"لا تضغط علي هذه الخانة إذا لم تكن متأكدا."
+msgstr "في معظم أجهزة المنزل أو أجهزة الكمبيوتر التجارية يتم استخدام التوقيت المحلي ، في حين تم تعيين ساعة الأجهزة على الارجح في معظم خوادم الويب لإستخدام UTC. لا تضغط علي هذه الخانة إذا لم تكن متأكدا."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"

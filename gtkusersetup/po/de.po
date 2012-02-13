@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2011-04-28 09:28+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: German <None>\n"
+"Language-Team: German (http://www.transifex.net/projects/p/salixtools-gtk/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -202,9 +202,7 @@ msgstr "Der Nutzername darf nicht mit einem Bindestrich anfangen."
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
-msgstr ""
-"Der Nutzername darf ausschließlich aus lateinischen Buchstaben, Nummern, "
-"Bindestrichen und Unterstrichen bestehen."
+msgstr "Der Nutzername darf ausschließlich aus lateinischen Buchstaben, Nummern, Bindestrichen und Unterstrichen bestehen."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -238,9 +236,7 @@ msgstr "Der Gruppenname darf nicht mit einem Bindestrich anfangen."
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
-msgstr ""
-"Der Gruppenname darf ausschließlich aus lateinischen Buchstaben, Nummern, "
-"Bindestrichen und Unterstrichen bestehen."
+msgstr "Der Gruppenname darf ausschließlich aus lateinischen Buchstaben, Nummern, Bindestrichen und Unterstrichen bestehen."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -282,14 +278,11 @@ msgstr "Benutzer {0} löschen?"
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
-msgstr ""
-"Sie sind gerade dabei, das Benutzerkonto \"{0}\" von Ihrem System zu "
-"löschen. Wollen Sie wirklich fortfahren?"
+msgstr "Sie sind gerade dabei, das Benutzerkonto \"{0}\" von Ihrem System zu löschen. Wollen Sie wirklich fortfahren?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr ""
-"Das Home-Verzeichnis ({0}) des Benutzers mit seinem gesamten Inhalt löschen"
+msgstr "Das Home-Verzeichnis ({0}) des Benutzers mit seinem gesamten Inhalt löschen"
 
 #: gtkusersetup:738
 msgid "Group \"{0}\" properties"
@@ -303,20 +296,14 @@ msgstr "Neue Gruppe hinzufügen"
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
-msgstr ""
-"Sie sind gerade dabei, die Gruppe \"{0}\" von Ihrem System zu löschen. "
-"Wollen Sie wirklich fortfahren?"
+msgstr "Sie sind gerade dabei, die Gruppe \"{0}\" von Ihrem System zu löschen. Wollen Sie wirklich fortfahren?"
 
 #: gtkusersetup:785
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
-msgstr ""
-"Die Gruppe \"{0}\" kann nicht gelöscht werden weil sie die Hauptgruppe für "
-"Benutzer \"{1}\" ist. Wenn Sie die Gruppe \"{0}\" löschen möchten, müssen "
-"Sie zuerst die Hauptgruppe für Benutzer \"{1}\" auf eine andere Gruppe "
-"ändern."
+msgstr "Die Gruppe \"{0}\" kann nicht gelöscht werden weil sie die Hauptgruppe für Benutzer \"{1}\" ist. Wenn Sie die Gruppe \"{0}\" löschen möchten, müssen Sie zuerst die Hauptgruppe für Benutzer \"{1}\" auf eine andere Gruppe ändern."
 
 #: gtkusersetup:912
 msgid "Username"

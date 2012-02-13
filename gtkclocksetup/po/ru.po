@@ -1,15 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# andyun <pokazsch@yandex.ru>, 2011.
+#   <pokazsch@yandex.ru>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2011-04-28 09:24+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-02-13 09:34+0000\n"
+"Last-Translator: andyun <pokazsch@yandex.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,17 +41,14 @@ msgstr "Выбрать зону..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "Аппаратные часы установлены в UTC"
+msgstr "Аппаратные часы установлены как UTC"
 
 #: gtkclocksetup.glade:134
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
-msgstr ""
-"Аппаратное время на большинстве домашних и рабочих компьютеров установлено "
-"по местному времени, в то время как веб-серверы в основном используют UTC. "
-"Не отмечайте, если не уверены."
+msgstr "Аппаратное время на большинстве домашних и рабочих компьютеров установлено по местному времени, в то время как веб-серверы, в основном, используют UTC. Не отмечайте это, если вы не уверены."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -70,11 +69,11 @@ msgstr "Выберите вашу временную зону:"
 #: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
-msgstr "Конфигурирование системного времени"
+msgstr "Графический интерфейс для clocksetup (входит в состав salixtools) — инструмента настройки даты и времени. gtkclocksetup входит в состав salixtools-gtk."
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr ""
+msgstr "translator-credits"
 
 #: gtkclocksetup:251
 msgid "General area"
@@ -82,8 +81,8 @@ msgstr "Регион"
 
 #: gtkclocksetup:252
 msgid "Location"
-msgstr "Пояс"
+msgstr "Место региона"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
-msgstr "Системное время"
+msgstr "Дата и время"

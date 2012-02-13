@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2011-04-28 09:28+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -202,9 +202,7 @@ msgstr "שם משתמש לא יכול להתחיל עם קו מפריד."
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
-msgstr ""
-"שם משתמש יכול להיות מורכב מאותיות לטיניות (קטנות), מספרים, קווים מפרידים "
-"וקווים תחתונים בלבד."
+msgstr "שם משתמש יכול להיות מורכב מאותיות לטיניות (קטנות), מספרים, קווים מפרידים וקווים תחתונים בלבד."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -238,9 +236,7 @@ msgstr "שם קבוצה לא יכול להתחיל עם קו מפריד."
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
-msgstr ""
-"שם קבוצה יכול להיות מורכב מאותיות לטיניות (קטנות), מספרים, קווים מפרידים "
-"וקווים תחתונים בלבד."
+msgstr "שם קבוצה יכול להיות מורכב מאותיות לטיניות (קטנות), מספרים, קווים מפרידים וקווים תחתונים בלבד."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -282,9 +278,7 @@ msgstr "מחיקת המשתמש {0}?"
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
-msgstr ""
-"הינכם עומדים למחוק את המשתמש \"{0}\" מהמערכת. האם אתם בטוחים שברצונכם "
-"להמשיך?"
+msgstr "הינכם עומדים למחוק את המשתמש \"{0}\" מהמערכת. האם אתם בטוחים שברצונכם להמשיך?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
@@ -302,9 +296,7 @@ msgstr "הוספת קבוצה חדשה"
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
-msgstr ""
-"הינכם עומדים למחוק את הקבוצה \"{0}\" מהמערכת. האם אתם בטוחים שברצונכם "
-"להמשיך?"
+msgstr "הינכם עומדים למחוק את הקבוצה \"{0}\" מהמערכת. האם אתם בטוחים שברצונכם להמשיך?"
 
 #: gtkusersetup:785
 msgid ""

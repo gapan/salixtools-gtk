@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2011-04-28 09:28+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -164,8 +164,7 @@ msgstr "Fernando Velo <seacat.linux~at~gmail~dot~com>"
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
-msgstr ""
-"La contraseña es demasiado corta. Tiene que tener al menos 5 caracteres."
+msgstr "La contraseña es demasiado corta. Tiene que tener al menos 5 caracteres."
 
 #: gtkusersetup:211
 msgid "Password cannot include the backslash character."
@@ -203,9 +202,7 @@ msgstr "El nombre de usuario no puede comenzar con un guión."
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
-msgstr ""
-"El nombre de usuario solamente puede formarse con letras minúsculas, "
-"números, guiones y caracteres de subrayado."
+msgstr "El nombre de usuario solamente puede formarse con letras minúsculas, números, guiones y caracteres de subrayado."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -239,9 +236,7 @@ msgstr "El nombre del grupo no puede comenzar con un guión."
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
-msgstr ""
-"El nombre de grupo solamente puede formarse con letras minúsculas, números, "
-"guiones y caracteres de subrayado."
+msgstr "El nombre de grupo solamente puede formarse con letras minúsculas, números, guiones y caracteres de subrayado."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -283,15 +278,11 @@ msgstr "¿Eliminar el usuario {0}?"
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
-msgstr ""
-"Está a punto de eliminar de su sistema la cuenta del usuario \"{0}\". "
-"¿Realmente quiere continuar?"
+msgstr "Está a punto de eliminar de su sistema la cuenta del usuario \"{0}\". ¿Realmente quiere continuar?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr ""
-"Se borró completamente el directorio home del usuario ({0}) junto con todo "
-"su contenido"
+msgstr "Se borró completamente el directorio home del usuario ({0}) junto con todo su contenido"
 
 #: gtkusersetup:738
 msgid "Group \"{0}\" properties"
@@ -305,19 +296,14 @@ msgstr "Agregar un grupo nuevo"
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
-msgstr ""
-"Está a punto de borrar de su sistema el grupo \"{0}\". ¿Está seguro que "
-"quiere continuar?"
+msgstr "Está a punto de borrar de su sistema el grupo \"{0}\". ¿Está seguro que quiere continuar?"
 
 #: gtkusersetup:785
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
-msgstr ""
-"No se puede borrar el grupo \"{0}\" porque es el grupo principal del usuario"
-" \"{1}\". Si quiere borrar el grupo \"{0}\", tiene que configurar primero el"
-" grupo principal para el usuario \"{1}\" a otro grupo."
+msgstr "No se puede borrar el grupo \"{0}\" porque es el grupo principal del usuario \"{1}\". Si quiere borrar el grupo \"{0}\", tiene que configurar primero el grupo principal para el usuario \"{1}\" a otro grupo."
 
 #: gtkusersetup:912
 msgid "Username"

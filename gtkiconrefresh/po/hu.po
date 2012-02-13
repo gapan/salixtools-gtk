@@ -1,15 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Laszlo Dvornik <rezuri@zoho.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2011-04-28 09:26+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-02-13 09:27+0000\n"
+"Last-Translator: Laszlo Dvornik <rezuri@zoho.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,17 +20,16 @@ msgstr ""
 
 #: gtkiconrefresh.glade:6
 msgid "Rebuilding icon cache"
-msgstr "Ikon gyorsítótár újjáépítése"
+msgstr "Ikongyorsítótár újraépítése"
 
 #: gtkiconrefresh.glade:60
 msgid "Please wait while rebuilding the system's icon cache..."
-msgstr ""
-"Kérem várjon amíg a rendszer ikonok gyorsítótárának újjáépítése tart..."
+msgstr "Kis türelmet, a rendszerikonok gyorsítótárának újraépítése folyamatban van..."
 
 #: gtkiconrefresh.desktop.in.h:1
 msgid "Rebuild icon cache"
-msgstr "Ikon gyorsítótár újjáépítése"
+msgstr "Ikongyorsítótár újraépítése"
 
 #: gtkiconrefresh.desktop.in.h:2
 msgid "Rebuild the system's icon cache"
-msgstr "A rendszer ikonok gyorsítótárának újjáépítése"
+msgstr "A rendszerikonok gyorsítótárának újraépítése"

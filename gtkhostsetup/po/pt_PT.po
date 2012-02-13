@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
+"PO-Revision-Date: 2012-02-13 09:31+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_PT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
+msgid "Hostnames"
+msgstr "Hostnames"
+
+#: gtkhostsetup.glade:44
+msgid "<b>This computer:</b>"
+msgstr "<b>Este computador:</b>"
+
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
+msgid "Hostname:"
+msgstr "Hostname:"
+
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
+msgid "Domain:"
+msgstr "Domínio:"
+
+#: gtkhostsetup.glade:124
+msgid "<b>Other hosts:</b>"
+msgstr "<b>Outros hosts:</b>"
+
+#: gtkhostsetup.glade:369
+msgid "Add host"
+msgstr "Adicionar host"
+
+#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
+msgid "IP address:"
+msgstr "Endereço IP:"
+
+#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
+msgid "Error"
+msgstr "Erro"
+
+#: gtkhostsetup.glade:602
+msgid "Edit host"
+msgstr "Editar host"
+
+#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "Configure o sistema de hostnames"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr "créditos-de-tradutor"
+
+#: gtkhostsetup:60
+msgid "The IP address cannot be empty."
+msgstr "O endereço IP não pode ser vazio."
+
+#: gtkhostsetup:63
+msgid "The hostname cannot be empty."
+msgstr "O nome do host não pode estar vazio."
+
+#: gtkhostsetup:66
+msgid "The hostname cannot start with a hyphen."
+msgstr "O nome do host não pode começar com um hífen."
+
+#: gtkhostsetup:69
+msgid "The hostname cannot end with a hyphen."
+msgstr "O nome do host não pode terminar com um hífen."
+
+#: gtkhostsetup:72
+msgid "The domain cannot start with a hyphen."
+msgstr "O domínio não pode começar com um hífen."
+
+#: gtkhostsetup:75
+msgid "The domain cannot end with a hyphen."
+msgstr "O domínio não pode terminar com um hífen."
+
+#: gtkhostsetup:80
+msgid "Not a valid IP address."
+msgstr "Não um endereço IP válido."
+
+#: gtkhostsetup:85
+msgid "The hostname can consist solely of latin letters, numbers and hyphens."
+msgstr "O hostname pode consistir apenas de letras em latim, números e hífens."
+
+#: gtkhostsetup:90
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "O domínio pode consistir apenas de letras em latim, números, hífens e pontos."
+
+#: gtkhostsetup:284
+msgid "IP address"
+msgstr "Endereço IP"
+
+#: gtkhostsetup:285
+msgid "Hostname"
+msgstr "Hostname"
+
+#: gtkhostsetup:286
+msgid "Domain"
+msgstr "Domínio"

@@ -1,15 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Laszlo Dvornik <rezuri@zoho.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2011-04-28 09:24+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-02-13 08:41+0000\n"
+"Last-Translator: Laszlo Dvornik <rezuri@zoho.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,9 +26,7 @@ msgstr "Alsa alapértelmezett hangkártya"
 msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
-msgstr ""
-"Kérem válasszon hangkártyát ami alapértelmezett lesz az ALSA rendszerben. A "
-"jelenlegi munkamenet újraindítása után alkalmazódnak a változások."
+msgstr "Válasszon hangkártyát, amit rendszerszintűen alapértelmezetté kíván tenni az ALSA-ban. A munkamenetet újra kell indítani a változtatások életbe léptetéséhez."
 
 #: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
@@ -37,9 +36,7 @@ msgstr "Hangkártya"
 msgid ""
 "You can use the buttons below to manage the system settings for ALSA, "
 "including volume settings and selection of input sources. "
-msgstr ""
-"Használja az alábbi gombokat az ALSA rendszer beállításainak kezelésére, "
-"beleértva a hangerő beállítást és a bemeneti források kiválasztását."
+msgstr "Az alábbi gombokat az ALSA rendszerbeállításainak kezelésére használhatja, beleértve a hangerő beállítását és a bemeneti források kiválasztását."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
@@ -47,13 +44,11 @@ msgstr "Az aktuális ALSA beállítások mentése a rendszer alapértelmezések�
 
 #: gtkalsasetup.glade:198
 msgid "Revert current ALSA settings to the stored defaults"
-msgstr ""
-"Az aktuális ALSA beállítások elvetése és visszatérés a tárolt beállításokra"
+msgstr "Az aktuális ALSA beállítások visszaállítása a tárolt beállításokra"
 
 #: gtkalsasetup.glade:216
 msgid "Clear all ALSA settings and set default values"
-msgstr ""
-"Minden ALSA beállítás törlése és az alapértelmezett értékek visszaállítása"
+msgstr "Minden ALSA beállítás törlése és az alapértelmezett értékek beállítása"
 
 #: gtkalsasetup.glade:252
 msgid "Settings"
@@ -65,7 +60,7 @@ msgstr "Segédprogram az ALSA hangkártyák kezeléséhez"
 
 #: gtkalsasetup.glade:1043
 msgid "translator-credits"
-msgstr "fordítók névjegye"
+msgstr "Dvornik László <rezuri@zoho.com>"
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
@@ -73,7 +68,7 @@ msgstr "Alapértelmezett"
 
 #: gtkalsasetup:22
 msgid "Use the default ALSA sound card"
-msgstr "Használja az alapértelmezett ALSA hangkártyát"
+msgstr "Az alapértelmezett ALSA hangkártya használata"
 
 #: gtkalsasetup:137
 msgid "Description"
@@ -85,4 +80,4 @@ msgstr "ALSA hangkártya"
 
 #: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
-msgstr "Válasszon rendszerszíntű ALSA hangkártyát"
+msgstr "Válasszon rendszerszintű ALSA hangkártyát"

@@ -1,14 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Kerd <kerd89@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2011-03-22 15:52+0000\n"
+"PO-Revision-Date: 2012-02-13 09:31+0000\n"
 "Last-Translator: Kerd <kerd89@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -98,8 +99,7 @@ msgstr "L'hostname puo' contenere solo lettere latine, numeri e trattini"
 #: gtkhostsetup:90
 msgid ""
 "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr ""
-"Il dominio puo' contenere solo lettere latine, numeri, trattini e punti"
+msgstr "Il dominio puo' contenere solo lettere latine, numeri, trattini e punti"
 
 #: gtkhostsetup:284
 msgid "IP address"

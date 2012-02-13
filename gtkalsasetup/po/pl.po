@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <sgasior1@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"POT-Creation-Date: 2010-09-11 12:47+0300\n"
+"PO-Revision-Date: 2012-02-13 08:41+0000\n"
+"Last-Translator: ink3 <sgasior1@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: gtkalsasetup.glade:15
+msgid "Alsa default sound card"
+msgstr "Domyślna Alsa karta dźwiękowa"
+
+#: gtkalsasetup.glade:54
+msgid ""
+"Please choose the sound card that you want to set as default for ALSA "
+"systemwide. The session needs to be restarted for the changes to be applied."
+msgstr "Proszę wybrać kartę dźwiękową, którą chcesz ustawić jako domyślny dla ALSY. Sesja musi zostać ponownie uruchomiona, aby zmiany były zastosowane."
+
+#: gtkalsasetup.glade:119 gtkalsasetup:135
+msgid "Sound card"
+msgstr "Karta dźwiękowa"
+
+#: gtkalsasetup.glade:148
+msgid ""
+"You can use the buttons below to manage the system settings for ALSA, "
+"including volume settings and selection of input sources. "
+msgstr "Możesz skorzystać z przycisków poniżej aby zarządzić ustawieniami systemu ALSA, w tym ustawień głośności i wybóru źródła sygnału. "
+
+#: gtkalsasetup.glade:180
+msgid "Store the current ALSA settings as the system defaults"
+msgstr "Zapisanie bieżących ustawień ALSY jako domyślnych ustawień systemowych"
+
+#: gtkalsasetup.glade:198
+msgid "Revert current ALSA settings to the stored defaults"
+msgstr "Przywróć bieżące ustawienia ALSY do zapisanych ustawień"
+
+#: gtkalsasetup.glade:216
+msgid "Clear all ALSA settings and set default values"
+msgstr "Wyczyść wszystkie ustawienia ALSY i ustaw wartości domyślne"
+
+#: gtkalsasetup.glade:252
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: gtkalsasetup.glade:364
+msgid "A tool to manage ALSA sound cards"
+msgstr "Narzędzie do zarządzania kartami ALSA"
+
+#: gtkalsasetup.glade:1043
+msgid "translator-credits"
+msgstr "tłumacze"
+
+#: gtkalsasetup:22 gtkalsasetup:40
+msgid "Default"
+msgstr "Domyślnie"
+
+#: gtkalsasetup:22
+msgid "Use the default ALSA sound card"
+msgstr "Użyj domyślnej karty dźwiękowej ALSA"
+
+#: gtkalsasetup:137
+msgid "Description"
+msgstr "Opis"
+
+#: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
+msgid "ALSA sound card"
+msgstr "Karta dźwiękowa ALSA"
+
+#: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
+msgid "Select the systemwide ALSA sound card"
+msgstr "Wybierz systemową kartę dźwiękową ALSA"

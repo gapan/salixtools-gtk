@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2011-04-28 09:26+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Greek <>\n"
+"Language-Team: Greek (http://www.transifex.net/projects/p/salixtools-gtk/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,9 +23,7 @@ msgstr "Επαναδημιουργία της μνήμης εικονιδίων"
 
 #: gtkiconrefresh.glade:60
 msgid "Please wait while rebuilding the system's icon cache..."
-msgstr ""
-"Παρακαλούμε περιμένετε όσο επαναδημιουργείται η μνήμη των εικονιδίων του "
-"συστήματος"
+msgstr "Παρακαλούμε περιμένετε όσο επαναδημιουργείται η μνήμη των εικονιδίων του συστήματος"
 
 #: gtkiconrefresh.desktop.in.h:1
 msgid "Rebuild icon cache"

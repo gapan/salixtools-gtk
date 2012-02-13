@@ -1,14 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Kerd <kerd89@gmail.com>, 2011.
+# laplume <laplume@libero.it>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2011-03-22 15:38+0000\n"
+"PO-Revision-Date: 2012-02-13 08:58+0000\n"
 "Last-Translator: laplume <laplume@libero.it>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -202,9 +204,7 @@ msgstr "Il Nome Utente non può inziare con un trattino."
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
-msgstr ""
-"Il Nome Utente può essere composto solo da caratteri latini minuscoli, "
-"numeri, trattini e underscore."
+msgstr "Il Nome Utente può essere composto solo da caratteri latini minuscoli, numeri, trattini e underscore."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
@@ -238,9 +238,7 @@ msgstr "Il Nome del Gruppo non può inziare con un trattino."
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
-msgstr ""
-"Il Nome del Gruppo può essere composto solo da lettere latine minuscole, "
-"numeri, trattini e underscore."
+msgstr "Il Nome del Gruppo può essere composto solo da lettere latine minuscole, numeri, trattini e underscore."
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
@@ -282,15 +280,11 @@ msgstr "Eliminare utente {0}?"
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
-msgstr ""
-"State per eliminare l'account Utente \"{0}\" dal sistema. Volete veramente "
-"procedere?"
+msgstr "State per eliminare l'account Utente \"{0}\" dal sistema. Volete veramente procedere?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr ""
-"Rimuovere completamente la directory Home dell'Utente ({0}) e tutto il suo "
-"contenuto"
+msgstr "Rimuovere completamente la directory Home dell'Utente ({0}) e tutto il suo contenuto"
 
 #: gtkusersetup:738
 msgid "Group \"{0}\" properties"
@@ -304,19 +298,14 @@ msgstr "Aggiungi un nuovo gruppo"
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
-msgstr ""
-"State per eliminare il Gruppo \"{0}\" dal sistema. Volete veramente "
-"procedere?"
+msgstr "State per eliminare il Gruppo \"{0}\" dal sistema. Volete veramente procedere?"
 
 #: gtkusersetup:785
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
-msgstr ""
-"Il Gruppo \"{0}\" non può essere eliminato poiché è il gruppo principale "
-"dell'Utente \"{1}\". Se desiderate eliminare il Gruppo \"{0}\", dovete prima"
-" impostare il gruppo principale dell'Utente \"{1}\" su un altro gruppo."
+msgstr "Il Gruppo \"{0}\" non può essere eliminato poiché è il gruppo principale dell'Utente \"{1}\". Se desiderate eliminare il Gruppo \"{0}\", dovete prima impostare il gruppo principale dell'Utente \"{1}\" su un altro gruppo."
 
 #: gtkusersetup:912
 msgid "Username"

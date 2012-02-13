@@ -1,15 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Laszlo Dvornik <rezuri@zoho.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:28+0300\n"
-"PO-Revision-Date: 2011-04-28 09:27+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-02-13 09:20+0000\n"
+"Last-Translator: Laszlo Dvornik <rezuri@zoho.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,21 +21,19 @@ msgstr ""
 #: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "System language"
-msgstr "Rendszer nyelv"
+msgstr "Rendszernyelv"
 
 #: gtklocalesetup.glade:56
 msgid ""
 "Please select a default system locale. The changes will take effect next "
 "time you start your system."
-msgstr ""
-"Kérem válassza ki a rendszer alapértelmezett nyelvét. A változás "
-"újraindításkor lép életbe."
+msgstr "Válassza ki a rendszer alapértelmezett nyelvét. A változtatások a rendszer következő indításakor lépnek életbe."
 
 #: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
-msgstr "Nyelvi beállító eszköz"
+msgstr "Nyelvi beállítóeszköz"
 
 #: gtklocalesetup.glade:899
 msgid "translator-credits"
-msgstr "fordítók-névjegye"
+msgstr "Dvornik László <rezuri@zoho.com>"

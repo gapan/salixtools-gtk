@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2011-04-28 09:24+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,10 +25,7 @@ msgstr "Tarjeta de sonido por defecto de ALSA"
 msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
-msgstr ""
-"Por favor elegir la tarjeta de sonido que quiera establecer por defecto para"
-" todo el sistema ALSA. Para que se apliquen los cambios, la sesión tiene que"
-" reiniciarse."
+msgstr "Por favor elegir la tarjeta de sonido que quiera establecer por defecto para todo el sistema ALSA. Para que se apliquen los cambios, la sesión tiene que reiniciarse."
 
 #: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
@@ -38,26 +35,19 @@ msgstr "Tarjeta de sonido"
 msgid ""
 "You can use the buttons below to manage the system settings for ALSA, "
 "including volume settings and selection of input sources. "
-msgstr ""
-"Puede usar los botones de abajo para administrar la configuración del "
-"sistema para ALSA, incluyendo la configuración del volumen y la selección de"
-" las fuentes de entrada."
+msgstr "Puede usar los botones de abajo para administrar la configuración del sistema para ALSA, incluyendo la configuración del volumen y la selección de las fuentes de entrada."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
-msgstr ""
-"Guardar la configuración ALSA actual como los valores por defecto del "
-"sistema"
+msgstr "Guardar la configuración ALSA actual como los valores por defecto del sistema"
 
 #: gtkalsasetup.glade:198
 msgid "Revert current ALSA settings to the stored defaults"
-msgstr ""
-"Volver la configuración ALSA actual a los valores por defecto guardados"
+msgstr "Volver la configuración ALSA actual a los valores por defecto guardados"
 
 #: gtkalsasetup.glade:216
 msgid "Clear all ALSA settings and set default values"
-msgstr ""
-"Limpiar toda la configuración ALSA y establecer los valores por defecto"
+msgstr "Limpiar toda la configuración ALSA y establecer los valores por defecto"
 
 #: gtkalsasetup.glade:252
 msgid "Settings"

@@ -1,14 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# cobraJoker <cobra.the.joker@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2011-03-22 15:06+0000\n"
+"PO-Revision-Date: 2012-02-13 08:41+0000\n"
 "Last-Translator: cobraJoker <cobra.the.joker@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,9 +26,7 @@ msgstr "بطاقة الصوت لALSA"
 msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
-msgstr ""
-"الرجاء اختيار بطاقة الصوت التي تريد تعيين كافتراضي للALSA المنظومة. الدورة "
-"تحتاج إلى إعادة تشغيل لتطبق التغييرات."
+msgstr "الرجاء اختيار بطاقة الصوت التي تريد تعيين كافتراضي للALSA المنظومة. الدورة تحتاج إلى إعادة تشغيل لتطبق التغييرات."
 
 #: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
@@ -37,9 +36,7 @@ msgstr "بطاقة الصوت"
 msgid ""
 "You can use the buttons below to manage the system settings for ALSA, "
 "including volume settings and selection of input sources. "
-msgstr ""
-"يمكنك استخدام الأزرار الموجودة أدناه لإدارة إعدادات النظام لALSA ، بما في "
-"ذلك إعدادات الصوت واختيار مصادر المدخلات للصوت."
+msgstr "يمكنك استخدام الأزرار الموجودة أدناه لإدارة إعدادات النظام لALSA ، بما في ذلك إعدادات الصوت واختيار مصادر المدخلات للصوت."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"

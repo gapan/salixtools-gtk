@@ -1,14 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# cobraJoker <cobra.the.joker@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2011-03-22 15:42+0000\n"
+"PO-Revision-Date: 2012-02-13 09:16+0000\n"
 "Last-Translator: cobraJoker <cobra.the.joker@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -27,14 +28,12 @@ msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
-msgstr ""
-"الرجاء اختيار خدمات النظام التي ترغب في أن يتم تمكينه عند بدء تشغيل النظام. "
-"أي تغييرات تقوم بها سيتم تطبيقها عند الضغط على زر موافق."
+msgstr "الرجاء اختيار خدمات النظام التي ترغب في أن يتم تمكينه عند بدء تشغيل النظام. أي تغييرات تقوم بها سيتم تطبيقها عند الضغط على زر موافق."
 
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "أداة ضبط الخدمات "
+msgstr "أداة ضبط الخدمات \n"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"

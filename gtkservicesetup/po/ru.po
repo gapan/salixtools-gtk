@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# andyun <pokazsch@yandex.ru>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"POT-Creation-Date: 2010-09-14 20:35+0300\n"
+"PO-Revision-Date: 2012-02-13 09:16+0000\n"
+"Last-Translator: andyun <pokazsch@yandex.ru>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
+msgid "System services"
+msgstr "Системные сервисы"
+
+#: gtkservicesetup.glade:67
+msgid ""
+"Please select the system services that you wish to be enabled when the "
+"system starts. Any changes you make will be applied when you press the OK "
+"button."
+msgstr "Пожалуйста, поставьте или снимите отметку с необходимых системных сервисов. Отмеченные сервисы будут автоматически запускаться при загрузке операционной системы. Изменения вступят в силу после нажатия кнопки ОК и следующей загрузки системы."
+
+#: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
+#: gtkservicesetup-kde.desktop.in.h:1
+msgid "Services configuration tool"
+msgstr "Графический интерфейс для servicesetup (входит в состав salixtools) — инструмента управления загрузкой системных сервисов. gtkservicesetup входит в состав salixtools-gtk.\n"
+
+#: gtkservicesetup.glade:921
+msgid "translator-credits"
+msgstr "translator-credits"
+
+#: gtkservicesetup:44
+msgid "The {0} service"
+msgstr "{0} сервис"
+
+#: gtkservicesetup:131
+msgid "Enabled"
+msgstr "Состояние"
+
+#: gtkservicesetup:133
+msgid "Service name"
+msgstr "Имя"
+
+#: gtkservicesetup:135
+msgid "Service description"
+msgstr "Описание"

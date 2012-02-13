@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2011-04-28 09:24+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,9 +25,7 @@ msgstr "Звукова карта ALSA по замовчуванню"
 msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
-msgstr ""
-"Виберіть звукову карту, яка буде використовуватися як звукова карта ALSA для"
-" всієї системи. Для впровадження змін сесію потрібно перезапустити."
+msgstr "Виберіть звукову карту, яка буде використовуватися як звукова карта ALSA для всієї системи. Для впровадження змін сесію потрібно перезапустити."
 
 #: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
@@ -37,9 +35,7 @@ msgstr "Звукова карта"
 msgid ""
 "You can use the buttons below to manage the system settings for ALSA, "
 "including volume settings and selection of input sources. "
-msgstr ""
-"Ви можете використати кнопки нижче для керування сисетмними налаштуваннями "
-"для ALSA, включаючи налаштування гучності і вибору вхідного джерела."
+msgstr "Ви можете використати кнопки нижче для керування сисетмними налаштуваннями для ALSA, включаючи налаштування гучності і вибору вхідного джерела."
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"

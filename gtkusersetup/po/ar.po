@@ -1,14 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# cobraJoker <cobra.the.joker@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2011-03-22 15:38+0000\n"
+"PO-Revision-Date: 2012-02-13 08:58+0000\n"
 "Last-Translator: cobraJoker <cobra.the.joker@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -202,9 +203,7 @@ msgstr "اسم المستخدم لا يمكن أن يبدأ بشرطة ."
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
-msgstr ""
-"اسم المستخدم يمكن أن يتكون فقط من الحروف اللاتينية الحالة الأدنى والأرقام "
-"والشرطات ويؤكد."
+msgstr "اسم المستخدم يمكن أن يتكون فقط من الحروف اللاتينية الحالة الأدنى والأرقام والشرطات ويؤكد."
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."

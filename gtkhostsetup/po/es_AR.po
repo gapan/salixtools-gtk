@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2011-04-28 09:25+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -93,16 +93,12 @@ msgstr "La dirección IP no es válida."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr ""
-"Los nombres de host solamente pueden constar de letras latinas, números o "
-"guiones."
+msgstr "Los nombres de host solamente pueden constar de letras latinas, números o guiones."
 
 #: gtkhostsetup:90
 msgid ""
 "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr ""
-"Los dominios solamente pueden constar de letras latinas, números, guiones o "
-"puntos."
+msgstr "Los dominios solamente pueden constar de letras latinas, números, guiones o puntos."
 
 #: gtkhostsetup:284
 msgid "IP address"

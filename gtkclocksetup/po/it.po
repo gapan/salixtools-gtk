@@ -1,14 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Kerd <kerd89@gmail.com>, 2011.
+# laplume <laplume@libero.it>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2011-04-28 09:24+0000\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -39,19 +41,14 @@ msgstr "Selezionare il fuso orario..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr ""
-"L'orologio hardware è impostato sull'Orario Universale Coordinato (UTC)"
+msgstr "L'orologio hardware è impostato sull'Orario Universale Coordinato (UTC)"
 
 #: gtkclocksetup.glade:134
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
-msgstr ""
-"Gli orologi hardware della maggior parte dei computer per uso casalingo o "
-"lavorativo sono impostati per l'uso di un orario locale, mentre gli orari "
-"della maggior parte dei server web sono presumibilmente impostati so UTC. "
-"Non spuntate questa casella se non siete sicuri."
+msgstr "Gli orologi hardware della maggior parte dei computer per uso casalingo o lavorativo sono impostati per l'uso di un orario locale, mentre gli orari della maggior parte dei server web sono presumibilmente impostati so UTC. Non spuntate questa casella se non siete sicuri."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"

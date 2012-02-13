@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"POT-Creation-Date: 2010-07-20 13:33+0300\n"
+"PO-Revision-Date: 2012-02-13 09:27+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_PT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: gtkiconrefresh.glade:6
+msgid "Rebuilding icon cache"
+msgstr "Reconstruir cache de ícone"
+
+#: gtkiconrefresh.glade:60
+msgid "Please wait while rebuilding the system's icon cache..."
+msgstr "Por favor, aguarde enquanto a cache do sistema ícone é reconstruída .."
+
+#: gtkiconrefresh.desktop.in.h:1
+msgid "Rebuild icon cache"
+msgstr "Reconstruir cache de ícone"
+
+#: gtkiconrefresh.desktop.in.h:2
+msgid "Rebuild the system's icon cache"
+msgstr "Reconstruir o cache do sistema ícone"

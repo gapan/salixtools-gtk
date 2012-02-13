@@ -1,16 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Akuna <akuna@free.fr>, 2011.
+#   <akuna@free.fr>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
-"POT-Creation-Date: 2011-02-13 16:32+0200\n"
-"PO-Revision-Date: 2011-03-22 15:49+0000\n"
-"Last-Translator: JRD <jrd@enialis.net>\n"
-"Language-Team: French <>\n"
+"POT-Creation-Date: 2011-02-14 10:24+0200\n"
+"PO-Revision-Date: 2012-02-13 09:25+0000\n"
+"Last-Translator: Akuna <akuna@free.fr>\n"
+"Language-Team: French (http://www.transifex.net/projects/p/salixtools-gtk/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,12 +25,9 @@ msgstr "Configuration du clavier"
 
 #: gtkkeyboardsetup.glade:52
 msgid ""
-"Please select you preferred keyboard type and map and set numlock and "
+"Please select your preferred keyboard type and map and set numlock and "
 "IBus/SCIM preferences."
-msgstr ""
-"S'il vous plaît sélectionnez votre type de clavier préféré, votre "
-"disposition de touche et l'activation du verrou numérique ainsi que "
-"IBus/SCIM."
+msgstr "Veuillez sélectionner votre type et disposition de clavier préféré et activer ou désactiver les touches numériques ainsi que la console iBus / SCIM."
 
 #: gtkkeyboardsetup.glade:146
 msgid "Enable numlock when the system is started"
@@ -38,28 +37,30 @@ msgstr "Activer le pavé numérique au démarrage du système"
 msgid "Enable IBus when the system is started"
 msgstr "Activer IBus au démarrage du système"
 
-#: gtkkeyboardsetup.glade:176
+#: gtkkeyboardsetup.glade:165
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages. It is newer and works better than SCIM."
+msgstr "IBus est une plateforme unifiée de saisie pour le chinois, japonais, coréen et de nombreuses autres langues. Elle est plus récente et fonctionnelle que SCIM."
+
+#: gtkkeyboardsetup.glade:177
 msgid "Enable SCIM when the system is started"
 msgstr "Activer SCIM au démarrage du système"
 
-#: gtkkeyboardsetup.glade:180
+#: gtkkeyboardsetup.glade:181
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages."
-msgstr ""
-"SCIM est une plate-forme unifiée de saisie pour le chinois, le japonais, le "
-"coréen et de nombreuses autres langues."
+msgstr "SCIM est une plate-forme unifiée de saisie pour le chinois, le japonais, le coréen et de nombreuses autres langues."
 
-#: gtkkeyboardsetup.glade:294 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup.glade:295 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "Utilitaire de configuration du clavier"
 
-#: gtkkeyboardsetup.glade:972
+#: gtkkeyboardsetup.glade:973
 msgid "translator-credits"
-msgstr ""
-"Cyrille Pontvieux <jrd~at~enialis~dot~net>\n"
-"Pierrick Le Brun <akuna~at~salixos~dot~org>"
+msgstr "Cyrille Pontvieux <jrd~at~enialis~dot~net>\nPierrick Le Brun <akuna~at~salixos~dot~org>"
 
 #: gtkkeyboardsetup:194
 msgid "Keyboard type"

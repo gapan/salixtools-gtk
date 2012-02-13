@@ -1,15 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Yarema aka Knedlyk <yupadmin@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
-"POT-Creation-Date: 2011-02-13 16:32+0200\n"
-"PO-Revision-Date: 2011-03-22 15:49+0000\n"
-"Last-Translator: knedlyk <yupadmin@gmail.com>\n"
+"POT-Creation-Date: 2011-02-14 10:24+0200\n"
+"PO-Revision-Date: 2012-02-13 09:25+0000\n"
+"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,11 +24,9 @@ msgstr "Налаштування клавіатури"
 
 #: gtkkeyboardsetup.glade:52
 msgid ""
-"Please select you preferred keyboard type and map and set numlock and "
+"Please select your preferred keyboard type and map and set numlock and "
 "IBus/SCIM preferences."
-msgstr ""
-"Будь ласка виберіть Вашу улюблену розкладку клавіатури та встановіть "
-"властивості NumLock і IBus/SCIM."
+msgstr "Будь ласка, виберіть потрібний тип клавіатури і розкладку та налаштуйте властивості NumLock і IBus/SCIM."
 
 #: gtkkeyboardsetup.glade:146
 msgid "Enable numlock when the system is started"
@@ -37,24 +36,28 @@ msgstr "Включити numlock при старті системи"
 msgid "Enable IBus when the system is started"
 msgstr "Включити IBus при старті системи"
 
-#: gtkkeyboardsetup.glade:176
+#: gtkkeyboardsetup.glade:165
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages. It is newer and works better than SCIM."
+msgstr "IBus є платформою вводу для китайської, японської, корейської та багатьох інших мов. IBus є новим і працює краще, ніж SCIM."
+
+#: gtkkeyboardsetup.glade:177
 msgid "Enable SCIM when the system is started"
 msgstr "Включити SCIM при старті системи"
 
-#: gtkkeyboardsetup.glade:180
+#: gtkkeyboardsetup.glade:181
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages."
-msgstr ""
-"SCIM є методом вводу для китайської, японської, корейської та багато інших "
-"мов."
+msgstr "SCIM є методом вводу для китайської, японської, корейської та багато інших мов."
 
-#: gtkkeyboardsetup.glade:294 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup.glade:295 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "Інструмент налаштування клавіатури"
 
-#: gtkkeyboardsetup.glade:972
+#: gtkkeyboardsetup.glade:973
 msgid "translator-credits"
 msgstr "Yarema aka Knedlyk <yupadmin@gmail.com>"
 
