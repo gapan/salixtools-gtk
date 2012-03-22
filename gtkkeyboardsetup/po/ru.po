@@ -4,12 +4,13 @@
 # 
 # Translators:
 # andyun <pokazsch@yandex.ru>, 2011.
+#   <pokazsch@yandex.ru>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2011-02-14 10:24+0200\n"
-"PO-Revision-Date: 2012-02-13 09:25+0000\n"
+"PO-Revision-Date: 2012-02-24 17:32+0000\n"
 "Last-Translator: andyun <pokazsch@yandex.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -55,7 +56,7 @@ msgstr "SCIM — редактор метода ввода для языков, �
 #: gtkkeyboardsetup.glade:295 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
-msgstr "Графический интерфейс для keyboardsetup (входит в состав salixtools) — инструмента управления ракладкой клавиатуры. gtkkeyboardsetup входит в состав salixtools-gtk."
+msgstr "Графический интерфейс для keyboardsetup (входит в состав salixtools) — инструмента управления ракладкой клавиатуры. Gtkkeyboardsetup входит в состав salixtools-gtk."
 
 #: gtkkeyboardsetup.glade:973
 msgid "translator-credits"

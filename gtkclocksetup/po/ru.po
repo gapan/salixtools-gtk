@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2012-02-13 09:34+0000\n"
+"PO-Revision-Date: 2012-02-14 09:29+0000\n"
 "Last-Translator: andyun <pokazsch@yandex.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,11 +33,11 @@ msgstr "Синхронизировать"
 
 #: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
-msgstr "Временная зона:"
+msgstr "Часовой пояс:"
 
 #: gtkclocksetup.glade:97
 msgid "Select time zone..."
-msgstr "Выбрать зону..."
+msgstr "Выбрать..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
@@ -60,16 +60,16 @@ msgstr "Дата:"
 
 #: gtkclocksetup.glade:415
 msgid "Select time zone"
-msgstr "Выбор временной зоны"
+msgstr "Выбор часового пояса"
 
 #: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
-msgstr "Выберите вашу временную зону:"
+msgstr "Выберите ваш часовой пояс:"
 
 #: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
-msgstr "Графический интерфейс для clocksetup (входит в состав salixtools) — инструмента настройки даты и времени. gtkclocksetup входит в состав salixtools-gtk."
+msgstr "Графический интерфейс для clocksetup (входит в состав salixtools) — инструмента настройки даты и времени. Gtkclocksetup входит в состав salixtools-gtk."
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
@@ -81,7 +81,7 @@ msgstr "Регион"
 
 #: gtkclocksetup:252
 msgid "Location"
-msgstr "Место региона"
+msgstr "Часовой пояс"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"

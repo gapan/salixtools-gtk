@@ -4,12 +4,13 @@
 # 
 # Translators:
 # andyun <pokazsch@yandex.ru>, 2011.
+#   <pokazsch@yandex.ru>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2012-02-13 09:31+0000\n"
+"PO-Revision-Date: 2012-02-24 17:27+0000\n"
 "Last-Translator: andyun <pokazsch@yandex.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -58,7 +59,7 @@ msgstr "Правка хоста"
 #: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
 #: gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
-msgstr "Настройка имён хостов"
+msgstr "Настройка имени компьютера в сети. Gtkhostsetup входит в состав salixtools-gtk."
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"

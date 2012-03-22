@@ -4,12 +4,13 @@
 # 
 # Translators:
 # andyun <pokazsch@yandex.ru>, 2011.
+#   <pokazsch@yandex.ru>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2012-02-13 08:58+0000\n"
+"PO-Revision-Date: 2012-02-24 17:22+0000\n"
 "Last-Translator: andyun <pokazsch@yandex.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -157,7 +158,7 @@ msgstr "Не удалось удалить группу"
 #: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
-msgstr "Графический интерфейс для usersetup (входит в состав salixtools) — инструмента управления пользователями и группами. gtkusersetup входит в состав salixtools-gtk."
+msgstr "Графический интерфейс для usersetup (входит в состав salixtools) — инструмента управления пользователями и группами. Gtkusersetup входит в состав salixtools-gtk."
 
 #: gtkusersetup.glade:2545
 msgid "translator-credits"

@@ -4,13 +4,13 @@
 # 
 # Translators:
 # andyun <pokazsch@yandex.ru>, 2011.
-#   <pokazsch@yandex.ru>, 2011.
+#   <pokazsch@yandex.ru>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2012-02-13 08:41+0000\n"
+"PO-Revision-Date: 2012-02-24 17:23+0000\n"
 "Last-Translator: andyun <pokazsch@yandex.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -57,7 +57,7 @@ msgstr "Настройки"
 
 #: gtkalsasetup.glade:364
 msgid "A tool to manage ALSA sound cards"
-msgstr "Настройка ALSA для звуковой карты. gtkalsasetup входит в состав salixtools-gtk."
+msgstr "Настройка ALSA для звуковой карты. Gtkalsasetup входит в состав salixtools-gtk."
 
 #: gtkalsasetup.glade:1043
 msgid "translator-credits"

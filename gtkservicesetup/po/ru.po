@@ -4,12 +4,13 @@
 # 
 # Translators:
 # andyun <pokazsch@yandex.ru>, 2011.
+#   <pokazsch@yandex.ru>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
 "POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2012-02-13 09:16+0000\n"
+"PO-Revision-Date: 2012-02-24 17:34+0000\n"
 "Last-Translator: andyun <pokazsch@yandex.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +34,7 @@ msgstr "Пожалуйста, поставьте или снимите отме�
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr "Графический интерфейс для servicesetup (входит в состав salixtools) — инструмента управления загрузкой системных сервисов. gtkservicesetup входит в состав salixtools-gtk."
+msgstr "Графический интерфейс для servicesetup (входит в состав salixtools) — инструмента управления загрузкой системных сервисов. Gtkservicesetup входит в состав salixtools-gtk."
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"
