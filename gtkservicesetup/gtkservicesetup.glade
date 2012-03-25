@@ -29,7 +29,6 @@
     </data>
   </object>
   <object class="GtkDialog" id="gtkservicesetup">
-    <property name="width_request">540</property>
     <property name="height_request">500</property>
     <property name="border_width">5</property>
     <property name="title" translatable="yes">System services</property>
