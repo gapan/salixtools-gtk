@@ -120,6 +120,9 @@ def setntp(state):
 
 class GTKClockSetup:
 	def on_button_ok_clicked(self, widget, data=None):
+		self.window.hide()
+		while gtk.events_pending():
+			gtk.main_iteration()
 		if not self.ntpcheckbutton.get_active == ntpstate():
 			setntp(self.ntpcheckbutton.get_active())
 			if self.ntpcheckbutton.get_active() == False:
