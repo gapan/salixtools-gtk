@@ -93,6 +93,9 @@ class GTKServiceSetup:
 		return True
 	
 	def on_button_ok_clicked(self, widget, data=None):
+		self.window.hide()
+		while gtk.events_pending():
+			gtk.main_iteration()
 		for i in self.servicesliststore:
 			if i[3] == True:
 				if i[0] == True:
