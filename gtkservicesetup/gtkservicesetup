@@ -2,6 +2,7 @@
 
 import commands
 import gtk
+import subprocess
 import os
 import sys
 
@@ -72,10 +73,14 @@ def serviceslist():
 	return list
 
 def enableservice(service):
-	os.system('/usr/sbin/service start '+service+' &')
+	cmd = ['/usr/sbin/service', 'start', service]
+	process = subprocess.Popen(cmd)
+	process.wait()
 
 def disableservice(service):
-	os.system('/usr/sbin/service stop '+service+' &')
+	cmd = ['/usr/sbin/service', 'stop', service]
+	process = subprocess.Popen(cmd)
+	process.wait()
 
 class GTKServiceSetup:
 	def on_button_about_clicked(self, widget, data=None):
