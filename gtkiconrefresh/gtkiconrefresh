@@ -3,6 +3,7 @@
 import gtk
 import os
 import gobject
+import subprocess
 
 # Internationalization
 import locale
@@ -31,11 +32,17 @@ class GTKIconRefresh:
 		position = 0
 		for i in icon_dirs():
 			self.progressbar.set_fraction(position)
-			os.system('gtk-update-icon-cache -f '+ i + '&>/dev/null')
+			while gtk.events_pending():
+				gtk.main_iteration()
+			cmd = ['gtk-update-icon-cache', '-f', i]
+			process = subprocess.Popen(cmd)
+			process.wait()
 			position = position + step
 			yield True
 		self.progressbar.set_fraction(1)
 		gtk.main_quit()
+		while gtk.events_pending():
+			gtk.main_iteration()
 		yield False
 		
 	def rebuild_icon_cache(self):
