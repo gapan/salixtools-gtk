@@ -3,6 +3,7 @@
 import gtk
 import os
 import sys
+import subprocess
 
 # Internationalization
 import locale
@@ -72,28 +73,36 @@ def getscim():
 	return scim
 
 def setkeymap(keymap):
-	os.system('keyboardsetup -k '+keymap+' &')
+	cmd = ['/usr/sbin/keyboardsetup', '-k', keymap]
+	process = subprocess.Popen(cmd)
+	process.wait()
 
 def setnumlock(numlock):
 	if numlock == True:
 		state = 'on'
 	else:
 		state = 'off'
-	os.system('keyboardsetup -n '+state)
+	cmd = ['/usr/sbin/keyboardsetup', '-n', state]
+	process = subprocess.Popen(cmd)
+	process.wait()
 
 def setibus(ibus):
 	if ibus == True:
 		state = 'on'
 	else:
 		state = 'off'
-	os.system('keyboardsetup -i '+state)
+	cmd = ['keyboardsetup', '-i', state]
+	process = subprocess.Popen(cmd)
+	process.wait()
 
 def setscim(scim):
 	if scim == True:
 		state = 'on'
 	else:
 		state = 'off'
-	os.system('keyboardsetup -s '+state)
+	cmd = ['keyboardsetup', '-s ', state]
+	process = subprocess.Popen(cmd)
+	process.wait()
 
 def availablekeybtypes():
 	searchlist = ['azerty', 'dvorak', 'olpc', 'qwerty', 'qwertz']
