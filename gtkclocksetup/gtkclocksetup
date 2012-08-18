@@ -4,6 +4,7 @@ import gtk
 import os
 import sys
 import datetime
+import subprocess
 
 # Internationalization
 import locale
@@ -59,9 +60,15 @@ def currenttimezone():
 def settimezone(continent, location):
 	if not continent == currenttimezone()[0]:
 		if not location == currenttimezone()[1]:
-			os.system('ln -sf /usr/share/zoneinfo/'+continent+'/'+location+' /etc/localtime-copied-from')
-			os.system('rm -f /etc/localtime')
-			os.system('cp /etc/localtime-copied-from /etc/localtime')
+			cmd = ['ln', '-sf', '/usr/share/zoneinfo/'+continent+'/'+location, '/etc/localtime-copied-from']
+			process = subprocess.Popen(cmd)
+			process.wait()
+			cmd= ['rm', '-f', '/etc/localtime']
+			process = subprocess.Popen(cmd)
+			process.wait()
+			cmd = ['cp', '/etc/localtime-copied-from', '/etc/localtime']
+			process = subprocess.Popen(cmd)
+			process.wait()
 
 def ntpstate():
 	if os.access('/etc/rc.d/rc.ntpd', os.X_OK):
@@ -110,13 +117,19 @@ def setutc(state):
 	f.close()
 
 def ntp_sync_now():
-	os.system('sh /etc/rc.d/rc.ntpd sync')
+	cmd = ['sh', '/etc/rc.d/rc.ntpd', 'sync']
+	process = subprocess.Popen(cmd)
+	process.wait()
 
 def setntp(state):
 	if state == True:
-		os.system('service start ntpd')
+		cmd = ['/usr/sbin/service', 'start', 'ntpd']
+		process = subprocess.Popen(cmd)
+		process.wait()
 	else:
-		os.system('service stop ntpd')
+		cmd = ['service', 'stop', 'ntpd']
+		process = subprocess.Popen(cmd)
+		process.wait()
 
 class GTKClockSetup:
 	def on_button_ok_clicked(self, widget, data=None):
@@ -132,9 +145,15 @@ class GTKClockSetup:
 				hour = "%02d" % self.spinbutton_hrs.get_value()
 				min = "%02d" % self.spinbutton_min.get_value()
 				sec = "%02d" % self.spinbutton_sec.get_value()
-				os.system('date +%Y%m%d -s "'+year+month+day+'"	> /dev/null')
-				os.system('date +T -s "'+hour+':'+min+':'+sec+'" > /dev/null')
-				os.system('hwclock --systohc')
+				cmd = ['date', '+%Y%m%d', '-s', year+month+day]
+				process = subprocess.Popen(cmd)
+				process.wait()
+				cmd = ['date', '+T', '-s', hour+':'+min+':'+sec]
+				process = subprocess.Popen(cmd)
+				process.wait()
+				cmd = ['hwclock', '--systohc']
+				process = subprocess.Popen(cmd)
+				process.wait()
 		if not self.utccheckbutton.get_active() == utcstate():
 			setutc(self.utccheckbutton.get_active())
 		gtk.main_quit()
