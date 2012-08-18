@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import commands
 import gtk
 import subprocess
 import os
