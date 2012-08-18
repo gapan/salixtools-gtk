@@ -144,6 +144,9 @@ class GTKKeyboardSetup:
 		return True
 	
 	def on_button_ok_clicked(self, widget, data=None):
+		self.window.hide()
+		while gtk.events_pending():
+			gtk.main_iteration()
 		selectedkeymap = self.keymaplist.get_selection()
 		self.keymapliststore, iter = selectedkeymap.get_selected()
 		keymap = self.keymapliststore.get_value(iter, 0)
