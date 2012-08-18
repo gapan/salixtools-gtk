@@ -56,6 +56,9 @@ class GTKLocaleSetup:
 		return True
 	
 	def on_button_ok_clicked(self, widget, data=None):
+		self.window.hide()
+		while gtk.events_pending():
+			gtk.main_iteration()
 		selectedlocale = self.localelist.get_selection()
 		self.localeliststore, iter = selectedlocale.get_selected()
 		setlocale(self.localeliststore.get_value(iter, 1))
