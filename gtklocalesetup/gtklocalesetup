@@ -4,6 +4,7 @@ import commands
 import gtk
 import os
 import sys
+import subprocess
 
 # Internationalization
 import gtk.glade
@@ -42,7 +43,9 @@ def currentlocale():
 	return locale
 
 def setlocale(locale):
-	os.system('localesetup '+locale)
+	cmd = ['localesetup', locale]
+	process = subprocess.Popen(cmd)
+	process.wait()
 
 class GTKLocaleSetup:
 	def on_button_about_clicked(self, widget, data=None):
