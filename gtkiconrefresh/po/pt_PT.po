@@ -3,33 +3,34 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012
+# Sérgio Marques <smarquespt@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2012-02-14 09:24+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 10:08+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) (http://www.transifex.com/projects/p/salixtools-gtk/language/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_PT\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkiconrefresh.glade:6
 msgid "Rebuilding icon cache"
-msgstr "Reconstruir cache de ícone"
+msgstr "A reconstruir cache de ícones"
 
 #: gtkiconrefresh.glade:60
 msgid "Please wait while rebuilding the system's icon cache..."
-msgstr "Por favor, aguarde enquanto a cache do sistema ícone é reconstruída .."
+msgstr "Por favor aguarde enquanto a cache de ícones ícone é reconstruida..."
 
 #: gtkiconrefresh.desktop.in.h:1
 msgid "Rebuild icon cache"
-msgstr "Reconstruir cache de ícone"
+msgstr "Reconstruir cache de ícones"
 
 #: gtkiconrefresh.desktop.in.h:2
 msgid "Rebuild the system's icon cache"
-msgstr "Reconstruir o cache do sistema ícone"
+msgstr "Reconstruir cache de ícones do sistema"

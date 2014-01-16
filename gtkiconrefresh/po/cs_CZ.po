@@ -3,32 +3,33 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# jui <appukonrad@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2013-04-29 10:08+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/projects/p/salixtools-gtk/language/nl/)\n"
+"PO-Revision-Date: 2013-12-09 13:22+0000\n"
+"Last-Translator: jui <appukonrad@gmail.com>\n"
+"Language-Team: Czech (Czech Republic) (http://www.transifex.com/projects/p/salixtools-gtk/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: gtkiconrefresh.glade:6
 msgid "Rebuilding icon cache"
-msgstr "Opnieuw bouwen van de iconen cache"
+msgstr "Opětovné sestavení mezipaměti ikon"
 
 #: gtkiconrefresh.glade:60
 msgid "Please wait while rebuilding the system's icon cache..."
-msgstr "Wacht alstublieft tijdens het opnieuw bouwen van de iconen cache van het systeem"
+msgstr "Počkejte prosím, opětovné sestavení systému mezipaměti ikon..."
 
 #: gtkiconrefresh.desktop.in.h:1
 msgid "Rebuild icon cache"
-msgstr "Bouw de iconen cache opnieuw"
+msgstr "Opětovně sestavit mezipaměť ikon"
 
 #: gtkiconrefresh.desktop.in.h:2
 msgid "Rebuild the system's icon cache"
-msgstr "Bouw opnieuw de iconen cache van het systeem"
+msgstr "Opětovné sestavení mezipaměti ikon"

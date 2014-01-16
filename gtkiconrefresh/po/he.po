@@ -3,32 +3,33 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# GenghisKhan <genghiskhan@gmx.ca>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2010-11-30 12:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 10:08+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/salixtools-gtk/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkiconrefresh.glade:6
 msgid "Rebuilding icon cache"
-msgstr "הרכבה מחדש של מטמון הסמלים החלה"
+msgstr "הרכבה מחדש של מטמון סמלים"
 
 #: gtkiconrefresh.glade:60
 msgid "Please wait while rebuilding the system's icon cache..."
-msgstr "נא המתינו בזמן ההרכבה המחודשת של מטמון הסמלים של המערכת"
+msgstr "אנא המתן בזמן הרכבה מחודשת של מטמון הסמלים של המערכת"
 
 #: gtkiconrefresh.desktop.in.h:1
 msgid "Rebuild icon cache"
-msgstr "הרכבה מחדש של מטמון הסמלים"
+msgstr "הרכב מחדש מטמון סמלים"
 
 #: gtkiconrefresh.desktop.in.h:2
 msgid "Rebuild the system's icon cache"
-msgstr "הרכבה מחדש של מטמון הסמלים של המערכת"
+msgstr "הרכב מחדש של מטמון הסמלים של המערכת"
