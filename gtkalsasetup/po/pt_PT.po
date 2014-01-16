@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012
+# Sérgio Marques <smarquespt@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2012-02-14 08:20+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-11-20 11:37+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) (http://www.transifex.com/projects/p/salixtools-gtk/language/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_PT\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
@@ -26,7 +27,7 @@ msgstr "Placa de som padrão Alsa"
 msgid ""
 "Please choose the sound card that you want to set as default for ALSA "
 "systemwide. The session needs to be restarted for the changes to be applied."
-msgstr "Por favor, escolha a placa de som ALSA que você deseja definir como padrão para todo o sistema. A sessão tem de ser reiniciada para que as alterações sejam aplicadas."
+msgstr "Por favor escolha a placa de som ALSA que quer definir como padrão para o sistema. Tem que reiniciar a sessão para aplicar as alterações."
 
 #: gtkalsasetup.glade:119 gtkalsasetup:135
 msgid "Sound card"
@@ -36,19 +37,19 @@ msgstr "Placa de som"
 msgid ""
 "You can use the buttons below to manage the system settings for ALSA, "
 "including volume settings and selection of input sources. "
-msgstr "Você pode usar os botões abaixo para gerir as definições do sistema para ALSA, incluindo ajustes de volume e seleção de fontes de entrada. "
+msgstr "Pode usar os botões abaixo para gerir as definições do sistema ALSA, incluindo ajustes de volume e seleção de fontes de entrada. "
 
 #: gtkalsasetup.glade:180
 msgid "Store the current ALSA settings as the system defaults"
-msgstr "Armazenar as definições atuais ALSA como o sistema padrão"
+msgstr "Guardar definições atuais ALSA como padrão"
 
 #: gtkalsasetup.glade:198
 msgid "Revert current ALSA settings to the stored defaults"
-msgstr "Reverter as definições atuais ALSA para os padrões armazenados"
+msgstr "Reverter definições atuais ALSA para os padrões gravados"
 
 #: gtkalsasetup.glade:216
 msgid "Clear all ALSA settings and set default values"
-msgstr "Limpar todas as definições ALSA e definir valores padrão"
+msgstr "Limpar todas as definições ALSA e definir os valores padrão"
 
 #: gtkalsasetup.glade:252
 msgid "Settings"
@@ -56,11 +57,11 @@ msgstr "Definições"
 
 #: gtkalsasetup.glade:364
 msgid "A tool to manage ALSA sound cards"
-msgstr "Uma ferramenta para gerir placas de som ALSA"
+msgstr "Ferramenta ALSA para gerir placas de som"
 
 #: gtkalsasetup.glade:1043
 msgid "translator-credits"
-msgstr "créditos-de-tradutor"
+msgstr "Sérgio Marques <smarquespt@gmail.com>"
 
 #: gtkalsasetup:22 gtkalsasetup:40
 msgid "Default"
@@ -68,7 +69,7 @@ msgstr "Padrão"
 
 #: gtkalsasetup:22
 msgid "Use the default ALSA sound card"
-msgstr "Use a placa de som Padrão ALSA"
+msgstr "Utilizar placa de som padrão ALSA"
 
 #: gtkalsasetup:137
 msgid "Description"
@@ -80,4 +81,4 @@ msgstr "Placa de som ALSA"
 
 #: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
 msgid "Select the systemwide ALSA sound card"
-msgstr "Selecione a placa de som ALSA em todo o sistema"
+msgstr "Selecione a placa de som ALSA para todo o sistema"
