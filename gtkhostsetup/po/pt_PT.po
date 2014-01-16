@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012
+# Sérgio Marques <smarquespt@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2012-02-14 09:25+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 10:08+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) (http://www.transifex.com/projects/p/salixtools-gtk/language/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_PT\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
-msgstr "Hostnames"
+msgstr "Nomes de anfitrião"
 
 #: gtkhostsetup.glade:44
 msgid "<b>This computer:</b>"
@@ -29,7 +30,7 @@ msgstr "<b>Este computador:</b>"
 
 #: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
-msgstr "Hostname:"
+msgstr "Nome de anfitrião"
 
 #: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
@@ -37,11 +38,11 @@ msgstr "Domínio:"
 
 #: gtkhostsetup.glade:124
 msgid "<b>Other hosts:</b>"
-msgstr "<b>Outros hosts:</b>"
+msgstr "<b>Outros nomes:</b>"
 
 #: gtkhostsetup.glade:369
 msgid "Add host"
-msgstr "Adicionar host"
+msgstr "Adicionar anfitrião"
 
 #: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
@@ -53,32 +54,32 @@ msgstr "Erro"
 
 #: gtkhostsetup.glade:602
 msgid "Edit host"
-msgstr "Editar host"
+msgstr "Editar anfitrião"
 
 #: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
 #: gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
-msgstr "Configure o sistema de hostnames"
+msgstr "Configurar sistema de nomes de anfitrião"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr "créditos-de-tradutor"
+msgstr "Sérgio Marques <smarquespt@gmail.com>"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
-msgstr "O endereço IP não pode ser vazio."
+msgstr "O endereço IP não pode estar vazio."
 
 #: gtkhostsetup:63
 msgid "The hostname cannot be empty."
-msgstr "O nome do host não pode estar vazio."
+msgstr "O nome do anfitrião não pode estar vazio."
 
 #: gtkhostsetup:66
 msgid "The hostname cannot start with a hyphen."
-msgstr "O nome do host não pode começar com um hífen."
+msgstr "O nome do anfitrião não pode começar com um hífen."
 
 #: gtkhostsetup:69
 msgid "The hostname cannot end with a hyphen."
-msgstr "O nome do host não pode terminar com um hífen."
+msgstr "O nome do anfitrião não pode terminar com um hífen."
 
 #: gtkhostsetup:72
 msgid "The domain cannot start with a hyphen."
@@ -90,16 +91,16 @@ msgstr "O domínio não pode terminar com um hífen."
 
 #: gtkhostsetup:80
 msgid "Not a valid IP address."
-msgstr "Não um endereço IP válido."
+msgstr "Não é um endereço IP válido."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr "O hostname pode consistir apenas de letras em latim, números e hífens."
+msgstr "O nome de anfitrião só pode ser constituído por letras, números e hífenes."
 
 #: gtkhostsetup:90
 msgid ""
 "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr "O domínio pode consistir apenas de letras em latim, números, hífens e pontos."
+msgstr "O domínio só pode ser constituído por letras, números e hífenes."
 
 #: gtkhostsetup:284
 msgid "IP address"
@@ -107,7 +108,7 @@ msgstr "Endereço IP"
 
 #: gtkhostsetup:285
 msgid "Hostname"
-msgstr "Hostname"
+msgstr "Nome do anfitrião"
 
 #: gtkhostsetup:286
 msgid "Domain"

@@ -3,24 +3,25 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# GenghisKhan <genghiskhan@gmx.ca>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2010-11-30 12:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 10:08+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/salixtools-gtk/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
-msgstr "שמות המארח"
+msgstr "שמות מארח"
 
 #: gtkhostsetup.glade:44
 msgid "<b>This computer:</b>"
@@ -28,7 +29,7 @@ msgstr "<b>המחשב הזה:</b>"
 
 #: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
-msgstr "שם המארח:"
+msgstr "שם מארח:"
 
 #: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
@@ -40,7 +41,7 @@ msgstr "<b>מארחים אחרים:</b>"
 
 #: gtkhostsetup.glade:369
 msgid "Add host"
-msgstr "הוספת מארח"
+msgstr "הוסף מארח"
 
 #: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
@@ -52,16 +53,16 @@ msgstr "שגיאה"
 
 #: gtkhostsetup.glade:602
 msgid "Edit host"
-msgstr "עריכת מארח"
+msgstr "ערוך מארח"
 
 #: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
 #: gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
-msgstr "תצורת שמות (המחשב) המארח של המערכת"
+msgstr "תצורת שמות מארח של המערכת"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr "Rothschild Maccabim <Maccabees@inferno>"
+msgstr "Transifex Contributors:\n  https://www.transifex.net/accounts/profile/sharemore/\n\nRahut Contributors:\n  Isratine Citizen <genghiskhan@gmx.ca>"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
@@ -69,36 +70,36 @@ msgstr "כתובת IP לא יכולה להיות ריקה"
 
 #: gtkhostsetup:63
 msgid "The hostname cannot be empty."
-msgstr "שם המארח לא יכול להיות ריק"
+msgstr "שם מארח לא יכול להיות ריק"
 
 #: gtkhostsetup:66
 msgid "The hostname cannot start with a hyphen."
-msgstr "שם המארח לא יכול להתחיל עם מקף"
+msgstr "שם מארח לא יכול להתחיל עם מקף"
 
 #: gtkhostsetup:69
 msgid "The hostname cannot end with a hyphen."
-msgstr "שם המארח לא יכול להסתיים עם מקף"
+msgstr "שם מארח לא יכול להסתיים עם מקף"
 
 #: gtkhostsetup:72
 msgid "The domain cannot start with a hyphen."
-msgstr "התחום לא יכול להתחיל עם מקף"
+msgstr "תחום לא יכול להתחיל עם מקף"
 
 #: gtkhostsetup:75
 msgid "The domain cannot end with a hyphen."
-msgstr "התחום לא יכול להסתיים עם מקף"
+msgstr "תחום לא יכול להסתיים עם מקף"
 
 #: gtkhostsetup:80
 msgid "Not a valid IP address."
-msgstr "כתובת IP אינה ברת תוקף."
+msgstr "כתובת IP אינה תקפה."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr "שם המארח יכול להיות מורכב מאותיות לטיניות, מספרים ומקפים בלבד."
+msgstr "שם מארח יכול להיות מורכב מאותיות לטיניות, מספרים ומקפים בלבד."
 
 #: gtkhostsetup:90
 msgid ""
 "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr "התחום יכול להיות מורכב מאותיות לטיניות, מספרים, מקפים ונקודות בלבד."
+msgstr "תחום יכול להיות מורכב מאותיות לטיניות, מספרים, מקפים ונקודות בלבד."
 
 #: gtkhostsetup:284
 msgid "IP address"
@@ -106,7 +107,7 @@ msgstr "כתובת IP"
 
 #: gtkhostsetup:285
 msgid "Hostname"
-msgstr "שם המארח"
+msgstr "שם מארח"
 
 #: gtkhostsetup:286
 msgid "Domain"
