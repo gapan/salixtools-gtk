@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=Rebuild icon cache
+_Name=Rebuild Icon Cache
 _Comment=Rebuild the system's icon cache
 Exec=gksu gtkiconrefresh
 Icon=gtkiconrefresh

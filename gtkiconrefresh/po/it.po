@@ -28,7 +28,7 @@ msgid "Please wait while rebuilding the system's icon cache..."
 msgstr "Per favore attendere mentre la cache delle icone di sistema viene ricostruita..."
 
 #: gtkiconrefresh.desktop.in.h:1
-msgid "Rebuild icon cache"
+msgid "Rebuild Icon Cache"
 msgstr "Ricostruzione cache delle icone"
 
 #: gtkiconrefresh.desktop.in.h:2

@@ -27,7 +27,7 @@ msgid "Please wait while rebuilding the system's icon cache..."
 msgstr "Počkejte prosím, opětovné sestavení systému mezipaměti ikon..."
 
 #: gtkiconrefresh.desktop.in.h:1
-msgid "Rebuild icon cache"
+msgid "Rebuild Icon Cache"
 msgstr "Opětovně sestavit mezipaměť ikon"
 
 #: gtkiconrefresh.desktop.in.h:2
