@@ -20,7 +20,7 @@ msgstr ""
 
 #: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
-msgid "System language"
+msgid "System Language"
 msgstr "Rendszernyelv"
 
 #: gtklocalesetup.glade:56
