@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# GenghisKhan <genghiskhan@gmx.ca>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2010-11-30 12:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 10:08+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/salixtools-gtk/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkclocksetup.glade:7
 msgid "Date and time settings"
@@ -23,11 +24,11 @@ msgstr "הגדרות זמן ותאריך"
 
 #: gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
-msgstr "השארת השעון מסונכרן עם שרתי אינטרנט"
+msgstr "השאר את השעון מסונכרן עם שרתי אינטרנט"
 
 #: gtkclocksetup.glade:51
 msgid "Synchronize now"
-msgstr "ביצוע סינכרון"
+msgstr "סנכרן כעת"
 
 #: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
@@ -39,14 +40,14 @@ msgstr "בחירת אזור זמן..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "שעון החמרה קבוע לזמן הכלל עולמי המתואם (UTC)"
+msgstr "שעון חמרה קבוע לזמן הכלל עולמי המתואם (UTC)"
 
 #: gtkclocksetup.glade:134
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
-msgstr "שעוני החמרה (הציוד הפיזי של המחשב) ברוב המחשבים הביתיים והעסקיים מכוונים לשימוש בזמן המקומי, בעוד ששעון החמרה ברוב שרתי האינטרנט מכוון, קרוב לוודאי, לפי UTC. נא לא לסמן את התא אם אינכם בטוחים. "
+msgstr "שעוני חמרה ברוב המחשבים הביתיים והעסקיים מכוונים לשימוש בזמן המקומי, בעוד ששעון החמרה ברוב שרתי האינטרנט מכוון, קרוב לוודאי, לפי UTC. נא לא לסמן את התא אם אינכם בטוחים. "
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -62,16 +63,16 @@ msgstr "בחירת אזור זמן"
 
 #: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
-msgstr "נא לבחור את אזור הזמן:"
+msgstr "אנא בחר את אזור הזמן שלך:"
 
 #: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
-msgstr "תוכנת עזר לקביעת תצורת שעון מערכת"
+msgstr "כלי עזר לקביעת תצורת שעון מערכת"
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr "Rothschild Maccabim <Maccabees@inferno>"
+msgstr "Transifex Contributors:\n  https://www.transifex.net/accounts/profile/sharemore/\n\nRahut Contributors:\n  Isratine Citizen <genghiskhan@gmx.ca>"
 
 #: gtkclocksetup:251
 msgid "General area"

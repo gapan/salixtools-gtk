@@ -3,28 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2011.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2011
+# Sérgio Marques <smarquespt@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2012-02-14 09:29+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 10:08+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) (http://www.transifex.com/projects/p/salixtools-gtk/language/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt_PT\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkclocksetup.glade:7
 msgid "Date and time settings"
-msgstr "Configurações de data e hora"
+msgstr "Definições de data e hora"
 
 #: gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
-msgstr "Manter o relógio sincronizado com os servidores de internet"
+msgstr "Manter relógio sincronizado com os servidores web"
 
 #: gtkclocksetup.glade:51
 msgid "Synchronize now"
@@ -36,18 +37,18 @@ msgstr "Fuso horário:"
 
 #: gtkclocksetup.glade:97
 msgid "Select time zone..."
-msgstr "Selecione o fuso horário ..."
+msgstr "Selecione o fuso horário..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "Relógio do hardware está definido para Tempo Universal Coordenado (UTC)"
+msgstr "O relógio está definido para hora universal (UTC)"
 
 #: gtkclocksetup.glade:134
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
-msgstr "Relógio do hardware na maioria dos computadores domésticos ou empresariais são definidas para usar o tempo local enquanto o relógio do hardware na maioria dos servidores web é provavelmente definido para UTC. Não marque esta caixa se você não tem certeza."
+msgstr "Na maioria dos sistemas, o relógio está definido para utilizar a hora local, enquanto que o relógio dos servidores web está definido para utilizar a hora universal. Se não souber o que fazer, não marque esta caixa."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
@@ -55,7 +56,7 @@ msgstr "Hora:"
 
 #: gtkclocksetup.glade:286
 msgid "Date:"
-msgstr "Hora:"
+msgstr "Data:"
 
 #: gtkclocksetup.glade:415
 msgid "Select time zone"
@@ -63,7 +64,7 @@ msgstr "Selecione o fuso horário"
 
 #: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
-msgstr "Por favor selecione o seu fuso horário"
+msgstr "Por favor selecione o seu fuso horário:"
 
 #: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
@@ -72,7 +73,7 @@ msgstr "Ferramenta de configuração do relógio do sistema"
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr "Tradutor-créditos"
+msgstr "Sérgio Marques <smarquespt@gmail.com>"
 
 #: gtkclocksetup:251
 msgid "General area"

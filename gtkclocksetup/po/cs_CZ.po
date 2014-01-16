@@ -3,84 +3,85 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# jui <appukonrad@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2013-04-29 10:08+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/salixtools-gtk/language/ja/)\n"
+"PO-Revision-Date: 2013-12-09 13:17+0000\n"
+"Last-Translator: jui <appukonrad@gmail.com>\n"
+"Language-Team: Czech (Czech Republic) (http://www.transifex.com/projects/p/salixtools-gtk/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: gtkclocksetup.glade:7
 msgid "Date and time settings"
-msgstr "時間と日付の設定"
+msgstr "Nastavení datumu a času"
 
 #: gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
-msgstr "時計をインターネットで常にシンクロナイズする。"
+msgstr "Udržujte hodiny synchronizované s internetovými servery"
 
 #: gtkclocksetup.glade:51
 msgid "Synchronize now"
-msgstr "シンクロナイズする。"
+msgstr "Synchronizovat nyní"
 
 #: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
-msgstr "時間帯"
+msgstr "Časové pásmo"
 
 #: gtkclocksetup.glade:97
 msgid "Select time zone..."
-msgstr "時間帯を設定する"
+msgstr "Vyberte časové pásmo..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "ハードウェアの時計は、Coordinated Universal Time (UTC)にセットされています。"
+msgstr "Hardwarové hodiny nastaveny na Coordinated Universal Time (UTC)"
 
 #: gtkclocksetup.glade:134
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
-msgstr "ほとんどのホーム用またはビジネス用のコンピュータのハードウェアの時計は、ローカルタイムにセットされています。それとは対象にウェブ・サーバーなどは、ほとんどUTCにセットされています。よくわからない場合は、このボックスは、ティックしないでください。"
+msgstr "Hardwarové hodiny ve většině domácností a podnikových počítačích jsou nastaveny pomocí místního času, zatímco hardwarové hodiny ve většině webových serverů jsou pravděpodobně nastaveny na UTC. Nepoužívejte zaškrtnutí tohoto políčka, pokud si nejste jisti."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
-msgstr "時間："
+msgstr "Čas:"
 
 #: gtkclocksetup.glade:286
 msgid "Date:"
-msgstr "日付："
+msgstr "Datum:"
 
 #: gtkclocksetup.glade:415
 msgid "Select time zone"
-msgstr "時間帯を選ぶ"
+msgstr "Výběr časového pásma"
 
 #: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
-msgstr "時間帯を選んでください。"
+msgstr "Prosím, vyberte časové pásmo:"
 
 #: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
-msgstr "システム時計設定用のツール"
+msgstr "Nástroj pro nastavení systémových hodiny"
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr "翻訳者"
+msgstr "zásluha na překladu"
 
 #: gtkclocksetup:251
 msgid "General area"
-msgstr "地域"
+msgstr "Obecná oblast"
 
 #: gtkclocksetup:252
 msgid "Location"
-msgstr "都市"
+msgstr "Umístění"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
-msgstr "システム時計"
+msgstr "Systémové hodiny"
