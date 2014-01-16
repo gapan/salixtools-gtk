@@ -20,7 +20,7 @@ msgstr ""
 
 #: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
-msgid "System services"
+msgid "System Services"
 msgstr "Servizi di sistema"
 
 #: gtkservicesetup.glade:67

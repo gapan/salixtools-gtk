@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=System services
+_Name=System Services
 _Comment=Services configuration tool
 Exec=gksu gtkservicesetup
 Icon=gtkservicesetup
