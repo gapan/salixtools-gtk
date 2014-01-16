@@ -76,7 +76,7 @@ msgid "Description"
 msgstr "Descrição"
 
 #: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
-msgid "ALSA sound card"
+msgid "ALSA Sound Card"
 msgstr "Placa de som ALSA"
 
 #: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2

@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=ALSA sound card
+_Name=ALSA Sound Card
 _Comment=Select the systemwide ALSA sound card
 Exec=gksu gtkalsasetup
 Icon=gtkalsasetup
