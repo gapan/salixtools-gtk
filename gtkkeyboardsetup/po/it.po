@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Kerd <kerd89@gmail.com>, 2011.
-#   <laplume@libero.it>, 2011.
+# Kerd <kerd89@gmail.com>, 2011
+# laplume <laplume@libero.it>, 2011-2012
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-02-14 10:24+0200\n"
-"PO-Revision-Date: 2012-02-14 09:19+0000\n"
-"Last-Translator: laplume <laplume@libero.it>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 10:08+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/salixtools-gtk/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkkeyboardsetup.glade:21
 msgid "Keyboard settings"
@@ -27,7 +27,7 @@ msgstr "Impostazioni tastiera"
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and "
 "IBus/SCIM preferences."
-msgstr "Selezionate il tipo di tastiera desiderato e la sua mappatura e dinoltre le impostazioni di blocco tastierino numerico e IBus/SCIM."
+msgstr "Selezionate il tipo di tastiera desiderato e la sua mappatura ed inoltre le impostazioni di blocco tastierino numerico e IBus/SCIM."
 
 #: gtkkeyboardsetup.glade:146
 msgid "Enable numlock when the system is started"
@@ -51,7 +51,7 @@ msgstr "Abilitare SCIM quando il sistema viene avviato"
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages."
-msgstr "SCIM e' una piattaforma di input per il cinese, giapponese, coreano e moltealtre lingue."
+msgstr "SCIM e' una piattaforma di input per il cinese, giapponese, coreano e molte altre lingue."
 
 #: gtkkeyboardsetup.glade:295 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
