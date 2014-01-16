@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# GenghisKhan <genghiskhan@gmx.ca>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:28+0300\n"
-"PO-Revision-Date: 2010-11-30 12:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-11-19 16:32+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Hebrew (http://www.transifex.com/projects/p/salixtools-gtk/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
@@ -26,13 +27,13 @@ msgstr "שפת מערכת"
 msgid ""
 "Please select a default system locale. The changes will take effect next "
 "time you start your system."
-msgstr "נא בחרו את מקומיות (locale) ברירת המחדל עבור המערכת. השינויים ייכנסו לתוקף בפעם הבאה שתתחילו את המערכת."
+msgstr "אנא בחר מקומיות (locale) מערכת ברירת מחדל. השינויים ייכנסו לתוקף בפעם הבאה שתתחיל את המערכת."
 
 #: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
 #: gtklocalesetup-kde.desktop.in.h:1
 msgid "Locale configuration tool"
-msgstr "תוכנת עזר לתצורת מקומיות (locale) "
+msgstr "כלי עזר לתצורת מקומיות"
 
 #: gtklocalesetup.glade:899
 msgid "translator-credits"
-msgstr "Rothschild Maccabim <Maccabees@inferno>"
+msgstr "Transifex Contributors:\n  https://www.transifex.net/accounts/profile/sharemore/\n\nRahut Contributors:\n  Isratine Citizen <genghiskhan@gmx.ca>"
