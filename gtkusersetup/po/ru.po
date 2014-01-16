@@ -328,5 +328,5 @@ msgid "Group"
 msgstr "Группа"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
-msgid "Users and groups"
+msgid "Users and Groups"
 msgstr "Пользователи и группы"
