@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=System clock
+_Name=System Clock
 _Comment=System clock configuration tool
 Exec=gksu gtkclocksetup
 Icon=gtkclocksetup

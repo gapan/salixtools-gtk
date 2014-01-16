@@ -81,5 +81,5 @@ msgid "Location"
 msgstr ""
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-msgid "System clock"
+msgid "System Clock"
 msgstr ""
