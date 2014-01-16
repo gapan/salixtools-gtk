@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/wiki\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2012-02-14 09:07+0000\n"
+"PO-Revision-Date: 2013-11-19 16:21+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/salixtools-gtk/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: nl\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
