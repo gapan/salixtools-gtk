@@ -3,7 +3,8 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# GenghisKhan <genghiskhan@gmx.ca>, 2013
+# GenghisKhan <genghiskhan@gmx.ca>, 2012-2013
+# GenghisKhan <genghiskhan@gmx.ca>, 2013-2014
 # GenghisKhan <genghiskhan@gmx.ca>, 2012
 # zach https://www.transifex.net/accounts/profile/sharemore, 2010
 msgid ""
@@ -11,9 +12,9 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2013-11-19 16:21+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Hebrew (http://www.transifex.com/projects/p/salixtools-gtk/language/he/)\n"
+"PO-Revision-Date: 2014-04-12 08:51+0000\n"
+"Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
+"Language-Team: Hebrew (http://www.transifex.com/gapan/salixtools-gtk/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +23,7 @@ msgstr ""
 
 #: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
-msgid "System Services"
+msgid "System services"
 msgstr "שירותי מערכת"
 
 #: gtkservicesetup.glade:67
@@ -30,7 +31,7 @@ msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
-msgstr "אנא בחר את שירותי המערכת שברצונך להתיר בזמן הפעלת\nהמערכת. כל שינוי יוחל מיידית לאחר לחיצה על אישור."
+msgstr "אנא בחר את שירותי המערכת אשר ברצונך להתיר בעת הפעלת\nהמערכת. כל שינוי יוחל מיידית כאשר תלחץ על הלחצן אישור."
 
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1

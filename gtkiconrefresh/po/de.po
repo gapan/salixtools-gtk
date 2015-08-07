@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Thorsten <thenktor@posteo.de>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2013-04-29 10:08+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/salixtools-gtk/language/de/)\n"
+"PO-Revision-Date: 2014-07-24 10:45+0000\n"
+"Last-Translator: Thorsten <thenktor@posteo.de>\n"
+"Language-Team: German (http://www.transifex.com/gapan/salixtools-gtk/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,7 +27,7 @@ msgid "Please wait while rebuilding the system's icon cache..."
 msgstr "Bitte warten Sie, während der Symbol-Zwischenspeicher des Systems aktualisiert wird."
 
 #: gtkiconrefresh.desktop.in.h:1
-msgid "Rebuild Icon Cache"
+msgid "Rebuild icon cache"
 msgstr "Symbol-Zwischenspeicher aktualisieren"
 
 #: gtkiconrefresh.desktop.in.h:2

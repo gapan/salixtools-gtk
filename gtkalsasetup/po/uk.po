@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Yarema aka Knedlyk <yupadmin@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2013-11-20 11:37+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/projects/p/salixtools-gtk/language/uk/)\n"
+"PO-Revision-Date: 2014-01-17 12:42+0000\n"
+"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/gapan/salixtools-gtk/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -74,7 +75,7 @@ msgid "Description"
 msgstr "Опис"
 
 #: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
-msgid "ALSA Sound Card"
+msgid "ALSA sound card"
 msgstr "Звукова карта ALSA"
 
 #: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2

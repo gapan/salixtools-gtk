@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Kerd <kerd89@gmail.com>, 2011
-# laplume <laplume@libero.it>, 2011
+# Antonio Sardei <laplume@libero.it>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2013-11-20 12:55+0000\n"
+"PO-Revision-Date: 2014-01-17 09:23+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/salixtools-gtk/language/it/)\n"
+"Language-Team: Italian (http://www.transifex.com/gapan/salixtools-gtk/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -328,5 +328,5 @@ msgid "Group"
 msgstr "Gruppo"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
-msgid "Users and Groups"
-msgstr "Utenti e gruppi"
+msgid "Users and groups"
+msgstr ""

@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# andyun <pokazsch@yandex.ru>, 2011
-# andyun <pokazsch@yandex.ru>, 2011, 2012
+# Andrey Frantsuzov <pokazsch@yandex.ru>, 2011-2012
+# goriy <wolfr2@gmail.com>, 2014
+# Andrey Frantsuzov <pokazsch@yandex.ru>, 2011, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 12:47+0300\n"
-"PO-Revision-Date: 2013-11-20 11:37+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/salixtools-gtk/language/ru/)\n"
+"PO-Revision-Date: 2014-05-03 23:05+0000\n"
+"Last-Translator: goriy <wolfr2@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/gapan/salixtools-gtk/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: gtkalsasetup.glade:15
 msgid "Alsa default sound card"
@@ -76,7 +77,7 @@ msgid "Description"
 msgstr "Описание"
 
 #: gtkalsasetup.desktop.in.h:1 gtkalsasetup-kde.desktop.in.h:1
-msgid "ALSA Sound Card"
+msgid "ALSA sound card"
 msgstr "Звуковая карта"
 
 #: gtkalsasetup.desktop.in.h:2 gtkalsasetup-kde.desktop.in.h:2
