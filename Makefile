@@ -10,6 +10,14 @@ all:
 		intltool-merge $$i/po/ -d -u $$i/$$i-kde.desktop.in $$i/$$i-kde.desktop; \
 	done
 
+transifex:
+	for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
+			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do \
+		cd $$i; \
+		tx pull -a; \
+		cd ..; \
+	done
+
 clean:
 	rm -f */po/*.mo
 	rm -f */po/*.po~
