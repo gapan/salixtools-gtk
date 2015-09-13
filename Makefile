@@ -1,8 +1,13 @@
 DESTDIR ?= /
 
+ALL_PROJECTS = gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
+			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup
+ALMOST_ALL_PROJECTS = gtkalsasetup gtkclocksetup gtkhostsetup \
+			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup
+
 all:
-	for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do \
-		for j in `ls $$i/po/*.po`;do \
+	for i in $(ALMOST_ALL_PROJECTS); do \
+		for j in `ls $$i/po/*.po`; do \
 			echo "Compiling `echo $$j|sed "s|/po||"`"; \
 			msgfmt $$j -o `echo $$j | sed "s/\.po//"`.mo; \
 		done; \
@@ -11,8 +16,7 @@ all:
 	done
 
 transifex:
-	for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
-			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do \
+	for i in $(ALL_PROJECTS); do \
 		cd $$i; \
 		tx pull -a; \
 		cd ..; \
@@ -56,14 +60,12 @@ install:
 	done
 
 pot:
-	for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
-			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do \
+	for i in $(ALL_PROJECTS); do \
 		$(MAKE) pot -C $$i;\
 	done
 
 update-po:
-	for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
-			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do \
+	for i in $(ALL_PROJECTS); do \
 		$(MAKE) update-po -C $$i;\
 	done
 	
