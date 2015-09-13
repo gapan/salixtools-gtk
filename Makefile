@@ -55,4 +55,16 @@ install:
 		done; \
 	done
 
-.PHONY: all clean install
+pot:
+	for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
+			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do \
+		$(MAKE) pot -C $$i;\
+	done
+
+update-po:
+	for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
+			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup;do \
+		$(MAKE) update-po -C $$i;\
+	done
+	
+.PHONY: all clean install transifex pot update-po
