@@ -15,136 +15,148 @@ gettext.install("gtkservicesetup", "/usr/share/locale", unicode=1)
 gtk.glade.bindtextdomain("gtkservicesetup", "/usr/share/locale")
 gtk.glade.textdomain("gtkservicesetup")
 
+
 def blacklisted():
-	f = file('/usr/share/salixtools/servicesetup/service-blacklist')
-	servicestrings= []
-	while True:
-		line = f.readline().replace('\n', '')
-		if len(line) == 0:
-			break
-		servicestrings.append(line)
-	f.close()
-	return servicestrings
+    f = file('/usr/share/salixtools/servicesetup/service-blacklist')
+    servicestrings = []
+    while True:
+        line = f.readline().replace('\n', '')
+        if len(line) == 0:
+            break
+        servicestrings.append(line)
+    f.close()
+    return servicestrings
+
 
 def isblacklisted(service):
-	val = False
-	for i in blacklisted():
-		if i in service:
-			val = True
-	return val
+    val = False
+    for i in blacklisted():
+        if i in service:
+            val = True
+    return val
+
 
 def isenabled(service):
-	if os.access('/etc/rc.d/'+service, os.X_OK):
-		enabled = True
-	else:
-		enabled = False
-	return enabled
+    if os.access('/etc/rc.d/' + service, os.X_OK):
+        enabled = True
+    else:
+        enabled = False
+    return enabled
+
 
 def servicedesc(service):
-	description = _('The {0} service').format(service.lstrip('rc.'))
-	filelist = os.listdir('/etc/rc.d/desc.d')
-	for i in filelist:
-		f = file('/etc/rc.d/desc.d/'+i)
-		while True:
-			line = f.readline()
-			if len(line) == 0:
-				break
-			elif 'rc.'+line.partition(':')[0] == service:
-				description = line.partition(':')[2].partition(':')[0]
-				break
-		f.close
-	return description
+    description = _('The {0} service').format(service.lstrip('rc.'))
+    filelist = os.listdir('/etc/rc.d/desc.d')
+    for i in filelist:
+        f = file('/etc/rc.d/desc.d/' + i)
+        while True:
+            line = f.readline()
+            if len(line) == 0:
+                break
+            elif 'rc.' + line.partition(':')[0] == service:
+                description = line.partition(':')[2].partition(':')[0]
+                break
+        f.close
+    return description
+
 
 def availableservices():
-	filelist = os.listdir('/etc/rc.d')
-	services = []
-	for i in filelist:
-		if os.path.isfile('/etc/rc.d/'+i):
-			if not isblacklisted(i):
-				services.append(i)
-	services.sort()
-	return services
+    filelist = os.listdir('/etc/rc.d')
+    services = []
+    for i in filelist:
+        if os.path.isfile('/etc/rc.d/' + i):
+            if not isblacklisted(i):
+                services.append(i)
+    services.sort()
+    return services
+
 
 def serviceslist():
-	list = []
-	for i in availableservices():
-		list.append([isenabled(i), i.replace('rc.', ''), servicedesc(i), False])
-	return list
+    list = []
+    for i in availableservices():
+        list.append([isenabled(i), i.replace(
+            'rc.', ''), servicedesc(i), False])
+    return list
+
 
 def enableservice(service):
-	cmd = ['/usr/sbin/service', 'start', service]
-	process = subprocess.Popen(cmd)
-	process.wait()
+    cmd = ['/usr/sbin/service', 'start', service]
+    process = subprocess.Popen(cmd)
+    process.wait()
+
 
 def disableservice(service):
-	cmd = ['/usr/sbin/service', 'stop', service]
-	process = subprocess.Popen(cmd)
-	process.wait()
+    cmd = ['/usr/sbin/service', 'stop', service]
+    process = subprocess.Popen(cmd)
+    process.wait()
+
 
 class GTKServiceSetup:
-	def on_button_about_clicked(self, widget, data=None):
-		self.aboutdialog.show()
 
-	def on_aboutdialog_response(self, widget, data=None):
-		self.aboutdialog.hide()
+    def on_button_about_clicked(self, widget, data=None):
+        self.aboutdialog.show()
 
-	def on_aboutdialog_delete_event(self, widget, event):
-		self.aboutdialog.hide()
-		return True
-	
-	def on_button_ok_clicked(self, widget, data=None):
-		self.window.hide()
-		while gtk.events_pending():
-			gtk.main_iteration()
-		for i in self.servicesliststore:
-			if i[3] == True:
-				if i[0] == True:
-					enableservice(i[1])
-				else:
-					disableservice(i[1])
-		gtk.main_quit()
+    def on_aboutdialog_response(self, widget, data=None):
+        self.aboutdialog.hide()
 
-	def on_button_cancel_clicked(self, widget, data=None):
-		gtk.main_quit()
-	
-	def on_checkbox_toggled(self, widget, data=None):
-		selectedservice = self.serviceslist.get_selection()
-		self.servicesliststore, iter = selectedservice.get_selected()
-		selectedservicename =  self.servicesliststore.get_value(iter, 1)
-		for i in self.servicesliststore:
-			if i[1] == selectedservicename:
-				i[3] = True
-				if i[0] == 0:
-					i[0] = 1
-				else:
-					i[0] = 0
+    def on_aboutdialog_delete_event(self, widget, event):
+        self.aboutdialog.hide()
+        return True
 
-	def gtk_main_quit(self, widget, data=None):
-		gtk.main_quit()
-	
-	def __init__(self):
-		builder = gtk.Builder()
-		if os.path.exists('gtkservicesetup.glade'):
-			builder.add_from_file('gtkservicesetup.glade')
-		elif os.path.exists('/usr/share/salixtools/gtkservicesetup/gtkservicesetup.glade'):
-			builder.add_from_file('/usr/share/salixtools/gtkservicesetup/gtkservicesetup.glade')
-		self.window = builder.get_object('gtkservicesetup')
-		self.aboutdialog = builder.get_object('aboutdialog')
+    def on_button_ok_clicked(self, widget, data=None):
+        self.window.hide()
+        while gtk.events_pending():
+            gtk.main_iteration()
+        for i in self.servicesliststore:
+            if i[3] == True:
+                if i[0] == True:
+                    enableservice(i[1])
+                else:
+                    disableservice(i[1])
+        gtk.main_quit()
 
-		builder.connect_signals(self)
-		self.serviceslist = builder.get_object('serviceslist')
-		self.servicesliststore = builder.get_object('servicesliststore')
-		self.columnenabled = builder.get_object('columnEnabled')
-		self.columnenabled.set_title(_('Enabled'))
-		self.columnservicename = builder.get_object('columnServiceName')
-		self.columnservicename.set_title(_('Service name'))
-		self.columnservicedesc = builder.get_object('columnServiceDesc')
-		self.columnservicedesc.set_title(_('Service description'))
-		self.servicesliststore.clear()
-		for i in serviceslist():
-			self.servicesliststore.append(i)
+    def on_button_cancel_clicked(self, widget, data=None):
+        gtk.main_quit()
+
+    def on_checkbox_toggled(self, widget, data=None):
+        selectedservice = self.serviceslist.get_selection()
+        self.servicesliststore, iter = selectedservice.get_selected()
+        selectedservicename = self.servicesliststore.get_value(iter, 1)
+        for i in self.servicesliststore:
+            if i[1] == selectedservicename:
+                i[3] = True
+                if i[0] == 0:
+                    i[0] = 1
+                else:
+                    i[0] = 0
+
+    def gtk_main_quit(self, widget, data=None):
+        gtk.main_quit()
+
+    def __init__(self):
+        builder = gtk.Builder()
+        if os.path.exists('gtkservicesetup.glade'):
+            builder.add_from_file('gtkservicesetup.glade')
+        elif os.path.exists('/usr/share/salixtools/gtkservicesetup/gtkservicesetup.glade'):
+            builder.add_from_file(
+                '/usr/share/salixtools/gtkservicesetup/gtkservicesetup.glade')
+        self.window = builder.get_object('gtkservicesetup')
+        self.aboutdialog = builder.get_object('aboutdialog')
+
+        builder.connect_signals(self)
+        self.serviceslist = builder.get_object('serviceslist')
+        self.servicesliststore = builder.get_object('servicesliststore')
+        self.columnenabled = builder.get_object('columnEnabled')
+        self.columnenabled.set_title(_('Enabled'))
+        self.columnservicename = builder.get_object('columnServiceName')
+        self.columnservicename.set_title(_('Service name'))
+        self.columnservicedesc = builder.get_object('columnServiceDesc')
+        self.columnservicedesc.set_title(_('Service description'))
+        self.servicesliststore.clear()
+        for i in serviceslist():
+            self.servicesliststore.append(i)
 
 if __name__ == "__main__":
-	app = GTKServiceSetup()
-	app.window.show()
-	gtk.main()
+    app = GTKServiceSetup()
+    app.window.show()
+    gtk.main()
