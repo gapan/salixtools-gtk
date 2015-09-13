@@ -15,60 +15,62 @@ gettext.install("gtkiconrefresh", "/usr/share/locale", unicode=1)
 gtk.glade.bindtextdomain("gtkiconrefresh", "/usr/share/locale")
 gtk.glade.textdomain("gtkiconrefresh")
 
+
 def icon_dirs():
-	icondir = '/usr/share/icons/'
-	dirs = []
-	for i in os.listdir(icondir):
-		if os.path.isdir(icondir+i):
-			dirs.append(icondir+i)
-	return dirs
+    icondir = '/usr/share/icons/'
+    dirs = []
+    for i in os.listdir(icondir):
+        if os.path.isdir(icondir + i):
+            dirs.append(icondir + i)
+    return dirs
+
 
 class GTKIconRefresh:
 
+    def do_rebuild(self):
+        number_of_dirs = len(icon_dirs())
+        step = 0.999 / number_of_dirs
+        position = 0
+        for i in icon_dirs():
+            self.progressbar.set_fraction(position)
+            while gtk.events_pending():
+                gtk.main_iteration()
+            cmd = ['gtk-update-icon-cache', '-f', i]
+            process = subprocess.Popen(cmd)
+            process.wait()
+            position = position + step
+            yield True
+        self.progressbar.set_fraction(1)
+        gtk.main_quit()
+        while gtk.events_pending():
+            gtk.main_iteration()
+        yield False
 
-	def do_rebuild(self):
-		number_of_dirs = len(icon_dirs())
-		step = 0.999/number_of_dirs
-		position = 0
-		for i in icon_dirs():
-			self.progressbar.set_fraction(position)
-			while gtk.events_pending():
-				gtk.main_iteration()
-			cmd = ['gtk-update-icon-cache', '-f', i]
-			process = subprocess.Popen(cmd)
-			process.wait()
-			position = position + step
-			yield True
-		self.progressbar.set_fraction(1)
-		gtk.main_quit()
-		while gtk.events_pending():
-			gtk.main_iteration()
-		yield False
-		
-	def rebuild_icon_cache(self):
-		task = self.do_rebuild()
-		gobject.idle_add(task.next)
+    def rebuild_icon_cache(self):
+        task = self.do_rebuild()
+        gobject.idle_add(task.next)
 
-	def gtk_main_quit(self, widget, data=None):
-		gtk.main_quit()
+    def gtk_main_quit(self, widget, data=None):
+        gtk.main_quit()
 
-	def on_gtkiconrefresh_delete_event(self, widget, data=None):
-		gtk.main_quit()
+    def on_gtkiconrefresh_delete_event(self, widget, data=None):
+        gtk.main_quit()
 
-	def __init__(self):
-		builder = gtk.Builder()
-		if os.path.exists('gtkiconrefresh.glade'):
-			builder.add_from_file('gtkiconrefresh.glade')
-		elif os.path.exists('/usr/share/salixtools/gtkiconrefresh/gtkiconrefresh.glade'):
-			builder.add_from_file('/usr/share/salixtools/gtkiconrefresh/gtkiconrefresh.glade')
-		self.window = builder.get_object('gtkiconrefresh')
-		self.progressbar = builder.get_object('progressbar')
+    def __init__(self):
+        builder = gtk.Builder()
+        if os.path.exists('gtkiconrefresh.glade'):
+            builder.add_from_file('gtkiconrefresh.glade')
+        elif os.path.exists('/usr/share/salixtools/gtkiconrefresh/gtkiconrefresh.glade'):
+            builder.add_from_file(
+                '/usr/share/salixtools/gtkiconrefresh/gtkiconrefresh.glade')
+        self.window = builder.get_object('gtkiconrefresh')
+        self.progressbar = builder.get_object('progressbar')
 
-		builder.connect_signals(self)
+        builder.connect_signals(self)
 
-		self.rebuild_icon_cache()
+        self.rebuild_icon_cache()
 
 if __name__ == "__main__":
-	app = GTKIconRefresh()
-	app.window.show()
-	gtk.main()
+    app = GTKIconRefresh()
+    app.window.show()
+    gtk.main()
