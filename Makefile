@@ -2,11 +2,11 @@ DESTDIR ?= /
 
 ALL_PROJECTS = gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
 			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup
-ALMOST_ALL_PROJECTS = gtkalsasetup gtkclocksetup gtkhostsetup \
+PROJECTS_NO_ICONREFRESH = gtkalsasetup gtkclocksetup gtkhostsetup \
 			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup
 
 all:
-	for i in $(ALMOST_ALL_PROJECTS); do \
+	for i in $(PROJECTS_NO_ICONREFRESH); do \
 		for j in `ls $$i/po/*.po`; do \
 			echo "Compiling `echo $$j|sed "s|/po||"`"; \
 			msgfmt $$j -o `echo $$j | sed "s/\.po//"`.mo; \
