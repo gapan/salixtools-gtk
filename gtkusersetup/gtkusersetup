@@ -339,12 +339,11 @@ class SystemUsers:
 # Internationalization
 import locale
 import gettext
-import gtk.glade
+locale.setlocale(locale.LC_ALL, '')
+locale.bindtextdomain("gtkusersetup", "/usr/share/locale")
 gettext.bindtextdomain("gtkusersetup", "/usr/share/locale")
 gettext.textdomain("gtkusersetup")
-gettext.install("gtkusersetup", "/usr/share/locale", unicode=1)
-gtk.glade.bindtextdomain("gtkusersetup", "/usr/share/locale")
-gtk.glade.textdomain("gtkusersetup")
+_ = gettext.gettext
 
 
 class GTKUserSetup:
@@ -927,6 +926,7 @@ class GTKUserSetup:
 
     def __init__(self):
         builder = gtk.Builder()
+        builder.set_translation_domain("gtkusersetup")
         if os.path.exists('gtkusersetup.glade'):
             builder.add_from_file('gtkusersetup.glade')
         elif os.path.exists('/usr/share/salixtools/gtkusersetup/gtkusersetup.glade'):
