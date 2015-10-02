@@ -10,12 +10,12 @@ import re
 # Internationalization
 import locale
 import gettext
-import gtk.glade
+locale.setlocale(locale.LC_ALL, '')
+locale.bindtextdomain("gtkalsasetup", "/usr/share/locale")
 gettext.bindtextdomain("gtkalsasetup", "/usr/share/locale")
 gettext.textdomain("gtkalsasetup")
-gettext.install("gtkalsasetup", "/usr/share/locale", unicode=1)
-gtk.glade.bindtextdomain("gtkalsasetup", "/usr/share/locale")
-gtk.glade.textdomain("gtkalsasetup")
+_ = gettext.gettext
+
 
 envfile = '/etc/profile.d/alsa.sh'
 envfile_csh = '/etc/profile.d/alsa.csh'
@@ -127,6 +127,7 @@ class GTKAlsaSoundSetup:
 
     def __init__(self):
         builder = gtk.Builder()
+        builder.set_translation_domain("gtkalsasetup")
         if os.path.exists('gtkalsasetup.glade'):
             builder.add_from_file('gtkalsasetup.glade')
         elif os.path.exists('/usr/share/salixtools/gtkalsasetup/gtkalsasetup.glade'):
