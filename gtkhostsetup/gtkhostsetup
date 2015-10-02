@@ -9,12 +9,11 @@ import re
 # Internationalization
 import locale
 import gettext
-import gtk.glade
+locale.setlocale(locale.LC_ALL, '')
+locale.bindtextdomain("gtkhostsetup", "/usr/share/locale")
 gettext.bindtextdomain("gtkhostsetup", "/usr/share/locale")
 gettext.textdomain("gtkhostsetup")
-gettext.install("gtkhostsetup", "/usr/share/locale", unicode=1)
-gtk.glade.bindtextdomain("gtkhostsetup", "/usr/share/locale")
-gtk.glade.textdomain("gtkhostsetup")
+_ = gettext.gettext
 
 hostname_file = '/etc/HOSTNAME'
 hosts_file = '/etc/hosts'
@@ -278,6 +277,7 @@ class GTKHostSetup:
 
     def __init__(self):
         builder = gtk.Builder()
+        builder.set_translation_domain("gtkhostsetup")
         if os.path.exists('gtkhostsetup.glade'):
             builder.add_from_file('gtkhostsetup.glade')
         elif os.path.exists('/usr/share/salixtools/gtkhostsetup/gtkhostsetup.glade'):
