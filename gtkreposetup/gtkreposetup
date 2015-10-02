@@ -8,10 +8,13 @@ import sys
 import subprocess
 
 # Internationalization
-import gtk.glade
-gtk.glade.bindtextdomain("gtkreposetup", "/usr/share/locale")
-gtk.glade.textdomain("gtkreposetup")
-
+import locale
+import gettext
+locale.setlocale(locale.LC_ALL, '')
+locale.bindtextdomain("gtkreposetup", "/usr/share/locale")
+gettext.bindtextdomain("gtkreposetup", "/usr/share/locale")
+gettext.textdomain("gtkreposetup")
+_ = gettext.gettext
 
 class GTKRepoSetup:
 
@@ -40,6 +43,7 @@ class GTKRepoSetup:
 
     def __init__(self):
         builder = gtk.Builder()
+        builder.set_translation_domain("gtkreposetup")
         if os.path.exists('gtkreposetup.glade'):
             builder.add_from_file('gtkreposetup.glade')
         elif os.path.exists('/usr/share/salixtools/gtkreposetup/gtkreposetup.glade'):
