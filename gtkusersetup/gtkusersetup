@@ -927,11 +927,11 @@ class GTKUserSetup:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkusersetup")
-        if os.path.exists('gtkusersetup.glade'):
-            builder.add_from_file('gtkusersetup.glade')
-        elif os.path.exists('/usr/share/salixtools/gtkusersetup/gtkusersetup.glade'):
+        if os.path.exists('gtkusersetup.ui'):
+            builder.add_from_file('gtkusersetup.ui')
+        elif os.path.exists('/usr/share/salixtools/gtkusersetup/gtkusersetup.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtkusersetup/gtkusersetup.glade')
+                '/usr/share/salixtools/gtkusersetup/gtkusersetup.ui')
 
         #
         # Main window objects

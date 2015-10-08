@@ -6,7 +6,7 @@ pot:
 		-x po/EXCLUDE \
 		-L Glade \
 		-o po/gtkusersetup.pot \
-		gtkusersetup.glade
+		gtkusersetup.ui
 	xgettext --from-code=utf-8 \
 		-j \
 		-L Python \
