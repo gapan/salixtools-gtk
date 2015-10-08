@@ -5,7 +5,7 @@ pot:
 		-x po/EXCLUDE \
 		-L Glade \
 		-o po/gtkiconrefresh.pot \
-		gtkiconrefresh.glade
+		gtkiconrefresh.ui
 	xgettext --from-code=utf-8 \
 		-j \
 		-L Python \

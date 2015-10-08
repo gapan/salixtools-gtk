@@ -59,11 +59,11 @@ class GTKIconRefresh:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkiconrefresh")
-        if os.path.exists('gtkiconrefresh.glade'):
-            builder.add_from_file('gtkiconrefresh.glade')
-        elif os.path.exists('/usr/share/salixtools/gtkiconrefresh/gtkiconrefresh.glade'):
+        if os.path.exists('gtkiconrefresh.ui'):
+            builder.add_from_file('gtkiconrefresh.ui')
+        elif os.path.exists('/usr/share/salixtools/gtkiconrefresh/gtkiconrefresh.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtkiconrefresh/gtkiconrefresh.glade')
+                '/usr/share/salixtools/gtkiconrefresh/gtkiconrefresh.ui')
         self.window = builder.get_object('gtkiconrefresh')
         self.progressbar = builder.get_object('progressbar')
 
