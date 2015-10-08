@@ -49,7 +49,7 @@ install:
 		install -m 644 $$i/$$i.desktop $(DESTDIR)/usr/share/applications/; \
 		install -m 644 $$i/$$i-kde.desktop $(DESTDIR)/usr/share/applications/; \
 		install -d -m 755 $(DESTDIR)/usr/share/salixtools/$$i; \
-		install -m 644 $$i/$$i.glade $(DESTDIR)/usr/share/salixtools/$$i/; \
+		install -m 644 $$i/$$i.ui $(DESTDIR)/usr/share/salixtools/$$i/; \
 		for j in `ls $$i/po/*.mo`; do \
 			install -d -m 755 \
 			$(DESTDIR)/usr/share/locale/`basename $$j|sed "s/.mo//"`/LC_MESSAGES \
