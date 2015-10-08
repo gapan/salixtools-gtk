@@ -262,11 +262,11 @@ class GTKClockSetup:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkclocksetup")
-        if os.path.exists('gtkclocksetup.glade'):
-            builder.add_from_file('gtkclocksetup.glade')
-        elif os.path.exists('/usr/share/salixtools/gtkclocksetup/gtkclocksetup.glade'):
+        if os.path.exists('gtkclocksetup.ui'):
+            builder.add_from_file('gtkclocksetup.ui')
+        elif os.path.exists('/usr/share/salixtools/gtkclocksetup/gtkclocksetup.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtkclocksetup/gtkclocksetup.glade')
+                '/usr/share/salixtools/gtkclocksetup/gtkclocksetup.ui')
         self.window = builder.get_object('gtkclocksetup')
         self.tzwindow = builder.get_object('timezonewindow')
         self.tzsyncwindow = builder.get_object('tzsyncwindow')
