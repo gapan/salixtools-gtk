@@ -135,11 +135,11 @@ class GTKServiceSetup:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkservicesetup")
-        if os.path.exists('gtkservicesetup.glade'):
-            builder.add_from_file('gtkservicesetup.glade')
-        elif os.path.exists('/usr/share/salixtools/gtkservicesetup/gtkservicesetup.glade'):
+        if os.path.exists('gtkservicesetup.ui'):
+            builder.add_from_file('gtkservicesetup.ui')
+        elif os.path.exists('/usr/share/salixtools/gtkservicesetup/gtkservicesetup.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtkservicesetup/gtkservicesetup.glade')
+                '/usr/share/salixtools/gtkservicesetup/gtkservicesetup.ui')
         self.window = builder.get_object('gtkservicesetup')
         self.aboutdialog = builder.get_object('aboutdialog')
 

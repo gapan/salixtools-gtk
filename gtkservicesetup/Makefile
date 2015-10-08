@@ -6,7 +6,7 @@ pot:
 		-x po/EXCLUDE \
 		-L Glade \
 		-o po/gtkservicesetup.pot \
-		gtkservicesetup.glade
+		gtkservicesetup.ui
 	xgettext --from-code=utf-8 \
 		-j \
 		-L Python \
