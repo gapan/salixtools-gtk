@@ -214,11 +214,11 @@ class GTKKeyboardSetup:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkkeyboardsetup")
-        if os.path.exists('gtkkeyboardsetup.glade'):
-            builder.add_from_file('gtkkeyboardsetup.glade')
-        elif os.path.exists('/usr/share/salixtools/gtkkeyboardsetup/gtkkeyboardsetup.glade'):
+        if os.path.exists('gtkkeyboardsetup.ui'):
+            builder.add_from_file('gtkkeyboardsetup.ui')
+        elif os.path.exists('/usr/share/salixtools/gtkkeyboardsetup/gtkkeyboardsetup.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtkkeyboardsetup/gtkkeyboardsetup.glade')
+                '/usr/share/salixtools/gtkkeyboardsetup/gtkkeyboardsetup.ui')
         self.window = builder.get_object('gtkkeyboardsetup')
 
         builder.connect_signals(self)

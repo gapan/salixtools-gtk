@@ -6,7 +6,7 @@ pot:
 		-x po/EXCLUDE \
 		-L Glade \
 		-o po/gtkkeyboardsetup.pot \
-		gtkkeyboardsetup.glade
+		gtkkeyboardsetup.ui
 	xgettext --from-code=utf-8 \
 		-j \
 		-L Python \
