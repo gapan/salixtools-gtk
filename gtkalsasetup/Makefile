@@ -6,7 +6,7 @@ pot:
 		-x po/EXCLUDE \
 		-L Glade \
 		-o po/gtkalsasetup.pot \
-		gtkalsasetup.glade
+		gtkalsasetup.ui
 	xgettext --from-code=utf-8 \
 		-j \
 		-L Python \

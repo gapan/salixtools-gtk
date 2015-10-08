@@ -129,11 +129,11 @@ class GTKAlsaSoundSetup:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkalsasetup")
-        if os.path.exists('gtkalsasetup.glade'):
-            builder.add_from_file('gtkalsasetup.glade')
-        elif os.path.exists('/usr/share/salixtools/gtkalsasetup/gtkalsasetup.glade'):
+        if os.path.exists('gtkalsasetup.ui'):
+            builder.add_from_file('gtkalsasetup.ui')
+        elif os.path.exists('/usr/share/salixtools/gtkalsasetup/gtkalsasetup.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtkalsasetup/gtkalsasetup.glade')
+                '/usr/share/salixtools/gtkalsasetup/gtkalsasetup.ui')
         self.window = builder.get_object('gtkalsasetup')
         builder.connect_signals(self)
         self.builder = builder
