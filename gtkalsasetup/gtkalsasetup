@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
+from __future__ import print_function
 import gtk
 import os
 import stat
@@ -58,7 +59,7 @@ def setdefcard(card):
             f.close()
             os.chmod(envfile, 0755)
         except IOError:
-            print 'error writing to %s' % envfile
+            print('error writing to {}'.format(envfile))
         try:
             f = file(envfile_csh, 'w')
             f.write('#!/bin/csh\n')
@@ -69,7 +70,7 @@ def setdefcard(card):
             f.close()
             os.chmod(envfile_csh, 0755)
         except IOError:
-            print 'error writing to %s' % envfile_csh
+            print('error writing to {}').format(envfile_csh)
 
 
 def availablecards():
@@ -85,7 +86,7 @@ def availablecards():
                 cards.append(cre.match(line).groups())
         f.close()
     except IOError:
-        print 'no sound card'
+        print('no sound card')
     return cards
 
 
@@ -158,7 +159,7 @@ class GTKAlsaSoundSetup:
 
 if __name__ == "__main__":
     if os.geteuid() != 0:
-        print "You must be root to run this script."
+        print("You must be root to run this script.")
         sys.exit(1)
     app = GTKAlsaSoundSetup()
     app.window.show()
