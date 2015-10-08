@@ -6,6 +6,8 @@ import gtk
 import os
 import sys
 import subprocess
+import platform
+import re
 
 # Internationalization
 import locale
@@ -15,6 +17,44 @@ locale.bindtextdomain("gtkreposetup", "/usr/share/locale")
 gettext.bindtextdomain("gtkreposetup", "/usr/share/locale")
 gettext.textdomain("gtkreposetup")
 _ = gettext.gettext
+
+
+salixtoolsdir = '/usr/share/salixtools/'
+
+def get_arch():
+    '''
+    Determine the CPU architecture. Should be:
+    - 'arm' for any arm* system
+    - 'i486' for 32bit systems
+    - 'x86_64' for 64biit systems
+    '''
+    m = platform.machine()
+    if re.match('i.86$', m):
+        return 'i486'
+    elif re.match('arm', m):
+        return 'arm'
+    else:
+        return m
+
+def get_salix_version():
+    '''
+    Read the Salix version.
+    '''
+    with open('/usr/share/salixtools/salix-version', 'r') as f:
+        version = f.readline().strip()
+    return version
+
+def get_current_repo():
+    '''
+    Return the currently selected repository. Just runs the command line
+    reposetup tool with the -p option to get it.
+    '''
+    p = subprocess.Popen(['reposetup', '-p'], stdout=subprocess.PIPE)
+    if p.wait() == 0:
+        return p.communicate()[0].strip()
+    else:
+        return None
+
 
 class GTKRepoSetup:
 
