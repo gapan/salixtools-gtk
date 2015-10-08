@@ -278,11 +278,11 @@ class GTKHostSetup:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkhostsetup")
-        if os.path.exists('gtkhostsetup.glade'):
-            builder.add_from_file('gtkhostsetup.glade')
-        elif os.path.exists('/usr/share/salixtools/gtkhostsetup/gtkhostsetup.glade'):
+        if os.path.exists('gtkhostsetup.ui'):
+            builder.add_from_file('gtkhostsetup.ui')
+        elif os.path.exists('/usr/share/salixtools/gtkhostsetup/gtkhostsetup.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtkhostsetup/gtkhostsetup.glade')
+                '/usr/share/salixtools/gtkhostsetup/gtkhostsetup.ui')
         self.window = builder.get_object('gtkhostsetup')
 
         #
