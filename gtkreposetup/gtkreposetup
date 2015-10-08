@@ -44,11 +44,11 @@ class GTKRepoSetup:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkreposetup")
-        if os.path.exists('gtkreposetup.glade'):
-            builder.add_from_file('gtkreposetup.glade')
-        elif os.path.exists('/usr/share/salixtools/gtkreposetup/gtkreposetup.glade'):
+        if os.path.exists('gtkreposetup.ui'):
+            builder.add_from_file('gtkreposetup.ui')
+        elif os.path.exists('/usr/share/salixtools/gtkreposetup/gtkreposetup.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtkreposetup/gtkreposetup.glade')
+                '/usr/share/salixtools/gtkreposetup/gtkreposetup.ui')
         self.window = builder.get_object('gtkreposetup')
         self.aboutdialog = builder.get_object('aboutdialog')
 
