@@ -84,11 +84,11 @@ class GTKLocaleSetup:
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtklocalesetup")
-        if os.path.exists('gtklocalesetup.glade'):
-            builder.add_from_file('gtklocalesetup.glade')
-        elif os.path.exists('/usr/share/salixtools/gtklocalesetup/gtklocalesetup.glade'):
+        if os.path.exists('gtklocalesetup.ui'):
+            builder.add_from_file('gtklocalesetup.ui')
+        elif os.path.exists('/usr/share/salixtools/gtklocalesetup/gtklocalesetup.ui'):
             builder.add_from_file(
-                '/usr/share/salixtools/gtklocalesetup/gtklocalesetup.glade')
+                '/usr/share/salixtools/gtklocalesetup/gtklocalesetup.ui')
         self.window = builder.get_object('gtklocalesetup')
         self.aboutdialog = builder.get_object('aboutdialog')
 

@@ -5,7 +5,7 @@ pot:
 		-x po/EXCLUDE \
 		-L Glade \
 		-o po/gtklocalesetup.pot \
-		gtklocalesetup.glade
+		gtklocalesetup.ui
 	xgettext --from-code=utf-8 \
 		-j \
 		-L Python \
