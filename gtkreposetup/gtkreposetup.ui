@@ -162,11 +162,23 @@
                 <child>
                   <object class="GtkTreeViewColumn" id="treeviewcolumn_repo">
                     <property name="title" translatable="yes">Mirror</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext1"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
                   </object>
                 </child>
                 <child>
                   <object class="GtkTreeViewColumn" id="treeviewcolumn_country">
                     <property name="title" translatable="yes">Country</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="cellrenderertext2"/>
+                      <attributes>
+                        <attribute name="text">1</attribute>
+                      </attributes>
+                    </child>
                   </object>
                 </child>
               </object>
