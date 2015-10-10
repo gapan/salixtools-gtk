@@ -59,16 +59,15 @@ def get_repo_list_from_file():
     Reads the list of mirrors from the file they are stored in and returns it
     as a list.
     '''
-    f = file('/usr/share/salixtools/reposetup/repomirrors', 'r')
     repolist = []
-    while True:
-        line = f.readline().rstrip()
-        if len(line) == 0:
-            break
-        url = line.partition(' ')[0]
-        country = line.partition(' ')[2]
-        repolist.append([url, country])
-    f.close()
+    with open('/usr/share/salixtools/reposetup/repomirrors', 'r') as f:
+        while True:
+            line = f.readline().rstrip()
+            if len(line) == 0:
+                break
+            url = line.partition(' ')[0]
+            country = line.partition(' ')[2]
+            repolist.append([url, country])
     return repolist
 
 
