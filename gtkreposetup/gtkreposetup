@@ -125,38 +125,46 @@ def write_conf(repo):
     #
     # slapt-getrc
     #
-    f = open('/etc/slapt-get/slapt-getrc', 'w')
-    f.write('# Working directory for local storage/cache.\n')
-    f.write('WORKINGDIR={}\n\n'.format(slaptget_working_dir))
-    f.write('# Exclude package names and expressions.\n')
-    f.write('# To exclude pre and beta packages, add this to the exclude:\n')
-    f.write('#   [0-9\_\.\-]{1}pre[0-9\-\.\-]{1}\n')
-    f.write('EXCLUDE={}\n\n'.format(slaptget_exclude))
-    f.write('# The Slackware repositories, including dependency information\n')
-    f.write('SOURCE={r}/{a}/{s}-{v}/:OFFICIAL\n'.format(
-        r=repo, a=arch, s=slackdir, v=version))
-    f.write('SOURCE={r}/{a}/{s}-{v}/extra/:OFFICIAL\n\n'.format(
-        r=repo, a=arch, s=slackdir, v=version))
-    f.write('# The Salix repository\n')
-    f.write('SOURCE={r}/{a}/{v}/:PREFERRED\n\n'.format(
-        r=repo, a=arch, v=version))
-    f.write('# Local repositories\n')
-    f.write('# SOURCE=file:///var/www/packages/:CUSTOM\n')
-    for repo in custom:
-        f.write('SOURCE={r}\n'.format(repo))
-    f.close()
+    try:
+        f = open('/etc/slapt-get/slapt-getrc', 'w')
+    except IOError:
+        print("ERROR: Could not write to file: /etc/slapt-get/slapt-getrc")
+    else:
+        f.write('# Working directory for local storage/cache.\n')
+        f.write('WORKINGDIR={}\n\n'.format(slaptget_working_dir))
+        f.write('# Exclude package names and expressions.\n')
+        f.write('# To exclude pre and beta packages, add this to the exclude:\n')
+        f.write('#   [0-9\_\.\-]{1}pre[0-9\-\.\-]{1}\n')
+        f.write('EXCLUDE={}\n\n'.format(slaptget_exclude))
+        f.write('# The Slackware repositories, including dependency information\n')
+        f.write('SOURCE={r}/{a}/{s}-{v}/:OFFICIAL\n'.format(
+            r=repo, a=arch, s=slackdir, v=version))
+        f.write('SOURCE={r}/{a}/{s}-{v}/extra/:OFFICIAL\n\n'.format(
+            r=repo, a=arch, s=slackdir, v=version))
+        f.write('# The Salix repository\n')
+        f.write('SOURCE={r}/{a}/{v}/:PREFERRED\n\n'.format(
+            r=repo, a=arch, v=version))
+        f.write('# Local repositories\n')
+        f.write('# SOURCE=file:///var/www/packages/:CUSTOM\n')
+        for repo in custom:
+            f.write('SOURCE={r}\n'.format(repo))
+        f.close()
     #
     # slapt-srcrc
     #
     #
-    f = open('/etc/slapt-get/slapt-srcrc', 'w')
-    f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
-    f.write('PKGEXT={}\n'.format(slaptsrc_pkg_ext))
-    f.write('SOURCE={r}/slkbuild/{v}/\n'.format(
-        r=repo, v=version))
-    f.write('SOURCE={r}/sbo/{v}/\n'.format(
-        r=repo, v=version))
-    f.close()
+    try:
+        f = open('/etc/slapt-get/slapt-srcrc', 'w')
+    except IOError:
+        print("ERROR: Could not write to file: /etc/slapt-get/slapt-srcrc")
+    else:
+        f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
+        f.write('PKGEXT={}\n'.format(slaptsrc_pkg_ext))
+        f.write('SOURCE={r}/slkbuild/{v}/\n'.format(
+            r=repo, v=version))
+        f.write('SOURCE={r}/sbo/{v}/\n'.format(
+            r=repo, v=version))
+        f.close()
 
 
 class GTKRepoSetup:
