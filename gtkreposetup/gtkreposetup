@@ -117,16 +117,20 @@ def get_slaptget_settings():
         return working_dir, exclude, custom_repos
 
 def get_slaptsrc_settings():
-    c = SimpleConfig('/etc/slapt-get/slapt-srcrc')
     try:
-        build_dir = c.get('BUILDDIR')
-    except ValueError:
-        build_dir = '/usr/src/slapt-src'
-    try:
-        pkg_ext = c.get('PKGEXT')
-    except ValueError:
-        pkg_ext = 'txz'
-    return build_dir, pkg_ext
+        c = SimpleConfig('/etc/slapt-get/slapt-srcrc')
+    except IOError:
+        error_out('Could not read file: /etc/slapt-get/slapt-srcrc')
+    else:
+        try:
+            build_dir = c.get('BUILDDIR')
+        except ValueError:
+            build_dir = '/usr/src/slapt-src'
+        try:
+            pkg_ext = c.get('PKGEXT')
+        except ValueError:
+            pkg_ext = 'txz'
+        return build_dir, pkg_ext
 
 def write_conf(repo):
     '''
