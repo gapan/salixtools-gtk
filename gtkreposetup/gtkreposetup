@@ -86,31 +86,35 @@ def get_repo_list_from_file():
         error_out('Could not read file: /usr/share/salixtools/reposetup/repomirrors')
 
 def get_slaptget_settings():
-    c = SimpleConfig('/etc/slapt-get/slapt-getrc')
     try:
-        working_dir = c.get('WORKINGDIR')
-    except ValueError:
-        working_dir = '/var/slapt-get'
-    try:
-        exclude = c.get('EXCLUDE')
-    except ValueError:
-        exclude = '^aaa_elflibs,^aaa_base,^devs,^glibc.*,^kernel-.*,^udev,' \
-                  '^rootuser-settings,^zzz-settings.*'
-        arch = get_arch()
-        if arch != 'arm':
-            if arch == 'x86_64':
-                exclude = exclude + ',-i?86-'
-            else:
-                exclude = exclude + ',x86_64'
-    try:
-        sources = c.get_all('SOURCE')
-        custom_repos = []
-        for s in sources:
-            if s.endswith(':CUSTOM'):
-                custom_repos.append(s)
-    except ValueError:
-        custom_repos = []
-    return working_dir, exclude, custom_repos
+        c = SimpleConfig('/etc/slapt-get/slapt-getrc')
+    except IOError:
+        error_out('Could not read file: /etc/slapt-get/slapt-getrc')
+    else:
+        try:
+            working_dir = c.get('WORKINGDIR')
+        except ValueError:
+            working_dir = '/var/slapt-get'
+        try:
+            exclude = c.get('EXCLUDE')
+        except ValueError:
+            exclude = '^aaa_elflibs,^aaa_base,^devs,^glibc.*,^kernel-.*,^udev,' \
+                      '^rootuser-settings,^zzz-settings.*'
+            arch = get_arch()
+            if arch != 'arm':
+                if arch == 'x86_64':
+                    exclude = exclude + ',-i?86-'
+                else:
+                    exclude = exclude + ',x86_64'
+        try:
+            sources = c.get_all('SOURCE')
+            custom_repos = []
+            for s in sources:
+                if s.endswith(':CUSTOM'):
+                    custom_repos.append(s)
+        except ValueError:
+            custom_repos = []
+        return working_dir, exclude, custom_repos
 
 def get_slaptsrc_settings():
     c = SimpleConfig('/etc/slapt-get/slapt-srcrc')
