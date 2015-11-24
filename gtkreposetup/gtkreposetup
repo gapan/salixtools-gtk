@@ -72,15 +72,18 @@ def get_repo_list_from_file():
     as a list.
     '''
     repolist = []
-    with open('/usr/share/salixtools/reposetup/repomirrors', 'r') as f:
-        while True:
-            line = f.readline().rstrip()
-            if len(line) == 0:
-                break
-            url = line.partition(' ')[0]
-            country = line.partition(' ')[2]
-            repolist.append([url, country])
-    return repolist
+    try:
+        with open('/usr/share/salixtools/reposetup/repomirrors', 'r') as f:
+            while True:
+                line = f.readline().rstrip()
+                if len(line) == 0:
+                    break
+                url = line.partition(' ')[0]
+                country = line.partition(' ')[2]
+                repolist.append([url, country])
+        return repolist
+    except IOError:
+        error_out('Could not read file: /usr/share/salixtools/reposetup/repomirrors')
 
 def get_slaptget_settings():
     c = SimpleConfig('/etc/slapt-get/slapt-getrc')
