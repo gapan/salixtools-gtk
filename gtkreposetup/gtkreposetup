@@ -21,6 +21,10 @@ _ = gettext.gettext
 
 salixtoolsdir = '/usr/share/salixtools/'
 
+def error_out(error_msg):
+    print('ERROR: {}'.format(error_msg))
+    sys.exit(1)
+
 def get_arch():
     '''
     Determine the CPU architecture. Should be:
@@ -40,8 +44,11 @@ def get_salix_version():
     '''
     Read the Salix version.
     '''
-    with open('/usr/share/salixtools/salix-version', 'r') as f:
-        version = f.readline().strip()
+    try:
+        with open('/usr/share/salixtools/salix-version', 'r') as f:
+            version = f.readline().strip()
+    except IOError:
+        error_out('Could not read file: /usr/share/salixtools/salix-version')
     return version
 
 def get_current_repo():
@@ -52,6 +59,10 @@ def get_current_repo():
     p = subprocess.Popen(['reposetup', '-p'], stdout=subprocess.PIPE)
     if p.wait() == 0:
         return p.communicate()[0].strip()
+    # error code 11 is thrown by reposetup when the salix-version file is not
+    # found
+    elif p.wait() == 11:
+        error_out('Could not read file: /usr/share/salixtools/salix-version')
     else:
         return None
 
