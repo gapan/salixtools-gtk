@@ -161,7 +161,7 @@ def write_conf(repo):
     try:
         f = open('/etc/slapt-get/slapt-getrc', 'w')
     except IOError:
-        print("ERROR: Could not write to file: /etc/slapt-get/slapt-getrc")
+        error_out("Could not write to file: /etc/slapt-get/slapt-getrc")
     else:
         f.write('# Working directory for local storage/cache.\n')
         f.write('WORKINGDIR={}\n\n'.format(slaptget_working_dir))
@@ -189,7 +189,7 @@ def write_conf(repo):
     try:
         f = open('/etc/slapt-get/slapt-srcrc', 'w')
     except IOError:
-        print("ERROR: Could not write to file: /etc/slapt-get/slapt-srcrc")
+        error_out("Could not write to file: /etc/slapt-get/slapt-srcrc")
     else:
         f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
         f.write('PKGEXT={}\n'.format(slaptsrc_pkg_ext))
