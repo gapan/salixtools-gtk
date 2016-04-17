@@ -7,7 +7,6 @@ About
 any Slackware derivative.
 
 Tools included in this collection are:
-* gtkalsasetup: a tool to select and configure the systemwide ALSA sound card
 * gtkclocksetup: a tool to configure the system date and time
 * gtkhostsetup: a tool to configure the system hostnames
 * gtkiconrefresh: a small script to update the GTK+2 icon cache

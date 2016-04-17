@@ -1,8 +1,8 @@
 DESTDIR ?= /
 
-ALL_PROJECTS = gtkalsasetup gtkclocksetup gtkhostsetup gtkiconrefresh \
+ALL_PROJECTS = gtkclocksetup gtkhostsetup gtkiconrefresh \
 			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup
-PROJECTS_NO_ICONREFRESH = gtkalsasetup gtkclocksetup gtkhostsetup \
+PROJECTS_NO_ICONREFRESH = gtkclocksetup gtkhostsetup \
 			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup
 
 all:
@@ -44,7 +44,7 @@ install:
 			$(DESTDIR)/usr/share/icons/hicolor/$${i}x$${i}/apps/`basename $$j|sed "s/-$$i//"`; \
 		done; \
 	done
-	for i in gtkalsasetup gtkclocksetup gtkhostsetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup; do \
+	for i in gtkclocksetup gtkhostsetup gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup; do \
 		install -m 755 $$i/$$i $(DESTDIR)/usr/sbin/; \
 		install -m 644 $$i/$$i.desktop $(DESTDIR)/usr/share/applications/; \
 		install -m 644 $$i/$$i-kde.desktop $(DESTDIR)/usr/share/applications/; \
