@@ -40,7 +40,8 @@ class SystemUsers:
     def default_groups(self):
         groups = []
         groups_to_try = ('audio', 'video', 'cdrom', 'floppy',
-                         'lp', 'plugdev', 'scanner', 'power', 'netdev')
+                         'lp', 'plugdev', 'polkitd', 'pulse',
+                         'scanner', 'power', 'netdev')
         for i in groups_to_try:
             try:
                 groups.append(grp.getgrnam(i)[0])
