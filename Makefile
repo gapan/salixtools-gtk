@@ -5,6 +5,7 @@ ALL_PROJECTS = gtkclocksetup gtkhostsetup gtkiconrefresh \
 PROJECTS_NO_ICONREFRESH = gtkclocksetup gtkhostsetup \
 			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup
 
+.PHONY: all
 all:
 	for i in $(PROJECTS_NO_ICONREFRESH); do \
 		for j in `ls $$i/po/*.po`; do \
@@ -15,6 +16,7 @@ all:
 		intltool-merge $$i/po/ -d -u $$i/$$i-kde.desktop.in $$i/$$i-kde.desktop; \
 	done
 
+.PHONY: transifex
 transifex:
 	for i in $(ALL_PROJECTS); do \
 		cd $$i; \
@@ -22,11 +24,13 @@ transifex:
 		cd ..; \
 	done
 
+.PHONY: clean
 clean:
 	rm -f */po/*.mo
 	rm -f */po/*.po~
 	rm -f */*.desktop
 
+.PHONY: install
 install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
@@ -59,14 +63,15 @@ install:
 		done; \
 	done
 
+.PHONY: pot
 pot:
 	for i in $(ALL_PROJECTS); do \
 		$(MAKE) pot -C $$i;\
 	done
 
+.PHONY: update-po
 update-po:
 	for i in $(ALL_PROJECTS); do \
 		$(MAKE) update-po -C $$i;\
 	done
 	
-.PHONY: all clean install transifex pot update-po
