@@ -8,106 +8,106 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2014-01-29 18:13+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Latvian (Latvia) (http://www.transifex.com/gapan/salixtools-gtk/language/lv_LV/)\n"
+"PO-Revision-Date: 2015-10-04 08:32+0000\n"
+"Last-Translator: GabiT. <splanckx@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/gapan/salixtools-gtk/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lv_LV\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Hostnames"
-msgstr ""
+msgstr "Nume gazde"
 
 #: gtkhostsetup.glade:44
 msgid "<b>This computer:</b>"
-msgstr ""
+msgstr "<b>Acest computer:</b>"
 
 #: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
 msgid "Hostname:"
-msgstr ""
+msgstr "Definiți nume gazdă:"
 
 #: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
 msgid "Domain:"
-msgstr ""
+msgstr "Domeniu:"
 
 #: gtkhostsetup.glade:124
 msgid "<b>Other hosts:</b>"
-msgstr ""
+msgstr "<b>Alte gazde:</b>"
 
 #: gtkhostsetup.glade:369
 msgid "Add host"
-msgstr ""
+msgstr "Adaugă gazdă"
 
 #: gtkhostsetup.glade:397 gtkhostsetup.glade:630
 msgid "IP address:"
-msgstr ""
+msgstr "Adresa IP:"
 
 #: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
 msgid "Error"
-msgstr ""
+msgstr "Eroare"
 
 #: gtkhostsetup.glade:602
 msgid "Edit host"
-msgstr ""
+msgstr "Editează gazdă"
 
 #: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
 #: gtkhostsetup-kde.desktop.in.h:1
 msgid "Configure the system hostnames"
-msgstr ""
+msgstr "Configurează nume gazde sistem"
 
 #: gtkhostsetup.glade:1613
 msgid "translator-credits"
-msgstr ""
+msgstr "Creditări translator"
 
 #: gtkhostsetup:60
 msgid "The IP address cannot be empty."
-msgstr ""
+msgstr "Adresa IP nu poate rămâne fără valoare."
 
 #: gtkhostsetup:63
 msgid "The hostname cannot be empty."
-msgstr ""
+msgstr "Numele gazdei trebuie completat."
 
 #: gtkhostsetup:66
 msgid "The hostname cannot start with a hyphen."
-msgstr ""
+msgstr "Numele gazdei nu poate începe cu cratimă."
 
 #: gtkhostsetup:69
 msgid "The hostname cannot end with a hyphen."
-msgstr ""
+msgstr "Numele gazdei nu se poate termina cu cratimă."
 
 #: gtkhostsetup:72
 msgid "The domain cannot start with a hyphen."
-msgstr ""
+msgstr "Domeniul nu poate începe cu cratimă."
 
 #: gtkhostsetup:75
 msgid "The domain cannot end with a hyphen."
-msgstr ""
+msgstr "Domeniul nu poate sfârși cu cratimă."
 
 #: gtkhostsetup:80
 msgid "Not a valid IP address."
-msgstr ""
+msgstr "Adresă IP invalidă."
 
 #: gtkhostsetup:85
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
-msgstr ""
+msgstr "Numele gazdei poate conține doar litere latine,numere și cratime."
 
 #: gtkhostsetup:90
 msgid ""
 "The domain can consist solely of latin letters, numbers, hyphens and dots."
-msgstr ""
+msgstr "Domeniul poate conține doar litere latine,numere,cratime și puncte."
 
 #: gtkhostsetup:284
 msgid "IP address"
-msgstr ""
+msgstr "Adresa IP"
 
 #: gtkhostsetup:285
 msgid "Hostname"
-msgstr ""
+msgstr "Nume gazdă"
 
 #: gtkhostsetup:286
 msgid "Domain"
-msgstr ""
+msgstr "Domeniu"

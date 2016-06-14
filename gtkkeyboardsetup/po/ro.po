@@ -8,66 +8,66 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-02-14 10:24+0200\n"
-"PO-Revision-Date: 2014-01-29 18:13+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Latvian (Latvia) (http://www.transifex.com/gapan/salixtools-gtk/language/lv_LV/)\n"
+"PO-Revision-Date: 2015-10-04 08:32+0000\n"
+"Last-Translator: GabiT. <splanckx@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/gapan/salixtools-gtk/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lv_LV\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: gtkkeyboardsetup.glade:21
 msgid "Keyboard settings"
-msgstr ""
+msgstr "Setări tastatură"
 
 #: gtkkeyboardsetup.glade:52
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and "
 "IBus/SCIM preferences."
-msgstr ""
+msgstr "Vă rugăm selectați tipul și aranjamentul tastaturii,precum și preferințele pentru numlock și IBus/SCIM."
 
 #: gtkkeyboardsetup.glade:146
 msgid "Enable numlock when the system is started"
-msgstr ""
+msgstr "Activați numlock la pornirea sistemului"
 
 #: gtkkeyboardsetup.glade:161
 msgid "Enable IBus when the system is started"
-msgstr ""
+msgstr "Activați IBus la pornirea sistemului"
 
 #: gtkkeyboardsetup.glade:165
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. It is newer and works better than SCIM."
-msgstr ""
+msgstr "IBus este o platformă de intrare pentru limbile chineză,japoneză,coreeană și multe altele.Este platformă mai nouă și funcționează mai bine decât SCIM."
 
 #: gtkkeyboardsetup.glade:177
 msgid "Enable SCIM when the system is started"
-msgstr ""
+msgstr "Activați SCIM la pornirea sistemului"
 
 #: gtkkeyboardsetup.glade:181
 msgid ""
 "SCIM is an input platform for Chinese, Japanese, Korean and many other "
 "languages."
-msgstr ""
+msgstr "SCIM este o platformă de intrare pentru limbile chineză,japoneză,coreeană și multe altele."
 
 #: gtkkeyboardsetup.glade:295 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
-msgstr ""
+msgstr "Instrument pentru configurarea tastaturii"
 
 #: gtkkeyboardsetup.glade:973
 msgid "translator-credits"
-msgstr ""
+msgstr "Creditări translator"
 
 #: gtkkeyboardsetup:194
 msgid "Keyboard type"
-msgstr ""
+msgstr "Tipul tastaturii"
 
 #: gtkkeyboardsetup:198
 msgid "Keyboard map"
-msgstr ""
+msgstr "Aranjamentul tastaturii"
 
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
-msgstr ""
+msgstr "Tastatură"

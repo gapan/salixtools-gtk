@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Antonio Sardei <laplume@libero.it>, 2016
 # Kerd <kerd89@gmail.com>, 2011
 # Antonio Sardei <laplume@libero.it>, 2011
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2014-01-17 09:23+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2016-06-04 23:32+0000\n"
+"Last-Translator: Antonio Sardei <laplume@libero.it>\n"
 "Language-Team: Italian (http://www.transifex.com/gapan/salixtools-gtk/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -174,7 +175,7 @@ msgstr "La password non può includere il carattere backslash."
 
 #: gtkusersetup:217
 msgid "Passwords don't match"
-msgstr "La password non combaciano"
+msgstr "Le password non combaciano"
 
 #: gtkusersetup:226
 msgid "Username cannot be empty."
@@ -220,7 +221,7 @@ msgstr "Il Nome del Gruppo non può superare i 31 caratteri"
 
 #: gtkusersetup:268
 msgid "Group name cannot include the space character."
-msgstr "Il Nome del gruppo non può contenere il carattere spazio."
+msgstr "Il Nome del Gruppo non può contenere il carattere spazio."
 
 #: gtkusersetup:271
 msgid "Group name cannot start with a number."
@@ -280,7 +281,7 @@ msgstr "Eliminare utente {0}?"
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
-msgstr "State per eliminare l'account Utente \"{0}\" dal sistema. Volete veramente procedere?"
+msgstr "Stai per eliminare l'account Utente \"{0}\" dal sistema. Vuoi veramente procedere?"
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
@@ -329,4 +330,4 @@ msgstr "Gruppo"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
 msgid "Users and groups"
-msgstr ""
+msgstr "Utenti e Gruppi"

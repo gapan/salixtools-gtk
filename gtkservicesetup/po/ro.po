@@ -8,48 +8,48 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2014-01-17 09:23+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/gapan/salixtools-gtk/language/id/)\n"
+"PO-Revision-Date: 2015-10-04 08:31+0000\n"
+"Last-Translator: GabiT. <splanckx@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/gapan/salixtools-gtk/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
 msgid "System services"
-msgstr ""
+msgstr "Servicii de sistem"
 
 #: gtkservicesetup.glade:67
 msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
-msgstr ""
+msgstr "Vă rugăm să selectați serviciile  active la pornirea sistemului.Orice modificare va fi aplicată când apăsați OK."
 
 #: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
 #: gtkservicesetup-kde.desktop.in.h:1
 msgid "Services configuration tool"
-msgstr ""
+msgstr "Instrument pentru configurarea serviciilor"
 
 #: gtkservicesetup.glade:921
 msgid "translator-credits"
-msgstr ""
+msgstr "Creditări translator"
 
 #: gtkservicesetup:44
 msgid "The {0} service"
-msgstr ""
+msgstr "Serviciul {0}"
 
 #: gtkservicesetup:131
 msgid "Enabled"
-msgstr ""
+msgstr "Activat"
 
 #: gtkservicesetup:133
 msgid "Service name"
-msgstr ""
+msgstr "Numele serviciului"
 
 #: gtkservicesetup:135
 msgid "Service description"
-msgstr ""
+msgstr "Descrierea serviciului"

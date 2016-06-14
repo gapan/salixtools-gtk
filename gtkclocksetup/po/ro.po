@@ -8,79 +8,79 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2014-01-29 18:13+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Latvian (Latvia) (http://www.transifex.com/gapan/salixtools-gtk/language/lv_LV/)\n"
+"PO-Revision-Date: 2015-10-04 08:29+0000\n"
+"Last-Translator: GabiT. <splanckx@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/gapan/salixtools-gtk/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lv_LV\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: gtkclocksetup.glade:7
 msgid "Date and time settings"
-msgstr ""
+msgstr "Setări pentru dată și oră"
 
 #: gtkclocksetup.glade:26
 msgid "Keep clock synchronized with internet servers"
-msgstr ""
+msgstr "Păstrează ceasul sincronizat cu serverele de pe internet"
 
 #: gtkclocksetup.glade:51
 msgid "Synchronize now"
-msgstr ""
+msgstr "Sincronizează acum"
 
 #: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
 msgid "Time zone:"
-msgstr ""
+msgstr "Fusul orar:"
 
 #: gtkclocksetup.glade:97
 msgid "Select time zone..."
-msgstr ""
+msgstr "Selectează fusul orar..."
 
 #: gtkclocksetup.glade:130
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr ""
+msgstr "Ceasul hardware este setat pe Coordinated Universal Time (UTC)"
 
 #: gtkclocksetup.glade:134
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
-msgstr ""
+msgstr "La majoritatea computerelor de birou,ceasurile hardware sunt setate pe ora locală,în timp ce ceasul hardware la cele mai multe servere web sunt setate pe UTC.Nu selectați această căsuță dacă nu sunteți siguri."
 
 #: gtkclocksetup.glade:252
 msgid "Time:"
-msgstr ""
+msgstr "Ora:"
 
 #: gtkclocksetup.glade:286
 msgid "Date:"
-msgstr ""
+msgstr "Data:"
 
 #: gtkclocksetup.glade:415
 msgid "Select time zone"
-msgstr ""
+msgstr "Selectează fusul orar"
 
 #: gtkclocksetup.glade:436
 msgid "Please select your time zone:"
-msgstr ""
+msgstr "Vă rugăm selectați fusul dumneavoastră orar:"
 
 #: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
-msgstr ""
+msgstr "Instrument pentru configurarea ceasului de sistem"
 
 #: gtkclocksetup.glade:1292
 msgid "translator-credits"
-msgstr ""
+msgstr "Creditări translator"
 
 #: gtkclocksetup:251
 msgid "General area"
-msgstr ""
+msgstr "Arie generală"
 
 #: gtkclocksetup:252
 msgid "Location"
-msgstr ""
+msgstr "Locația"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
 msgid "System clock"
-msgstr ""
+msgstr "Ceas sistem"
