@@ -1,4 +1,34 @@
+DESTDIR ?= /
 
+export DESTDIR
+
+.PHONY: desktop
+desktop: mo
+	intltool-merge po/ -d -u gtkusersetup.desktop.in gtkusersetup.desktop
+	intltool-merge po/ -d -u gtkusersetup-kde.desktop.in gtkusersetup-kde.desktop
+
+.PHONY: mo
+mo:
+	$(MAKE) mo -C po
+
+.PHONY: install
+install:
+	install -d -m 755 $(DESTDIR)/usr/sbin
+	install -d -m 755 $(DESTDIR)/usr/share/applications
+	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtkusersetup
+	install -m 755 gtkusersetup $(DESTDIR)/usr/sbin/
+	install -m 644 gtkusersetup.desktop $(DESTDIR)/usr/share/applications
+	install -m 644 gtkusersetup-kde.desktop $(DESTDIR)/usr/share/applications/
+	install -m 644 gtkusersetup.ui $(DESTDIR)/usr/share/salixtools/gtkusersetup/
+	$(MAKE) install -C po
+	$(MAKE) install -C icons
+
+.PHONY: clean
+clean:
+	rm -f *.desktop
+	$(MAKE) clean -C po
+
+.PHONY: pot
 pot:
 	intltool-extract --type="gettext/ini" gtkusersetup.desktop.in
 	intltool-extract --type="gettext/ini" gtkusersetup-kde.desktop.in
@@ -16,10 +46,18 @@ pot:
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkusersetup.pot gtkusersetup-kde.desktop.in.h
 	rm gtkusersetup.desktop.in.h gtkusersetup-kde.desktop.in.h
 
+.PHONY: update-po
 update-po:
 	for i in `ls po/*.po`; do \
 		msgmerge -U $$i po/gtkusersetup.pot ;\
 	done
 	rm -f po/*~
 
-.PHONY: pot update-po
+.PHONY: tx-pull
+tx-pull:
+	tx pull -a
+	$(MAKE) remove-empty -C po
+
+.PHONY: stat
+stat:
+	$(MAKE) stat -C po
