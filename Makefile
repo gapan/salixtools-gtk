@@ -5,6 +5,8 @@ ALL_PROJECTS = gtkclocksetup gtkhostsetup gtkiconrefresh \
 PROJECTS_NO_ICONREFRESH = gtkclocksetup gtkhostsetup \
 			gtkkeyboardsetup gtklocalesetup gtkusersetup gtkservicesetup
 
+export DESTDIR
+
 .PHONY: all
 all:
 	for i in $(PROJECTS_NO_ICONREFRESH); do \
