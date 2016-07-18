@@ -267,7 +267,7 @@ class GTKRepoSetup:
             if self.current_repo == i[0]:
                 self.repolist.set_cursor(cursorpos)
                 if cursorpos > 5:
-                    self.repolist.scroll_to_cell(cursorpos - 4)
+                    self.repolist.scroll_to_cell(cursorpos)
             cursorpos += 1
 
 if __name__ == "__main__":
