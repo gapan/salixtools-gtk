@@ -88,6 +88,8 @@ def get_repo_list_from_file():
         with open('/etc/salixtools/repos-custom', 'r') as f:
             while True:
                 line = f.readline().rstrip()
+                if len(line) == 0:
+                    break
                 if line.startswith('file:///') or line.startswith('http://') \
                         or line.startswith('ftp://'):
                     url = line.strip()
