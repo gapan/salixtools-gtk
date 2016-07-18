@@ -92,7 +92,7 @@ def get_repo_list_from_file():
                     break
                 if line.startswith('file:///') or line.startswith('http://') \
                         or line.startswith('ftp://'):
-                    url = line.strip()
+                    url = line
                     country = '..'
                     repolist.append([url, country])
     except IOError:
