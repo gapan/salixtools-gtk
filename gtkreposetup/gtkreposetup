@@ -291,6 +291,8 @@ class GTKRepoSetup:
 
     @threaded
     def on_button_ok_clicked(self, widget, data=None):
+        global canceltask
+        canceltask = False
         selectedrepo = self.repolist.get_selection()
         self.liststore_repo, iter = selectedrepo.get_selected()
         new_repo = self.liststore_repo.get_value(iter, 0)
@@ -311,13 +313,13 @@ class GTKRepoSetup:
                 gtk.gdk.threads_enter()
                 self.label_update_repos.set_text(_('Updating package information...'))
                 gtk.gdk.threads_leave()
-                p = subprocess.Popen(['slapt-get', '--update'])
-                while p.poll() is None:
+                self.p = subprocess.Popen(['slapt-get', '--update'])
+                while self.p.poll() is None:
                     gtk.gdk.threads_enter()
                     self.progressbar_update_repos.pulse()
                     gtk.gdk.threads_leave()
                     time.sleep(0.1)
-                retval = p.returncode
+                retval = self.p.returncode
                 if retval != 0:
                     error_msg = _('Could not update package information')
                     success = False
@@ -326,21 +328,25 @@ class GTKRepoSetup:
                 gtk.gdk.threads_enter()
                 self.label_update_repos.set_text(_('Updating SlackBuild information...'))
                 gtk.gdk.threads_leave()
-                p = subprocess.Popen(['slapt-src', '--update'])
-                while p.poll() is None:
+                self.p = subprocess.Popen(['slapt-src', '--update'])
+                while self.p.poll() is None:
                     gtk.gdk.threads_enter()
                     self.progressbar_update_repos.pulse()
                     gtk.gdk.threads_leave()
                     time.sleep(0.1)
-                retval = p.returncode
+                retval = self.p.returncode
                 if retval != 0:
                     error_msg = _('Could not update SlackBuild information')
                     success = False
         gtk.gdk.threads_enter()
         self.dialog_update_repos.hide()
         gtk.gdk.threads_leave()
-        if success:
+        if success and not canceltask:
             gtk.main_quit()
+        elif canceltask:
+            gtk.gdk.threads_enter()
+            self.dialog_update_repos.hide()
+            gtk.gdk.threads_leave()
         else:
             gtk.gdk.threads_enter()
             self.dialog_update_repos.hide()
@@ -348,6 +354,12 @@ class GTKRepoSetup:
             self.messagedialog_error.set_transient_for(self.window)
             self.messagedialog_error.format_secondary_text(error_msg)
             gtk.gdk.threads_leave()
+
+    def on_button_update_repos_cancel_clicked(self, widget):
+        global canceltask
+        canceltask = True
+        if self.p:
+            self.p.kill()
 
     def on_button_cancel_clicked(self, widget, data=None):
         gtk.main_quit()
