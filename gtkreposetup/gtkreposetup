@@ -7,6 +7,7 @@ import os
 import sys
 import subprocess
 import threading
+import time
 import platform
 import re
 import urllib2
@@ -189,6 +190,7 @@ def write_conf(repo):
     else:
         slackdir = 'slackware'
     version = get_salix_version()
+    success = True
     #
     # slapt-getrc
     #
@@ -196,6 +198,7 @@ def write_conf(repo):
         f = open('/etc/slapt-get/slapt-getrc', 'w')
     except IOError:
         error_out("Could not write to file: /etc/slapt-get/slapt-getrc")
+        success = False
     else:
         f.write('# Working directory for local storage/cache.\n')
         f.write('WORKINGDIR={}\n\n'.format(slaptget_working_dir))
@@ -224,6 +227,7 @@ def write_conf(repo):
         f = open('/etc/slapt-get/slapt-srcrc', 'w')
     except IOError:
         error_out("Could not write to file: /etc/slapt-get/slapt-srcrc")
+        success = False
     else:
         f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
         f.write('PKGEXT={}\n'.format(slaptsrc_pkg_ext))
@@ -232,6 +236,7 @@ def write_conf(repo):
         f.write('SOURCE={r}/sbo/{v}/\n'.format(
             r=repo, v=version))
         f.close()
+    return success
 
 def get_mirrors(repo):
     '''
@@ -284,14 +289,65 @@ class GTKRepoSetup:
         self.aboutdialog.hide()
         return True
 
+    @threaded
     def on_button_ok_clicked(self, widget, data=None):
         selectedrepo = self.repolist.get_selection()
         self.liststore_repo, iter = selectedrepo.get_selected()
         new_repo = self.liststore_repo.get_value(iter, 0)
+        success = True
+        update_repos = self.checkbutton_apply_changes.get_active()
+        error_msg = 'No error'
         if self.current_repo != new_repo:
+            gtk.gdk.threads_enter()
+            self.dialog_update_repos.show()
+            gtk.gdk.threads_leave()
             # write new configuration files
-            write_conf(new_repo)
-        gtk.main_quit()
+            ret_conf = write_conf(new_repo)
+            if not ret_conf:
+                error_msg = _('Could not write configuration files')
+                success = False
+            if success and update_repos:
+                # update slapt-getrc
+                gtk.gdk.threads_enter()
+                self.label_update_repos.set_text(_('Updating package information...'))
+                gtk.gdk.threads_leave()
+                p = subprocess.Popen(['slapt-get', '--update'])
+                while p.poll() is None:
+                    gtk.gdk.threads_enter()
+                    self.progressbar_update_repos.pulse()
+                    gtk.gdk.threads_leave()
+                    time.sleep(0.1)
+                retval = p.returncode
+                if retval != 0:
+                    error_msg = _('Could not update package information')
+                    success = False
+            if success and update_repos:
+                # update slapt-srcrc
+                gtk.gdk.threads_enter()
+                self.label_update_repos.set_text(_('Updating SlackBuild information...'))
+                gtk.gdk.threads_leave()
+                p = subprocess.Popen(['slapt-src', '--update'])
+                while p.poll() is None:
+                    gtk.gdk.threads_enter()
+                    self.progressbar_update_repos.pulse()
+                    gtk.gdk.threads_leave()
+                    time.sleep(0.1)
+                retval = p.returncode
+                if retval != 0:
+                    error_msg = _('Could not update SlackBuild information')
+                    success = False
+        gtk.gdk.threads_enter()
+        self.dialog_update_repos.hide()
+        gtk.gdk.threads_leave()
+        if success:
+            gtk.main_quit()
+        else:
+            gtk.gdk.threads_enter()
+            self.dialog_update_repos.hide()
+            self.messagedialog_error.show()
+            self.messagedialog_error.set_transient_for(self.window)
+            self.messagedialog_error.format_secondary_text(error_msg)
+            gtk.gdk.threads_leave()
 
     def on_button_cancel_clicked(self, widget, data=None):
         gtk.main_quit()
@@ -355,6 +411,12 @@ class GTKRepoSetup:
         canceltask = True
         raise BreakConnection
 
+    #
+    # Error dialog
+    #
+    def on_messagedialog_error_response(self, widget, event):
+        self.messagedialog_error.hide()
+
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkreposetup")
@@ -364,15 +426,24 @@ class GTKRepoSetup:
             builder.add_from_file(
                 '/usr/share/salixtools/gtkreposetup/gtkreposetup.ui')
         self.window = builder.get_object('gtkreposetup')
+        self.checkbutton_apply_changes = builder.get_object('checkbutton_apply_changes')
         self.aboutdialog = builder.get_object('aboutdialog')
 
         self.repolist = builder.get_object('repolist')
         self.liststore_repo = builder.get_object('liststore_repo')
         self.liststore_repo.clear()
 
-        # update dialog
+        # update mirror list dialog
         self.dialog_update_list = builder.get_object('dialog_update_list')
         self.progressbar_update_list = builder.get_object('progressbar_update_list')
+
+        # update package and SlackBuild caches dialog
+        self.dialog_update_repos = builder.get_object('dialog_update_repos')
+        self.label_update_repos = builder.get_object('label_update_repos')
+        self.progressbar_update_repos = builder.get_object('progressbar_update_repos')
+
+        # error dialog
+        self.messagedialog_error = builder.get_object('messagedialog_error')
 
         # populate the list of mirrors
         self.current_repo = get_current_repo()
