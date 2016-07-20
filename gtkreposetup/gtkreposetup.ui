@@ -1011,5 +1011,4 @@ Public License instead of this License.  But first, please read
       <action-widget response="0">button_update_list_cancel</action-widget>
     </action-widgets>
   </object>
-  <object class="GtkTextBuffer" id="textbuffer_update_list"/>
 </interface>
