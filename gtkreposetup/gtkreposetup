@@ -345,9 +345,9 @@ class GTKRepoSetup:
                 scrollto = cursorpos - 1
             else:
                 scrollto = selectedpos + 1
-        gtk.gdk.threads_enter()
-        self.repolist.scroll_to_cell(scrollto)
-        gtk.gdk.threads_leave()
+            gtk.gdk.threads_enter()
+            self.repolist.scroll_to_cell(scrollto)
+            gtk.gdk.threads_leave()
 
     def on_button_update_list_cancel_clicked(self, widget):
         self.dialog_update_list.hide()
