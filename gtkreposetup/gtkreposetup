@@ -366,7 +366,6 @@ class GTKRepoSetup:
         self.window = builder.get_object('gtkreposetup')
         self.aboutdialog = builder.get_object('aboutdialog')
 
-        builder.connect_signals(self)
         self.repolist = builder.get_object('repolist')
         self.liststore_repo = builder.get_object('liststore_repo')
         self.liststore_repo.clear()
@@ -379,6 +378,7 @@ class GTKRepoSetup:
         self.current_repo = get_current_repo()
         self.update_mirror_list()
 
+        builder.connect_signals(self)
 
 if __name__ == "__main__":
     app = GTKRepoSetup()
