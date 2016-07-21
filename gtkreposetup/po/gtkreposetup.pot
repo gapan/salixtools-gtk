@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 02:12+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: gtkreposetup.ui:18
+msgid "Select repository mirror"
+msgstr ""
+
+#: gtkreposetup.ui:143
+msgid ""
+"Please select your preferred repository mirror. The country code where each "
+"mirror is located is shown on the right. Mirrors located closer to you "
+"geographically are usually faster."
+msgstr ""
+
+#: gtkreposetup.ui:175
+msgid "Mirror"
+msgstr ""
+
+#: gtkreposetup.ui:186
+msgid "Country"
+msgstr ""
+
+#: gtkreposetup.ui:206
+msgid "Update the package and SlackBuild data"
+msgstr ""
+
+#: gtkreposetup.ui:236
+msgid "Repository configuration tool"
+msgstr ""
+
+#: gtkreposetup.ui:915
+msgid "translator-credits"
+msgstr ""
+
+#: gtkreposetup.ui:941
+msgid "Updating mirror list"
+msgstr ""
+
+#: gtkreposetup.ui:960
+msgid "Updating mirror list. Please wait..."
+msgstr ""
+
+#: gtkreposetup.ui:1018
+msgid "Updating..."
+msgstr ""
+
+#: gtkreposetup:49
+msgid "Error"
+msgstr ""
+
+#: gtkreposetup:79 gtkreposetup:97 gtkreposetup:121 gtkreposetup:149
+#: gtkreposetup:188
+msgid "Could not read file:"
+msgstr ""
+
+#: gtkreposetup:81 gtkreposetup:99 gtkreposetup:123 gtkreposetup:224
+#: gtkreposetup:256
+msgid "Exiting."
+msgstr ""
+
+#: gtkreposetup:148 gtkreposetup:187 gtkreposetup:288
+msgid "WARNING:"
+msgstr ""
+
+#: gtkreposetup:222 gtkreposetup:254 gtkreposetup:289
+msgid "Could not write to file:"
+msgstr ""
+
+#: gtkreposetup:339
+msgid "Could not write configuration files."
+msgstr ""
+
+#: gtkreposetup:344
+msgid "Updating package information..."
+msgstr ""
+
+#: gtkreposetup:354
+msgid "Could not update package information."
+msgstr ""
+
+#: gtkreposetup:359
+msgid "Updating SlackBuild information..."
+msgstr ""
+
+#: gtkreposetup:369
+msgid "Could not update SlackBuild information."
+msgstr ""
+
+#: gtkreposetup.desktop.in.h:1 gtkreposetup-kde.desktop.in.h:1
+msgid "Repository Mirror"
+msgstr ""
+
+#: gtkreposetup.desktop.in.h:2 gtkreposetup-kde.desktop.in.h:2
+msgid "Select your preferred repository mirror"
+msgstr ""
