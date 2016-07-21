@@ -145,7 +145,9 @@ def get_slaptget_settings():
     try:
         c = SimpleConfig('/etc/slapt-get/slapt-getrc')
     except IOError:
-        print('WARNING: Could not read file: /etc/slapt-get/slapt-getrc')
+        msg1 = _('WARNING:')
+        msg2 = _('Could not read file:')
+        print('%s %s /etc/slapt-get/slapt-getrc' % (msg1, msg2))
         working_dir = '/var/slapt-get'
         exclude = exclude_default
         if arch == 'x86_64':
@@ -182,7 +184,9 @@ def get_slaptsrc_settings():
     try:
         c = SimpleConfig('/etc/slapt-get/slapt-srcrc')
     except IOError:
-        print('WARNING: Could not read file: /etc/slapt-get/slapt-srcrc')
+        msg1 = _('WARNING:')
+        msg2 = _('Could not read file:')
+        print('%s %s /etc/slapt-get/slapt-srcrc' % (msg1, msg2))
         build_dir = '/usr/src/slapt-src'
         pkg_ext = 'txz'
     else:
@@ -281,7 +285,9 @@ def write_mirrors(mirror_list):
     try:
         f = open('/usr/share/salixtools/reposetup/repomirrors', 'w')
     except IOError:
-        print("WARNING: Cannot write to file: /usr/share/salixtools/reposetup/repomirrors")
+        msg1 = _('WARNING:')
+        msg2 = _('Could not write to file:')
+        print("%s %s /usr/share/salixtools/reposetup/repomirrors" % (msg1, msg2))
     else:
         for line in mirror_list:
             f.write('{}\n'.format(line))
@@ -330,7 +336,7 @@ class GTKRepoSetup:
             # write new configuration files
             ret_conf = write_conf(new_repo)
             if not ret_conf:
-                error_msg = _('Could not write configuration files')
+                error_msg = _('Could not write configuration files.')
                 success = False
             if success and update_repos:
                 # update slapt-getrc
@@ -345,7 +351,7 @@ class GTKRepoSetup:
                     time.sleep(0.1)
                 retval = self.p.returncode
                 if retval != 0:
-                    error_msg = _('Could not update package information')
+                    error_msg = _('Could not update package information.')
                     success = False
             if success and update_repos:
                 # update slapt-srcrc
@@ -360,7 +366,7 @@ class GTKRepoSetup:
                     time.sleep(0.1)
                 retval = self.p.returncode
                 if retval != 0:
-                    error_msg = _('Could not update SlackBuild information')
+                    error_msg = _('Could not update SlackBuild information.')
                     success = False
         gtk.gdk.threads_enter()
         self.dialog_update_repos.hide()
