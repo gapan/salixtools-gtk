@@ -1,0 +1,12 @@
+[Desktop Entry]
+_Name=Repository Mirror
+_Comment=Select your preferred repository mirror
+Exec=gksu gtkreposetup
+Icon=gtkreposetup
+Terminal=false
+Type=Application
+Categories=Application;System;
+StartupNotify=true
+Encoding=UTF-8
+NoDisplay=false
+OnlyShowIn=KDE
