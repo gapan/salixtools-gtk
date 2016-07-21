@@ -232,7 +232,7 @@
     <property name="deletable">False</property>
     <property name="transient_for">gtkreposetup</property>
     <property name="program_name">gtkreposetup</property>
-    <property name="copyright" translatable="yes">Copyright © 2016 George Vlahavas</property>
+    <property name="copyright">Copyright © 2016 George Vlahavas</property>
     <property name="comments" translatable="yes">Repository configuration tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="website_label" translatable="yes">http://www.salixos.org</property>
