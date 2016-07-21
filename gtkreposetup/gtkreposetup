@@ -43,9 +43,15 @@ class BreakConnection(Exception):
     '''
     pass
 
-def error_out(error_msg):
-    print('ERROR: {}'.format(error_msg), file=sys.stderr)
-    sys.exit(1)
+def show_error_dialog(error_msg, parent=None):
+    dialog = gtk.MessageDialog(parent=parent, flags=0, type=gtk.MESSAGE_ERROR,
+            buttons=gtk.BUTTONS_OK, message_format=error_msg)
+    dialog.set_title(_('Error'))
+    dialog.set_modal(True)
+    if parent:
+        dialog.set_transient_for(parent)
+    dialog.run()
+    dialog.destroy()
 
 def get_arch():
     '''
@@ -70,7 +76,11 @@ def get_salix_version():
         with open('/usr/share/salixtools/salix-version', 'r') as f:
             version = f.readline().strip()
     except IOError:
-        error_out('Could not read file: /usr/share/salixtools/salix-version')
+        msg1 = _('Could not read file:')
+        f = '/usr/share/salixtools/salix-version'
+        msg2 = _('Exiting.')
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        sys.exit(1)
     return version
 
 def get_current_repo():
@@ -84,7 +94,11 @@ def get_current_repo():
     # error code 11 is thrown by reposetup when the salix-version file is not
     # found
     elif p.wait() == 11:
-        error_out('Could not read file: /usr/share/salixtools/salix-version')
+        msg1 = _('Could not read file:')
+        f = '/usr/share/salixtools/salix-version'
+        msg2 = _('Exiting.')
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        sys.exit(1)
     else:
         return None
 
@@ -104,7 +118,11 @@ def get_repo_list_from_file():
                 country = line.partition(' ')[2]
                 repolist.append([url, country])
     except IOError:
-        error_out('Could not read file: /usr/share/salixtools/reposetup/repomirrors')
+        msg1 = _('Could not read file:')
+        f = '/usr/share/reposetup/repomirrors'
+        msg2 = _('Exiting.')
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        sys.exit(1)
     try:
         with open('/etc/salixtools/repos-custom', 'r') as f:
             while True:
@@ -197,8 +215,11 @@ def write_conf(repo):
     try:
         f = open('/etc/slapt-get/slapt-getrc', 'w')
     except IOError:
-        error_out("Could not write to file: /etc/slapt-get/slapt-getrc")
-        success = False
+        msg1 = _('Could not write to file:')
+        f = '/etc/slapt-get/slapt-getrc'
+        msg2 = _('Exiting.')
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        sys.exit(1)
     else:
         f.write('# Working directory for local storage/cache.\n')
         f.write('WORKINGDIR={}\n\n'.format(slaptget_working_dir))
@@ -226,8 +247,11 @@ def write_conf(repo):
     try:
         f = open('/etc/slapt-get/slapt-srcrc', 'w')
     except IOError:
-        error_out("Could not write to file: /etc/slapt-get/slapt-srcrc")
-        success = False
+        msg1 = _('Could not write to file:')
+        f = '/etc/slapt-get/slapt-srcrc'
+        msg2 = _('Exiting.')
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        sys.exit(1)
     else:
         f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
         f.write('PKGEXT={}\n'.format(slaptsrc_pkg_ext))
@@ -350,9 +374,7 @@ class GTKRepoSetup:
         else:
             gtk.gdk.threads_enter()
             self.dialog_update_repos.hide()
-            self.messagedialog_error.show()
-            self.messagedialog_error.set_transient_for(self.window)
-            self.messagedialog_error.format_secondary_text(error_msg)
+            show_error_dialog(error_msg, parent=self.window)
             gtk.gdk.threads_leave()
 
     def on_button_update_repos_cancel_clicked(self, widget):
@@ -423,12 +445,6 @@ class GTKRepoSetup:
         canceltask = True
         raise BreakConnection
 
-    #
-    # Error dialog
-    #
-    def on_messagedialog_error_response(self, widget, event):
-        self.messagedialog_error.hide()
-
     def __init__(self):
         builder = gtk.Builder()
         builder.set_translation_domain("gtkreposetup")
@@ -453,9 +469,6 @@ class GTKRepoSetup:
         self.dialog_update_repos = builder.get_object('dialog_update_repos')
         self.label_update_repos = builder.get_object('label_update_repos')
         self.progressbar_update_repos = builder.get_object('progressbar_update_repos')
-
-        # error dialog
-        self.messagedialog_error = builder.get_object('messagedialog_error')
 
         # populate the list of mirrors
         self.current_repo = get_current_repo()
