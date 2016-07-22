@@ -5,6 +5,7 @@ TOOLS = gtkclocksetup \
 		gtkiconrefresh \
 		gtkkeyboardsetup \
 		gtklocalesetup \
+		gtkreposetup \
 		gtkservicesetup \
 		gtkusersetup
 
