@@ -30,6 +30,10 @@ remove-empty:
 		rm -f messages.mo; \
 	done
 
+.PHONY: fix-charset
+fix-charset:
+	sed -i "s/charset=CHARSET/charset=UTF-8/" *.po
+
 .PHONY: stat
 stat:   
 	@for j in `ls *.po`; do \
