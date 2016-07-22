@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[salixtools-gtk.gtkreposetup]
+file_filter = po/<lang>.po
+source_file = po/gtkreposetup.pot
+source_lang = en
+
