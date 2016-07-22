@@ -13,6 +13,7 @@ Tools included in this collection are:
 * gtkkeyboardsetup: a tool to configure systemwide keyboard settings
 * gtklocalesetup: a tool to configure the system locale
 * gtkservicesetup: a tool to configure system services
+* gtkreposetup: a tool to select your preferred repository mirror
 * gtkusersetup: a tool to configure users and groups
 
 These tools are written in Python, using PyGTK. Some of the tools,
