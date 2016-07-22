@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 02:12+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2016\n"
+"Language-Team: Greek (https://www.transifex.com/gapan/teams/15073/el/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gtkreposetup.ui:18
+msgid "Select repository mirror"
+msgstr "Επιλέξτε το αποθετήριο"
+
+#: gtkreposetup.ui:143
+msgid ""
+"Please select your preferred repository mirror. The country code where each "
+"mirror is located is shown on the right. Mirrors located closer to you "
+"geographically are usually faster."
+msgstr ""
+"Επιλέξτε το αποθετήριο που προτιμάτε. Ο κωδικός χώρας όπου βρίσκεται το "
+"αποθετήριο εμφανίζεται στα δεξιά. Αποθετήρια κοντινότερα στην τοποθεσία σας "
+"είναι συνήθως πιο γρήγορα."
+
+#: gtkreposetup.ui:175
+msgid "Mirror"
+msgstr "Αποθετήριο"
+
+#: gtkreposetup.ui:186
+msgid "Country"
+msgstr "Χώρα"
+
+#: gtkreposetup.ui:206
+msgid "Update the package and SlackBuild data"
+msgstr "Ενημέρωση των τοπικών δεδομένων πακέτων και SlackBuild"
+
+#: gtkreposetup.ui:236
+msgid "Repository configuration tool"
+msgstr "Εργαλείο ρύθμισης αποθετηρίων"
+
+#: gtkreposetup.ui:915
+msgid "translator-credits"
+msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
+
+#: gtkreposetup.ui:941
+msgid "Updating mirror list"
+msgstr "Ενημέρωση της λίστας αποθετηρίων"
+
+#: gtkreposetup.ui:960
+msgid "Updating mirror list. Please wait..."
+msgstr "Ενημέρωση της λίστας αποθετηρίων. Παρακαλώ περιμένετε..."
+
+#: gtkreposetup.ui:1018
+msgid "Updating..."
+msgstr "Γίνεται ενημέρωση..."
+
+#: gtkreposetup:49
+msgid "Error"
+msgstr "Σφάλμα"
+
+#: gtkreposetup:79 gtkreposetup:97 gtkreposetup:121 gtkreposetup:149
+#: gtkreposetup:188
+msgid "Could not read file:"
+msgstr "Δεν ήταν δυνατή η ανάγνωση από το αρχείο:"
+
+#: gtkreposetup:81 gtkreposetup:99 gtkreposetup:123 gtkreposetup:224
+#: gtkreposetup:256
+msgid "Exiting."
+msgstr "Γίνεται έξοδος."
+
+#: gtkreposetup:148 gtkreposetup:187 gtkreposetup:288
+msgid "WARNING:"
+msgstr "ΠΡΟΕΙΔΟΠΟΙΗΣΗ:"
+
+#: gtkreposetup:222 gtkreposetup:254 gtkreposetup:289
+msgid "Could not write to file:"
+msgstr "Δεν ήταν δυνατή η εγγραφή του αρχείου:"
+
+#: gtkreposetup:339
+msgid "Could not write configuration files."
+msgstr "Δεν ήταν δυνατό να γίνει εγγραφή των αρχείων ρυθμίσεων."
+
+#: gtkreposetup:344
+msgid "Updating package information..."
+msgstr "Ενημέρωση των πληροφοριών πακέτων..."
+
+#: gtkreposetup:354
+msgid "Could not update package information."
+msgstr "Δεν ήταν δυνατή η ενημέρωση των πληροφοριών πακέτων."
+
+#: gtkreposetup:359
+msgid "Updating SlackBuild information..."
+msgstr "Ενημέρωση των πληροφοριών SlackBuild."
+
+#: gtkreposetup:369
+msgid "Could not update SlackBuild information."
+msgstr "Δεν ήταν δυνατή η ενημέρωση των πληροφοριών SlackBuild."
+
+#: gtkreposetup.desktop.in.h:1 gtkreposetup-kde.desktop.in.h:1
+msgid "Repository Mirror"
+msgstr "Αποθετήριο"
+
+#: gtkreposetup.desktop.in.h:2 gtkreposetup-kde.desktop.in.h:2
+msgid "Select your preferred repository mirror"
+msgstr "Επιλέξτε το αποθετήριο που προτιμάτε"
