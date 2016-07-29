@@ -237,7 +237,10 @@ def write_conf(repo):
         f.write('SOURCE={r}/{a}/{s}-{v}/extra/:OFFICIAL\n\n'.format(
             r=repo, a=arch, s=slackdir, v=version))
         f.write('# The Salix repository\n')
-        f.write('SOURCE={r}/{a}/{v}/:PREFERRED\n\n'.format(
+        f.write('SOURCE={r}/{a}/{v}/:PREFERRED\n'.format(
+            r=repo, a=arch, v=version))
+        f.write('# And the Salix extra repository\n')
+        f.write('SOURCE={r}/{a}/extra-{v}/:OFFICIAL\n\n'.format(
             r=repo, a=arch, v=version))
         f.write('# Local repositories\n')
         f.write('# SOURCE=file:///var/www/packages/:CUSTOM\n')
