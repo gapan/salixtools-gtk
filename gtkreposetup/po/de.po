@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 02:12+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Joachim Braun <jo.braun@freenet.de>, 2016\n"
+"Language-Team: German (https://www.transifex.com/gapan/teams/15073/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gtkreposetup.ui:18
+msgid "Select repository mirror"
+msgstr "Spiegelserver auswählen"
+
+#: gtkreposetup.ui:143
+msgid ""
+"Please select your preferred repository mirror. The country code where each "
+"mirror is located is shown on the right. Mirrors located closer to you "
+"geographically are usually faster."
+msgstr ""
+"Bitte wählen einen Spiegelserver aus. Auf der rechten Seite finden Sie zum "
+"angegebenen Server den jeweiligen Ländercode. Um eine möglichst schnelle "
+"Datenverbindung sicherzustellen, sollten Sie einen Server in der Nähe Ihres "
+"Standortes bevorzugen."
+
+#: gtkreposetup.ui:175
+msgid "Mirror"
+msgstr "Spiegelserver"
+
+#: gtkreposetup.ui:186
+msgid "Country"
+msgstr "Land"
+
+#: gtkreposetup.ui:206
+msgid "Update the package and SlackBuild data"
+msgstr "Paket- und SlackBuild-Daten aktualisieren"
+
+#: gtkreposetup.ui:236
+msgid "Repository configuration tool"
+msgstr "Konfiguration der Installationsquelle"
+
+#: gtkreposetup.ui:915
+msgid "translator-credits"
+msgstr "Joachim Braun"
+
+#: gtkreposetup.ui:941
+msgid "Updating mirror list"
+msgstr "Liste der Spiegelserver aktualisieren"
+
+#: gtkreposetup.ui:960
+msgid "Updating mirror list. Please wait..."
+msgstr "Die Liste der Spiegelserver wird aktualisiert. Bitte warten..."
+
+#: gtkreposetup.ui:1018
+msgid "Updating..."
+msgstr "Aktualisierung läuft..."
+
+#: gtkreposetup:49
+msgid "Error"
+msgstr "Fehler"
+
+#: gtkreposetup:79 gtkreposetup:97 gtkreposetup:121 gtkreposetup:149
+#: gtkreposetup:188
+msgid "Could not read file:"
+msgstr "Datei konnte nicht gelesen werden:"
+
+#: gtkreposetup:81 gtkreposetup:99 gtkreposetup:123 gtkreposetup:224
+#: gtkreposetup:256
+msgid "Exiting."
+msgstr "Beende."
+
+#: gtkreposetup:148 gtkreposetup:187 gtkreposetup:288
+msgid "WARNING:"
+msgstr "WARNUNG:"
+
+#: gtkreposetup:222 gtkreposetup:254 gtkreposetup:289
+msgid "Could not write to file:"
+msgstr "Datei konnte nicht geschrieben werden:"
+
+#: gtkreposetup:339
+msgid "Could not write configuration files."
+msgstr "Die Konfigurationsdateien konnten nicht geschrieben werden."
+
+#: gtkreposetup:344
+msgid "Updating package information..."
+msgstr "Aktualisierung der Paketdaten..."
+
+#: gtkreposetup:354
+msgid "Could not update package information."
+msgstr "Die Paktetdaten konnten nicht aktualisiert werden."
+
+#: gtkreposetup:359
+msgid "Updating SlackBuild information..."
+msgstr "Aktualisierung der SlackBuild-Daten..."
+
+#: gtkreposetup:369
+msgid "Could not update SlackBuild information."
+msgstr "Die SlackBuild-Daten konnten nicht aktualisiert werden."
+
+#: gtkreposetup.desktop.in.h:1 gtkreposetup-kde.desktop.in.h:1
+msgid "Repository Mirror"
+msgstr "Spiegelserver"
+
+#: gtkreposetup.desktop.in.h:2 gtkreposetup-kde.desktop.in.h:2
+msgid "Select your preferred repository mirror"
+msgstr "Wählen Sie Ihren bevorzugten Spiegelserver"
