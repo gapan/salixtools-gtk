@@ -47,6 +47,12 @@ tx-pull:
 		$(MAKE) tx-pull -C $$i;\
 	done
 
+.PHONY: tx-pull-f
+tx-pull-f:
+	for i in $(TOOLS); do \
+		$(MAKE) tx-pull-f -C $$i;\
+	done
+
 .PHONY: stat
 stat:
 	for i in $(TOOLS); do \
