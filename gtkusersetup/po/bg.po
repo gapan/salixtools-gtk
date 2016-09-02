@@ -3,329 +3,328 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# tsuren <hydrangea_and_snail@hotmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2015-08-19 14:01+0000\n"
-"Last-Translator: tsuren <hydrangea_and_snail@hotmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/gapan/salixtools-gtk/language/ja/)\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/gapan/salixtools-gtk/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkusersetup.glade:49
 msgid "User settings"
-msgstr "ユーザの設定"
+msgstr ""
 
 #: gtkusersetup.glade:208
 msgid "Manage groups"
-msgstr "グループの管理"
+msgstr ""
 
 #: gtkusersetup.glade:234
 msgid "Show all users"
-msgstr "全てのユーザを表示する。"
+msgstr ""
 
 #: gtkusersetup.glade:343
 msgid "<b>Basic information</b>"
-msgstr "<b>基本情報</b>"
+msgstr ""
 
 #: gtkusersetup.glade:362
 msgid "Username:"
-msgstr "ユーザネーム:"
+msgstr ""
 
 #: gtkusersetup.glade:371
 msgid "Real name:"
-msgstr "氏名:"
+msgstr ""
 
 #: gtkusersetup.glade:432
 msgid "User password:"
-msgstr "ユーザ・パスワード:"
+msgstr ""
 
 #: gtkusersetup.glade:442
 msgid "Password confirmation:"
-msgstr "パスワードの確認:"
+msgstr ""
 
 #: gtkusersetup.glade:483
 msgid "View password while typing"
-msgstr "パスワードをタイプしている最中隠さない。"
+msgstr ""
 
 #: gtkusersetup.glade:501
 msgid "Account"
-msgstr "アカウント"
+msgstr ""
 
 #: gtkusersetup.glade:516
 msgid "<b>Contact information</b>"
-msgstr "<b>連絡情報</b>"
+msgstr ""
 
 #: gtkusersetup.glade:536
 msgid "Office extension:"
-msgstr "オフィスの連絡b:"
+msgstr ""
 
 #: gtkusersetup.glade:548
 msgid "Office information:"
-msgstr "オフィスの連絡番号:"
+msgstr ""
 
 #: gtkusersetup.glade:558
 msgid "Home phone:"
-msgstr "電話番号:"
+msgstr ""
 
 #: gtkusersetup.glade:615
 msgid "Contact"
-msgstr "連絡"
+msgstr ""
 
 #: gtkusersetup.glade:631
 msgid "<b>Group membership</b>"
-msgstr "<b>グループのメンバーシップ</b>"
+msgstr ""
 
 #: gtkusersetup.glade:648
 msgid "Main group:"
-msgstr "主なグループ:"
+msgstr ""
 
 #: gtkusersetup.glade:681
 msgid "Other groups:"
-msgstr "他のグループ:"
+msgstr ""
 
 #: gtkusersetup.glade:753
 msgid "Groups"
-msgstr "グループ"
+msgstr ""
 
 #: gtkusersetup.glade:769
 msgid "<b>Advanced settings</b>"
-msgstr "<b>上級設定</b>"
+msgstr ""
 
 #: gtkusersetup.glade:789
 msgid "Home directory:"
-msgstr "Home（ホーム）ディレクトリ:"
+msgstr ""
 
 #: gtkusersetup.glade:799
 msgid "Shell:"
-msgstr "シェル:"
+msgstr ""
 
 #: gtkusersetup.glade:811
 msgid "UID:"
-msgstr "UID:"
+msgstr ""
 
 #: gtkusersetup.glade:868
 msgid "Set account expiration date"
-msgstr "アカウントの期限満了日をきめる。"
+msgstr ""
 
 #: gtkusersetup.glade:904
 msgid "Advanced"
-msgstr "詳細設定"
+msgstr ""
 
 #: gtkusersetup.glade:973 gtkusersetup.glade:1580
 msgid "Error!"
-msgstr "エラー"
+msgstr ""
 
 #: gtkusersetup.glade:1187
 msgid "Group settings"
-msgstr "グループ設定"
+msgstr ""
 
 #: gtkusersetup.glade:1366
 msgid "Group properties"
-msgstr "グループ・プロパティー"
+msgstr ""
 
 #: gtkusersetup.glade:1388
 msgid "<b>Basic settings</b>"
-msgstr "<b>基本設定</b>"
+msgstr ""
 
 #: gtkusersetup.glade:1408
 msgid "Group name:"
-msgstr "グループの名前:"
+msgstr ""
 
 #: gtkusersetup.glade:1418
 msgid "Group ID:"
-msgstr "グループID:"
+msgstr ""
 
 #: gtkusersetup.glade:1464
 msgid "<b>Group members</b>"
-msgstr "<b>グループメンバー</b>"
+msgstr ""
 
 #: gtkusersetup.glade:1668
 msgid "Delete group?"
-msgstr "グループを消去しますか"
+msgstr ""
 
 #: gtkusersetup.glade:1771
 msgid "Cannot delete group"
-msgstr "グループを消去できません"
+msgstr ""
 
 #: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
-msgstr "ユーザとグループの管理ツール"
+msgstr ""
 
 #: gtkusersetup.glade:2545
 msgid "translator-credits"
-msgstr "翻訳者"
+msgstr ""
 
 #: gtkusersetup:208
 msgid "Password is too short. It has to be at least 5 characters long."
-msgstr "パスワードが短すぎます、少なくても5文字おねがいします。"
+msgstr ""
 
 #: gtkusersetup:211
 msgid "Password cannot include the backslash character."
-msgstr "パスワードに、バックスラッシュは使えません。"
+msgstr ""
 
 #: gtkusersetup:217
 msgid "Passwords don't match"
-msgstr "パスワードが、合いません。"
+msgstr ""
 
 #: gtkusersetup:226
 msgid "Username cannot be empty."
-msgstr "ユーザーネームが、空欄です。"
+msgstr ""
 
 #: gtkusersetup:229
 msgid "Username cannot exceed 31 characters"
-msgstr "ユーザネームは、31文字以上にしないでください。"
+msgstr ""
 
 #: gtkusersetup:232
 msgid "Username cannot include the space character."
-msgstr "ユーザネームに、スペースをつかわないでください。"
+msgstr ""
 
 #: gtkusersetup:235
 msgid "Username cannot start with a number."
-msgstr "ユーザネームは、番号から始まることができません。"
+msgstr ""
 
 #: gtkusersetup:238
 msgid "Username cannot start with an underscore."
-msgstr "ユーザネームは、アンダースコアからはじめることができません。"
+msgstr ""
 
 #: gtkusersetup:241
 msgid "Username cannot start with a dash."
-msgstr "ユーザネームは、ダッシュから始めることができません。"
+msgstr ""
 
 #: gtkusersetup:246
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
-msgstr "ユーザネームは、小文字のラテン文字、数、ダッシュまたは、アンダースコアで作ることができます。"
+msgstr ""
 
 #: gtkusersetup:252
 msgid "Username \"{0}\" already exists."
-msgstr "ユーザネーム \"{0}\" は、すべて使われています。"
+msgstr ""
 
 #: gtkusersetup:262
 msgid "Group name cannot be empty."
-msgstr "グループネームが、空欄です。"
+msgstr ""
 
 #: gtkusersetup:265
 msgid "Group name cannot exceed 31 characters"
-msgstr "グループネームは、31文字以上にしないでください。"
+msgstr ""
 
 #: gtkusersetup:268
 msgid "Group name cannot include the space character."
-msgstr "グループネームに、スペースをつかわないでください。"
+msgstr ""
 
 #: gtkusersetup:271
 msgid "Group name cannot start with a number."
-msgstr "グループネームは、番号から始まることができません。"
+msgstr ""
 
 #: gtkusersetup:274
 msgid "Group name cannot start with an underscore."
-msgstr "グループネームは、アンダースコアからはじめることができません。"
+msgstr ""
 
 #: gtkusersetup:277
 msgid "Group name cannot start with a dash."
-msgstr "グループネームは、ダッシュから始めることができません。"
+msgstr ""
 
 #: gtkusersetup:282
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
-msgstr "グループネームは、小文字のラテン文字、数、ダッシュまたは、アンダースコアで作ることができます。"
+msgstr ""
 
 #: gtkusersetup:288
 msgid "Group name \"{0}\" already exists."
-msgstr "グループネーム \"{0}\" は、すべて使われています。"
+msgstr ""
 
 #: gtkusersetup:298
 msgid "Shell does not exist."
-msgstr "シェルが、存在しません。"
+msgstr ""
 
 #: gtkusersetup:308
 msgid "UID {0} is assigned to another user."
-msgstr "UID {0} は、別のユーザに割り当てられています。"
+msgstr ""
 
 #: gtkusersetup:318
 msgid "GID {0} is assigned to another group."
-msgstr "GID {0}は、べつのグループに割り当てられています。"
+msgstr ""
 
 #: gtkusersetup:369
 msgid "User account properties for \"{0}\""
-msgstr "\"{0}\"のユーザ・アカウントのプロパティー"
+msgstr ""
 
 #: gtkusersetup:376
 msgid "<b>Set new password</b>"
-msgstr "<b>新しいパスワードをセットする</b>"
+msgstr ""
 
 #: gtkusersetup:433
 msgid "Add new user"
-msgstr "新しいユーザを加える。"
+msgstr ""
 
 #: gtkusersetup:440
 msgid "<b>Set password</b>"
-msgstr "<b>パスワードをセットする</b>"
+msgstr ""
 
 #: gtkusersetup:490
 msgid "Delete user {0}?"
-msgstr "ユーザ{0}を消去しますか。"
+msgstr ""
 
 #: gtkusersetup:491
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
-msgstr "ユーザ・アカウント \"{0}\" をシステムから消去します。確認してください。"
+msgstr ""
 
 #: gtkusersetup:492
 msgid "Completely remove user's home directory ({0}) with all its contents"
-msgstr "ユーザのhome(ホーム)ディレクトリを含む全てを消去する。"
+msgstr ""
 
 #: gtkusersetup:738
 msgid "Group \"{0}\" properties"
-msgstr "グループ\"{0}\"のプロパティー"
+msgstr ""
 
 #: gtkusersetup:757
 msgid "Add new group"
-msgstr "新しいグループを加える"
+msgstr ""
 
 #: gtkusersetup:782
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
-msgstr "グループ\"{0}\" をシステムから消去します。確認してください。"
+msgstr ""
 
 #: gtkusersetup:785
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
-msgstr "ユーザ \"{1}\"の主なグループなので、グループ\"{0}\" を消去することはできません。もしもグループ\"{0}\" を消去したいならば、まずユーザ\"{1}\"の主なグループを別のグループにしないといけません。"
+msgstr ""
 
 #: gtkusersetup:912
 msgid "Username"
-msgstr "ユーザネーム"
+msgstr ""
 
 #: gtkusersetup:913
 msgid "Real name"
-msgstr "氏名"
+msgstr ""
 
 #: gtkusersetup:914
 msgid "Home directory"
-msgstr "Home（ホーム）ディレクトリ"
+msgstr ""
 
 #: gtkusersetup:951
 msgid "Member"
-msgstr "メンバー"
+msgstr ""
 
 #: gtkusersetup:952
 msgid "Group"
-msgstr "グループ"
+msgstr ""
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
 msgid "Users and groups"
-msgstr "ユーザとグループ"
+msgstr ""
