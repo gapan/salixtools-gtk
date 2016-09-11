@@ -3,36 +3,40 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# gapan <vlahavas@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 20:28+0300\n"
-"PO-Revision-Date: 2013-11-19 16:32+0000\n"
+"POT-Creation-Date: 2016-09-12 00:56+0300\n"
+"PO-Revision-Date: 2016-09-11 22:01+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/projects/p/salixtools-gtk/language/uk/)\n"
+"Language-Team: Ukrainian (http://www.transifex.com/gapan/salixtools-gtk/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: gtklocalesetup.glade:23 gtklocalesetup.desktop.in.h:2
-#: gtklocalesetup-kde.desktop.in.h:2
-msgid "System Language"
+#: gtklocalesetup.ui:17
+msgid "System language"
 msgstr "Системна мова"
 
-#: gtklocalesetup.glade:56
+#: gtklocalesetup.ui:149
 msgid ""
 "Please select a default system locale. The changes will take effect next "
 "time you start your system."
 msgstr "Будь ласка, виберіть типову системну локаль. Зміни наберуть чинності після перезавантаження системи."
 
-#: gtklocalesetup.glade:221 gtklocalesetup.desktop.in.h:1
-#: gtklocalesetup-kde.desktop.in.h:1
+#: gtklocalesetup.ui:234 gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup-kde.desktop.in.h:2
 msgid "Locale configuration tool"
 msgstr "Інструмент налаштування локалі"
 
-#: gtklocalesetup.glade:899
+#: gtklocalesetup.ui:912
 msgid "translator-credits"
 msgstr "Yarema aka Knedlyk <yupadmin@gmail.com>"
+
+#: gtklocalesetup.desktop.in.h:1 gtklocalesetup-kde.desktop.in.h:1
+msgid "System Language"
+msgstr "Системна мова"
