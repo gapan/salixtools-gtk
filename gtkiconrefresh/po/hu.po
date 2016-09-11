@@ -4,6 +4,7 @@
 # 
 # Translators:
 # Laszlo Dvornik <leveleim@yandex.com>, 2011
+# Laszlo Dvornik <leveleim@yandex.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"

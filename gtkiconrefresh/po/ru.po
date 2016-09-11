@@ -4,14 +4,16 @@
 # 
 # Translators:
 # Andrey Frantsuzov <pokazsch@yandex.ru>, 2011
-# goriy <wolfr2@gmail.com>, 2014
+# Andrey Frantsuzov <pokazsch@yandex.ru>, 2011
+# Gregory None <wolfr2@gmail.com>, 2014
+# Gregory None <wolfr2@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
 "PO-Revision-Date: 2014-05-03 23:05+0000\n"
-"Last-Translator: goriy <wolfr2@gmail.com>\n"
+"Last-Translator: Gregory None <wolfr2@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/gapan/salixtools-gtk/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

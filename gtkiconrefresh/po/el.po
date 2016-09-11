@@ -3,12 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# gapan <vlahavas@gmail.com>, 2015
+# gapan <vlahavas@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2014-01-17 09:22+0000\n"
+"PO-Revision-Date: 2015-08-19 16:31+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salixtools-gtk/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +29,7 @@ msgstr "Παρακαλούμε περιμένετε όσο επαναδημιο�
 
 #: gtkiconrefresh.desktop.in.h:1
 msgid "Rebuild icon cache"
-msgstr ""
+msgstr "Επαναδημιουργία της μνήμης εικονιδίων"
 
 #: gtkiconrefresh.desktop.in.h:2
 msgid "Rebuild the system's icon cache"
