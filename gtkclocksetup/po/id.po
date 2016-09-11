@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2014-01-17 09:22+0000\n"
+"POT-Creation-Date: 2016-09-09 22:02+0300\n"
+"PO-Revision-Date: 2016-09-11 21:28+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/gapan/salixtools-gtk/language/id/)\n"
 "MIME-Version: 1.0\n"
@@ -17,70 +17,70 @@ msgstr ""
 "Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: gtkclocksetup.glade:7
+#: gtkclocksetup.ui:39
 msgid "Date and time settings"
 msgstr "Pengaturan Tanggal dan waktu"
 
-#: gtkclocksetup.glade:26
+#: gtkclocksetup.ui:156
 msgid "Keep clock synchronized with internet servers"
 msgstr ""
 
-#: gtkclocksetup.glade:51
+#: gtkclocksetup.ui:183
 msgid "Synchronize now"
 msgstr "Sesuaikan sekarang"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
+#: gtkclocksetup.ui:212 gtkclocksetup:239 gtkclocksetup:275
 msgid "Time zone:"
 msgstr "Zona Waktu"
 
-#: gtkclocksetup.glade:97
+#: gtkclocksetup.ui:222
 msgid "Select time zone..."
 msgstr "Pilih zona waktu"
 
-#: gtkclocksetup.glade:130
+#: gtkclocksetup.ui:244
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr ""
 
-#: gtkclocksetup.glade:134
+#: gtkclocksetup.ui:248
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
 msgstr ""
 
-#: gtkclocksetup.glade:252
+#: gtkclocksetup.ui:385
 msgid "Time:"
 msgstr "Waktu:"
 
-#: gtkclocksetup.glade:286
+#: gtkclocksetup.ui:398
 msgid "Date:"
 msgstr "Tanggal:"
 
-#: gtkclocksetup.glade:415
-msgid "Select time zone"
-msgstr "Pilih zona waktu"
-
-#: gtkclocksetup.glade:436
-msgid "Please select your time zone:"
-msgstr ""
-
-#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup.ui:431 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr ""
 
-#: gtkclocksetup.glade:1292
+#: gtkclocksetup.ui:1109
 msgid "translator-credits"
 msgstr ""
 
-#: gtkclocksetup:251
+#: gtkclocksetup.ui:1145
+msgid "Select time zone"
+msgstr "Pilih zona waktu"
+
+#: gtkclocksetup.ui:1211
+msgid "Please select your time zone:"
+msgstr ""
+
+#: gtkclocksetup:291
 msgid "General area"
 msgstr "Area umum"
 
-#: gtkclocksetup:252
+#: gtkclocksetup:292
 msgid "Location"
 msgstr "Lokasi"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-msgid "System clock"
+msgid "System Clock"
 msgstr ""

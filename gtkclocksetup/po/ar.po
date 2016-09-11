@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2014-01-17 09:22+0000\n"
+"POT-Creation-Date: 2016-09-09 22:02+0300\n"
+"PO-Revision-Date: 2016-09-11 21:28+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/gapan/salixtools-gtk/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -18,70 +18,70 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: gtkclocksetup.glade:7
+#: gtkclocksetup.ui:39
 msgid "Date and time settings"
 msgstr "إعدادات الوقت و التاريخ"
 
-#: gtkclocksetup.glade:26
+#: gtkclocksetup.ui:156
 msgid "Keep clock synchronized with internet servers"
 msgstr "الحفاظ على مدار الساعة متزامنة مع خوادم الإنترنت"
 
-#: gtkclocksetup.glade:51
+#: gtkclocksetup.ui:183
 msgid "Synchronize now"
 msgstr "مزامنة الآن"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
+#: gtkclocksetup.ui:212 gtkclocksetup:239 gtkclocksetup:275
 msgid "Time zone:"
 msgstr "المنطقة الزمنية :"
 
-#: gtkclocksetup.glade:97
+#: gtkclocksetup.ui:222
 msgid "Select time zone..."
 msgstr "حدد المنطقة الزمنية..."
 
-#: gtkclocksetup.glade:130
+#: gtkclocksetup.ui:244
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "يتم تعيين ساعة الأجهزة على التوقيت العالمي (بالتوقيت العالمي)"
 
-#: gtkclocksetup.glade:134
+#: gtkclocksetup.ui:248
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
 msgstr "في معظم أجهزة المنزل أو أجهزة الكمبيوتر التجارية يتم استخدام التوقيت المحلي ، في حين تم تعيين ساعة الأجهزة على الارجح في معظم خوادم الويب لإستخدام UTC. لا تضغط علي هذه الخانة إذا لم تكن متأكدا."
 
-#: gtkclocksetup.glade:252
+#: gtkclocksetup.ui:385
 msgid "Time:"
 msgstr "الوقت :"
 
-#: gtkclocksetup.glade:286
+#: gtkclocksetup.ui:398
 msgid "Date:"
 msgstr "التاريخ :"
 
-#: gtkclocksetup.glade:415
-msgid "Select time zone"
-msgstr "حدد المنطقة الزمنية"
-
-#: gtkclocksetup.glade:436
-msgid "Please select your time zone:"
-msgstr "الرجاء اختيار المنطقة الزمنية :"
-
-#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup.ui:431 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "نظام أداة التكوين ساعة"
 
-#: gtkclocksetup.glade:1292
+#: gtkclocksetup.ui:1109
 msgid "translator-credits"
 msgstr "مترجم من قروض"
 
-#: gtkclocksetup:251
+#: gtkclocksetup.ui:1145
+msgid "Select time zone"
+msgstr "حدد المنطقة الزمنية"
+
+#: gtkclocksetup.ui:1211
+msgid "Please select your time zone:"
+msgstr "الرجاء اختيار المنطقة الزمنية :"
+
+#: gtkclocksetup:291
 msgid "General area"
 msgstr "منطقة عامة"
 
-#: gtkclocksetup:252
+#: gtkclocksetup:292
 msgid "Location"
 msgstr "المكان"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-msgid "System clock"
+msgid "System Clock"
 msgstr ""

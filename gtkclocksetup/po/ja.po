@@ -3,12 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# tsuren <hydrangea_and_snail@hotmail.com>, 2015
+# tsuren <hydrangea_and_snail@hotmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 13:05+0300\n"
-"PO-Revision-Date: 2014-01-17 09:22+0000\n"
+"POT-Creation-Date: 2016-09-09 22:02+0300\n"
+"PO-Revision-Date: 2016-09-11 21:33+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/salixtools-gtk/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -17,70 +19,70 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: gtkclocksetup.glade:7
+#: gtkclocksetup.ui:39
 msgid "Date and time settings"
 msgstr "時間と日付の設定"
 
-#: gtkclocksetup.glade:26
+#: gtkclocksetup.ui:156
 msgid "Keep clock synchronized with internet servers"
 msgstr "時計をインターネットで常にシンクロナイズする。"
 
-#: gtkclocksetup.glade:51
+#: gtkclocksetup.ui:183
 msgid "Synchronize now"
 msgstr "シンクロナイズする。"
 
-#: gtkclocksetup.glade:89 gtkclocksetup:202 gtkclocksetup:235
+#: gtkclocksetup.ui:212 gtkclocksetup:239 gtkclocksetup:275
 msgid "Time zone:"
 msgstr "時間帯"
 
-#: gtkclocksetup.glade:97
+#: gtkclocksetup.ui:222
 msgid "Select time zone..."
 msgstr "時間帯を設定する"
 
-#: gtkclocksetup.glade:130
+#: gtkclocksetup.ui:244
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
 msgstr "ハードウェアの時計は、Coordinated Universal Time (UTC)にセットされています。"
 
-#: gtkclocksetup.glade:134
+#: gtkclocksetup.ui:248
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
 msgstr "ほとんどのホーム用またはビジネス用のコンピュータのハードウェアの時計は、ローカルタイムにセットされています。それとは対象にウェブ・サーバーなどは、ほとんどUTCにセットされています。よくわからない場合は、このボックスは、ティックしないでください。"
 
-#: gtkclocksetup.glade:252
+#: gtkclocksetup.ui:385
 msgid "Time:"
 msgstr "時間："
 
-#: gtkclocksetup.glade:286
+#: gtkclocksetup.ui:398
 msgid "Date:"
 msgstr "日付："
 
-#: gtkclocksetup.glade:415
-msgid "Select time zone"
-msgstr "時間帯を選ぶ"
-
-#: gtkclocksetup.glade:436
-msgid "Please select your time zone:"
-msgstr "時間帯を選んでください。"
-
-#: gtkclocksetup.glade:614 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup.ui:431 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "システム時計設定用のツール"
 
-#: gtkclocksetup.glade:1292
+#: gtkclocksetup.ui:1109
 msgid "translator-credits"
 msgstr "翻訳者"
 
-#: gtkclocksetup:251
+#: gtkclocksetup.ui:1145
+msgid "Select time zone"
+msgstr "時間帯を選ぶ"
+
+#: gtkclocksetup.ui:1211
+msgid "Please select your time zone:"
+msgstr "時間帯を選んでください。"
+
+#: gtkclocksetup:291
 msgid "General area"
 msgstr "地域"
 
-#: gtkclocksetup:252
+#: gtkclocksetup:292
 msgid "Location"
 msgstr "都市"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
-msgid "System clock"
-msgstr ""
+msgid "System Clock"
+msgstr "システム時計"
