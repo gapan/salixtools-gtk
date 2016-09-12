@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2015-08-19 16:31+0000\n"
+"POT-Creation-Date: 2016-09-12 20:39+0300\n"
+"PO-Revision-Date: 2016-09-12 17:42+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salixtools-gtk/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -19,16 +19,16 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gtkiconrefresh.glade:6
+#: gtkiconrefresh.ui:6
 msgid "Rebuilding icon cache"
 msgstr "Επαναδημιουργία της μνήμης εικονιδίων"
 
-#: gtkiconrefresh.glade:60
+#: gtkiconrefresh.ui:60
 msgid "Please wait while rebuilding the system's icon cache..."
 msgstr "Παρακαλούμε περιμένετε όσο επαναδημιουργείται η μνήμη των εικονιδίων του συστήματος"
 
 #: gtkiconrefresh.desktop.in.h:1
-msgid "Rebuild icon cache"
+msgid "Rebuild Icon Cache"
 msgstr "Επαναδημιουργία της μνήμης εικονιδίων"
 
 #: gtkiconrefresh.desktop.in.h:2

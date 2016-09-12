@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-20 13:33+0300\n"
-"PO-Revision-Date: 2015-10-04 08:34+0000\n"
-"Last-Translator: GabiT. <splanckx@gmail.com>\n"
+"POT-Creation-Date: 2016-09-12 20:39+0300\n"
+"PO-Revision-Date: 2016-09-12 17:42+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/gapan/salixtools-gtk/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,16 +17,16 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-#: gtkiconrefresh.glade:6
+#: gtkiconrefresh.ui:6
 msgid "Rebuilding icon cache"
 msgstr "Reconstruire cache icoane"
 
-#: gtkiconrefresh.glade:60
+#: gtkiconrefresh.ui:60
 msgid "Please wait while rebuilding the system's icon cache..."
 msgstr "Vă rugăm așteptați reconstruirea cache-ului icoanelor de sistem..."
 
 #: gtkiconrefresh.desktop.in.h:1
-msgid "Rebuild icon cache"
+msgid "Rebuild Icon Cache"
 msgstr "Reconstruiesc cache icoane"
 
 #: gtkiconrefresh.desktop.in.h:2
