@@ -62,6 +62,7 @@ tx-pull:
 .PHONY: tx-pull-f
 tx-pull-f:
 	tx pull -a -f
+	$(MAKE) fix-charset -C po
 	$(MAKE) remove-empty -C po
 
 .PHONY: stat
