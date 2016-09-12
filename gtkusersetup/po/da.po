@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# gapan <vlahavas@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2014-01-17 09:23+0000\n"
+"POT-Creation-Date: 2016-09-12 20:18+0300\n"
+"PO-Revision-Date: 2016-09-12 17:22+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Danish (http://www.transifex.com/gapan/salixtools-gtk/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -17,314 +18,325 @@ msgstr ""
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gtkusersetup.glade:49
+#: gtkusersetup.ui:49
 msgid "User settings"
 msgstr "Brugerhåndtering"
 
-#: gtkusersetup.glade:208
+#: gtkusersetup.ui:210
 msgid "Manage groups"
 msgstr "Håndtér grupper"
 
-#: gtkusersetup.glade:234
+#: gtkusersetup.ui:236
 msgid "Show all users"
 msgstr "Vis alle brugere"
 
-#: gtkusersetup.glade:343
+#: gtkusersetup.ui:340
 msgid "<b>Basic information</b>"
 msgstr "<b>Grundlæggende information</b>"
 
-#: gtkusersetup.glade:362
+#: gtkusersetup.ui:359
 msgid "Username:"
 msgstr "Brugernavn:"
 
-#: gtkusersetup.glade:371
+#: gtkusersetup.ui:368
 msgid "Real name:"
 msgstr "Rigtigt navn:"
 
-#: gtkusersetup.glade:432
+#: gtkusersetup.ui:429
 msgid "User password:"
 msgstr "Brugeradgangskode:"
 
-#: gtkusersetup.glade:442
+#: gtkusersetup.ui:439
 msgid "Password confirmation:"
 msgstr "Adgangskode igen:"
 
-#: gtkusersetup.glade:483
+#: gtkusersetup.ui:480
 msgid "View password while typing"
 msgstr "Vis adgangskode mens der skrives"
 
-#: gtkusersetup.glade:501
+#: gtkusersetup.ui:498
 msgid "Account"
 msgstr "Konto"
 
-#: gtkusersetup.glade:516
+#: gtkusersetup.ui:513
 msgid "<b>Contact information</b>"
 msgstr "<b>Kontaktinformation</b>"
 
-#: gtkusersetup.glade:536
+#: gtkusersetup.ui:533
 msgid "Office extension:"
 msgstr "Kontorudvidelse:"
 
-#: gtkusersetup.glade:548
+#: gtkusersetup.ui:545
 msgid "Office information:"
 msgstr "Kontorinformation:"
 
-#: gtkusersetup.glade:558
+#: gtkusersetup.ui:555
 msgid "Home phone:"
 msgstr "Hjemmetelefon:"
 
-#: gtkusersetup.glade:615
+#: gtkusersetup.ui:612
 msgid "Contact"
 msgstr "Kontakt"
 
-#: gtkusersetup.glade:631
+#: gtkusersetup.ui:628
 msgid "<b>Group membership</b>"
 msgstr "<b>Gruppemedlemskab</b>"
 
-#: gtkusersetup.glade:648
+#: gtkusersetup.ui:645
 msgid "Main group:"
 msgstr "Hovedgruppe:"
 
-#: gtkusersetup.glade:681
+#: gtkusersetup.ui:678
 msgid "Other groups:"
 msgstr "Andre grupper:"
 
-#: gtkusersetup.glade:753
+#: gtkusersetup.ui:750
 msgid "Groups"
 msgstr "Grupper"
 
-#: gtkusersetup.glade:769
+#: gtkusersetup.ui:766
 msgid "<b>Advanced settings</b>"
 msgstr "<b>Avancerede indstillinger</b>"
 
-#: gtkusersetup.glade:789
+#: gtkusersetup.ui:786
 msgid "Home directory:"
 msgstr "Hjemmemappe:"
 
-#: gtkusersetup.glade:799
+#: gtkusersetup.ui:796
 msgid "Shell:"
 msgstr "Skal:"
 
-#: gtkusersetup.glade:811
+#: gtkusersetup.ui:808
 msgid "UID:"
 msgstr "Bruger-id:"
 
-#: gtkusersetup.glade:868
+#: gtkusersetup.ui:865
 msgid "Set account expiration date"
 msgstr "Angiv udløbsdato for konto"
 
-#: gtkusersetup.glade:904
+#: gtkusersetup.ui:901
 msgid "Advanced"
 msgstr "Avanceret"
 
-#: gtkusersetup.glade:973 gtkusersetup.glade:1580
+#: gtkusersetup.ui:970 gtkusersetup.ui:1573
 msgid "Error!"
 msgstr "Fejl!"
 
-#: gtkusersetup.glade:1187
+#: gtkusersetup.ui:1182
 msgid "Group settings"
 msgstr "Gruppeindstillinger"
 
-#: gtkusersetup.glade:1366
+#: gtkusersetup.ui:1360
 msgid "Group properties"
 msgstr "Gruppeegenskaber"
 
-#: gtkusersetup.glade:1388
+#: gtkusersetup.ui:1381
 msgid "<b>Basic settings</b>"
 msgstr "<b>Grundlæggende indstillinger</b>"
 
-#: gtkusersetup.glade:1408
+#: gtkusersetup.ui:1401
 msgid "Group name:"
 msgstr "Gruppenavn:"
 
-#: gtkusersetup.glade:1418
+#: gtkusersetup.ui:1411
 msgid "Group ID:"
 msgstr "Gruppe-id:"
 
-#: gtkusersetup.glade:1464
+#: gtkusersetup.ui:1457
 msgid "<b>Group members</b>"
 msgstr "<b>Gruppemedlemmer</b>"
 
-#: gtkusersetup.glade:1668
+#: gtkusersetup.ui:1660
 msgid "Delete group?"
 msgstr "Slet gruppe?"
 
-#: gtkusersetup.glade:1771
+#: gtkusersetup.ui:1762
 msgid "Cannot delete group"
 msgstr "Kan ikke slette gruppe"
 
-#: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.ui:1856 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "Håndteringsværktøj til brugere og grupper"
 
-#: gtkusersetup.glade:2545
+#: gtkusersetup.ui:2534
 msgid "translator-credits"
 msgstr "Kris Thomsen <lakristho~at~gmail~dot~com>"
 
-#: gtkusersetup:208
+#: gtkusersetup:222
 msgid "Password is too short. It has to be at least 5 characters long."
 msgstr "Adgangskoden er for kort. Den skal være mindst 5 tegn lang."
 
-#: gtkusersetup:211
+#: gtkusersetup:225
 msgid "Password cannot include the backslash character."
 msgstr "Adgangskoden må ikke indeholde omvendt skråstreg."
 
-#: gtkusersetup:217
+#: gtkusersetup:231
 msgid "Passwords don't match"
 msgstr "Adgangskoderne er forskellige"
 
-#: gtkusersetup:226
+#: gtkusersetup:240
 msgid "Username cannot be empty."
 msgstr "Brugernavnet må ikke være tomt."
 
-#: gtkusersetup:229
+#: gtkusersetup:243
 msgid "Username cannot exceed 31 characters"
 msgstr "Brugernavnet må ikke overskride 31 tegn"
 
-#: gtkusersetup:232
+#: gtkusersetup:246
 msgid "Username cannot include the space character."
 msgstr "Brugernavnet må ikke indeholde mellemrumstegnet."
 
-#: gtkusersetup:235
+#: gtkusersetup:249
 msgid "Username cannot start with a number."
 msgstr "Brugernavnet må ikke begynde med et nummer."
 
-#: gtkusersetup:238
+#: gtkusersetup:252
 msgid "Username cannot start with an underscore."
 msgstr "Brugernavnet må ikke begynde med en bundstreg."
 
-#: gtkusersetup:241
+#: gtkusersetup:255
 msgid "Username cannot start with a dash."
 msgstr "Brugernavnet må ikke begynde med en bindestreg."
 
-#: gtkusersetup:246
+#: gtkusersetup:261
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
 msgstr "Brugernavnet må kun indeholde små bogstaver, numre, bindestreger og bundstreger."
 
-#: gtkusersetup:252
+#: gtkusersetup:267
+#, python-brace-format
 msgid "Username \"{0}\" already exists."
 msgstr "Brugernavnet \"{0}\" findes allerede."
 
-#: gtkusersetup:262
+#: gtkusersetup:278
 msgid "Group name cannot be empty."
 msgstr "Gruppenavnet må ikke være tomt."
 
-#: gtkusersetup:265
+#: gtkusersetup:281
 msgid "Group name cannot exceed 31 characters"
 msgstr "Gruppenavnet må ikke overskride 31 tegn"
 
-#: gtkusersetup:268
+#: gtkusersetup:284
 msgid "Group name cannot include the space character."
 msgstr "Gruppenavnet må ikke indeholde mellemrumstegnet."
 
-#: gtkusersetup:271
+#: gtkusersetup:287
 msgid "Group name cannot start with a number."
 msgstr "Gruppenavnet må ikke begynde med et nummer."
 
-#: gtkusersetup:274
+#: gtkusersetup:290
 msgid "Group name cannot start with an underscore."
 msgstr "Gruppenavnet må ikke begynde med en bundstreg."
 
-#: gtkusersetup:277
+#: gtkusersetup:293
 msgid "Group name cannot start with a dash."
 msgstr "Gruppenavnet må ikke begynde med en bindestreg."
 
-#: gtkusersetup:282
+#: gtkusersetup:299
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
 msgstr "Gruppenavnet må kun indeholde små bogstaver, numre, bindestreger og bundstreger."
 
-#: gtkusersetup:288
+#: gtkusersetup:305
+#, python-brace-format
 msgid "Group name \"{0}\" already exists."
 msgstr "Gruppenavnet \"{0}\" findes allerede."
 
-#: gtkusersetup:298
+#: gtkusersetup:316
 msgid "Shell does not exist."
 msgstr "Skallen findes ikke."
 
-#: gtkusersetup:308
+#: gtkusersetup:326
+#, python-brace-format
 msgid "UID {0} is assigned to another user."
 msgstr "Bruger-id'et {0} er tillagt en anden bruger."
 
-#: gtkusersetup:318
+#: gtkusersetup:336
+#, python-brace-format
 msgid "GID {0} is assigned to another group."
 msgstr "Gruppe-id'et {0} er tillagt en anden gruppe."
 
-#: gtkusersetup:369
+#: gtkusersetup:389
+#, python-brace-format
 msgid "User account properties for \"{0}\""
 msgstr "Egenskaber for brugerkonto \"{0}\""
 
-#: gtkusersetup:376
+#: gtkusersetup:396
 msgid "<b>Set new password</b>"
 msgstr "<b>Angiv ny adgangskode</b>"
 
-#: gtkusersetup:433
+#: gtkusersetup:454
 msgid "Add new user"
 msgstr "Tilføj ny bruger"
 
-#: gtkusersetup:440
+#: gtkusersetup:461
 msgid "<b>Set password</b>"
 msgstr "<b>Angiv adgangskode</b>"
 
-#: gtkusersetup:490
+#: gtkusersetup:512
+#, python-brace-format
 msgid "Delete user {0}?"
 msgstr "Slet brugeren {0}?"
 
-#: gtkusersetup:491
+#: gtkusersetup:514
+#, python-brace-format
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
 msgstr "Du er i gang med at fjerne brugerkontoen \"{0}\" fra dit system. Er du sikker på at du vil fortsætte?"
 
-#: gtkusersetup:492
+#: gtkusersetup:516
+#, python-brace-format
 msgid "Completely remove user's home directory ({0}) with all its contents"
 msgstr "Fjern brugerens hjemmemappe ({0}) med alt dens indhold"
 
-#: gtkusersetup:738
+#: gtkusersetup:769
+#, python-brace-format
 msgid "Group \"{0}\" properties"
 msgstr "Egenskaber for gruppe \"{0}\""
 
-#: gtkusersetup:757
+#: gtkusersetup:788
 msgid "Add new group"
 msgstr "Tilføj ny gruppe"
 
-#: gtkusersetup:782
+#: gtkusersetup:814
+#, python-brace-format
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
 msgstr "Du er i gang med at slette gruppen \"{0}\" fra dit system. Er du sikker på at du vil fortsætte?"
 
-#: gtkusersetup:785
+#: gtkusersetup:818
+#, python-brace-format
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
 msgstr "Gruppen \"{0}\" kan ikke slettes, eftersom den er hovedgruppen for brugeren \"{1}\". Hvis du virkelig vil slette gruppen \"{0}\", bliver du nødt til at angive en ny hovedgruppe for brugeren \"{1}\" først."
 
-#: gtkusersetup:912
+#: gtkusersetup:948
 msgid "Username"
 msgstr "Brugernavn"
 
-#: gtkusersetup:913
+#: gtkusersetup:949
 msgid "Real name"
 msgstr "Rigtigt navn"
 
-#: gtkusersetup:914
+#: gtkusersetup:950
 msgid "Home directory"
 msgstr "Hjemmemappe"
 
-#: gtkusersetup:951
+#: gtkusersetup:993
 msgid "Member"
 msgstr "Medlem"
 
-#: gtkusersetup:952
+#: gtkusersetup:994
 msgid "Group"
 msgstr "Gruppe"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
-msgid "Users and groups"
-msgstr ""
+msgid "Users and Groups"
+msgstr "Håndtér brugere og grupper"

@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2015-10-04 08:34+0000\n"
-"Last-Translator: GabiT. <splanckx@gmail.com>\n"
+"POT-Creation-Date: 2016-09-12 20:18+0300\n"
+"PO-Revision-Date: 2016-09-12 17:21+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Romanian (http://www.transifex.com/gapan/salixtools-gtk/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,314 +17,325 @@ msgstr ""
 "Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-#: gtkusersetup.glade:49
+#: gtkusersetup.ui:49
 msgid "User settings"
 msgstr "Setări user"
 
-#: gtkusersetup.glade:208
+#: gtkusersetup.ui:210
 msgid "Manage groups"
 msgstr "Gestionează grupuri"
 
-#: gtkusersetup.glade:234
+#: gtkusersetup.ui:236
 msgid "Show all users"
 msgstr "Arată toți userii"
 
-#: gtkusersetup.glade:343
+#: gtkusersetup.ui:340
 msgid "<b>Basic information</b>"
 msgstr "<b>Informații elementare</b>"
 
-#: gtkusersetup.glade:362
+#: gtkusersetup.ui:359
 msgid "Username:"
 msgstr "Nume user:"
 
-#: gtkusersetup.glade:371
+#: gtkusersetup.ui:368
 msgid "Real name:"
 msgstr "Nume real:"
 
-#: gtkusersetup.glade:432
+#: gtkusersetup.ui:429
 msgid "User password:"
 msgstr "Parolă user:"
 
-#: gtkusersetup.glade:442
+#: gtkusersetup.ui:439
 msgid "Password confirmation:"
 msgstr "Confirmare parolă:"
 
-#: gtkusersetup.glade:483
+#: gtkusersetup.ui:480
 msgid "View password while typing"
 msgstr "Vezi parola la introducere"
 
-#: gtkusersetup.glade:501
+#: gtkusersetup.ui:498
 msgid "Account"
 msgstr "Cont"
 
-#: gtkusersetup.glade:516
+#: gtkusersetup.ui:513
 msgid "<b>Contact information</b>"
 msgstr "<b>Informații contact</b>"
 
-#: gtkusersetup.glade:536
+#: gtkusersetup.ui:533
 msgid "Office extension:"
 msgstr "Extensie birou:"
 
-#: gtkusersetup.glade:548
+#: gtkusersetup.ui:545
 msgid "Office information:"
 msgstr "Info birou:"
 
-#: gtkusersetup.glade:558
+#: gtkusersetup.ui:555
 msgid "Home phone:"
 msgstr "Telefon acasă:"
 
-#: gtkusersetup.glade:615
+#: gtkusersetup.ui:612
 msgid "Contact"
 msgstr "Contact"
 
-#: gtkusersetup.glade:631
+#: gtkusersetup.ui:628
 msgid "<b>Group membership</b>"
 msgstr "<b>Apartenență grup</b>"
 
-#: gtkusersetup.glade:648
+#: gtkusersetup.ui:645
 msgid "Main group:"
 msgstr "Grup principal:"
 
-#: gtkusersetup.glade:681
+#: gtkusersetup.ui:678
 msgid "Other groups:"
 msgstr "Alte grupuri:"
 
-#: gtkusersetup.glade:753
+#: gtkusersetup.ui:750
 msgid "Groups"
 msgstr "Grupuri"
 
-#: gtkusersetup.glade:769
+#: gtkusersetup.ui:766
 msgid "<b>Advanced settings</b>"
 msgstr "<b>Setări avansate</b>"
 
-#: gtkusersetup.glade:789
+#: gtkusersetup.ui:786
 msgid "Home directory:"
 msgstr "Directorul home:"
 
-#: gtkusersetup.glade:799
+#: gtkusersetup.ui:796
 msgid "Shell:"
 msgstr "Shell:"
 
-#: gtkusersetup.glade:811
+#: gtkusersetup.ui:808
 msgid "UID:"
 msgstr "UID:"
 
-#: gtkusersetup.glade:868
+#: gtkusersetup.ui:865
 msgid "Set account expiration date"
 msgstr "Setează data de expirare a contului"
 
-#: gtkusersetup.glade:904
+#: gtkusersetup.ui:901
 msgid "Advanced"
 msgstr "Avansat"
 
-#: gtkusersetup.glade:973 gtkusersetup.glade:1580
+#: gtkusersetup.ui:970 gtkusersetup.ui:1573
 msgid "Error!"
 msgstr "Eroare!"
 
-#: gtkusersetup.glade:1187
+#: gtkusersetup.ui:1182
 msgid "Group settings"
 msgstr "Setări grup"
 
-#: gtkusersetup.glade:1366
+#: gtkusersetup.ui:1360
 msgid "Group properties"
 msgstr "Proprietăți grup"
 
-#: gtkusersetup.glade:1388
+#: gtkusersetup.ui:1381
 msgid "<b>Basic settings</b>"
 msgstr "<b>Setări de bază</b>"
 
-#: gtkusersetup.glade:1408
+#: gtkusersetup.ui:1401
 msgid "Group name:"
 msgstr "Nume grup:"
 
-#: gtkusersetup.glade:1418
+#: gtkusersetup.ui:1411
 msgid "Group ID:"
 msgstr "ID grup:"
 
-#: gtkusersetup.glade:1464
+#: gtkusersetup.ui:1457
 msgid "<b>Group members</b>"
 msgstr "<b>Membri grup</b>"
 
-#: gtkusersetup.glade:1668
+#: gtkusersetup.ui:1660
 msgid "Delete group?"
 msgstr "Șterg grup?"
 
-#: gtkusersetup.glade:1771
+#: gtkusersetup.ui:1762
 msgid "Cannot delete group"
 msgstr "Nu pot șterge grupul"
 
-#: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.ui:1856 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "Instrument pentru gestionarea userilor și grupurilor"
 
-#: gtkusersetup.glade:2545
+#: gtkusersetup.ui:2534
 msgid "translator-credits"
 msgstr "Creditări translator"
 
-#: gtkusersetup:208
+#: gtkusersetup:222
 msgid "Password is too short. It has to be at least 5 characters long."
 msgstr "Parola este prea scurtă.Trebuie să aibă cel puțin 5 caractere."
 
-#: gtkusersetup:211
+#: gtkusersetup:225
 msgid "Password cannot include the backslash character."
 msgstr "Parola nu poate conține caracterul backslash."
 
-#: gtkusersetup:217
+#: gtkusersetup:231
 msgid "Passwords don't match"
 msgstr "Parolele nu se potrivesc"
 
-#: gtkusersetup:226
+#: gtkusersetup:240
 msgid "Username cannot be empty."
 msgstr "Numele userului trebuie completat"
 
-#: gtkusersetup:229
+#: gtkusersetup:243
 msgid "Username cannot exceed 31 characters"
 msgstr "Numele userului nu poate depăși 31 caractere"
 
-#: gtkusersetup:232
+#: gtkusersetup:246
 msgid "Username cannot include the space character."
 msgstr "Numele userului nu poate include spații"
 
-#: gtkusersetup:235
+#: gtkusersetup:249
 msgid "Username cannot start with a number."
 msgstr "Numele userului nu poate începe cu un număr."
 
-#: gtkusersetup:238
+#: gtkusersetup:252
 msgid "Username cannot start with an underscore."
 msgstr "Numele userului nu poate începe cu liniuță de subliniere."
 
-#: gtkusersetup:241
+#: gtkusersetup:255
 msgid "Username cannot start with a dash."
 msgstr "Numele userului nu poate începe cu liniuță."
 
-#: gtkusersetup:246
+#: gtkusersetup:261
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
 msgstr "Numele userului poate conține doar litere mici,numere, linii și linii de dialog."
 
-#: gtkusersetup:252
+#: gtkusersetup:267
+#, python-brace-format
 msgid "Username \"{0}\" already exists."
 msgstr "Numele userului \"{0}\" există deja."
 
-#: gtkusersetup:262
+#: gtkusersetup:278
 msgid "Group name cannot be empty."
 msgstr "Numele grupului nu poate rămâne necompletat."
 
-#: gtkusersetup:265
+#: gtkusersetup:281
 msgid "Group name cannot exceed 31 characters"
 msgstr "Numele grupului nu poate depăși 31 de caractere"
 
-#: gtkusersetup:268
+#: gtkusersetup:284
 msgid "Group name cannot include the space character."
 msgstr "Numele grupului nu poate include caracterul spațiu."
 
-#: gtkusersetup:271
+#: gtkusersetup:287
 msgid "Group name cannot start with a number."
 msgstr "Numele grupului nu poate începe cu un număr."
 
-#: gtkusersetup:274
+#: gtkusersetup:290
 msgid "Group name cannot start with an underscore."
 msgstr "Numele grupului nu poate începe cu liniuță de subliniere."
 
-#: gtkusersetup:277
+#: gtkusersetup:293
 msgid "Group name cannot start with a dash."
 msgstr "Numele grupului nu poate începe cu liniuță."
 
-#: gtkusersetup:282
+#: gtkusersetup:299
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
 msgstr "Numele grupului poate conține doar litere mici,numere,liniuțe și linii de dialog."
 
-#: gtkusersetup:288
+#: gtkusersetup:305
+#, python-brace-format
 msgid "Group name \"{0}\" already exists."
 msgstr "Numele grupului \"{0}\" există deja."
 
-#: gtkusersetup:298
+#: gtkusersetup:316
 msgid "Shell does not exist."
 msgstr "Shell nu există."
 
-#: gtkusersetup:308
+#: gtkusersetup:326
+#, python-brace-format
 msgid "UID {0} is assigned to another user."
 msgstr "Alt user are deja UID {0}."
 
-#: gtkusersetup:318
+#: gtkusersetup:336
+#, python-brace-format
 msgid "GID {0} is assigned to another group."
 msgstr "Alt grup are deja GID {0}."
 
-#: gtkusersetup:369
+#: gtkusersetup:389
+#, python-brace-format
 msgid "User account properties for \"{0}\""
 msgstr "Proprietățile contului userului pentru \"{0}\""
 
-#: gtkusersetup:376
+#: gtkusersetup:396
 msgid "<b>Set new password</b>"
 msgstr "<b>Setează parolă nouă</b>"
 
-#: gtkusersetup:433
+#: gtkusersetup:454
 msgid "Add new user"
 msgstr "Adaugă user nou"
 
-#: gtkusersetup:440
+#: gtkusersetup:461
 msgid "<b>Set password</b>"
 msgstr "<b>Setează parolă</b>"
 
-#: gtkusersetup:490
+#: gtkusersetup:512
+#, python-brace-format
 msgid "Delete user {0}?"
 msgstr "Ștergi user {0}?"
 
-#: gtkusersetup:491
+#: gtkusersetup:514
+#, python-brace-format
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
 msgstr "Te pregătești să ștergi userul \"{0}\" din sistem.Vrei să continui?"
 
-#: gtkusersetup:492
+#: gtkusersetup:516
+#, python-brace-format
 msgid "Completely remove user's home directory ({0}) with all its contents"
 msgstr "Se sterge directorul userului ({0}) cu tot ce conține"
 
-#: gtkusersetup:738
+#: gtkusersetup:769
+#, python-brace-format
 msgid "Group \"{0}\" properties"
 msgstr "Proprietățile grupului \"{0}\""
 
-#: gtkusersetup:757
+#: gtkusersetup:788
 msgid "Add new group"
 msgstr "Adaugă nou grup"
 
-#: gtkusersetup:782
+#: gtkusersetup:814
+#, python-brace-format
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
 msgstr "Te pregătești să ștergi grupul \"{0}\" din sistem.Vrei să continui?"
 
-#: gtkusersetup:785
+#: gtkusersetup:818
+#, python-brace-format
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
 msgstr "Grupul \"{0}\" nu poate fi șters deoarece este grupul principal al userului \"{1}\" .Dacă vrei să ștergi grupul \"{0}\",trebuie să setezi alt grup principal pentru userul \"{1}\"."
 
-#: gtkusersetup:912
+#: gtkusersetup:948
 msgid "Username"
 msgstr "Nume user"
 
-#: gtkusersetup:913
+#: gtkusersetup:949
 msgid "Real name"
 msgstr "Nume real"
 
-#: gtkusersetup:914
+#: gtkusersetup:950
 msgid "Home directory"
 msgstr "Directorul acasă"
 
-#: gtkusersetup:951
+#: gtkusersetup:993
 msgid "Member"
 msgstr "Membru"
 
-#: gtkusersetup:952
+#: gtkusersetup:994
 msgid "Group"
 msgstr "Grup"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
-msgid "Users and groups"
+msgid "Users and Groups"
 msgstr "Useri și grupuri"

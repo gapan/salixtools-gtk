@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2014-01-17 12:42+0000\n"
-"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
+"POT-Creation-Date: 2016-09-12 20:18+0300\n"
+"PO-Revision-Date: 2016-09-12 17:21+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/gapan/salixtools-gtk/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,314 +18,325 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: gtkusersetup.glade:49
+#: gtkusersetup.ui:49
 msgid "User settings"
 msgstr "Налаштування користувачів"
 
-#: gtkusersetup.glade:208
+#: gtkusersetup.ui:210
 msgid "Manage groups"
 msgstr "Керувати групами"
 
-#: gtkusersetup.glade:234
+#: gtkusersetup.ui:236
 msgid "Show all users"
 msgstr "Показати всіх користувачів"
 
-#: gtkusersetup.glade:343
+#: gtkusersetup.ui:340
 msgid "<b>Basic information</b>"
 msgstr "<b>Базова інформація</b>"
 
-#: gtkusersetup.glade:362
+#: gtkusersetup.ui:359
 msgid "Username:"
 msgstr "Назва користувача:"
 
-#: gtkusersetup.glade:371
+#: gtkusersetup.ui:368
 msgid "Real name:"
 msgstr "Справжнє ім’я:"
 
-#: gtkusersetup.glade:432
+#: gtkusersetup.ui:429
 msgid "User password:"
 msgstr "Пароль користувача:"
 
-#: gtkusersetup.glade:442
+#: gtkusersetup.ui:439
 msgid "Password confirmation:"
 msgstr "Підтвердження паролю:"
 
-#: gtkusersetup.glade:483
+#: gtkusersetup.ui:480
 msgid "View password while typing"
 msgstr "Бачити пароль при вводі"
 
-#: gtkusersetup.glade:501
+#: gtkusersetup.ui:498
 msgid "Account"
 msgstr "Рахунок"
 
-#: gtkusersetup.glade:516
+#: gtkusersetup.ui:513
 msgid "<b>Contact information</b>"
 msgstr "<b>Контактна інформація</b>"
 
-#: gtkusersetup.glade:536
+#: gtkusersetup.ui:533
 msgid "Office extension:"
 msgstr "Робочий телефон:"
 
-#: gtkusersetup.glade:548
+#: gtkusersetup.ui:545
 msgid "Office information:"
 msgstr "Інформація про роботу:"
 
-#: gtkusersetup.glade:558
+#: gtkusersetup.ui:555
 msgid "Home phone:"
 msgstr "Домашній телефон:"
 
-#: gtkusersetup.glade:615
+#: gtkusersetup.ui:612
 msgid "Contact"
 msgstr "Контакт"
 
-#: gtkusersetup.glade:631
+#: gtkusersetup.ui:628
 msgid "<b>Group membership</b>"
 msgstr "<b>Членство в групах</b>"
 
-#: gtkusersetup.glade:648
+#: gtkusersetup.ui:645
 msgid "Main group:"
 msgstr "Головна група:"
 
-#: gtkusersetup.glade:681
+#: gtkusersetup.ui:678
 msgid "Other groups:"
 msgstr "Інші групи:"
 
-#: gtkusersetup.glade:753
+#: gtkusersetup.ui:750
 msgid "Groups"
 msgstr "Групи"
 
-#: gtkusersetup.glade:769
+#: gtkusersetup.ui:766
 msgid "<b>Advanced settings</b>"
 msgstr "<b>Інші налаштування</b>"
 
-#: gtkusersetup.glade:789
+#: gtkusersetup.ui:786
 msgid "Home directory:"
 msgstr "Домашня тека:"
 
-#: gtkusersetup.glade:799
+#: gtkusersetup.ui:796
 msgid "Shell:"
 msgstr "Шел:"
 
-#: gtkusersetup.glade:811
+#: gtkusersetup.ui:808
 msgid "UID:"
 msgstr "UID:"
 
-#: gtkusersetup.glade:868
+#: gtkusersetup.ui:865
 msgid "Set account expiration date"
 msgstr "Встановити дату дії рахунку"
 
-#: gtkusersetup.glade:904
+#: gtkusersetup.ui:901
 msgid "Advanced"
 msgstr "Ігше"
 
-#: gtkusersetup.glade:973 gtkusersetup.glade:1580
+#: gtkusersetup.ui:970 gtkusersetup.ui:1573
 msgid "Error!"
 msgstr "Помилка!"
 
-#: gtkusersetup.glade:1187
+#: gtkusersetup.ui:1182
 msgid "Group settings"
 msgstr "Налаштування групи"
 
-#: gtkusersetup.glade:1366
+#: gtkusersetup.ui:1360
 msgid "Group properties"
 msgstr "Властивості групи"
 
-#: gtkusersetup.glade:1388
+#: gtkusersetup.ui:1381
 msgid "<b>Basic settings</b>"
 msgstr "<b>Базові налаштування</b>"
 
-#: gtkusersetup.glade:1408
+#: gtkusersetup.ui:1401
 msgid "Group name:"
 msgstr "Назва групи"
 
-#: gtkusersetup.glade:1418
+#: gtkusersetup.ui:1411
 msgid "Group ID:"
 msgstr "ID групи:"
 
-#: gtkusersetup.glade:1464
+#: gtkusersetup.ui:1457
 msgid "<b>Group members</b>"
 msgstr "<b>Члени групи</b>"
 
-#: gtkusersetup.glade:1668
+#: gtkusersetup.ui:1660
 msgid "Delete group?"
 msgstr "Видалити групу?"
 
-#: gtkusersetup.glade:1771
+#: gtkusersetup.ui:1762
 msgid "Cannot delete group"
 msgstr "Не можу видалити групу"
 
-#: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.ui:1856 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "Інструмент керування користувачами і групами"
 
-#: gtkusersetup.glade:2545
+#: gtkusersetup.ui:2534
 msgid "translator-credits"
 msgstr "Yarema aka Knedlyk <yupadmin@gmail.com>"
 
-#: gtkusersetup:208
+#: gtkusersetup:222
 msgid "Password is too short. It has to be at least 5 characters long."
 msgstr "Пароль закороткий. Він повинен містити щонайменше 5 символів."
 
-#: gtkusersetup:211
+#: gtkusersetup:225
 msgid "Password cannot include the backslash character."
 msgstr "Пароль не повинен містити символ \"\"."
 
-#: gtkusersetup:217
+#: gtkusersetup:231
 msgid "Passwords don't match"
 msgstr "Паролі не збігаються"
 
-#: gtkusersetup:226
+#: gtkusersetup:240
 msgid "Username cannot be empty."
 msgstr "Назва користувача не може бути пустою."
 
-#: gtkusersetup:229
+#: gtkusersetup:243
 msgid "Username cannot exceed 31 characters"
 msgstr "Назва користувача перевищує 31 символ"
 
-#: gtkusersetup:232
+#: gtkusersetup:246
 msgid "Username cannot include the space character."
 msgstr "Назва користувача не може містити символ пропуску."
 
-#: gtkusersetup:235
+#: gtkusersetup:249
 msgid "Username cannot start with a number."
 msgstr "Назва користувача не може починатися з цифри."
 
-#: gtkusersetup:238
+#: gtkusersetup:252
 msgid "Username cannot start with an underscore."
 msgstr "Назва користувача не може починатися з символу підкреслення."
 
-#: gtkusersetup:241
+#: gtkusersetup:255
 msgid "Username cannot start with a dash."
 msgstr "Назва користувача не може починатися з тире."
 
-#: gtkusersetup:246
+#: gtkusersetup:261
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
 msgstr "Назва користувача може складатися тільки з латинських малих літер, цифр, тире та підкреслення."
 
-#: gtkusersetup:252
+#: gtkusersetup:267
+#, python-brace-format
 msgid "Username \"{0}\" already exists."
 msgstr "Назва користувача \"{0}\" вже існує."
 
-#: gtkusersetup:262
+#: gtkusersetup:278
 msgid "Group name cannot be empty."
 msgstr "Назва групи не може бути пустою."
 
-#: gtkusersetup:265
+#: gtkusersetup:281
 msgid "Group name cannot exceed 31 characters"
 msgstr "Назва групи не може перевищувати 31 символ"
 
-#: gtkusersetup:268
+#: gtkusersetup:284
 msgid "Group name cannot include the space character."
 msgstr "Назва групи не може містити символ пропуску."
 
-#: gtkusersetup:271
+#: gtkusersetup:287
 msgid "Group name cannot start with a number."
 msgstr "Назва групи не може починатися з цифри."
 
-#: gtkusersetup:274
+#: gtkusersetup:290
 msgid "Group name cannot start with an underscore."
 msgstr "Назва групи не може починатися з підкреслення."
 
-#: gtkusersetup:277
+#: gtkusersetup:293
 msgid "Group name cannot start with a dash."
 msgstr "Назва групи не може починатися з тире."
 
-#: gtkusersetup:282
+#: gtkusersetup:299
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
 msgstr "Назва групи може складатися лише з латинських малих літер, цифр, тире та підкреслення."
 
-#: gtkusersetup:288
+#: gtkusersetup:305
+#, python-brace-format
 msgid "Group name \"{0}\" already exists."
 msgstr "Назва групи \"{0}\" вже існує."
 
-#: gtkusersetup:298
+#: gtkusersetup:316
 msgid "Shell does not exist."
 msgstr "Шел не існує."
 
-#: gtkusersetup:308
+#: gtkusersetup:326
+#, python-brace-format
 msgid "UID {0} is assigned to another user."
 msgstr "UID {0} належить іншому користувачеві."
 
-#: gtkusersetup:318
+#: gtkusersetup:336
+#, python-brace-format
 msgid "GID {0} is assigned to another group."
 msgstr "GID {0} належить іншій групі."
 
-#: gtkusersetup:369
+#: gtkusersetup:389
+#, python-brace-format
 msgid "User account properties for \"{0}\""
 msgstr "Властивості рахунку користувача для \"{0}\""
 
-#: gtkusersetup:376
+#: gtkusersetup:396
 msgid "<b>Set new password</b>"
 msgstr "<b>Встановити новий пароль</b>"
 
-#: gtkusersetup:433
+#: gtkusersetup:454
 msgid "Add new user"
 msgstr "Додати нового користувача"
 
-#: gtkusersetup:440
+#: gtkusersetup:461
 msgid "<b>Set password</b>"
 msgstr "<b>Встановити пароль</b>"
 
-#: gtkusersetup:490
+#: gtkusersetup:512
+#, python-brace-format
 msgid "Delete user {0}?"
 msgstr "Видалити користувача {0}?"
 
-#: gtkusersetup:491
+#: gtkusersetup:514
+#, python-brace-format
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
 msgstr "Ви збираєтеся видалити рахунок користувача \"{0}\" з системи. Ви дійсно бажаєте продовжувати?"
 
-#: gtkusersetup:492
+#: gtkusersetup:516
+#, python-brace-format
 msgid "Completely remove user's home directory ({0}) with all its contents"
 msgstr "Повністю видалити домашню теку користувача ({0}) з усім її вмістом"
 
-#: gtkusersetup:738
+#: gtkusersetup:769
+#, python-brace-format
 msgid "Group \"{0}\" properties"
 msgstr "Властивості групи \"{0}\""
 
-#: gtkusersetup:757
+#: gtkusersetup:788
 msgid "Add new group"
 msgstr "Додати нову групу"
 
-#: gtkusersetup:782
+#: gtkusersetup:814
+#, python-brace-format
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
 msgstr "Ви збираєтеся видалити групу \"{0}\" з системи. Ви дійсно бажаєте продовжувати?"
 
-#: gtkusersetup:785
+#: gtkusersetup:818
+#, python-brace-format
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
 msgstr "Групу \"{0}\" неможливо видалити з системи, оскільки це основна група для користувача \"{1}\". Якщо Ви бажаєте видалити групу \"{0}\", Вам потрібно спочатку встановити іншу групу як основну для користувача \"{1}\"."
 
-#: gtkusersetup:912
+#: gtkusersetup:948
 msgid "Username"
 msgstr "Назва користувача"
 
-#: gtkusersetup:913
+#: gtkusersetup:949
 msgid "Real name"
 msgstr "Справжнє ім’я"
 
-#: gtkusersetup:914
+#: gtkusersetup:950
 msgid "Home directory"
 msgstr "Домашня тека"
 
-#: gtkusersetup:951
+#: gtkusersetup:993
 msgid "Member"
 msgstr "Членство"
 
-#: gtkusersetup:952
+#: gtkusersetup:994
 msgid "Group"
 msgstr "Група"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
-msgid "Users and groups"
+msgid "Users and Groups"
 msgstr "Користувачі і групи"

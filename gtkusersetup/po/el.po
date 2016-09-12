@@ -4,12 +4,13 @@
 # 
 # Translators:
 # gapan <vlahavas@gmail.com>, 2015
+# gapan <vlahavas@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2015-08-19 16:30+0000\n"
+"POT-Creation-Date: 2016-09-12 20:18+0300\n"
+"PO-Revision-Date: 2016-09-12 17:21+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salixtools-gtk/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -18,314 +19,325 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gtkusersetup.glade:49
+#: gtkusersetup.ui:49
 msgid "User settings"
 msgstr "Ρυθμίσεις χρηστών"
 
-#: gtkusersetup.glade:208
+#: gtkusersetup.ui:210
 msgid "Manage groups"
 msgstr "Διαχείριση ομάδων"
 
-#: gtkusersetup.glade:234
+#: gtkusersetup.ui:236
 msgid "Show all users"
 msgstr "Εμφάνιση όλων των χρηστών"
 
-#: gtkusersetup.glade:343
+#: gtkusersetup.ui:340
 msgid "<b>Basic information</b>"
 msgstr "<b>Βασικές πληροφορίες</b>"
 
-#: gtkusersetup.glade:362
+#: gtkusersetup.ui:359
 msgid "Username:"
 msgstr "Όνομα χρήστη:"
 
-#: gtkusersetup.glade:371
+#: gtkusersetup.ui:368
 msgid "Real name:"
 msgstr "Πραγματικό όνομα:"
 
-#: gtkusersetup.glade:432
+#: gtkusersetup.ui:429
 msgid "User password:"
 msgstr "Κωδικός χρήστη:"
 
-#: gtkusersetup.glade:442
+#: gtkusersetup.ui:439
 msgid "Password confirmation:"
 msgstr "Επαλήθευση κωδικού:"
 
-#: gtkusersetup.glade:483
+#: gtkusersetup.ui:480
 msgid "View password while typing"
 msgstr "Εμφάνιση κωδικού κατά την πληκτρολόγηση"
 
-#: gtkusersetup.glade:501
+#: gtkusersetup.ui:498
 msgid "Account"
 msgstr "Λογαριασμός"
 
-#: gtkusersetup.glade:516
+#: gtkusersetup.ui:513
 msgid "<b>Contact information</b>"
 msgstr "<b>Πληροφορίες επικοινωνίας</b>"
 
-#: gtkusersetup.glade:536
+#: gtkusersetup.ui:533
 msgid "Office extension:"
 msgstr "Τηλέφωνο εργασίας:"
 
-#: gtkusersetup.glade:548
+#: gtkusersetup.ui:545
 msgid "Office information:"
 msgstr "Πληροφορίες εργασίας:"
 
-#: gtkusersetup.glade:558
+#: gtkusersetup.ui:555
 msgid "Home phone:"
 msgstr "Τηλέφωνο σπιτιού:"
 
-#: gtkusersetup.glade:615
+#: gtkusersetup.ui:612
 msgid "Contact"
 msgstr "Επικοινωνία"
 
-#: gtkusersetup.glade:631
+#: gtkusersetup.ui:628
 msgid "<b>Group membership</b>"
 msgstr "<b>Συμμετοχή σε ομάδες</b>"
 
-#: gtkusersetup.glade:648
+#: gtkusersetup.ui:645
 msgid "Main group:"
 msgstr "Κύρια ομάδα:"
 
-#: gtkusersetup.glade:681
+#: gtkusersetup.ui:678
 msgid "Other groups:"
 msgstr "Άλλες ομάδες:"
 
-#: gtkusersetup.glade:753
+#: gtkusersetup.ui:750
 msgid "Groups"
 msgstr "Ομάδες"
 
-#: gtkusersetup.glade:769
+#: gtkusersetup.ui:766
 msgid "<b>Advanced settings</b>"
 msgstr "<b>Προχωρημένες ρυθμίσεις</b>"
 
-#: gtkusersetup.glade:789
+#: gtkusersetup.ui:786
 msgid "Home directory:"
 msgstr "Αρχικός κατάλογος:"
 
-#: gtkusersetup.glade:799
+#: gtkusersetup.ui:796
 msgid "Shell:"
 msgstr "Κέλυφος:"
 
-#: gtkusersetup.glade:811
+#: gtkusersetup.ui:808
 msgid "UID:"
 msgstr "UID:"
 
-#: gtkusersetup.glade:868
+#: gtkusersetup.ui:865
 msgid "Set account expiration date"
 msgstr "Λήξη λογαριασμού"
 
-#: gtkusersetup.glade:904
+#: gtkusersetup.ui:901
 msgid "Advanced"
 msgstr "Για προχωρημένους"
 
-#: gtkusersetup.glade:973 gtkusersetup.glade:1580
+#: gtkusersetup.ui:970 gtkusersetup.ui:1573
 msgid "Error!"
 msgstr "Σφάλμα!"
 
-#: gtkusersetup.glade:1187
+#: gtkusersetup.ui:1182
 msgid "Group settings"
 msgstr "Ρυθμίσεις ομάδων"
 
-#: gtkusersetup.glade:1366
+#: gtkusersetup.ui:1360
 msgid "Group properties"
 msgstr "Ιδιότητες ομάδας"
 
-#: gtkusersetup.glade:1388
+#: gtkusersetup.ui:1381
 msgid "<b>Basic settings</b>"
 msgstr "<b>Βασικές ρυθμίσεις</b>"
 
-#: gtkusersetup.glade:1408
+#: gtkusersetup.ui:1401
 msgid "Group name:"
 msgstr "Όνομα ομάδας:"
 
-#: gtkusersetup.glade:1418
+#: gtkusersetup.ui:1411
 msgid "Group ID:"
 msgstr "Κωδικός ομάδας:"
 
-#: gtkusersetup.glade:1464
+#: gtkusersetup.ui:1457
 msgid "<b>Group members</b>"
 msgstr "<b>Μέλη ομάδας</b>"
 
-#: gtkusersetup.glade:1668
+#: gtkusersetup.ui:1660
 msgid "Delete group?"
 msgstr "Διαγραφή ομάδας;"
 
-#: gtkusersetup.glade:1771
+#: gtkusersetup.ui:1762
 msgid "Cannot delete group"
 msgstr "Δεν είναι δυνατή η διαγραφή της ομάδας"
 
-#: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.ui:1856 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "Εργαλείο για τη διαχείριση των χρηστών και των ομάδων χρηστών του συστήματος"
 
-#: gtkusersetup.glade:2545
+#: gtkusersetup.ui:2534
 msgid "translator-credits"
 msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
-#: gtkusersetup:208
+#: gtkusersetup:222
 msgid "Password is too short. It has to be at least 5 characters long."
 msgstr "Ο κωδικός είναι πολύ μικρός. Πρέπει να έχει μήκος τουλάχιστον 5 χαρακτήρες."
 
-#: gtkusersetup:211
+#: gtkusersetup:225
 msgid "Password cannot include the backslash character."
 msgstr "Ο κωδικός δεν μπορεί να περιλαμβάνει το χαρακτήρα της ανάποδης καθέτου."
 
-#: gtkusersetup:217
+#: gtkusersetup:231
 msgid "Passwords don't match"
 msgstr "Οι κωδικοί δεν είναι ίδιοι."
 
-#: gtkusersetup:226
+#: gtkusersetup:240
 msgid "Username cannot be empty."
 msgstr "Το όνομα χρήστη δεν μπορεί να είναι κενό."
 
-#: gtkusersetup:229
+#: gtkusersetup:243
 msgid "Username cannot exceed 31 characters"
 msgstr "Το όνομα χρήστη δεν μπορεί να έχει μήκος μεγαλύτερο από 31 χαρακτήρες."
 
-#: gtkusersetup:232
+#: gtkusersetup:246
 msgid "Username cannot include the space character."
 msgstr "Το όνομα χρήστη δεν μπορεί να περιλαμβάνει κενούς χαρακτήρες."
 
-#: gtkusersetup:235
+#: gtkusersetup:249
 msgid "Username cannot start with a number."
 msgstr "Το όνομα χρήστη δεν μπορεί να ξεκινά με αριθμό."
 
-#: gtkusersetup:238
+#: gtkusersetup:252
 msgid "Username cannot start with an underscore."
 msgstr "Το όνομα χρήστη δεν μπορεί να ξεκινά με υπογράμμιση."
 
-#: gtkusersetup:241
+#: gtkusersetup:255
 msgid "Username cannot start with a dash."
 msgstr "Το όνομα χρήστη δεν μπορεί να ξεκινά με παύλα."
 
-#: gtkusersetup:246
+#: gtkusersetup:261
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
 msgstr "Το όνομα χρήστη θα πρέπει να περιλαμβάνει μόνο πεζά λατινικά γράμματα, αριθμούς, παύλες και υπογραμμίσεις."
 
-#: gtkusersetup:252
+#: gtkusersetup:267
+#, python-brace-format
 msgid "Username \"{0}\" already exists."
 msgstr "Το όνομα χρήστη \"{0}\" υπάρχει ήδη."
 
-#: gtkusersetup:262
+#: gtkusersetup:278
 msgid "Group name cannot be empty."
 msgstr "Το όνομα ομάδας δεν μπορεί να είναι κενό."
 
-#: gtkusersetup:265
+#: gtkusersetup:281
 msgid "Group name cannot exceed 31 characters"
 msgstr "Το όνομα ομάδας δεν μπορεί να έχει μήκος μεγαλύτερο από 31 χαρακτήρες."
 
-#: gtkusersetup:268
+#: gtkusersetup:284
 msgid "Group name cannot include the space character."
 msgstr "Το όνομα ομάδας δεν μπορεί να περιλαμβάνει κενούς χαρακτήρες."
 
-#: gtkusersetup:271
+#: gtkusersetup:287
 msgid "Group name cannot start with a number."
 msgstr "Το όνομα ομάδας δεν μπορεί να ξεκινά με αριθμό."
 
-#: gtkusersetup:274
+#: gtkusersetup:290
 msgid "Group name cannot start with an underscore."
 msgstr "Το όνομα ομάδας δεν μπορεί να ξεκινά με υπογράμμιση."
 
-#: gtkusersetup:277
+#: gtkusersetup:293
 msgid "Group name cannot start with a dash."
 msgstr "Το όνομα ομάδας δεν μπορεί να ξεκινά με παύλα."
 
-#: gtkusersetup:282
+#: gtkusersetup:299
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
 msgstr "Το όνομα ομάδας μπορεί να περιλαμβάνει μόνο πεζά λατινικά γράμματα, αριθμούς, παύλες και υπογραμμίσεις."
 
-#: gtkusersetup:288
+#: gtkusersetup:305
+#, python-brace-format
 msgid "Group name \"{0}\" already exists."
 msgstr "Η ομάδα \"{0}\" υπάρχει ήδη."
 
-#: gtkusersetup:298
+#: gtkusersetup:316
 msgid "Shell does not exist."
 msgstr "Το κέλυφος δεν υπάρχει."
 
-#: gtkusersetup:308
+#: gtkusersetup:326
+#, python-brace-format
 msgid "UID {0} is assigned to another user."
 msgstr "Το UID {0} χρησιμοποιείται ήδη από άλλο χρήστη."
 
-#: gtkusersetup:318
+#: gtkusersetup:336
+#, python-brace-format
 msgid "GID {0} is assigned to another group."
 msgstr "Ο κωδικός ομάδας {0} χρησιμοποιείται ήδη από άλλη ομάδα."
 
-#: gtkusersetup:369
+#: gtkusersetup:389
+#, python-brace-format
 msgid "User account properties for \"{0}\""
 msgstr "Ιδιότητες λογαριασμού για το χρήστη \"{0}\""
 
-#: gtkusersetup:376
+#: gtkusersetup:396
 msgid "<b>Set new password</b>"
 msgstr "<b>Εισαγωγή νέου κωδικού χρήστη</b>"
 
-#: gtkusersetup:433
+#: gtkusersetup:454
 msgid "Add new user"
 msgstr "Προσθήκη νέου χρήστη"
 
-#: gtkusersetup:440
+#: gtkusersetup:461
 msgid "<b>Set password</b>"
 msgstr "<b>Εισαγωγή κωδικού χρήστη</b>"
 
-#: gtkusersetup:490
+#: gtkusersetup:512
+#, python-brace-format
 msgid "Delete user {0}?"
 msgstr "Διαγραφή του χρήστη {0};"
 
-#: gtkusersetup:491
+#: gtkusersetup:514
+#, python-brace-format
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
 msgstr "Είστε έτοιμοι να διαγράψετε το λογαριασμό του χρήστη \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
 
-#: gtkusersetup:492
+#: gtkusersetup:516
+#, python-brace-format
 msgid "Completely remove user's home directory ({0}) with all its contents"
 msgstr "Απομάκρυνση του αρχικού καταλόγου του χρήστη ({0}) με όλα τα περιεχόμενά του."
 
-#: gtkusersetup:738
+#: gtkusersetup:769
+#, python-brace-format
 msgid "Group \"{0}\" properties"
 msgstr "Ιδιότητες ομάδας \"{0}\""
 
-#: gtkusersetup:757
+#: gtkusersetup:788
 msgid "Add new group"
 msgstr "Προσθήκη νέας ομάδας"
 
-#: gtkusersetup:782
+#: gtkusersetup:814
+#, python-brace-format
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
 msgstr "Είστε έτοιμοι να διαγράψετε την ομάδα \"{0}\" από το σύστημά σας. Θέλετε πραγματικά να συνεχίσετε;"
 
-#: gtkusersetup:785
+#: gtkusersetup:818
+#, python-brace-format
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
 msgstr "Η ομάδα \"{0}\" δεν μπορεί να διαγραφεί, επειδή είναι η κύρια ομάδα για το χρήστη \"{1}\". Αν επιθυμείτε να διαγράψετε την ομάδα \"{0}\", θα πρέπει πρώτα να αλλάξετε την κύρια ομάδα του χρήστη \"{1}\"."
 
-#: gtkusersetup:912
+#: gtkusersetup:948
 msgid "Username"
 msgstr "Όνομα χρήστη"
 
-#: gtkusersetup:913
+#: gtkusersetup:949
 msgid "Real name"
 msgstr "Πραγματικό όνομα"
 
-#: gtkusersetup:914
+#: gtkusersetup:950
 msgid "Home directory"
 msgstr "Αρχικός κατάλογος"
 
-#: gtkusersetup:951
+#: gtkusersetup:993
 msgid "Member"
 msgstr "Μέλος"
 
-#: gtkusersetup:952
+#: gtkusersetup:994
 msgid "Group"
 msgstr "Ομάδα"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
-msgid "Users and groups"
+msgid "Users and Groups"
 msgstr "Χρήστες και ομάδες"

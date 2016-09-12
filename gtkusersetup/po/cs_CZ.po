@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Jiří Vírava <appukonrad@gmail.com>, 2013
-# Jiří Vírava <appukonrad@gmail.com>, 2014
+# Jiří Vírava <appukonrad@gmail.com>, 2013-2014
 # Jiří Vírava <appukonrad@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 20:43+0300\n"
-"PO-Revision-Date: 2014-02-05 09:23+0000\n"
-"Last-Translator: Jiří Vírava <appukonrad@gmail.com>\n"
+"POT-Creation-Date: 2016-09-12 20:18+0300\n"
+"PO-Revision-Date: 2016-09-12 17:21+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Czech (Czech Republic) (http://www.transifex.com/gapan/salixtools-gtk/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,314 +20,325 @@ msgstr ""
 "Language: cs_CZ\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: gtkusersetup.glade:49
+#: gtkusersetup.ui:49
 msgid "User settings"
 msgstr "Uživatelské nastavení"
 
-#: gtkusersetup.glade:208
+#: gtkusersetup.ui:210
 msgid "Manage groups"
 msgstr "Správa skupin"
 
-#: gtkusersetup.glade:234
+#: gtkusersetup.ui:236
 msgid "Show all users"
 msgstr "Zobrazit všechny uživatele"
 
-#: gtkusersetup.glade:343
+#: gtkusersetup.ui:340
 msgid "<b>Basic information</b>"
 msgstr "<b>Základní informace</b>"
 
-#: gtkusersetup.glade:362
+#: gtkusersetup.ui:359
 msgid "Username:"
 msgstr "Uživatelské jméno"
 
-#: gtkusersetup.glade:371
+#: gtkusersetup.ui:368
 msgid "Real name:"
 msgstr "Skutečné jméno:"
 
-#: gtkusersetup.glade:432
+#: gtkusersetup.ui:429
 msgid "User password:"
 msgstr "Uživatelské heslo:"
 
-#: gtkusersetup.glade:442
+#: gtkusersetup.ui:439
 msgid "Password confirmation:"
 msgstr "Potvrzení hesla:"
 
-#: gtkusersetup.glade:483
+#: gtkusersetup.ui:480
 msgid "View password while typing"
 msgstr "Zobrazit heslo při psaní"
 
-#: gtkusersetup.glade:501
+#: gtkusersetup.ui:498
 msgid "Account"
 msgstr "Účet"
 
-#: gtkusersetup.glade:516
+#: gtkusersetup.ui:513
 msgid "<b>Contact information</b>"
 msgstr "<b>Kontaktní informace</b>"
 
-#: gtkusersetup.glade:536
+#: gtkusersetup.ui:533
 msgid "Office extension:"
 msgstr "Společnost rozšířené:"
 
-#: gtkusersetup.glade:548
+#: gtkusersetup.ui:545
 msgid "Office information:"
 msgstr "Informace o společnosti"
 
-#: gtkusersetup.glade:558
+#: gtkusersetup.ui:555
 msgid "Home phone:"
 msgstr "Telefon domů:"
 
-#: gtkusersetup.glade:615
+#: gtkusersetup.ui:612
 msgid "Contact"
 msgstr "Kontakt"
 
-#: gtkusersetup.glade:631
+#: gtkusersetup.ui:628
 msgid "<b>Group membership</b>"
 msgstr "<b>Členství ve skupině</b>"
 
-#: gtkusersetup.glade:648
+#: gtkusersetup.ui:645
 msgid "Main group:"
 msgstr "Hlavní skupina:"
 
-#: gtkusersetup.glade:681
+#: gtkusersetup.ui:678
 msgid "Other groups:"
 msgstr "Další skupiny:"
 
-#: gtkusersetup.glade:753
+#: gtkusersetup.ui:750
 msgid "Groups"
 msgstr "Skupiny"
 
-#: gtkusersetup.glade:769
+#: gtkusersetup.ui:766
 msgid "<b>Advanced settings</b>"
 msgstr "<b>Pokročilé nastavení</b>"
 
-#: gtkusersetup.glade:789
+#: gtkusersetup.ui:786
 msgid "Home directory:"
 msgstr "Domovský adresář:"
 
-#: gtkusersetup.glade:799
+#: gtkusersetup.ui:796
 msgid "Shell:"
 msgstr "Shell:"
 
-#: gtkusersetup.glade:811
+#: gtkusersetup.ui:808
 msgid "UID:"
 msgstr "UID:"
 
-#: gtkusersetup.glade:868
+#: gtkusersetup.ui:865
 msgid "Set account expiration date"
 msgstr "Nastavení datum vypršení platnosti účtu"
 
-#: gtkusersetup.glade:904
+#: gtkusersetup.ui:901
 msgid "Advanced"
 msgstr "Pokročilé"
 
-#: gtkusersetup.glade:973 gtkusersetup.glade:1580
+#: gtkusersetup.ui:970 gtkusersetup.ui:1573
 msgid "Error!"
 msgstr "Chyba!"
 
-#: gtkusersetup.glade:1187
+#: gtkusersetup.ui:1182
 msgid "Group settings"
 msgstr "Nastavení skupiny"
 
-#: gtkusersetup.glade:1366
+#: gtkusersetup.ui:1360
 msgid "Group properties"
 msgstr "Vlastnosti skupiny"
 
-#: gtkusersetup.glade:1388
+#: gtkusersetup.ui:1381
 msgid "<b>Basic settings</b>"
 msgstr "<b>Základní nastavení</b>"
 
-#: gtkusersetup.glade:1408
+#: gtkusersetup.ui:1401
 msgid "Group name:"
 msgstr "Název skupiny:"
 
-#: gtkusersetup.glade:1418
+#: gtkusersetup.ui:1411
 msgid "Group ID:"
 msgstr "ID skupiny:"
 
-#: gtkusersetup.glade:1464
+#: gtkusersetup.ui:1457
 msgid "<b>Group members</b>"
 msgstr "<b>Členové skupiny</b>"
 
-#: gtkusersetup.glade:1668
+#: gtkusersetup.ui:1660
 msgid "Delete group?"
 msgstr "Smazat skupinu?"
 
-#: gtkusersetup.glade:1771
+#: gtkusersetup.ui:1762
 msgid "Cannot delete group"
 msgstr "Nelze smazat skupinu"
 
-#: gtkusersetup.glade:1867 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.ui:1856 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "Nástroj pro řízení uživatelů a skupin"
 
-#: gtkusersetup.glade:2545
+#: gtkusersetup.ui:2534
 msgid "translator-credits"
 msgstr "zásluha na překladu"
 
-#: gtkusersetup:208
+#: gtkusersetup:222
 msgid "Password is too short. It has to be at least 5 characters long."
 msgstr "Heslo je příliš krátké. Musí být alespoň 5 znaků dlouhé."
 
-#: gtkusersetup:211
+#: gtkusersetup:225
 msgid "Password cannot include the backslash character."
 msgstr "Heslo nesmí obsahovat znak zpětného lomítka."
 
-#: gtkusersetup:217
+#: gtkusersetup:231
 msgid "Passwords don't match"
 msgstr "Hesla se neshodují"
 
-#: gtkusersetup:226
+#: gtkusersetup:240
 msgid "Username cannot be empty."
 msgstr "Uživatelské jméno nesmí být prázdné."
 
-#: gtkusersetup:229
+#: gtkusersetup:243
 msgid "Username cannot exceed 31 characters"
 msgstr "Uživatelské jméno nesmí být delší než 31 znaků"
 
-#: gtkusersetup:232
+#: gtkusersetup:246
 msgid "Username cannot include the space character."
 msgstr "Uživatelské jméno nemůže obsahovat znak mezery."
 
-#: gtkusersetup:235
+#: gtkusersetup:249
 msgid "Username cannot start with a number."
 msgstr "Uživatelské jméno nesmí začínat číslem."
 
-#: gtkusersetup:238
+#: gtkusersetup:252
 msgid "Username cannot start with an underscore."
 msgstr "Uživatelské jméno nesmí začínat podtržítkem."
 
-#: gtkusersetup:241
+#: gtkusersetup:255
 msgid "Username cannot start with a dash."
 msgstr "Uživatelské jméno nesmí začínat pomlčkou."
 
-#: gtkusersetup:246
+#: gtkusersetup:261
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
 msgstr "Uživatelské jméno může obsahovat pouze latinské malé písmena, číslice, pomlčky a podtržítka."
 
-#: gtkusersetup:252
+#: gtkusersetup:267
+#, python-brace-format
 msgid "Username \"{0}\" already exists."
 msgstr "Uživatelské jméno \"{0}\" již existuje."
 
-#: gtkusersetup:262
+#: gtkusersetup:278
 msgid "Group name cannot be empty."
 msgstr "Název skupiny nemůže být prázdný."
 
-#: gtkusersetup:265
+#: gtkusersetup:281
 msgid "Group name cannot exceed 31 characters"
 msgstr "Název skupiny nesmí přesáhnout 31 znaků"
 
-#: gtkusersetup:268
+#: gtkusersetup:284
 msgid "Group name cannot include the space character."
 msgstr "Název skupiny nemůže obsahovat znak mezery."
 
-#: gtkusersetup:271
+#: gtkusersetup:287
 msgid "Group name cannot start with a number."
 msgstr "Název skupiny nemůže začínat číslem."
 
-#: gtkusersetup:274
+#: gtkusersetup:290
 msgid "Group name cannot start with an underscore."
 msgstr "Název skupiny nemůže začínat podtržítkem."
 
-#: gtkusersetup:277
+#: gtkusersetup:293
 msgid "Group name cannot start with a dash."
 msgstr "Název skupiny nemůže začít pomlčkou."
 
-#: gtkusersetup:282
+#: gtkusersetup:299
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
 msgstr "Název skupiny  může obsahovat pouze latinské malé písmena, číslice, pomlčky a podtržítka."
 
-#: gtkusersetup:288
+#: gtkusersetup:305
+#, python-brace-format
 msgid "Group name \"{0}\" already exists."
 msgstr "Název skupiny \"{0}\" již existuje."
 
-#: gtkusersetup:298
+#: gtkusersetup:316
 msgid "Shell does not exist."
 msgstr "Shell neexistuje."
 
-#: gtkusersetup:308
+#: gtkusersetup:326
+#, python-brace-format
 msgid "UID {0} is assigned to another user."
 msgstr "UID {0} je přiřazen jinému uživateli."
 
-#: gtkusersetup:318
+#: gtkusersetup:336
+#, python-brace-format
 msgid "GID {0} is assigned to another group."
 msgstr "GID {0} je přiřazen k jiné skupině."
 
-#: gtkusersetup:369
+#: gtkusersetup:389
+#, python-brace-format
 msgid "User account properties for \"{0}\""
 msgstr "Vlastnosti uživatelského účtů pro \"{0}\""
 
-#: gtkusersetup:376
+#: gtkusersetup:396
 msgid "<b>Set new password</b>"
 msgstr "<b>Nastavit nové heslo</b>"
 
-#: gtkusersetup:433
+#: gtkusersetup:454
 msgid "Add new user"
 msgstr "Přidat nového uživatele"
 
-#: gtkusersetup:440
+#: gtkusersetup:461
 msgid "<b>Set password</b>"
 msgstr "<b>Nastavit heslo</b>"
 
-#: gtkusersetup:490
+#: gtkusersetup:512
+#, python-brace-format
 msgid "Delete user {0}?"
 msgstr "Smazat uživatele {0}?"
 
-#: gtkusersetup:491
+#: gtkusersetup:514
+#, python-brace-format
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
 msgstr "Chystáte se odstranit uživatelský účet \"{0}\" z vašeho systému. Opravdu chcete pokračovat?"
 
-#: gtkusersetup:492
+#: gtkusersetup:516
+#, python-brace-format
 msgid "Completely remove user's home directory ({0}) with all its contents"
 msgstr "Zcela odstranit domovský adresář uživatele ({0}) s celým jeho obsahem"
 
-#: gtkusersetup:738
+#: gtkusersetup:769
+#, python-brace-format
 msgid "Group \"{0}\" properties"
 msgstr "Vlastnosti skupiny \"{0}\""
 
-#: gtkusersetup:757
+#: gtkusersetup:788
 msgid "Add new group"
 msgstr "Přidat novou skupinu"
 
-#: gtkusersetup:782
+#: gtkusersetup:814
+#, python-brace-format
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
 msgstr "Chystáte se odstranit \"{0}\" skupinu z vašeho systému. Jste si jisti, že chcete pokračovat?"
 
-#: gtkusersetup:785
+#: gtkusersetup:818
+#, python-brace-format
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
 " you want to delete group \"{0}\", you have to set the main group for user "
 "\"{1}\" to another group first."
 msgstr "Skupinu \"{0}\" nelze smazat, protože je hlavní skupinou pro uživatele \"{1}\". Pokud chcete odstranit skupinu \"{0}\", musíte nejprve nastavit jinou hlavní skupinu pro uživatele \"{1}\"."
 
-#: gtkusersetup:912
+#: gtkusersetup:948
 msgid "Username"
 msgstr "Uživatelské jméno"
 
-#: gtkusersetup:913
+#: gtkusersetup:949
 msgid "Real name"
 msgstr "Skutečné jméno"
 
-#: gtkusersetup:914
+#: gtkusersetup:950
 msgid "Home directory"
 msgstr "Domovský adresář"
 
-#: gtkusersetup:951
+#: gtkusersetup:993
 msgid "Member"
 msgstr "Člen"
 
-#: gtkusersetup:952
+#: gtkusersetup:994
 msgid "Group"
 msgstr "Skupina"
 
 #: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
-msgid "Users and groups"
+msgid "Users and Groups"
 msgstr "Uživatelé a skupiny"
