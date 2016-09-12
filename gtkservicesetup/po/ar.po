@@ -4,12 +4,13 @@
 # 
 # Translators:
 # cobraJoker <cobra.the.joker@gmail.com>, 2011
+# gapan <vlahavas@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2014-01-17 09:23+0000\n"
+"POT-Creation-Date: 2016-09-12 11:21+0300\n"
+"PO-Revision-Date: 2016-09-12 08:25+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/gapan/salixtools-gtk/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -18,39 +19,40 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
-#: gtkservicesetup-kde.desktop.in.h:2
-msgid "System services"
-msgstr ""
+#: gtkservicesetup.ui:21 gtkservicesetup.desktop.in.h:1
+#: gtkservicesetup-kde.desktop.in.h:1
+msgid "System Services"
+msgstr "خدمات النظام"
 
-#: gtkservicesetup.glade:67
+#: gtkservicesetup.ui:152
 msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
 msgstr "الرجاء اختيار خدمات النظام التي ترغب في أن يتم تمكينه عند بدء تشغيل النظام. أي تغييرات تقوم بها سيتم تطبيقها عند الضغط على زر موافق."
 
-#: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
-#: gtkservicesetup-kde.desktop.in.h:1
+#: gtkservicesetup.ui:250 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
 msgid "Services configuration tool"
 msgstr "أداة ضبط الخدمات"
 
-#: gtkservicesetup.glade:921
+#: gtkservicesetup.ui:928
 msgid "translator-credits"
 msgstr "حقوق المترجم"
 
-#: gtkservicesetup:44
+#: gtkservicesetup:47
+#, python-brace-format
 msgid "The {0} service"
 msgstr "خدمة {0}"
 
-#: gtkservicesetup:131
+#: gtkservicesetup:150
 msgid "Enabled"
 msgstr "مفعلة "
 
-#: gtkservicesetup:133
+#: gtkservicesetup:152
 msgid "Service name"
 msgstr "اسم الخدمة"
 
-#: gtkservicesetup:135
+#: gtkservicesetup:154
 msgid "Service description"
 msgstr "وصف الخدمة"

@@ -3,12 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# tsuren <hydrangea_and_snail@hotmail.com>, 2015
+# tsuren <hydrangea_and_snail@hotmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-14 20:35+0300\n"
-"PO-Revision-Date: 2014-01-17 09:23+0000\n"
+"POT-Creation-Date: 2016-09-12 11:21+0300\n"
+"PO-Revision-Date: 2016-09-12 08:23+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/salixtools-gtk/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -17,39 +19,40 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: gtkservicesetup.glade:35 gtkservicesetup.desktop.in.h:2
-#: gtkservicesetup-kde.desktop.in.h:2
-msgid "System services"
-msgstr ""
+#: gtkservicesetup.ui:21 gtkservicesetup.desktop.in.h:1
+#: gtkservicesetup-kde.desktop.in.h:1
+msgid "System Services"
+msgstr "システム・サービス"
 
-#: gtkservicesetup.glade:67
+#: gtkservicesetup.ui:152
 msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
 msgstr "システム起動時にスタートさせたいシステムサービスを選んでください。OKのボタンを押すことによって、変更が決定されます。"
 
-#: gtkservicesetup.glade:243 gtkservicesetup.desktop.in.h:1
-#: gtkservicesetup-kde.desktop.in.h:1
+#: gtkservicesetup.ui:250 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup-kde.desktop.in.h:2
 msgid "Services configuration tool"
 msgstr "サービス構成ツール"
 
-#: gtkservicesetup.glade:921
+#: gtkservicesetup.ui:928
 msgid "translator-credits"
 msgstr "翻訳者"
 
-#: gtkservicesetup:44
+#: gtkservicesetup:47
+#, python-brace-format
 msgid "The {0} service"
 msgstr "{0}サービス"
 
-#: gtkservicesetup:131
+#: gtkservicesetup:150
 msgid "Enabled"
 msgstr "使用可能化"
 
-#: gtkservicesetup:133
+#: gtkservicesetup:152
 msgid "Service name"
 msgstr "サービスの名前"
 
-#: gtkservicesetup:135
+#: gtkservicesetup:154
 msgid "Service description"
 msgstr "サービスの説明"
