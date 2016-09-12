@@ -59,7 +59,7 @@ tx-pull:
 	$(MAKE) remove-empty -C po
 
 .PHONY: tx-pull-f
-tx-pull:
+tx-pull-f:
 	tx pull -a -f
 	$(MAKE) remove-empty -C po
 
