@@ -140,7 +140,7 @@ def setntp(state):
         process = subprocess.Popen(cmd)
         process.wait()
     else:
-        cmd = ['service', 'stop', 'ntpd']
+        cmd = ['/usr/sbin/service', 'stop', 'ntpd']
         process = subprocess.Popen(cmd)
         process.wait()
 
