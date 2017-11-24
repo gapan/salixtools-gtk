@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 import os
 import sys
 import datetime
@@ -149,8 +151,8 @@ class GTKClockSetup:
 
     def on_button_ok_clicked(self, widget, data=None):
         self.window.hide()
-        while gtk.events_pending():
-            gtk.main_iteration()
+        while Gtk.events_pending():
+            Gtk.main_iteration()
         if not self.ntpcheckbutton.get_active == ntpstate():
             setntp(self.ntpcheckbutton.get_active())
             if self.ntpcheckbutton.get_active() == False:
@@ -171,13 +173,13 @@ class GTKClockSetup:
                 process.wait()
         if not self.utccheckbutton.get_active() == utcstate():
             setutc(self.utccheckbutton.get_active())
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_timezone_clicked(self, widget, data=None):
         self.tzwindow.show()
@@ -260,7 +262,7 @@ class GTKClockSetup:
         self.spinbutton_sec.set_value(now.second)
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtkclocksetup")
         if os.path.exists('gtkclocksetup.ui'):
             builder.add_from_file('gtkclocksetup.ui')
@@ -319,4 +321,4 @@ class GTKClockSetup:
 if __name__ == "__main__":
     app = GTKClockSetup()
     app.window.show()
-    gtk.main()
+    Gtk.main()
