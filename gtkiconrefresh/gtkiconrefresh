@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from gi.repository import GObject
 import os
-import gobject
 import subprocess
 
 # Internationalization
@@ -33,31 +35,31 @@ class GTKIconRefresh:
         position = 0
         for i in icon_dirs():
             self.progressbar.set_fraction(position)
-            while gtk.events_pending():
-                gtk.main_iteration()
+            while Gtk.events_pending():
+                Gtk.main_iteration()
             cmd = ['gtk-update-icon-cache', '-f', i]
             process = subprocess.Popen(cmd)
             process.wait()
             position = position + step
             yield True
         self.progressbar.set_fraction(1)
-        gtk.main_quit()
-        while gtk.events_pending():
-            gtk.main_iteration()
+        Gtk.main_quit()
+        while Gtk.events_pending():
+            Gtk.main_iteration()
         yield False
 
     def rebuild_icon_cache(self):
         task = self.do_rebuild()
-        gobject.idle_add(task.next)
+        GObject.idle_add(task.next)
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_gtkiconrefresh_delete_event(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtkiconrefresh")
         if os.path.exists('gtkiconrefresh.ui'):
             builder.add_from_file('gtkiconrefresh.ui')
@@ -74,4 +76,4 @@ class GTKIconRefresh:
 if __name__ == "__main__":
     app = GTKIconRefresh()
     app.window.show()
-    gtk.main()
+    Gtk.main()
