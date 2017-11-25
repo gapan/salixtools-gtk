@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 import commands
-import gtk
 import os
 import sys
 import subprocess
@@ -68,21 +70,21 @@ class GTKLocaleSetup:
 
     def on_button_ok_clicked(self, widget, data=None):
         self.window.hide()
-        while gtk.events_pending():
-            gtk.main_iteration()
+        while Gtk.events_pending():
+            Gtk.main_iteration()
         selectedlocale = self.localelist.get_selection()
         self.localeliststore, iter = selectedlocale.get_selected()
         setlocale(self.localeliststore.get_value(iter, 1))
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtklocalesetup")
         if os.path.exists('gtklocalesetup.ui'):
             builder.add_from_file('gtklocalesetup.ui')
@@ -110,4 +112,4 @@ class GTKLocaleSetup:
 if __name__ == "__main__":
     app = GTKLocaleSetup()
     app.window.show()
-    gtk.main()
+    Gtk.main()
