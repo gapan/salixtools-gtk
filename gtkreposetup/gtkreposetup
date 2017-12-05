@@ -6,6 +6,7 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from gi.repository import Gdk
+from gi.repository import GLib
 import os
 import sys
 import subprocess
@@ -36,6 +37,7 @@ Gdk.threads_init()
 def threaded(f):
     def wrapper(*args):
         t = threading.Thread(target=f, args=args)
+        t.daemon = True
         t.start()
     return wrapper
 
@@ -336,9 +338,7 @@ class GTKRepoSetup:
         update_repos = self.checkbutton_apply_changes.get_active()
         error_msg = 'No error'
         if self.current_repo != new_repo:
-            Gdk.threads_enter()
-            self.dialog_update_repos.show()
-            Gdk.threads_leave()
+            GLib.idle_add(self.dialog_update_repos.show)
             # write new configuration files
             ret_conf = write_conf(new_repo)
             if not ret_conf:
@@ -346,14 +346,10 @@ class GTKRepoSetup:
                 success = False
             if success and update_repos:
                 # update slapt-getrc
-                Gdk.threads_enter()
-                self.label_update_repos.set_text(_('Updating package information...'))
-                Gdk.threads_leave()
+                GLib.idle_add(self.label_update_repos.set_text, _('Updating package information...'))
                 self.p = subprocess.Popen(['slapt-get', '--update'])
                 while self.p.poll() is None:
-                    Gdk.threads_enter()
-                    self.progressbar_update_repos.pulse()
-                    Gdk.threads_leave()
+                    GLib.idle_add(self.progressbar_update_repos.pulse)
                     time.sleep(0.1)
                 retval = self.p.returncode
                 if retval != 0:
@@ -361,33 +357,23 @@ class GTKRepoSetup:
                     success = False
             if success and update_repos:
                 # update slapt-srcrc
-                Gdk.threads_enter()
-                self.label_update_repos.set_text(_('Updating SlackBuild information...'))
-                Gdk.threads_leave()
+                GLib.idle_add(self.label_update_repos.set_text, _('Updating SlackBuild information...'))
                 self.p = subprocess.Popen(['slapt-src', '--update'])
                 while self.p.poll() is None:
-                    Gdk.threads_enter()
-                    self.progressbar_update_repos.pulse()
-                    Gdk.threads_leave()
+                    GLib.idle_add(self.progressbar_update_repos.pulse)
                     time.sleep(0.1)
                 retval = self.p.returncode
                 if retval != 0:
                     error_msg = _('Could not update SlackBuild information.')
                     success = False
-        Gdk.threads_enter()
-        self.dialog_update_repos.hide()
-        Gdk.threads_leave()
+        GLib.idle_add(self.dialog_update_repos.hide)
         if success and not canceltask:
             Gtk.main_quit()
         elif canceltask:
-            Gdk.threads_enter()
-            self.dialog_update_repos.hide()
-            Gdk.threads_leave()
+            GLib.idle_add(self.dialog_update_repos.hide)
         else:
-            Gdk.threads_enter()
-            self.dialog_update_repos.hide()
-            show_error_dialog(error_msg, parent=self.window)
-            Gdk.threads_leave()
+            GLib.idle_add(self.dialog_update_repos.hide)
+            GLib.idle_add(show_error_dialog, error_msg, parent=self.window)
 
     def on_button_update_repos_cancel_clicked(self, widget):
         global canceltask
@@ -416,22 +402,16 @@ class GTKRepoSetup:
         '''
         global canceltask
         canceltask = False
-        Gdk.threads_enter()
-        self.dialog_update_list.show()
-        Gdk.threads_leave()
+        GLib.idle_add(self.dialog_update_list.show)
         repos = [[self.current_repo, None]] + get_repo_list_from_file()
         for repo in repos:
-            Gdk.threads_enter()
-            self.progressbar_update_list.pulse()
-            Gdk.threads_leave()
+            GLib.idle_add(self.progressbar_update_list.pulse)
             if not canceltask:
                 url = repo[0]
                 ret = update_mirror_list_from_repo(url)
                 if ret:
                     break
-        Gdk.threads_enter()
-        self.dialog_update_list.hide()
-        Gdk.threads_leave()
+        GLib.idle_add(self.dialog_update_list.hide)
         cursorpos = 0
         selectedpos = 0
         for i in get_repo_list_from_file():
@@ -439,17 +419,13 @@ class GTKRepoSetup:
             if self.current_repo == i[0]:
                 selectedpos = cursorpos
             cursorpos += 1
-        Gdk.threads_enter()
-        self.repolist.set_cursor(selectedpos)
-        Gdk.threads_leave()
+        GLib.idle_add(self.repolist.set_cursor, selectedpos)
         if selectedpos > 5:
             if selectedpos > cursorpos - 5:
                 scrollto = cursorpos - 1
             else:
                 scrollto = selectedpos + 1
-            Gdk.threads_enter()
-            self.repolist.scroll_to_cell(scrollto)
-            Gdk.threads_leave()
+            GLib.idle_add(self.repolist.scroll_to_cell, scrollto)
 
     def on_button_update_list_cancel_clicked(self, widget):
         self.dialog_update_list.hide()
