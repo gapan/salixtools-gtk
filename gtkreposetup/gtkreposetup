@@ -250,7 +250,7 @@ def write_conf(repo):
         f.write('# Local repositories\n')
         f.write('# SOURCE=file:///var/www/packages/:CUSTOM\n')
         for repo in custom:
-            f.write('SOURCE={r}\n'.format(repo))
+            f.write('SOURCE={r}\n'.format(r=repo))
         f.close()
     #
     # slapt-srcrc
