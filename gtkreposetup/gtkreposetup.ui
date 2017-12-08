@@ -143,6 +143,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Please select your preferred repository mirror. The country code where each mirror is located is shown on the right. Mirrors located closer to you geographically are usually faster.</property>
                 <property name="wrap">True</property>
+                <property name="max_width_chars">60</property>
               </object>
               <packing>
                 <property name="expand">True</property>
