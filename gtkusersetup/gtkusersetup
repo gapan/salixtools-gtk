@@ -437,7 +437,7 @@ class GTKUserSetup:
                 self.checkbutton_user_expiration.set_active(True)
                 self.calendar_user_expiration.set_sensitive(True)
             self.calendar_user_expiration.select_month(
-                expirydate[2], expirydate[1])
+                expirydate[2] - 1, expirydate[1])
             self.calendar_user_expiration.select_day(expirydate[3])
 
             self.user_properties_window.show()
@@ -496,7 +496,7 @@ class GTKUserSetup:
         self.spinbutton_uid.hide()
         self.checkbutton_user_expiration.set_active(False)
         self.calendar_user_expiration.set_sensitive(False)
-        self.calendar_user_expiration.select_month(now.month, now.year)
+        self.calendar_user_expiration.select_month(now.month - 1, now.year)
         self.calendar_user_expiration.select_day(now.day)
 
         self.user_properties_window.show()
