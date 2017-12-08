@@ -148,6 +148,7 @@
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">Please select a default system locale. The changes will take effect next time you start your system.</property>
                     <property name="wrap">True</property>
+                    <property name="max_width_chars">60</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
