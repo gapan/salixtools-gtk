@@ -347,7 +347,7 @@
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkusersetup</property>
     <property name="program_name">gtkusersetup</property>
-    <property name="copyright">Copyright © 2010-2016 George Vlahavas</property>
+    <property name="copyright">Copyright © 2010-2017 George Vlahavas</property>
     <property name="comments" translatable="yes">Users and groups management tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
