@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
 # tsuren <hydrangea_and_snail@hotmail.com>, 2015
 # tsuren <hydrangea_and_snail@hotmail.com>, 2015
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-09 22:02+0300\n"
-"PO-Revision-Date: 2016-09-11 21:33+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2017-09-19 09:14+0000\n"
+"Last-Translator: ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen.\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/salixtools-gtk/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,59 +22,59 @@ msgstr ""
 
 #: gtkclocksetup.ui:39
 msgid "Date and time settings"
-msgstr "時間と日付の設定"
+msgstr "日時の設定"
 
 #: gtkclocksetup.ui:156
 msgid "Keep clock synchronized with internet servers"
-msgstr "時計をインターネットで常にシンクロナイズする。"
+msgstr "時間をインターネットサーバから同期する"
 
 #: gtkclocksetup.ui:183
 msgid "Synchronize now"
-msgstr "シンクロナイズする。"
+msgstr "今すぐ同期"
 
 #: gtkclocksetup.ui:212 gtkclocksetup:239 gtkclocksetup:275
 msgid "Time zone:"
-msgstr "時間帯"
+msgstr "タイムゾーン:"
 
 #: gtkclocksetup.ui:222
 msgid "Select time zone..."
-msgstr "時間帯を設定する"
+msgstr "タイムゾーンを選択..."
 
 #: gtkclocksetup.ui:244
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "ハードウェアの時計は、Coordinated Universal Time (UTC)にセットされています。"
+msgstr "ハードウェアクロックは共通 Universal Time (UTC) に設定されています"
 
 #: gtkclocksetup.ui:248
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not check this box if you are not sure."
-msgstr "ほとんどのホーム用またはビジネス用のコンピュータのハードウェアの時計は、ローカルタイムにセットされています。それとは対象にウェブ・サーバーなどは、ほとんどUTCにセットされています。よくわからない場合は、このボックスは、ティックしないでください。"
+msgstr "ほとんどのホーム用またはビジネス用のコンピュータのハードウェアの時計はローカルタイムに設定されています。それとは対象に Web サーバーなどはほとんど UTC にセットされています。よくわからない場合はこのボックスを確認しないでください。"
 
 #: gtkclocksetup.ui:385
 msgid "Time:"
-msgstr "時間："
+msgstr "時間:"
 
 #: gtkclocksetup.ui:398
 msgid "Date:"
-msgstr "日付："
+msgstr "日付:"
 
 #: gtkclocksetup.ui:431 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
-msgstr "システム時計設定用のツール"
+msgstr "システムクロック設定ツール"
 
 #: gtkclocksetup.ui:1109
 msgid "translator-credits"
-msgstr "翻訳者"
+msgstr "BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <balloonakafusen+@gmail.com>\nその他"
 
 #: gtkclocksetup.ui:1145
 msgid "Select time zone"
-msgstr "時間帯を選ぶ"
+msgstr "タイムゾーンの選択"
 
 #: gtkclocksetup.ui:1211
 msgid "Please select your time zone:"
-msgstr "時間帯を選んでください。"
+msgstr "タイムゾーンを選択して下さい:"
 
 #: gtkclocksetup:291
 msgid "General area"
@@ -85,4 +86,4 @@ msgstr "都市"
 
 #: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
 msgid "System Clock"
-msgstr "システム時計"
+msgstr "システムクロック"

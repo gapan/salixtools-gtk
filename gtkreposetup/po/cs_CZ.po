@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 02:12+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Jiří Vírava <appukonrad@gmail.com>, 2017\n"
+"Language-Team: Czech (Czech Republic) (https://www.transifex.com/gapan/teams/15073/cs_CZ/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: gtkreposetup.ui:18
+msgid "Select repository mirror"
+msgstr "Vyberte zrcadlo úložiště"
+
+#: gtkreposetup.ui:143
+msgid ""
+"Please select your preferred repository mirror. The country code where each "
+"mirror is located is shown on the right. Mirrors located closer to you "
+"geographically are usually faster."
+msgstr ""
+"Vyberte prosím preferované zrcadlo úložiště. Kód země, kde se každé zrcadlo "
+"nachází, je zobrazen vpravo. Zrcadla umístěná geograficky blíže k vám jsou "
+"obvykle rychlejší."
+
+#: gtkreposetup.ui:175
+msgid "Mirror"
+msgstr "Zrcadlo"
+
+#: gtkreposetup.ui:186
+msgid "Country"
+msgstr "Stát"
+
+#: gtkreposetup.ui:206
+msgid "Update the package and SlackBuild data"
+msgstr "Aktualizovat balíček a data SlackBuild"
+
+#: gtkreposetup.ui:236
+msgid "Repository configuration tool"
+msgstr "Nástroj pro konfiguraci úložiště"
+
+#: gtkreposetup.ui:915
+msgid "translator-credits"
+msgstr "Překlad"
+
+#: gtkreposetup.ui:941
+msgid "Updating mirror list"
+msgstr "Aktualizace seznamu zrcadel"
+
+#: gtkreposetup.ui:960
+msgid "Updating mirror list. Please wait..."
+msgstr "Aktualizace seznamu zrcadel. Prosím, čekejte..."
+
+#: gtkreposetup.ui:1018
+msgid "Updating..."
+msgstr "Aktualizace..."
+
+#: gtkreposetup:49
+msgid "Error"
+msgstr "Chyba"
+
+#: gtkreposetup:79 gtkreposetup:97 gtkreposetup:121 gtkreposetup:149
+#: gtkreposetup:188
+msgid "Could not read file:"
+msgstr "Nelze přečíst soubor:"
+
+#: gtkreposetup:81 gtkreposetup:99 gtkreposetup:123 gtkreposetup:224
+#: gtkreposetup:256
+msgid "Exiting."
+msgstr "Ukončování."
+
+#: gtkreposetup:148 gtkreposetup:187 gtkreposetup:288
+msgid "WARNING:"
+msgstr "VAROVÁNÍ:"
+
+#: gtkreposetup:222 gtkreposetup:254 gtkreposetup:289
+msgid "Could not write to file:"
+msgstr "Nelze zapisovat do souboru:"
+
+#: gtkreposetup:339
+msgid "Could not write configuration files."
+msgstr "Nelze zapsat konfigurační soubory."
+
+#: gtkreposetup:344
+msgid "Updating package information..."
+msgstr "Aktualizace informací o balíčku..."
+
+#: gtkreposetup:354
+msgid "Could not update package information."
+msgstr "Nelze aktualizovat informace o balíčku."
+
+#: gtkreposetup:359
+msgid "Updating SlackBuild information..."
+msgstr "Aktualizace informací SlackBuild..."
+
+#: gtkreposetup:369
+msgid "Could not update SlackBuild information."
+msgstr "Informace SlackBuild nelze aktualizovat."
+
+#: gtkreposetup.desktop.in.h:1 gtkreposetup-kde.desktop.in.h:1
+msgid "Repository Mirror"
+msgstr "Zrcadlo uložiště"
+
+#: gtkreposetup.desktop.in.h:2 gtkreposetup-kde.desktop.in.h:2
+msgid "Select your preferred repository mirror"
+msgstr "Vyberte preferované zrcadlo úložiště"
