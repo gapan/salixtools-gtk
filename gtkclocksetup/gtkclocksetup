@@ -64,18 +64,18 @@ def currenttimezone():
 
 
 def settimezone(continent, location):
-    if not continent == currenttimezone()[0]:
-        if not location == currenttimezone()[1]:
-            cmd = ['ln', '-sf', '/usr/share/zoneinfo/' + continent +
-                   '/' + location, '/etc/localtime-copied-from']
-            process = subprocess.Popen(cmd)
-            process.wait()
-            cmd = ['rm', '-f', '/etc/localtime']
-            process = subprocess.Popen(cmd)
-            process.wait()
-            cmd = ['cp', '/etc/localtime-copied-from', '/etc/localtime']
-            process = subprocess.Popen(cmd)
-            process.wait()
+    current_continent, current_location= currenttimezone()
+    if continent != current_continent or location != current_location:
+        cmd = ['ln', '-sf', '/usr/share/zoneinfo/' + continent +
+               '/' + location, '/etc/localtime-copied-from']
+        process = subprocess.Popen(cmd)
+        process.wait()
+        cmd = ['rm', '-f', '/etc/localtime']
+        process = subprocess.Popen(cmd)
+        process.wait()
+        cmd = ['cp', '/etc/localtime-copied-from', '/etc/localtime']
+        process = subprocess.Popen(cmd)
+        process.wait()
 
 
 def ntpstate():
