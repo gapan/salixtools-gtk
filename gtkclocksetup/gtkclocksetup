@@ -129,7 +129,10 @@ def setutc(state):
 
 
 def ntp_sync_now():
-    cmd = ['sh', '/etc/rc.d/rc.ntpd', 'sync']
+    cmd = ['/usr/sbin/ntpd', '-gq']
+    process = subprocess.Popen(cmd)
+    process.wait()
+    cmd = ['/sbin/hwclock', '-w']
     process = subprocess.Popen(cmd)
     process.wait()
 
