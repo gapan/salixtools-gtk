@@ -16,7 +16,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
 	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtkreposetup
-	install -m 755 gtkreposetup $(DESTDIR)/usr/sbin/
+	install -m 755 gtkreposetup.py $(DESTDIR)/usr/sbin/gtkreposetup
 	install -m 644 gtkreposetup.desktop $(DESTDIR)/usr/share/applications
 	install -m 644 gtkreposetup-kde.desktop $(DESTDIR)/usr/share/applications/
 	install -m 644 gtkreposetup.ui $(DESTDIR)/usr/share/salixtools/gtkreposetup/

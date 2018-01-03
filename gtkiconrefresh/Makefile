@@ -15,7 +15,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
 	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtkiconrefresh
-	install -m 755 gtkiconrefresh $(DESTDIR)/usr/sbin/
+	install -m 755 gtkiconrefresh.py $(DESTDIR)/usr/sbin/gtkiconrefresh
 	install -m 644 gtkiconrefresh.desktop $(DESTDIR)/usr/share/applications
 	install -m 644 gtkiconrefresh.ui $(DESTDIR)/usr/share/salixtools/gtkiconrefresh/
 	$(MAKE) install -C po

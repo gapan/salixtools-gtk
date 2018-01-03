@@ -16,7 +16,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
 	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtkusersetup
-	install -m 755 gtkusersetup $(DESTDIR)/usr/sbin/
+	install -m 755 gtkusersetup.py $(DESTDIR)/usr/sbin/gtkusersetup
 	install -m 644 gtkusersetup.desktop $(DESTDIR)/usr/share/applications
 	install -m 644 gtkusersetup-kde.desktop $(DESTDIR)/usr/share/applications/
 	install -m 644 gtkusersetup.ui $(DESTDIR)/usr/share/salixtools/gtkusersetup/
