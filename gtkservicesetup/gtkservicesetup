@@ -44,7 +44,7 @@ def isenabled(service):
 
 
 def servicedesc(service):
-    description = _('The {0} service').format(service.lstrip('rc.'))
+    description = _('The {0} service').format(service[3:])
     filelist = os.listdir('/etc/rc.d/desc.d')
     for i in filelist:
         f = file('/etc/rc.d/desc.d/' + i)
