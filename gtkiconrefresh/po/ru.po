@@ -5,8 +5,8 @@
 # Translators:
 # Andrey Frantsuzov <pokazsch@yandex.ru>, 2011
 # Andrey Frantsuzov <pokazsch@yandex.ru>, 2011
-# Gregory None <wolfr2@gmail.com>, 2014
-# Gregory None <wolfr2@gmail.com>, 2014
+# Gregory <wolfr2@gmail.com>, 2014
+# Gregory <wolfr2@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
