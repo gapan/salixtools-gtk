@@ -16,7 +16,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
 	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtkservicesetup
-	install -m 755 gtkservicesetup $(DESTDIR)/usr/sbin/
+	install -m 755 gtkservicesetup.py $(DESTDIR)/usr/sbin/gtkservicesetup
 	install -m 644 gtkservicesetup.desktop $(DESTDIR)/usr/share/applications
 	install -m 644 gtkservicesetup-kde.desktop $(DESTDIR)/usr/share/applications/
 	install -m 644 gtkservicesetup.ui $(DESTDIR)/usr/share/salixtools/gtkservicesetup/
@@ -25,7 +25,8 @@ install:
 
 .PHONY: clean
 clean:
-	rm -f *.desktop
+	rm -f *.desktop *.pyc
+	rm -rf .cache __pycache__
 	$(MAKE) clean -C po
 
 .PHONY: pot

@@ -16,7 +16,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
 	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtkclocksetup
-	install -m 755 gtkclocksetup $(DESTDIR)/usr/sbin/
+	install -m 755 gtkclocksetup.py $(DESTDIR)/usr/sbin/gtkclocksetup
 	install -m 644 gtkclocksetup.desktop $(DESTDIR)/usr/share/applications
 	install -m 644 gtkclocksetup-kde.desktop $(DESTDIR)/usr/share/applications/
 	install -m 644 gtkclocksetup.ui $(DESTDIR)/usr/share/salixtools/gtkclocksetup/
@@ -25,7 +25,8 @@ install:
 
 .PHONY: clean
 clean:
-	rm -f *.desktop
+	rm -f *.desktop *.pyc
+	rm -rf .cache __pycache__
 	$(MAKE) clean -C po
 
 .PHONY: pot

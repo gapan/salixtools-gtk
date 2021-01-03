@@ -2,7 +2,11 @@
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 from __future__ import print_function
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from gi.repository import Gdk
+from gi.repository import GLib
 import os
 import sys
 import subprocess
@@ -28,11 +32,12 @@ salixtoolsdir = '/usr/share/salixtools/'
 canceltask = False
 
 # initializing the gtk's thread engine
-gtk.gdk.threads_init()
+Gdk.threads_init()
 
 def threaded(f):
     def wrapper(*args):
         t = threading.Thread(target=f, args=args)
+        t.daemon = True
         t.start()
     return wrapper
 
@@ -44,8 +49,8 @@ class BreakConnection(Exception):
     pass
 
 def show_error_dialog(error_msg, parent=None):
-    dialog = gtk.MessageDialog(parent=parent, flags=0, type=gtk.MESSAGE_ERROR,
-            buttons=gtk.BUTTONS_OK, message_format=error_msg)
+    dialog = Gtk.MessageDialog(parent=parent, flags=0, type=Gtk.MESSAGE_ERROR,
+            buttons=Gtk.BUTTONS_OK, message_format=error_msg)
     dialog.set_title(_('Error'))
     dialog.set_modal(True)
     if parent:
@@ -245,7 +250,7 @@ def write_conf(repo):
         f.write('# Local repositories\n')
         f.write('# SOURCE=file:///var/www/packages/:CUSTOM\n')
         for repo in custom:
-            f.write('SOURCE={r}\n'.format(repo))
+            f.write('SOURCE={r}\n'.format(r=repo))
         f.close()
     #
     # slapt-srcrc
@@ -333,9 +338,7 @@ class GTKRepoSetup:
         update_repos = self.checkbutton_apply_changes.get_active()
         error_msg = 'No error'
         if self.current_repo != new_repo:
-            gtk.gdk.threads_enter()
-            self.dialog_update_repos.show()
-            gtk.gdk.threads_leave()
+            GLib.idle_add(self.dialog_update_repos.show)
             # write new configuration files
             ret_conf = write_conf(new_repo)
             if not ret_conf:
@@ -343,14 +346,10 @@ class GTKRepoSetup:
                 success = False
             if success and update_repos:
                 # update slapt-getrc
-                gtk.gdk.threads_enter()
-                self.label_update_repos.set_text(_('Updating package information...'))
-                gtk.gdk.threads_leave()
+                GLib.idle_add(self.label_update_repos.set_text, _('Updating package information...'))
                 self.p = subprocess.Popen(['slapt-get', '--update'])
                 while self.p.poll() is None:
-                    gtk.gdk.threads_enter()
-                    self.progressbar_update_repos.pulse()
-                    gtk.gdk.threads_leave()
+                    GLib.idle_add(self.progressbar_update_repos.pulse)
                     time.sleep(0.1)
                 retval = self.p.returncode
                 if retval != 0:
@@ -358,33 +357,23 @@ class GTKRepoSetup:
                     success = False
             if success and update_repos:
                 # update slapt-srcrc
-                gtk.gdk.threads_enter()
-                self.label_update_repos.set_text(_('Updating SlackBuild information...'))
-                gtk.gdk.threads_leave()
+                GLib.idle_add(self.label_update_repos.set_text, _('Updating SlackBuild information...'))
                 self.p = subprocess.Popen(['slapt-src', '--update'])
                 while self.p.poll() is None:
-                    gtk.gdk.threads_enter()
-                    self.progressbar_update_repos.pulse()
-                    gtk.gdk.threads_leave()
+                    GLib.idle_add(self.progressbar_update_repos.pulse)
                     time.sleep(0.1)
                 retval = self.p.returncode
                 if retval != 0:
                     error_msg = _('Could not update SlackBuild information.')
                     success = False
-        gtk.gdk.threads_enter()
-        self.dialog_update_repos.hide()
-        gtk.gdk.threads_leave()
+        GLib.idle_add(self.dialog_update_repos.hide)
         if success and not canceltask:
-            gtk.main_quit()
+            Gtk.main_quit()
         elif canceltask:
-            gtk.gdk.threads_enter()
-            self.dialog_update_repos.hide()
-            gtk.gdk.threads_leave()
+            GLib.idle_add(self.dialog_update_repos.hide)
         else:
-            gtk.gdk.threads_enter()
-            self.dialog_update_repos.hide()
-            show_error_dialog(error_msg, parent=self.window)
-            gtk.gdk.threads_leave()
+            GLib.idle_add(self.dialog_update_repos.hide)
+            GLib.idle_add(show_error_dialog, error_msg, parent=self.window)
 
     def on_button_update_repos_cancel_clicked(self, widget):
         global canceltask
@@ -393,13 +382,13 @@ class GTKRepoSetup:
             self.p.kill()
 
     def on_button_cancel_clicked(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_gtkreposetup_delete_event(self, widget, event):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     #
     # Update Mirror List Dialog
@@ -413,22 +402,16 @@ class GTKRepoSetup:
         '''
         global canceltask
         canceltask = False
-        gtk.gdk.threads_enter()
-        self.dialog_update_list.show()
-        gtk.gdk.threads_leave()
+        GLib.idle_add(self.dialog_update_list.show)
         repos = [[self.current_repo, None]] + get_repo_list_from_file()
         for repo in repos:
-            gtk.gdk.threads_enter()
-            self.progressbar_update_list.pulse()
-            gtk.gdk.threads_leave()
+            GLib.idle_add(self.progressbar_update_list.pulse)
             if not canceltask:
                 url = repo[0]
                 ret = update_mirror_list_from_repo(url)
                 if ret:
                     break
-        gtk.gdk.threads_enter()
-        self.dialog_update_list.hide()
-        gtk.gdk.threads_leave()
+        GLib.idle_add(self.dialog_update_list.hide)
         cursorpos = 0
         selectedpos = 0
         for i in get_repo_list_from_file():
@@ -436,17 +419,13 @@ class GTKRepoSetup:
             if self.current_repo == i[0]:
                 selectedpos = cursorpos
             cursorpos += 1
-        gtk.gdk.threads_enter()
-        self.repolist.set_cursor(selectedpos)
-        gtk.gdk.threads_leave()
+        GLib.idle_add(self.repolist.set_cursor, selectedpos)
         if selectedpos > 5:
             if selectedpos > cursorpos - 5:
                 scrollto = cursorpos - 1
             else:
                 scrollto = selectedpos + 1
-            gtk.gdk.threads_enter()
-            self.repolist.scroll_to_cell(scrollto)
-            gtk.gdk.threads_leave()
+            GLib.idle_add(self.repolist.scroll_to_cell, scrollto)
 
     def on_button_update_list_cancel_clicked(self, widget):
         self.dialog_update_list.hide()
@@ -455,7 +434,7 @@ class GTKRepoSetup:
         raise BreakConnection
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtkreposetup")
         if os.path.exists('gtkreposetup.ui'):
             builder.add_from_file('gtkreposetup.ui')
@@ -488,4 +467,4 @@ class GTKRepoSetup:
 if __name__ == "__main__":
     app = GTKRepoSetup()
     app.window.show()
-    gtk.main()
+    Gtk.main()

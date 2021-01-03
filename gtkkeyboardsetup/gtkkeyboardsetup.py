@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 import os
 import sys
 import subprocess
@@ -173,8 +175,8 @@ class GTKKeyboardSetup:
 
     def on_button_ok_clicked(self, widget, data=None):
         self.window.hide()
-        while gtk.events_pending():
-            gtk.main_iteration()
+        while Gtk.events_pending():
+            Gtk.main_iteration()
         selectedkeymap = self.keymaplist.get_selection()
         self.keymapliststore, iter = selectedkeymap.get_selected()
         keymap = self.keymapliststore.get_value(iter, 0)
@@ -186,10 +188,10 @@ class GTKKeyboardSetup:
             setibus(self.ibus.get_active())
         if not self.scim.get_active() == getscim():
             setscim(self.scim.get_active())
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_keybtypelist_cursor_changed(self, widget, data=None):
         pos = self.keybtypelist.get_cursor()[0][0]
@@ -209,10 +211,10 @@ class GTKKeyboardSetup:
             self.keymaplist.set_cursor(0)
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtkkeyboardsetup")
         if os.path.exists('gtkkeyboardsetup.ui'):
             builder.add_from_file('gtkkeyboardsetup.ui')
@@ -262,4 +264,4 @@ class GTKKeyboardSetup:
 if __name__ == "__main__":
     app = GTKKeyboardSetup()
     app.window.show()
-    gtk.main()
+    Gtk.main()

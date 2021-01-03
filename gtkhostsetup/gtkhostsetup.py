@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 import os
 import sys
 import re
@@ -31,7 +33,7 @@ def get_hostname():
     else:
         hostname = line.partition('.')[0]
         domain = line.partition('.')[2]
-        return [hostname, domain]
+        return hostname, domain
 
 
 def get_other_hosts():
@@ -160,7 +162,7 @@ class GTKHostSetup:
             self.error_main_window.show()
         else:
             host_list = []
-            iter = self.liststore_hosts.get_iter_root()
+            iter = self.liststore_hosts.get_iter(0)
             while (iter):
                 ip = self.liststore_hosts.get_value(iter, 0)
                 hostname = self.liststore_hosts.get_value(iter, 1)
@@ -169,13 +171,13 @@ class GTKHostSetup:
                 iter = self.liststore_hosts.iter_next(iter)
             write_hosts(self.entry_hostname.get_text(),
                         self.entry_domain.get_text(), sorted(host_list))
-            gtk.main_quit()
+            Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_add_clicked(self, widget, data=None):
         self.add_host_window.show()
@@ -216,7 +218,7 @@ class GTKHostSetup:
                 self.entry_edit_ip.set_text('')
                 self.entry_edit_hostname.set_text('')
                 self.entry_edit_domain.set_text('')
-                self.liststore_hosts.set_sort_column_id(0, gtk.SORT_ASCENDING)
+                self.liststore_hosts.set_sort_column_id(0, Gtk.SortType.ASCENDING)
             except TypeError:
                 pass
 
@@ -249,7 +251,7 @@ class GTKHostSetup:
             self.entry_new_ip.set_text('')
             self.entry_new_hostname.set_text('')
             self.entry_new_domain.set_text('')
-            self.liststore_hosts.set_sort_column_id(0, gtk.SORT_ASCENDING)
+            self.liststore_hosts.set_sort_column_id(0, Gtk.SortType.ASCENDING)
 
     def on_button_add_cancel_clicked(self, widget, data=None):
         self.add_host_window.hide()
@@ -276,7 +278,7 @@ class GTKHostSetup:
         return True
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtkhostsetup")
         if os.path.exists('gtkhostsetup.ui'):
             builder.add_from_file('gtkhostsetup.ui')
@@ -290,9 +292,9 @@ class GTKHostSetup:
         #
         self.entry_hostname = builder.get_object('entry_hostname')
         self.entry_domain = builder.get_object('entry_domain')
-        current_hostname = get_hostname()
-        self.entry_hostname.set_text(current_hostname[0])
-        self.entry_domain.set_text(current_hostname[1])
+        current_hostname, current_domain = get_hostname()
+        self.entry_hostname.set_text(current_hostname)
+        self.entry_domain.set_text(current_domain)
 
         self.treeviewcolumn_ip = builder.get_object('treeviewcolumn_ip')
         self.treeviewcolumn_hostname = builder.get_object(
@@ -352,4 +354,4 @@ class GTKHostSetup:
 if __name__ == "__main__":
     app = GTKHostSetup()
     app.window.show()
-    gtk.main()
+    Gtk.main()

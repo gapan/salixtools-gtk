@@ -16,7 +16,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
 	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtklocalesetup
-	install -m 755 gtklocalesetup $(DESTDIR)/usr/sbin/
+	install -m 755 gtklocalesetup.py $(DESTDIR)/usr/sbin/gtklocalesetup
 	install -m 644 gtklocalesetup.desktop $(DESTDIR)/usr/share/applications
 	install -m 644 gtklocalesetup-kde.desktop $(DESTDIR)/usr/share/applications/
 	install -m 644 gtklocalesetup.ui $(DESTDIR)/usr/share/salixtools/gtklocalesetup/
@@ -25,7 +25,8 @@ install:
 
 .PHONY: clean
 clean:
-	rm -f *.desktop
+	rm -f *.desktop *.pyc
+	rm -rf .cache __pycache__
 	$(MAKE) clean -C po
 
 .PHONY: pot

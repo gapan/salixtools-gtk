@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 import os
 import sys
 import commands
@@ -360,10 +362,10 @@ class GTKUserSetup:
         return True
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_close_clicked(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_properties_clicked(self, widget, data=None):
         try:
@@ -926,7 +928,7 @@ class GTKUserSetup:
         return True
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtkusersetup")
         if os.path.exists('gtkusersetup.ui'):
             builder.add_from_file('gtkusersetup.ui')
@@ -1069,4 +1071,4 @@ class GTKUserSetup:
 if __name__ == "__main__":
     app = GTKUserSetup()
     app.window.show()
-    gtk.main()
+    Gtk.main()

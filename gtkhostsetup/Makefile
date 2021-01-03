@@ -16,7 +16,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
 	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtkhostsetup
-	install -m 755 gtkhostsetup $(DESTDIR)/usr/sbin/
+	install -m 755 gtkhostsetup.py $(DESTDIR)/usr/sbin/gtkhostsetup
 	install -m 644 gtkhostsetup.desktop $(DESTDIR)/usr/share/applications
 	install -m 644 gtkhostsetup-kde.desktop $(DESTDIR)/usr/share/applications/
 	install -m 644 gtkhostsetup.ui $(DESTDIR)/usr/share/salixtools/gtkhostsetup/
@@ -25,7 +25,8 @@ install:
 
 .PHONY: clean
 clean:
-	rm -f *.desktop
+	rm -f *.desktop *.pyc
+	rm -rf .cache __pycache__
 	$(MAKE) clean -C po
 
 .PHONY: pot

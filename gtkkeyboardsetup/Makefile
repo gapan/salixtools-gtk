@@ -16,7 +16,7 @@ install:
 	install -d -m 755 $(DESTDIR)/usr/sbin
 	install -d -m 755 $(DESTDIR)/usr/share/applications
 	install -d -m 755 $(DESTDIR)/usr/share/salixtools/gtkkeyboardsetup
-	install -m 755 gtkkeyboardsetup $(DESTDIR)/usr/sbin/
+	install -m 755 gtkkeyboardsetup.py $(DESTDIR)/usr/sbin/gtkkeyboardsetup
 	install -m 644 gtkkeyboardsetup.desktop $(DESTDIR)/usr/share/applications
 	install -m 644 gtkkeyboardsetup-kde.desktop $(DESTDIR)/usr/share/applications/
 	install -m 644 gtkkeyboardsetup.ui $(DESTDIR)/usr/share/salixtools/gtkkeyboardsetup/
@@ -25,7 +25,8 @@ install:
 
 .PHONY: clean
 clean:
-	rm -f *.desktop
+	rm -f *.desktop *.pyc
+	rm -rf .cache __pycache__
 	$(MAKE) clean -C po
 
 .PHONY: pot

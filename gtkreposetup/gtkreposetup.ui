@@ -138,11 +138,12 @@
               </packing>
             </child>
             <child>
-              <object class="GtkLabel" id="label1">
+              <object class="GtkLabel" id="label_info">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Please select your preferred repository mirror. The country code where each mirror is located is shown on the right. Mirrors located closer to you geographically are usually faster.</property>
                 <property name="wrap">True</property>
+                <property name="max_width_chars">60</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -233,7 +234,7 @@
     <property name="deletable">False</property>
     <property name="transient_for">gtkreposetup</property>
     <property name="program_name">gtkreposetup</property>
-    <property name="copyright">Copyright © 2017 George Vlahavas</property>
+    <property name="copyright">Copyright © 2016-2021 George Vlahavas</property>
     <property name="comments" translatable="yes">Repository configuration tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="website_label">http://www.salixos.org</property>
@@ -998,7 +999,6 @@ Public License instead of this License.  But first, please read
           <object class="GtkProgressBar" id="progressbar_update_list">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="activity_mode">True</property>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -1079,7 +1079,6 @@ Public License instead of this License.  But first, please read
               <object class="GtkProgressBar" id="progressbar_update_repos">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="activity_mode">True</property>
               </object>
               <packing>
                 <property name="expand">True</property>

@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 import subprocess
 import os
 import sys
@@ -104,18 +106,18 @@ class GTKServiceSetup:
 
     def on_button_ok_clicked(self, widget, data=None):
         self.window.hide()
-        while gtk.events_pending():
-            gtk.main_iteration()
+        while Gtk.events_pending():
+            Gtk.main_iteration()
         for i in self.servicesliststore:
             if i[3] == True:
                 if i[0] == True:
                     enableservice(i[1])
                 else:
                     disableservice(i[1])
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def on_checkbox_toggled(self, widget, data=None):
         selectedservice = self.serviceslist.get_selection()
@@ -130,10 +132,10 @@ class GTKServiceSetup:
                     i[0] = 0
 
     def gtk_main_quit(self, widget, data=None):
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtkservicesetup")
         if os.path.exists('gtkservicesetup.ui'):
             builder.add_from_file('gtkservicesetup.ui')
@@ -159,4 +161,4 @@ class GTKServiceSetup:
 if __name__ == "__main__":
     app = GTKServiceSetup()
     app.window.show()
-    gtk.main()
+    Gtk.main()
