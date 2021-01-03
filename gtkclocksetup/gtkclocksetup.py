@@ -59,7 +59,7 @@ def cities(continent):
 
 def currenttimezone():
     tz = os.readlink(
-        '/etc/localtime-copied-from').replace('/usr/share/zoneinfo/', '')
+        '/etc/localtime').replace('/usr/share/zoneinfo/', '')
     continent = tz.partition('/')[0]
     location = tz.partition('/')[2]
     return continent, location
@@ -68,14 +68,11 @@ def currenttimezone():
 def settimezone(continent, location):
     current_continent, current_location= currenttimezone()
     if continent != current_continent or location != current_location:
-        cmd = ['ln', '-sf', '/usr/share/zoneinfo/' + continent +
-               '/' + location, '/etc/localtime-copied-from']
-        process = subprocess.Popen(cmd)
-        process.wait()
         cmd = ['rm', '-f', '/etc/localtime']
         process = subprocess.Popen(cmd)
         process.wait()
-        cmd = ['cp', '/etc/localtime-copied-from', '/etc/localtime']
+        cmd = ['ln', '-sf', '/usr/share/zoneinfo/' + continent +
+               '/' + location, '/etc/localtime']
         process = subprocess.Popen(cmd)
         process.wait()
 
