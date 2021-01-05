@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gi
@@ -23,15 +23,18 @@ keymapdir = '/usr/share/kbd/keymaps/i386/'
 
 def getkeymap():
     keymap = 'us'
-    f = file('/etc/rc.d/rc.keymap')
-    while True:
-        line = f.readline().lstrip(' ')
-        if len(line) == 0:
-            break
-        if line.startswith('/usr/bin/loadkeys'):
-            keymap = line.replace('\n', '').lstrip(
-                '/usr/bin/loadkeys ').rstrip('.map').replace('-u ', '')
-    f.close()
+    try:
+        with open('/etc/rc.d/rc.keymap', 'r') as f:
+            while True:
+                line = f.readline().lstrip(' ')
+                if len(line) == 0:
+                    break
+                if line.startswith('/usr/bin/loadkeys'):
+                    keymap = line.replace('\n', '').partition(
+                        '/usr/bin/loadkeys ')[2].partition('.map')[0].replace('-u ', '')
+    except FileNotFoundError:
+        # default to 'us' keymap if it's not already set
+        keymap = 'us'
     return keymap
 
 
@@ -132,14 +135,13 @@ def availablekeybtypes():
 def availablekeymaps():
     registered = []
     keymaps = []
-    keymapfile = file('/usr/share/salixtools/keymaps')
-    while True:
-        line = keymapfile.readline()
-        if len(line) == 0:
-            break
-        if not line.startswith('#'):
-            registered.append(line.partition('|')[0])
-    keymapfile.close()
+    with open('/usr/share/salixtools/keymaps', 'r') as keymapfile:
+        while True:
+            line = keymapfile.readline()
+            if len(line) == 0:
+                break
+            if not line.startswith('#'):
+                registered.append(line.partition('|')[0])
     for type in availablekeybtypes():
         for filename in os.listdir(keymapdir + type):
             if filename.endswith('.map.gz'):
