@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gi
@@ -96,7 +96,7 @@ def ntppresent():
 def utcstate():
     utc = False
     try:
-        f = file('/etc/hardwareclock')
+        f = open('/etc/hardwareclock', 'r')
         while True:
             line = f.readline()
             if len(line) == 0:
