@@ -1,10 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
-import commands
 import os
 import sys
 import subprocess
@@ -18,13 +17,14 @@ _ = gettext.gettext
 
 def availablelocales():
     locales = []
-    localeoutput = commands.getoutput('LANG=C locale -cva').splitlines()
+    cmd = 'LANG=C locale -cva | grep "^locale\|title |"'
+    localeoutput = subprocess.getoutput(cmd).splitlines()
     for i in localeoutput:
         newlocale = False
         if i.startswith('locale:'):
-            if 'utf8' in i:
+            if 'utf8' in i or 'UTF-8' in i:
                 localecode = i.replace('locale:', '').lstrip(
-                ).partition('directory:')[0].rstrip()
+                ).partition('directory:')[0].rstrip().replace('UTF-8', 'utf8')
                 utf8locale = True
             else:
                 utf8locale = False
@@ -39,10 +39,10 @@ def availablelocales():
 
 
 def currentlocale():
-    localeoutput = commands.getoutput("locale").splitlines()
+    localeoutput = subprocess.getoutput("locale").splitlines()
     for i in localeoutput:
         if i.startswith('LANG='):
-            locale = i.replace('LANG=', '')
+            locale = i.replace('LANG=', '').replace('UTF-8', 'utf8')
     if 'utf8' not in locale:
         if locale == 'C':
             locale = 'en_US'
