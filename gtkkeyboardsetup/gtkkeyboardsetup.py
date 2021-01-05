@@ -142,12 +142,12 @@ def availablekeymaps():
                 break
             if not line.startswith('#'):
                 registered.append(line.partition('|')[0])
-    for type in availablekeybtypes():
-        for filename in os.listdir(keymapdir + type):
+    for keyboard_type in availablekeybtypes():
+        for filename in os.listdir(keymapdir + keyboard_type):
             if filename.endswith('.map.gz'):
-                map = filename.replace('.map.gz', '')
-                if map in registered:
-                    keymaps.append([type, map])
+                key_map = filename.replace('.map.gz', '')
+                if key_map in registered:
+                    keymaps.append([keyboard_type, key_map])
                 # else:
                 # print "WARNING: {0} keymap is not specified in keymaps
                 # list.".format(map)
