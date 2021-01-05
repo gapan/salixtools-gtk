@@ -1,12 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
-from gi.repository import GObject
+from gi.repository import Gtk, GLib
 import os
 import subprocess
+import threading
 
 # Internationalization
 import locale
@@ -29,28 +29,22 @@ def icon_dirs():
 
 class GTKIconRefresh:
 
-    def do_rebuild(self):
+    def rebuild_icon_cache(self):
         number_of_dirs = len(icon_dirs())
         step = 0.999 / number_of_dirs
         position = 0
         for i in icon_dirs():
-            self.progressbar.set_fraction(position)
-            while Gtk.events_pending():
-                Gtk.main_iteration()
+            GLib.idle_add(self.update_progress, position)
             cmd = ['gtk-update-icon-cache', '-f', i]
             process = subprocess.Popen(cmd)
             process.wait()
             position = position + step
-            yield True
         self.progressbar.set_fraction(1)
         Gtk.main_quit()
-        while Gtk.events_pending():
-            Gtk.main_iteration()
-        yield False
 
-    def rebuild_icon_cache(self):
-        task = self.do_rebuild()
-        GObject.idle_add(task.next)
+    def update_progress(self, position):
+        self.progressbar.set_fraction(position)
+        return False
 
     def gtk_main_quit(self, widget, data=None):
         Gtk.main_quit()
@@ -71,7 +65,9 @@ class GTKIconRefresh:
 
         builder.connect_signals(self)
 
-        self.rebuild_icon_cache()
+        thread = threading.Thread(target=self.rebuild_icon_cache)
+        thread.daemon = True
+        thread.start()
 
 if __name__ == "__main__":
     app = GTKIconRefresh()
