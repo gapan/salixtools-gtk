@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gi
@@ -23,7 +23,7 @@ hosts_file = '/etc/hosts'
 
 def get_hostname():
     try:
-        f = file(hostname_file)
+        f = open(hostname_file, 'r')
         line = f.readline().replace('\n', '')
         f.close()
     except IOError:
@@ -38,7 +38,7 @@ def get_hostname():
 
 def get_other_hosts():
     try:
-        f = file(hosts_file)
+        f = open(hosts_file, 'r')
         contents = f.readlines()
         f.close()
     except IOError:
@@ -99,13 +99,13 @@ def check_hostname(ip, hostname, domain):
 
 
 def write_hosts(hostname, domain, host_list):
-    f = file(hostname_file, 'w')
+    f = open(hostname_file, 'w')
     if domain == '':
         f.write(hostname + '\n')
     else:
         f.write(hostname + '.' + domain + '\n')
     f.close()
-    f = file(hosts_file, 'w')
+    f = open(hosts_file, 'w')
     f.write('#\n')
     f.write('# hosts\tThis file describes a number of hostname-to-address\n')
     f.write('#\t\tmappings for the TCP/IP subsystem. It is mostly\n')
