@@ -219,55 +219,51 @@ def write_conf(repo, parent_window):
     #
     fname = '/etc/slapt-get/slapt-getrc'
     try:
-        f = open(fname, 'w')
+        with open(fname, 'w') as f:
+            f.write('# Working directory for local storage/cache.\n')
+            f.write('WORKINGDIR={}\n\n'.format(slaptget_working_dir))
+            f.write('# Exclude package names and expressions.\n')
+            f.write('# To exclude pre and beta packages, add this to the exclude:\n')
+            f.write('#   [0-9\_\.\-]{1}pre[0-9\-\.\-]{1}\n')
+            f.write('EXCLUDE={}\n\n'.format(slaptget_exclude))
+            f.write('# The Slackware repositories, including dependency information\n')
+            f.write('SOURCE={r}/{a}/{s}-{v}/:OFFICIAL\n'.format(
+                r=repo, a=arch, s=slackdir, v=version))
+            f.write('SOURCE={r}/{a}/{s}-{v}/extra/:OFFICIAL\n\n'.format(
+                r=repo, a=arch, s=slackdir, v=version))
+            f.write('# The Salix repository\n')
+            f.write('SOURCE={r}/{a}/{v}/:PREFERRED\n'.format(
+                r=repo, a=arch, v=version))
+            f.write('# And the Salix extra repository\n')
+            f.write('SOURCE={r}/{a}/extra-{v}/:OFFICIAL\n\n'.format(
+                r=repo, a=arch, v=version))
+            f.write('# Local repositories\n')
+            f.write('# SOURCE=file:///var/www/packages/:CUSTOM\n')
+            for repo in custom:
+                f.write('SOURCE={r}\n'.format(r=repo))
     except IOError:
         msg1 = _('Could not write to file:')
         msg2 = _('Exiting.')
         show_error_dialog('%s %s\n\n%s' % (msg1, fname, msg2), parent_window)
         sys.exit(1)
-    else:
-        f.write('# Working directory for local storage/cache.\n')
-        f.write('WORKINGDIR={}\n\n'.format(slaptget_working_dir))
-        f.write('# Exclude package names and expressions.\n')
-        f.write('# To exclude pre and beta packages, add this to the exclude:\n')
-        f.write('#   [0-9\_\.\-]{1}pre[0-9\-\.\-]{1}\n')
-        f.write('EXCLUDE={}\n\n'.format(slaptget_exclude))
-        f.write('# The Slackware repositories, including dependency information\n')
-        f.write('SOURCE={r}/{a}/{s}-{v}/:OFFICIAL\n'.format(
-            r=repo, a=arch, s=slackdir, v=version))
-        f.write('SOURCE={r}/{a}/{s}-{v}/extra/:OFFICIAL\n\n'.format(
-            r=repo, a=arch, s=slackdir, v=version))
-        f.write('# The Salix repository\n')
-        f.write('SOURCE={r}/{a}/{v}/:PREFERRED\n'.format(
-            r=repo, a=arch, v=version))
-        f.write('# And the Salix extra repository\n')
-        f.write('SOURCE={r}/{a}/extra-{v}/:OFFICIAL\n\n'.format(
-            r=repo, a=arch, v=version))
-        f.write('# Local repositories\n')
-        f.write('# SOURCE=file:///var/www/packages/:CUSTOM\n')
-        for repo in custom:
-            f.write('SOURCE={r}\n'.format(r=repo))
-        f.close()
     #
     # slapt-srcrc
     #
     #
     fname = '/etc/slapt-get/slapt-srcrc'
     try:
-        f = open(fname, 'w')
+        with open(fname, 'w') as f:
+            f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
+            f.write('PKGEXT={}\n'.format(slaptsrc_pkg_ext))
+            f.write('SOURCE={r}/slkbuild/{v}/\n'.format(
+                r=repo, v=version))
+            f.write('SOURCE={r}/sbo/{v}/\n'.format(
+                r=repo, v=version))
     except IOError:
         msg1 = _('Could not write to file:')
         msg2 = _('Exiting.')
         show_error_dialog('%s %s\n\n%s' % (msg1, fname, msg2), parent_window)
         sys.exit(1)
-    else:
-        f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
-        f.write('PKGEXT={}\n'.format(slaptsrc_pkg_ext))
-        f.write('SOURCE={r}/slkbuild/{v}/\n'.format(
-            r=repo, v=version))
-        f.write('SOURCE={r}/sbo/{v}/\n'.format(
-            r=repo, v=version))
-        f.close()
     return success
 
 def get_mirrors(repo):
