@@ -71,14 +71,14 @@ def get_salix_version(parent_window):
     '''
     Read the Salix version.
     '''
+    fname = '/usr/share/salixtools/salix-version'
     try:
-        with open('/usr/share/salixtools/salix-version', 'r') as f:
+        with open(fname, 'r') as f:
             version = f.readline().strip()
     except IOError:
         msg1 = _('Could not read file:')
-        f = '/usr/share/salixtools/salix-version'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
+        show_error_dialog('%s %s\n\n%s' % (msg1, fname, msg2), parent_window)
         sys.exit(1)
     return version
 
@@ -107,8 +107,9 @@ def get_repo_list_from_file(parent_window):
     as a list.
     '''
     repolist = []
+    fname = '/usr/share/salixtools/reposetup/repomirrors'
     try:
-        with open('/usr/share/salixtools/reposetup/repomirrors', 'r') as f:
+        with open(fname, 'r') as f:
             while True:
                 line = f.readline().rstrip()
                 if len(line) == 0:
@@ -118,9 +119,8 @@ def get_repo_list_from_file(parent_window):
                 repolist.append([url, country])
     except IOError:
         msg1 = _('Could not read file:')
-        f = '/usr/share/reposetup/repomirrors'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
+        show_error_dialog('%s %s\n\n%s' % (msg1, fname, msg2), parent_window)
         sys.exit(1)
     try:
         with open('/etc/salixtools/repos-custom', 'r') as f:
@@ -141,12 +141,13 @@ def get_repo_list_from_file(parent_window):
 def get_slaptget_settings():
     exclude_default = '^aaa_elflibs,^aaa_base,^devs,^glibc.*,^kernel-.*,^udev,' \
                       '^rootuser-settings,^zzz-settings.*'
+    fname = '/etc/slapt-get/slapt-getrc'
     try:
-        c = TextConfig('/etc/slapt-get/slapt-getrc')
+        c = TextConfig(fname)
     except IOError:
         msg1 = _('WARNING:')
         msg2 = _('Could not read file:')
-        print('%s %s /etc/slapt-get/slapt-getrc' % (msg1, msg2))
+        print('%s %s %s' % (msg1, msg2, fname))
         working_dir = '/var/slapt-get'
         exclude = exclude_default
         if arch == 'x86_64':
@@ -180,12 +181,13 @@ def get_slaptget_settings():
     return working_dir, exclude, custom_repos
 
 def get_slaptsrc_settings():
+    fname = '/etc/slapt-get/slapt-srcrc'
     try:
-        c = TextConfig('/etc/slapt-get/slapt-srcrc')
+        c = TextConfig(fname)
     except IOError:
         msg1 = _('WARNING:')
         msg2 = _('Could not read file:')
-        print('%s %s /etc/slapt-get/slapt-srcrc' % (msg1, msg2))
+        print('%s %s %s' % (msg1, msg2, fname))
         build_dir = '/usr/src/slapt-src'
         pkg_ext = 'txz'
     else:
@@ -215,13 +217,13 @@ def write_conf(repo, parent_window):
     #
     # slapt-getrc
     #
+    fname = '/etc/slapt-get/slapt-getrc'
     try:
-        f = open('/etc/slapt-get/slapt-getrc', 'w')
+        f = open(fname, 'w')
     except IOError:
         msg1 = _('Could not write to file:')
-        f = '/etc/slapt-get/slapt-getrc'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
+        show_error_dialog('%s %s\n\n%s' % (msg1, fname, msg2), parent_window)
         sys.exit(1)
     else:
         f.write('# Working directory for local storage/cache.\n')
@@ -250,13 +252,13 @@ def write_conf(repo, parent_window):
     # slapt-srcrc
     #
     #
+    fname = '/etc/slapt-get/slapt-srcrc'
     try:
-        f = open('/etc/slapt-get/slapt-srcrc', 'w')
+        f = open(fname, 'w')
     except IOError:
         msg1 = _('Could not write to file:')
-        f = '/etc/slapt-get/slapt-srcrc'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
+        show_error_dialog('%s %s\n\n%s' % (msg1, fname, msg2), parent_window)
         sys.exit(1)
     else:
         f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
@@ -285,12 +287,13 @@ def get_mirrors(repo):
     return mirrors
 
 def write_mirrors(mirror_list):
+    fname = '/usr/share/salixtools/reposetup/repomirrors'
     try:
-        f = open('/usr/share/salixtools/reposetup/repomirrors', 'w')
+        f = open(fname, 'w')
     except IOError:
         msg1 = _('WARNING:')
         msg2 = _('Could not write to file:')
-        print("%s %s /usr/share/salixtools/reposetup/repomirrors" % (msg1, msg2))
+        print("%s %s %s" % (msg1, msg2, fname))
     else:
         for line in mirror_list:
             f.write('{}\n'.format(line))
