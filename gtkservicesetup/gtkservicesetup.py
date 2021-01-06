@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gi
@@ -18,14 +18,14 @@ gettext.textdomain("gtkservicesetup")
 _ = gettext.gettext
 
 def blacklisted():
-    f = file('/usr/share/salixtools/servicesetup/service-blacklist')
-    servicestrings = []
-    while True:
-        line = f.readline().replace('\n', '')
-        if len(line) == 0:
-            break
-        servicestrings.append(line)
-    f.close()
+    fname = '/usr/share/salixtools/servicesetup/service-blacklist'
+    with open(fname, 'r') as f:
+        servicestrings = []
+        while True:
+            line = f.readline().replace('\n', '')
+            if len(line) == 0:
+                break
+            servicestrings.append(line)
     return servicestrings
 
 
@@ -49,15 +49,14 @@ def servicedesc(service):
     description = _('The {0} service').format(service[3:])
     filelist = os.listdir('/etc/rc.d/desc.d')
     for i in filelist:
-        f = file('/etc/rc.d/desc.d/' + i)
-        while True:
-            line = f.readline()
-            if len(line) == 0:
-                break
-            elif 'rc.' + line.partition(':')[0] == service:
-                description = line.partition(':')[2].partition(':')[0]
-                break
-        f.close
+        with open('/etc/rc.d/desc.d/' + i, 'r') as f:
+            while True:
+                line = f.readline()
+                if len(line) == 0:
+                    break
+                elif 'rc.' + line.partition(':')[0] == service:
+                    description = line.partition(':')[2].partition(':')[0]
+                    break
     return description
 
 
