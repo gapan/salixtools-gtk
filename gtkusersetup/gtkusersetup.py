@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gi
@@ -6,7 +6,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 import os
 import sys
-import commands
+import subprocess
 import datetime
 import pwd
 import grp
@@ -103,7 +103,7 @@ class SystemUsers:
         return shell
 
     def get_maingroup(self, login):
-        group = commands.getoutput(
+        group = subprocess.getoutput(
             'groups ' + login).partition(' : ')[2].partition(' ')[0]
         return group
 
@@ -117,7 +117,7 @@ class SystemUsers:
 
     def get_expiry_date(self, login):
         now = datetime.datetime.now()
-        expirydays = commands.getoutput(
+        expirydays = subprocess.getoutput(
             'grep -e "^' + login + ':.*$" /etc/shadow | cut -d : -f 8')
         if expirydays == '':
             state = False
@@ -126,7 +126,7 @@ class SystemUsers:
             day = now.day
         else:
             state = True
-            expirydate = commands.getoutput(
+            expirydate = subprocess.getoutput(
                 'date -u --date "Jan 1, 1970 + ' + expirydays + ' days" +%Y-%m-%d')
             year = int(expirydate.partition('-')[0])
             month = int(expirydate.partition('-')[2].partition('-')[0]) - 1
