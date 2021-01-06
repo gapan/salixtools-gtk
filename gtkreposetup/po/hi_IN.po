@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Panwar108 <caspian7pena@gmail.com>, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 02:12+0300\n"
+"PO-Revision-Date: 2016-07-21 23:13+0000\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2020\n"
+"Language-Team: Hindi (India) (https://www.transifex.com/gapan/teams/15073/hi_IN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hi_IN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gtkreposetup.ui:18
+msgid "Select repository mirror"
+msgstr "पैकेज-संग्रह हेतु सर्वर-मिरर चुनें"
+
+#: gtkreposetup.ui:143
+msgid ""
+"Please select your preferred repository mirror. The country code where each "
+"mirror is located is shown on the right. Mirrors located closer to you "
+"geographically are usually faster."
+msgstr ""
+"कृपया इच्छित सर्वर-मिरर चुनें। प्रत्येक सर्वर का देश कोड उसके दायीं ओर "
+"दर्शाया गया है। भौगोलिक रूप से निकटम सर्वर की इंटरनेट गति सामान्यतः तेज़ होती"
+" है।"
+
+#: gtkreposetup.ui:175
+msgid "Mirror"
+msgstr "सर्वर-मिरर"
+
+#: gtkreposetup.ui:186
+msgid "Country"
+msgstr "देश"
+
+#: gtkreposetup.ui:206
+msgid "Update the package and SlackBuild data"
+msgstr "पैकेज व स्लैक बिल्ड डाटा अपडेट करें"
+
+#: gtkreposetup.ui:236
+msgid "Repository configuration tool"
+msgstr "पैकेज-संग्रह विन्यास साधन"
+
+#: gtkreposetup.ui:915
+msgid "translator-credits"
+msgstr "अनुवादक आभार"
+
+#: gtkreposetup.ui:941
+msgid "Updating mirror list"
+msgstr "सर्वर-मिरर सूची अपडेट हो रही है"
+
+#: gtkreposetup.ui:960
+msgid "Updating mirror list. Please wait..."
+msgstr "सर्वर-मिरर सूची अपडेट हो रही है। कृपया प्रतीक्षा करें ..."
+
+#: gtkreposetup.ui:1018
+msgid "Updating..."
+msgstr "अपडेट हो रही है ..."
+
+#: gtkreposetup:49
+msgid "Error"
+msgstr "त्रुटि"
+
+#: gtkreposetup:79 gtkreposetup:97 gtkreposetup:121 gtkreposetup:149
+#: gtkreposetup:188
+msgid "Could not read file:"
+msgstr "फ़ाइल रीड नहीं की जा सकी :"
+
+#: gtkreposetup:81 gtkreposetup:99 gtkreposetup:123 gtkreposetup:224
+#: gtkreposetup:256
+msgid "Exiting."
+msgstr "बंद किया जा रहा है।"
+
+#: gtkreposetup:148 gtkreposetup:187 gtkreposetup:288
+msgid "WARNING:"
+msgstr "चेतावनी :"
+
+#: gtkreposetup:222 gtkreposetup:254 gtkreposetup:289
+msgid "Could not write to file:"
+msgstr "फ़ाइल राइट नहीं की जा सकी :"
+
+#: gtkreposetup:339
+msgid "Could not write configuration files."
+msgstr "विन्यास फ़ाइल राइट नहीं की जा सकी।"
+
+#: gtkreposetup:344
+msgid "Updating package information..."
+msgstr "पैकेज जानकारी अपडेट की जा रही है ..."
+
+#: gtkreposetup:354
+msgid "Could not update package information."
+msgstr "पैकेज जानकारी अपडेट नहीं हो सकी।"
+
+#: gtkreposetup:359
+msgid "Updating SlackBuild information..."
+msgstr "स्लैकबिल्ड जानकारी अपडेट की जा रही है ..."
+
+#: gtkreposetup:369
+msgid "Could not update SlackBuild information."
+msgstr "स्लैकबिल्ड जानकारी अपडेट नहीं की जा सकी।"
+
+#: gtkreposetup.desktop.in.h:1 gtkreposetup-kde.desktop.in.h:1
+msgid "Repository Mirror"
+msgstr "पैकेज-संग्रह हेतु सर्वर-मिरर"
+
+#: gtkreposetup.desktop.in.h:2 gtkreposetup-kde.desktop.in.h:2
+msgid "Select your preferred repository mirror"
+msgstr "पैकेज-संग्रह हेतु इच्छित सर्वर-मिरर चुनें"

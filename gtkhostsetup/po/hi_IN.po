@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Panwar108 <caspian7pena@gmail.com>, 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-11 13:28+0300\n"
+"PO-Revision-Date: 2020-06-17 06:55+0000\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>\n"
+"Language-Team: Hindi (India) (http://www.transifex.com/gapan/salixtools-gtk/language/hi_IN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hi_IN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
+msgid "Hostnames"
+msgstr "होस्ट नाम"
+
+#: gtkhostsetup.glade:44
+msgid "<b>This computer:</b>"
+msgstr "<b>यह कंप्यूटर :</b>"
+
+#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
+msgid "Hostname:"
+msgstr "होस्ट नाम :"
+
+#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
+msgid "Domain:"
+msgstr "डोमेन :"
+
+#: gtkhostsetup.glade:124
+msgid "<b>Other hosts:</b>"
+msgstr "<b>अन्य होस्ट :</b>"
+
+#: gtkhostsetup.glade:369
+msgid "Add host"
+msgstr "होस्ट जोड़ें"
+
+#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
+msgid "IP address:"
+msgstr "आईपी पता :"
+
+#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
+msgid "Error"
+msgstr "त्रुटि"
+
+#: gtkhostsetup.glade:602
+msgid "Edit host"
+msgstr "होस्ट संपादित करें"
+
+#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Configure the system hostnames"
+msgstr "सिस्टम होस्ट नाम विन्यस्त करें"
+
+#: gtkhostsetup.glade:1613
+msgid "translator-credits"
+msgstr "अनुवादक आभार"
+
+#: gtkhostsetup:60
+msgid "The IP address cannot be empty."
+msgstr "आईपी-पता रिक्त नहीं होना चाहिए।"
+
+#: gtkhostsetup:63
+msgid "The hostname cannot be empty."
+msgstr "होस्ट नाम रिक्त नहीं होना चाहिए।"
+
+#: gtkhostsetup:66
+msgid "The hostname cannot start with a hyphen."
+msgstr "होस्ट नाम हायफ़न '-' से आरंभ नहीं होना चाहिए।"
+
+#: gtkhostsetup:69
+msgid "The hostname cannot end with a hyphen."
+msgstr "होस्ट नाम हायफ़न '-' से अंत नहीं होना चाहिए।"
+
+#: gtkhostsetup:72
+msgid "The domain cannot start with a hyphen."
+msgstr "डोमेन नाम हायफ़न '-' से आरंभ नहीं होना चाहिए।"
+
+#: gtkhostsetup:75
+msgid "The domain cannot end with a hyphen."
+msgstr "डोमेन नाम हायफ़न '-' से अंत नहीं होना चाहिए।"
+
+#: gtkhostsetup:80
+msgid "Not a valid IP address."
+msgstr "अमान्य आईपी पता।"
+
+#: gtkhostsetup:85
+msgid "The hostname can consist solely of latin letters, numbers and hyphens."
+msgstr "होस्ट नाम में केवल रोमन लिपि के अक्षर, संख्या व हायफ़न हो सकते हैं।"
+
+#: gtkhostsetup:90
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "डोमेन में केवल रोमन लिपि के अक्षर, संख्या, हायफ़न व बिंदु हो सकते हैं।"
+
+#: gtkhostsetup:284
+msgid "IP address"
+msgstr "आईपी पता"
+
+#: gtkhostsetup:285
+msgid "Hostname"
+msgstr "होस्ट नाम"
+
+#: gtkhostsetup:286
+msgid "Domain"
+msgstr "डोमेन"
