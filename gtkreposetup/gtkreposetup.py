@@ -1,12 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-from __future__ import print_function
+
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk
-from gi.repository import Gdk
-from gi.repository import GLib
+from gi.repository import Gtk, Gdk, GLib
 import os
 import sys
 import subprocess
@@ -14,8 +12,8 @@ import threading
 import time
 import platform
 import re
-import urllib2
-from simpleconfig import SimpleConfig
+import urllib.request, urllib.error, urllib.parse
+from textconfig import TextConfig
 
 # Internationalization
 import locale
@@ -31,9 +29,6 @@ salixtoolsdir = '/usr/share/salixtools/'
 
 canceltask = False
 
-# initializing the gtk's thread engine
-Gdk.threads_init()
-
 def threaded(f):
     def wrapper(*args):
         t = threading.Thread(target=f, args=args)
@@ -48,13 +43,12 @@ class BreakConnection(Exception):
     '''
     pass
 
-def show_error_dialog(error_msg, parent=None):
-    dialog = Gtk.MessageDialog(parent=parent, flags=0, type=Gtk.MESSAGE_ERROR,
-            buttons=Gtk.BUTTONS_OK, message_format=error_msg)
+def show_error_dialog(error_msg, parent):
+    dialog = Gtk.MessageDialog(parent=parent, flags=0, type=Gtk.MessageType.ERROR,
+            buttons=Gtk.ButtonsType.OK, message_format=error_msg)
     dialog.set_title(_('Error'))
     dialog.set_modal(True)
-    if parent:
-        dialog.set_transient_for(parent)
+    dialog.set_transient_for(parent)
     dialog.run()
     dialog.destroy()
 
@@ -73,7 +67,7 @@ def get_arch():
     else:
         return m
 
-def get_salix_version():
+def get_salix_version(parent_window):
     '''
     Read the Salix version.
     '''
@@ -84,30 +78,30 @@ def get_salix_version():
         msg1 = _('Could not read file:')
         f = '/usr/share/salixtools/salix-version'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
         sys.exit(1)
     return version
 
-def get_current_repo():
+def get_current_repo(parent_window):
     '''
     Return the currently selected repository. Just runs the command line
     reposetup tool with the -p option to get it.
     '''
     p = subprocess.Popen(['reposetup', '-p'], stdout=subprocess.PIPE)
     if p.wait() == 0:
-        return p.communicate()[0].strip()
+        return p.communicate()[0].strip().decode()
     # error code 11 is thrown by reposetup when the salix-version file is not
     # found
     elif p.wait() == 11:
         msg1 = _('Could not read file:')
         f = '/usr/share/salixtools/salix-version'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
         sys.exit(1)
     else:
         return None
 
-def get_repo_list_from_file():
+def get_repo_list_from_file(parent_window):
     '''
     Reads the list of mirrors from the file they are stored in and returns it
     as a list.
@@ -126,7 +120,7 @@ def get_repo_list_from_file():
         msg1 = _('Could not read file:')
         f = '/usr/share/reposetup/repomirrors'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
         sys.exit(1)
     try:
         with open('/etc/salixtools/repos-custom', 'r') as f:
@@ -148,7 +142,7 @@ def get_slaptget_settings():
     exclude_default = '^aaa_elflibs,^aaa_base,^devs,^glibc.*,^kernel-.*,^udev,' \
                       '^rootuser-settings,^zzz-settings.*'
     try:
-        c = SimpleConfig('/etc/slapt-get/slapt-getrc')
+        c = TextConfig('/etc/slapt-get/slapt-getrc')
     except IOError:
         msg1 = _('WARNING:')
         msg2 = _('Could not read file:')
@@ -187,7 +181,7 @@ def get_slaptget_settings():
 
 def get_slaptsrc_settings():
     try:
-        c = SimpleConfig('/etc/slapt-get/slapt-srcrc')
+        c = TextConfig('/etc/slapt-get/slapt-srcrc')
     except IOError:
         msg1 = _('WARNING:')
         msg2 = _('Could not read file:')
@@ -205,7 +199,7 @@ def get_slaptsrc_settings():
             pkg_ext = 'txz'
     return build_dir, pkg_ext
 
-def write_conf(repo):
+def write_conf(repo, parent_window):
     '''
     Write configuration files.
     '''
@@ -216,7 +210,7 @@ def write_conf(repo):
         slackdir = 'slackwarearm'
     else:
         slackdir = 'slackware'
-    version = get_salix_version()
+    version = get_salix_version(parent_window)
     success = True
     #
     # slapt-getrc
@@ -227,7 +221,7 @@ def write_conf(repo):
         msg1 = _('Could not write to file:')
         f = '/etc/slapt-get/slapt-getrc'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
         sys.exit(1)
     else:
         f.write('# Working directory for local storage/cache.\n')
@@ -262,7 +256,7 @@ def write_conf(repo):
         msg1 = _('Could not write to file:')
         f = '/etc/slapt-get/slapt-srcrc'
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2))
+        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
         sys.exit(1)
     else:
         f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
@@ -279,11 +273,12 @@ def get_mirrors(repo):
     Retrieves the MIRRORS file from repo.
     '''
     try:
-        f = urllib2.urlopen('{}/MIRRORS'.format(repo))
+        f = urllib.request.urlopen('{}/MIRRORS'.format(repo))
         mirrors = f.read().splitlines()
-    except urllib2.HTTPError:
+        mirrors[:] = [x.decode() for x in mirrors]
+    except urllib.error.HTTPError:
         return None
-    except urllib2.URLError:
+    except urllib.error.URLError:
         return None
     except BreakConnection :
         return None
@@ -340,7 +335,7 @@ class GTKRepoSetup:
         if self.current_repo != new_repo:
             GLib.idle_add(self.dialog_update_repos.show)
             # write new configuration files
-            ret_conf = write_conf(new_repo)
+            ret_conf = write_conf(new_repo, self.window)
             if not ret_conf:
                 error_msg = _('Could not write configuration files.')
                 success = False
@@ -378,8 +373,10 @@ class GTKRepoSetup:
     def on_button_update_repos_cancel_clicked(self, widget):
         global canceltask
         canceltask = True
-        if self.p:
+        try:
             self.p.kill()
+        except AttributeError: # object has no attribute 'p'
+            pass
 
     def on_button_cancel_clicked(self, widget, data=None):
         Gtk.main_quit()
@@ -403,7 +400,7 @@ class GTKRepoSetup:
         global canceltask
         canceltask = False
         GLib.idle_add(self.dialog_update_list.show)
-        repos = [[self.current_repo, None]] + get_repo_list_from_file()
+        repos = [[self.current_repo, None]] + get_repo_list_from_file(self.window)
         for repo in repos:
             GLib.idle_add(self.progressbar_update_list.pulse)
             if not canceltask:
@@ -414,7 +411,7 @@ class GTKRepoSetup:
         GLib.idle_add(self.dialog_update_list.hide)
         cursorpos = 0
         selectedpos = 0
-        for i in get_repo_list_from_file():
+        for i in get_repo_list_from_file(self.window):
             self.liststore_repo.append(i)
             if self.current_repo == i[0]:
                 selectedpos = cursorpos
@@ -428,7 +425,7 @@ class GTKRepoSetup:
             GLib.idle_add(self.repolist.scroll_to_cell, scrollto)
 
     def on_button_update_list_cancel_clicked(self, widget):
-        self.dialog_update_list.hide()
+        GLib.idle_add(self.dialog_update_list.hide)
         global canceltask
         canceltask = True
         raise BreakConnection
@@ -459,10 +456,11 @@ class GTKRepoSetup:
         self.progressbar_update_repos = builder.get_object('progressbar_update_repos')
 
         # populate the list of mirrors
-        self.current_repo = get_current_repo()
-        self.update_mirror_list()
+        self.current_repo = get_current_repo(parent_window = self.dialog_update_list)
 
         builder.connect_signals(self)
+
+        self.update_mirror_list()
 
 if __name__ == "__main__":
     app = GTKRepoSetup()
