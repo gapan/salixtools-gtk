@@ -220,7 +220,7 @@
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtklocalesetup</property>
     <property name="program_name">gtklocalesetup</property>
-    <property name="copyright">Copyright © 2010-2017 George Vlahavas</property>
+    <property name="copyright">Copyright © 2010-2021 George Vlahavas</property>
     <property name="comments" translatable="yes">Locale configuration tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
