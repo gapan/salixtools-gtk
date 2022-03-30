@@ -544,7 +544,9 @@ class GTKUserSetup:
             officeinfo = self.entry_officeinfo.get_text()
             officeext = self.entry_officeext.get_text()
             homephone = self.entry_homephone.get_text()
-            maingroup = self.combobox_maingroup.get_active_text()
+            maingroup_iter = self.combobox_maingroup.get_active_iter()
+            maingroup_model = self.combobox_maingroup.get_model()
+            maingroup = maingroup_model[maingroup_iter][0]
             shell = self.entry_shell.get_text()
             expiry = self.checkbutton_user_expiration.get_active()
 
@@ -602,7 +604,9 @@ class GTKUserSetup:
             new_officeinfo = self.entry_officeinfo.get_text()
             new_officeext = self.entry_officeext.get_text()
             new_homephone = self.entry_homephone.get_text()
-            new_maingroup = self.combobox_maingroup.get_active_text()
+            new_maingroup_iter = self.combobox_maingroup.get_active_iter()
+            new_maingroup_model = self.combobox_maingroup.get_model()
+            new_maingroup = new_maingroup_model[new_maingroup_iter][0]
             new_shell = self.entry_shell.get_text()
             new_uid = self.spinbutton_uid.get_value_as_int()
             new_expiry_date = self.checkbutton_user_expiration.get_active()
