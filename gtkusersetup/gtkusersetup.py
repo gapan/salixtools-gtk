@@ -177,11 +177,11 @@ class SystemUsers:
 
     def set_officeinfo(self, login, officeinfo):
         officeinfo = '"' + officeinfo + '"'
-        os.system('chfn -r ' + officeinfo + ' ' + login)
+        os.system('chfn -o ' + officeinfo + ' ' + login)
 
     def set_officeext(self, login, officeext):
         officeext = '"' + officeext + '"'
-        os.system('chfn -w ' + officeext + ' ' + login)
+        os.system('chfn -p ' + officeext + ' ' + login)
 
     def set_homephone(self, login, homephone):
         homephone = '"' + homephone + '"'
