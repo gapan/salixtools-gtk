@@ -71,22 +71,6 @@ def getibus():
     return ibus
 
 
-def scimavailable():
-    scim = False
-    if os.access('/usr/bin/scim', os.X_OK):
-        if os.path.exists('/etc/profile.d/scim.sh'):
-            scim = True
-    return scim
-
-
-def getscim():
-    scim = False
-    if scimavailable() == True:
-        if os.access('/etc/profile.d/scim.sh', os.X_OK):
-            scim = True
-    return scim
-
-
 def setkeymap(keymap):
     cmd = ['/usr/sbin/keyboardsetup', '-k', keymap]
     process = subprocess.Popen(cmd)
@@ -109,16 +93,6 @@ def setibus(ibus):
     else:
         state = 'off'
     cmd = ['keyboardsetup', '-i', state]
-    process = subprocess.Popen(cmd)
-    process.wait()
-
-
-def setscim(scim):
-    if scim == True:
-        state = 'on'
-    else:
-        state = 'off'
-    cmd = ['keyboardsetup', '-s ', state]
     process = subprocess.Popen(cmd)
     process.wait()
 
@@ -185,8 +159,6 @@ class GTKKeyboardSetup:
             setnumlock(self.numlock.get_active())
         if not self.ibus.get_active() == getibus():
             setibus(self.ibus.get_active())
-        if not self.scim.get_active() == getscim():
-            setscim(self.scim.get_active())
         Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
@@ -233,7 +205,6 @@ class GTKKeyboardSetup:
         self.keymapliststore = builder.get_object('keymapliststore')
         self.numlock = builder.get_object('numlockcheckbutton')
         self.ibus = builder.get_object('ibuscheckbutton')
-        self.scim = builder.get_object('scimcheckbutton')
         self.aboutdialog = builder.get_object('aboutdialog')
 
         currentkeymap = getkeymap()
@@ -251,12 +222,6 @@ class GTKKeyboardSetup:
         else:
             self.ibus.set_sensitive(False)
             self.ibus.set_active(False)
-
-        if scimavailable() == True:
-            self.scim.set_active(getscim())
-        else:
-            self.scim.set_sensitive(False)
-            self.scim.set_active(False)
 
         self.numlock.set_active(getnumlock())
 
