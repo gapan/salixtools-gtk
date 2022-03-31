@@ -20,6 +20,7 @@
     <property name="border-width">5</property>
     <property name="title" translatable="yes">Keyboard settings</property>
     <property name="window-position">center</property>
+    <property name="default-width">560</property>
     <property name="icon-name">gtkkeyboardsetup</property>
     <property name="type-hint">normal</property>
     <signal name="destroy" handler="gtk_main_quit" swapped="no"/>
