@@ -280,6 +280,8 @@ def get_mirrors(repo):
         return None
     except BreakConnection :
         return None
+    except ValueError:
+        return None
     return mirrors
 
 def write_mirrors(mirror_list):
