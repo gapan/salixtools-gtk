@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 00:24+0300\n"
+"POT-Creation-Date: 2022-04-01 00:27+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,47 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../gtkkeyboardsetup.ui:21
+#: gtkkeyboardsetup.ui:21
 msgid "Keyboard settings"
 msgstr ""
 
-#: ../gtkkeyboardsetup.ui:140
+#: gtkkeyboardsetup.ui:140
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
 msgstr ""
 
-#: ../gtkkeyboardsetup.ui:244
+#: gtkkeyboardsetup.ui:244
 msgid "Enable numlock when the system is started"
 msgstr ""
 
-#: ../gtkkeyboardsetup.ui:259
+#: gtkkeyboardsetup.ui:259
 msgid "Enable IBus when the system is started"
 msgstr ""
 
-#: ../gtkkeyboardsetup.ui:263
+#: gtkkeyboardsetup.ui:263
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. It is newer and works better than SCIM."
 msgstr ""
 
-#: ../gtkkeyboardsetup.ui:296
+#: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr ""
 
-#: ../gtkkeyboardsetup.ui:974
+#: gtkkeyboardsetup.ui:974
 msgid "translator-credits"
 msgstr ""
 
-#: ../gtkkeyboardsetup.py:200
+#: gtkkeyboardsetup.py:200
 msgid "Keyboard type"
 msgstr ""
 
-#: ../gtkkeyboardsetup.py:204
+#: gtkkeyboardsetup.py:204
 msgid "Keyboard map"
+msgstr ""
+
+#: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
+msgid "Keyboard"
 msgstr ""
