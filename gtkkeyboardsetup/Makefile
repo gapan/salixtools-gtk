@@ -42,7 +42,7 @@ pot:
 		-j \
 		-L Python \
 		-o po/gtkkeyboardsetup.pot \
-		gtkkeyboardsetup
+		gtkkeyboardsetup.py
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkkeyboardsetup.pot gtkkeyboardsetup.desktop.in.h
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkkeyboardsetup.pot gtkkeyboardsetup-kde.desktop.in.h
 	rm gtkkeyboardsetup.desktop.in.h gtkkeyboardsetup-kde.desktop.in.h
