@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Andrey Frantsuzov <pokazsch@yandex.ru>, 2011
 # Andrey Frantsuzov <pokazsch@yandex.ru>, 2012
@@ -9,67 +9,78 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-14 10:24+0200\n"
+"POT-Creation-Date: 2022-04-01 00:27+0300\n"
 "PO-Revision-Date: 2017-09-19 10:19+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Russian (http://www.transifex.com/gapan/salixtools-gtk/language/ru/)\n"
+"Language-Team: Russian (http://www.transifex.com/gapan/salixtools-gtk/"
+"language/ru/)\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: gtkkeyboardsetup.glade:21
+#: gtkkeyboardsetup.ui:21
 msgid "Keyboard settings"
 msgstr "Настройка клавиатуры"
 
-#: gtkkeyboardsetup.glade:52
+#: gtkkeyboardsetup.ui:140
 msgid ""
-"Please select your preferred keyboard type and map and set numlock and "
-"IBus/SCIM preferences."
-msgstr "Пожалуйста, выберите раскладку, программную раскладку используемого по умолчанию языка, и другие параметры для клавиатуры. Изменения вступят в силу после нажатия кнопки ОК."
+"Please select your preferred keyboard type and map and set numlock and IBus "
+"preferences."
+msgstr ""
+"Пожалуйста, выберите раскладку, программную раскладку используемого по "
+"умолчанию языка, и другие параметры для клавиатуры. Изменения вступят в силу "
+"после нажатия кнопки ОК."
 
-#: gtkkeyboardsetup.glade:146
+#: gtkkeyboardsetup.ui:244
 msgid "Enable numlock when the system is started"
 msgstr "Включать цифровую клавиатуру при загрузке системы"
 
-#: gtkkeyboardsetup.glade:161
+#: gtkkeyboardsetup.ui:259
 msgid "Enable IBus when the system is started"
 msgstr "Включать IBus при загрузке системы"
 
-#: gtkkeyboardsetup.glade:165
+#: gtkkeyboardsetup.ui:263
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. It is newer and works better than SCIM."
-msgstr "IBus — редактор метода ввода для языков, символы которых отсутствуют на клавиатуре. Эта программа заменяет собой SCIM."
+msgstr ""
+"IBus — редактор метода ввода для языков, символы которых отсутствуют на "
+"клавиатуре. Эта программа заменяет собой SCIM."
 
-#: gtkkeyboardsetup.glade:177
-msgid "Enable SCIM when the system is started"
-msgstr "Включать SCIM при загрузке системы"
-
-#: gtkkeyboardsetup.glade:181
-msgid ""
-"SCIM is an input platform for Chinese, Japanese, Korean and many other "
-"languages."
-msgstr "SCIM — редактор метода ввода для языков, символы которых отсутствуют на клавиатуре, например китайского, японского, корейского и многих других."
-
-#: gtkkeyboardsetup.glade:295 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
-msgstr "Графический интерфейс для keyboardsetup (входит в состав salixtools) — инструмента управления ракладкой клавиатуры. Gtkkeyboardsetup входит в состав salixtools-gtk."
+msgstr ""
+"Графический интерфейс для keyboardsetup (входит в состав salixtools) — "
+"инструмента управления ракладкой клавиатуры. Gtkkeyboardsetup входит в "
+"состав salixtools-gtk."
 
-#: gtkkeyboardsetup.glade:973
+#: gtkkeyboardsetup.ui:974
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: gtkkeyboardsetup:194
+#: gtkkeyboardsetup.py:200
 msgid "Keyboard type"
 msgstr "Раскладка клавиатуры"
 
-#: gtkkeyboardsetup:198
+#: gtkkeyboardsetup.py:204
 msgid "Keyboard map"
 msgstr "Программная раскладка"
 
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "Клавиатура"
+
+#~ msgid "Enable SCIM when the system is started"
+#~ msgstr "Включать SCIM при загрузке системы"
+
+#~ msgid ""
+#~ "SCIM is an input platform for Chinese, Japanese, Korean and many other "
+#~ "languages."
+#~ msgstr ""
+#~ "SCIM — редактор метода ввода для языков, символы которых отсутствуют на "
+#~ "клавиатуре, например китайского, японского, корейского и многих других."

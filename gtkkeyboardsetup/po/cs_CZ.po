@@ -1,74 +1,80 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Jiří Vírava <appukonrad@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-14 10:24+0200\n"
+"POT-Creation-Date: 2022-04-01 00:27+0300\n"
 "PO-Revision-Date: 2017-09-19 22:32+0000\n"
 "Last-Translator: Jiří Vírava <appukonrad@gmail.com>\n"
-"Language-Team: Czech (Czech Republic) (http://www.transifex.com/gapan/salixtools-gtk/language/cs_CZ/)\n"
+"Language-Team: Czech (Czech Republic) (http://www.transifex.com/gapan/"
+"salixtools-gtk/language/cs_CZ/)\n"
+"Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cs_CZ\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: gtkkeyboardsetup.glade:21
+#: gtkkeyboardsetup.ui:21
 msgid "Keyboard settings"
 msgstr "Nastavení klávesnice"
 
-#: gtkkeyboardsetup.glade:52
+#: gtkkeyboardsetup.ui:140
 msgid ""
-"Please select your preferred keyboard type and map and set numlock and "
-"IBus/SCIM preferences."
-msgstr "Prosím, vyberte upřednostňované předvolby typu klávesnice, mapy a nastavení NumLock, IBUS /SCIM."
+"Please select your preferred keyboard type and map and set numlock and IBus "
+"preferences."
+msgstr ""
+"Prosím, vyberte upřednostňované předvolby typu klávesnice, mapy a nastavení "
+"NumLock, IBUS."
 
-#: gtkkeyboardsetup.glade:146
+#: gtkkeyboardsetup.ui:244
 msgid "Enable numlock when the system is started"
 msgstr "Povolit NumLock při spuštění systému"
 
-#: gtkkeyboardsetup.glade:161
+#: gtkkeyboardsetup.ui:259
 msgid "Enable IBus when the system is started"
 msgstr "Povolit IBus při spuštění systému"
 
-#: gtkkeyboardsetup.glade:165
+#: gtkkeyboardsetup.ui:263
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. It is newer and works better than SCIM."
-msgstr "IBus je vstupní platforma pro Čínštinu, Japonštinu, Korejštinu a mnoho dalších jazyků. Je novější a lépe fungující než SCIM."
+msgstr ""
+"IBus je vstupní platforma pro Čínštinu, Japonštinu, Korejštinu a mnoho "
+"dalších jazyků. Je novější a lépe fungující než SCIM."
 
-#: gtkkeyboardsetup.glade:177
-msgid "Enable SCIM when the system is started"
-msgstr "Povolit SCIM při spuštění systému"
-
-#: gtkkeyboardsetup.glade:181
-msgid ""
-"SCIM is an input platform for Chinese, Japanese, Korean and many other "
-"languages."
-msgstr "SCIM je vstupní platforma pro Čínštinu, Japonštinu, Korejštinu a mnoha dalších jazyků."
-
-#: gtkkeyboardsetup.glade:295 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "Nástroj pro nastavení klávesnice"
 
-#: gtkkeyboardsetup.glade:973
+#: gtkkeyboardsetup.ui:974
 msgid "translator-credits"
 msgstr "zásluha na překladu"
 
-#: gtkkeyboardsetup:194
+#: gtkkeyboardsetup.py:200
 msgid "Keyboard type"
 msgstr "Typ klávesnice"
 
-#: gtkkeyboardsetup:198
+#: gtkkeyboardsetup.py:204
 msgid "Keyboard map"
 msgstr "Mapa klávesnice"
 
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "Klávesnice"
+
+#~ msgid "Enable SCIM when the system is started"
+#~ msgstr "Povolit SCIM při spuštění systému"
+
+#~ msgid ""
+#~ "SCIM is an input platform for Chinese, Japanese, Korean and many other "
+#~ "languages."
+#~ msgstr ""
+#~ "SCIM je vstupní platforma pro Čínštinu, Japonštinu, Korejštinu a mnoha "
+#~ "dalších jazyků."
