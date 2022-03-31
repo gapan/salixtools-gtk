@@ -1,23 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-01 00:27+0300\n"
-"PO-Revision-Date: 2017-09-22 15:47+0000\n"
-"Last-Translator: GabiT. <splanckx@gmail.com>\n"
-"Language-Team: Romanian (http://www.transifex.com/gapan/salixtools-gtk/"
-"language/ro/)\n"
-"Language: ro\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Romanian (http://www.transifex.com/gapan/salixtools-gtk/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1));\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: gtkkeyboardsetup.ui:21
 msgid "Keyboard settings"
@@ -27,9 +25,7 @@ msgstr "Setări tastatură"
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
-msgstr ""
-"Vă rugăm selectați tipul și aranjamentul tastaturii,precum și preferințele "
-"pentru numlock și IBus."
+msgstr "Vă rugăm selectați tipul și aranjamentul tastaturii,precum și preferințele pentru numlock și IBus."
 
 #: gtkkeyboardsetup.ui:244
 msgid "Enable numlock when the system is started"
@@ -43,9 +39,7 @@ msgstr "Activați IBus la pornirea sistemului"
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. It is newer and works better than SCIM."
-msgstr ""
-"IBus este o platformă de intrare pentru limbile chineză,japoneză,coreeană și "
-"multe altele.Este platformă mai nouă și funcționează mai bine decât SCIM."
+msgstr "IBus este o platformă de intrare pentru limbile chineză,japoneză,coreeană și multe altele.Este platformă mai nouă și funcționează mai bine decât SCIM."
 
 #: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
@@ -67,13 +61,3 @@ msgstr "Aranjamentul tastaturii"
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "Tastatură"
-
-#~ msgid "Enable SCIM when the system is started"
-#~ msgstr "Activați SCIM la pornirea sistemului"
-
-#~ msgid ""
-#~ "SCIM is an input platform for Chinese, Japanese, Korean and many other "
-#~ "languages."
-#~ msgstr ""
-#~ "SCIM este o platformă de intrare pentru limbile chineză,japoneză,coreeană "
-#~ "și multe altele."

@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Kris Thomsen <lakristho@gmail.com>, 2011
 msgid ""
@@ -9,14 +9,13 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-01 00:27+0300\n"
-"PO-Revision-Date: 2017-09-19 09:13+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Danish (http://www.transifex.com/gapan/salixtools-gtk/"
-"language/da/)\n"
-"Language: da\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: Kris Thomsen <lakristho@gmail.com>, 2011\n"
+"Language-Team: Danish (http://www.transifex.com/gapan/salixtools-gtk/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkkeyboardsetup.ui:21
@@ -27,9 +26,7 @@ msgstr "Indstillinger for tastatur"
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
-msgstr ""
-"Vælg venligst din foretrukne tastaturtype og -layout. Angiv numlock og IBus-"
-"indstillinger."
+msgstr "Vælg venligst din foretrukne tastaturtype og -layout. Angiv numlock og IBus-indstillinger."
 
 #: gtkkeyboardsetup.ui:244
 msgid "Enable numlock when the system is started"
@@ -43,9 +40,7 @@ msgstr "Aktivér IBus når systemet bliver startet"
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. It is newer and works better than SCIM."
-msgstr ""
-"IBus er en input-platform for kinesisk, japansk, koreansk og mange andre "
-"sprog. Det er nyere og virker bedre end SCIM."
+msgstr "IBus er en input-platform for kinesisk, japansk, koreansk og mange andre sprog. Det er nyere og virker bedre end SCIM."
 
 #: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
@@ -67,13 +62,3 @@ msgstr "Tastaturudlægning"
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "Tastatur"
-
-#~ msgid "Enable SCIM when the system is started"
-#~ msgstr "Aktivér SCIM når systemet bliver startet"
-
-#~ msgid ""
-#~ "SCIM is an input platform for Chinese, Japanese, Korean and many other "
-#~ "languages."
-#~ msgstr ""
-#~ "SCIM er en inputplatform for kinesisk, japansk, koreansk og mange andre "
-#~ "sprog."

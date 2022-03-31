@@ -1,8 +1,9 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
+# Sérgio Marques <smarques@ikmail.com>, 2013
 # Sérgio Marques <smarques@ikmail.com>, 2013
 msgid ""
 msgstr ""
@@ -11,12 +12,11 @@ msgstr ""
 "POT-Creation-Date: 2022-04-01 00:27+0300\n"
 "PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: Sérgio Marques <smarques@ikmail.com>, 2013\n"
-"Language-Team: Portuguese (http://www.transifex.com/gapan/salixtools-gtk/"
-"language/pt/)\n"
-"Language: pt\n"
+"Language-Team: Portuguese (http://www.transifex.com/gapan/salixtools-gtk/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkkeyboardsetup.ui:21
@@ -27,9 +27,7 @@ msgstr "Definições do teclado"
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
-msgstr ""
-"Selecione o tipo e esquema de teclado preferido e defina as preferências "
-"para o numlock e IBus."
+msgstr "Selecione o tipo e esquema de teclado preferido e defina as preferências para o numlock e IBus."
 
 #: gtkkeyboardsetup.ui:244
 msgid "Enable numlock when the system is started"
@@ -43,9 +41,7 @@ msgstr "Ativar o IBus ao iniciar o sistema"
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. It is newer and works better than SCIM."
-msgstr ""
-"O IBus é uma plataforma de introdução para o Chinês, Japonês, Coreano e "
-"outros idiomas. É mais recente e funciona melhor do que o SCIM."
+msgstr "O IBus é uma plataforma de introdução para o Chinês, Japonês, Coreano e outros idiomas. É mais recente e funciona melhor do que o SCIM."
 
 #: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
@@ -54,9 +50,7 @@ msgstr "Ferramenta de configuração do teclado"
 
 #: gtkkeyboardsetup.ui:974
 msgid "translator-credits"
-msgstr ""
-"Hugo Carvalho <hugokarvalho@hotmail.com>\n"
-"Sérgio Marques <smarquespt@gmail.com>"
+msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>\nSérgio Marques <smarquespt@gmail.com>"
 
 #: gtkkeyboardsetup.py:200
 msgid "Keyboard type"
@@ -69,13 +63,3 @@ msgstr "Esquema de teclado"
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "Teclado"
-
-#~ msgid "Enable SCIM when the system is started"
-#~ msgstr "Ativar o SCIM ao iniciar o sistema"
-
-#~ msgid ""
-#~ "SCIM is an input platform for Chinese, Japanese, Korean and many other "
-#~ "languages."
-#~ msgstr ""
-#~ "O SCIM é uma plataforma de introdução para o Chinês, Japonês, Coreano e "
-#~ "outros idiomas."

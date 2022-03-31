@@ -1,26 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-# GenghisKhan <genghiskhan@gmx.ca>, 2013
-# GenghisKhan <genghiskhan@gmx.ca>, 2012
+# gk <genghiskhan@gmx.ca>, 2012-2013
+# gk <genghiskhan@gmx.ca>, 2013
+# gk <genghiskhan@gmx.ca>, 2012
 # zach https://www.transifex.net/accounts/profile/sharemore, 2010
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-01 00:27+0300\n"
-"PO-Revision-Date: 2017-09-19 09:13+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Hebrew (http://www.transifex.com/gapan/salixtools-gtk/"
-"language/he/)\n"
-"Language: he\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: zach https://www.transifex.net/accounts/profile/sharemore, 2010\n"
+"Language-Team: Hebrew (http://www.transifex.com/gapan/salixtools-gtk/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % "
-"1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Language: he\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 
 #: gtkkeyboardsetup.ui:21
 msgid "Keyboard settings"
@@ -30,9 +29,7 @@ msgstr "הגדרות מקלדת"
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
-msgstr ""
-"אנא בחר מערך וטיפוס מקלדת המועדפים עליך וקבע העדפות\n"
-"עבור numlock ועבור פלטפורמות ק‎‎‏‏לט IBus."
+msgstr "אנא בחר מערך וטיפוס מקלדת המועדפים עליך וקבע העדפות\nעבור numlock ועבור פלטפורמות ק‎‎‏‏לט IBus."
 
 #: gtkkeyboardsetup.ui:244
 msgid "Enable numlock when the system is started"
@@ -46,10 +43,7 @@ msgstr "אפשר IBus בעת הפעלת המערכת "
 msgid ""
 "IBus is an input platform for Chinese, Japanese, Korean and many other "
 "languages. It is newer and works better than SCIM."
-msgstr ""
-"‏IBus הינה פלטפורמת ק‎‎‏‏לט עבור יפנית, סינית, עברית, ערבית, פרסית, קוריאנית, "
-"רוסית ועוד שפות רבות אחרות. IBus עדכנית יותר ועובדת טוב יותר מאשר פלטפורמת "
-"הק‎‎‏‏לט SCIM."
+msgstr "‏IBus הינה פלטפורמת ק‎‎‏‏לט עבור יפנית, סינית, עברית, ערבית, פרסית, קוריאנית, רוסית ועוד שפות רבות אחרות. IBus עדכנית יותר ועובדת טוב יותר מאשר פלטפורמת הק‎‎‏‏לט SCIM."
 
 #: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
@@ -58,12 +52,7 @@ msgstr "כלי להגדרת תצורת מקלדת"
 
 #: gtkkeyboardsetup.ui:974
 msgid "translator-credits"
-msgstr ""
-"Transifex Contributors:\n"
-"  https://www.transifex.net/accounts/profile/sharemore/\n"
-"\n"
-"Rahut Contributors:\n"
-"  Isratine Citizen <genghiskhan@gmx.ca>"
+msgstr "Transifex Contributors:\n  https://www.transifex.net/accounts/profile/sharemore/\n\nRahut Contributors:\n  Isratine Citizen <genghiskhan@gmx.ca>"
 
 #: gtkkeyboardsetup.py:200
 msgid "Keyboard type"
@@ -76,13 +65,3 @@ msgstr "מערך מקלדת"
 #: gtkkeyboardsetup.desktop.in.h:1 gtkkeyboardsetup-kde.desktop.in.h:1
 msgid "Keyboard"
 msgstr "לוח מקשים"
-
-#~ msgid "Enable SCIM when the system is started"
-#~ msgstr "אפשר SCIM בעת הפעלת המערכת"
-
-#~ msgid ""
-#~ "SCIM is an input platform for Chinese, Japanese, Korean and many other "
-#~ "languages."
-#~ msgstr ""
-#~ "‏SCIM הינה פלטפורמת ק‎‎‏‏לט עבור יפנית, סינית, עברית, ערבית, פרסית, קוריאנית, "
-#~ "רוסית ועוד שפות רבות אחרות."
