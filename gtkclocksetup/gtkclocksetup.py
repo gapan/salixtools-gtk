@@ -96,36 +96,33 @@ def ntppresent():
 def utcstate():
     utc = False
     try:
-        f = open('/etc/hardwareclock', 'r')
-        while True:
-            line = f.readline()
-            if len(line) == 0:
-                break
-            elif line.rstrip("\n") == 'localtime':
-                utc = False
-                break
-            elif line.rstrip("\n") == 'UTC':
-                utc = True
-                break
-        f.close()
-    except IOError:
+        with open('/etc/hardwareclock', 'r') as f:
+            while True:
+                line = f.readline()
+                if len(line) == 0:
+                    break
+                elif line.rstrip("\n") == 'localtime':
+                    utc = False
+                    break
+                elif line.rstrip("\n") == 'UTC':
+                    utc = True
+                    break
+    except (IOError, FileNotFoundError):
         setutc(False)
     return utc
 
 
 def setutc(state):
-    f = file('/etc/hardwareclock', 'w')
-    if state == True:
-        time = 'UTC'
-    else:
-        time = 'localtime'
-    f.write('# /etc/hardwareclock\n')
-    f.write('#\n')
-    f.write('# Tells how the hardware clock time is stored.\n')
-    f.write('# You should run (gtk)clocksetup or timeconfig to edit this file.\n\n')
-    f.write(time + '\n')
-    f.close()
-
+    with open('/etc/hardwareclock', 'w') as f:
+        if state == True:
+            time = 'UTC'
+        else:
+            time = 'localtime'
+        f.write('# /etc/hardwareclock\n')
+        f.write('#\n')
+        f.write('# Tells how the hardware clock time is stored.\n')
+        f.write('# You should run (gtk)clocksetup or timeconfig to edit this file.\n\n')
+        f.write(time + '\n')
 
 def ntp_sync_now():
     cmd = ['/usr/sbin/ntpd', '-gq']
