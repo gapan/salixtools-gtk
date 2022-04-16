@@ -158,13 +158,14 @@ class GTKHostSetup:
             self.error_main_window.show()
         else:
             host_list = []
-            iter = self.liststore_hosts.get_iter(0)
-            while (iter):
-                ip = self.liststore_hosts.get_value(iter, 0)
-                hostname = self.liststore_hosts.get_value(iter, 1)
-                domain = self.liststore_hosts.get_value(iter, 2)
-                host_list.append([ip, hostname, domain])
-                iter = self.liststore_hosts.iter_next(iter)
+            if len(self.liststore_hosts) > 0:
+                iter = self.liststore_hosts.get_iter(0)
+                while (iter):
+                    ip = self.liststore_hosts.get_value(iter, 0)
+                    hostname = self.liststore_hosts.get_value(iter, 1)
+                    domain = self.liststore_hosts.get_value(iter, 2)
+                    host_list.append([ip, hostname, domain])
+                    iter = self.liststore_hosts.iter_next(iter)
             write_hosts(self.entry_hostname.get_text(),
                         self.entry_domain.get_text(), sorted(host_list))
             Gtk.main_quit()
