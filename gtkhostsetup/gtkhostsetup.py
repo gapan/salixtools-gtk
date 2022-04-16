@@ -23,9 +23,8 @@ hosts_file = '/etc/hosts'
 
 def get_hostname():
     try:
-        f = open(hostname_file, 'r')
-        line = f.readline().replace('\n', '')
-        f.close()
+        with open(hostname_file, 'r') as f:
+            line = f.readline().replace('\n', '')
     except IOError:
         return ['', '']
     if len(line) == 0:
@@ -38,9 +37,8 @@ def get_hostname():
 
 def get_other_hosts():
     try:
-        f = open(hosts_file, 'r')
-        contents = f.readlines()
-        f.close()
+        with open(hosts_file, 'r') as f:
+            contents = f.readlines()
     except IOError:
         return [[]]
     hostlines = []
@@ -99,41 +97,39 @@ def check_hostname(ip, hostname, domain):
 
 
 def write_hosts(hostname, domain, host_list):
-    f = open(hostname_file, 'w')
-    if domain == '':
-        f.write(hostname + '\n')
-    else:
-        f.write(hostname + '.' + domain + '\n')
-    f.close()
-    f = open(hosts_file, 'w')
-    f.write('#\n')
-    f.write('# hosts\tThis file describes a number of hostname-to-address\n')
-    f.write('#\t\tmappings for the TCP/IP subsystem. It is mostly\n')
-    f.write('#\t\tused at boot time, when no name servers are running.\n')
-    f.write('#\t\tOn small systems, this file can be used instead of a\n')
-    f.write('#\t\t"named" name server.  Just add the names, addresses\n')
-    f.write('#\t\tand any aliases to this file...\n')
-    f.write('#\n')
-    f.write('# By the way, Arnt Gulbrandsen <agulbra@nvg.unit.no> says that 127.0.0.1\n')
-    f.write('# should NEVER be named with the name of the machine. It causes problems\n')
-    f.write('# for some (stupid) programs, irc and reputedly talk. :^)\n')
-    f.write('#\n')
-    f.write('# For loopbacking.\n')
-    f.write('127.0.0.1\tlocalhost\n')
-    if domain == '':
-        f.write('127.0.0.1\t' + hostname + '\n\n')
-    else:
-        f.write('127.0.0.1\t' + hostname + '.' +
-                domain + ' ' + hostname + '\n\n')
-    for i in host_list:
-        ip, hostname, domain = i
+    with open(hostname_file, 'w') as f:
         if domain == '':
-            f.write(ip + '\t' + hostname + '\n')
+            f.write(hostname + '\n')
         else:
-            f.write(ip + '\t' + hostname + '.' +
-                    domain + ' ' + hostname + '\n')
-    f.write('\n# End of hosts.\n')
-    f.close()
+            f.write(hostname + '.' + domain + '\n')
+    with open(hosts_file, 'w') as f:
+        f.write('#\n')
+        f.write('# hosts\tThis file describes a number of hostname-to-address\n')
+        f.write('#\t\tmappings for the TCP/IP subsystem. It is mostly\n')
+        f.write('#\t\tused at boot time, when no name servers are running.\n')
+        f.write('#\t\tOn small systems, this file can be used instead of a\n')
+        f.write('#\t\t"named" name server.  Just add the names, addresses\n')
+        f.write('#\t\tand any aliases to this file...\n')
+        f.write('#\n')
+        f.write('# By the way, Arnt Gulbrandsen <agulbra@nvg.unit.no> says that 127.0.0.1\n')
+        f.write('# should NEVER be named with the name of the machine. It causes problems\n')
+        f.write('# for some (stupid) programs, irc and reputedly talk. :^)\n')
+        f.write('#\n')
+        f.write('# For loopbacking.\n')
+        f.write('127.0.0.1\tlocalhost\n')
+        if domain == '':
+            f.write('127.0.0.1\t' + hostname + '\n\n')
+        else:
+            f.write('127.0.0.1\t' + hostname + '.' +
+                    domain + ' ' + hostname + '\n\n')
+        for i in host_list:
+            ip, hostname, domain = i
+            if domain == '':
+                f.write(ip + '\t' + hostname + '\n')
+            else:
+                f.write(ip + '\t' + hostname + '.' +
+                        domain + ' ' + hostname + '\n')
+        f.write('\n# End of hosts.\n')
 
 
 class GTKHostSetup:
