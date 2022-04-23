@@ -282,6 +282,8 @@ def get_mirrors(repo):
         return None
     except ValueError:
         return None
+    except ConnectionResetError:
+        return None
     return mirrors
 
 def write_mirrors(mirror_list):
