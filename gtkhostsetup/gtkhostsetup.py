@@ -17,14 +17,19 @@ gettext.bindtextdomain("gtkhostsetup", "/usr/share/locale")
 gettext.textdomain("gtkhostsetup")
 _ = gettext.gettext
 
-hostname_file = '/etc/HOSTNAME'
+hostname_os_file = '/etc/HOSTNAME'
+hostname_file = '/etc/hostname_new'
 hosts_file = '/etc/hosts'
 
 
 def get_hostname():
     try:
-        with open(hostname_file, 'r') as f:
-            line = f.readline().replace('\n', '')
+        if os.access(hostname_file, os.R_OK):
+            with open(hostname_file, 'r') as f:
+                line = f.readline().replace('\n', '')
+        else:
+            with open(hostname_os_file, 'r') as f:
+                line = f.readline().replace('\n', '')
     except IOError:
         return ['', '']
     if len(line) == 0:
