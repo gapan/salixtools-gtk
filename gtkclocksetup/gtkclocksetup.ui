@@ -128,20 +128,6 @@
                 <property name="column-spacing">6</property>
                 <property name="row-homogeneous">True</property>
                 <child>
-                  <object class="GtkCheckButton" id="ntpcheckbutton">
-                    <property name="label" translatable="yes">Keep clock synchronized with internet servers</property>
-                    <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                    <property name="receives-default">False</property>
-                    <property name="draw-indicator">True</property>
-                    <signal name="toggled" handler="on_ntpcheckbutton_toggled" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="left-attach">0</property>
-                    <property name="top-attach">0</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkButton" id="button_sync_now">
                     <property name="label" translatable="yes">Synchronize now</property>
                     <property name="visible">True</property>
@@ -179,6 +165,42 @@
                     <property name="top-attach">1</property>
                   </packing>
                 </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkSwitch" id="switch_sync">
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="valign">center</property>
+                        <signal name="state-set" handler="on_switch_sync_toggled" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Keep clock synchronized with internet servers</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -187,18 +209,38 @@
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="utccheckbutton">
-                <property name="label" translatable="yes">Hardware clock is set to Coordinated Universal Time (UTC)</property>
+              <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">False</property>
-                <property name="tooltip-text" translatable="yes">Hardware clocks in most home or business computers are set to using local time, while the hardware clock in most web servers is probably set to UTC. Do not check this box if you are not sure.</property>
-                <property name="draw-indicator">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkSwitch" id="switch_utc">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="valign">center</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Hardware clock is set to Coordinated Universal Time (UTC)</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
               </object>
               <packing>
-                <property name="expand">True</property>
+                <property name="expand">False</property>
                 <property name="fill">True</property>
-                <property name="padding">5</property>
                 <property name="position">1</property>
               </packing>
             </child>

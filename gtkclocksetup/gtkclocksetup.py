@@ -150,9 +150,9 @@ class GTKClockSetup:
         self.window.hide()
         while Gtk.events_pending():
             Gtk.main_iteration()
-        if not self.ntpcheckbutton.get_active == ntpstate():
-            setntp(self.ntpcheckbutton.get_active())
-            if self.ntpcheckbutton.get_active() == False:
+        if not self.switch_sync.get_active == ntpstate():
+            setntp(self.switch_sync.get_active())
+            if self.switch_sync.get_active() == False:
                 year = "%04d" % (self.calendar.get_date()[0])
                 month = "%02d" % (self.calendar.get_date()[1] + 1)
                 day = "%02d" % (self.calendar.get_date()[2])
@@ -168,8 +168,8 @@ class GTKClockSetup:
                 cmd = ['hwclock', '--systohc']
                 process = subprocess.Popen(cmd)
                 process.wait()
-        if not self.utccheckbutton.get_active() == utcstate():
-            setutc(self.utccheckbutton.get_active())
+        if not self.switch_utc.get_active() == utcstate():
+            setutc(self.switch_utc.get_active())
         Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
@@ -237,8 +237,8 @@ class GTKClockSetup:
         self.label_timezone.set_label(
             _('Time zone:') + '      ' + continent + '/' + location)
 
-    def on_ntpcheckbutton_toggled(self, widget, data=None):
-        state = not self.ntpcheckbutton.get_active()
+    def on_switch_sync_toggled(self, widget, data=None):
+        state = not self.switch_sync.get_active()
         self.label_date.set_sensitive(state)
         self.calendar.set_sensitive(state)
         self.label_time.set_sensitive(state)
@@ -278,7 +278,7 @@ class GTKClockSetup:
         self.locationlist = builder.get_object('locationlist')
         self.locationcolumn = builder.get_object('locationcolumn')
         self.locationliststore = builder.get_object('locationliststore')
-        self.ntpcheckbutton = builder.get_object('ntpcheckbutton')
+        self.switch_sync = builder.get_object('switch_sync')
         self.button_sync_now = builder.get_object('button_sync_now')
         self.button_timezone = builder.get_object('button_timezone')
         self.label_date = builder.get_object('label_date')
@@ -289,16 +289,16 @@ class GTKClockSetup:
         self.spinbutton_sec = builder.get_object('spinbutton_sec')
         self.continentcolumn.set_title(_('General area'))
         self.locationcolumn.set_title(_('Location'))
-        self.utccheckbutton = builder.get_object('utccheckbutton')
-        self.utccheckbutton.set_active(utcstate())
+        self.switch_utc = builder.get_object('switch_utc')
+        self.switch_utc.set_active(utcstate())
         self.aboutdialog = builder.get_object('aboutdialog')
 
         ntp = ntppresent()
-        self.ntpcheckbutton.set_sensitive(ntp)
+        self.switch_sync.set_sensitive(ntp)
         self.button_sync_now.set_sensitive(not ntp)
         ntp = ntpstate()
-        self.ntpcheckbutton.set_active(ntp)
-        self.on_ntpcheckbutton_toggled(self)
+        self.switch_sync.set_active(ntp)
+        self.on_switch_sync_toggled(self)
 
         currentcontinent = currenttimezone()[0]
         count = 0
