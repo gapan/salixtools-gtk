@@ -397,7 +397,7 @@
     <property name="skip-pager-hint">True</property>
     <property name="transient-for">gtkhostsetup</property>
     <property name="program-name">gtkhostsetup</property>
-    <property name="copyright">Copyright © 2010-2021 George Vlahavas</property>
+    <property name="copyright">Copyright © 2010-2022 George Vlahavas</property>
     <property name="comments" translatable="yes">Configure the system hostnames</property>
     <property name="website">http://www.salixos.org</property>
     <property name="website-label">http://www.salixos.org</property>
