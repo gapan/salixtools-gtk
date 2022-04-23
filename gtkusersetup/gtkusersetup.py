@@ -524,9 +524,9 @@ class GTKUserSetup:
         self.refresh_group_list()
         self.group_settings_window.show()
 
-    def on_checkbutton_showall_toggled(self, widget, data=None):
+    def on_switch_showall_toggled(self, widget, data=None):
         self.userliststore.clear()
-        status = self.checkbutton_showall.get_active()
+        status = self.switch_showall.get_active()
         u = SystemUsers()
         for i in u.user_list(status):
             self.userliststore.append([i[3], i[0], i[7], i[1]])
@@ -582,7 +582,7 @@ class GTKUserSetup:
                     u.set_expiry_date(username, year, month, day)
 
                 self.user_properties_window.hide()
-                self.on_checkbutton_showall_toggled(self)
+                self.on_switch_showall_toggled(self)
         else:
             #
             # Editing existing user info
@@ -700,7 +700,7 @@ class GTKUserSetup:
                         else:
                             u.remove_user_from_group(username, i[1])
                 self.user_properties_window.hide()
-                self.on_checkbutton_showall_toggled(self)
+                self.on_switch_showall_toggled(self)
 
     def on_button_user_properties_cancel_clicked(self, widget, data=None):
         self.user_properties_window.hide()
@@ -749,7 +749,7 @@ class GTKUserSetup:
         delete_homedir = self.checkbutton_delete_user_homedir.get_active()
         u.del_user(username, delete_homedir)
         self.delete_user_window.hide()
-        self.on_checkbutton_showall_toggled(self)
+        self.on_switch_showall_toggled(self)
 
     def on_button_deleteuser_cancel_clicked(self, widget):
         self.delete_user_window.hide()
@@ -949,13 +949,13 @@ class GTKUserSetup:
         self.homedircolumn = builder.get_object('homedircolumn')
         self.userlist = builder.get_object('userlist')
         self.userliststore = builder.get_object('userliststore')
-        self.checkbutton_showall = builder.get_object('checkbutton_showall')
+        self.switch_showall = builder.get_object('switch_showall')
         self.image_manageuser = builder.get_object('image_manageuser')
         self.logincolumn.set_title(_('Username'))
         self.namecolumn.set_title(_('Real name'))
         self.homedircolumn.set_title(_('Home directory'))
 
-        self.on_checkbutton_showall_toggled(self)
+        self.on_switch_showall_toggled(self)
         self.userlist.set_cursor(1)
 
         #
