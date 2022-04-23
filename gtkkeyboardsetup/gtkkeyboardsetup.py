@@ -203,8 +203,8 @@ class GTKKeyboardSetup:
         self.keymapcolumn = builder.get_object('keymapcolumn')
         self.keymapcolumn.set_title(_('Keyboard map'))
         self.keymapliststore = builder.get_object('keymapliststore')
-        self.numlock = builder.get_object('numlockcheckbutton')
-        self.ibus = builder.get_object('ibuscheckbutton')
+        self.numlock = builder.get_object('switch_numlock')
+        self.ibus = builder.get_object('switch_ibus')
         self.aboutdialog = builder.get_object('aboutdialog')
 
         currentkeymap = getkeymap()
