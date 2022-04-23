@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
 <interface>
-  <requires lib="gtk+" version="2.16"/>
-  <!-- interface-naming-policy project-wide -->
+  <requires lib="gtk+" version="3.24"/>
   <object class="GtkListStore" id="localeliststore">
     <columns>
       <!-- column-name Language -->
@@ -11,117 +11,116 @@
     </columns>
   </object>
   <object class="GtkDialog" id="gtklocalesetup">
-    <property name="height_request">520</property>
-    <property name="can_focus">False</property>
-    <property name="border_width">5</property>
+    <property name="height-request">520</property>
+    <property name="can-focus">False</property>
+    <property name="border-width">5</property>
     <property name="title" translatable="yes">System language</property>
-    <property name="window_position">center</property>
-    <property name="icon_name">gtklocalesetup</property>
-    <property name="type_hint">normal</property>
+    <property name="window-position">center</property>
+    <property name="icon-name">gtklocalesetup</property>
+    <property name="type-hint">normal</property>
     <signal name="destroy" handler="gtk_main_quit" swapped="no"/>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox1">
+      <object class="GtkBox" id="dialog-vbox1">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="spacing">2</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area1">
+          <object class="GtkButtonBox" id="dialog-action_area1">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="layout_style">edge</property>
+            <property name="can-focus">False</property>
+            <property name="hexpand">True</property>
+            <property name="layout-style">expand</property>
             <child>
-              <object class="GtkHBox" id="hbox2">
+              <object class="GtkBox">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="spacing">6</property>
-                <property name="homogeneous">True</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkButton" id="button_about">
-                    <property name="label">gtk-about</property>
+                    <property name="label">About</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="use_stock">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
                     <signal name="clicked" handler="on_button_about_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="spacing">6</property>
+                    <property name="homogeneous">True</property>
+                    <child>
+                      <object class="GtkButton" id="button_cancel">
+                        <property name="label">Cancel</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <signal name="clicked" handler="on_button_cancel_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="button_ok">
+                        <property name="label">Apply changes</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <signal name="clicked" handler="on_button_ok_clicked" swapped="no"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
                   </object>
                   <packing>
                     <property name="expand">True</property>
                     <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkHBox" id="hbox3">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="spacing">6</property>
-                <property name="homogeneous">True</property>
-                <child>
-                  <object class="GtkButton" id="button_cancel">
-                    <property name="label">gtk-cancel</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="use_stock">True</property>
-                    <signal name="clicked" handler="on_button_cancel_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="button_ok">
-                    <property name="label">gtk-ok</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="use_stock">True</property>
-                    <signal name="clicked" handler="on_button_ok_clicked" swapped="no"/>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
+                    <property name="pack-type">end</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
               </object>
               <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">1</property>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="expand">False</property>
+            <property name="expand">True</property>
             <property name="fill">True</property>
-            <property name="pack_type">end</property>
             <property name="position">0</property>
           </packing>
         </child>
         <child>
-          <object class="GtkVBox" id="vbox1">
+          <object class="GtkBox" id="vbox1">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
             <child>
-              <object class="GtkHBox" id="hbox1">
+              <object class="GtkBox" id="hbox1">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <child>
                   <object class="GtkImage" id="flag_icon">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="pixel_size">48</property>
-                    <property name="icon_name">preferences-desktop-locale</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixel-size">48</property>
+                    <property name="icon-name">preferences-desktop-locale</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -132,12 +131,12 @@
                 </child>
                 <child>
                   <object class="GtkLabel" id="message_label">
-                    <property name="width_request">350</property>
+                    <property name="width-request">350</property>
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Please select a default system locale. The changes will take effect next time you start your system.</property>
                     <property name="wrap">True</property>
-                    <property name="max_width_chars">60</property>
+                    <property name="max-width-chars">60</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -156,17 +155,18 @@
             <child>
               <object class="GtkScrolledWindow" id="scrolledwindow1">
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="hscrollbar_policy">automatic</property>
-                <property name="vscrollbar_policy">automatic</property>
-                <property name="shadow_type">in</property>
+                <property name="can-focus">True</property>
+                <property name="shadow-type">in</property>
                 <child>
                   <object class="GtkTreeView" id="localelist">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
+                    <property name="can-focus">True</property>
                     <property name="model">localeliststore</property>
-                    <property name="headers_visible">False</property>
-                    <property name="headers_clickable">False</property>
+                    <property name="headers-visible">False</property>
+                    <property name="headers-clickable">False</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection"/>
+                    </child>
                     <child>
                       <object class="GtkTreeViewColumn" id="localecolumn">
                         <property name="title">Locale</property>
@@ -210,17 +210,17 @@
     </child>
   </object>
   <object class="GtkAboutDialog" id="aboutdialog">
-    <property name="can_focus">False</property>
-    <property name="border_width">5</property>
+    <property name="can-focus">False</property>
+    <property name="border-width">5</property>
     <property name="modal">True</property>
-    <property name="window_position">center-on-parent</property>
-    <property name="icon_name">gtklocalesetup</property>
-    <property name="type_hint">normal</property>
-    <property name="skip_taskbar_hint">True</property>
-    <property name="skip_pager_hint">True</property>
-    <property name="transient_for">gtklocalesetup</property>
-    <property name="program_name">gtklocalesetup</property>
-    <property name="copyright">Copyright © 2010-2021 George Vlahavas</property>
+    <property name="window-position">center-on-parent</property>
+    <property name="icon-name">gtklocalesetup</property>
+    <property name="type-hint">normal</property>
+    <property name="skip-taskbar-hint">True</property>
+    <property name="skip-pager-hint">True</property>
+    <property name="transient-for">gtklocalesetup</property>
+    <property name="program-name">gtklocalesetup</property>
+    <property name="copyright">Copyright © 2010-2022 George Vlahavas</property>
     <property name="comments" translatable="yes">Locale configuration tool</property>
     <property name="website">http://www.salixos.org</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
@@ -899,25 +899,26 @@ Public License instead of this License.  But first, please read
 &lt;http://www.gnu.org/philosophy/why-not-lgpl.html&gt;.
 </property>
     <property name="authors">George Vlahavas &lt;vlahavas~at~gmail~dot~com&gt;</property>
-    <property name="translator_credits" translatable="yes">translator-credits</property>
-    <property name="logo_icon_name">gtklocalesetup</property>
+    <property name="translator-credits" translatable="yes">translator-credits</property>
+    <property name="logo-icon-name">gtklocalesetup</property>
     <signal name="delete-event" handler="on_aboutdialog_delete_event" swapped="no"/>
     <signal name="response" handler="on_aboutdialog_response" swapped="no"/>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox2">
+      <object class="GtkBox" id="dialog-vbox2">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
         <property name="spacing">2</property>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area2">
+          <object class="GtkButtonBox" id="dialog-action_area2">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="layout_style">end</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
           </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
-            <property name="pack_type">end</property>
+            <property name="pack-type">end</property>
             <property name="position">0</property>
           </packing>
         </child>
