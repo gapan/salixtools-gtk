@@ -333,7 +333,7 @@ class GTKRepoSetup:
         self.liststore_repo, iter = selectedrepo.get_selected()
         new_repo = self.liststore_repo.get_value(iter, 0)
         success = True
-        update_repos = self.checkbutton_apply_changes.get_active()
+        update_repos = self.switch_update.get_active()
         error_msg = 'No error'
         if self.current_repo != new_repo:
             GLib.idle_add(self.dialog_update_repos.show)
@@ -442,7 +442,8 @@ class GTKRepoSetup:
             builder.add_from_file(
                 '/usr/share/salixtools/gtkreposetup/gtkreposetup.ui')
         self.window = builder.get_object('gtkreposetup')
-        self.checkbutton_apply_changes = builder.get_object('checkbutton_apply_changes')
+        self.switch_update = builder.get_object('switch_update')
+        self.switch_update.set_state(True)
         self.aboutdialog = builder.get_object('aboutdialog')
 
         self.repolist = builder.get_object('repolist')
