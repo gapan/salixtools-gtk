@@ -81,7 +81,7 @@
                 <property name="spacing">6</property>
                 <child>
                   <object class="GtkButton" id="button_about">
-                    <property name="label">About</property>
+                    <property name="label" translatable="yes">About</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
@@ -95,7 +95,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_close">
-                    <property name="label">Close</property>
+                    <property name="label" translatable="yes">Close</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
@@ -192,7 +192,7 @@
                 <property name="spacing">6</property>
                 <child>
                   <object class="GtkButton" id="button_properties">
-                    <property name="label">Properties</property>
+                    <property name="label" translatable="yes">Properties</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
@@ -206,7 +206,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_adduser">
-                    <property name="label">Add</property>
+                    <property name="label" translatable="yes">Add</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
@@ -220,7 +220,7 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="button_deleteuser">
-                    <property name="label">Delete</property>
+                    <property name="label" translatable="yes">Delete</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
@@ -1044,7 +1044,7 @@ Public License instead of this License.  But first, please read
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_deleteuser_cancel">
-                <property name="label">Cancel</property>
+                <property name="label" translatable="yes">Cancel</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1058,7 +1058,7 @@ Public License instead of this License.  But first, please read
             </child>
             <child>
               <object class="GtkButton" id="button_deleteuser_ok">
-                <property name="label">Delete</property>
+                <property name="label" translatable="yes">Delete</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1189,7 +1189,7 @@ Public License instead of this License.  But first, please read
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_group_settings_close">
-                <property name="label">Close</property>
+                <property name="label" translatable="yes">Close</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1267,7 +1267,7 @@ Public License instead of this License.  But first, please read
                 <property name="orientation">vertical</property>
                 <child>
                   <object class="GtkButton" id="button_group_properties">
-                    <property name="label">Properties</property>
+                    <property name="label" translatable="yes">Properties</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
@@ -1293,7 +1293,7 @@ Public License instead of this License.  But first, please read
                 </child>
                 <child>
                   <object class="GtkButton" id="button_group_add">
-                    <property name="label">Add</property>
+                    <property name="label" translatable="yes">Add</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
@@ -1319,7 +1319,7 @@ Public License instead of this License.  But first, please read
                 </child>
                 <child>
                   <object class="GtkButton" id="button_group_delete">
-                    <property name="label">Delete</property>
+                    <property name="label" translatable="yes">Delete</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
@@ -1379,7 +1379,7 @@ Public License instead of this License.  But first, please read
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_cannot_delete_group_ok">
-                <property name="label">OK</property>
+                <property name="label" translatable="yes">OK</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1471,7 +1471,7 @@ Public License instead of this License.  But first, please read
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_delete_group_cancel">
-                <property name="label">Cancel</property>
+                <property name="label" translatable="yes">Cancel</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1485,7 +1485,7 @@ Public License instead of this License.  But first, please read
             </child>
             <child>
               <object class="GtkButton" id="button_delete_group_ok">
-                <property name="label">Delete</property>
+                <property name="label" translatable="yes">Delete</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1579,7 +1579,7 @@ Public License instead of this License.  But first, please read
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_group_properties_cancel">
-                <property name="label">Cancel</property>
+                <property name="label" translatable="yes">Cancel</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1593,7 +1593,7 @@ Public License instead of this License.  But first, please read
             </child>
             <child>
               <object class="GtkButton" id="button_group_properties_ok">
-                <property name="label">OK</property>
+                <property name="label" translatable="yes">OK</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1808,7 +1808,7 @@ Public License instead of this License.  But first, please read
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_group_error_ok">
-                <property name="label">OK</property>
+                <property name="label" translatable="yes">OK</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1903,7 +1903,7 @@ Public License instead of this License.  But first, please read
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_user_properties_cancel">
-                <property name="label">Cancel</property>
+                <property name="label" translatable="yes">Cancel</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -1917,7 +1917,7 @@ Public License instead of this License.  But first, please read
             </child>
             <child>
               <object class="GtkButton" id="button_user_properties_ok">
-                <property name="label">OK</property>
+                <property name="label" translatable="yes">OK</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
@@ -2627,7 +2627,7 @@ Public License instead of this License.  But first, please read
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_error_window_ok">
-                <property name="label">OK</property>
+                <property name="label" translatable="yes">OK</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
