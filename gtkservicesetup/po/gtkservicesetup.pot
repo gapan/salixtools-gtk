@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 11:21+0300\n"
+"POT-Creation-Date: 2022-04-24 13:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,35 +22,47 @@ msgstr ""
 msgid "System Services"
 msgstr ""
 
-#: gtkservicesetup.ui:152
+#: gtkservicesetup.ui:45
+msgid "About"
+msgstr ""
+
+#: gtkservicesetup.ui:66
+msgid "Cancel"
+msgstr ""
+
+#: gtkservicesetup.ui:80
+msgid "Apply changes"
+msgstr ""
+
+#: gtkservicesetup.ui:136
 msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
 msgstr ""
 
-#: gtkservicesetup.ui:250 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup.ui:229 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
 msgid "Services configuration tool"
 msgstr ""
 
-#: gtkservicesetup.ui:928
+#: gtkservicesetup.ui:907
 msgid "translator-credits"
 msgstr ""
 
-#: gtkservicesetup:47
+#: gtkservicesetup.py:49
 #, python-brace-format
 msgid "The {0} service"
 msgstr ""
 
-#: gtkservicesetup:150
+#: gtkservicesetup.py:151
 msgid "Enabled"
 msgstr ""
 
-#: gtkservicesetup:152
+#: gtkservicesetup.py:153
 msgid "Service name"
 msgstr ""
 
-#: gtkservicesetup:154
+#: gtkservicesetup.py:155
 msgid "Service description"
 msgstr ""
