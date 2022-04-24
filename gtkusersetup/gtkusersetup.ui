@@ -1103,6 +1103,7 @@ Public License instead of this License.  But first, please read
                 <property name="can-focus">False</property>
                 <property name="label">Really delete user?</property>
                 <property name="wrap">True</property>
+                <property name="max-width-chars">60</property>
               </object>
               <packing>
                 <property name="expand">True</property>
@@ -1122,6 +1123,7 @@ Public License instead of this License.  But first, please read
           <object class="GtkBox">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
+            <property name="margin-start">20</property>
             <property name="spacing">6</property>
             <child>
               <object class="GtkSwitch" id="switch_delete_user_homedir">
