@@ -1215,6 +1215,7 @@ Public License instead of this License.  But first, please read
           <object class="GtkBox" id="hbox5">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
+            <property name="spacing">6</property>
             <child>
               <object class="GtkScrolledWindow" id="scrolledwindow3">
                 <property name="visible">True</property>
@@ -1251,22 +1252,11 @@ Public License instead of this License.  But first, please read
               </packing>
             </child>
             <child>
-              <object class="GtkFixed" id="fixed6">
-                <property name="width-request">10</property>
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkBox" id="vbox8">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="orientation">vertical</property>
+                <property name="spacing">6</property>
                 <child>
                   <object class="GtkButton" id="button_group_properties">
                     <property name="label" translatable="yes">Properties</property>
@@ -1282,18 +1272,6 @@ Public License instead of this License.  But first, please read
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkFixed" id="fixed7">
-                    <property name="height-request">10</property>
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">False</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkButton" id="button_group_add">
                     <property name="label" translatable="yes">Add</property>
                     <property name="visible">True</property>
@@ -1304,19 +1282,7 @@ Public License instead of this License.  But first, please read
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
-                    <property name="position">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkFixed" id="fixed8">
-                    <property name="height-request">10</property>
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">False</property>
-                    <property name="position">3</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
@@ -1330,14 +1296,14 @@ Public License instead of this License.  But first, please read
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
-                    <property name="position">4</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
-                <property name="position">2</property>
+                <property name="position">1</property>
               </packing>
             </child>
           </object>
