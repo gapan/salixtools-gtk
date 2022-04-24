@@ -717,7 +717,7 @@ class GTKUserSetup:
                 else:
                     i[0] = 0
 
-    def on_checkbutton_visible_password_toggled(self, widget, data=None):
+    def on_switch_visible_password_toggled(self, widget, data=None):
         state = self.entry_password1.get_visibility()
         if state == False:
             self.entry_password1.set_visibility(True)
@@ -977,8 +977,8 @@ class GTKUserSetup:
         self.label_passwordheader = builder.get_object('label_passwordheader')
         self.entry_password1 = builder.get_object('entry_password1')
         self.entry_password2 = builder.get_object('entry_password2')
-        self.checkbutton_visible_password = builder.get_object(
-            'checkbutton_visible_password')
+        self.switch_visible_password = builder.get_object(
+            'switch_visible_password')
 
         # Contact tab
         self.entry_officeinfo = builder.get_object('entry_officeinfo')
