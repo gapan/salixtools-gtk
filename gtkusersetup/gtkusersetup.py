@@ -509,12 +509,12 @@ class GTKUserSetup:
             user = self.userlist.get_selection()
             self.userliststore, iter = user.get_selected()
             username = self.userliststore.get_value(iter, 1)
-            self.checkbutton_delete_user_homedir.set_active(False)
+            self.switch_delete_user_homedir.set_active(False)
             self.delete_user_window.set_title(
                 _("Delete user {0}?").format(username))
             self.label_delete_user.set_text(
                 _("You are about to remove user account \"{0}\" from your system. Do you really want to continue?").format(username))
-            self.checkbutton_delete_user_homedir.set_label(
+            self.label_delete_user_homedir.set_label(
                 _("Completely remove user's home directory ({0}) with all its contents").format(u.get_homedir(username)))
             self.delete_user_window.show()
         except TypeError:
@@ -746,7 +746,7 @@ class GTKUserSetup:
         user = self.userlist.get_selection()
         self.userliststore, iter = user.get_selected()
         username = self.userliststore.get_value(iter, 1)
-        delete_homedir = self.checkbutton_delete_user_homedir.get_active()
+        delete_homedir = self.switch_delete_user_homedir.get_active()
         u.del_user(username, delete_homedir)
         self.delete_user_window.hide()
         self.on_switch_showall_toggled(self)
@@ -1026,8 +1026,10 @@ class GTKUserSetup:
         #
         self.delete_user_window = builder.get_object('delete_user_window')
         self.label_delete_user = builder.get_object('label_delete_user')
-        self.checkbutton_delete_user_homedir = builder.get_object(
-            'checkbutton_delete_user_homedir')
+        self.switch_delete_user_homedir = builder.get_object(
+            'switch_delete_user_homedir')
+        self.label_delete_user_homedir = builder.get_object(
+            'label_delete_user_homedir')
 
         #
         # Main group settings window

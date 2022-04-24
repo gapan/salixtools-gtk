@@ -1035,10 +1035,12 @@ Public License instead of this License.  But first, please read
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
         <child internal-child="action_area">
           <object class="GtkButtonBox" id="dialog-action_area4">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
+            <property name="homogeneous">True</property>
             <property name="layout-style">end</property>
             <child>
               <object class="GtkButton" id="button_deleteuser_cancel">
@@ -1077,61 +1079,34 @@ Public License instead of this License.  But first, please read
           </packing>
         </child>
         <child>
-          <object class="GtkBox" id="vbox7">
+          <object class="GtkBox">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="orientation">vertical</property>
             <child>
-              <object class="GtkBox" id="hbox4">
+              <object class="GtkImage" id="image2">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <child>
-                  <object class="GtkImage" id="image2">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="pixel-size">48</property>
-                    <property name="icon-name">edit-delete</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">False</property>
-                    <property name="padding">20</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label_delete_user">
-                    <property name="width-request">450</property>
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="label">Really delete user?</property>
-                    <property name="wrap">True</property>
-                  </object>
-                  <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="padding">20</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
+                <property name="pixel-size">48</property>
+                <property name="icon-name">edit-delete</property>
               </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
+                <property name="padding">20</property>
                 <property name="position">0</property>
               </packing>
             </child>
             <child>
-              <object class="GtkCheckButton" id="checkbutton_delete_user_homedir">
-                <property name="label">Also remove user's home directory</property>
+              <object class="GtkLabel" id="label_delete_user">
+                <property name="width-request">450</property>
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">False</property>
-                <property name="draw-indicator">True</property>
+                <property name="can-focus">False</property>
+                <property name="label">Really delete user?</property>
+                <property name="wrap">True</property>
               </object>
               <packing>
-                <property name="expand">False</property>
-                <property name="fill">False</property>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
                 <property name="padding">20</property>
                 <property name="position">1</property>
               </packing>
@@ -1140,7 +1115,43 @@ Public License instead of this License.  But first, please read
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
-            <property name="position">1</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkSwitch" id="switch_delete_user_homedir">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label_delete_user_homedir">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Also remove user's home directory</property>
+                <property name="xalign">0</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
           </packing>
         </child>
       </object>
