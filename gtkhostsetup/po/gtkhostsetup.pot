@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 00:20+0300\n"
+"POT-Creation-Date: 2022-04-24 12:58+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,92 +22,121 @@ msgstr ""
 msgid "Hostnames"
 msgstr ""
 
-#: gtkhostsetup.ui:140
+#: gtkhostsetup.ui:49
+msgid "About"
+msgstr ""
+
+#: gtkhostsetup.ui:70 gtkhostsetup.ui:1133 gtkhostsetup.ui:1383
+msgid "Cancel"
+msgstr ""
+
+#: gtkhostsetup.ui:84
+msgid "Apply changes"
+msgstr ""
+
+#: gtkhostsetup.ui:127
 msgid "<b>This computer:</b>"
 msgstr ""
 
-#: gtkhostsetup.ui:194 gtkhostsetup.ui:1202 gtkhostsetup.ui:1460
+#: gtkhostsetup.ui:149 gtkhostsetup.ui:1204 gtkhostsetup.ui:1454
 msgid "Hostname:"
 msgstr ""
 
-#: gtkhostsetup.ui:202 gtkhostsetup.ui:1214 gtkhostsetup.ui:1472
+#: gtkhostsetup.ui:161 gtkhostsetup.ui:1230 gtkhostsetup.ui:1480
 msgid "Domain:"
 msgstr ""
 
-#: gtkhostsetup.ui:233
+#: gtkhostsetup.ui:218
 msgid "<b>Other hosts:</b>"
 msgstr ""
 
-#: gtkhostsetup.ui:415 gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup.ui:313
+msgid "Add"
+msgstr ""
+
+#: gtkhostsetup.ui:327
+msgid "Edit"
+msgstr ""
+
+#: gtkhostsetup.ui:341
+msgid "Remove"
+msgstr ""
+
+#: gtkhostsetup.ui:401 gtkhostsetup.desktop.in.h:2
 #: gtkhostsetup-kde.desktop.in.h:2
 msgid "Configure the system hostnames"
 msgstr ""
 
-#: gtkhostsetup.ui:1094
+#: gtkhostsetup.ui:1080
 msgid "translator-credits"
 msgstr ""
 
-#: gtkhostsetup.ui:1122
+#: gtkhostsetup.ui:1109
 msgid "Add host"
 msgstr ""
 
-#: gtkhostsetup.ui:1194 gtkhostsetup.ui:1452
+#: gtkhostsetup.ui:1147 gtkhostsetup.ui:1293 gtkhostsetup.ui:1397
+#: gtkhostsetup.ui:1543 gtkhostsetup.ui:1633
+msgid "OK"
+msgstr ""
+
+#: gtkhostsetup.ui:1178 gtkhostsetup.ui:1428
 msgid "IP address:"
 msgstr ""
 
-#: gtkhostsetup.ui:1287 gtkhostsetup.ui:1545 gtkhostsetup.ui:1638
+#: gtkhostsetup.ui:1269 gtkhostsetup.ui:1519 gtkhostsetup.ui:1609
 msgid "Error"
 msgstr ""
 
-#: gtkhostsetup.ui:1380
+#: gtkhostsetup.ui:1359
 msgid "Edit host"
 msgstr ""
 
-#: gtkhostsetup:63
+#: gtkhostsetup.py:68
 msgid "The IP address cannot be empty."
 msgstr ""
 
-#: gtkhostsetup:66
+#: gtkhostsetup.py:71
 msgid "The hostname cannot be empty."
 msgstr ""
 
-#: gtkhostsetup:69
+#: gtkhostsetup.py:74
 msgid "The hostname cannot start with a hyphen."
 msgstr ""
 
-#: gtkhostsetup:72
+#: gtkhostsetup.py:77
 msgid "The hostname cannot end with a hyphen."
 msgstr ""
 
-#: gtkhostsetup:75
+#: gtkhostsetup.py:80
 msgid "The domain cannot start with a hyphen."
 msgstr ""
 
-#: gtkhostsetup:78
+#: gtkhostsetup.py:83
 msgid "The domain cannot end with a hyphen."
 msgstr ""
 
-#: gtkhostsetup:83
+#: gtkhostsetup.py:88
 msgid "Not a valid IP address."
 msgstr ""
 
-#: gtkhostsetup:89
+#: gtkhostsetup.py:94
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
 msgstr ""
 
-#: gtkhostsetup:95
+#: gtkhostsetup.py:100
 msgid ""
 "The domain can consist solely of latin letters, numbers, hyphens and dots."
 msgstr ""
 
-#: gtkhostsetup:302
+#: gtkhostsetup.py:306
 msgid "IP address"
 msgstr ""
 
-#: gtkhostsetup:303
+#: gtkhostsetup.py:307
 msgid "Hostname"
 msgstr ""
 
-#: gtkhostsetup:304
+#: gtkhostsetup.py:308
 msgid "Domain"
 msgstr ""
