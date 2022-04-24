@@ -42,7 +42,7 @@ pot:
 		-j \
 		-L Python \
 		-o po/gtkusersetup.pot \
-		gtkusersetup
+		gtkusersetup.py
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkusersetup.pot gtkusersetup.desktop.in.h
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkusersetup.pot gtkusersetup-kde.desktop.in.h
 	rm gtkusersetup.desktop.in.h gtkusersetup-kde.desktop.in.h

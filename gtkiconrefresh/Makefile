@@ -39,7 +39,7 @@ pot:
 		-j \
 		-L Python \
 		-o po/gtkiconrefresh.pot \
-		gtkiconrefresh
+		gtkiconrefresh.py
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkiconrefresh.pot gtkiconrefresh.desktop.in.h
 	rm gtkiconrefresh.desktop.in.h
 

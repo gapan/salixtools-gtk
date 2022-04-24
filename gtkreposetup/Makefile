@@ -42,7 +42,7 @@ pot:
 		-j \
 		-L Python \
 		-o po/gtkreposetup.pot \
-		gtkreposetup
+		gtkreposetup.py
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkreposetup.pot gtkreposetup.desktop.in.h
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkreposetup.pot gtkreposetup-kde.desktop.in.h
 	rm gtkreposetup.desktop.in.h gtkreposetup-kde.desktop.in.h

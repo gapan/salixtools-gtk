@@ -42,7 +42,7 @@ pot:
 		-j \
 		-L Python \
 		-o po/gtkservicesetup.pot \
-		gtkservicesetup
+		gtkservicesetup.py
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkservicesetup.pot gtkservicesetup.desktop.in.h
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkservicesetup.pot gtkservicesetup-kde.desktop.in.h
 	rm gtkservicesetup.desktop.in.h gtkservicesetup-kde.desktop.in.h

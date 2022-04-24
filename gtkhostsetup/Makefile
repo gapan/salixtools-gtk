@@ -42,7 +42,7 @@ pot:
 		-j \
 		-L Python \
 		-o po/gtkhostsetup.pot \
-		gtkhostsetup
+		gtkhostsetup.py
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkhostsetup.pot gtkhostsetup.desktop.in.h
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkhostsetup.pot gtkhostsetup-kde.desktop.in.h
 	rm gtkhostsetup.desktop.in.h gtkhostsetup-kde.desktop.in.h

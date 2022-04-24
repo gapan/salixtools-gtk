@@ -42,7 +42,7 @@ pot:
 		-j \
 		-L Python \
 		-o po/gtkclocksetup.pot \
-		gtkclocksetup
+		gtkclocksetup.py
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkclocksetup.pot gtkclocksetup.desktop.in.h
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkclocksetup.pot gtkclocksetup-kde.desktop.in.h
 	rm gtkclocksetup.desktop.in.h gtkclocksetup-kde.desktop.in.h
