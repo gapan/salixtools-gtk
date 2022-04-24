@@ -265,6 +265,7 @@
                   <object class="GtkSwitch" id="switch_ibus">
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
+                    <property name="tooltip-text" translatable="yes">IBus is an input platform for Chinese, Japanese, Korean and many other languages.</property>
                   </object>
                   <packing>
                     <property name="left-attach">0</property>
