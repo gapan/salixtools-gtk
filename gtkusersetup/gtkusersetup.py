@@ -433,10 +433,10 @@ class GTKUserSetup:
             self.spinbutton_uid.show()
             self.spinbutton_uid.set_value(uid)
             if expirydate[0] == False:
-                self.checkbutton_user_expiration.set_active(False)
+                self.switch_user_expiration.set_active(False)
                 self.calendar_user_expiration.set_sensitive(False)
             else:
-                self.checkbutton_user_expiration.set_active(True)
+                self.switch_user_expiration.set_active(True)
                 self.calendar_user_expiration.set_sensitive(True)
             self.calendar_user_expiration.select_month(
                 expirydate[2] - 1, expirydate[1])
@@ -496,7 +496,7 @@ class GTKUserSetup:
         self.entry_shell.set_text('/bin/bash')
         self.label_uid.hide()
         self.spinbutton_uid.hide()
-        self.checkbutton_user_expiration.set_active(False)
+        self.switch_user_expiration.set_active(False)
         self.calendar_user_expiration.set_sensitive(False)
         self.calendar_user_expiration.select_month(now.month - 1, now.year)
         self.calendar_user_expiration.select_day(now.day)
@@ -548,7 +548,7 @@ class GTKUserSetup:
             maingroup_model = self.combobox_maingroup.get_model()
             maingroup = maingroup_model[maingroup_iter][0]
             shell = self.entry_shell.get_text()
-            expiry = self.checkbutton_user_expiration.get_active()
+            expiry = self.switch_user_expiration.get_active()
 
             checkusername = u.check_username(username)
             checkpassword = u.check_password(password1, password2)
@@ -609,7 +609,7 @@ class GTKUserSetup:
             new_maingroup = new_maingroup_model[new_maingroup_iter][0]
             new_shell = self.entry_shell.get_text()
             new_uid = self.spinbutton_uid.get_value_as_int()
-            new_expiry_date = self.checkbutton_user_expiration.get_active()
+            new_expiry_date = self.switch_user_expiration.get_active()
 
             bool_raise_error = False
             bool_set_fullname = False
@@ -726,8 +726,8 @@ class GTKUserSetup:
             self.entry_password1.set_visibility(False)
             self.entry_password2.set_visibility(False)
 
-    def on_checkbutton_user_expiration_toggled(self, widget, data=None):
-        state = self.checkbutton_user_expiration.get_active()
+    def on_switch_user_expiration_toggled(self, widget, data=None):
+        state = self.switch_user_expiration.get_active()
         self.calendar_user_expiration.set_sensitive(state)
 
     def on_user_properties_window_delete_event(self, widget, event):
@@ -1006,8 +1006,8 @@ class GTKUserSetup:
         self.entry_shell = builder.get_object('entry_shell')
         self.label_uid = builder.get_object('label_uid')
         self.spinbutton_uid = builder.get_object('spinbutton_uid')
-        self.checkbutton_user_expiration = builder.get_object(
-            'checkbutton_user_expiration')
+        self.switch_user_expiration = builder.get_object(
+            'switch_user_expiration')
         self.calendar_user_expiration = builder.get_object(
             'calendar_user_expiration')
 
