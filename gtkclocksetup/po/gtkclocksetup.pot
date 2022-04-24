@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-24 12:54+0300\n"
+"POT-Creation-Date: 2022-04-24 13:21+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,10 +66,6 @@ msgstr ""
 
 #: gtkclocksetup.ui:288
 msgid "Time:"
-msgstr ""
-
-#: gtkclocksetup.ui:308 gtkclocksetup.ui:341 gtkclocksetup.ui:374
-msgid "0"
 msgstr ""
 
 #: gtkclocksetup.ui:423 gtkclocksetup.desktop.in.h:2
