@@ -4,14 +4,14 @@
 # 
 # Translators:
 # Gambit <gambit73@gmail.com>, 2011
-# Gambit <gambit73@gmail.com>, 2011
+# Gambit <gambit73@gmail.com>, 2011,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 00:27+0300\n"
+"POT-Creation-Date: 2022-04-24 13:01+0300\n"
 "PO-Revision-Date: 2010-11-30 12:19+0000\n"
-"Last-Translator: Gambit <gambit73@gmail.com>, 2011\n"
+"Last-Translator: Gambit <gambit73@gmail.com>, 2011,2022\n"
 "Language-Team: Dutch (http://www.transifex.com/gapan/salixtools-gtk/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,32 +23,44 @@ msgstr ""
 msgid "Keyboard settings"
 msgstr "Toetsenbord instellingen"
 
-#: gtkkeyboardsetup.ui:140
+#: gtkkeyboardsetup.ui:45
+msgid "About"
+msgstr "Informatie over"
+
+#: gtkkeyboardsetup.ui:66
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: gtkkeyboardsetup.ui:80
+msgid "Apply changes"
+msgstr "Wijzigingen uitvoeren"
+
+#: gtkkeyboardsetup.ui:142
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
 msgstr "Selecteer het gewenste type toetsenbord en -instellingen en bepaal de numlock en IBus voorkeuren."
 
-#: gtkkeyboardsetup.ui:244
-msgid "Enable numlock when the system is started"
-msgstr "Activeer NumLock wanneer het systeem wordt gestart"
+#: gtkkeyboardsetup.ui:268
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr "IBus is een invoerplatform voor Chinees, Japans, Koreaans en vele andere talen."
 
-#: gtkkeyboardsetup.ui:259
+#: gtkkeyboardsetup.ui:279
 msgid "Enable IBus when the system is started"
 msgstr "IBus aanzetten wanneer het systeem wordt gestart"
 
-#: gtkkeyboardsetup.ui:263
-msgid ""
-"IBus is an input platform for Chinese, Japanese, Korean and many other "
-"languages. It is newer and works better than SCIM."
-msgstr "IBus is een invoerplatform voor Chinees, Japans, Koreaans en vele overige talen. Het is nieuwer en werkt beter dan SCIM."
+#: gtkkeyboardsetup.ui:291
+msgid "Enable numlock when the system is started"
+msgstr "Activeer NumLock wanneer het systeem wordt gestart"
 
-#: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup.ui:329 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "Toetsenbord configuratietool"
 
-#: gtkkeyboardsetup.ui:974
+#: gtkkeyboardsetup.ui:1007
 msgid "translator-credits"
 msgstr "vertaler-credits"
 

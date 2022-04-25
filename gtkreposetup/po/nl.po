@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Ingemar Karlsson <ingemar@ingk.se>, 2022
+# Gambit <gambit73@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
@@ -13,29 +13,29 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-24 13:04+0300\n"
 "PO-Revision-Date: 2016-07-21 23:13+0000\n"
-"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>, 2022\n"
-"Language-Team: Swedish (https://www.transifex.com/gapan/teams/15073/sv/)\n"
+"Last-Translator: Gambit <gambit73@gmail.com>, 2022\n"
+"Language-Team: Dutch (https://www.transifex.com/gapan/teams/15073/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sv\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: gtkreposetup.ui:18
 msgid "Select repository mirror"
-msgstr "Välj förrådsspegel"
+msgstr "Selecteer de gespiegelde 'repository'"
 
 #: gtkreposetup.ui:41
 msgid "About"
-msgstr "Om"
+msgstr "Informatie over"
 
 #: gtkreposetup.ui:62 gtkreposetup.ui:977 gtkreposetup.ui:1053
 msgid "Cancel"
-msgstr "Avbryt"
+msgstr "Annuleren"
 
 #: gtkreposetup.ui:76
 msgid "Apply changes"
-msgstr "Verkställ ändringar"
+msgstr "Wijzigingen uitvoeren"
 
 #: gtkreposetup.ui:132
 msgid ""
@@ -43,12 +43,14 @@ msgid ""
 "mirror is located is shown on the right. Mirrors located closer to you "
 "geographically are usually faster."
 msgstr ""
-"Välj din favorit förrådsspegel. Landskoden där varje spegel ligger visas "
-"till höger. Spegeln placerad närmare dig geografiskt är oftast snabbare."
+"Selecteer alstublieft de gespiegelde 'repository' welke uw voorkeur heeft. "
+"De landscode van de gespiegelde 'repository' is zichtbaar aan de "
+"rechterzijde. 'Repositories' dichter bij uw locatie zijn over het algemeen "
+"sneller."
 
 #: gtkreposetup.ui:166
 msgid "Mirror"
-msgstr "Speglar"
+msgstr "gespiegelde 'repository'"
 
 #: gtkreposetup.ui:177
 msgid "Country"
@@ -56,74 +58,74 @@ msgstr "Land"
 
 #: gtkreposetup.ui:215
 msgid "Update the package and SlackBuild data"
-msgstr "Uppdatera paketet och SlackBuild data"
+msgstr "Ververs het pakket en de SlackBuild data"
 
 #: gtkreposetup.ui:247
 msgid "Repository configuration tool"
-msgstr "Förråds konfigurationsverktyg"
+msgstr "'Repository' configuratietool"
 
 #: gtkreposetup.ui:926
 msgid "translator-credits"
-msgstr "Ingemar Karlsson <po@ingk.se>"
+msgstr "vertaler-credits"
 
 #: gtkreposetup.ui:953
 msgid "Updating mirror list"
-msgstr "Uppdatera spegellista"
+msgstr "Ververs de lijst van 'repositories'"
 
 #: gtkreposetup.ui:1000
 msgid "Updating mirror list. Please wait..."
-msgstr "Uppdaterar spegellista. Vänta..."
+msgstr " Lijst van 'repositories' aan het verversen. Een moment geduld..."
 
 #: gtkreposetup.ui:1030
 msgid "Updating..."
-msgstr "Uppdaterar..."
+msgstr "Verversen..."
 
 #: gtkreposetup.py:49
 msgid "Error"
-msgstr "Fel"
+msgstr "Fout"
 
 #: gtkreposetup.py:79 gtkreposetup.py:96 gtkreposetup.py:121
 #: gtkreposetup.py:149 gtkreposetup.py:189
 msgid "Could not read file:"
-msgstr "Kunde inte läsa fil:"
+msgstr "Kon het bestand niet lezen:"
 
 #: gtkreposetup.py:80 gtkreposetup.py:98 gtkreposetup.py:122
 #: gtkreposetup.py:246 gtkreposetup.py:264
 msgid "Exiting."
-msgstr "Avslutar."
+msgstr "Bezig met afsluiten."
 
 #: gtkreposetup.py:148 gtkreposetup.py:188 gtkreposetup.py:294
 msgid "WARNING:"
-msgstr "VARNING:"
+msgstr "WAARSCHUWING:"
 
 #: gtkreposetup.py:245 gtkreposetup.py:263 gtkreposetup.py:295
 msgid "Could not write to file:"
-msgstr "Kunde inte skriva till fil:"
+msgstr "Kon bestand niet bewerken:"
 
 #: gtkreposetup.py:343
 msgid "Could not write configuration files."
-msgstr "Kunde inte skriva konfigurationsfiler."
+msgstr "Kon configuratiebestanden niet bewerken:"
 
 #: gtkreposetup.py:347
 msgid "Updating package information..."
-msgstr "Uppdaterar paketinformation..."
+msgstr "Pakketinformatie aan het verversen..."
 
 #: gtkreposetup.py:354
 msgid "Could not update package information."
-msgstr "Kunde inte uppdatera paketinformaion."
+msgstr " Kon pakket informatie niet verversen."
 
 #: gtkreposetup.py:358
 msgid "Updating SlackBuild information..."
-msgstr "Uppdaterar SlackBuild information..."
+msgstr "SlackBuild informatie aan het verversen..."
 
 #: gtkreposetup.py:365
 msgid "Could not update SlackBuild information."
-msgstr "Kunde inte uppdatera SlackBuild information."
+msgstr " Kon SlackBuild informatie niet verversen."
 
 #: gtkreposetup.desktop.in.h:1 gtkreposetup-kde.desktop.in.h:1
 msgid "Repository Mirror"
-msgstr "Förrådsspegel"
+msgstr "Gespiegelde 'Repository'"
 
 #: gtkreposetup.desktop.in.h:2 gtkreposetup-kde.desktop.in.h:2
 msgid "Select your preferred repository mirror"
-msgstr "Välj önskad förrådsspegel"
+msgstr "Selecteer de gespiegelde 'repository' welke uw voorkeur heeft"

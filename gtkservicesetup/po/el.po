@@ -4,14 +4,14 @@
 # 
 # Translators:
 # gapan <vlahavas@gmail.com>, 2015
-# gapan <vlahavas@gmail.com>, 2015
+# gapan <vlahavas@gmail.com>, 2015,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 11:21+0300\n"
-"PO-Revision-Date: 2017-09-19 09:11+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:06+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2015,2022\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salixtools-gtk/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,35 +24,47 @@ msgstr ""
 msgid "System Services"
 msgstr "Υπηρεσίες συστήματος"
 
-#: gtkservicesetup.ui:152
+#: gtkservicesetup.ui:45
+msgid "About"
+msgstr "Σχετικά με"
+
+#: gtkservicesetup.ui:66
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: gtkservicesetup.ui:80
+msgid "Apply changes"
+msgstr "Εφαρμογή"
+
+#: gtkservicesetup.ui:136
 msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
 msgstr "Παρακαλούμε επιλέξτε τις υπηρεσίες συστήματος που θα ενεργοποιούνται με την εκκίνηση του συστήματος. Οι όποιες αλλαγές θα εφαρμοστούν όταν πιέσετε το πλήκτρο Εντάξει."
 
-#: gtkservicesetup.ui:250 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup.ui:229 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
 msgid "Services configuration tool"
 msgstr "Διαχείρηση των υπηρεσιών συστήματος"
 
-#: gtkservicesetup.ui:928
+#: gtkservicesetup.ui:907
 msgid "translator-credits"
 msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
-#: gtkservicesetup:47
+#: gtkservicesetup.py:49
 #, python-brace-format
 msgid "The {0} service"
 msgstr "Η υπηρεσία {0}"
 
-#: gtkservicesetup:150
+#: gtkservicesetup.py:151
 msgid "Enabled"
 msgstr "Ενεργoποίηση"
 
-#: gtkservicesetup:152
+#: gtkservicesetup.py:153
 msgid "Service name"
 msgstr "Όνομα υπηρεσίας"
 
-#: gtkservicesetup:154
+#: gtkservicesetup.py:155
 msgid "Service description"
 msgstr "Περιγραφή υπηρεσίας"

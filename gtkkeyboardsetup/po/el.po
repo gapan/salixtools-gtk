@@ -4,14 +4,15 @@
 # 
 # Translators:
 # gapan <vlahavas@gmail.com>, 2011
+# gapan <vlahavas@gmail.com>, 2022
 # gapan <vlahavas@gmail.com>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 00:27+0300\n"
+"POT-Creation-Date: 2022-04-24 13:01+0300\n"
 "PO-Revision-Date: 2010-11-30 12:19+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>, 2011\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2022\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salixtools-gtk/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,32 +24,44 @@ msgstr ""
 msgid "Keyboard settings"
 msgstr "Ρυθμίσεις πληκτρολογίου"
 
-#: gtkkeyboardsetup.ui:140
+#: gtkkeyboardsetup.ui:45
+msgid "About"
+msgstr "Σχετικά με"
+
+#: gtkkeyboardsetup.ui:66
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: gtkkeyboardsetup.ui:80
+msgid "Apply changes"
+msgstr "Εφαρμογή"
+
+#: gtkkeyboardsetup.ui:142
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
 msgstr "Παρακαλούμε επιλέξτε τον επιθυμητό τύπο πληκτρολογίου και ορίστε τις ρυθμίσεις του πλήκτρου numlock και του IBus."
 
-#: gtkkeyboardsetup.ui:244
-msgid "Enable numlock when the system is started"
-msgstr "Ενεργοποίηση του πλήκτρου numlock κατά την εκκίνηση του συστήματος"
+#: gtkkeyboardsetup.ui:268
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr "Το IBus είναι μια πλατφόρμα εισαγωγής για Κινέζικα, Γιαπωνέζικα, Κορεάτικα και πολλές άλλες γλώσσες."
 
-#: gtkkeyboardsetup.ui:259
+#: gtkkeyboardsetup.ui:279
 msgid "Enable IBus when the system is started"
 msgstr "Ενεργοποίηση του IBus κατά την εκκίνηση του συστήματος"
 
-#: gtkkeyboardsetup.ui:263
-msgid ""
-"IBus is an input platform for Chinese, Japanese, Korean and many other "
-"languages. It is newer and works better than SCIM."
-msgstr "Το IBus είναι μια πλατφόρμα εισαγωγής για Κινέζικα, Γιαπωνέζικα, Κορεάτικα και πολλές άλλες γλώσσες."
+#: gtkkeyboardsetup.ui:291
+msgid "Enable numlock when the system is started"
+msgstr "Ενεργοποίηση του πλήκτρου numlock κατά την εκκίνηση του συστήματος"
 
-#: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup.ui:329 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "Ρύθμιση της διάταξης του πληκτρολογίου"
 
-#: gtkkeyboardsetup.ui:974
+#: gtkkeyboardsetup.ui:1007
 msgid "translator-credits"
 msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 

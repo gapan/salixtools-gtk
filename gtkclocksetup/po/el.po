@@ -4,14 +4,14 @@
 # 
 # Translators:
 # gapan <vlahavas@gmail.com>, 2015
-# gapan <vlahavas@gmail.com>, 2015
+# gapan <vlahavas@gmail.com>, 2015,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-09 22:02+0300\n"
-"PO-Revision-Date: 2017-09-19 09:14+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:21+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2015,2022\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salixtools-gtk/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,67 +19,83 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gtkclocksetup.ui:39
+#: gtkclocksetup.ui:23
 msgid "Date and time settings"
 msgstr "Ρυθμίσεις ημερομηνίας και ώρας"
 
-#: gtkclocksetup.ui:156
-msgid "Keep clock synchronized with internet servers"
-msgstr "Το ρολόι να συγχρονίζεται αυτόματα με διακομιστές του διαδικτύου"
+#: gtkclocksetup.ui:47
+msgid "About"
+msgstr "Σχετικά με"
 
-#: gtkclocksetup.ui:183
+#: gtkclocksetup.ui:68 gtkclocksetup.ui:1167
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: gtkclocksetup.ui:82
+msgid "Apply changes"
+msgstr "Εφαρμογή"
+
+#: gtkclocksetup.ui:132
 msgid "Synchronize now"
 msgstr "Συγχρονισμός τώρα"
 
-#: gtkclocksetup.ui:212 gtkclocksetup:239 gtkclocksetup:275
+#: gtkclocksetup.ui:147 gtkclocksetup.py:238 gtkclocksetup.py:274
 msgid "Time zone:"
 msgstr "Ζώνη ώρας:"
 
-#: gtkclocksetup.ui:222
+#: gtkclocksetup.ui:157
 msgid "Select time zone..."
 msgstr "Επιλογή ζώνης ώρας..."
 
-#: gtkclocksetup.ui:244
-msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "Το ρολόι συστήματος είναι ρυθμισμένο σε Παγκόσμια Ώρα (UTC)"
+#: gtkclocksetup.ui:190
+msgid "Keep clock synchronized with internet servers"
+msgstr "Το ρολόι να συγχρονίζεται αυτόματα με διακομιστές του διαδικτύου"
 
-#: gtkclocksetup.ui:248
+#: gtkclocksetup.ui:220
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
+"Do not enable this if you are not sure."
 msgstr "Το ρολόι συστήματος στους περισσότερους υπολογιστές είναι ρυθμισμένο σε τοπική ώρα, ενώ σε διακομιστές διαδικτύου συνήθως είναι ρυθμισμένο σε UTC. Αν δεν είστε σίγουροι, μην το επιλέξετε."
 
-#: gtkclocksetup.ui:385
-msgid "Time:"
-msgstr "Ώρα:"
+#: gtkclocksetup.ui:233
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "Το ρολόι συστήματος είναι ρυθμισμένο σε Παγκόσμια Ώρα (UTC)"
 
-#: gtkclocksetup.ui:398
+#: gtkclocksetup.ui:261
 msgid "Date:"
 msgstr "Ημερομηνία:"
 
-#: gtkclocksetup.ui:431 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup.ui:288
+msgid "Time:"
+msgstr "Ώρα:"
+
+#: gtkclocksetup.ui:423 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "Ρύθμιση του ρολογιού του συστήματος"
 
-#: gtkclocksetup.ui:1109
+#: gtkclocksetup.ui:1101
 msgid "translator-credits"
 msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
-#: gtkclocksetup.ui:1145
+#: gtkclocksetup.ui:1144
 msgid "Select time zone"
 msgstr "Επιλογή ζώνης ώρας"
 
-#: gtkclocksetup.ui:1211
+#: gtkclocksetup.ui:1181
+msgid "Select"
+msgstr "Επιλογή"
+
+#: gtkclocksetup.ui:1210
 msgid "Please select your time zone:"
 msgstr "Παρακαλούμε επιλέξτε ζώνη ώρας:"
 
-#: gtkclocksetup:291
+#: gtkclocksetup.py:290
 msgid "General area"
 msgstr "Γενική περιοχή"
 
-#: gtkclocksetup:292
+#: gtkclocksetup.py:291
 msgid "Location"
 msgstr "Τοποθεσία"
 

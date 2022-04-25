@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2012
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2011-2012
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2012
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2011-2012
 # Gregory <wolfr2@gmail.com>, 2014
 # Gregory <wolfr2@gmail.com>, 2014
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2012
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-09 22:02+0300\n"
-"PO-Revision-Date: 2017-09-19 09:14+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:21+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2012\n"
 "Language-Team: Russian (http://www.transifex.com/gapan/salixtools-gtk/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,67 +22,83 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: gtkclocksetup.ui:39
+#: gtkclocksetup.ui:23
 msgid "Date and time settings"
 msgstr "Установка даты и времени"
 
-#: gtkclocksetup.ui:156
-msgid "Keep clock synchronized with internet servers"
-msgstr "Синхронизировать время с интернет-серверами"
+#: gtkclocksetup.ui:47
+msgid "About"
+msgstr ""
 
-#: gtkclocksetup.ui:183
+#: gtkclocksetup.ui:68 gtkclocksetup.ui:1167
+msgid "Cancel"
+msgstr ""
+
+#: gtkclocksetup.ui:82
+msgid "Apply changes"
+msgstr ""
+
+#: gtkclocksetup.ui:132
 msgid "Synchronize now"
 msgstr "Синхронизировать"
 
-#: gtkclocksetup.ui:212 gtkclocksetup:239 gtkclocksetup:275
+#: gtkclocksetup.ui:147 gtkclocksetup.py:238 gtkclocksetup.py:274
 msgid "Time zone:"
 msgstr "Часовой пояс:"
 
-#: gtkclocksetup.ui:222
+#: gtkclocksetup.ui:157
 msgid "Select time zone..."
 msgstr "Выбрать..."
 
-#: gtkclocksetup.ui:244
-msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
-msgstr "Аппаратные часы установлены как UTC"
+#: gtkclocksetup.ui:190
+msgid "Keep clock synchronized with internet servers"
+msgstr "Синхронизировать время с интернет-серверами"
 
-#: gtkclocksetup.ui:248
+#: gtkclocksetup.ui:220
 msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
-"Do not check this box if you are not sure."
-msgstr "Аппаратное время на большинстве домашних и рабочих компьютеров установлено по местному времени, в то время как веб-серверы, в основном, используют UTC. Не отмечайте это, если вы не уверены."
+"Do not enable this if you are not sure."
+msgstr ""
 
-#: gtkclocksetup.ui:385
-msgid "Time:"
-msgstr "Время:"
+#: gtkclocksetup.ui:233
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "Аппаратные часы установлены как UTC"
 
-#: gtkclocksetup.ui:398
+#: gtkclocksetup.ui:261
 msgid "Date:"
 msgstr "Дата:"
 
-#: gtkclocksetup.ui:431 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup.ui:288
+msgid "Time:"
+msgstr "Время:"
+
+#: gtkclocksetup.ui:423 gtkclocksetup.desktop.in.h:2
 #: gtkclocksetup-kde.desktop.in.h:2
 msgid "System clock configuration tool"
 msgstr "Графический интерфейс для clocksetup (входит в состав salixtools) — инструмента настройки даты и времени. Gtkclocksetup входит в состав salixtools-gtk."
 
-#: gtkclocksetup.ui:1109
+#: gtkclocksetup.ui:1101
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: gtkclocksetup.ui:1145
+#: gtkclocksetup.ui:1144
 msgid "Select time zone"
 msgstr "Выбор часового пояса"
 
-#: gtkclocksetup.ui:1211
+#: gtkclocksetup.ui:1181
+msgid "Select"
+msgstr ""
+
+#: gtkclocksetup.ui:1210
 msgid "Please select your time zone:"
 msgstr "Выберите ваш часовой пояс:"
 
-#: gtkclocksetup:291
+#: gtkclocksetup.py:290
 msgid "General area"
 msgstr "Регион"
 
-#: gtkclocksetup:292
+#: gtkclocksetup.py:291
 msgid "Location"
 msgstr "Часовой пояс"
 

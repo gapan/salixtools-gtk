@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# gapan <vlahavas@gmail.com>, 2022
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-11 13:28+0300\n"
-"PO-Revision-Date: 2017-09-19 09:13+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 12:58+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2022\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salixtools-gtk/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,97 +18,126 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gtkhostsetup.glade:24 gtkhostsetup.desktop.in.h:2
-#: gtkhostsetup-kde.desktop.in.h:2
+#: gtkhostsetup.ui:25 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
 msgid "Hostnames"
 msgstr "Ονόματα υπολογιστών"
 
-#: gtkhostsetup.glade:44
+#: gtkhostsetup.ui:49
+msgid "About"
+msgstr "Σχετικά με"
+
+#: gtkhostsetup.ui:70 gtkhostsetup.ui:1133 gtkhostsetup.ui:1383
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: gtkhostsetup.ui:84
+msgid "Apply changes"
+msgstr "Εφαρμογή"
+
+#: gtkhostsetup.ui:127
 msgid "<b>This computer:</b>"
 msgstr "<b>Ο παρών υπολογιστής:</b>"
 
-#: gtkhostsetup.glade:88 gtkhostsetup.glade:404 gtkhostsetup.glade:637
+#: gtkhostsetup.ui:149 gtkhostsetup.ui:1204 gtkhostsetup.ui:1454
 msgid "Hostname:"
 msgstr "Όνομα υπολογιστή:"
 
-#: gtkhostsetup.glade:95 gtkhostsetup.glade:415 gtkhostsetup.glade:648
+#: gtkhostsetup.ui:161 gtkhostsetup.ui:1230 gtkhostsetup.ui:1480
 msgid "Domain:"
 msgstr "Τομέας:"
 
-#: gtkhostsetup.glade:124
+#: gtkhostsetup.ui:218
 msgid "<b>Other hosts:</b>"
 msgstr "<b>Άλλα ονόματα:</b>"
 
-#: gtkhostsetup.glade:369
-msgid "Add host"
-msgstr "Προσθήκη ονόματος υπολογιστή"
+#: gtkhostsetup.ui:313
+msgid "Add"
+msgstr "Προσθήκη"
 
-#: gtkhostsetup.glade:397 gtkhostsetup.glade:630
-msgid "IP address:"
-msgstr "Διεύθυνση IP:"
+#: gtkhostsetup.ui:327
+msgid "Edit"
+msgstr "Επεξεργασία"
 
-#: gtkhostsetup.glade:514 gtkhostsetup.glade:747 gtkhostsetup.glade:835
-msgid "Error"
-msgstr "Σφάλμα"
+#: gtkhostsetup.ui:341
+msgid "Remove"
+msgstr "Διαγραφή"
 
-#: gtkhostsetup.glade:602
-msgid "Edit host"
-msgstr "Επεξεργασία ονόματος υπολογιστή"
-
-#: gtkhostsetup.glade:934 gtkhostsetup.desktop.in.h:1
-#: gtkhostsetup-kde.desktop.in.h:1
+#: gtkhostsetup.ui:401 gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
 msgid "Configure the system hostnames"
 msgstr "Επεξεργασία των ονομάτων υπολογιστών"
 
-#: gtkhostsetup.glade:1613
+#: gtkhostsetup.ui:1080
 msgid "translator-credits"
 msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
-#: gtkhostsetup:60
+#: gtkhostsetup.ui:1109
+msgid "Add host"
+msgstr "Προσθήκη ονόματος υπολογιστή"
+
+#: gtkhostsetup.ui:1147 gtkhostsetup.ui:1293 gtkhostsetup.ui:1397
+#: gtkhostsetup.ui:1543 gtkhostsetup.ui:1633
+msgid "OK"
+msgstr "Εντάξει"
+
+#: gtkhostsetup.ui:1178 gtkhostsetup.ui:1428
+msgid "IP address:"
+msgstr "Διεύθυνση IP:"
+
+#: gtkhostsetup.ui:1269 gtkhostsetup.ui:1519 gtkhostsetup.ui:1609
+msgid "Error"
+msgstr "Σφάλμα"
+
+#: gtkhostsetup.ui:1359
+msgid "Edit host"
+msgstr "Επεξεργασία ονόματος υπολογιστή"
+
+#: gtkhostsetup.py:68
 msgid "The IP address cannot be empty."
 msgstr "Η διεύθυνση IP δεν μπορεί να είναι κενή."
 
-#: gtkhostsetup:63
+#: gtkhostsetup.py:71
 msgid "The hostname cannot be empty."
 msgstr "Το όνομα υπολογιστή δεν μπορεί να είναι κενό."
 
-#: gtkhostsetup:66
+#: gtkhostsetup.py:74
 msgid "The hostname cannot start with a hyphen."
 msgstr "Το όνομα υπολογιστή δεν μπορεί να ξεκινά με παύλα."
 
-#: gtkhostsetup:69
+#: gtkhostsetup.py:77
 msgid "The hostname cannot end with a hyphen."
 msgstr "Το όνομα υπολογιστή δεν μπορεί να τελειώνει σε παύλα."
 
-#: gtkhostsetup:72
+#: gtkhostsetup.py:80
 msgid "The domain cannot start with a hyphen."
 msgstr "Ο τομέας δεν μπορεί να ξεκινά με παύλα."
 
-#: gtkhostsetup:75
+#: gtkhostsetup.py:83
 msgid "The domain cannot end with a hyphen."
 msgstr "Ο τομέας δεν μπορεί να τελειώνει σε παύλα."
 
-#: gtkhostsetup:80
+#: gtkhostsetup.py:88
 msgid "Not a valid IP address."
 msgstr "Μη έγκυρη διεύθυνση IP."
 
-#: gtkhostsetup:85
+#: gtkhostsetup.py:94
 msgid "The hostname can consist solely of latin letters, numbers and hyphens."
 msgstr "Το όνομα υπολογιστή μπορεί να αποτελείται μόνο από λατινικούς χαρακτήρες, αριθμούς και παύλες."
 
-#: gtkhostsetup:90
+#: gtkhostsetup.py:100
 msgid ""
 "The domain can consist solely of latin letters, numbers, hyphens and dots."
 msgstr "Ο τομέας μπορεί να αποτελείται μόνο από λατινικούς χαρακτήρες, αριθμούς και παύλες."
 
-#: gtkhostsetup:284
+#: gtkhostsetup.py:306
 msgid "IP address"
 msgstr "Διεύθυνση IP"
 
-#: gtkhostsetup:285
+#: gtkhostsetup.py:307
 msgid "Hostname"
 msgstr "Όνομα υπολογιστή"
 
-#: gtkhostsetup:286
+#: gtkhostsetup.py:308
 msgid "Domain"
 msgstr "Τομέας"

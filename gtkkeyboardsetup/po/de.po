@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 00:27+0300\n"
+"POT-Creation-Date: 2022-04-24 13:01+0300\n"
 "PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: shador <futur.andy@googlemail.com>, 2011\n"
 "Language-Team: German (http://www.transifex.com/gapan/salixtools-gtk/language/de/)\n"
@@ -23,32 +23,44 @@ msgstr ""
 msgid "Keyboard settings"
 msgstr "Tastatureinstellungen"
 
-#: gtkkeyboardsetup.ui:140
+#: gtkkeyboardsetup.ui:45
+msgid "About"
+msgstr ""
+
+#: gtkkeyboardsetup.ui:66
+msgid "Cancel"
+msgstr ""
+
+#: gtkkeyboardsetup.ui:80
+msgid "Apply changes"
+msgstr ""
+
+#: gtkkeyboardsetup.ui:142
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
 msgstr "Bitte wählen Sie Ihr bevorzugten Tastaturtyp und -layout. Bitte stellen Sie auch Numlock und IBus ein."
 
-#: gtkkeyboardsetup.ui:244
-msgid "Enable numlock when the system is started"
-msgstr "Numlock beim Systemstart aktivieren"
+#: gtkkeyboardsetup.ui:268
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
 
-#: gtkkeyboardsetup.ui:259
+#: gtkkeyboardsetup.ui:279
 msgid "Enable IBus when the system is started"
 msgstr "IBus beim Systemstart aktivieren"
 
-#: gtkkeyboardsetup.ui:263
-msgid ""
-"IBus is an input platform for Chinese, Japanese, Korean and many other "
-"languages. It is newer and works better than SCIM."
-msgstr "IBus ist eine Eingabeplattform für Chinesisch, Japanisch, Koreanisch und viele andere Sprachen. Es ist neuer und funktioniert besser als SCIM."
+#: gtkkeyboardsetup.ui:291
+msgid "Enable numlock when the system is started"
+msgstr "Numlock beim Systemstart aktivieren"
 
-#: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup.ui:329 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "Konfiguration des Tastaturlayouts"
 
-#: gtkkeyboardsetup.ui:974
+#: gtkkeyboardsetup.ui:1007
 msgid "translator-credits"
 msgstr "Thorsten Mühlfelder <thenktor~at~gmx.de>"
 

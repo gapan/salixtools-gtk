@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 00:27+0300\n"
+"POT-Creation-Date: 2022-04-24 13:01+0300\n"
 "PO-Revision-Date: 2010-11-30 12:19+0000\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>, 2011\n"
 "Language-Team: Danish (http://www.transifex.com/gapan/salixtools-gtk/language/da/)\n"
@@ -22,32 +22,44 @@ msgstr ""
 msgid "Keyboard settings"
 msgstr "Indstillinger for tastatur"
 
-#: gtkkeyboardsetup.ui:140
+#: gtkkeyboardsetup.ui:45
+msgid "About"
+msgstr ""
+
+#: gtkkeyboardsetup.ui:66
+msgid "Cancel"
+msgstr ""
+
+#: gtkkeyboardsetup.ui:80
+msgid "Apply changes"
+msgstr ""
+
+#: gtkkeyboardsetup.ui:142
 msgid ""
 "Please select your preferred keyboard type and map and set numlock and IBus "
 "preferences."
 msgstr "Vælg venligst din foretrukne tastaturtype og -layout. Angiv numlock og IBus-indstillinger."
 
-#: gtkkeyboardsetup.ui:244
-msgid "Enable numlock when the system is started"
-msgstr "Aktivér numlock når systemet bliver startet"
+#: gtkkeyboardsetup.ui:268
+msgid ""
+"IBus is an input platform for Chinese, Japanese, Korean and many other "
+"languages."
+msgstr ""
 
-#: gtkkeyboardsetup.ui:259
+#: gtkkeyboardsetup.ui:279
 msgid "Enable IBus when the system is started"
 msgstr "Aktivér IBus når systemet bliver startet"
 
-#: gtkkeyboardsetup.ui:263
-msgid ""
-"IBus is an input platform for Chinese, Japanese, Korean and many other "
-"languages. It is newer and works better than SCIM."
-msgstr "IBus er en input-platform for kinesisk, japansk, koreansk og mange andre sprog. Det er nyere og virker bedre end SCIM."
+#: gtkkeyboardsetup.ui:291
+msgid "Enable numlock when the system is started"
+msgstr "Aktivér numlock når systemet bliver startet"
 
-#: gtkkeyboardsetup.ui:296 gtkkeyboardsetup.desktop.in.h:2
+#: gtkkeyboardsetup.ui:329 gtkkeyboardsetup.desktop.in.h:2
 #: gtkkeyboardsetup-kde.desktop.in.h:2
 msgid "Keyboard configuration tool"
 msgstr "Konfigurationsværktøj for tastatur"
 
-#: gtkkeyboardsetup.ui:974
+#: gtkkeyboardsetup.ui:1007
 msgid "translator-credits"
 msgstr "Kris Thomsen <lakristho~at~gmail~dot~com>"
 
