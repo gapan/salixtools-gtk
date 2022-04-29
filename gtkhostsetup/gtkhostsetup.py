@@ -7,6 +7,7 @@ from gi.repository import Gtk
 import os
 import sys
 import re
+from ipaddress import ip_address
 
 # Internationalization
 import locale
@@ -47,6 +48,7 @@ def get_other_hosts():
     except IOError:
         return [[]]
     hostlines = []
+    use_ipv6 = False
     for line in contents:
         temp = line.replace('\t', ' ').replace(
             '\n', '').partition('#')[0].split()
@@ -55,9 +57,11 @@ def get_other_hosts():
             ip = line.partition(' ')[0]
             hostname = line.partition(' ')[2].partition('.')[0]
             domain = line.partition(' ')[2].partition('.')[2].partition(' ')[0]
-            if not ip == '127.0.0.1':
+            if ip == '::1':
+                use_ipv6 = True
+            elif ip != '127.0.0.1':
                 hostlines.append([ip, hostname, domain])
-    return sorted(hostlines)
+    return sorted(hostlines), use_ipv6
 
 
 def check_hostname(ip, hostname, domain):
@@ -83,7 +87,9 @@ def check_hostname(ip, hostname, domain):
         msg = _('The domain cannot end with a hyphen.')
     if error == False:
         for i in ip:
-            if not re.match("^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}$", ip):
+            try:
+                valid_ip = ip_address(ip)
+            except ValueError:
                 error = True
                 msg = _('Not a valid IP address.')
     if error == False:
@@ -101,7 +107,7 @@ def check_hostname(ip, hostname, domain):
     return error, msg
 
 
-def write_hosts(hostname, domain, host_list):
+def write_hosts(hostname, domain, host_list, use_ipv6):
     with open(hostname_file, 'w') as f:
         if domain == '':
             f.write(hostname + '\n')
@@ -122,11 +128,19 @@ def write_hosts(hostname, domain, host_list):
         f.write('#\n')
         f.write('# For loopbacking.\n')
         f.write('127.0.0.1\tlocalhost\n')
+        if use_ipv6:
+            f.write('::1\t\tlocalhost\n')
         if domain == '':
-            f.write('127.0.0.1\t' + hostname + '\n\n')
+            f.write('127.0.0.1\t' + hostname + '\n')
+            if use_ipv6:
+                f.write('::1\t\t' + hostname + '\n')
         else:
             f.write('127.0.0.1\t' + hostname + '.' +
-                    domain + ' ' + hostname + '\n\n')
+                    domain + ' ' + hostname + '\n')
+            if use_ipv6:
+                f.write('::1\t\t' + hostname + '.' +
+                        domain + ' ' + hostname + '\n')
+        f.write('\n')
         for i in host_list:
             ip, hostname, domain = i
             if domain == '':
@@ -150,7 +164,8 @@ class GTKHostSetup:
         return True
 
     def create_host_list(self, widget):
-        for i in get_other_hosts():
+        other_hosts, self.use_ipv6 = get_other_hosts()
+        for i in other_hosts:
             self.liststore_hosts.append(i)
 
     def on_button_ok_clicked(self, widget, data=None):
@@ -172,7 +187,8 @@ class GTKHostSetup:
                     host_list.append([ip, hostname, domain])
                     iter = self.liststore_hosts.iter_next(iter)
             write_hosts(self.entry_hostname.get_text(),
-                        self.entry_domain.get_text(), sorted(host_list))
+                        self.entry_domain.get_text(), sorted(host_list),
+                        self.switch_ipv6.get_state())
             Gtk.main_quit()
 
     def on_button_cancel_clicked(self, widget, data=None):
@@ -298,6 +314,9 @@ class GTKHostSetup:
         self.entry_hostname.set_text(current_hostname)
         self.entry_domain.set_text(current_domain)
 
+        #self.use_ipv6 = False
+        self.switch_ipv6 = builder.get_object('switch_ipv6')
+
         self.treeviewcolumn_ip = builder.get_object('treeviewcolumn_ip')
         self.treeviewcolumn_hostname = builder.get_object(
             'treeviewcolumn_hostname')
@@ -310,7 +329,9 @@ class GTKHostSetup:
         self.treeview_hosts = builder.get_object('treeview_hosts')
         self.liststore_hosts = builder.get_object('liststore_hosts')
         self.liststore_hosts.clear()
-        self.create_host_list(self)
+        self.create_host_list(self) # this also sets self.use_ipv6
+
+        self.switch_ipv6.set_state(self.use_ipv6)
 
         #
         # Add host window
