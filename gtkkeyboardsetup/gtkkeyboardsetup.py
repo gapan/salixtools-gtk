@@ -205,6 +205,7 @@ class GTKKeyboardSetup:
         self.keymapliststore = builder.get_object('keymapliststore')
         self.numlock = builder.get_object('switch_numlock')
         self.ibus = builder.get_object('switch_ibus')
+        self.label_ibus = builder.get_object('label_ibus')
         self.aboutdialog = builder.get_object('aboutdialog')
 
         currentkeymap = getkeymap()
@@ -220,6 +221,7 @@ class GTKKeyboardSetup:
         if ibusavailable() == True:
             self.ibus.set_active(getibus())
         else:
+            self.label_ibus.set_sensitive(False)
             self.ibus.set_sensitive(False)
             self.ibus.set_active(False)
 
