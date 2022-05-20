@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Panwar108 <caspian7pena@gmail.com>, 2020
+# Panwar108 <caspian7pena@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-22 02:12+0300\n"
+"POT-Creation-Date: 2022-04-24 13:04+0300\n"
 "PO-Revision-Date: 2016-07-21 23:13+0000\n"
-"Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2020\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2022\n"
 "Language-Team: Hindi (India) (https://www.transifex.com/gapan/teams/15073/hi_IN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,7 +25,19 @@ msgstr ""
 msgid "Select repository mirror"
 msgstr "पैकेज-संग्रह हेतु सर्वर-मिरर चुनें"
 
-#: gtkreposetup.ui:143
+#: gtkreposetup.ui:41
+msgid "About"
+msgstr "बारे में"
+
+#: gtkreposetup.ui:62 gtkreposetup.ui:977 gtkreposetup.ui:1053
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: gtkreposetup.ui:76
+msgid "Apply changes"
+msgstr "परिवर्तन लागू करें"
+
+#: gtkreposetup.ui:132
 msgid ""
 "Please select your preferred repository mirror. The country code where each "
 "mirror is located is shown on the right. Mirrors located closer to you "
@@ -35,77 +47,77 @@ msgstr ""
 "दर्शाया गया है। भौगोलिक रूप से निकटम सर्वर की इंटरनेट गति सामान्यतः तेज़ होती"
 " है।"
 
-#: gtkreposetup.ui:175
+#: gtkreposetup.ui:166
 msgid "Mirror"
 msgstr "सर्वर-मिरर"
 
-#: gtkreposetup.ui:186
+#: gtkreposetup.ui:177
 msgid "Country"
 msgstr "देश"
 
-#: gtkreposetup.ui:206
+#: gtkreposetup.ui:215
 msgid "Update the package and SlackBuild data"
 msgstr "पैकेज व स्लैक बिल्ड डाटा अपडेट करें"
 
-#: gtkreposetup.ui:236
+#: gtkreposetup.ui:247
 msgid "Repository configuration tool"
 msgstr "पैकेज-संग्रह विन्यास साधन"
 
-#: gtkreposetup.ui:915
+#: gtkreposetup.ui:926
 msgid "translator-credits"
 msgstr "अनुवादक आभार"
 
-#: gtkreposetup.ui:941
+#: gtkreposetup.ui:953
 msgid "Updating mirror list"
 msgstr "सर्वर-मिरर सूची अपडेट हो रही है"
 
-#: gtkreposetup.ui:960
+#: gtkreposetup.ui:1000
 msgid "Updating mirror list. Please wait..."
 msgstr "सर्वर-मिरर सूची अपडेट हो रही है। कृपया प्रतीक्षा करें ..."
 
-#: gtkreposetup.ui:1018
+#: gtkreposetup.ui:1030
 msgid "Updating..."
 msgstr "अपडेट हो रही है ..."
 
-#: gtkreposetup:49
+#: gtkreposetup.py:49
 msgid "Error"
 msgstr "त्रुटि"
 
-#: gtkreposetup:79 gtkreposetup:97 gtkreposetup:121 gtkreposetup:149
-#: gtkreposetup:188
+#: gtkreposetup.py:79 gtkreposetup.py:96 gtkreposetup.py:121
+#: gtkreposetup.py:149 gtkreposetup.py:189
 msgid "Could not read file:"
 msgstr "फ़ाइल रीड नहीं की जा सकी :"
 
-#: gtkreposetup:81 gtkreposetup:99 gtkreposetup:123 gtkreposetup:224
-#: gtkreposetup:256
+#: gtkreposetup.py:80 gtkreposetup.py:98 gtkreposetup.py:122
+#: gtkreposetup.py:246 gtkreposetup.py:264
 msgid "Exiting."
 msgstr "बंद किया जा रहा है।"
 
-#: gtkreposetup:148 gtkreposetup:187 gtkreposetup:288
+#: gtkreposetup.py:148 gtkreposetup.py:188 gtkreposetup.py:294
 msgid "WARNING:"
 msgstr "चेतावनी :"
 
-#: gtkreposetup:222 gtkreposetup:254 gtkreposetup:289
+#: gtkreposetup.py:245 gtkreposetup.py:263 gtkreposetup.py:295
 msgid "Could not write to file:"
 msgstr "फ़ाइल राइट नहीं की जा सकी :"
 
-#: gtkreposetup:339
+#: gtkreposetup.py:343
 msgid "Could not write configuration files."
 msgstr "विन्यास फ़ाइल राइट नहीं की जा सकी।"
 
-#: gtkreposetup:344
+#: gtkreposetup.py:347
 msgid "Updating package information..."
 msgstr "पैकेज जानकारी अपडेट की जा रही है ..."
 
-#: gtkreposetup:354
+#: gtkreposetup.py:354
 msgid "Could not update package information."
 msgstr "पैकेज जानकारी अपडेट नहीं हो सकी।"
 
-#: gtkreposetup:359
+#: gtkreposetup.py:358
 msgid "Updating SlackBuild information..."
 msgstr "स्लैकबिल्ड जानकारी अपडेट की जा रही है ..."
 
-#: gtkreposetup:369
+#: gtkreposetup.py:365
 msgid "Could not update SlackBuild information."
 msgstr "स्लैकबिल्ड जानकारी अपडेट नहीं की जा सकी।"
 

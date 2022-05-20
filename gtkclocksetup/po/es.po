@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Alejandro Simón <alejandrosimon@gmx.com>, 2015
+# Alejandro Simón <alejandrosimon@gmx.com>, 2015,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-24 13:21+0300\n"
 "PO-Revision-Date: 2010-11-30 12:19+0000\n"
-"Last-Translator: Alejandro Simón <alejandrosimon@gmx.com>, 2015\n"
+"Last-Translator: Alejandro Simón <alejandrosimon@gmx.com>, 2015,2022\n"
 "Language-Team: Spanish (http://www.transifex.com/gapan/salixtools-gtk/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,15 +24,15 @@ msgstr "Configuración de fecha y hora"
 
 #: gtkclocksetup.ui:47
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: gtkclocksetup.ui:68 gtkclocksetup.ui:1167
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: gtkclocksetup.ui:82
 msgid "Apply changes"
-msgstr ""
+msgstr "Aplicar cambios"
 
 #: gtkclocksetup.ui:132
 msgid "Synchronize now"
@@ -55,7 +55,7 @@ msgid ""
 "Hardware clocks in most home or business computers are set to using local "
 "time, while the hardware clock in most web servers is probably set to UTC. "
 "Do not enable this if you are not sure."
-msgstr ""
+msgstr "En la mayoría de los ordenadores hogareños o comerciales el reloj por hardware está configurado en la hora local, mientras que los servidores suelen estar configurados a la UTC. No lo habilite si no está seguro."
 
 #: gtkclocksetup.ui:233
 msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
@@ -84,7 +84,7 @@ msgstr "Seleccionar zona horaria"
 
 #: gtkclocksetup.ui:1181
 msgid "Select"
-msgstr ""
+msgstr "Seleccionar"
 
 #: gtkclocksetup.ui:1210
 msgid "Please select your time zone:"

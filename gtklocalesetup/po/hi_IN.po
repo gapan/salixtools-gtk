@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Panwar108 <caspian7pena@gmail.com>, 2020
+# Panwar108 <caspian7pena@gmail.com>, 2020,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 00:56+0300\n"
-"PO-Revision-Date: 2020-06-26 13:08+0000\n"
-"Last-Translator: Panwar108 <caspian7pena@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:03+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2020,2022\n"
 "Language-Team: Hindi (India) (http://www.transifex.com/gapan/salixtools-gtk/language/hi_IN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,18 +22,30 @@ msgstr ""
 msgid "System language"
 msgstr "सिस्टम भाषा"
 
-#: gtklocalesetup.ui:149
+#: gtklocalesetup.ui:40
+msgid "About"
+msgstr "बारे में"
+
+#: gtklocalesetup.ui:61
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: gtklocalesetup.ui:75
+msgid "Apply changes"
+msgstr "परिवर्तन लागू करें"
+
+#: gtklocalesetup.ui:137
 msgid ""
 "Please select a default system locale. The changes will take effect next "
 "time you start your system."
 msgstr "कृपया डिफ़ॉल्ट सिस्टम स्थानिकी चुनें। सभी बदलाव सिस्टम पुनः आरंभ करने के उपरांत लागू होंगे।"
 
-#: gtklocalesetup.ui:234 gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup.ui:224 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "Locale configuration tool"
 msgstr "स्थानिकी विन्यास साधन"
 
-#: gtklocalesetup.ui:912
+#: gtklocalesetup.ui:902
 msgid "translator-credits"
 msgstr "अनुवादक आभार"
 

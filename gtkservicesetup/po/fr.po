@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Didier Spaier <didier@slint.fr>, 2022
 # gapan <vlahavas@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 11:21+0300\n"
-"PO-Revision-Date: 2017-09-19 09:11+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:06+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: Didier Spaier <didier@slint.fr>, 2022\n"
 "Language-Team: French (http://www.transifex.com/gapan/salixtools-gtk/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,35 +24,47 @@ msgstr ""
 msgid "System Services"
 msgstr "Services du système"
 
-#: gtkservicesetup.ui:152
+#: gtkservicesetup.ui:45
+msgid "About"
+msgstr "A propos"
+
+#: gtkservicesetup.ui:66
+msgid "Cancel"
+msgstr "Annuler"
+
+#: gtkservicesetup.ui:80
+msgid "Apply changes"
+msgstr "Appliquer les modifications"
+
+#: gtkservicesetup.ui:136
 msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
 msgstr "Veuillez sélectionner les services que vous souhaitez activer au démarrage du système. Toute modification prendra effet lorsque vous appuierez sur le bouton 'Valider'."
 
-#: gtkservicesetup.ui:250 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup.ui:229 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
 msgid "Services configuration tool"
 msgstr "Utilitaire de configuration des services"
 
-#: gtkservicesetup.ui:928
+#: gtkservicesetup.ui:907
 msgid "translator-credits"
 msgstr "Cyrille Pontvieux <jrd~at~enialis~dot~net>"
 
-#: gtkservicesetup:47
+#: gtkservicesetup.py:49
 #, python-brace-format
 msgid "The {0} service"
 msgstr "Le service {0}"
 
-#: gtkservicesetup:150
+#: gtkservicesetup.py:151
 msgid "Enabled"
 msgstr "Activé"
 
-#: gtkservicesetup:152
+#: gtkservicesetup.py:153
 msgid "Service name"
 msgstr "Nom du service"
 
-#: gtkservicesetup:154
+#: gtkservicesetup.py:155
 msgid "Service description"
 msgstr "Description du service"

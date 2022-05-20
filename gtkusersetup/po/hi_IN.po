@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Panwar108 <caspian7pena@gmail.com>, 2020
+# Panwar108 <caspian7pena@gmail.com>, 2020,2022
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 20:18+0300\n"
-"PO-Revision-Date: 2020-06-17 06:02+0000\n"
-"Last-Translator: Panwar108 <caspian7pena@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:31+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2020,2022\n"
 "Language-Team: Hindi (India) (http://www.transifex.com/gapan/salixtools-gtk/language/hi_IN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,298 +18,333 @@ msgstr ""
 "Language: hi_IN\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gtkusersetup.ui:49
+#: gtkusersetup.ui:60
 msgid "User settings"
 msgstr "उपयोक्ता सेटिंग्स"
 
-#: gtkusersetup.ui:210
+#: gtkusersetup.ui:84
+msgid "About"
+msgstr "बारे में"
+
+#: gtkusersetup.ui:98 gtkusersetup.ui:1192
+msgid "Close"
+msgstr "बंद करें"
+
+#: gtkusersetup.ui:195 gtkusersetup.ui:1270
+msgid "Properties"
+msgstr "विशेषता"
+
+#: gtkusersetup.ui:209 gtkusersetup.ui:1296
+msgid "Add"
+msgstr "जोड़ें"
+
+#: gtkusersetup.ui:223 gtkusersetup.ui:1061 gtkusersetup.ui:1322
+#: gtkusersetup.ui:1488
+msgid "Delete"
+msgstr "हटाएँ"
+
+#: gtkusersetup.ui:237
 msgid "Manage groups"
 msgstr "समूह प्रबंधन"
 
-#: gtkusersetup.ui:236
+#: gtkusersetup.ui:270
 msgid "Show all users"
 msgstr "सभी उपयोक्ता दिखाएँ"
 
-#: gtkusersetup.ui:340
-msgid "<b>Basic information</b>"
-msgstr "<b>सामान्य जानकारी</b>"
-
-#: gtkusersetup.ui:359
-msgid "Username:"
-msgstr "उपयोक्ता नाम :"
-
-#: gtkusersetup.ui:368
-msgid "Real name:"
-msgstr "वास्तविक नाम :"
-
-#: gtkusersetup.ui:429
-msgid "User password:"
-msgstr "उपयोक्ता कूटशब्द :"
-
-#: gtkusersetup.ui:439
-msgid "Password confirmation:"
-msgstr "कूटशब्द पुष्टिकरण :"
-
-#: gtkusersetup.ui:480
-msgid "View password while typing"
-msgstr "टाइप करते समय कूटशब्द देखें"
-
-#: gtkusersetup.ui:498
-msgid "Account"
-msgstr "अकाउंट"
-
-#: gtkusersetup.ui:513
-msgid "<b>Contact information</b>"
-msgstr "<b>सम्पर्क सूचना</b>"
-
-#: gtkusersetup.ui:533
-msgid "Office extension:"
-msgstr "ऑफिस एक्सटेंशन :"
-
-#: gtkusersetup.ui:545
-msgid "Office information:"
-msgstr "ऑफिस जानकारी :"
-
-#: gtkusersetup.ui:555
-msgid "Home phone:"
-msgstr "गृह फ़ोन :"
-
-#: gtkusersetup.ui:612
-msgid "Contact"
-msgstr "सम्पर्क"
-
-#: gtkusersetup.ui:628
-msgid "<b>Group membership</b>"
-msgstr "<b>समूह सदस्यता</b>"
-
-#: gtkusersetup.ui:645
-msgid "Main group:"
-msgstr "मुख्य समूह :"
-
-#: gtkusersetup.ui:678
-msgid "Other groups:"
-msgstr "अन्य समूह :"
-
-#: gtkusersetup.ui:750
-msgid "Groups"
-msgstr "समूह"
-
-#: gtkusersetup.ui:766
-msgid "<b>Advanced settings</b>"
-msgstr "<b>विस्तृत सेटिंग्स</b>"
-
-#: gtkusersetup.ui:786
-msgid "Home directory:"
-msgstr "होम डायरेक्टरी :"
-
-#: gtkusersetup.ui:796
-msgid "Shell:"
-msgstr "शैल (उपयोक्ता इंटरफ़ेस) :"
-
-#: gtkusersetup.ui:808
-msgid "UID:"
-msgstr "UID:"
-
-#: gtkusersetup.ui:865
-msgid "Set account expiration date"
-msgstr "अकाउंट समाप्ति हेतु दिनांक सेट करें"
-
-#: gtkusersetup.ui:901
-msgid "Advanced"
-msgstr "विस्तृत"
-
-#: gtkusersetup.ui:970 gtkusersetup.ui:1573
-msgid "Error!"
-msgstr "त्रुटि!"
-
-#: gtkusersetup.ui:1182
-msgid "Group settings"
-msgstr "समूह सेटिंग्स"
-
-#: gtkusersetup.ui:1360
-msgid "Group properties"
-msgstr "समूह विशेषताएँ"
-
-#: gtkusersetup.ui:1381
-msgid "<b>Basic settings</b>"
-msgstr "<b>सामान्य सेटिंग्स</b>"
-
-#: gtkusersetup.ui:1401
-msgid "Group name:"
-msgstr "समूह नाम :"
-
-#: gtkusersetup.ui:1411
-msgid "Group ID:"
-msgstr "समूह आईडी :"
-
-#: gtkusersetup.ui:1457
-msgid "<b>Group members</b>"
-msgstr "<b>समूह सदस्य</b>"
-
-#: gtkusersetup.ui:1660
-msgid "Delete group?"
-msgstr "समूह हटाएँ?"
-
-#: gtkusersetup.ui:1762
-msgid "Cannot delete group"
-msgstr "समूह हटाया नहीं जा सका"
-
-#: gtkusersetup.ui:1856 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.ui:315 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "उपयोक्ता व समूह प्रबंधन साधन"
 
-#: gtkusersetup.ui:2534
+#: gtkusersetup.ui:993
 msgid "translator-credits"
 msgstr "अनुवादक आभार"
 
-#: gtkusersetup:222
+#: gtkusersetup.ui:1047 gtkusersetup.ui:1474 gtkusersetup.ui:1582
+#: gtkusersetup.ui:1906
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: gtkusersetup.ui:1141
+msgid "Also remove user's home directory"
+msgstr "उपयोक्ता की होम डायरेक्टरी भी हटाएँ"
+
+#: gtkusersetup.ui:1169
+msgid "Group settings"
+msgstr "समूह सेटिंग्स"
+
+#: gtkusersetup.ui:1357
+msgid "Cannot delete group"
+msgstr "समूह हटाया नहीं जा सका"
+
+#: gtkusersetup.ui:1382 gtkusersetup.ui:1596 gtkusersetup.ui:1811
+#: gtkusersetup.ui:1920 gtkusersetup.ui:2630
+msgid "OK"
+msgstr "ठीक है"
+
+#: gtkusersetup.ui:1449
+msgid "Delete group?"
+msgstr "समूह हटाएँ?"
+
+#: gtkusersetup.ui:1560
+msgid "Group properties"
+msgstr "समूह विशेषताएँ"
+
+#: gtkusersetup.ui:1626
+msgid "<b>Basic settings</b>"
+msgstr "<b>सामान्य सेटिंग्स</b>"
+
+#: gtkusersetup.ui:1649
+msgid "Group name:"
+msgstr "समूह नाम :"
+
+#: gtkusersetup.ui:1674
+msgid "Group ID:"
+msgstr "समूह आईडी :"
+
+#: gtkusersetup.ui:1709
+msgid "<b>Group members</b>"
+msgstr "<b>समूह सदस्य</b>"
+
+#: gtkusersetup.ui:1786 gtkusersetup.ui:2606
+msgid "Error!"
+msgstr "त्रुटि!"
+
+#: gtkusersetup.ui:1955
+msgid "<b>Basic information</b>"
+msgstr "<b>सामान्य जानकारी</b>"
+
+#: gtkusersetup.ui:1977
+msgid "Username:"
+msgstr "उपयोक्ता नाम :"
+
+#: gtkusersetup.ui:1989
+msgid "Real name:"
+msgstr "वास्तविक नाम :"
+
+#: gtkusersetup.ui:2056
+msgid "User password:"
+msgstr "उपयोक्ता कूटशब्द :"
+
+#: gtkusersetup.ui:2068
+msgid "Password confirmation:"
+msgstr "कूटशब्द पुष्टिकरण :"
+
+#: gtkusersetup.ui:2113
+msgid "View password while typing"
+msgstr "टाइप करते समय कूटशब्द देखें"
+
+#: gtkusersetup.ui:2132
+msgid "Account"
+msgstr "अकाउंट"
+
+#: gtkusersetup.ui:2149
+msgid "<b>Contact information</b>"
+msgstr "<b>सम्पर्क सूचना</b>"
+
+#: gtkusersetup.ui:2171
+msgid "Office information:"
+msgstr "ऑफिस जानकारी :"
+
+#: gtkusersetup.ui:2183
+msgid "Office extension:"
+msgstr "ऑफिस एक्सटेंशन :"
+
+#: gtkusersetup.ui:2195
+msgid "Home phone:"
+msgstr "गृह फ़ोन :"
+
+#: gtkusersetup.ui:2258
+msgid "Contact"
+msgstr "सम्पर्क"
+
+#: gtkusersetup.ui:2276
+msgid "<b>Group membership</b>"
+msgstr "<b>समूह सदस्यता</b>"
+
+#: gtkusersetup.ui:2295
+msgid "Main group:"
+msgstr "मुख्य समूह :"
+
+#: gtkusersetup.ui:2333
+msgid "Other groups:"
+msgstr "अन्य समूह :"
+
+#: gtkusersetup.ui:2410
+msgid "Groups"
+msgstr "समूह"
+
+#: gtkusersetup.ui:2428
+msgid "<b>Advanced settings</b>"
+msgstr "<b>विस्तृत सेटिंग्स</b>"
+
+#: gtkusersetup.ui:2449
+msgid "Home directory:"
+msgstr "होम डायरेक्टरी :"
+
+#: gtkusersetup.ui:2461
+msgid "Shell:"
+msgstr "शैल (उपयोक्ता इंटरफ़ेस) :"
+
+#: gtkusersetup.ui:2473
+msgid "UID:"
+msgstr "UID:"
+
+#: gtkusersetup.ui:2539
+msgid "Set account expiration date"
+msgstr "अकाउंट समाप्ति हेतु दिनांक सेट करें"
+
+#: gtkusersetup.ui:2582
+msgid "Advanced"
+msgstr "विस्तृत"
+
+#: gtkusersetup.py:224
 msgid "Password is too short. It has to be at least 5 characters long."
 msgstr "कूटशब्द काफी छोटा है। कम-से-कम 5 अक्षर होने चाहिए।"
 
-#: gtkusersetup:225
+#: gtkusersetup.py:227
 msgid "Password cannot include the backslash character."
 msgstr "कूटशब्द में बैकस्लैश '\\' चिह्न नहीं होना चाहिए।"
 
-#: gtkusersetup:231
+#: gtkusersetup.py:233
 msgid "Passwords don't match"
 msgstr "कूटशब्द मेल नहीं खाते"
 
-#: gtkusersetup:240
+#: gtkusersetup.py:242
 msgid "Username cannot be empty."
 msgstr "उपयोक्ता नाम रिक्त नहीं होना चाहिए।"
 
-#: gtkusersetup:243
+#: gtkusersetup.py:245
 msgid "Username cannot exceed 31 characters"
 msgstr "उपयोक्ता नाम में 31 से अधिक अक्षर नहीं होने चाहिए"
 
-#: gtkusersetup:246
+#: gtkusersetup.py:248
 msgid "Username cannot include the space character."
 msgstr "उपयोक्ता नाम में स्पेस नहीं होना चाहिए।"
 
-#: gtkusersetup:249
+#: gtkusersetup.py:251
 msgid "Username cannot start with a number."
 msgstr "उपयोक्ता नाम संख्या से आरंभ नहीं होना चाहिए।"
 
-#: gtkusersetup:252
+#: gtkusersetup.py:254
 msgid "Username cannot start with an underscore."
 msgstr "उपयोक्ता नाम अंडरस्कोर  '_' से आरंभ नहीं होना चाहिए।"
 
-#: gtkusersetup:255
+#: gtkusersetup.py:257
 msgid "Username cannot start with a dash."
 msgstr "उपयोक्ता नाम डैश '-' से आरंभ नहीं होना चाहिए।"
 
-#: gtkusersetup:261
+#: gtkusersetup.py:263
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
 msgstr "उपयोक्ता नाम में केवल रोमन लिपि के लोअरकेस अक्षर, संख्या, डैश व अंडरस्कोर हो सकते हैं।"
 
-#: gtkusersetup:267
+#: gtkusersetup.py:269
 #, python-brace-format
 msgid "Username \"{0}\" already exists."
 msgstr "उपयोक्ता नाम \"{0}\" पहले से मौजूद है।"
 
-#: gtkusersetup:278
+#: gtkusersetup.py:280
 msgid "Group name cannot be empty."
 msgstr "समूह नाम रिक्त नहीं होना चाहिए।"
 
-#: gtkusersetup:281
+#: gtkusersetup.py:283
 msgid "Group name cannot exceed 31 characters"
 msgstr "समूह नाम में 31 से अधिक अक्षर नहीं होने चाहिए"
 
-#: gtkusersetup:284
+#: gtkusersetup.py:286
 msgid "Group name cannot include the space character."
 msgstr "समूह नाम में स्पेस नहीं होना चाहिए।"
 
-#: gtkusersetup:287
+#: gtkusersetup.py:289
 msgid "Group name cannot start with a number."
 msgstr "समूह नाम संख्या से आरंभ नहीं होना चाहिए।"
 
-#: gtkusersetup:290
+#: gtkusersetup.py:292
 msgid "Group name cannot start with an underscore."
 msgstr "समूह नाम अंडरस्कोर  '_' से आरंभ नहीं होना चाहिए।"
 
-#: gtkusersetup:293
+#: gtkusersetup.py:295
 msgid "Group name cannot start with a dash."
 msgstr "समूह नाम डैश '-' से आरंभ नहीं होना चाहिए।"
 
-#: gtkusersetup:299
+#: gtkusersetup.py:301
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
 msgstr "समूह नाम में केवल रोमन लिपि के लोअरकेस अक्षर, संख्या, डैश व अंडरस्कोर हो सकते हैं।"
 
-#: gtkusersetup:305
+#: gtkusersetup.py:307
 #, python-brace-format
 msgid "Group name \"{0}\" already exists."
 msgstr "समूह नाम \"{0}\" पहले से मौजूद है।"
 
-#: gtkusersetup:316
+#: gtkusersetup.py:318
 msgid "Shell does not exist."
 msgstr "शैल (उपयोक्ता इंटरफ़ेस) मौजूद नहीं है।"
 
-#: gtkusersetup:326
+#: gtkusersetup.py:328
 #, python-brace-format
 msgid "UID {0} is assigned to another user."
 msgstr "UID {0} अन्य उपयोक्ता हेतु नियुक्त है।"
 
-#: gtkusersetup:336
+#: gtkusersetup.py:338
 #, python-brace-format
 msgid "GID {0} is assigned to another group."
 msgstr "GID {0} अन्य समूह हेतु नियुक्त है।"
 
-#: gtkusersetup:389
+#: gtkusersetup.py:391
 #, python-brace-format
 msgid "User account properties for \"{0}\""
 msgstr "\"{0}\" हेतु उपयोक्ता अकाउंट विशेषताएँ"
 
-#: gtkusersetup:396
+#: gtkusersetup.py:398
 msgid "<b>Set new password</b>"
 msgstr "<b>नया कूटशब्द सेट करें</b>"
 
-#: gtkusersetup:454
+#: gtkusersetup.py:456
 msgid "Add new user"
 msgstr "नया उपयोक्ता जोड़ें"
 
-#: gtkusersetup:461
+#: gtkusersetup.py:463
 msgid "<b>Set password</b>"
 msgstr "<b>कूटशब्द सेट करें</b>"
 
-#: gtkusersetup:512
+#: gtkusersetup.py:514
 #, python-brace-format
 msgid "Delete user {0}?"
 msgstr "{0} उपयोक्ता हटाएँ?"
 
-#: gtkusersetup:514
+#: gtkusersetup.py:516
 #, python-brace-format
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
 msgstr "आप सिस्टम से उपयोक्ता अकाउंट \"{0}\" हटाने वाले हैं। क्या आप निश्चित ही यह करना चाहते हैं?"
 
-#: gtkusersetup:516
+#: gtkusersetup.py:518
 #, python-brace-format
 msgid "Completely remove user's home directory ({0}) with all its contents"
 msgstr "सभी सामग्री सहित उपयोक्ता होम डायरेक्टरी ({0}) पूर्णतया हटाएँ"
 
-#: gtkusersetup:769
+#: gtkusersetup.py:775
 #, python-brace-format
 msgid "Group \"{0}\" properties"
 msgstr "समूह \"{0}\" विशेषताएँ"
 
-#: gtkusersetup:788
+#: gtkusersetup.py:794
 msgid "Add new group"
 msgstr "नया समूह जोड़ें"
 
-#: gtkusersetup:814
+#: gtkusersetup.py:820
 #, python-brace-format
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
 msgstr "आप सिस्टम से समूह \"{0}\" हटाने वाले हैं। क्या आप निश्चित ही यह करना चाहते हैं?"
 
-#: gtkusersetup:818
+#: gtkusersetup.py:824
 #, python-brace-format
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
@@ -317,23 +352,23 @@ msgid ""
 "\"{1}\" to another group first."
 msgstr "उपयोक्ता \"{1}\" हेतु मुख्य समूह होने के कारण समूह \"{0}\" हटाया नहीं जा सका। यदि आप समूह \"{0}\" हटाना चाहते हैं तो, किसी अन्य समूह को उपयोक्ता \"{1}\" हेतु मुख्य समूह सेट करें।"
 
-#: gtkusersetup:948
+#: gtkusersetup.py:954
 msgid "Username"
 msgstr "उपयोक्ता नाम"
 
-#: gtkusersetup:949
+#: gtkusersetup.py:955
 msgid "Real name"
 msgstr "वास्तविक नाम"
 
-#: gtkusersetup:950
+#: gtkusersetup.py:956
 msgid "Home directory"
 msgstr "होम डायरेक्टरी"
 
-#: gtkusersetup:993
+#: gtkusersetup.py:999
 msgid "Member"
 msgstr "सदस्य"
 
-#: gtkusersetup:994
+#: gtkusersetup.py:1000
 msgid "Group"
 msgstr "समूह"
 
