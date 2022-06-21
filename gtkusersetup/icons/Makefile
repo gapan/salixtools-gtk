@@ -14,4 +14,8 @@ install:
 		install -m 644 gtkusersetup-$${i}.png \
 			$(DESTDIR)/usr/share/icons/hicolor/$${i}x$${i}/apps/gtkusersetup.png; \
 	done
+	install -d -m 755 \
+		$(DESTDIR)/usr/share/icons/hicolor/scalable/apps
+	install -m 644 gtkusersetup.svg \
+		$(DESTDIR)/usr/share/icons/hicolor/scalable/apps/gtkusersetup.svg
 
