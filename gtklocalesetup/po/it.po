@@ -3,39 +3,51 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Antonio Sardei <laplume@libero.it>, 2016
+# Antonio Sardei <laplume@libero.it>, 2016,2022
 # Antonio Sardei <laplume@libero.it>, 2012
 # gapan <vlahavas@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 00:56+0300\n"
-"PO-Revision-Date: 2017-09-19 09:12+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:03+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: Antonio Sardei <laplume@libero.it>, 2016,2022\n"
 "Language-Team: Italian (http://www.transifex.com/gapan/salixtools-gtk/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: gtklocalesetup.ui:17
 msgid "System language"
 msgstr "Lingua di sistema"
 
-#: gtklocalesetup.ui:149
+#: gtklocalesetup.ui:40
+msgid "About"
+msgstr "Informazioni"
+
+#: gtklocalesetup.ui:61
+msgid "Cancel"
+msgstr "Annulla"
+
+#: gtklocalesetup.ui:75
+msgid "Apply changes"
+msgstr "Attiva le modifiche"
+
+#: gtklocalesetup.ui:137
 msgid ""
 "Please select a default system locale. The changes will take effect next "
 "time you start your system."
 msgstr "Selezionare la lingua di default del sistema. Le modifiche avranno effetto al prossimo avvio."
 
-#: gtklocalesetup.ui:234 gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup.ui:224 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "Locale configuration tool"
 msgstr "Strumento di configurazione della lingua"
 
-#: gtklocalesetup.ui:912
+#: gtklocalesetup.ui:902
 msgid "translator-credits"
 msgstr "traduttore-crediti"
 
