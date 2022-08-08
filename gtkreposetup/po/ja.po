@@ -3,14 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# BALLOON | FU-SEN, 2016
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-22 02:12+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016\n"
+"POT-Creation-Date: 2022-04-24 13:04+0300\n"
+"PO-Revision-Date: 2016-07-21 23:13+0000\n"
+"Last-Translator: BALLOON | FU-SEN, 2016\n"
 "Language-Team: Japanese (https://www.transifex.com/gapan/teams/15073/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +25,19 @@ msgstr ""
 msgid "Select repository mirror"
 msgstr "リポジトリミラーを選択して下さい"
 
-#: gtkreposetup.ui:143
+#: gtkreposetup.ui:41
+msgid "About"
+msgstr ""
+
+#: gtkreposetup.ui:62 gtkreposetup.ui:977 gtkreposetup.ui:1053
+msgid "Cancel"
+msgstr ""
+
+#: gtkreposetup.ui:76
+msgid "Apply changes"
+msgstr ""
+
+#: gtkreposetup.ui:132
 msgid ""
 "Please select your preferred repository mirror. The country code where each "
 "mirror is located is shown on the right. Mirrors located closer to you "
@@ -30,78 +45,78 @@ msgid ""
 msgstr ""
 "ご希望のリポジトリミラーを選択してください。各ミラーが置かれている国コードが右側に表示されています。通常高速なミラーは地理的に近い場所のミラーです。"
 
-#: gtkreposetup.ui:175
+#: gtkreposetup.ui:166
 msgid "Mirror"
 msgstr "ミラー"
 
-#: gtkreposetup.ui:186
+#: gtkreposetup.ui:177
 msgid "Country"
 msgstr "国"
 
-#: gtkreposetup.ui:206
+#: gtkreposetup.ui:215
 msgid "Update the package and SlackBuild data"
 msgstr "パッケージおよび SlackBuild データを更新する"
 
-#: gtkreposetup.ui:236
+#: gtkreposetup.ui:247
 msgid "Repository configuration tool"
 msgstr "リポジトリ設定ツール"
 
-#: gtkreposetup.ui:915
+#: gtkreposetup.ui:926
 msgid "translator-credits"
 msgstr ""
 "BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <balloonakafusen+salix@gmail.com>"
 
-#: gtkreposetup.ui:941
+#: gtkreposetup.ui:953
 msgid "Updating mirror list"
 msgstr "ミラー一覧の更新"
 
-#: gtkreposetup.ui:960
+#: gtkreposetup.ui:1000
 msgid "Updating mirror list. Please wait..."
 msgstr "ミラー一覧を更新しています。お待ち下さい..."
 
-#: gtkreposetup.ui:1018
+#: gtkreposetup.ui:1030
 msgid "Updating..."
 msgstr "更新中です..."
 
-#: gtkreposetup:49
+#: gtkreposetup.py:49
 msgid "Error"
 msgstr "エラー"
 
-#: gtkreposetup:79 gtkreposetup:97 gtkreposetup:121 gtkreposetup:149
-#: gtkreposetup:188
+#: gtkreposetup.py:79 gtkreposetup.py:96 gtkreposetup.py:121
+#: gtkreposetup.py:149 gtkreposetup.py:189
 msgid "Could not read file:"
 msgstr "ファイルを読めません:"
 
-#: gtkreposetup:81 gtkreposetup:99 gtkreposetup:123 gtkreposetup:224
-#: gtkreposetup:256
+#: gtkreposetup.py:80 gtkreposetup.py:98 gtkreposetup.py:122
+#: gtkreposetup.py:246 gtkreposetup.py:264
 msgid "Exiting."
 msgstr "終了します。"
 
-#: gtkreposetup:148 gtkreposetup:187 gtkreposetup:288
+#: gtkreposetup.py:148 gtkreposetup.py:188 gtkreposetup.py:294
 msgid "WARNING:"
 msgstr "警告:"
 
-#: gtkreposetup:222 gtkreposetup:254 gtkreposetup:289
+#: gtkreposetup.py:245 gtkreposetup.py:263 gtkreposetup.py:295
 msgid "Could not write to file:"
 msgstr "ファイルを書き込めません:"
 
-#: gtkreposetup:339
+#: gtkreposetup.py:343
 msgid "Could not write configuration files."
 msgstr "設定ファイルを書き込む事ができません。"
 
-#: gtkreposetup:344
+#: gtkreposetup.py:347
 msgid "Updating package information..."
 msgstr "パッケージ情報を更新しています..."
 
-#: gtkreposetup:354
+#: gtkreposetup.py:354
 msgid "Could not update package information."
 msgstr "パッケージ情報を更新できません。"
 
-#: gtkreposetup:359
+#: gtkreposetup.py:358
 msgid "Updating SlackBuild information..."
 msgstr "SlackBuild 情報を更新しています..."
 
-#: gtkreposetup:369
+#: gtkreposetup.py:365
 msgid "Could not update SlackBuild information."
 msgstr "SlackBuild 情報を更新できません。"
 

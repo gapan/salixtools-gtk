@@ -26,7 +26,7 @@ msgstr "Ρυθμίσεις πληκτρολογίου"
 
 #: gtkkeyboardsetup.ui:45
 msgid "About"
-msgstr "Σχετικά με"
+msgstr "Περί"
 
 #: gtkkeyboardsetup.ui:66
 msgid "Cancel"

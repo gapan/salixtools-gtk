@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2012
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2011-2012
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2012
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2011-2012
 # Gregory <wolfr2@gmail.com>, 2014
 # Gregory <wolfr2@gmail.com>, 2014
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2012
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 11:21+0300\n"
-"PO-Revision-Date: 2017-09-19 10:19+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:06+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2012\n"
 "Language-Team: Russian (http://www.transifex.com/gapan/salixtools-gtk/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,35 +27,47 @@ msgstr ""
 msgid "System Services"
 msgstr "Системные сервисы"
 
-#: gtkservicesetup.ui:152
+#: gtkservicesetup.ui:45
+msgid "About"
+msgstr ""
+
+#: gtkservicesetup.ui:66
+msgid "Cancel"
+msgstr ""
+
+#: gtkservicesetup.ui:80
+msgid "Apply changes"
+msgstr ""
+
+#: gtkservicesetup.ui:136
 msgid ""
 "Please select the system services that you wish to be enabled when the "
 "system starts. Any changes you make will be applied when you press the OK "
 "button."
 msgstr "Пожалуйста, поставьте или снимите отметку с необходимых системных сервисов. Отмеченные сервисы будут автоматически запускаться при загрузке операционной системы. Изменения вступят в силу после нажатия кнопки ОК и следующей загрузки системы."
 
-#: gtkservicesetup.ui:250 gtkservicesetup.desktop.in.h:2
+#: gtkservicesetup.ui:229 gtkservicesetup.desktop.in.h:2
 #: gtkservicesetup-kde.desktop.in.h:2
 msgid "Services configuration tool"
 msgstr "Графический интерфейс для servicesetup (входит в состав salixtools) — инструмента управления загрузкой системных сервисов. Gtkservicesetup входит в состав salixtools-gtk."
 
-#: gtkservicesetup.ui:928
+#: gtkservicesetup.ui:907
 msgid "translator-credits"
 msgstr "translator-credits"
 
-#: gtkservicesetup:47
+#: gtkservicesetup.py:49
 #, python-brace-format
 msgid "The {0} service"
 msgstr "{0} сервис"
 
-#: gtkservicesetup:150
+#: gtkservicesetup.py:151
 msgid "Enabled"
 msgstr "Состояние"
 
-#: gtkservicesetup:152
+#: gtkservicesetup.py:153
 msgid "Service name"
 msgstr "Имя"
 
-#: gtkservicesetup:154
+#: gtkservicesetup.py:155
 msgid "Service description"
 msgstr "Описание"

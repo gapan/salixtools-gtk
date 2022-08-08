@@ -25,7 +25,7 @@ msgstr "Ονόματα υπολογιστών"
 
 #: gtkhostsetup.ui:49
 msgid "About"
-msgstr "Σχετικά με"
+msgstr "Περί"
 
 #: gtkhostsetup.ui:70 gtkhostsetup.ui:1133 gtkhostsetup.ui:1383
 msgid "Cancel"

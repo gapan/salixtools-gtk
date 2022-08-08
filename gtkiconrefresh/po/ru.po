@@ -3,8 +3,8 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2011
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2011
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2011
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2011
 # Gregory <wolfr2@gmail.com>, 2014
 # Gregory <wolfr2@gmail.com>, 2014
 msgid ""
@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-12 20:39+0300\n"
-"PO-Revision-Date: 2017-09-19 10:19+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: Gregory <wolfr2@gmail.com>, 2014\n"
 "Language-Team: Russian (http://www.transifex.com/gapan/salixtools-gtk/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

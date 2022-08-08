@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2011
-# Andrey Frantsuzov <pokazsch@yandex.ru>, 2012
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2011
+# ad26c78e4cea31924fe6835256c58e53_c750607 <0538253d2329600969092d4464094b84_7024>, 2012
 # gapan <vlahavas@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 00:56+0300\n"
-"PO-Revision-Date: 2017-09-19 10:19+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:03+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2016\n"
 "Language-Team: Russian (http://www.transifex.com/gapan/salixtools-gtk/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,18 +24,30 @@ msgstr ""
 msgid "System language"
 msgstr "Язык системы"
 
-#: gtklocalesetup.ui:149
+#: gtklocalesetup.ui:40
+msgid "About"
+msgstr ""
+
+#: gtklocalesetup.ui:61
+msgid "Cancel"
+msgstr ""
+
+#: gtklocalesetup.ui:75
+msgid "Apply changes"
+msgstr ""
+
+#: gtklocalesetup.ui:137
 msgid ""
 "Please select a default system locale. The changes will take effect next "
 "time you start your system."
 msgstr "Пожалуйста, выберите локаль, которая будет использоваться в операционной системе по умолчанию. Изменения вступят в силу после нажатия кнопки ОК и следующей загрузки системы."
 
-#: gtklocalesetup.ui:234 gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup.ui:224 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "Locale configuration tool"
 msgstr "Графический интерфейс для localesetup (входит в состав salixtools) — инструмента управления языком системы. Gtklocalesetup входит в состав salixtools-gtk."
 
-#: gtklocalesetup.ui:912
+#: gtklocalesetup.ui:902
 msgid "translator-credits"
 msgstr "translator-credits"
 

@@ -25,7 +25,7 @@ msgstr "Ρυθμίσεις χρηστών"
 
 #: gtkusersetup.ui:84
 msgid "About"
-msgstr "Σχετικά με"
+msgstr "Περί"
 
 #: gtkusersetup.ui:98 gtkusersetup.ui:1192
 msgid "Close"

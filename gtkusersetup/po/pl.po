@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 20:18+0300\n"
-"PO-Revision-Date: 2017-09-19 10:49+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:31+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2016\n"
 "Language-Team: Polish (http://www.transifex.com/gapan/salixtools-gtk/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,298 +20,333 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: gtkusersetup.ui:49
+#: gtkusersetup.ui:60
 msgid "User settings"
 msgstr "Ustawienia użytkownika"
 
-#: gtkusersetup.ui:210
+#: gtkusersetup.ui:84
+msgid "About"
+msgstr ""
+
+#: gtkusersetup.ui:98 gtkusersetup.ui:1192
+msgid "Close"
+msgstr ""
+
+#: gtkusersetup.ui:195 gtkusersetup.ui:1270
+msgid "Properties"
+msgstr ""
+
+#: gtkusersetup.ui:209 gtkusersetup.ui:1296
+msgid "Add"
+msgstr ""
+
+#: gtkusersetup.ui:223 gtkusersetup.ui:1061 gtkusersetup.ui:1322
+#: gtkusersetup.ui:1488
+msgid "Delete"
+msgstr ""
+
+#: gtkusersetup.ui:237
 msgid "Manage groups"
 msgstr "Zarządzanie grupami"
 
-#: gtkusersetup.ui:236
+#: gtkusersetup.ui:270
 msgid "Show all users"
 msgstr "Pokaż wszystkich użytkowników"
 
-#: gtkusersetup.ui:340
-msgid "<b>Basic information</b>"
-msgstr "<b>Podstawowe informacje</b>"
-
-#: gtkusersetup.ui:359
-msgid "Username:"
-msgstr "Nazwa użytkownika:"
-
-#: gtkusersetup.ui:368
-msgid "Real name:"
-msgstr "Prawdziwe imię:"
-
-#: gtkusersetup.ui:429
-msgid "User password:"
-msgstr "Hasło użytkownika:"
-
-#: gtkusersetup.ui:439
-msgid "Password confirmation:"
-msgstr "Potwierdzenie hasła:"
-
-#: gtkusersetup.ui:480
-msgid "View password while typing"
-msgstr "Zobacz hasło podczas wpisywania"
-
-#: gtkusersetup.ui:498
-msgid "Account"
-msgstr "Konto"
-
-#: gtkusersetup.ui:513
-msgid "<b>Contact information</b>"
-msgstr "<b>Informacje kontaktowe</b>"
-
-#: gtkusersetup.ui:533
-msgid "Office extension:"
-msgstr "Dodatkowe Biurowe:"
-
-#: gtkusersetup.ui:545
-msgid "Office information:"
-msgstr "Biurowe informacei:"
-
-#: gtkusersetup.ui:555
-msgid "Home phone:"
-msgstr "Telefon domowy:"
-
-#: gtkusersetup.ui:612
-msgid "Contact"
-msgstr "Kontakt"
-
-#: gtkusersetup.ui:628
-msgid "<b>Group membership</b>"
-msgstr "<b>Członkostwo w ​​grupie</b>"
-
-#: gtkusersetup.ui:645
-msgid "Main group:"
-msgstr "Główna grup:"
-
-#: gtkusersetup.ui:678
-msgid "Other groups:"
-msgstr "Inne grupy:"
-
-#: gtkusersetup.ui:750
-msgid "Groups"
-msgstr "Grupy"
-
-#: gtkusersetup.ui:766
-msgid "<b>Advanced settings</b>"
-msgstr "<b>Zaawansowane ustawienia</b>"
-
-#: gtkusersetup.ui:786
-msgid "Home directory:"
-msgstr "Katalog domowy:"
-
-#: gtkusersetup.ui:796
-msgid "Shell:"
-msgstr "Shell:"
-
-#: gtkusersetup.ui:808
-msgid "UID:"
-msgstr "UID:"
-
-#: gtkusersetup.ui:865
-msgid "Set account expiration date"
-msgstr "Ustaw datę ważności konta"
-
-#: gtkusersetup.ui:901
-msgid "Advanced"
-msgstr "Zaawansowane"
-
-#: gtkusersetup.ui:970 gtkusersetup.ui:1573
-msgid "Error!"
-msgstr "Błąd!"
-
-#: gtkusersetup.ui:1182
-msgid "Group settings"
-msgstr "Ustawienia grupy"
-
-#: gtkusersetup.ui:1360
-msgid "Group properties"
-msgstr "Właściwości grupy"
-
-#: gtkusersetup.ui:1381
-msgid "<b>Basic settings</b>"
-msgstr "<b>Podstawowe ustawienia</b>"
-
-#: gtkusersetup.ui:1401
-msgid "Group name:"
-msgstr "Nazwa grupy:"
-
-#: gtkusersetup.ui:1411
-msgid "Group ID:"
-msgstr "ID grupy:"
-
-#: gtkusersetup.ui:1457
-msgid "<b>Group members</b>"
-msgstr "<b>Członkowie grupy</b>"
-
-#: gtkusersetup.ui:1660
-msgid "Delete group?"
-msgstr "Usunąć grupę?"
-
-#: gtkusersetup.ui:1762
-msgid "Cannot delete group"
-msgstr "Nie można usunąć grupy"
-
-#: gtkusersetup.ui:1856 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.ui:315 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "Użytkownicy i narzędzia do zarządzania grupami"
 
-#: gtkusersetup.ui:2534
+#: gtkusersetup.ui:993
 msgid "translator-credits"
 msgstr "tłumacze"
 
-#: gtkusersetup:222
+#: gtkusersetup.ui:1047 gtkusersetup.ui:1474 gtkusersetup.ui:1582
+#: gtkusersetup.ui:1906
+msgid "Cancel"
+msgstr ""
+
+#: gtkusersetup.ui:1141
+msgid "Also remove user's home directory"
+msgstr ""
+
+#: gtkusersetup.ui:1169
+msgid "Group settings"
+msgstr "Ustawienia grupy"
+
+#: gtkusersetup.ui:1357
+msgid "Cannot delete group"
+msgstr "Nie można usunąć grupy"
+
+#: gtkusersetup.ui:1382 gtkusersetup.ui:1596 gtkusersetup.ui:1811
+#: gtkusersetup.ui:1920 gtkusersetup.ui:2630
+msgid "OK"
+msgstr ""
+
+#: gtkusersetup.ui:1449
+msgid "Delete group?"
+msgstr "Usunąć grupę?"
+
+#: gtkusersetup.ui:1560
+msgid "Group properties"
+msgstr "Właściwości grupy"
+
+#: gtkusersetup.ui:1626
+msgid "<b>Basic settings</b>"
+msgstr "<b>Podstawowe ustawienia</b>"
+
+#: gtkusersetup.ui:1649
+msgid "Group name:"
+msgstr "Nazwa grupy:"
+
+#: gtkusersetup.ui:1674
+msgid "Group ID:"
+msgstr "ID grupy:"
+
+#: gtkusersetup.ui:1709
+msgid "<b>Group members</b>"
+msgstr "<b>Członkowie grupy</b>"
+
+#: gtkusersetup.ui:1786 gtkusersetup.ui:2606
+msgid "Error!"
+msgstr "Błąd!"
+
+#: gtkusersetup.ui:1955
+msgid "<b>Basic information</b>"
+msgstr "<b>Podstawowe informacje</b>"
+
+#: gtkusersetup.ui:1977
+msgid "Username:"
+msgstr "Nazwa użytkownika:"
+
+#: gtkusersetup.ui:1989
+msgid "Real name:"
+msgstr "Prawdziwe imię:"
+
+#: gtkusersetup.ui:2056
+msgid "User password:"
+msgstr "Hasło użytkownika:"
+
+#: gtkusersetup.ui:2068
+msgid "Password confirmation:"
+msgstr "Potwierdzenie hasła:"
+
+#: gtkusersetup.ui:2113
+msgid "View password while typing"
+msgstr "Zobacz hasło podczas wpisywania"
+
+#: gtkusersetup.ui:2132
+msgid "Account"
+msgstr "Konto"
+
+#: gtkusersetup.ui:2149
+msgid "<b>Contact information</b>"
+msgstr "<b>Informacje kontaktowe</b>"
+
+#: gtkusersetup.ui:2171
+msgid "Office information:"
+msgstr "Biurowe informacei:"
+
+#: gtkusersetup.ui:2183
+msgid "Office extension:"
+msgstr "Dodatkowe Biurowe:"
+
+#: gtkusersetup.ui:2195
+msgid "Home phone:"
+msgstr "Telefon domowy:"
+
+#: gtkusersetup.ui:2258
+msgid "Contact"
+msgstr "Kontakt"
+
+#: gtkusersetup.ui:2276
+msgid "<b>Group membership</b>"
+msgstr "<b>Członkostwo w ​​grupie</b>"
+
+#: gtkusersetup.ui:2295
+msgid "Main group:"
+msgstr "Główna grup:"
+
+#: gtkusersetup.ui:2333
+msgid "Other groups:"
+msgstr "Inne grupy:"
+
+#: gtkusersetup.ui:2410
+msgid "Groups"
+msgstr "Grupy"
+
+#: gtkusersetup.ui:2428
+msgid "<b>Advanced settings</b>"
+msgstr "<b>Zaawansowane ustawienia</b>"
+
+#: gtkusersetup.ui:2449
+msgid "Home directory:"
+msgstr "Katalog domowy:"
+
+#: gtkusersetup.ui:2461
+msgid "Shell:"
+msgstr "Shell:"
+
+#: gtkusersetup.ui:2473
+msgid "UID:"
+msgstr "UID:"
+
+#: gtkusersetup.ui:2539
+msgid "Set account expiration date"
+msgstr "Ustaw datę ważności konta"
+
+#: gtkusersetup.ui:2582
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+#: gtkusersetup.py:224
 msgid "Password is too short. It has to be at least 5 characters long."
 msgstr "Hasło jest za krótkie. To musi być przynajmniej 5 znaków."
 
-#: gtkusersetup:225
+#: gtkusersetup.py:227
 msgid "Password cannot include the backslash character."
 msgstr "Hasło nie może zawierać backslasha."
 
-#: gtkusersetup:231
+#: gtkusersetup.py:233
 msgid "Passwords don't match"
 msgstr "Hasła nie pasują"
 
-#: gtkusersetup:240
+#: gtkusersetup.py:242
 msgid "Username cannot be empty."
 msgstr "Nazwa użytkownika nie może być pusta."
 
-#: gtkusersetup:243
+#: gtkusersetup.py:245
 msgid "Username cannot exceed 31 characters"
 msgstr "Nazwa użytkownika nie może przekroczyć 31 znaków"
 
-#: gtkusersetup:246
+#: gtkusersetup.py:248
 msgid "Username cannot include the space character."
 msgstr "Nazwa użytkownika nie może zawierać spacji."
 
-#: gtkusersetup:249
+#: gtkusersetup.py:251
 msgid "Username cannot start with a number."
 msgstr "Użytkownik nie może zaczynać się cyfrą."
 
-#: gtkusersetup:252
+#: gtkusersetup.py:254
 msgid "Username cannot start with an underscore."
 msgstr "Użytkownik nie może zaczynać się znakiem podkreślenia."
 
-#: gtkusersetup:255
+#: gtkusersetup.py:257
 msgid "Username cannot start with a dash."
 msgstr "Użytkownik nie może zaczynać się od myślnika."
 
-#: gtkusersetup:261
+#: gtkusersetup.py:263
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
 msgstr "Nazwa użytkownika może składać się wyłącznie z małych liter łacińskiego, cyfry, myślniki i podkreślenia."
 
-#: gtkusersetup:267
+#: gtkusersetup.py:269
 #, python-brace-format
 msgid "Username \"{0}\" already exists."
 msgstr "Użytkownik \"{0}\" już istnieje."
 
-#: gtkusersetup:278
+#: gtkusersetup.py:280
 msgid "Group name cannot be empty."
 msgstr "Nazwa grupy nie może być pusta."
 
-#: gtkusersetup:281
+#: gtkusersetup.py:283
 msgid "Group name cannot exceed 31 characters"
 msgstr "Nazwa grupy nie może przekroczyć 31 znaków"
 
-#: gtkusersetup:284
+#: gtkusersetup.py:286
 msgid "Group name cannot include the space character."
 msgstr "Nazwa grupy nie może zawierać spacji."
 
-#: gtkusersetup:287
+#: gtkusersetup.py:289
 msgid "Group name cannot start with a number."
 msgstr "Nazwa grupy nie może zaczynać się cyfrą."
 
-#: gtkusersetup:290
+#: gtkusersetup.py:292
 msgid "Group name cannot start with an underscore."
 msgstr "Nazwa grupy nie może zaczynać się znakiem podkreślenia."
 
-#: gtkusersetup:293
+#: gtkusersetup.py:295
 msgid "Group name cannot start with a dash."
 msgstr "Nazwa grupy nie może zaczynać się od myślnika."
 
-#: gtkusersetup:299
+#: gtkusersetup.py:301
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
 msgstr "Nazwa grupy może składać się wyłącznie z małych liter łacińskiego, cyfry, myślniki i podkreślenia."
 
-#: gtkusersetup:305
+#: gtkusersetup.py:307
 #, python-brace-format
 msgid "Group name \"{0}\" already exists."
 msgstr "Nazwa grupy \"{0}\" już istnieje."
 
-#: gtkusersetup:316
+#: gtkusersetup.py:318
 msgid "Shell does not exist."
 msgstr "Shell nie istnieje."
 
-#: gtkusersetup:326
+#: gtkusersetup.py:328
 #, python-brace-format
 msgid "UID {0} is assigned to another user."
 msgstr "UID {0} jest przypisany do innego użytkownika."
 
-#: gtkusersetup:336
+#: gtkusersetup.py:338
 #, python-brace-format
 msgid "GID {0} is assigned to another group."
 msgstr "GID {0} jest przypisany do innej grupy."
 
-#: gtkusersetup:389
+#: gtkusersetup.py:391
 #, python-brace-format
 msgid "User account properties for \"{0}\""
 msgstr "Właściwości konta użytkownika \"{0}\""
 
-#: gtkusersetup:396
+#: gtkusersetup.py:398
 msgid "<b>Set new password</b>"
 msgstr "<b>Ustaw nowe hasło</b>"
 
-#: gtkusersetup:454
+#: gtkusersetup.py:456
 msgid "Add new user"
 msgstr "Dodaj nowego użytkownika"
 
-#: gtkusersetup:461
+#: gtkusersetup.py:463
 msgid "<b>Set password</b>"
 msgstr "<b>Ustaw hasło</b>"
 
-#: gtkusersetup:512
+#: gtkusersetup.py:514
 #, python-brace-format
 msgid "Delete user {0}?"
 msgstr "Usunąć użytkownika {0}?"
 
-#: gtkusersetup:514
+#: gtkusersetup.py:516
 #, python-brace-format
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
 msgstr "Masz zamiar usunąć konto użytkownika \"{0}\" z systemu. Czy na pewno chcesz kontynuować?"
 
-#: gtkusersetup:516
+#: gtkusersetup.py:518
 #, python-brace-format
 msgid "Completely remove user's home directory ({0}) with all its contents"
 msgstr "Całkowicie usunąć katalog domowy użytkownika ({0}) z całą jego zawartością"
 
-#: gtkusersetup:769
+#: gtkusersetup.py:775
 #, python-brace-format
 msgid "Group \"{0}\" properties"
 msgstr "Właściwości \"{0}\" grupy"
 
-#: gtkusersetup:788
+#: gtkusersetup.py:794
 msgid "Add new group"
 msgstr "Dodaj nową grupę"
 
-#: gtkusersetup:814
+#: gtkusersetup.py:820
 #, python-brace-format
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
 msgstr "Masz zamiar usunąć \"{0}\" grupę z systemu. Czy na pewno chcesz kontynuować?"
 
-#: gtkusersetup:818
+#: gtkusersetup.py:824
 #, python-brace-format
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
@@ -319,23 +354,23 @@ msgid ""
 "\"{1}\" to another group first."
 msgstr "Grupa \"{0}\" nie może zostać usunięty, ponieważ jest to główna grupa użytkownika \"{1}\". Jeśli chcesz usunąć grupę \"{0}\", musisz ustawić główne grupy dla użytkownika \"{1}\" do innej grupy w pierwszej kolejności."
 
-#: gtkusersetup:948
+#: gtkusersetup.py:954
 msgid "Username"
 msgstr "Login"
 
-#: gtkusersetup:949
+#: gtkusersetup.py:955
 msgid "Real name"
 msgstr "Prawdziwe imię"
 
-#: gtkusersetup:950
+#: gtkusersetup.py:956
 msgid "Home directory"
 msgstr "Katalog domowy"
 
-#: gtkusersetup:993
+#: gtkusersetup.py:999
 msgid "Member"
 msgstr "Członek"
 
-#: gtkusersetup:994
+#: gtkusersetup.py:1000
 msgid "Group"
 msgstr "Grupa"
 

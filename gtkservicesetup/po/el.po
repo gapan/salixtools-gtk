@@ -26,7 +26,7 @@ msgstr "Υπηρεσίες συστήματος"
 
 #: gtkservicesetup.ui:45
 msgid "About"
-msgstr "Σχετικά με"
+msgstr "Περί"
 
 #: gtkservicesetup.ui:66
 msgid "Cancel"

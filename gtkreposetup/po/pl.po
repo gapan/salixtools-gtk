@@ -3,13 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Nikki Blanco <bighax@tutanota.com>, 2018
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-22 02:12+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2022-04-24 13:04+0300\n"
+"PO-Revision-Date: 2016-07-21 23:13+0000\n"
 "Last-Translator: Nikki Blanco <bighax@tutanota.com>, 2018\n"
 "Language-Team: Polish (https://www.transifex.com/gapan/teams/15073/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +25,19 @@ msgstr ""
 msgid "Select repository mirror"
 msgstr "Wybierz kopię repozytorium"
 
-#: gtkreposetup.ui:143
+#: gtkreposetup.ui:41
+msgid "About"
+msgstr ""
+
+#: gtkreposetup.ui:62 gtkreposetup.ui:977 gtkreposetup.ui:1053
+msgid "Cancel"
+msgstr ""
+
+#: gtkreposetup.ui:76
+msgid "Apply changes"
+msgstr ""
+
+#: gtkreposetup.ui:132
 msgid ""
 "Please select your preferred repository mirror. The country code where each "
 "mirror is located is shown on the right. Mirrors located closer to you "
@@ -32,77 +47,77 @@ msgstr ""
 "każda kopia jest pokazany po prawej stronie. Kopie bliżej Ciebie są zwykle "
 "szybsze."
 
-#: gtkreposetup.ui:175
+#: gtkreposetup.ui:166
 msgid "Mirror"
 msgstr "Kopia"
 
-#: gtkreposetup.ui:186
+#: gtkreposetup.ui:177
 msgid "Country"
 msgstr "Kraj"
 
-#: gtkreposetup.ui:206
+#: gtkreposetup.ui:215
 msgid "Update the package and SlackBuild data"
 msgstr "Zaktualizuj dane pakietu oraz SlackBuilda"
 
-#: gtkreposetup.ui:236
+#: gtkreposetup.ui:247
 msgid "Repository configuration tool"
 msgstr "Konfiguracja repozytorium"
 
-#: gtkreposetup.ui:915
+#: gtkreposetup.ui:926
 msgid "translator-credits"
 msgstr "Tłumacze"
 
-#: gtkreposetup.ui:941
+#: gtkreposetup.ui:953
 msgid "Updating mirror list"
 msgstr "Aktualizacja listy kopii repozytoriów"
 
-#: gtkreposetup.ui:960
+#: gtkreposetup.ui:1000
 msgid "Updating mirror list. Please wait..."
 msgstr "Aktualizuję listę kopii repozytoriów. Proszę czekać..."
 
-#: gtkreposetup.ui:1018
+#: gtkreposetup.ui:1030
 msgid "Updating..."
 msgstr "Aktualizuję..."
 
-#: gtkreposetup:49
+#: gtkreposetup.py:49
 msgid "Error"
 msgstr "Błąd"
 
-#: gtkreposetup:79 gtkreposetup:97 gtkreposetup:121 gtkreposetup:149
-#: gtkreposetup:188
+#: gtkreposetup.py:79 gtkreposetup.py:96 gtkreposetup.py:121
+#: gtkreposetup.py:149 gtkreposetup.py:189
 msgid "Could not read file:"
 msgstr "Nie można było odczytać pliku:"
 
-#: gtkreposetup:81 gtkreposetup:99 gtkreposetup:123 gtkreposetup:224
-#: gtkreposetup:256
+#: gtkreposetup.py:80 gtkreposetup.py:98 gtkreposetup.py:122
+#: gtkreposetup.py:246 gtkreposetup.py:264
 msgid "Exiting."
 msgstr "Wychodzimy."
 
-#: gtkreposetup:148 gtkreposetup:187 gtkreposetup:288
+#: gtkreposetup.py:148 gtkreposetup.py:188 gtkreposetup.py:294
 msgid "WARNING:"
 msgstr "OSTRZEŻENIE:"
 
-#: gtkreposetup:222 gtkreposetup:254 gtkreposetup:289
+#: gtkreposetup.py:245 gtkreposetup.py:263 gtkreposetup.py:295
 msgid "Could not write to file:"
 msgstr "Nie można było zapisać do pliku:"
 
-#: gtkreposetup:339
+#: gtkreposetup.py:343
 msgid "Could not write configuration files."
 msgstr "Nie mżna było zapisać plików konfiguracyjnych."
 
-#: gtkreposetup:344
+#: gtkreposetup.py:347
 msgid "Updating package information..."
 msgstr "Aktualizuję dane pakietów..."
 
-#: gtkreposetup:354
+#: gtkreposetup.py:354
 msgid "Could not update package information."
 msgstr "Nie można było zaktualizować danych pakietów."
 
-#: gtkreposetup:359
+#: gtkreposetup.py:358
 msgid "Updating SlackBuild information..."
 msgstr "Aktualizuję dane SlackBuilda..."
 
-#: gtkreposetup:369
+#: gtkreposetup.py:365
 msgid "Could not update SlackBuild information."
 msgstr "Nie można było zaktualizować danych SlackBuilda."
 

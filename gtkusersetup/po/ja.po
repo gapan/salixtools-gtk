@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
+# BALLOON | FU-SEN, 2016
 # tsuren <hydrangea_and_snail@hotmail.com>, 2015
 # tsuren <hydrangea_and_snail@hotmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 20:18+0300\n"
-"PO-Revision-Date: 2017-09-19 09:10+0000\n"
-"Last-Translator: ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen.\n"
+"POT-Creation-Date: 2022-04-24 13:31+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: BALLOON | FU-SEN, 2016\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/salixtools-gtk/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,298 +20,333 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: gtkusersetup.ui:49
+#: gtkusersetup.ui:60
 msgid "User settings"
 msgstr "ユーザの設定"
 
-#: gtkusersetup.ui:210
+#: gtkusersetup.ui:84
+msgid "About"
+msgstr ""
+
+#: gtkusersetup.ui:98 gtkusersetup.ui:1192
+msgid "Close"
+msgstr ""
+
+#: gtkusersetup.ui:195 gtkusersetup.ui:1270
+msgid "Properties"
+msgstr ""
+
+#: gtkusersetup.ui:209 gtkusersetup.ui:1296
+msgid "Add"
+msgstr ""
+
+#: gtkusersetup.ui:223 gtkusersetup.ui:1061 gtkusersetup.ui:1322
+#: gtkusersetup.ui:1488
+msgid "Delete"
+msgstr ""
+
+#: gtkusersetup.ui:237
 msgid "Manage groups"
 msgstr "グループの管理"
 
-#: gtkusersetup.ui:236
+#: gtkusersetup.ui:270
 msgid "Show all users"
 msgstr "すべてのユーザを表示する"
 
-#: gtkusersetup.ui:340
-msgid "<b>Basic information</b>"
-msgstr "<b>基本情報</b>"
-
-#: gtkusersetup.ui:359
-msgid "Username:"
-msgstr "ユーザネーム:"
-
-#: gtkusersetup.ui:368
-msgid "Real name:"
-msgstr "氏名:"
-
-#: gtkusersetup.ui:429
-msgid "User password:"
-msgstr "ユーザのパスワード:"
-
-#: gtkusersetup.ui:439
-msgid "Password confirmation:"
-msgstr "パスワードの確認:"
-
-#: gtkusersetup.ui:480
-msgid "View password while typing"
-msgstr "入力パスワードを表示"
-
-#: gtkusersetup.ui:498
-msgid "Account"
-msgstr "アカウント"
-
-#: gtkusersetup.ui:513
-msgid "<b>Contact information</b>"
-msgstr "<b>コンタクト情報</b>"
-
-#: gtkusersetup.ui:533
-msgid "Office extension:"
-msgstr "オフィス連絡先:"
-
-#: gtkusersetup.ui:545
-msgid "Office information:"
-msgstr "オフィス情報:"
-
-#: gtkusersetup.ui:555
-msgid "Home phone:"
-msgstr "自宅電話番号:"
-
-#: gtkusersetup.ui:612
-msgid "Contact"
-msgstr "連絡"
-
-#: gtkusersetup.ui:628
-msgid "<b>Group membership</b>"
-msgstr "<b>グループのメンバーシップ</b>"
-
-#: gtkusersetup.ui:645
-msgid "Main group:"
-msgstr "メイングループ:"
-
-#: gtkusersetup.ui:678
-msgid "Other groups:"
-msgstr "他のグループ:"
-
-#: gtkusersetup.ui:750
-msgid "Groups"
-msgstr "グループ"
-
-#: gtkusersetup.ui:766
-msgid "<b>Advanced settings</b>"
-msgstr "<b>詳細設定</b>"
-
-#: gtkusersetup.ui:786
-msgid "Home directory:"
-msgstr "ホームディレクトリ:"
-
-#: gtkusersetup.ui:796
-msgid "Shell:"
-msgstr "シェル:"
-
-#: gtkusersetup.ui:808
-msgid "UID:"
-msgstr "UID:"
-
-#: gtkusersetup.ui:865
-msgid "Set account expiration date"
-msgstr "アカウントの期限日を設定"
-
-#: gtkusersetup.ui:901
-msgid "Advanced"
-msgstr "詳細設定"
-
-#: gtkusersetup.ui:970 gtkusersetup.ui:1573
-msgid "Error!"
-msgstr "エラー！"
-
-#: gtkusersetup.ui:1182
-msgid "Group settings"
-msgstr "グループ設定"
-
-#: gtkusersetup.ui:1360
-msgid "Group properties"
-msgstr "グループプロパティー"
-
-#: gtkusersetup.ui:1381
-msgid "<b>Basic settings</b>"
-msgstr "<b>基本設定</b>"
-
-#: gtkusersetup.ui:1401
-msgid "Group name:"
-msgstr "グループ名:"
-
-#: gtkusersetup.ui:1411
-msgid "Group ID:"
-msgstr "グループ ID:"
-
-#: gtkusersetup.ui:1457
-msgid "<b>Group members</b>"
-msgstr "<b>グループのメンバー</b>"
-
-#: gtkusersetup.ui:1660
-msgid "Delete group?"
-msgstr "グループを削除しますか？"
-
-#: gtkusersetup.ui:1762
-msgid "Cannot delete group"
-msgstr "グループを削除できません"
-
-#: gtkusersetup.ui:1856 gtkusersetup.desktop.in.h:2
+#: gtkusersetup.ui:315 gtkusersetup.desktop.in.h:2
 #: gtkusersetup-kde.desktop.in.h:2
 msgid "Users and groups management tool"
 msgstr "ユーザとグループの管理ツール"
 
-#: gtkusersetup.ui:2534
+#: gtkusersetup.ui:993
 msgid "translator-credits"
 msgstr "BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <balloonakafusen+salix@gmail.com>\nその他"
 
-#: gtkusersetup:222
+#: gtkusersetup.ui:1047 gtkusersetup.ui:1474 gtkusersetup.ui:1582
+#: gtkusersetup.ui:1906
+msgid "Cancel"
+msgstr ""
+
+#: gtkusersetup.ui:1141
+msgid "Also remove user's home directory"
+msgstr ""
+
+#: gtkusersetup.ui:1169
+msgid "Group settings"
+msgstr "グループ設定"
+
+#: gtkusersetup.ui:1357
+msgid "Cannot delete group"
+msgstr "グループを削除できません"
+
+#: gtkusersetup.ui:1382 gtkusersetup.ui:1596 gtkusersetup.ui:1811
+#: gtkusersetup.ui:1920 gtkusersetup.ui:2630
+msgid "OK"
+msgstr ""
+
+#: gtkusersetup.ui:1449
+msgid "Delete group?"
+msgstr "グループを削除しますか？"
+
+#: gtkusersetup.ui:1560
+msgid "Group properties"
+msgstr "グループプロパティー"
+
+#: gtkusersetup.ui:1626
+msgid "<b>Basic settings</b>"
+msgstr "<b>基本設定</b>"
+
+#: gtkusersetup.ui:1649
+msgid "Group name:"
+msgstr "グループ名:"
+
+#: gtkusersetup.ui:1674
+msgid "Group ID:"
+msgstr "グループ ID:"
+
+#: gtkusersetup.ui:1709
+msgid "<b>Group members</b>"
+msgstr "<b>グループのメンバー</b>"
+
+#: gtkusersetup.ui:1786 gtkusersetup.ui:2606
+msgid "Error!"
+msgstr "エラー！"
+
+#: gtkusersetup.ui:1955
+msgid "<b>Basic information</b>"
+msgstr "<b>基本情報</b>"
+
+#: gtkusersetup.ui:1977
+msgid "Username:"
+msgstr "ユーザネーム:"
+
+#: gtkusersetup.ui:1989
+msgid "Real name:"
+msgstr "氏名:"
+
+#: gtkusersetup.ui:2056
+msgid "User password:"
+msgstr "ユーザのパスワード:"
+
+#: gtkusersetup.ui:2068
+msgid "Password confirmation:"
+msgstr "パスワードの確認:"
+
+#: gtkusersetup.ui:2113
+msgid "View password while typing"
+msgstr "入力パスワードを表示"
+
+#: gtkusersetup.ui:2132
+msgid "Account"
+msgstr "アカウント"
+
+#: gtkusersetup.ui:2149
+msgid "<b>Contact information</b>"
+msgstr "<b>コンタクト情報</b>"
+
+#: gtkusersetup.ui:2171
+msgid "Office information:"
+msgstr "オフィス情報:"
+
+#: gtkusersetup.ui:2183
+msgid "Office extension:"
+msgstr "オフィス連絡先:"
+
+#: gtkusersetup.ui:2195
+msgid "Home phone:"
+msgstr "自宅電話番号:"
+
+#: gtkusersetup.ui:2258
+msgid "Contact"
+msgstr "連絡"
+
+#: gtkusersetup.ui:2276
+msgid "<b>Group membership</b>"
+msgstr "<b>グループのメンバーシップ</b>"
+
+#: gtkusersetup.ui:2295
+msgid "Main group:"
+msgstr "メイングループ:"
+
+#: gtkusersetup.ui:2333
+msgid "Other groups:"
+msgstr "他のグループ:"
+
+#: gtkusersetup.ui:2410
+msgid "Groups"
+msgstr "グループ"
+
+#: gtkusersetup.ui:2428
+msgid "<b>Advanced settings</b>"
+msgstr "<b>詳細設定</b>"
+
+#: gtkusersetup.ui:2449
+msgid "Home directory:"
+msgstr "ホームディレクトリ:"
+
+#: gtkusersetup.ui:2461
+msgid "Shell:"
+msgstr "シェル:"
+
+#: gtkusersetup.ui:2473
+msgid "UID:"
+msgstr "UID:"
+
+#: gtkusersetup.ui:2539
+msgid "Set account expiration date"
+msgstr "アカウントの期限日を設定"
+
+#: gtkusersetup.ui:2582
+msgid "Advanced"
+msgstr "詳細設定"
+
+#: gtkusersetup.py:224
 msgid "Password is too short. It has to be at least 5 characters long."
 msgstr "パスワードが短すぎます、少なくても 5 文字必要です。"
 
-#: gtkusersetup:225
+#: gtkusersetup.py:227
 msgid "Password cannot include the backslash character."
 msgstr "パスワードにバックスラッシュを含める事はできません。"
 
-#: gtkusersetup:231
+#: gtkusersetup.py:233
 msgid "Passwords don't match"
 msgstr "パスワードが一致しません。"
 
-#: gtkusersetup:240
+#: gtkusersetup.py:242
 msgid "Username cannot be empty."
 msgstr "ユーザ名を空欄にする事はできません。"
 
-#: gtkusersetup:243
+#: gtkusersetup.py:245
 msgid "Username cannot exceed 31 characters"
 msgstr "ユーザ名を 31 文字以上にする事はできません。"
 
-#: gtkusersetup:246
+#: gtkusersetup.py:248
 msgid "Username cannot include the space character."
 msgstr "ユーザネームに、スペースをつかわないでください。"
 
-#: gtkusersetup:249
+#: gtkusersetup.py:251
 msgid "Username cannot start with a number."
 msgstr "ユーザ名を数字から始まる事はできません。"
 
-#: gtkusersetup:252
+#: gtkusersetup.py:254
 msgid "Username cannot start with an underscore."
 msgstr "ユーザ名を下線からからはじめることはできません。"
 
-#: gtkusersetup:255
+#: gtkusersetup.py:257
 msgid "Username cannot start with a dash."
 msgstr "ユーザネームは、ダッシュから始めることができません。"
 
-#: gtkusersetup:261
+#: gtkusersetup.py:263
 msgid ""
 "Username can consist solely of latin lower case letters, numbers, dashes and"
 " underscores."
 msgstr "ユーザ名は、小文字英数・-・_ の文字が有効です。"
 
-#: gtkusersetup:267
+#: gtkusersetup.py:269
 #, python-brace-format
 msgid "Username \"{0}\" already exists."
 msgstr "ユーザネーム \"{0}\" は、すべて使われています。"
 
-#: gtkusersetup:278
+#: gtkusersetup.py:280
 msgid "Group name cannot be empty."
 msgstr "グループ名を空欄にする事はできません。"
 
-#: gtkusersetup:281
+#: gtkusersetup.py:283
 msgid "Group name cannot exceed 31 characters"
 msgstr "グループ名は 31 文字以上にできません。"
 
-#: gtkusersetup:284
+#: gtkusersetup.py:286
 msgid "Group name cannot include the space character."
 msgstr "グループ名に空白は使用できません。"
 
-#: gtkusersetup:287
+#: gtkusersetup.py:289
 msgid "Group name cannot start with a number."
 msgstr "グループ名は数字からはじめる事はできません。"
 
-#: gtkusersetup:290
+#: gtkusersetup.py:292
 msgid "Group name cannot start with an underscore."
 msgstr "グループ名は、下線から始める事はできません。"
 
-#: gtkusersetup:293
+#: gtkusersetup.py:295
 msgid "Group name cannot start with a dash."
 msgstr "グループ名は、- からはじめる事はできません。"
 
-#: gtkusersetup:299
+#: gtkusersetup.py:301
 msgid ""
 "Group name can consist solely of latin lower case letters, numbers, dashes "
 "and underscores."
 msgstr "グループ名は、小文字英数、-、_ のみ使用できます。"
 
-#: gtkusersetup:305
+#: gtkusersetup.py:307
 #, python-brace-format
 msgid "Group name \"{0}\" already exists."
 msgstr "グループ名 \"{0}\" はすでに使用されています。"
 
-#: gtkusersetup:316
+#: gtkusersetup.py:318
 msgid "Shell does not exist."
 msgstr "シェルが存在しません。"
 
-#: gtkusersetup:326
+#: gtkusersetup.py:328
 #, python-brace-format
 msgid "UID {0} is assigned to another user."
 msgstr "UID {0} は別のユーザに割り当てられています。"
 
-#: gtkusersetup:336
+#: gtkusersetup.py:338
 #, python-brace-format
 msgid "GID {0} is assigned to another group."
 msgstr "GID {0}は別のグループに割り当てられています。"
 
-#: gtkusersetup:389
+#: gtkusersetup.py:391
 #, python-brace-format
 msgid "User account properties for \"{0}\""
 msgstr "ユーザアカウント \"{0}\" のプロパティ"
 
-#: gtkusersetup:396
+#: gtkusersetup.py:398
 msgid "<b>Set new password</b>"
 msgstr "<b>新たなパスワードの設定</b>"
 
-#: gtkusersetup:454
+#: gtkusersetup.py:456
 msgid "Add new user"
 msgstr "新しいユーザを追加"
 
-#: gtkusersetup:461
+#: gtkusersetup.py:463
 msgid "<b>Set password</b>"
 msgstr "<b>パスワードの設定</b>"
 
-#: gtkusersetup:512
+#: gtkusersetup.py:514
 #, python-brace-format
 msgid "Delete user {0}?"
 msgstr "ユーザ {0} を削除しますか？"
 
-#: gtkusersetup:514
+#: gtkusersetup.py:516
 #, python-brace-format
 msgid ""
 "You are about to remove user account \"{0}\" from your system. Do you really"
 " want to continue?"
 msgstr "ユーザアカウント \"{0}\" をシステムから削除します。つづけてもよろしいですか？"
 
-#: gtkusersetup:516
+#: gtkusersetup.py:518
 #, python-brace-format
 msgid "Completely remove user's home directory ({0}) with all its contents"
 msgstr "ユーザのhome(ホーム)ディレクトリを含む全てを消去する。"
 
-#: gtkusersetup:769
+#: gtkusersetup.py:775
 #, python-brace-format
 msgid "Group \"{0}\" properties"
 msgstr "グループ \"{0}\" のプロパティ"
 
-#: gtkusersetup:788
+#: gtkusersetup.py:794
 msgid "Add new group"
 msgstr "新規グループの追加"
 
-#: gtkusersetup:814
+#: gtkusersetup.py:820
 #, python-brace-format
 msgid ""
 "You are about to delete the \"{0}\" group from your system. Are you sure you"
 " want to continue?"
 msgstr "グループ {0}\" をシステムから削除します。続けてもよろしいですか？"
 
-#: gtkusersetup:818
+#: gtkusersetup.py:824
 #, python-brace-format
 msgid ""
 "Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
@@ -319,23 +354,23 @@ msgid ""
 "\"{1}\" to another group first."
 msgstr "グループ \"{0}\" はユーザ \"{1}\" のメイングループなので削除する事ができません。もしグループ \"{0}\" を削除したい場合はまずユーザ \"{1}\" のメイングループを別のグループに設定しなければいけません。"
 
-#: gtkusersetup:948
+#: gtkusersetup.py:954
 msgid "Username"
 msgstr "ユーザ名"
 
-#: gtkusersetup:949
+#: gtkusersetup.py:955
 msgid "Real name"
 msgstr "フルネーム"
 
-#: gtkusersetup:950
+#: gtkusersetup.py:956
 msgid "Home directory"
 msgstr "ホームディレクトリ"
 
-#: gtkusersetup:993
+#: gtkusersetup.py:999
 msgid "Member"
 msgstr "メンバー"
 
-#: gtkusersetup:994
+#: gtkusersetup.py:1000
 msgid "Group"
 msgstr "グループ"
 

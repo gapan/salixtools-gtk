@@ -24,7 +24,7 @@ msgstr "Γλώσσα συστήματος"
 
 #: gtklocalesetup.ui:40
 msgid "About"
-msgstr "Σχετικά με"
+msgstr "Περί"
 
 #: gtklocalesetup.ui:61
 msgid "Cancel"

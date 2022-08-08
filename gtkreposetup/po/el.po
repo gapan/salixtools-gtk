@@ -27,7 +27,7 @@ msgstr "Επιλέξτε το αποθετήριο"
 
 #: gtkreposetup.ui:41
 msgid "About"
-msgstr "Σχετικά με"
+msgstr "Περί"
 
 #: gtkreposetup.ui:62 gtkreposetup.ui:977 gtkreposetup.ui:1053
 msgid "Cancel"

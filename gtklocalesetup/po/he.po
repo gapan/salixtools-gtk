@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# GenghisKhan <genghiskhan@gmx.ca>, 2013
+# gk <genghiskhan@gmx.ca>, 2013
 # gapan <vlahavas@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: salixtools-gtk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 00:56+0300\n"
-"PO-Revision-Date: 2017-09-19 09:12+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"POT-Creation-Date: 2022-04-24 13:03+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2016\n"
 "Language-Team: Hebrew (http://www.transifex.com/gapan/salixtools-gtk/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,18 +23,30 @@ msgstr ""
 msgid "System language"
 msgstr "שפת מערכת"
 
-#: gtklocalesetup.ui:149
+#: gtklocalesetup.ui:40
+msgid "About"
+msgstr ""
+
+#: gtklocalesetup.ui:61
+msgid "Cancel"
+msgstr ""
+
+#: gtklocalesetup.ui:75
+msgid "Apply changes"
+msgstr ""
+
+#: gtklocalesetup.ui:137
 msgid ""
 "Please select a default system locale. The changes will take effect next "
 "time you start your system."
 msgstr "אנא בחר מקומיות (locale) מערכת ברירת מחדל. השינויים ייכנסו לתוקף בפעם הבאה שתתחיל את המערכת."
 
-#: gtklocalesetup.ui:234 gtklocalesetup.desktop.in.h:2
+#: gtklocalesetup.ui:224 gtklocalesetup.desktop.in.h:2
 #: gtklocalesetup-kde.desktop.in.h:2
 msgid "Locale configuration tool"
 msgstr "כלי עזר לתצורת מקומיות"
 
-#: gtklocalesetup.ui:912
+#: gtklocalesetup.ui:902
 msgid "translator-credits"
 msgstr "Transifex Contributors:\n  https://www.transifex.net/accounts/profile/sharemore/\n\nRahut Contributors:\n  Isratine Citizen <genghiskhan@gmx.ca>"
 
