@@ -58,8 +58,11 @@ def cities(continent):
 
 
 def currenttimezone():
-    tz = os.readlink(
-        '/etc/localtime').replace('/usr/share/zoneinfo/', '')
+    try:
+        tz = os.readlink(
+            '/etc/localtime').replace('/usr/share/zoneinfo/', '')
+    except OSError:
+        tz = 'Etc/GMT'
     continent = tz.partition('/')[0]
     location = tz.partition('/')[2]
     return continent, location
