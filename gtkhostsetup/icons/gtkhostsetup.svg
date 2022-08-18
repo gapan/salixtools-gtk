@@ -3,17 +3,18 @@
    width="64"
    height="64"
    version="1.1"
-   id="svg12"
-   sodipodi:docname="gtkhostsetup.svg"
+   viewBox="0 0 64 64"
+   id="svg28"
+   sodipodi:docname="gtkhostsetup_new.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs16" />
+     id="defs32" />
   <sodipodi:namedview
-     id="namedview14"
+     id="namedview30"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -21,52 +22,89 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="11.234375"
-     inkscape:cx="31.955494"
-     inkscape:cy="31.955494"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="10.234375"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:window-width="1600"
+     inkscape:window-height="835"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg12" />
+     inkscape:current-layer="svg28" />
+  <linearGradient
+     id="m"
+     x1="16"
+     x2="16"
+     y1="18"
+     y2="6"
+     gradientTransform="translate(44.967 1009.3)"
+     gradientUnits="userSpaceOnUse">
+    <stop
+       stop-color="#f0f0f0"
+       offset="0"
+       id="stop2" />
+    <stop
+       stop-color="#fcfcfc"
+       offset="1"
+       id="stop4" />
+  </linearGradient>
+  <linearGradient
+     id="n"
+     x1="19.514"
+     x2="15"
+     y1="15.555"
+     y2="11"
+     gradientTransform="translate(44.967 1009.3)"
+     gradientUnits="userSpaceOnUse">
+    <stop
+       stop-color="#f3f3f3"
+       offset="0"
+       id="stop7" />
+    <stop
+       stop-color="#fcfcfc"
+       stop-opacity="0"
+       offset="1"
+       id="stop9" />
+  </linearGradient>
   <g
-     transform="translate(270.398 69.763)"
-     id="g10">
+     transform="translate(270.4 69.763)"
+     id="g20">
     <path
-       d="M-244.498-26.43c-.776 0-1.4.596-1.4 1.334v10.5l-3.6.333c-.776 0-1.4.596-1.4 1.334v1.666h25v-1.666c0-.738-.625-1.334-1.4-1.334l-3.6-.334v-10.499c0-.738-.625-1.334-1.4-1.334z"
+       d="m-244.5-26.43c-0.776 0-1.4 0.596-1.4 1.334v10.5l-3.6 0.333c-0.776 0-1.4 0.596-1.4 1.334v1.666h25v-1.666c0-0.738-0.625-1.334-1.4-1.334l-3.6-0.334v-10.499c0-0.738-0.625-1.334-1.4-1.334z"
        fill="none"
        stroke="#42557f"
        stroke-opacity=".291"
-       id="path2" />
+       id="path12" />
     <path
-       d="M-244.498-25.929c-.52 0-.9.378-.9.834v10.955l-4.078.377h-.022c-.52 0-.9.378-.9.834v1.166h24v-1.166c0-.456-.381-.834-.9-.834h-.024l-4.076-.377v-10.955c0-.456-.38-.834-.9-.834h-12.2z"
+       d="m-244.5-25.929c-0.52 0-0.9 0.378-0.9 0.834v10.955l-4.078 0.377h-0.022c-0.52 0-0.9 0.378-0.9 0.834v1.166h24v-1.166c0-0.456-0.381-0.834-0.9-0.834h-0.024l-4.076-0.377v-10.955c0-0.456-0.38-0.834-0.9-0.834z"
        fill="#fafafa"
-       id="path4" />
+       id="path14" />
     <rect
+       x="-268.9"
        y="-64.263"
-       x="-268.898"
-       ry="1.333"
-       rx="1.4"
-       height="40"
        width="61"
+       height="40"
+       rx="1.4"
+       ry="1.333"
        fill="#414757"
        stroke="#252831"
+       stroke-dashoffset=".5"
        stroke-linecap="round"
        stroke-linejoin="round"
-       stroke-dashoffset=".5"
        stroke-opacity=".784"
-       id="rect6" />
+       id="rect16" />
     <path
+       d="m-266.4-61.763h56v35h-56z"
        fill="#5294e2"
        fill-rule="evenodd"
-       d="M-266.398-61.763h56v35h-56z"
-       id="path8" />
+       id="path18" />
   </g>
   <g
      style="line-height:0%;-inkscape-font-specification:'Sans Bold'"
-     id="g18"
-     transform="matrix(4.6107388,0,0,4.6107388,-7.5647496,-12.588112)">
+     id="g21"
+     transform="matrix(3.6079375,0,0,3.6821111,1.1074642,-4.2822436)">
     <path
        d="m 11.907,7.635 q 0,0.686 -0.222,1.243 -0.218,0.553 -0.611,0.855 -0.39,0.303 -0.875,0.303 -0.378,0 -0.585,-0.163 Q 9.408,9.711 9.408,9.387 L 9.419,9.128 H 9.396 Q 9.144,9.582 8.77,9.811 8.4,10.036 7.968,10.036 7.368,10.036 7.035,9.66 6.707,9.283 6.707,8.616 6.707,8.011 6.951,7.491 7.2,6.971 7.643,6.664 8.086,6.358 8.625,6.358 q 0.836,0 1.15,0.672 H 9.798 L 9.947,6.44 h 0.596 l -0.444,1.866 q -0.14,0.605 -0.14,0.933 0,0.347 0.309,0.347 0.305,0 0.561,-0.255 0.26,-0.254 0.409,-0.7 0.149,-0.447 0.149,-0.99 0,-0.66 -0.294,-1.168 Q 10.799,5.96 10.245,5.687 9.691,5.41 8.949,5.41 8.025,5.41 7.314,5.805 6.604,6.2 6.199,6.945 5.794,7.686 5.794,8.608 q 0,0.712 0.298,1.258 0.301,0.542 0.867,0.834 0.57,0.291 1.326,0.291 0.554,0 1.123,-0.14 0.57,-0.137 1.18,-0.457 l 0.21,0.413 q -0.553,0.32 -1.203,0.487 -0.646,0.17 -1.31,0.17 -0.921,0 -1.613,-0.355 -0.687,-0.35 -1.054,-1 -0.363,-0.652 -0.363,-1.5 0,-1.033 0.474,-1.878 0.477,-0.845 1.322,-1.313 0.844,-0.472 1.89,-0.472 0.922,0 1.59,0.335 0.669,0.332 1.02,0.94 0.356,0.61 0.356,1.414 z M 9.591,7.665 Q 9.591,7.288 9.339,7.059 9.087,6.827 8.667,6.827 8.281,6.827 7.979,7.063 7.681,7.295 7.509,7.712 7.337,8.125 7.337,8.608 q 0,0.443 0.18,0.694 0.183,0.25 0.561,0.25 0.478,0 0.875,-0.387 0.398,-0.387 0.55,-0.966 0.088,-0.34 0.088,-0.535 z"
        style="line-height:1.25;-inkscape-font-specification:Arial"
