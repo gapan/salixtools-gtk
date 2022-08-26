@@ -137,9 +137,17 @@ class SystemUsers:
     def create_user(self, login, shell, group, groups, password):
         os.system('useradd -s ' + shell + ' -g ' +
                   group + ' -m -k /etc/skel ' + login)
-        self.set_password(login, password)
+        res = self.set_password(login, password)
+        if res["error"]:
+            # I wish I didn't have to do this. But the only way for PAM and
+            # chpasswd to report a "BAD PASSWORD" is to first create the
+            # account and then try to change it. So, we have to delete the
+            # newly created account if that happens.
+            os.system('userdel -r ' + login)
+            return res
         for i in groups:
             self.add_user_to_group(login, i)
+        return res
 
     def create_group(self, groupname, gid):
         os.system('groupadd -g ' + str(gid) + ' ' + groupname)
@@ -154,7 +162,12 @@ class SystemUsers:
         os.system('groupdel ' + groupname)
 
     def set_password(self, login, password):
-        os.system('echo "' + login + ':' + password + '" | chpasswd')
+        d = { "error": False, "message": None }
+        res = subprocess.getoutput('echo "' + login + ':' + password + '" | chpasswd')
+        if len(res) > 0:
+            d["error"] = True
+            d["message"] = res
+        return d
 
     def set_uid(self, login, uid):
         os.system('usermod -u ' + str(uid) + ' ' + login)
@@ -218,7 +231,7 @@ class SystemUsers:
 
     def check_password(self, password1, password2):
         if password1 == password2:
-            if len(password1) < 5:
+            if len(password1) < 6:
                 setpassword = False
                 msg = _(
                     "Password is too short. It has to be at least 5 characters long.")
@@ -567,7 +580,11 @@ class GTKUserSetup:
                 for i in self.user_groupliststore:
                     if i[0] == True:
                         groups.append(i[1])
-                u.create_user(username, shell, maingroup, groups, password1)
+                res = u.create_user(username, shell, maingroup, groups, password1)
+                if res["error"]:
+                    self.label_properties_error_msg.set_label(res["message"])
+                    self.properties_error_window.show()
+                    return
                 u.set_fullname(username, fullname)
                 u.set_officeinfo(username, officeinfo)
                 u.set_officeext(username, officeext)
@@ -669,7 +686,12 @@ class GTKUserSetup:
                 if bool_set_fullname == True:
                     u.set_fullname(username, new_fullname)
                 if bool_set_password == True:
-                    u.set_password(username, new_password1)
+                    result = u.set_password(username, new_password1)
+                    if result["error"]:
+                        # display message
+                        self.label_properties_error_msg.set_label(result["message"])
+                        self.properties_error_window.show()
+                        return
                 if bool_set_officeinfo == True:
                     u.set_officeinfo(username, new_officeinfo)
                 if bool_set_officeext == True:
