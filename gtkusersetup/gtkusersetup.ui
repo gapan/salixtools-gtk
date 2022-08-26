@@ -1296,6 +1296,7 @@
                         <property name="hexpand">True</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1309,6 +1310,7 @@
                         <property name="hexpand">True</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1376,6 +1378,7 @@
                         <property name="visibility">False</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1390,6 +1393,7 @@
                         <property name="visibility">False</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1524,6 +1528,7 @@
                         <property name="hexpand">True</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1537,6 +1542,7 @@
                         <property name="hexpand">True</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1550,6 +1556,7 @@
                         <property name="hexpand">True</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1802,6 +1809,7 @@
                         <property name="hexpand">True</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1815,6 +1823,7 @@
                         <property name="hexpand">True</property>
                         <property name="primary-icon-activatable">False</property>
                         <property name="secondary-icon-activatable">False</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
@@ -1832,6 +1841,7 @@
                         <property name="secondary-icon-activatable">False</property>
                         <property name="adjustment">adjustment_uid</property>
                         <property name="numeric">True</property>
+                        <signal name="activate" handler="on_button_user_properties_ok_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="left-attach">1</property>
