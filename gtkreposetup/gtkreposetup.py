@@ -142,6 +142,7 @@ def get_slaptget_settings():
     exclude_default = '^aaa_elflibs,^aaa_base,^devs,^glibc.*,^kernel-.*,^udev,' \
                       '^rootuser-settings,^zzz-settings.*'
     fname = '/etc/slapt-get/slapt-getrc'
+    xfce418 = False
     try:
         c = TextConfig(fname)
     except IOError:
@@ -176,9 +177,11 @@ def get_slaptget_settings():
             for s in sources:
                 if s.endswith(':CUSTOM'):
                     custom_repos.append(s)
+                if 'xfce4.18' in s:
+                    xfce418 = True
         except ValueError:
             custom_repos = []
-    return working_dir, exclude, custom_repos
+    return working_dir, exclude, custom_repos, xfce418
 
 def get_slaptsrc_settings():
     fname = '/etc/slapt-get/slapt-srcrc'
@@ -205,7 +208,7 @@ def write_conf(repo, parent_window):
     '''
     Write configuration files.
     '''
-    slaptget_working_dir, slaptget_exclude, custom = get_slaptget_settings()
+    slaptget_working_dir, slaptget_exclude, custom, xfce418 = get_slaptget_settings()
     slaptsrc_build_dir, slaptsrc_pkg_ext = get_slaptsrc_settings()
     arch = get_arch()
     if arch == 'arm':
@@ -234,6 +237,10 @@ def write_conf(repo, parent_window):
             f.write('# The Salix repository\n')
             f.write('SOURCE={r}/{a}/{v}/:PREFERRED\n'.format(
                 r=repo, a=arch, v=version))
+            if xfce418:
+                f.write('# The Xfce 4.18 repo for Salix 15.0\n')
+                f.write('SOURCE={r}/{a}/xfce4.18-{v}/:PREFERRED\n'.format(
+                    r=repo, a=arch, v=version))
             f.write('# And the Salix extra repository\n')
             f.write('SOURCE={r}/{a}/extra-{v}/:OFFICIAL\n\n'.format(
                 r=repo, a=arch, v=version))
