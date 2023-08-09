@@ -24,9 +24,6 @@ gettext.bindtextdomain("gtkreposetup", "/usr/share/locale")
 gettext.textdomain("gtkreposetup")
 _ = gettext.gettext
 
-
-salixtoolsdir = '/usr/share/salixtools/'
-
 canceltask = False
 
 def threaded(f):
@@ -71,16 +68,14 @@ def get_salix_version(parent_window):
     '''
     Read the Salix version.
     '''
-    fname = '/usr/share/salixtools/salix-version'
-    try:
-        with open(fname, 'r') as f:
-            version = f.readline().strip()
-    except IOError:
-        msg1 = _('Could not read file:')
+    p = subprocess.Popen(['lsb_release', '-rs'], stdout=subprocess.PIPE)
+    if p.wait() == 0:
+        return p.communicate()[0].strip().decode()
+    else:
+        msg1 = _('lsb_release is not installed.')
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, fname, msg2), parent_window)
+        show_error_dialog('%s\n\n%s' % (msg1, msg2), parent_window)
         sys.exit(1)
-    return version
 
 def get_current_repo(parent_window):
     '''
@@ -90,13 +85,11 @@ def get_current_repo(parent_window):
     p = subprocess.Popen(['reposetup', '-p'], stdout=subprocess.PIPE)
     if p.wait() == 0:
         return p.communicate()[0].strip().decode()
-    # error code 11 is thrown by reposetup when the salix-version file is not
-    # found
+    # error code 11 is thrown by reposetup when lsb_release is not installed
     elif p.wait() == 11:
-        msg1 = _('Could not read file:')
-        f = '/usr/share/salixtools/salix-version'
+        msg1 = _('lsb_release is not installed.')
         msg2 = _('Exiting.')
-        show_error_dialog('%s %s\n\n%s' % (msg1, f, msg2), parent_window)
+        show_error_dialog('%s\n\n%s' % (msg1, msg2), parent_window)
         sys.exit(1)
     else:
         return None
