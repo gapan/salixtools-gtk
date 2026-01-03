@@ -136,6 +136,8 @@ def get_slaptget_settings():
                       '^rootuser-settings,^zzz-settings.*'
     fname = '/etc/slapt-get/slapt-getrc'
     xfce418 = False
+    xfce420 = False
+    kernel612 = False
     try:
         c = TextConfig(fname)
     except IOError:
@@ -172,9 +174,21 @@ def get_slaptget_settings():
                     custom_repos.append(s)
                 if 'xfce4.18' in s:
                     xfce418 = True
+                if 'xfce4.20' in s:
+                    xfce420 = True
+                if 'kernel6.12' in s:
+                    kernel612 = True
         except ValueError:
             custom_repos = []
-    return working_dir, exclude, custom_repos, xfce418
+        settings = {
+                'working_dir': working_dir,
+                'exclude': exclude,
+                'custom_repos': custom_repos,
+                'xfce418': xfce418,
+                'xfce420': xfce420,
+                'kernel612': kernel612
+            }
+    return settings
 
 def get_slaptsrc_settings():
     fname = '/etc/slapt-get/slapt-srcrc'
@@ -195,14 +209,18 @@ def get_slaptsrc_settings():
             pkg_ext = c.get('PKGEXT')
         except ValueError:
             pkg_ext = 'txz'
-    return build_dir, pkg_ext
+    settings = {
+            'build_dir': build_dir,
+            'pkg_ext': pkg_ext
+        }
+    return settings
 
 def write_conf(repo, parent_window):
     '''
     Write configuration files.
     '''
-    slaptget_working_dir, slaptget_exclude, custom, xfce418 = get_slaptget_settings()
-    slaptsrc_build_dir, slaptsrc_pkg_ext = get_slaptsrc_settings()
+    slaptget_settings = get_slaptget_settings()
+    slaptsrc_settings = get_slaptsrc_settings()
     arch = get_arch()
     if arch == 'arm':
         slackdir = 'slackwarearm'
@@ -217,11 +235,11 @@ def write_conf(repo, parent_window):
     try:
         with open(fname, 'w') as f:
             f.write('# Working directory for local storage/cache.\n')
-            f.write('WORKINGDIR={}\n\n'.format(slaptget_working_dir))
+            f.write('WORKINGDIR={}\n\n'.format(slaptget_settings['working_dir']))
             f.write('# Exclude package names and expressions.\n')
             f.write('# To exclude pre and beta packages, add this to the exclude:\n')
             f.write('#   [0-9\_\.\-]{1}pre[0-9\-\.\-]{1}\n')
-            f.write('EXCLUDE={}\n\n'.format(slaptget_exclude))
+            f.write('EXCLUDE={}\n\n'.format(slaptget_settings['exclude']))
             f.write('# The Slackware repositories, including dependency information\n')
             f.write('SOURCE={r}/{a}/{s}-{v}/:OFFICIAL\n'.format(
                 r=repo, a=arch, s=slackdir, v=version))
@@ -230,16 +248,24 @@ def write_conf(repo, parent_window):
             f.write('# The Salix repository\n')
             f.write('SOURCE={r}/{a}/{v}/:PREFERRED\n'.format(
                 r=repo, a=arch, v=version))
-            if xfce418:
+            if slaptget_settings['xfce418']:
                 f.write('# The Xfce 4.18 repo for Salix 15.0\n')
                 f.write('SOURCE={r}/{a}/xfce4.18-{v}/:PREFERRED\n'.format(
+                    r=repo, a=arch, v=version))
+            if slaptget_settings['xfce420']:
+                f.write('# The Xfce 4.20 repo for Salix 15.0\n')
+                f.write('SOURCE={r}/{a}/xfce4.20-{v}/:PREFERRED\n'.format(
+                    r=repo, a=arch, v=version))
+            if slaptget_settings['kernel612']:
+                f.write('# The Kernel 6.12 repo for Salix 15.0\n')
+                f.write('SOURCE={r}/{a}/kernel6.12-{v}/:PREFERRED\n'.format(
                     r=repo, a=arch, v=version))
             f.write('# And the Salix extra repository\n')
             f.write('SOURCE={r}/{a}/extra-{v}/:OFFICIAL\n\n'.format(
                 r=repo, a=arch, v=version))
             f.write('# Local repositories\n')
             f.write('# SOURCE=file:///var/www/packages/:CUSTOM\n')
-            for repo in custom:
+            for repo in slaptget_settings['custom_repos']:
                 f.write('SOURCE={r}\n'.format(r=repo))
     except IOError:
         msg1 = _('Could not write to file:')
@@ -253,8 +279,8 @@ def write_conf(repo, parent_window):
     fname = '/etc/slapt-get/slapt-srcrc'
     try:
         with open(fname, 'w') as f:
-            f.write('BUILDDIR={}\n'.format(slaptsrc_build_dir))
-            f.write('PKGEXT={}\n'.format(slaptsrc_pkg_ext))
+            f.write('BUILDDIR={}\n'.format(slaptsrc_settings['build_dir']))
+            f.write('PKGEXT={}\n'.format(slaptsrc_settings['pkg_ext']))
             f.write('SOURCE={r}/slkbuild/{v}/\n'.format(
                 r=repo, v=version))
             f.write('SOURCE={r}/sbo/{v}/\n'.format(
